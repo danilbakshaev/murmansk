@@ -491,3 +491,14 @@ img {
     margin: 0 15px;
   }
 }
+
+
+/* Временные селекторы! */
+header {
+  background-color: pink;
+}
+
+img {
+  height: auto!important;
+  width: auto!important;
+}
