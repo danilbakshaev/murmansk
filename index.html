@@ -11,36 +11,44 @@
 </head>
 
 <body>
-
 	<header>
-		<div class="section">
-			<div class="container">
-			
-				<div class="up-menu">
-					<button class="up-menu__btn">
-						<img src="/img/location.svg" alt="Кнопка геолокации">
-						<span>Москва</span>
-						<img src="/img/arrow.svg" alt="Кнопка выбора города">
-					</button>
-					
-					<ul class="up-menu__center">
-						<li class="up-menu_celect">Отзывы</li>
-						<li>О компании</li>
-						<li>Контакты</li>
-						<li>Оплата и бронирование</li>
-						<li>Турагенствам</li>
-						<li>Еще
-							<img src="/img/arrow.svg" alt="Кнопка выбора города">
-						</li>
-					</ul>
-					
-					<button class="up-menu__btn">
-						<img src="/img/language.svg" alt="Кнопка выбора языка">
-						<span>Русский</span>
-						<img src="/img/arrow.svg" alt="Выбор дополнительных параметров">
-					</button>
+		<div class="main-header">
+			<div class="desktop-header">
+				<div class="desktop-header__top">
+					<div class="container">
+
+						<button class="select-location">
+							<img class="select-location__geo" src="/img/location.svg" alt="Знак геолокации">
+							Москва
+							<img class="select-location__arrow" src="/img/arrow.svg" alt="Стрелка вниз">
+						</button>
+						
+						<div class="desktop-header__top-items">
+							<a href="#" class="desktop-header__top-item desktop-header__top-item--active">Отзывы</a>
+							<a href="#" class="desktop-header__top-item">О компании</a>
+							<a href="#" class="desktop-header__top-item">Контакты</a>
+							<a href="#" class="desktop-header__top-item">Оплата и бронирование</a>
+							<a href="#" class="desktop-header__top-item">Турагенствам</a>
+							<a href="#" class="desktop-header__top-item">Еще
+								<img src="/img/arrow.svg" alt="Кнопка выбора города">
+							</a>
+						</div>
+						
+						<button class="select-lang">
+							<img class="select-lang__flag" src="/img/language.svg" alt="Флаг">
+							Русский
+							<img class="select-lang__arrows" src="/img/arrow.svg" alt="Стрелка вниз">
+						</button>
+
+					</div>
 				</div>
-				
+				<div class="desktop-header__bottom">
+						 
+				</div>
+			</div>
+		</div>
+	</header>
+
 				<div class="mid-menu">
 					<div class="mid-menu__logo">
 						<img src="/img/snow.svg" alt="Логотип компании">
@@ -61,10 +69,10 @@
 						</div>
 					</div>
 					<button class="mid-menu__btn">Заказать звонок</button>
-				<div class="mid-menu__mail">
-					<span>Для заявок и вопросов</span>
-					<a href="mailto:info@north4you.com">info@north4you.com</a>
-				</div>
+					<div class="mid-menu__mail">
+						<span>Для заявок и вопросов</span>
+						<a href="mailto:info@north4you.com">info@north4you.com</a>
+					</div>
 				</div>
 	
 				
@@ -110,8 +118,6 @@
 						<a href="#">Скачать презентацию — «Куда сходить в Мурманске туристу» (PDF, 3 Мб)</a>
 					</span>
 				</div>
-	
-			</div>
 		</div>
 	</header>
 
