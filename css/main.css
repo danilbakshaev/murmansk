@@ -349,10 +349,10 @@ template {
 }
 
 /* font-family: 'Roboto Slab', serif; */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap'); */
 
 /* font-family: 'Inter', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap'); */
 
 body {
 	font-size: 16px;
@@ -532,16 +532,10 @@ header {
   align-items: center;
   padding: 0;
   border: none;
-  font: inherit;
-  color: inherit;
   background-color: transparent;
   cursor: pointer;
-  font-family: Inter;
-  font-style: normal;
   font-weight: 500;
   font-size: 10px;
-  /* line-height: 12px; */
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -554,11 +548,8 @@ header {
 
 .desktop-header__top-item {
   margin-right: 25px;
-  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 10px;
-  line-height: 12px;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
@@ -581,22 +572,16 @@ header {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 10px;
-  line-height: 12px;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
 .select-location__text {
   padding: 0 5px;
-  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 10px;
-  line-height: 12px;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
