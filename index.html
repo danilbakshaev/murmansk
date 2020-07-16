@@ -28,7 +28,7 @@
 						<a href="#" class="desktop-header__top-item">Оплата и бронирование</a>
 						<a href="#" class="desktop-header__top-item">Турагенствам</a>
 						<a href="#" class="desktop-header__top-item">Еще
-							<img src="/img/arrow.svg" alt="Кнопка выбора города">
+							<img class="desktop-header__arrow" src="/img/arrow.svg" alt="Кнопка выбора города">
 						</a>
 					</nav>
 					<button class="select-lang">
@@ -84,21 +84,30 @@
 		</div>
 
 		<!-- mobile-header -->
+
+		<!-- Переделать mobile-header---ВЫПОЛНИЛ -->
 		<div class="mobile-header">
 			<div class="container">
-				<div class="logo-company">
-					<img class="logo-company__logo" src="/img/logo.svg" alt="Логотип компании NORTH FOR YOU">
-					<img class="logo-company__burger" src="/img/button_burger.svg" alt="Кнопка меню">
+				<div class="mobile-header__top">
+					<img class="mobile-header__logo" src="/img/logo.svg" alt="Логотип компании NORTH FOR YOU">
+					<button class="mobile-header__button">
+						<img class="mobile-header__burger-img" src="/img/button_burger.svg" alt="Кнопка меню">
+					</button>
 				</div>
 			</div>
 		</div>
 		<!-- /mobile-header -->
-		<div class="leave-request">
+
+
+		<!-- leave-request это больше header-text---ВЫПОЛНИЛ -->
+		<div class="header-text">
 			<div class="container">
-				<h1 class="leave-request__title">Насладитесь красотой русского севера в турах от
+				<h1 class="header-text__title">Насладитесь красотой русского севера в турах от
 					«Север для Вас»</h1>
-				<p class="leave-request__subtitle">Более 30 индивидуальный и групповых туров по
+				<p class="header-text__subtitle">Более 30 индивидуальных и групповых туров по
 					Мурманской области.
+				</p>
+				<p class="header-text__subtitle">
 					Оставьте заявку для подбора индивидуальной программы под ваши даты и бюджет.
 				</p>
 				<form class="callback-form" action="">
@@ -109,7 +118,7 @@
 						согласен с <a class="callback-form__privacy-link" href="#">политикой
 							конфиденциальности.</a></p>
 				</form>
-				<a class="leave-request__presentation" href="#">Скачать презентацию — «Куда сходить в Мурманске
+				<a class="header-text__presentation" href="#">Скачать презентацию — «Куда сходить в Мурманске
 					туристу» (PDF, 3 Мб)</a>
 			</div>
 		</div>
@@ -494,7 +503,7 @@
 					</div>
 
 
-					<!-- Вынести в отдельные блоки -->
+					<!-- Вынести в отдельные блоки---ВЫПОЛНИЛ -->
 					<div class="contacts">
 						<div class="contacts__wrap-links">
 							<p class="contacts__socials-text">WhatsApp, Facebook, Telegram</p>
@@ -509,21 +518,22 @@
 						</div>
 					</div>
 
-
 					<div class="callback">
 						<p class="callback__description">Москва и МО</p>
 						<a class="callback__phone" href="tel:+78005555500">+7 (800) 555-55-00</a>
-						<button class="callback__callback">Заказать звонок</button>
+						<button class="callback__call">Заказать звонок</button>
 					</div>
+
+					<!-- Доработать блок---ВЫПОЛНИЛ -->
 					<div class="socials">
-						<a class="socials__link" href="#"><img class="desktop-footer__socials-img"
-								src="/img/vk_icon.svg" alt="Вконтакте"></a>
-						<a class="socials__link" href="#"><img class="desktop-footer__socials-img"
-								src="/img/facebook_icon.svg" alt="Фейсбук"></a>
-						<a class="socials__link" href="#"><img class="desktop-footer__socials-img"
-								src="/img/instagram_icon.svg" alt="Инстаграм"></a>
-						<a class="socials__link" href="#"><img class="desktop-footer__socials-img"
-								src="/img/youtube_icon.svg" alt="Ютуб"></a>
+						<a class="socials__link" href="#"><img class="socials__img" src="/img/vk_icon.svg"
+								alt="Вконтакте"></a>
+						<a class="socials__link" href="#"><img class="socials__img" src="/img/facebook_icon.svg"
+								alt="Фейсбук"></a>
+						<a class="socials__link" href="#"><img class="socials__img" src="/img/instagram_icon.svg"
+								alt="Инстаграм"></a>
+						<a class="socials__link" href="#"><img class="socials__img" src="/img/youtube_icon.svg"
+								alt="Ютуб"></a>
 					</div>
 				</div>
 				<div class="desktop-footer__items">
@@ -612,17 +622,18 @@
 						<a class="desktop-footer__link" href="#">Средний рыбачий</a>
 						<a class="desktop-footer__link" href="#">Норвегия</a>
 					</div>
-					<div class="desktop-footer__item">
-						<span class="desktop-footer__reserved">© 2020 Все права защищены.</span>
-
-						<a class="link-contract" href="#">Политика конфиденциальности</a>
-						<a class="link-contract" href="#">Договор-оферта</a>
-						<img class="logo-contract" src="/img/logo_arsurf.svg" alt="Логотип">
+					<div class="info">
+						<span class="info__reserved">© 2020 Все права защищены.</span>
+						<div class="info__privacy">
+							<a class="info__link" href="#">Политика конфиденциальности</a>
+							<a class="info__link" href="#">Договор-оферта</a>
+						</div>
+						<img class="info__logo" src="/img/logo_arsurf.svg" alt="Логотип Arsurf">
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Тут .mobile-footer <div class="mobile-footer"></div> -->
+
 		<div class="mobile-footer">
 			<div class="container">
 				<div class="mobile-footer__feedback">
@@ -734,24 +745,30 @@
 						<a class="mobile-footer__link" href="#">Норвегия</a>
 					</div>
 				</div>
+
+				<!-- Доработать---ВЫПОЛНИЛ -->
 				<div class="socials">
-					<a class="socials__link" href="#"><img class="mobile-footer__socials-img" src="/img/vk_icon.svg"
+					<a class="socials__link" href="#"><img class="socials__img" src="/img/vk_icon.svg"
 							alt="Вконтакте"></a>
-					<a class="socials__link" href="#"><img class="mobile-footer__socials-img"
-							src="/img/facebook_icon.svg" alt="Фейсбук"></a>
-					<a class="socials__link" href="#"><img class="mobile-footer__socials-img"
-							src="/img/instagram_icon.svg" alt="Инстаграм"></a>
-					<a class="socials__link" href="#"><img class="mobile-footer__socials-img"
-							src="/img/youtube_icon.svg" alt="Ютуб"></a>
+					<a class="socials__link" href="#"><img class="socials__img" src="/img/facebook_icon.svg"
+							alt="Фейсбук"></a>
+					<a class="socials__link" href="#"><img class="socials__img" src="/img/instagram_icon.svg"
+							alt="Инстаграм"></a>
+					<a class="socials__link" href="#"><img class="socials__img" src="/img/youtube_icon.svg"
+							alt="Ютуб"></a>
 				</div>
-				<div class="mobile-footer__info">
-					<span class="mobile-footer__reserved">© 2020 Все права защищены.</span>
-					<div class="mobile-footer__privacy">
-						<a class="link-contract" href="#">Политика конфиденциальности</a>
-						<a class="link-contract" href="#">Договор-оферта</a>
+
+
+				<!-- Доработать на мобилке и десктопе---ВЫПОЛНИЛ -->
+				<div class="info">
+					<span class="info__reserved">© 2020 Все права защищены.</span>
+					<div class="info__privacy">
+						<a class="info__link" href="#">Политика конфиденциальности</a>
+						<a class="info__link" href="#">Договор-оферта</a>
 					</div>
-					<img class="logo-contract" src="/img/logo_arsurf.svg" alt="Логотип">
+					<img class="info__logo" src="/img/logo_arsurf.svg" alt="Логотип Arsurf">
 				</div>
+
 			</div>
 		</div>
 		</div>
