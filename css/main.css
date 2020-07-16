@@ -495,7 +495,7 @@ img {
 
 /* Временные селекторы! */
 header {
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 img {
@@ -534,4 +534,25 @@ img {
 
 /* .desktop-footer__link {
   color: red;
+} */
+
+/* .container--mobile {
+  width: 550px;
+} */
+
+/* body {
+  background-color: lightblue;
+}
+
+.desktop-footer {
+  display: none;
+  
+}
+
+.desktop-header {
+  display: none;
+}
+
+.mobile-footer {
+  background-color: lightcoral;
 } */
