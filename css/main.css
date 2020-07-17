@@ -354,6 +354,7 @@ body {
 	position: relative;
   line-height: 150%;
   font-family: 'Inter', sans-serif;
+  letter-spacing: 0.02em;
   /* font-family: 'Roboto Slab', serif; */
 	overflow-x: hidden;
 }
@@ -487,36 +488,35 @@ img {
   }
 }
 
-
-
 /* desktop-header */
 .background-image {
-  background-image: url(/img/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* background-color: black; */
 }
 
 .desktop-header__top {
   border-bottom: 1px solid rgb(255, 255, 255, 0.1);
-  width: 100%;
+}
+
+.desktop-header__top-items {
+  display: flex;
+  align-items: center;
 }
 
 .desktop-header__line {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 30px;
 }
 
 .select-location {
   cursor: pointer;
-  height: max-content;
-  background-color: inherit;
+  background: none;
   border: none;
   display: flex;
   align-items: center;
-  outline: none;
   padding: 0;
 }
 
@@ -533,31 +533,25 @@ img {
   font-size: 10px;
   padding-left: 4px;
   padding-right: 4px;
+  letter-spacing: 0.02em;
 }
 
-.select-location__text:hover {
+/* .select-location__text:hover {
   color: red;
-}
+} */
 
 .select-location__arrow {
   width: 8px;
   height: 4px;
-  padding-bottom: 1px;
-  /* padding-left: 4px; */
 }
 
 .select-lang {
+  
   cursor: pointer;
-  height: max-content;
-  background-color: inherit;
+  background: none;
   border: none;
   display: flex;
   align-items: center;
-  font-weight: 500;
-  font-size: 10px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  outline: none;
   padding: 0;
 }
 
@@ -576,20 +570,13 @@ img {
   padding-right: 4px;
 }
 
-.select-lang__text:hover {
+/* .select-lang__text:hover {
   color: red;
-}
+} */
 
 .select-lang__arrows {
   width: 8px;
   height: 4px;
-  padding-bottom: 1px;
-  /* padding-left: 4px; */
-}
-
-.desktop-header__top-items {
-  margin-bottom: 3px;
-  margin-right: 40px;
 }
 
 .desktop-header__top-item {
@@ -599,6 +586,8 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .desktop-header__top-item:last-child {
@@ -609,22 +598,19 @@ img {
   color: #FB5352;
 }
 
-.desktop-header__top-item:hover {
+/* .desktop-header__top-item:hover {
   color: red;
-}
+} */
 
 .desktop-header__arrow {
   width: 8px;
   height: 4px;
   padding-left: 4px;
-  padding-bottom: 2px;
 }
 
 .desktop-header__line-top {
   display: flex;
 }
-
-
 /* /desktop-header */
 
 
