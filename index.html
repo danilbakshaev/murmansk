@@ -5,38 +5,41 @@
 	<meta charset="utf-8">
 	<title>Заголовок</title>
 	<meta name="description" content="">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="/css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<header>
+	<header class="background-image">
 		<div class="desktop-header">
 			<div class="desktop-header__top">
 				<div class="container">
-					<button class="select-location">
-						<img class="select-location__geo" src="/img/location.svg" alt="Знак геолокации">
-						<span class="select-location__text">Москва</span>
-						<img class="select-location__arrow" src="/img/arrow.svg" alt="Стрелка вниз">
-					</button>
-					<nav class="desktop-header__top-items">
-						<a href="#" class="desktop-header__top-item desktop-header__top-item--active">Отзывы</a>
-						<a href="#" class="desktop-header__top-item">О компании</a>
-						<a href="#" class="desktop-header__top-item">Контакты</a>
-						<a href="#" class="desktop-header__top-item">Оплата и бронирование</a>
-						<a href="#" class="desktop-header__top-item">Турагенствам</a>
-						<a href="#" class="desktop-header__top-item">Еще
-							<img class="desktop-header__arrow" src="/img/arrow.svg" alt="Кнопка выбора города">
-						</a>
-					</nav>
-					<button class="select-lang">
-						<img class="select-lang__flag" src="/img/language.svg" alt="Флаг">
-						<span class="select-lang__text">Русский</span>
-						<img class="select-lang__arrows" src="/img/arrow.svg" alt="Стрелка вниз">
-					</button>
+					<div class="desktop-header__line">
+						<button class="select-location">
+							<img class="select-location__geo" src="/img/location.svg" alt="Знак геолокации">
+							<span class="select-location__text">Москва</span>
+							<img class="select-location__arrow" src="/img/arrow.svg" alt="Стрелка вниз">
+						</button>
+						<nav class="desktop-header__top-items">
+							<a href="#" class="desktop-header__top-item desktop-header__top-item--active">Отзывы</a>
+							<a href="#" class="desktop-header__top-item">О компании</a>
+							<a href="#" class="desktop-header__top-item">Контакты</a>
+							<a href="#" class="desktop-header__top-item">Оплата и бронирование</a>
+							<a href="#" class="desktop-header__top-item">Турагенствам</a>
+							<a href="#" class="desktop-header__top-item">Еще
+								<img class="desktop-header__arrow" src="/img/arrow.svg" alt="Кнопка выбора города">
+							</a>
+						</nav>
+						<button class="select-lang">
+							<img class="select-lang__flag" src="/img/language.svg" alt="Флаг">
+							<span class="select-lang__text">Русский</span>
+							<img class="select-lang__arrows" src="/img/arrow.svg" alt="Стрелка вниз">
+						</button>
+					</div>
 				</div>
 			</div>
 			<div class="desktop-header__bottom">
