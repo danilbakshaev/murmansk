@@ -914,8 +914,8 @@ img {
 }
 
 .tours__item {
-  display: block;
-  width: 33%;
+  
+ 
   
 }
 
@@ -932,6 +932,7 @@ img {
 .tours__img-bg {
   position: absolute;
   z-index: -1;
+  width: 33%;
 }
 /* Блок /"Топ туров" */
 
