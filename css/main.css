@@ -651,9 +651,17 @@ img {
   /* margin-top: 4px; */
 }
 
+.contacts__phone:hover {
+  color: #FB5352;
+}
+
 .contacts__social {
   margin-right: 7px;
   padding-top: 2px;
+}
+
+.contacts__social:hover {
+  opacity: 0.6;
 }
 
 .contacts__socials-text {
@@ -785,6 +793,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   color: #A5A5B1;
+  padding: 0 16px 0 16px;
 }
 
 .callback-form__submit {
@@ -831,9 +840,100 @@ img {
 .header-text__presentation:hover {
   color: #FB5352;
 }
-
-
 /* /desktop-header */
+
+
+/* Блок "наши достижения"  */
+.achievements {
+  margin: 96px 0;
+}
+
+.achievements__items {
+  display: flex;
+}
+
+.achievements__item {
+  display: flex;
+  align-items: center;
+  width: 352px;
+  margin-right: 32px;
+}
+
+.achievements__item:last-child {
+  margin-right: 0;
+}
+
+.achievements__img {
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+}
+
+.achievements__description {
+  margin: 0;
+  /* Font Family: Inter */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242440;
+}
+/* Блок /"наши достижения"  */
+
+
+/* Блок "Топ туров" */
+.title-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 49px;
+}
+
+.title-sections__title {
+  font-family: Roboto Slab;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #242440;
+  margin: 0;
+  width: 515px;
+}
+
+.title-sections__description {
+  width: 544px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242440;
+}
+
+
+
+
+.tours {
+  margin-bottom: 1000px;
+}
+
+.tours__item {
+  display: block;
+  width: 33%;
+  
+}
+
+.tours__item-img {
+  width: 14px;
+  height: 14px;
+}
+
+.tours__item-geo-img {
+  width: 14px;
+  height: 14px;
+}
+
+.tours__img-bg {
+  position: absolute;
+  z-index: -1;
+}
+/* Блок /"Топ туров" */
 
 
 
