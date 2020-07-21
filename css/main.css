@@ -355,7 +355,6 @@ body {
   line-height: 150%;
   font-family: 'Inter', sans-serif;
   letter-spacing: 0.02em;
-  /* font-family: 'Roboto Slab', serif; */
 	overflow-x: hidden;
 }
 
@@ -578,6 +577,7 @@ img {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition: 0.5s;
 }
 
 .desktop-header__top-item:last-child {
@@ -605,7 +605,7 @@ img {
 .desktop-header__logo-wrapper {
   display: flex;
   max-height: 42px;
-  margin-right: 147px;
+  width: 57%;
 }
 
 .desktop-header__bottom {
@@ -613,7 +613,10 @@ img {
 }
 
 .desktop-header__info {
-  padding-top: 7px;
+  border-left: 1px solid rgb(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .desktop-header__info-text {
@@ -622,24 +625,31 @@ img {
   font-weight: 400;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.7);
-  border-left: 1px solid rgb(255, 255, 255, 0.1);
   padding-left: 10px;
 }
 
 .logo-company {
   margin-right: 22px;
+  transition: 0.5s;
+}
+
+.logo-company__logo:hover {
+  opacity: 0.7;
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
-  margin-right: 35px;
+  margin-bottom: -8px;
+  margin-right: -8px;
+  
 }
 
 .contacts__wrap-links {
   display: flex;
   align-items: center;
-  /* margin-bottom: 8px; */
+  margin-bottom: 8px;
+  
 }
 
 .contacts__phone {
@@ -648,7 +658,8 @@ img {
   color: #FFFFFF;
   font-weight: 600;
   font-size: 18px;
-  /* margin-top: 4px; */
+  transition: 0.5s;
+  
 }
 
 .contacts__phone:hover {
@@ -657,7 +668,8 @@ img {
 
 .contacts__social {
   margin-right: 7px;
-  padding-top: 2px;
+  display: flex;
+  align-items: center;
 }
 
 .contacts__social:hover {
@@ -670,29 +682,35 @@ img {
   line-height: 150%;
   color: rgba(255, 255, 255, 0.7);
   margin: 0;
-}
-
-.contacts__social:last-child {
-  margin-right: 0;
+  margin-bottom: 4px;
 }
 
 .contacts__callback {
   cursor: pointer;
   background-color: transparent;
   color: #FB5352;
-  text-decoration: underline;
-  border: none;
+  border-bottom: 1px solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  line-height: 17px;
   width: max-content;
   padding: 0;
-  /* margin-top: 8px; */
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transform: 0.5s;
+  
 }
 
 .contacts__callback:hover {
-  text-decoration: none;
+  color: #fff;
 }
 
 .contacts__request {
   height: 43px;
+  margin-bottom: -4px;
   
 }
 
@@ -702,6 +720,7 @@ img {
   font-size: 11px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 4px;
 }
 
 .contacts__request-mail {
@@ -710,6 +729,7 @@ img {
   line-height: 22px;
   color: #FB5352;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .contacts__request-mail:hover {
@@ -717,18 +737,16 @@ img {
 }
 
 .desktop-header__line-bottom {
-
+  margin-right: -24px;
 }
 
 .desktop-header__tours {
-  width: 621px;
   display: flex;
- 
 }
 
 .desktop-header__tour {
   color: #FFFFFF;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -736,11 +754,12 @@ img {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition: 0.5s;
 }
 
-.desktop-header__tour:last-child {
+/* .desktop-header__tour:last-child {
   margin-right: 0;
-}
+} */
 
 .desktop-header__tour:hover {
   color: #FB5352;
@@ -758,16 +777,20 @@ img {
 
 .header-text {
   padding-bottom: 205px;
+  margin-bottom: -22px;
 }
 
 .header-text__title {
   font-family: Roboto Slab;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 42px;
   color: #FFFFFF;
   width: 736px;
   line-height: 130%;
-  margin: 0 0 22px 0;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 22px;
+  margin-left: 0px;
 }
 
 .header-text__subtitle {
@@ -777,6 +800,10 @@ img {
   color: #FFFFFF;
   opacity: 0.9;
   margin: 0;
+}
+
+.callback-form__wrap {
+  width: 448px;
 }
 
 .callback-form {
@@ -789,7 +816,8 @@ img {
   border-radius: 8px;
   border: none;
   height: 48px;
-  width: 280px;
+  /* width: 280px; */
+  flex-grow: 1;
   font-weight: 400;
   font-size: 14px;
   color: #A5A5B1;
@@ -798,7 +826,7 @@ img {
 
 .callback-form__submit {
   cursor: pointer;
-  height: 51px;
+  height: 48px;
   width: 160px;
   background: #FB5352;
   border: none;
@@ -807,6 +835,7 @@ img {
   font-weight: 600;
   font-size: 14px;
   color: #FFFFFF;
+  margin-left: 8px;
 }
 
 .callback-form__privacy {
@@ -821,6 +850,7 @@ img {
 .callback-form__privacy-link {
   color: #fff;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .callback-form__privacy-link:hover {
@@ -835,10 +865,20 @@ img {
   color: #FFFFFF;
   text-decoration: none;
   border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+  transition: 0.5s;
 }
+
+/* .header-text__presentation:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+} */
 
 .header-text__presentation:hover {
   color: #FB5352;
+  border-bottom: 1px solid #FB5352;
 }
 /* /desktop-header */
 
@@ -850,17 +890,12 @@ img {
 
 .achievements__items {
   display: flex;
+  justify-content: space-between;
 }
 
 .achievements__item {
   display: flex;
   align-items: center;
-  width: 352px;
-  margin-right: 32px;
-}
-
-.achievements__item:last-child {
-  margin-right: 0;
 }
 
 .achievements__img {
@@ -870,12 +905,11 @@ img {
 }
 
 .achievements__description {
-  margin: 0;
-  /* Font Family: Inter */
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #242440;
+  margin: 0;
 }
 /* Блок /"наши достижения"  */
 
