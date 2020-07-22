@@ -633,7 +633,7 @@ img {
   transition: 0.5s;
 }
 
-.logo-company__logo:hover {
+.logo-company:hover {
   opacity: 0.7;
 }
 
@@ -670,6 +670,7 @@ img {
   margin-right: 7px;
   display: flex;
   align-items: center;
+  transition: 0.3s;
 }
 
 .contacts__social:hover {
@@ -701,14 +702,17 @@ img {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   position: relative;
+  transition: 0.5s;
 }
 
-.contacts__callback::after {
+.contacts__callback:after {
   display: block;
   width: 100%;
   position: absolute;
   content: "";
   border-bottom: 1px solid #FB5352;
+  top: 14px;
+  transition: 0.5s;
 
 }
 
@@ -716,10 +720,12 @@ img {
   color: #fff;
 }
 
+.contacts__callback:hover:after {
+  border-bottom: 1px solid #fff;
+}
+
 .contacts__request {
   height: 43px;
-  margin-bottom: -4px;
-  
 }
 
 .contacts__request-text {
@@ -885,10 +891,18 @@ img {
   content: "";
   width: 100%;
   border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+  top: 18px;
+  transition: 0.5s;
 }
 
 .header-text__presentation:hover {
   color: #FB5352;
+  
+}
+
+.header-text__presentation:hover:after {
+  border-bottom: 1px solid #FB5352;
+  
 }
 /* /desktop-header */
 
@@ -926,10 +940,11 @@ img {
 /* Блок /"наши достижения"  */
 
 
-/* Блок "Топ туров" */
+
 .title-sections {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 49px;
 }
 
@@ -954,15 +969,17 @@ img {
 
 
 
-
+/* Блок "Топ туров" */
 .tours {
-  margin-bottom: 1000px;
+  margin-bottom: 10000px;
 }
 
 .tours__item {
-  
- 
-  
+  width: 352px;
+  height: 420px;
+  display: block;
+  position: relative;
+  text-decoration: none;
 }
 
 .tours__item-img {
@@ -978,7 +995,65 @@ img {
 .tours__img-bg {
   position: absolute;
   z-index: -1;
-  width: 33%;
+}
+
+.tours__item-geo {
+  display: flex;
+  align-items: center;
+}
+
+.tours__item-geo-img {
+  margin-right: 4px;
+}
+
+.tours__item-geo-span {
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tours__item-h3 {
+  font-family: Roboto Slab;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.tours__item-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tours__item-parameter {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 15px;
+}
+
+.tours__item-parameter:last-child {
+  margin-right: 0;
+}
+
+.tours__item-parameters {
+  display: flex;
+}
+
+.tours__item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.tours__item-title {
+  display: flex;
 }
 /* Блок /"Топ туров" */
 
