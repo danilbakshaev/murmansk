@@ -795,7 +795,7 @@ img {
 }
 
 .header-text__wrap {
-  width: 737px;
+  width: 53%;
 }
 
 .header-text__title {
@@ -916,12 +916,14 @@ img {
   display: flex;
   justify-content: space-between;
   margin-right: -32px;
+  margin-bottom: -32px;
 }
 
 .achievements__item {
   display: flex;
   align-items: center;
   margin-right: 32px;
+  margin-bottom: 32px;
 }
 
 .achievements__img {
@@ -971,20 +973,34 @@ img {
 
 /* Блок "Топ туров" */
 .tours {
-  margin-bottom: 10000px;
+  margin-bottom: 96px;
+}
+
+.tours__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -19px;
+  margin-bottom: -32px;
 }
 
 .tours__item {
   width: 352px;
-  height: 420px;
-  display: block;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   position: relative;
   text-decoration: none;
+  /* padding: 24px; */
+  margin-right: 19px;
+  margin-bottom: 32px;
 }
 
 .tours__item-img {
   width: 14px;
   height: 14px;
+  margin-right: 5px;
 }
 
 .tours__item-geo-img {
@@ -995,6 +1011,10 @@ img {
 .tours__img-bg {
   position: absolute;
   z-index: -1;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  border-radius: 12px;
 }
 
 .tours__item-geo {
@@ -1020,6 +1040,7 @@ img {
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
+  margin: 15px 0;
 }
 
 .tours__item-description {
@@ -1043,6 +1064,7 @@ img {
 
 .tours__item-parameters {
   display: flex;
+  justify-content: center;
 }
 
 .tours__item-text {
@@ -1050,12 +1072,39 @@ img {
   font-size: 14px;
   line-height: 21px;
   color: #FFFFFF;
+  margin-right: 8px;
+}
+
+.tours__item-text:last-child {
+  margin-right: 0;
 }
 
 .tours__item-title {
   display: flex;
+  margin-bottom: 7px;
 }
 /* Блок /"Топ туров" */
+
+.btn-link {
+  width: 256px;
+  height: 48px;
+  background-color: #FB5352;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 48px;
+  transition: 0.5s;
+}
+
+.btn-link:hover {
+  opacity: 0.8;
+}
 
 
 
