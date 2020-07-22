@@ -466,6 +466,47 @@ img {
   .container {
     max-width: 960px;
   }
+
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block!important;
+  }
+
+  .mobile-header__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 21px;
+  }
+
+  .mobile-header__logo {
+    width: 148px;
+    height: 28px;
+  }
+
+  .mobile-header__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .mobile-header__button:hover {
+    opacity: 0.5;
+  }
+
+  .logo-company__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-text {
+    margin-top: 48px!important;
+  }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -486,6 +527,12 @@ img {
     margin: 0 15px;
   }
 }
+
+/* mobile-header */
+.mobile-header {
+  display: none;
+}
+/* /mobile-header */
 
 /* desktop-header */
 .background-image {
@@ -785,9 +832,9 @@ img {
   margin-left: 4px;
 }
 
-.mobile-header {
+/* .mobile-header {
   display: none;
-}
+} */
 
 .header-text {
   padding-bottom: 205px;
