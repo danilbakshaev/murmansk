@@ -462,7 +462,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1080px) {
+/* @media screen and (max-width: 1080px) {
   .container {
     max-width: 960px;
   }
@@ -507,7 +507,7 @@ img {
     margin-top: 48px!important;
   }
 
-}
+} */
 
 @media screen and (max-width: 992px) {
   .container {
@@ -528,13 +528,15 @@ img {
   }
 }
 
-/* mobile-header */
+
+/* desktop-header */
+
+
 .mobile-header {
   display: none;
 }
-/* /mobile-header */
 
-/* desktop-header */
+
 .background-image {
   background-repeat: no-repeat;
   background-position: center;
@@ -832,10 +834,6 @@ img {
   margin-left: 4px;
 }
 
-/* .mobile-header {
-  display: none;
-} */
-
 .header-text {
   padding-bottom: 205px;
   margin-top: 85px;
@@ -876,7 +874,7 @@ img {
 }
 
 .callback-form--wrap {
-  width: 460px;
+  width: 73%;
 }
 
 .callback-form__input {
@@ -949,7 +947,53 @@ img {
 
 .header-text__presentation:hover:after {
   border-bottom: 1px solid #FB5352;
-  
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  .mobile-header__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 21px;
+  }
+
+  .mobile-header__logo {
+    width: 148px;
+    height: 28px;
+  }
+
+  .mobile-header__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .mobile-header__button:hover {
+    opacity: 0.5;
+  }
+
+  .logo-company__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-text {
+    margin-top: 48px;
+  }
+
 }
 /* /desktop-header */
 
@@ -1032,14 +1076,15 @@ img {
 }
 
 .tours__item {
-  width: 352px;
+  width: calc(32% - 19px - 32px);
   min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
   text-decoration: none;
-  /* padding: 24px; */
+  padding: 24px;
+  overflow: hidden;
   margin-right: 19px;
   margin-bottom: 32px;
 }
@@ -1057,8 +1102,8 @@ img {
 
 .tours__img-bg {
   position: absolute;
-  z-index: -1;
   overflow: hidden;
+  z-index: -1;
   top: 0;
   right: 0;
   border-radius: 12px;
@@ -1095,6 +1140,7 @@ img {
   font-size: 14px;
   line-height: 21px;
   color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
 }
 
 .tours__item-parameter {
@@ -1111,7 +1157,6 @@ img {
 
 .tours__item-parameters {
   display: flex;
-  justify-content: center;
 }
 
 .tours__item-text {
