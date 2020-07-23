@@ -1,111 +1,962 @@
 <!DOCTYPE html>
-<html lang="ru"> 
+<html lang="ru">
+
 <head>
 	<meta charset="utf-8">
 	<title>Заголовок</title>
 	<meta name="description" content="">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-	<header>
-		<div class="container">
-
-			<div class="block-header">
-				<img src="img/Location.svg" alt="Location">
-				<span>Москва</span>
-				<img src="img/Arrow.svg" alt="Arrow">
-
-				<li>отзывы</li>
-				<li>о компании</li>
-				<li>контакты</li>
-				<li>оплата и бронирование</li>
-				<li>турагенствам</li>
-				<li>еще
-					<img src="img/Arrow.svg" alt="Arrow">
-				</li>
-
-				<img src="img/Language.svg" alt="Language">
-				<span>Русский</span>
-				<img src="img/Arrow.svg" alt="Arrow">
+	<header class="background-image" style="background-image: url(/img/bg.jpg)">
+		<div class="desktop-header">
+			<div class="desktop-header__top">
+				<div class="container desktop-header__line">
+					<button class="select-location">
+						<img class="select-location__geo" src="/img/location.svg" alt="Знак геолокации">
+						<span class="select-location__text">Москва</span>
+						<img class="select-location__arrow" src="/img/arrow.svg" alt="Стрелка вниз">
+					</button>
+					<nav class="desktop-header__top-items">
+						<a href="#" class="desktop-header__top-item">Отзывы</a>
+						<a href="#" class="desktop-header__top-item">О компании</a>
+						<a href="#" class="desktop-header__top-item">Контакты</a>
+						<a href="#" class="desktop-header__top-item">Оплата и бронирование</a>
+						<a href="#" class="desktop-header__top-item">Турагенствам</a>
+						<a href="#" class="desktop-header__top-item">Еще
+							<img class="desktop-header__arrow" src="/img/arrow.svg" alt="Кнопка выбора города">
+						</a>
+					</nav>
+					<button class="select-lang">
+						<img class="select-lang__flag" src="/img/language.svg" alt="Флаг">
+						<span class="select-lang__text">Русский</span>
+						<img class="select-lang__arrows" src="/img/arrow.svg" alt="Стрелка вниз">
+					</button>
+				</div>
 			</div>
-
-			<div class="block1">
-				<div class="item--content">
-					<img src="img/Snow.svg" alt="Snow">
-					<span>north for you</span>
-					<span>север для вас</span>
-				</div>
-				<div class="item--content2">
-					<span>Туроператор в Мурманске "Север для вас"</span>
-					<span>Номер в реестре Ростуризма РТО 021550</span>
-				</div>
-				<div class="item--content3">
-					<span>WhatsApp, Facebook, Telegram</span>
-					<div>
-						<a href="tel:+79995215100">+7 (999) 521-51-00</a>
-						<img src="img/WhatsApp.svg" alt="Facebook">
-						<img src="img/Facebook.svg" alt="WhatsApp">
-						<img src="img/Telegram.svg" alt="Telegram">
+			<div class="desktop-header__bottom">
+				<div class="container">
+					<div class="desktop-header__line-top">
+						<div class="desktop-header__logo-wrapper">
+							<div class="logo-company">
+								<a class="logo-company__link" href="#"><img class="logo-company__logo" src="/img/logo.svg"
+									alt="Логотип компании NORTH FOR YOU"></a>
+							</div>
+							<div class="desktop-header__info">
+								<p class="desktop-header__info-text">Туроператор в Мурманске "Север для вас"</p>
+								<p class="desktop-header__info-text">Номер в реестре Ростуризма РТО 021550</p>
+							</div>
+						</div>
+						<div class="contacts">
+							<p class="contacts__socials-text">WhatsApp, Facebook, Telegram</p>
+							<div class="contacts__wrap-links">
+								<a class="contacts__phone" href="tel:+79995215100">+7 (999) 521-51-00</a>
+								<a class="contacts__social" href="#"><img src="/img/whatsapp.svg"
+										alt="Ссылка whatsapp"></a>
+								<a class="contacts__social" href="#"><img src="/img/facebook.svg"
+										alt="Ссылка facebook"></a>
+								<a class="contacts__social" href="#"><img src="/img/telegram.svg"
+										alt="Ссылка telegram"></a>
+							</div>
+							<button class="contacts__callback">Заказать звонок</button>
+						</div>
+						<div class="contacts__request">
+							<p class="contacts__request-text">Для заявок и вопросов</p>
+							<a class="contacts__request-mail" href="mailto:info@north4you.com">info@north4you.com</a>
+						</div>
+					</div>
+					<div class="desktop-header__line-bottom">
+						<div class="desktop-header__tours">
+							<a class="desktop-header__tour" href="#">Северное сияние</a>
+							<a class="desktop-header__tour" href="#">Териберка</a>
+							<a class="desktop-header__tour" href="#">Топ-10 однодневних туров <img class="desktop-header__tours-img" src="/img/arrow.svg"
+									alt="Стрелка вниз"> </a>
+							<a class="desktop-header__tour" href="#">Готовые пакетные туры <img class="desktop-header__tours-img" src="/img/arrow.svg"
+									alt="Стрелка вниз"> </a>
+						</div>
 					</div>
 				</div>
-				<a href="#">заказать звонок</a>
 			</div>
+		</div>
 
-			<div class="block2">
-				<span>Для заявок и вопросов</span>
-				<a href="mailto:info@north4you.com">info@north4you.com</a>
-			</div>
-
-			<div class="block3">
-
-				<div class="content">
-					<li>СЕВЕРНОЕ СИЯНИЕ</li>
-					<li>ТЕРИБЕРКА</li>
-					<li>ТОР-10 ОДНОДНЕВНИХ ТУРОВ <img src="img/Arrow.svg" alt="Arrow"> </li>
-					<li>ГОТОВЫЕ ПАКЕТНЫЕ ТУРЫ <img src="img/Arrow.svg" alt="Arrow"> </li>
-				</div>
-
-				<div class="content2">
-					<img src="img/Sun.svg" alt="Sun">
-					<span>09 мая 2020</span>
-					<span>Ясно, активность 3</span>
-				</div>
-				<div class="content3">
-					<img src="img/Rectangle.svg" alt="Rectangle">
+		<!-- mobile-header -->
+		<div class="mobile-header">
+			<div class="container">
+				<div class="mobile-header__top">
+					<div class="logo-company">
+						<a class="logo-company__link" href="#"><img class="logo-company__logo" src="/img/logo.svg" alt="Логотип компании NORTH FOR YOU"></a>
+					</div>
+					<button class="mobile-header__button">
+						<img class="mobile-header__burger-img" src="/img/button_burger.svg" alt="Кнопка меню">
+					</button>
 				</div>
 			</div>
+		</div>
+		<!-- /mobile-header -->
 
-			<div class="block4">
-				<span>Насладитесь красотой русского севера в турах от "Север для Вас"</span>
-				<span>
-					Более 30 индивидуальный и групповых туров по Мурманской области. 
-					Оставьте заявку для подбора индивидуальной программы под ваши даты и бюджет.
-				</span>
-				<form action="">
-					<input type="password" placeholder="Введите ваш номер">
-					<button>Отправить</button>
-				</form>
-				<span>
-					Нажав на кнопку «Отправить», вы даете согласие на обработку персональных данных и согласен с политикой конфиденциальности.
-				</span>
-				<div>
-					<a href="#">Скачать презентацию — «Куда сходить в Мурманске туристу» (PDF, 3 Мб)</a>
+
+		
+		<div class="header-text">
+			<div class="container">
+				<div class="header-text__wrap">
+					<h1 class="header-text__title">Насладитесь красотой русского севера в турах от
+						«Север для Вас»</h1>
+					<p class="header-text__subtitle">Более 30 индивидуальных и групповых туров по
+						Мурманской области.
+					</p>
+					<p class="header-text__subtitle">
+						Оставьте заявку для подбора индивидуальной программы под ваши даты и бюджет.
+					</p>
+					<form class="callback-form callback-form--wrap" action="">
+						<div class="callback-form__wrap">
+							<input class="callback-form__input" type="tel" placeholder="Введите ваш номер">
+							<button class="callback-form__submit" type="submit">Отправить</button>
+						</div>
+						<p class="callback-form__privacy">Нажав на кнопку «Отправить», вы даете согласие на
+							обработку <a class="callback-form__privacy-link" href="#">персональных данных</a> и
+							согласен с <a class="callback-form__privacy-link" href="#">политикой
+								конфиденциальности.</a></p>
+					</form>
+					<a class="header-text__presentation" href="#">Скачать презентацию — «Куда сходить в Мурманске
+						туристу» (PDF, 3 Мб)</a>
 				</div>
 			</div>
-
 		</div>
 	</header>
 
 
-	<main></main>
-	<footer></footer>
+	<main>
 
-	<h3>Проверка вызова модального окна</h3>
+		<!-- Блок "наши достижения" -->
+		<section class="achievements">
+			<div class="container">
+				<div class="achievements__items">
+					<div class="achievements__item">
+						<img class="achievements__img" src="/img/gerb.svg" alt="Герб РФ">
+						<p class="achievements__description">Официальный туроператор РТО 021550</p>
+					</div>
+					<div class="achievements__item">
+						<img class="achievements__img" src="/img/tourists.svg" alt="Локация">
+						<p class="achievements__description">Приняли более 3400 туристов из 28 стран</p>
+					</div>
+					<div class="achievements__item">
+						<img class="achievements__img" src="/img/northern_lights.svg" alt="Северное сияние">
+						<p class="achievements__description">92% наших туристов увидели северное сияние</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Блок "наши достижения" -->
+
+
+		<!-- Блок "Топ туров" -->
+		<section class="tours">
+			<div class="container">
+				<div class="title-sections">
+					<h2 class="title-sections__title">Топ однодневных туров: выбор туристов</h2>
+					<p class="title-sections__description">
+						Природа Кольского полуострова неповторима: северное сияние, бескрайние тундры, Баренцево и Белое
+						моря... Познакомьтесь
+						с Арктикой вместе с опытными гидами
+					</p>
+				</div>
+				<div class="tours__items">
+					<a href="#" class="tours__item">
+						<img class="tours__img-bg" src="/img/item_tour.jpg" alt="Северное сияние">
+						<div class="tours__item-geo">
+							<img class="tours__item-geo-img" src="/img/geo.svg" alt="Геолокация">
+							<span class="tours__item-geo-span">Териберка</span>
+						</div>
+						<h3 class="tours__item-h3">Тур на северное сияние</h3>
+						<p class="tours__item-description">Если вы не увидите северное сияние,
+							мы сделаем вас скидку до 50%!.
+						</p>
+						<div class="tours__item-parameters">
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">сезон</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/spring.svg" alt="Весна">
+									Весна
+								</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/fall.svg" alt="Осень">
+									Осень
+								</span>
+							</div>
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">Длительность</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/clock.svg" alt="часы">
+									5 дней
+								</span>
+							</div>
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">Цена за чел.</span>
+								<span class="tours__item-text">6000 ₽</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="tours__item">
+						<img class="tours__img-bg" src="/img/item_tour.jpg" alt="Северное сияние">
+						<div class="tours__item-geo">
+							<img class="tours__item-geo-img" src="/img/geo.svg" alt="Геолокация">
+							<span class="tours__item-geo-span">Териберка</span>
+						</div>
+						<h3 class="tours__item-h3">Тур на северное сияние</h3>
+						<p class="tours__item-description">Если вы не увидите северное сияние,
+							мы сделаем вас скидку до 50%!.
+						</p>
+						<div class="tours__item-parameters">
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">сезон</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/spring.svg" alt="Весна">
+									Весна
+								</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/fall.svg" alt="Осень">
+									Осень
+								</span>
+							</div>
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">Длительность</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/clock.svg" alt="часы">
+									5 дней
+								</span>
+							</div>
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">Цена за чел.</span>
+								<span class="tours__item-text">6000 ₽</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="tours__item">
+						<img class="tours__img-bg" src="/img/item_tour.jpg" alt="Северное сияние">
+						<div class="tours__item-geo">
+							<img class="tours__item-geo-img" src="/img/geo.svg" alt="Геолокация">
+							<span class="tours__item-geo-span">Териберка</span>
+						</div>
+						<h3 class="tours__item-h3">Тур на северное сияние</h3>
+						<p class="tours__item-description">Если вы не увидите северное сияние,
+							мы сделаем вас скидку до 50%!.
+						</p>
+						<div class="tours__item-parameters">
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">сезон</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/spring.svg" alt="Весна">
+									Весна
+								</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/fall.svg" alt="Осень">
+									Осень
+								</span>
+							</div>
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">Длительность</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/clock.svg" alt="часы">
+									5 дней
+								</span>
+							</div>
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">Цена за чел.</span>
+								<span class="tours__item-text">6000 ₽</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="tours__item">
+						<img class="tours__img-bg" src="/img/item_tour.jpg" alt="Северное сияние">
+						<div class="tours__item-geo">
+							<img class="tours__item-geo-img" src="/img/geo.svg" alt="Геолокация">
+							<span class="tours__item-geo-span">Териберка</span>
+						</div>
+						<h3 class="tours__item-h3">Тур на северное сияние</h3>
+						<p class="tours__item-description">Если вы не увидите северное сияние,
+							мы сделаем вас скидку до 50%!.
+						</p>
+						<div class="tours__item-parameters">
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">сезон</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/spring.svg" alt="Весна">
+									Весна
+								</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/fall.svg" alt="Осень">
+									Осень
+								</span>
+							</div>
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">Длительность</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/clock.svg" alt="часы">
+									5 дней
+								</span>
+							</div>
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">Цена за чел.</span>
+								<span class="tours__item-text">6000 ₽</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="tours__item">
+						<img class="tours__img-bg" src="/img/item_tour.jpg" alt="Северное сияние">
+						<div class="tours__item-geo">
+							<img class="tours__item-geo-img" src="/img/geo.svg" alt="Геолокация">
+							<span class="tours__item-geo-span">Териберка</span>
+						</div>
+						<h3 class="tours__item-h3">Тур на северное сияние</h3>
+						<p class="tours__item-description">Если вы не увидите северное сияние,
+							мы сделаем вас скидку до 50%!.
+						</p>
+						<div class="tours__item-parameters">
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">сезон</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/spring.svg" alt="Весна">
+									Весна
+								</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/fall.svg" alt="Осень">
+									Осень
+								</span>
+							</div>
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">Длительность</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/clock.svg" alt="часы">
+									5 дней
+								</span>
+							</div>
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">Цена за чел.</span>
+								<span class="tours__item-text">6000 ₽</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="tours__item">
+						<img class="tours__img-bg" src="/img/item_tour.jpg" alt="Северное сияние">
+						<div class="tours__item-geo">
+							<img class="tours__item-geo-img" src="/img/geo.svg" alt="Геолокация">
+							<span class="tours__item-geo-span">Териберка</span>
+						</div>
+						<h3 class="tours__item-h3">Тур на северное сияние</h3>
+						<p class="tours__item-description">Если вы не увидите северное сияние,
+							мы сделаем вас скидку до 50%!.
+						</p>
+						<div class="tours__item-parameters">
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">сезон</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/spring.svg" alt="Весна">
+									Весна
+								</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/fall.svg" alt="Осень">
+									Осень
+								</span>
+							</div>
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">Длительность</span>
+								<span class="tours__item-text">
+									<img class="tours__item-img" src="/img/clock.svg" alt="часы">
+									5 дней
+								</span>
+							</div>
+							<div class="tours__item-parameter">
+								<span class="tours__item-title">Цена за чел.</span>
+								<span class="tours__item-text">6000 ₽</span>
+							</div>
+						</div>
+					</a>
+					
+					<a class="btn-link" href="#">Смотреть все туры</a>
+				</div>
+		</section>
+		<!-- /Блок "Топ туров" -->
+
+		<!-- Блок "Популярные направления" -->
+		<!-- <section class="popular-destinations">
+			<div class="container">
+				<div class="title-sections">
+					<h2 class="title-sections__title">Популярные направления</h2>
+					<p class="title-sections__description">
+						Познакомьтесь с саамами, прокатитесь на упряжке с хаски или устройте заезд на снегоходах.
+						Разнообразие отдыха на Кольском полуострове не оставит никого равнодушным.
+					</p>
+				</div>
+				<div class="popular-destinations__items">
+					<div class="popular-destinations__item">
+						<h3 class="popular-destinations__title">Туры на северное сияние</h3>
+						<img class="popular-destinations__img " src="/img/tours_to_the_northern_lights.jpg"
+							alt="Северное сияние">
+					</div>
+				</div>
+				<a class="simple-link" href="#">
+					Все туры по Кольскому полуострову
+					<img class="simple-link__img" src="/img/circle.svg" alt="Круг со стрелкой">
+				</a>
+			</div>
+		</section> -->
+		<!-- /Блок "Популярные направления" -->
+
+		<!-- Гостиницы и отели Мурманска -->
+		<!-- <section class="recreation">
+			<div class="container">
+				<div class="recreation__items">
+					<div class="recreation__item">
+						<div class="recreation__item-text recreation__item--left">
+							<h2 class="recreation__item-title">
+								Гостиницы и отели Мурманска
+							</h2>
+							<p class="recreation__item-description">
+								Все туры компании “Север для вас” начинаются
+								из Мурманска. Здесь вы можете найти вариант
+								для проживания на любой вкус и бюджет.
+							</p>
+							<p class="recreation__item-description">
+								Для ценителей комфорта мы пред лагаем такие варианты как: Azimut, Park Inn, Meridian и
+								другие
+								варианты
+							</p>
+							<a class="btn-link" href="#">Смотреть отели</a>
+						</div>
+						<div class="recreation__item-photo">
+							<img class="recreation__img" src="/img/hotel.jpg" alt="Отель">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!-- /Гостиницы и отели Мурманска -->
+
+		<!-- Только реальные отзывы туристов -->
+		<!-- <section class="reviews">
+			<div class="container">
+				<div class="title-sections">
+					<h2 class="title-sections__title">Только реальные отзывы туристов</h2>
+					<p class="title-sections__description">
+						На нашем сайте вы найдете десятки позитивных отзывов
+						туристов о наших турах и экскурсиях.
+					</p>
+				</div>
+				<div class="reviews__items">
+					<div class="reviews__item">
+						<img class="reviews__img" src="/img/review.jpg" alt="Отзывы">
+						<div class="reviews__contacts">
+							<img class="reviews__item-img" src="/img/avatar.jpg" alt="Александр Маслов">
+							<div class="reviews__contact">
+								<span class="reviews__name">Александр Маслов</span>
+								<a class="reviews__link" href="#">
+									<img class="reviews__vk" src="/img/vk.svg" alt="Логотип сайта Вконтакте">
+									vk.com/id1
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="simple-link" href="#">
+					Смотреть все отзывы
+					<img class="simple-link__img" src="/img/circle.svg" alt="Круг со стрелкой">
+				</a>
+			</div>
+		</section> -->
+		<!-- /Только реальные отзывы туристов -->
+
+		<!-- Видео из некоторых туров «Север для Вас» -->
+		<!-- <section class="video-tours">
+			<div class="container">
+				<div class="title-sections">
+					<h2 class="title-sections__title">Видео из некоторых туров «Север для Вас»</h2>
+					<p class="title-sections__description">
+						Посмотрите наши видео, чтобы еще глубже погрузиться
+						в атмосферу Кольского полуострова
+					</p>
+				</div>
+				<div class="video-tours__items">
+					<div class="video-tours__items-left">
+						<div class="video-tours__item">
+							<img class="video-tours__bg" src="/img/tour_shine_bg.jpg" alt="Северное сияние">
+							<button class="video-tours__play">
+								<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+							</button>
+							<h3 class="video-tours__title">Тур на северное сияние</h3>
+						</div>
+					</div>
+					<div class="video-tours__items-right">
+						<div class="video-tours__item video-tours__item--small">
+							<img class="video-tours__bg" src="/img/bg_item_right_1.jpg" alt="Побережье океана">
+							<button class="video-tours__play">
+								<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+							</button>
+							<h3 class="video-tours__title">Тур в Териберку, на побережье океана</h3>
+						</div>
+
+						<div class="video-tours__item video-tours__item--small">
+							<img class="video-tours__bg" src="/img/bg_item_right_2.jpg" alt="Саамская деревня">
+							<button class="video-tours__play">
+								<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+							</button>
+							<h3 class="video-tours__title">Тур в саамскую деревню</h3>
+						</div>
+
+						<div class="video-tours__item video-tours__item--small">
+							<img class="video-tours__bg" src="/img/bg_item_right_3.jpg" alt="Хаски ферма">
+							<button class="video-tours__play">
+								<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+							</button>
+							<h3 class="video-tours__title">Тур на хаски ферму</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!-- /Видео из некоторых туров «Север для Вас» -->
+
+		<!-- акции -->
+		<!-- <section class="stocks">
+			<div class="container">
+				<h2 class="stocks__h2"><a class="stocks__link" href="#">Акции</a></h2>
+				<a class="stocks__link" href="#">Новости</a>
+				<a class="stocks__link" href="#">Статьи</a>
+				<div class="stocks__items">
+					<div class="stocks__item">
+						<img class="stocks__bg" src="/img/stocks_bg_1.jpg" alt="Машина на фоне северного сияния">
+						<div class="stocks__text">
+							<h3 class="stocks__title">Акция с 10 по 31 марта! Закрытие сезона!</h3>
+							<span class="stocks__date">11 декабря 2019</span>
+						</div>
+					</div>
+				</div>
+				<a class="simple-link" href="#">
+					Смотреть все акции
+					<img class="simple-link__img" src="/img/circle.svg" alt="Круг со стрелкой">
+				</a>
+			</div>
+		</section> -->
+		<!-- /акции -->
+
+		<!-- Ответы на часто задаваемые вопросы -->
+		<!-- <section class="faq">
+			<div class="container">
+				<div class="title-sections">
+					<h2 class="title-sections__title">Ответы на часто задаваемые вопросы</h2>
+					<p class="title-sections__description">
+						Мы берем ответственность за наших туристов и снабжаем всей необходимой информацией, чтобы вы
+						были готовы на 100%
+					</p>
+				</div>
+				<div class="faq__content">
+					<div class="faq__content-left">
+						<div class="faq__items">
+							<div class="faq__item">
+								<div class="faq__spoiler">
+									<h3 class="faq__title">Почему вы рекомендуете пребывать
+										в Мурманске в течение 3 вечеров?</h3>
+									<img class="faq__img" src="/img/expand_button.svg" alt="Развернуть">
+								</div>
+								<div class="faq__cut">
+									<p class="faq__description">
+										Всё дело в облачности. Это ключевой фактор успеха в туре
+										на Северное сияние. Даже если солнечная активность будет высокой, но небо будет
+										закрыто облаками, то сияние будет очень сложно увидеть. Как правило, 90% наших
+										туристов,
+										кто пребывает в Мурманске в течение 3-х ночей и более, застают безоблачную
+										погоду!
+									</p>
+								</div>
+							</div>
+						</div>
+						<a class="simple-link" href="#">
+							Смотреть все вопросы
+							<img class="simple-link__img" src="/img/circle.svg" alt="Круг со стрелкой">
+						</a>
+					</div>
+					<div class="faq__content-right">
+						<img class="faq__right-img" src="/img/shine_in_the_forest.jpg" alt="Северное сияние в лесу">
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!-- /Ответы на часто задаваемые вопросы -->
+
+		<!-- Рассчитать стоимость поездки -->
+		<!-- <section class="travel-price">
+			<div class="container container--travel">
+				<h2 class="travel-price__title">Давайте вместе составим программу и рассчитаем стоимость Вашей поездки в
+					Мурманск</h2>
+				<form class="callback-form" action="">
+					<input class="callback-form__input" type="tel" placeholder="Введите ваш номер">
+					<button class="callback-form__submit" type="submit">Отправить</button>
+					<p class="callback-form__privacy">Нажав на кнопку «Отправить», вы даете согласие на
+						обработку <a class="callback-form__privacy-link" href="#">персональных данных</a> и
+						согласен с <a class="callback-form__privacy-link" href="#">политикой конфиденциальности.</a></p>
+				</form>
+				<a class="travel-price__presentation" href="#">Скачать презентацию — «Куда сходить в Мурманске
+					туристу»</a>
+			</div>
+		</section> -->
+		<!-- Рассчитать стоимость поездки -->
+
+
+		<!-- Карта туров по Мурманской области -->
+		<!-- <section class="tours-map">
+			<div class="container">
+				<div class="title-sections">
+					<h2 class="title-sections__title">Карта туров по Мурманской области</h2>
+				</div>
+				<div class="tours-map__left">
+					<img class="tours-map__left-img" src="/img/map.jpg" alt="Карта">
+				</div>
+				<div class="tours-map__right">
+					<img class="tours-map__right-img" src="/img/coast.jpg" alt="побережье">
+					<h3 class="tours-map__title">Поселок Териберка</h3>
+					<span class="tours-map__geo">
+						<img class="tours-map__geo-img" src="/img/geo_red.svg" alt="Геолокация">
+						69.164588, 35.142274
+					</span>
+					<p class="tours-map__description">
+						Легендарное место, куда стремятся попасть более 90% туристов, посещающих Мурманскую область.
+						Расстояние
+						от Мурманска до Териберки 120 километров.
+						В зимний период к побережью добираются
+						на снегоходах, а летом на джипах или пешком.
+					</p>
+					<a class="btn-link" href="#">Смотреть все туры в Териберку</a>
+				</div>
+			</div>
+		</section> -->
+		<!-- Карта туров по Мурманской области -->
+
+		<!-- Мы в instagram -->
+		<!-- <section class="subscribe-instagram">
+			<div class="container">
+				<div class="subscribe-instagram__communication">
+					<h2 class="subscribe-instagram__title">Мы в instagram<a class="subscribe-instagram__url"
+							href="#">@northernlightstour</a>/h2>
+				</div>
+			</div>
+			<div class="container container--inst">
+				<div class="subscribe-instagram__items">
+					<div class="subscribe-instagram__item">
+						<div class="subscribe-instagram__left">
+							<img class="subscribe-instagram__left-img"
+								src="/img/people_on_aurora_borealis_background.jpg" alt="Люди и северное сияние">
+						</div>
+						<div class="subscribe-instagram__right">
+							<img class="subscribe-instagram__right-img subscribe-instagram__right-img--small"
+								src="/img/lachuga.jpg" alt="Дом и северное сияние">
+							<img class="subscribe-instagram__right-img subscribe-instagram__right-img--small"
+								src="/img/northern_sky.jpg" alt="Северное сияние">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<p class="subscribe-instagram__description">Сотни фотографий северного сияния и Кольского полуострова
+					собраны в нашем Instagram</p>
+				<a class="subscribe-instagram__link" href="#">
+					<img class="subscribe-instagram__img" src="/img/instagram.svg" alt="Инстаграм">
+					Подписаться
+				</a>
+			</div>
+		</section> -->
+		<!-- /Мы в instagram -->
+	</main>
+
+
+
+	<!-- <footer>
+		<div class="desktop-footer">
+			<div class="container">
+				<div class="desktop-footer__top">
+					<div class="desktop-footer__company">
+						<img class="desktop-footer__logo" src="/img/logo.svg" alt="Логотип компании NORTH FOR YOU">
+						<p class="desktop-footer__info-text">Туроператор в Мурманске "Север для вас"</p>
+						<p class="desktop-footer__info-text">Номер в реестре Ростуризма РТО 021550</p>
+					</div>
+
+
+				
+					<div class="contacts">
+						<div class="contacts__wrap-links">
+							<p class="contacts__socials-text">WhatsApp, Facebook, Telegram</p>
+							<a class="contacts__phone" href="tel:+79995215100">+7 (999) 521-51-00</a>
+							<a class="contacts__social" href="#"><img src="/img/whatsapp.svg" alt="Ссылка whatsapp"></a>
+							<a class="contacts__social" href="#"><img src="/img/facebook.svg" alt="Ссылка facebook"></a>
+							<a class="contacts__social" href="#"><img src="/img/telegram.svg" alt="Ссылка telegram"></a>
+						</div>
+						<div class="contacts__request">
+							<p class="contacts__request-text">Для заявок и вопросов</p>
+							<a class="contacts__request-mail" href="mailto:info@north4you.com">info@north4you.com</a>
+						</div>
+					</div>
+
+					<div class="callback">
+						<p class="callback__description">Москва и МО</p>
+						<a class="callback__phone" href="tel:+78005555500">+7 (800) 555-55-00</a>
+						<button class="callback__call">Заказать звонок</button>
+					</div>
+
+					
+					<div class="socials">
+						<a class="socials__link" href="#"><img class="socials__img" src="/img/vk_icon.svg"
+								alt="Вконтакте"></a>
+						<a class="socials__link" href="#"><img class="socials__img" src="/img/facebook_icon.svg"
+								alt="Фейсбук"></a>
+						<a class="socials__link" href="#"><img class="socials__img" src="/img/instagram_icon.svg"
+								alt="Инстаграм"></a>
+						<a class="socials__link" href="#"><img class="socials__img" src="/img/youtube_icon.svg"
+								alt="Ютуб"></a>
+					</div>
+				</div>
+				<div class="desktop-footer__items">
+					<div class="desktop-footer__item">
+						<span class="desktop-footer__title">направления</span>
+						<a class="desktop-footer__link" href="">Мурманск</a>
+						<a class="desktop-footer__link" href="">Териберка</a>
+						<a class="desktop-footer__link" href="">Хабины</a>
+						<a class="desktop-footer__link" href="">Ловозеро</a>
+						<a class="desktop-footer__link" href="">Средний рыбачий</a>
+						<a class="desktop-footer__link" href="">Норвегия</a>
+					</div>
+					<div class="desktop-footer__item">
+						<span class="desktop-footer__title">Категории</span>
+						<a class="desktop-footer__link" href="">Северное сияние</a>
+						<a class="desktop-footer__link" href="">Снегоходы</a>
+						<a class="desktop-footer__link" href="">Квадроциклы</a>
+						<a class="desktop-footer__link" href="">Саамы и олени</a>
+						<a class="desktop-footer__link" href="">Хаски</a>
+						<a class="desktop-footer__link" href="">Обзорные экскурсии</a>
+						<a class="desktop-footer__link" href="">Дайвинг</a>
+						<a class="desktop-footer__link" href="">Рыбалка</a>
+						<a class="desktop-footer__link" href="">На катере</a>
+						<a class="desktop-footer__link" href="">Джип-туры</a>
+						<a class="desktop-footer__link" href="">Фото-туры</a>
+						<a class="desktop-footer__link" href="">Гастро-туры</a>
+					</div>
+					<div class="desktop-footer__item">
+						<span class="desktop-footer__title">Сезоны</span>
+						<a class="desktop-footer__link" href="">Зима</a>
+						<a class="desktop-footer__link" href="">Весна</a>
+						<a class="desktop-footer__link" href="">Лето</a>
+						<a class="desktop-footer__link" href="">Осень</a>
+						<a class="desktop-footer__link" href="">Новый год</a>
+						<a class="desktop-footer__link" href="">23 февраля</a>
+						<a class="desktop-footer__link" href="">8 марта</a>
+						<a class="desktop-footer__link" href="">Майские праздники</a>
+						<a class="desktop-footer__link" href="">Июньские праздники</a>
+						<a class="desktop-footer__link" href="">Осенние каникулы</a>
+						<a class="desktop-footer__link" href="">Ноябрьские праздники</a>
+					</div>
+					<div class="desktop-footer__item">
+						<span class="desktop-footer__title">Месяц</span>
+						<a class="desktop-footer__link" href="">Январь</a>
+						<a class="desktop-footer__link" href="">Февраль</a>
+						<a class="desktop-footer__link" href="">Март</a>
+						<a class="desktop-footer__link" href="">Апрель</a>
+						<a class="desktop-footer__link" href="">Май</a>
+						<a class="desktop-footer__link" href="">Июнь</a>
+						<a class="desktop-footer__link" href="">Июль</a>
+						<a class="desktop-footer__link" href="">Август</a>
+						<a class="desktop-footer__link" href="">Сентябрь</a>
+						<a class="desktop-footer__link" href="">Октябрь</a>
+						<a class="desktop-footer__link" href="">Ноябрь</a>
+						<a class="desktop-footer__link" href="">Декабрь</a>
+					</div>
+					<div class="desktop-footer__item">
+						<span class="desktop-footer__title">Услуги</span>
+						<a class="desktop-footer__link" href="#">Зимние туры в Мурманске 2020</a>
+						<a class="desktop-footer__link" href="#">Программа на 8 марта 2020</a>
+						<a class="desktop-footer__link" href="#">Пакетные многодневные туры</a>
+						<a class="desktop-footer__link" href="#">Туры на северное сияние</a>
+						<a class="desktop-footer__link" href="#">Туры в Териберку к океану</a>
+						<a class="desktop-footer__link" href="#">Туры с катанием на хаски</a>
+						<a class="desktop-footer__link" href="#">Туры в саамскую деревню</a>
+						<a class="desktop-footer__link" href="#">Туры в Хибинские горы, Кировск</a>
+						<a class="desktop-footer__link" href="#">Обзорные/исторические экскурсии</a>
+					</div>
+					<div class="desktop-footer__item">
+						<span class="desktop-footer__title">Туристам</span>
+						<a class="desktop-footer__link" href="#">Как добраться до Мурманска</a>
+						<a class="desktop-footer__link" href="#">Териберка</a>
+						<a class="desktop-footer__link" href="#">Ответы на частые вопросы</a>
+						<a class="desktop-footer__link" href="#">Лучшие рестораны Мурманска</a>
+						<a class="desktop-footer__link" href="#">Лучшие гостиницы Мурманска</a>
+						<a class="desktop-footer__link" href="#">Горнолыжные комплексы</a>
+						<a class="desktop-footer__link" href="#">Куда сходить в Мурманске</a>
+						<a class="desktop-footer__link" href="#">Блог</a>
+					</div>
+					<div class="desktop-footer__item">
+						<span class="desktop-footer__title">Кто мы</span>
+						<a class="desktop-footer__link" href="#">Мурманск</a>
+						<a class="desktop-footer__link" href="#">Териберка</a>
+						<a class="desktop-footer__link" href="#">Хабины</a>
+						<a class="desktop-footer__link" href="#">Ловозеро</a>
+						<a class="desktop-footer__link" href="#">Средний рыбачий</a>
+						<a class="desktop-footer__link" href="#">Норвегия</a>
+					</div>
+					<div class="info">
+						<span class="info__reserved">© 2020 Все права защищены.</span>
+						<div class="info__privacy">
+							<a class="info__link" href="#">Политика конфиденциальности</a>
+							<a class="info__link" href="#">Договор-оферта</a>
+						</div>
+						<img class="info__logo" src="/img/logo_arsurf.svg" alt="Логотип Arsurf">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mobile-footer">
+			<div class="container">
+				<div class="mobile-footer__feedback">
+					<div class="contacts">
+						<div class="contacts__links">
+							<a class="contacts__social" href="#"><img src="/img/whatsapp.svg" alt="Ссылка whatsapp"></a>
+							<a class="contacts__social" href="#"><img src="/img/facebook.svg" alt="Ссылка facebook"></a>
+							<a class="contacts__social" href="#"><img src="/img/telegram.svg" alt="Ссылка telegram"></a>
+						</div>
+						<a class="contacts__phone" href="tel:+79995215100">+7 (999) 521-51-00</a>
+						<button class="callback__callback">Заказать звонок</button>
+					</div>
+					<div class="contacts-back">
+						<p class="contacts-back__request-text">Для заявок и вопросов</p>
+						<a class="contacts-back__request-mail" href="mailto:info@north4you.com">info@north4you.com</a>
+					</div>
+				</div>
+				<div class="mobile-footer__items">
+					<div class="mobile-footer__item">
+						<span class="mobile-footer__title">направления<img class="mobile-footer__check"
+								src="/img/check_mark.svg" alt="Галочка"></span>
+						<a class="mobile-footer__link" href="">Мурманск</a>
+						<a class="mobile-footer__link" href="">Териберка</a>
+						<a class="mobile-footer__link" href="">Хабины</a>
+						<a class="mobile-footer__link" href="">Ловозеро</a>
+						<a class="mobile-footer__link" href="">Средний рыбачий</a>
+						<a class="mobile-footer__link" href="">Норвегия</a>
+					</div>
+					<div class="mobile-footer__item">
+						<span class="desktop-footer__title">Категории<img class="mobile-footer__check"
+								src="/img/check_mark_bottom.svg" alt="Галочка"></span>
+						<a class="mobile-footer__link" href="">Северное сияние</a>
+						<a class="mobile-footer__link" href="">Снегоходы</a>
+						<a class="mobile-footer__link" href="">Квадроциклы</a>
+						<a class="mobile-footer__link" href="">Саамы и олени</a>
+						<a class="mobile-footer__link" href="">Хаски</a>
+						<a class="mobile-footer__link" href="">Обзорные экскурсии</a>
+						<a class="mobile-footer__link" href="">Дайвинг</a>
+						<a class="mobile-footer__link" href="">Рыбалка</a>
+						<a class="mobile-footer__link" href="">На катере</a>
+						<a class="mobile-footer__link" href="">Джип-туры</a>
+						<a class="mobile-footer__link" href="">Фото-туры</a>
+						<a class="mobile-footer__link" href="">Гастро-туры</a>
+					</div>
+					<div class="mobile-footer__item">
+						<span class="mobile-footer__title">Сезоны<img class="mobile-footer__check"
+								src="/img/check_mark_bottom.svg" alt="Галочка"></span>
+						<a class="mobile-footer__link" href="">Зима</a>
+						<a class="mobile-footer__link" href="">Весна</a>
+						<a class="mobile-footer__link" href="">Лето</a>
+						<a class="mobile-footer__link" href="">Осень</a>
+						<a class="mobile-footer__link" href="">Новый год</a>
+						<a class="mobile-footer__link" href="">23 февраля</a>
+						<a class="mobile-footer__link" href="">8 марта</a>
+						<a class="mobile-footer__link" href="">Майские праздники</a>
+						<a class="mobile-footer__link" href="">Июньские праздники</a>
+						<a class="mobile-footer__link" href="">Осенние каникулы</a>
+						<a class="mobile-footer__link" href="">Ноябрьские праздники</a>
+					</div>
+					<div class="mobile-footer__item">
+						<span class="mobile-footer__title">Месяц<img class="mobile-footer__check"
+								src="/img/check_mark_bottom.svg" alt="Галочка"></span>
+						<a class="mobile-footer__link" href="">Январь</a>
+						<a class="mobile-footer__link" href="">Февраль</a>
+						<a class="mobile-footer__link" href="">Март</a>
+						<a class="mobile-footer__link" href="">Апрель</a>
+						<a class="mobile-footer__link" href="">Май</a>
+						<a class="mobile-footer__link" href="">Июнь</a>
+						<a class="mobile-footer__link" href="">Июль</a>
+						<a class="mobile-footer__link" href="">Август</a>
+						<a class="mobile-footer__link" href="">Сентябрь</a>
+						<a class="mobile-footer__link" href="">Октябрь</a>
+						<a class="mobile-footer__link" href="">Ноябрь</a>
+						<a class="mobile-footer__link" href="">Декабрь</a>
+					</div>
+					<div class="mobile-footer__item">
+						<span class="mobile-footer__title">Услуги<img class="mobile-footer__check"
+								src="/img/check_mark_bottom.svg" alt="Галочка"></span>
+						<a class="mobile-footer__link" href="#">Зимние туры в Мурманске 2020</a>
+						<a class="mobile-footer__link" href="#">Программа на 8 марта 2020</a>
+						<a class="mobile-footer__link" href="#">Пакетные многодневные туры</a>
+						<a class="mobile-footer__link" href="#">Туры на северное сияние</a>
+						<a class="mobile-footer__link" href="#">Туры в Териберку к океану</a>
+						<a class="mobile-footer__link" href="#">Туры с катанием на хаски</a>
+						<a class="mobile-footer__link" href="#">Туры в саамскую деревню</a>
+						<a class="mobile-footer__link" href="#">Туры в Хибинские горы, Кировск</a>
+						<a class="mobile-footer__link" href="#">Обзорные/исторические экскурсии</a>
+					</div>
+					<div class="mobile-footer__item">
+						<span class="mobile-footer__title">Туристам<img class="mobile-footer__check"
+								src="/img/check_mark_bottom.svg" alt="Галочка"></span>
+						<a class="mobile-footer__link" href="#">Как добраться до Мурманска</a>
+						<a class="mobile-footer__link" href="#">Териберка</a>
+						<a class="mobile-footer__link" href="#">Ответы на частые вопросы</a>
+						<a class="mobile-footer__link" href="#">Лучшие рестораны Мурманска</a>
+						<a class="mobile-footer__link" href="#">Лучшие гостиницы Мурманска</a>
+						<a class="mobile-footer__link" href="#">Горнолыжные комплексы</a>
+						<a class="mobile-footer__link" href="#">Куда сходить в Мурманске</a>
+						<a class="mobile-footer__link" href="#">Блог</a>
+					</div>
+					<div class="mobile-footer__item">
+						<span class="mobile-footer__title">Кто мы<img class="mobile-footer__check"
+								src="/img/check_mark_bottom.svg" alt="Галочка"></span>
+						<a class="mobile-footer__link" href="#">Мурманск</a>
+						<a class="mobile-footer__link" href="#">Териберка</a>
+						<a class="mobile-footer__link" href="#">Хабины</a>
+						<a class="mobile-footer__link" href="#">Ловозеро</a>
+						<a class="mobile-footer__link" href="#">Средний рыбачий</a>
+						<a class="mobile-footer__link" href="#">Норвегия</a>
+					</div>
+				</div>
+
+				
+				<div class="socials">
+					<a class="socials__link" href="#"><img class="socials__img" src="/img/vk_icon.svg"
+							alt="Вконтакте"></a>
+					<a class="socials__link" href="#"><img class="socials__img" src="/img/facebook_icon.svg"
+							alt="Фейсбук"></a>
+					<a class="socials__link" href="#"><img class="socials__img" src="/img/instagram_icon.svg"
+							alt="Инстаграм"></a>
+					<a class="socials__link" href="#"><img class="socials__img" src="/img/youtube_icon.svg"
+							alt="Ютуб"></a>
+				</div>
+
+
+				
+				<div class="info">
+					<span class="info__reserved">© 2020 Все права защищены.</span>
+					<div class="info__privacy">
+						<a class="info__link" href="#">Политика конфиденциальности</a>
+						<a class="info__link" href="#">Договор-оферта</a>
+					</div>
+					<img class="info__logo" src="/img/logo_arsurf.svg" alt="Логотип Arsurf">
+				</div>
+
+			</div>
+		</div>
+		</div>
+	</footer> -->
+
+	<!-- <h3>Проверка вызова модального окна</h3>
 	<button class="openCallback">Открыть callback</button>
 	<button class="openMenu">Открыть menu</button>
 	<br>
@@ -114,44 +965,77 @@
 	<form class="offer-form-modal" autocomplete="off">
 		<div>
 			<label for="name" class="">Ваше имя*</label>
-			<input name="name" id="name" type="text" class="" required >
+			<input name="name" id="name" type="text" class="" required>
 		</div>
 		<div>
 			<label for="tel" class="input-group__label">Телефон*</label>
 			<input name="tel" id="tel" type="tel" class="" required data-rule-required="true" data-rule-minlength="10">
 		</div>
 		<button class="" type="submit">Отправить</button>
-	</form>
+	</form> -->
 
 	<!-- Модальные окна -->
-	<div class="modal-wrapper hidden animation">
+	<!-- <div class="modal-wrapper hidden animation">
 		<div class="modal-wrapper__callback hidden animation">
 			<button class="modal-wrapper__close">
 				<svg width="25" height="25" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<line x1="26.713" y1="9.83421" x2="10.803" y2="25.7441" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
-					<line x1="26.5918" y1="25.7129" x2="11" y2="10.1212" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+					<line x1="26.713" y1="9.83421" x2="10.803" y2="25.7441" stroke="#C4C4C4" stroke-width="3"
+						stroke-linecap="round" stroke-linejoin="round"></line>
+					<line x1="26.5918" y1="25.7129" x2="11" y2="10.1212" stroke="#C4C4C4" stroke-width="3"
+						stroke-linecap="round" stroke-linejoin="round"></line>
 				</svg>
 			</button>
 			<div class="modal-wrapper__callback-body">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minus placeat sequi esse sed perspiciatis illum itaque at ipsa, eveniet excepturi! Atque, provident fuga nobis excepturi dignissimos dicta aut labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis autem cumque, corrupti ipsam deserunt aspernatur odit distinctio neque minus saepe eum tempora ab et magnam earum praesentium delectus voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem animi dolorem odio provident. Eius ipsa ipsam repellendus id non! Inventore temporibus ex quibusdam reiciendis optio maiores natus ullam sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde deleniti tempore quos cupiditate! Nobis quo nulla enim ipsum. Qui in minus voluptatem itaque numquam corporis rerum eveniet repudiandae illo dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab culpa tempora odio maxime, repudiandae aliquid, praesentium neque sunt, libero numquam? Corrupti architecto deleniti rerum necessitatibus suscipit unde, aut aliquid! Lorem ipsum, dolor sit </p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minus placeat sequi esse sed
+					perspiciatis illum itaque at ipsa, eveniet excepturi! Atque, provident fuga nobis excepturi
+					dignissimos dicta aut labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis
+					autem cumque, corrupti ipsam deserunt aspernatur odit distinctio neque minus saepe eum tempora ab et
+					magnam earum praesentium delectus voluptate. Lorem ipsum dolor sit amet consectetur adipisicing
+					elit. Et exercitationem animi dolorem odio provident. Eius ipsa ipsam repellendus id non! Inventore
+					temporibus ex quibusdam reiciendis optio maiores natus ullam sit! Lorem ipsum, dolor sit amet
+					consectetur adipisicing elit. Unde deleniti tempore quos cupiditate! Nobis quo nulla enim ipsum. Qui
+					in minus voluptatem itaque numquam corporis rerum eveniet repudiandae illo dolorem! Lorem ipsum
+					dolor sit amet consectetur adipisicing elit. At ab culpa tempora odio maxime, repudiandae aliquid,
+					praesentium neque sunt, libero numquam? Corrupti architecto deleniti rerum necessitatibus suscipit
+					unde, aut aliquid! Lorem ipsum, dolor sit </p>
 			</div>
 		</div>
 		<div class="modal-wrapper__left-menu hidden animation">
 			<div class="modal-wrapper__left-body">
-				<button class="modal-wrapper__close"><svg width="25" height="25" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<line x1="26.713" y1="9.83421" x2="10.803" y2="25.7441" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
-					<line x1="26.5918" y1="25.7129" x2="11" y2="10.1212" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+				<button class="modal-wrapper__close"><svg width="25" height="25" viewBox="0 0 37 36" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<line x1="26.713" y1="9.83421" x2="10.803" y2="25.7441" stroke="#C4C4C4" stroke-width="3"
+							stroke-linecap="round" stroke-linejoin="round"></line>
+						<line x1="26.5918" y1="25.7129" x2="11" y2="10.1212" stroke="#C4C4C4" stroke-width="3"
+							stroke-linecap="round" stroke-linejoin="round"></line>
 					</svg>
 				</button>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minus placeat sequi esse sed perspiciatis illum itaque at ipsa, eveniet excepturi! Atque, provident fuga nobis excepturi dignissimos dicta aut labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis autem cumque, corrupti ipsam deserunt aspernatur odit distinctio neque minus saepe eum tempora ab et magnam eaet consectetur adipisicing elit. At ab culpa tempora odio maxime, repudiandae aliquid, praesentium neque sunt, libero numquam? Corrupti architecto deleniti rerum necessitatibus suscipit unde, aut aliquid! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni eveniet reprehenderit rerum dolor unde. Quaerat voluptas quibusdam ab minus, similique distinctio ipsa unde maxime eligendi laboriosam, officiis cupiditate omnis aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsa unde esse provident impedit eos quos veniam placeat maiores? Harum dolores molestiae nobis? Temporibus voluptatem minus, repellat voluptatibus perspiciatis ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quam cum fuga aspernatur non atque asperiores id consequuntur ducimus distinctio ad, modi consequatur vitae odit dicta a quibusdam inventore voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aperiam velit enim beatae libero maiores dignissimos rem laudantium delectus distinctio sapiente sunt at tempora mollitia fugit, dicta dolores praesentium voluptatibus.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minus placeat sequi esse sed
+					perspiciatis illum itaque at ipsa, eveniet excepturi! Atque, provident fuga nobis excepturi
+					dignissimos dicta aut labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis
+					autem cumque, corrupti ipsam deserunt aspernatur odit distinctio neque minus saepe eum tempora ab et
+					magnam eaet consectetur adipisicing elit. At ab culpa tempora odio maxime, repudiandae aliquid,
+					praesentium neque sunt, libero numquam? Corrupti architecto deleniti rerum necessitatibus suscipit
+					unde, aut aliquid! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni eveniet
+					reprehenderit rerum dolor unde. Quaerat voluptas quibusdam ab minus, similique distinctio ipsa unde
+					maxime eligendi laboriosam, officiis cupiditate omnis aliquam. Lorem ipsum dolor sit amet
+					consectetur adipisicing elit. Omnis ipsa unde esse provident impedit eos quos veniam placeat
+					maiores? Harum dolores molestiae nobis? Temporibus voluptatem minus, repellat voluptatibus
+					perspiciatis ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quam cum
+					fuga aspernatur non atque asperiores id consequuntur ducimus distinctio ad, modi consequatur vitae
+					odit dicta a quibusdam inventore voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing
+					elit. Vel aperiam velit enim beatae libero maiores dignissimos rem laudantium delectus distinctio
+					sapiente sunt at tempora mollitia fugit, dicta dolores praesentium voluptatibus.</p>
 			</div>
 		</div>
 		<div class="modal-wrapper__bg"></div>
-	</div>
-	
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="   crossorigin="anonymous"></script>
+	</div> -->
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<script src="./libs/jquery_validate/jquery.validate.min.js"></script>
 	<script src="./libs/jquery-maskedinput/jquery.maskedinput.js"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
