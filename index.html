@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="/css/main.css">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
@@ -135,7 +136,7 @@
 	<main>
 
 		<!-- Блок "наши достижения" -->
-		<section class="achievements">
+		<!-- <section class="achievements">
 			<div class="container">
 				<div class="achievements__items">
 					<div class="achievements__item">
@@ -152,12 +153,12 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- /Блок "наши достижения" -->
 
 
 		<!-- Блок "Топ туров" -->
-		<section class="tours">
+		<!-- <section class="tours">
 			<div class="container">
 				<div class="title-sections">
 					<h2 class="title-sections__title">Топ однодневных туров: выбор туристов</h2>
@@ -381,7 +382,7 @@
 
 					<a class="btn-link" href="#">Смотреть все туры</a>
 				</div>
-		</section>
+		</section> -->
 		<!-- /Блок "Топ туров" -->
 
 		<!-- Блок "Популярные направления" -->
@@ -471,7 +472,7 @@
 
 					<div class="recreation__item">
 						<div class="recreation__item-photo">
-							<img class="recreation__img" src="/img/helicopter.jpg" alt="Ресторан">
+							<img class="recreation__img" src="/img/helicopter.jpg" alt="Склоны">
 						</div>
 						<div class="recreation__item-text recreation__item--right">
 							<h2 class="recreation__item-title">
@@ -507,7 +508,8 @@
 							</svg>
 						</a>
 					</div>
-					<img class="recreation__item--mobile-img" src="/img/hotel.jpg" alt="" id="#recreation__item--mobile__background-1">
+					<img class="recreation__item--mobile-img" src="/img/hotel.jpg" alt="Отел"
+						id="#recreation__item--mobile__background">
 				</div>
 
 				<div class="recreation__item--mobile recreation__item--mobile__two">
@@ -524,7 +526,8 @@
 							</svg>
 						</a>
 					</div>
-					<img class="recreation__item--mobile-img" src="/img/rest.jpg" alt="" id="#recreation__item--mobile__background-2">
+					<img class="recreation__item--mobile-img" src="/img/rest.jpg" alt="Ресторан"
+						id="#recreation__item--mobile__background">
 				</div>
 
 				<div class="recreation__item--mobile recreation__item--mobile__three">
@@ -541,7 +544,8 @@
 							</svg>
 						</a>
 					</div>
-					<img class="recreation__item--mobile-img" src="/img/street.jpg" alt="" id="#recreation__item--mobile__background-3">
+					<img class="recreation__item--mobile-img" src="/img/street.jpg" alt="Улица"
+						id="#recreation__item--mobile__background">
 				</div>
 
 				<div class="recreation__item--mobile recreation__item--mobile__four">
@@ -558,7 +562,8 @@
 							</svg>
 						</a>
 					</div>
-					<img class="recreation__item--mobile-img" src="/img/helicopter.jpg" alt="" id="#recreation__item--mobile__background-4">
+					<img class="recreation__item--mobile-img" src="/img/helicopter.jpg" alt="Склоны"
+						id="#recreation__item--mobile__background">
 				</div>
 
 			</div>
@@ -600,9 +605,9 @@
 		<!-- /Только реальные отзывы туристов -->
 
 		<!-- Видео из некоторых туров «Север для Вас» -->
-		<!-- <section class="video-tours">
+		<section class="video-tours">
 			<div class="container">
-				<div class="title-sections">
+				<div class="title-sections title-sections--video-tours">
 					<h2 class="title-sections__title">Видео из некоторых туров «Север для Вас»</h2>
 					<p class="title-sections__description">
 						Посмотрите наши видео, чтобы еще глубже погрузиться
@@ -616,13 +621,13 @@
 							<button class="video-tours__play">
 								<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
 							</button>
-							<h3 class="video-tours__title">Тур на северное сияние</h3>
+							<h3 class="video-tours__title video-tours__title--big">Тур на северное сияние</h3>
 						</div>
 					</div>
 					<div class="video-tours__items-right">
 						<div class="video-tours__item video-tours__item--small">
 							<img class="video-tours__bg" src="/img/bg_item_right_1.jpg" alt="Побережье океана">
-							<button class="video-tours__play">
+							<button class="video-tours__play video-tours__play--small">
 								<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
 							</button>
 							<h3 class="video-tours__title">Тур в Териберку, на побережье океана</h3>
@@ -630,7 +635,7 @@
 
 						<div class="video-tours__item video-tours__item--small">
 							<img class="video-tours__bg" src="/img/bg_item_right_2.jpg" alt="Саамская деревня">
-							<button class="video-tours__play">
+							<button class="video-tours__play video-tours__play--small">
 								<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
 							</button>
 							<h3 class="video-tours__title">Тур в саамскую деревню</h3>
@@ -638,7 +643,7 @@
 
 						<div class="video-tours__item video-tours__item--small">
 							<img class="video-tours__bg" src="/img/bg_item_right_3.jpg" alt="Хаски ферма">
-							<button class="video-tours__play">
+							<button class="video-tours__play video-tours__play--small">
 								<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
 							</button>
 							<h3 class="video-tours__title">Тур на хаски ферму</h3>
@@ -646,7 +651,57 @@
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
+
+		<section class="video-tours--mobile">
+			<div class="container">
+				<div class="title-sections title-sections--video-tours--mobile">
+					<h2 class="title-sections__title">Видео из некоторых туров «Север для Вас»</h2>
+					<p class="title-sections__description">
+						Посмотрите наши видео, чтобы еще глубже погрузиться
+						в атмосферу Кольского полуострова
+					</p>
+				</div>
+				<div class="video-tours--mobile__items">
+					<div class="video-tours--mobile__items">
+						<div class="video-tours--mobile__item">
+							<img class="video-tours__bg" src="/img/tour_shine_bg.jpg" alt="Северное сияние">
+							<button class="video-tours__play">
+								<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+							</button>
+							<h3 class="video-tours__title video-tours__title--mobile">Тур на северное сияние</h3>
+						</div>
+					</div>
+					<div class="video-tours--mobile__items">
+						<div class="video-tours--mobile__item">
+							<img class="video-tours__bg" src="/img/bg_item_right_1.jpg" alt="Побережье океана">
+							<button class="video-tours__play">
+								<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+							</button>
+							<h3 class="video-tours__title video-tours__title--mobile">Тур в Териберку, на побережье океана</h3>
+						</div>
+					</div>
+					<div class="video-tours--mobile__items">
+						<div class="video-tours--mobile__item">
+							<img class="video-tours__bg" src="/img/bg_item_right_2.jpg" alt="Саамская деревня">
+							<button class="video-tours__play">
+								<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+							</button>
+							<h3 class="video-tours__title video-tours__title--mobile">Тур в саамскую деревню</h3>
+						</div>
+					</div>
+					<div class="video-tours--mobile__items">
+						<div class="video-tours--mobile__item">
+							<img class="video-tours__bg" src="/img/bg_item_right_3.jpg" alt="Хаски ферма">
+							<button class="video-tours__play">
+								<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+							</button>
+							<h3 class="video-tours__title video-tours__title--mobile">Тур на хаски ферму</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- /Видео из некоторых туров «Север для Вас» -->
 
 		<!-- акции -->
@@ -1163,6 +1218,7 @@
 		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<script src="./libs/jquery_validate/jquery.validate.min.js"></script>
 	<script src="./libs/jquery-maskedinput/jquery.maskedinput.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

@@ -1,52 +1,63 @@
-$(function() {
+$(function () {
 
-	//Валидатор форм и маска для форм
-	const offerFormModal = $('.offer-form-modal')
-	offerFormModal.submit(function(e) {
-			e.preventDefault()
-	})
+  //Валидатор форм и маска для форм
+  const offerFormModal = $('.offer-form-modal')
+  offerFormModal.submit(function (e) {
+    e.preventDefault()
+  })
 
-	offerFormModal.validate({
-			errorElement: "",
-			errorPlacement: (error, element) =>
-					error.appendTo(element.parent().parent()),
-			rules: {
-					tel: {
-							maskRu: true
-					}
-			},
-			messages: {
-					name: "",
-					tel: ""
-			},
-			submitHandler: function (form) {
-					const formInstance = $(form)
+  offerFormModal.validate({
+    errorElement: "",
+    errorPlacement: (error, element) =>
+      error.appendTo(element.parent().parent()),
+    rules: {
+      tel: {
+        maskRu: true
+      }
+    },
+    messages: {
+      name: "",
+      tel: ""
+    },
+    submitHandler: function (form) {
+      const formInstance = $(form)
 
-					console.log('submit')
-					$.ajax({
-							type: "POST",
-							url: "mail.php",
-							data: formInstance.serialize()
-					}).done(function() {
-							console.log('DONE')
-							formInput.val("");
-							formInput.siblings().removeClass('active')
-							$('.modal-wrapper-offer .success-message').addClass('show')
-					});
-					return false;
-			}
-	});
-	jQuery.validator.addMethod('maskRu', function(value, element) {
-			console.log(/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value));
-			return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
-	});
-	$('[name="tel"]').mask("+7(999)999-9999",{autoclear: false});
-
+      console.log('submit')
+      $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: formInstance.serialize()
+      }).done(function () {
+        console.log('DONE')
+        formInput.val("");
+        formInput.siblings().removeClass('active')
+        $('.modal-wrapper-offer .success-message').addClass('show')
+      });
+      return false;
+    }
+  });
+  jQuery.validator.addMethod('maskRu', function (value, element) {
+    console.log(/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value));
+    return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
+  });
+  $('[name="tel"]').mask("+7(999)999-9999", {
+    autoclear: false
+  });
+  $(".video-tours--mobile__items").slick({
+    prevArrow: '<button type="button" class="video-prev video__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="video-next video__slider-next">Next</button>',
+    responsive: [{
+      breakpoint: 740,
+      settings: {
+        arrows: false,
+      }
+    }, ]
+  });
 });
 
 //Модальные окна на Pure Js
-(function() {
-  
+(function () {
+
   //Вызов окна колбека
   openCallback = document.querySelector('.openCallback');
   callbackModal = document.querySelector('.modal-wrapper__callback');
@@ -61,8 +72,8 @@ $(function() {
 
   function closecallbackPopup() {
     if (!callbackModal.classList.contains('hidden')) {
-      callbackModal.classList.add('animation');    
-      callbackModal.addEventListener('transitionend', function(e) {
+      callbackModal.classList.add('animation');
+      callbackModal.addEventListener('transitionend', function (e) {
         callbackModal.classList.add('hidden');
       }, {
         capture: false,
@@ -86,8 +97,8 @@ $(function() {
 
   function closeleftMenuModal() {
     if (!leftMenuModal.classList.contains('hidden')) {
-      leftMenuModal.classList.add('animation');    
-      leftMenuModal.addEventListener('transitionend', function(e) {
+      leftMenuModal.classList.add('animation');
+      leftMenuModal.addEventListener('transitionend', function (e) {
         leftMenuModal.classList.add('hidden');
       }, {
         capture: false,
@@ -120,8 +131,8 @@ $(function() {
 
   function closeBaseModal() {
     body.classList.remove('noflow');
-    modalWrapper.classList.add('animation');    
-    modalWrapper.addEventListener('transitionend', function(e) {
+    modalWrapper.classList.add('animation');
+    modalWrapper.addEventListener('transitionend', function (e) {
       modalWrapper.classList.add('hidden');
     }, {
       capture: false,
@@ -130,7 +141,7 @@ $(function() {
     });
   };
 
-  for(let i = 0; i<modalWrapperClose.length; i++){
+  for (let i = 0; i < modalWrapperClose.length; i++) {
     modalWrapperClose[i].addEventListener('click', () => {
       closeAllModal();
     });
@@ -140,9 +151,9 @@ $(function() {
     closeAllModal();
   })
 
-  document.onkeydown = function(e) {
+  document.onkeydown = function (e) {
     e = e || window.event;
-    if (e.key=='Escape'||e.key=='Esc'||e.keyCode==27) {
+    if (e.key == 'Escape' || e.key == 'Esc' || e.keyCode == 27) {
       closeAllModal();
     }
   };
