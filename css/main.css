@@ -881,7 +881,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   color: #A5A5B1;
-  padding: 0 16px 0 16px;
+  padding: 0 16px;
 }
 
 .callback-form__submit {
@@ -1812,19 +1812,13 @@ img {
   padding-bottom: 96px;
 }
 
-.title-sections {}
-
 .title-sections--faq {
   justify-content: space-between;
 }
 
-.title-sections__title {}
-
 .title-sections--faq .title-sections__title {
   margin-right: 100px;
 }
-
-.title-sections__description {}
 
 .faq__content {
   display: flex;
@@ -1900,8 +1894,6 @@ img {
 .faq__img {
   width: 10%;
 }
-
-.faq__cut {}
 
 .faq__description {
   font-size: 14px;
@@ -2014,5 +2006,132 @@ img {
 
   .closeText::before {
     right: -35px;
+  }
+}
+
+/* Рассчитать стоимость поездки */
+
+.travel-price {
+  background-image: url('/img/travel-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 118px 0;
+}
+
+.container--travel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 816px;
+}
+
+.travel-price__title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.callback-form__input {
+  width: 280px;
+  color: #000;
+}
+.callback-form__privacy {
+  margin: 8px 155px 0;
+}
+
+.callback-form--travel {
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+.travel-price__presentation {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  position: relative;
+  transition: all .2s linear;
+}
+
+.travel-price__presentation:hover {
+  text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+/* 
+.travel-price__presentation::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.3;
+  transition: all .2s linear;
+}
+
+.travel-price__presentation:hover::after {
+  opacity: 1;
+} */
+
+@media screen and (max-width: 840px) {
+  .container--travel {
+    width: auto;
+  }
+
+  .travel-price {
+    padding: 72px 0;
+  }
+
+  .travel-price__title {
+    font-size: 36px;
+  }
+
+  .callback-form__privacy {
+    margin: 8px 147px 0;
+  }
+
+  .callback-form__input {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .travel-price {
+    padding: 42px 0;
+  }
+
+  .travel-price__title {
+    font-size: 20px;
+  }
+
+  .callback-form__privacy {
+    font-size: 10px;
+    margin: 8px 0 0;
+  }
+
+  .callback-form--travel {
+    margin-top: 32px 0 13px;
+  }
+
+  .callback-form__input {
+    width: calc(100% - 32px);
+  }
+
+  .callback-form__submit {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .travel-price__presentation {
+    font-size: 12px;
   }
 }
