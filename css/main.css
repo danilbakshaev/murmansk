@@ -2042,6 +2042,7 @@ img {
   width: 280px;
   color: #000;
 }
+
 .callback-form__privacy {
   margin: 8px 155px 0;
 }
@@ -2133,5 +2134,166 @@ img {
 
   .travel-price__presentation {
     font-size: 12px;
+  }
+}
+
+/* Карта туров по Мурманской области */
+
+.tours-map {
+  padding: 96px 0;
+}
+
+.tours-map__inner {
+  display: flex;
+  align-items: center;
+}
+
+.tours-map__left {
+  width: 70%;
+}
+
+.tours-map__left svg {
+  width: 80%;
+  height: auto;
+}
+
+.tours-map__right {
+  width: 30%;
+}
+
+.tours-map__title {
+  margin: 32px 0 8px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 110%;
+  color: #242440;
+}
+
+.tours-map__geo {
+  font-size: 13px;
+  line-height: 16px;
+  color: #737385;
+}
+
+.tours-map__geo-img {
+  width: 14px;
+  height: 16px;
+}
+
+.tours-map__description {
+  font-size: 15px;
+  line-height: 150%;
+  color: #242440;
+  margin: 24px 0 32px;
+}
+
+.btn-link--tours {
+  width: auto;
+  margin-top: 0;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.btn-link--tours__tablet {
+  display: none;
+}
+
+@media screen and (max-width: 840px) {
+  .tours-map {
+    padding: 72px 0;
+  }
+
+  .title-sections__title {
+    font-size: 36px;
+  }
+
+  .tours-map__inner {
+    display: block;
+  }
+
+  .tours-map__title {
+    margin: 0;
+    font-size: 22px;
+  }
+
+  .tours-map__left {
+    width: 100%;
+  }
+
+  .tours-map__left svg {
+    width: 100%;
+  }
+
+  .tours-map__right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .tours-map__right-img {
+    order: 2;
+  }
+
+  .tours-map__right-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+  }
+
+  .tours-map__geo {
+    order: 2;
+  }
+
+  .tours-map__description {
+    margin: 12px 0 16px;
+    order: 1;
+  }
+
+  .btn-link--tours {
+    display: none;
+  }
+
+  .btn-link--tours__tablet {
+    display: flex;
+    margin-top: 36px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .tours-map {
+    padding: 48px 0;
+  }
+
+  .title-sections--tours {
+    margin-bottom: 30px;
+  }
+
+  .title-sections--tours .title-sections__title {
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .tours-map__right-img {
+    transform: scale(1.09);
+  }
+
+  .tours-map__right {
+    display: block;
+  }
+
+  .tours-map__title {
+    margin-top: 24px;
+  }
+
+  .tours-map__description {
+    margin: 16px 0;
+  }
+
+  .btn-link--tours__tablet {
+    margin-top: 24px;
   }
 }
