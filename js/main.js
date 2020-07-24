@@ -1,3 +1,4 @@
+
 $(function() {
 
   $('.popular-destinations__items').slick({
@@ -69,9 +70,64 @@ $(function() {
 	});
 	$('[name="tel"]').mask("+7(999)999-9999",{autoclear: false});
 
+
+  //Валидатор форм и маска для форм
+  const offerFormModal = $('.offer-form-modal')
+  offerFormModal.submit(function (e) {
+    e.preventDefault()
+  })
+
+  offerFormModal.validate({
+    errorElement: "",
+    errorPlacement: (error, element) =>
+      error.appendTo(element.parent().parent()),
+    rules: {
+      tel: {
+        maskRu: true
+      }
+    },
+    messages: {
+      name: "",
+      tel: ""
+    },
+    submitHandler: function (form) {
+      const formInstance = $(form)
+
+      console.log('submit')
+      $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: formInstance.serialize()
+      }).done(function () {
+        console.log('DONE')
+        formInput.val("");
+        formInput.siblings().removeClass('active')
+        $('.modal-wrapper-offer .success-message').addClass('show')
+      });
+      return false;
+    }
+  });
+  jQuery.validator.addMethod('maskRu', function (value, element) {
+    console.log(/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value));
+    return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
+  });
+  $('[name="tel"]').mask("+7(999)999-9999", {
+    autoclear: false
+  });
+  $(".video-tours--mobile__items").slick({
+    prevArrow: '<button type="button" class="video-prev video__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="video-next video__slider-next">Next</button>',
+    responsive: [{
+      breakpoint: 740,
+      settings: {
+        arrows: false,
+      }
+    }, ]
+  });
 });
 
 //Модальные окна на Pure Js
+
 // (function() {
   
 //   //Вызов окна колбека
