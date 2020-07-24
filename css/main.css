@@ -1292,7 +1292,6 @@ img {
   }
 
   #recreation__item--mobile__background {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -1336,6 +1335,15 @@ img {
   .recreation--mobile__link svg {
     margin-left: 5px;
   }
+
+  .title-sections__title {
+    margin-right: 0;
+    width: auto;
+  }
+
+  .title-sections__description {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 740px) {
@@ -1363,6 +1371,7 @@ img {
 .title-sections--video-tours .title-sections__title {
   margin-right: 100px;
 }
+
 .video-tours__items {
   display: flex;
   align-items: center;
@@ -1776,3 +1785,209 @@ img {
   }
 }
 
+/* Блок "Ответы на часто задаваемые вопросы" */
+
+.faq {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.title-sections {}
+
+.title-sections--faq {
+  justify-content: space-between;
+}
+
+.title-sections__title {}
+
+.title-sections--faq .title-sections__title {
+  margin-right: 100px;
+}
+
+.title-sections__description {}
+
+.faq__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq__content-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.faq__items {
+  width: 62%;
+}
+
+.faq__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.faq__item:last-child {
+  margin-bottom: 56px;
+}
+
+.faq__spoiler {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq__title {
+  display: flex;
+  align-items: center;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  margin: 0;
+  color: #242440;
+}
+
+.openText {
+  position: relative;
+}
+
+.openText::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: -18px;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_ii)'%3E%3Ccircle cx='12' cy='12' r='12' transform='rotate(180 12 12)' fill='%23DBDBE0'/%3E%3C/g%3E%3Cpath d='M16 11L12 14L8 11' stroke='%23737385' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3Cfilter id='filter0_ii' x='0' y='0' width='24' height='24' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='1'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.47 0'/%3E%3CfeBlend mode='normal' in2='shape' result='effect1_innerShadow'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='-1'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='effect1_innerShadow' result='effect2_innerShadow'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+  cursor: pointer;
+}
+
+.closeText {
+  position: relative;
+}
+
+.closeText::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: -18px;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_ii)'%3E%3Ccircle cx='12' cy='12' r='12' fill='url(%23paint0_linear)'/%3E%3C/g%3E%3Cpath d='M8 13L12 10L16 13' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3Cfilter id='filter0_ii' x='0' y='0' width='24' height='24' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='1'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.47 0'/%3E%3CfeBlend mode='normal' in2='shape' result='effect1_innerShadow'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='-1'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='effect1_innerShadow' result='effect2_innerShadow'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear' x1='-16.2' y1='12' x2='35.6' y2='12' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FA3B3A'/%3E%3Cstop offset='1' stop-color='%23FD7A7A'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  cursor: pointer;
+}
+
+.faq__img {
+  width: 10%;
+}
+
+.faq__cut {}
+
+.faq__description {
+  font-size: 14px;
+  line-height: 150%;
+  color: #737385;
+}
+
+.simple-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FB5352;
+}
+
+.simple-link__img {
+  width: 26px;
+  height: 27px;
+  margin-left: 8px;
+}
+
+.faq__content-right {
+  position: relative;
+}
+
+.faq__right-img {
+  position: sticky;
+  top: 50px;
+}
+
+.faq__right--mobile-bg {
+  display: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .openText::before {
+    right: -50px;
+  }
+
+  .closeText::before {
+    right: -50px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .faq {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .faq__right--mobile-bg {
+    display: block;
+    transform: scale(1.1);
+  }
+
+  .faq__content-right {
+    display: none;
+  }
+
+  .title-sections {
+    display: block;
+  }
+
+  .title-sections--faq {
+    margin-bottom: 36px;
+  }
+
+  .title-sections--faq .title-sections__title {
+    margin-right: 0;
+  }
+
+  .title-sections--faq .title-sections__description {
+    margin-top: 16px;
+  }
+
+  .faq__content {
+    margin-top: 38px;
+  }
+
+  .faq__items {
+    width: 92%;
+  }
+  .faq__item:last-child {
+    margin-bottom: 0;
+  }
+  .faq__content-left {
+    width: 100%;
+  }
+  .faq__title {
+    width: 85%;
+  }
+  .simple-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 740px)  {
+  .faq {
+    padding-bottom: 48px;
+  }
+  .openText::before {
+    right: -35px;
+  }
+
+  .closeText::before {
+    right: -35px;
+  }
+}

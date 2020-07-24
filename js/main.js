@@ -81,6 +81,13 @@ $(function() {
       }
     }, ]
   });
+
+  $(".faq__cut").hide()
+  $(".faq__spoiler").click(function () {
+    $(this).toggleClass("closeText");
+    $(this).next().slideToggle("slow");
+  });
+
   //Валидатор форм и маска для форм
   // const offerFormModal = $('.offer-form-modal')
   // offerFormModal.submit(function (e) {
