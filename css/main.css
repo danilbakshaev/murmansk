@@ -1198,7 +1198,7 @@ img {
 .recreation__item {
   margin-top: 96px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
