@@ -1649,7 +1649,7 @@ img {
   border-radius: 8px;
   padding: 30px;
   background: linear-gradient(136.98deg, rgba(0, 0, 0, 0) 46.92%, rgba(3, 3, 3, 0.054) 56.84%, rgba(14, 14, 14, 0.6) 100%), rgba(0, 0, 0, 0.3);
-  height: 300px;
+  height: 500px;
   transition: all 0.2s linear;
   display: flex !important;
   align-items: flex-end;
@@ -1658,7 +1658,7 @@ img {
 .popular-destinations__item:hover {
   margin: 15px;
   width: calc(352px + 30px) !important;
-  height: calc(300px + 30px);
+  height: calc(500px + 30px);
 }
 
 .popular-destinations__items {
@@ -1682,12 +1682,12 @@ img {
 }
 
 .slider__slider-prev {
-  top: 190px;
+  top: 284px;
   left: 0px;
 }
 
 .slider__slider-next {
-  top: 190px;
+  top: 284px;
   right: 0px;
 }
 
@@ -2007,6 +2007,130 @@ img {
   .closeText::before {
     right: -35px;
   }
+}
+
+
+/* reviews */
+
+.reviews{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.reviews__img{
+  width: auto;
+}
+
+.reviews__item-img{
+  width: auto;
+  height: 100%;
+}
+.reviews__vk{
+  width: auto;
+  margin-right: 3px;
+}
+.reviews__contact{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.reviews-slider__slider-prev{
+  top: 225px;
+  left: 0px;
+}
+.reviews-slider__slider-next{
+  top: 225px;
+  right: 0px;
+}
+.reviews__contacts{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.reviews__name{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #242440;
+}
+.reviews__link{
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 150%;
+  color: #A5A5B1;
+  text-decoration: none;
+}
+.slick-slider .slick-list{
+  overflow: hidden;
+}
+.simple-link--reviews{
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 740px) {
+  .reviews__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title-sections__title{
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 13px;
+  }
+  .title-sections__description{
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+
+
+/* stocks */
+
+.stocks__items{
+  display: flex;
+}
+.stocks__item{
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  margin: 30px;
+  height: 433px;
+  border-radius: 25px;
+  display: flex !important;
+  align-items: flex-end;
+  transition: all 0.2s linear;
+  background: linear-gradient(133.21deg, rgba(0, 0, 0, 0) 46.92%, rgba(3, 3, 3, 0.054) 56.84%, rgba(14, 14, 14, 0.6) 100%), rgba(0, 0, 0, 0.3);
+}
+.stocks__item:hover{
+  margin: 15px;
+  width: calc(230px + 30px) !important;
+  height: calc(433px + 30px);
+}
+.stocks__bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+}
+.stocks__title{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.11);
+}
+.stocks__date{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (max-width: 840px) {
 }
 
 /* Рассчитать стоимость поездки */
