@@ -27,6 +27,30 @@ $(function() {
         },
     ] 
   });
+  $('.reviews__inner').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slider-prev slider__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next slider__slider-next">Next</button>',
+    responsive: [
+      {
+      breakpoint: 840,
+      settings: {
+      slidesToShow: 2.2,
+      slidesToScroll: 1,
+      centerMode: false,
+        }
+      },
+      {
+        breakpoint: 740,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+          }
+        },
+    ] 
+  });
 
 	//Валидатор форм и маска для форм
 	const offerFormModal = $('.offer-form-modal')
