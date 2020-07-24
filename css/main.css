@@ -1502,7 +1502,123 @@ img {
   .title-sections--video-tours--mobile .title-sections__description {
     margin-top: 16px;
   }
+}
+  @media screen and (max-width: 740px) {
 
+    .video-tours--mobile__item {
+      position: relative;
+    }
+  
+    .video-tours__play {
+      top: 50%;
+      width: 80px;
+      height: 80px;
+    }
+  
+  
+    .video-tours__title--mobile {
+      bottom: 24%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+    }
+  
+    .video__slider-prev {
+      top: 190px;
+      left: 0px;
+    }
+  
+    .video__slider-next {
+      top: 190px;
+      right: 0px;
+    }
+  
+    .video-prev {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      background: #fff;
+      font-size: 0;
+      position: absolute;
+      z-index: 1;
+      border: none;
+    }
+  
+    .video-prev::before {
+      content: '';
+      position: absolute;
+      top: 21px;
+      right: 18px;
+      width: 20px;
+      height: 20px;
+      background-image: url("data:image/svg+xml,%3Csvg width='23' height='16' viewBox='0 0 23 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292891 7.29289C-0.0976334 7.68342 -0.0976334 8.31658 0.292891 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292891 7.29289ZM23 7L0.999998 7V9L23 9V7Z' fill='%23A5A5B1'/%3E%3C/svg%3E%0A");
+      transition: all 0.2s linear;
+      cursor: pointer;
+      background-repeat: no-repeat;
+    }
+  
+    .video-next {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      background: #fff;
+      font-size: 0;
+      position: absolute;
+      z-index: 1;
+      border: none;
+    }
+  
+    .video-next::before {
+      content: '';
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 20px;
+      height: 20px;
+      transform: rotate(180deg);
+      background-image: url("data:image/svg+xml,%3Csvg width='23' height='16' viewBox='0 0 23 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292891 7.29289C-0.0976334 7.68342 -0.0976334 8.31658 0.292891 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292891 7.29289ZM23 7L0.999998 7V9L23 9V7Z' fill='%23A5A5B1'/%3E%3C/svg%3E%0A");
+      transition: all 0.2s linear;
+      cursor: pointer;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  @media screen and (max-width: 740px) {
+    .video-tours__title--mobile {
+      font-size: 18px;
+      transform: translate(-50%, 10%);
+      text-align: center;
+    }
+  
+    .video-tours__play {
+      top: 50%;
+      width: 50px;
+      height: 50px;
+    }
+  
+    .video-tours__img {
+      width: 15px;
+      height: 19px;
+    }
+  
+    .title-sections--video-tours--mobile .title-sections__title {
+      font-size: 20px;
+      width: auto;
+      line-height: unset;
+    }
+  
+    .title-sections--video-tours--mobile .title-sections__description {
+      font-size: 14px;
+      width: auto;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .video-tours__title--mobile {
+      bottom: 18%;
+    }
+  }
 
 /* popular-destinations */
 
@@ -1660,119 +1776,3 @@ img {
   }
 }
 
-@media screen and (max-width: 740px) {
-
-  .video-tours--mobile__item {
-    position: relative;
-  }
-
-  .video-tours__play {
-    top: 50%;
-    width: 80px;
-    height: 80px;
-  }
-
-
-  .video-tours__title--mobile {
-    bottom: 24%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-  }
-
-  .video__slider-prev {
-    top: 190px;
-    left: 0px;
-  }
-
-  .video__slider-next {
-    top: 190px;
-    right: 0px;
-  }
-
-  .video-prev {
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    background: #fff;
-    font-size: 0;
-    position: absolute;
-    z-index: 1;
-    border: none;
-  }
-
-  .video-prev::before {
-    content: '';
-    position: absolute;
-    top: 21px;
-    right: 18px;
-    width: 20px;
-    height: 20px;
-    background-image: url("data:image/svg+xml,%3Csvg width='23' height='16' viewBox='0 0 23 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292891 7.29289C-0.0976334 7.68342 -0.0976334 8.31658 0.292891 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292891 7.29289ZM23 7L0.999998 7V9L23 9V7Z' fill='%23A5A5B1'/%3E%3C/svg%3E%0A");
-    transition: all 0.2s linear;
-    cursor: pointer;
-    background-repeat: no-repeat;
-  }
-
-  .video-next {
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    background: #fff;
-    font-size: 0;
-    position: absolute;
-    z-index: 1;
-    border: none;
-  }
-
-  .video-next::before {
-    content: '';
-    position: absolute;
-    top: 18px;
-    right: 18px;
-    width: 20px;
-    height: 20px;
-    transform: rotate(180deg);
-    background-image: url("data:image/svg+xml,%3Csvg width='23' height='16' viewBox='0 0 23 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292891 7.29289C-0.0976334 7.68342 -0.0976334 8.31658 0.292891 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292891 7.29289ZM23 7L0.999998 7V9L23 9V7Z' fill='%23A5A5B1'/%3E%3C/svg%3E%0A");
-    transition: all 0.2s linear;
-    cursor: pointer;
-    background-repeat: no-repeat;
-  }
-}
-
-@media screen and (max-width: 740px) {
-  .video-tours__title--mobile {
-    font-size: 18px;
-    transform: translate(-50%, 10%);
-    text-align: center;
-  }
-
-  .video-tours__play {
-    top: 50%;
-    width: 50px;
-    height: 50px;
-  }
-
-  .video-tours__img {
-    width: 15px;
-    height: 19px;
-  }
-
-  .title-sections--video-tours--mobile .title-sections__title {
-    font-size: 20px;
-    width: auto;
-    line-height: unset;
-  }
-
-  .title-sections--video-tours--mobile .title-sections__description {
-    font-size: 14px;
-    width: auto;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .video-tours__title--mobile {
-    bottom: 18%;
-  }
-}
