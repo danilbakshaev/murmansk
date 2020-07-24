@@ -53,6 +53,14 @@ $(function () {
       }
     }, ]
   });
+
+  $(".faq__cut").hide()
+  $(".faq__spoiler").click(function () {
+    $(this).toggleClass("closeText");
+    $(this).next().slideToggle("slow");
+  });
+
+
 });
 
 //Модальные окна на Pure Js
