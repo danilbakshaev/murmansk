@@ -27,12 +27,34 @@ $(function() {
         },
     ] 
   });
+
+  // $('.tours__items').slick({
+  //   arrows: false,
+  // dots: true,
+  // infinite: true,
+  // slidesToScroll: 1,
+  // variableWidth: true,
+  // mobileFirst: true,
+  // responsive: [{
+  //   breakpoint: 840,
+  //   settings: 'unslick'
+  // }]
+  // });
+
   $('.reviews__inner').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
     responsive: [
+      {
+        breakpoint: 1240,
+        settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: false,
+          }
+        },
       {
       breakpoint: 840,
       settings: {
@@ -57,6 +79,13 @@ $(function() {
     prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
     responsive: [
+      {
+        breakpoint: 1080,
+        settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+          }
+        },
       {
       breakpoint: 840,
       settings: {
@@ -132,6 +161,13 @@ $(function() {
   $(".faq__cut").hide()
   $(".faq__spoiler").click(function () {
     $(this).toggleClass("closeText");
+    $(this).next().slideToggle("slow");
+  });
+
+
+  $(".mobile-footer__inner").hide()
+  $(".mobile-footer__preview").click(function () {
+    $(this).toggleClass("closePreview");
     $(this).next().slideToggle("slow");
   });
 
