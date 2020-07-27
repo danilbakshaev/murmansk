@@ -953,6 +953,10 @@ header::before {
     font-size: 12px;
   }
 
+  .header-text {
+    padding-bottom: 60px;
+  }
+
   .callback-form--wrap {
     width: 100%;
   }
@@ -1023,6 +1027,15 @@ header::before {
   .achievements {
     padding: 72px;
   }
+
+  .achievements__item {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .achievements__item:last-child {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 740px) {
@@ -1071,7 +1084,7 @@ header::before {
 
 .title-sections__description {
   width: 544px;
-  margin: 0;
+  margin: 16px 0 0 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1238,7 +1251,11 @@ header::before {
     display: block;
   }
 
-  .btn-link {
+  .title-sections__title--tours-mob {
+    width: 85%;
+  }
+
+  .btn-link--tour {
     width: auto !important;
   }
 
@@ -1253,8 +1270,11 @@ header::before {
 }
 
 @media screen and (max-width: 740px) {
-  .tours {
-    padding: 48px 90px;
+  .tours-mob {
+    padding: 0 0 48px 0px;
+  }
+  .title-sections__title--tours{
+    font-size: 20px;
   }
 }
 
@@ -1624,6 +1644,11 @@ header::before {
     height: 80px;
   }
 
+  .video-tours__img {
+    width: 24px;
+    height: 30px;
+  }
+
   .video-tours__title--mobile {
     bottom: 24%;
     left: 50%;
@@ -1834,6 +1859,7 @@ header::before {
   width: 20px;
   height: 20px;
   background-image: url("data:image/svg+xml,%3Csvg width='23' height='16' viewBox='0 0 23 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292891 7.29289C-0.0976334 7.68342 -0.0976334 8.31658 0.292891 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292891 7.29289ZM23 7L0.999998 7V9L23 9V7Z' fill='%23A5A5B1'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
   transition: all 0.2s linear;
   cursor: pointer;
 }
@@ -1858,11 +1884,13 @@ header::before {
   height: 20px;
   transform: rotate(180deg);
   background-image: url("data:image/svg+xml,%3Csvg width='23' height='16' viewBox='0 0 23 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292891 7.29289C-0.0976334 7.68342 -0.0976334 8.31658 0.292891 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292891 7.29289ZM23 7L0.999998 7V9L23 9V7Z' fill='%23A5A5B1'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
   transition: all 0.2s linear;
   cursor: pointer;
 }
+
 .popular-destinations__items .slick-list {
-  overflow: inherit!important;
+  overflow: inherit !important;
 }
 
 @media screen and (max-width: 1440px) {
@@ -1883,6 +1911,7 @@ header::before {
   .popular-destinations__item {
     width: auto !important;
   }
+
   .popular-destinations__img {
     object-fit: cover;
   }
@@ -1922,6 +1951,7 @@ header::before {
   .popular-destinations__item {
     width: auto !important;
   }
+
   .popular-destinations__item:active {
     border: 1px solid #000;
   }
@@ -2022,6 +2052,7 @@ header::before {
   line-height: 150%;
   color: #737385;
 }
+
 .simple-link {
   display: flex;
   align-items: center;
@@ -2035,6 +2066,7 @@ header::before {
 .simple-link:hover {
   color: #e74747;
 }
+
 .simple-link__img {
   width: 26px;
   height: 27px;
@@ -2114,7 +2146,7 @@ header::before {
     width: 85%;
   }
 
-  .simple-link {
+  .simple-link--hidden {
     display: none;
   }
 }
@@ -2324,6 +2356,12 @@ header::before {
   .stocks__item {
     height: 350px;
   }
+  .stocks__link {
+    font-size: 14px;
+  }
+  .stocks__h2 {
+    font-size: 20px;
+  }
 }
 
 
@@ -2525,9 +2563,9 @@ header::before {
     padding: 72px 0;
   }
 
-  .title-sections__title {
+  /* .title-sections__title {
     font-size: 36px;
-  }
+  } */
 
   .tours-map__inner {
     display: block;
