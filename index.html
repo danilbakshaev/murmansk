@@ -1122,9 +1122,11 @@
 		<!-- акции -->
 		<section class="stocks">
 			<div class="container">
-				<h2 class="stocks__h2"><a class="stocks__link" href="#">Акции</a></h2>
-				<a class="stocks__link" href="#">Новости</a>
-				<a class="stocks__link" href="#">Статьи</a>
+				<div class="stocks-title__inner">
+					<a class="stocks__link stocks__h2" href="#">Акции</a>
+					<a class="stocks__link" href="#">Новости</a>
+					<a class="stocks__link" href="#">Статьи</a>
+				</div>
 				<div class="stocks__items">
 					<div class="stocks__item">
 						<img class="stocks__bg" src="/img/stocks_bg_1.jpg" alt="Машина на фоне северного сияния">
@@ -2157,7 +2159,7 @@
 		<!-- Карта туров по Мурманской области -->
 
 		<!-- Мы в instagram -->
-		<!-- <section class="subscribe-instagram">
+		<section class="subscribe-instagram">
 			<div class="container">
 				<div class="subscribe-instagram__communication">
 					<h2 class="subscribe-instagram__title">Мы в instagram<a class="subscribe-instagram__url"
@@ -2216,7 +2218,7 @@
 					Подписаться
 				</a>
 			</div>
-		</section> -->
+		</section>
 		<!-- /Мы в instagram -->
 	</main>
 
@@ -2234,39 +2236,38 @@
 					</div>
 					<div class="socials--tablet">
 						<a class="socials__link" href="#">
-							<svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+							<svg width="24" height="23" viewBox="0 0 24 23" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
-								<circle cx="26" cy="26" r="26" fill="white" fill-opacity="0.05" />
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M29.0667 16C34.6667 16 36 17.3333 36 22.9333V29.0667C36 34.6667 34.6667 36 29.0667 36H22.9333C17.3333 36 16 34.6667 16 29.0667V22.9333C16 17.3333 17.3333 16 22.9333 16H29.0667ZM21.4167 22.25H19.9583C19.5417 22.25 19.4583 22.45 19.4583 22.6583C19.4583 23.05 19.95 24.9667 21.7583 27.5C22.2367 28.2644 22.8894 28.9045 23.6629 29.3681C24.4364 29.8316 25.3087 30.1053 26.2083 30.1667C27.1333 30.1667 27.25 29.9583 27.25 29.6V28.2917C27.25 27.875 27.3417 27.7917 27.6333 27.7917C27.925 27.7917 28.2167 27.9 29.0833 28.7333C30.075 29.725 30.2333 30.1667 30.7917 30.1667H32.25C32.6667 30.1667 32.875 29.9583 32.7583 29.55C32.4478 28.9143 32.0307 28.3365 31.525 27.8417C31.1833 27.4333 30.6917 27.0083 30.5167 26.7917C30.3417 26.575 30.3667 26.3833 30.5167 26.1417C31.2889 25.1036 31.9482 23.9862 32.4833 22.8083C32.575 22.5 32.4833 22.275 32.0417 22.275H30.5833C30.4482 22.2676 30.3142 22.3031 30.2004 22.3764C30.0867 22.4497 29.999 22.5572 29.95 22.6833C29.4981 23.7581 28.8948 24.7627 28.1583 25.6667C27.8167 26.0083 27.6583 26.1167 27.475 26.1167C27.2917 26.1167 27.25 26.0083 27.25 25.7V22.7833C27.25 22.4167 27.1417 22.25 26.8333 22.25H24.5417C24.448 22.2454 24.3562 22.2778 24.2861 22.3401C24.216 22.4024 24.1731 22.4897 24.1667 22.5833C24.1667 22.9333 24.7 23.0167 24.75 24.0083V26.15C24.75 26.625 24.6667 26.7083 24.4833 26.7083C23.9833 26.7083 22.8167 24.8917 22.0667 22.8167C21.9333 22.4167 21.8333 22.25 21.4167 22.25Z"
-									fill="white" />
+								<path class="mobile-footer__social mobile-footer__social--vk" fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M15.68 0C22.4 0 24 1.53333 24 7.97333V15.0267C24 21.4667 22.4 23 15.68 23H8.32C1.6 23 0 21.4667 0 15.0267V7.97333C0 1.53333 1.6 0 8.32 0H15.68ZM6.5 7.1875H4.75C4.25 7.1875 4.15 7.4175 4.15 7.65708C4.15 8.1075 4.74 10.3117 6.91 13.225C7.48407 14.104 8.26729 14.8402 9.19548 15.3733C10.1237 15.9063 11.1704 16.221 12.25 16.2917C13.36 16.2917 13.5 16.0521 13.5 15.64V14.1354C13.5 13.6562 13.61 13.5604 13.96 13.5604C14.31 13.5604 14.66 13.685 15.7 14.6433C16.89 15.7837 17.08 16.2917 17.75 16.2917H19.5C20 16.2917 20.25 16.0521 20.11 15.5825C19.7374 14.8514 19.2368 14.1869 18.63 13.6179C18.22 13.1483 17.63 12.6596 17.42 12.4104C17.21 12.1612 17.24 11.9408 17.42 11.6629C18.3467 10.4692 19.1378 9.18415 19.78 7.82958C19.89 7.475 19.78 7.21625 19.25 7.21625H17.5C17.3378 7.20771 17.177 7.24852 17.0405 7.33287C16.904 7.41721 16.7988 7.54075 16.74 7.68583C16.1977 8.92185 15.4737 10.0772 14.59 11.1167C14.18 11.5096 13.99 11.6342 13.77 11.6342C13.55 11.6342 13.5 11.5096 13.5 11.155V7.80083C13.5 7.37917 13.37 7.1875 13 7.1875H10.25C10.1376 7.18223 10.0274 7.21942 9.94331 7.2911C9.85917 7.36277 9.80772 7.4632 9.8 7.57083C9.8 7.97333 10.44 8.06917 10.5 9.20958V11.6725C10.5 12.2187 10.4 12.3146 10.18 12.3146C9.58 12.3146 8.18 10.2254 7.28 7.83917C7.12 7.37917 7 7.1875 6.5 7.1875Z"
+									fill="white"></path>
 							</svg>
 						</a>
 						<a class="socials__link" href="#">
-							<svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
-								<circle cx="26" cy="26" r="26" fill="white" fill-opacity="0.05" />
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M36 26.0611C36 20.5045 31.5229 16 26 16C20.4771 16 16 20.5045 16 26.0611C16 31.0829 19.6569 35.2452 24.4375 36V28.9694H21.8984V26.0611H24.4375V23.8445C24.4375 21.323 25.9304 19.9301 28.2146 19.9301C29.3087 19.9301 30.4531 20.1266 30.4531 20.1266V22.6026H29.1921C27.9499 22.6026 27.5625 23.3782 27.5625 24.1738V26.0611H30.3359L29.8926 28.9694H27.5625V36C32.3431 35.2452 36 31.0829 36 26.0611Z"
-									fill="white" />
+								<path class="mobile-footer__social mobile-footer__social--face" fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07812V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z"
+									fill="white"></path>
 							</svg>
 						</a>
 						<a class="socials__link" href="#">
-							<svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
-								<circle cx="26" cy="26" r="26" fill="white" fill-opacity="0.05" />
-								<path
-									d="M27.9879 16C30.7739 16 31.7841 16.2901 32.8026 16.8348C33.8212 17.3795 34.6205 18.1788 35.1652 19.1974C35.7099 20.2159 36 21.2261 36 24.0121V27.9879C36 30.7739 35.7099 31.7841 35.1652 32.8026C34.6205 33.8212 33.8212 34.6205 32.8026 35.1652C31.7841 35.7099 30.7739 36 27.9879 36H24.0121C21.2261 36 20.2159 35.7099 19.1974 35.1652C18.1788 34.6205 17.3795 33.8212 16.8348 32.8026C16.2901 31.7841 16 30.7739 16 27.9879V24.0121C16 21.2261 16.2901 20.2159 16.8348 19.1974C17.3795 18.1788 18.1788 17.3795 19.1974 16.8348C20.2159 16.2901 21.2261 16 24.0121 16H27.9879ZM26 22.25C23.9289 22.25 22.25 23.9289 22.25 26C22.25 28.0711 23.9289 29.75 26 29.75C28.0711 29.75 29.75 28.0711 29.75 26C29.75 23.9289 28.0711 22.25 26 22.25ZM31 19.75C30.3096 19.75 29.75 20.3096 29.75 21C29.75 21.6904 30.3096 22.25 31 22.25C31.6904 22.25 32.25 21.6904 32.25 21C32.25 20.3096 31.6904 19.75 31 19.75Z"
-									fill="white" />
+								<path class="mobile-footer__social mobile-footer__social--insta"
+									d="M14.3854 0C17.7286 0 18.9409 0.348096 20.1632 1.00175C21.3854 1.6554 22.3446 2.61461 22.9983 3.83683C23.6519 5.05905 24 6.27137 24 9.61457V14.3854C24 17.7286 23.6519 18.9409 22.9983 20.1632C22.3446 21.3854 21.3854 22.3446 20.1632 22.9983C18.9409 23.6519 17.7286 24 14.3854 24H9.61457C6.27137 24 5.05905 23.6519 3.83683 22.9983C2.61461 22.3446 1.6554 21.3854 1.00175 20.1632C0.348096 18.9409 0 17.7286 0 14.3854L0 9.61457C0 6.27137 0.348096 5.05905 1.00175 3.83683C1.6554 2.61461 2.61461 1.6554 3.83683 1.00175C5.05905 0.348096 6.27137 0 9.61457 0L14.3854 0ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5ZM18 4.5C17.1716 4.5 16.5 5.17157 16.5 6C16.5 6.82843 17.1716 7.5 18 7.5C18.8284 7.5 19.5 6.82843 19.5 6C19.5 5.17157 18.8284 4.5 18 4.5Z"
+									fill="white"></path>
 							</svg>
 						</a>
 						<a class="socials__link" href="#">
-							<svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+							<svg width="24" height="17" viewBox="0 0 24 17" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
-								<circle cx="26" cy="26" r="26" fill="white" />
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M33.8142 19.4168C34.6764 19.6491 35.3541 20.3268 35.5832 21.1858C36 22.7448 36 25.9997 36 25.9997C36 25.9997 36 29.2545 35.5832 30.8136C35.3509 31.6758 34.6732 32.3535 33.8142 32.5826C32.2552 32.9994 26 32.9994 26 32.9994C26 32.9994 19.748 32.9994 18.1858 32.5826C17.3236 32.3503 16.6459 31.6726 16.4168 30.8136C16 29.2545 16 25.9997 16 25.9997C16 25.9997 16 22.7448 16.4168 21.1858C16.6491 20.3236 17.3268 19.6459 18.1858 19.4168C19.748 19 26 19 26 19C26 19 32.2552 19 33.8142 19.4168ZM29.002 25.9993L24.002 28.9997V22.999L29.002 25.9993Z"
-									fill="#FF0000" />
+								<path class="mobile-footer__social mobile-footer__social--youtube" fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M21.377 0.506137C22.4117 0.788182 23.2249 1.61114 23.4998 2.65432C24 4.5475 24 8.5 24 8.5C24 8.5 24 12.4525 23.4998 14.3457C23.2211 15.3927 22.4079 16.2157 21.377 16.4939C19.5062 17 12 17 12 17C12 17 4.49761 17 2.62297 16.4939C1.58829 16.2118 0.775056 15.3889 0.500159 14.3457C0 12.4525 0 8.5 0 8.5C0 8.5 0 4.5475 0.500159 2.65432C0.778874 1.60727 1.59211 0.784318 2.62297 0.506137C4.49761 0 12 0 12 0C12 0 19.5062 0 21.377 0.506137ZM15.6025 8.49959L9.60254 12.143V4.85618L15.6025 8.49959Z"
+									fill="white"></path>
 							</svg>
 						</a>
 					</div>
@@ -2331,114 +2332,114 @@
 							<div class="mobile-footer__preview openPreview">
 								<span class="mobile-footer__title">Направления</span>
 							</div>
-									<div class="mobile-footer__inner">
-										<a class="mobile-footer__link" href="">Мурманск</a>
-										<a class="mobile-footer__link" href="">Териберка</a>
-										<a class="mobile-footer__link" href="">Хабины</a>
-										<a class="mobile-footer__link" href="">Ловозеро</a>
-										<a class="mobile-footer__link" href="">Средний рыбачий</a>
-										<a class="mobile-footer__link" href="">Норвегия</a>
-									</div>
+							<div class="mobile-footer__inner">
+								<a class="mobile-footer__link" href="">Мурманск</a>
+								<a class="mobile-footer__link" href="">Териберка</a>
+								<a class="mobile-footer__link" href="">Хабины</a>
+								<a class="mobile-footer__link" href="">Ловозеро</a>
+								<a class="mobile-footer__link" href="">Средний рыбачий</a>
+								<a class="mobile-footer__link" href="">Норвегия</a>
+							</div>
 						</div>
 						<div class="mobile-footer__item">
 							<div class="mobile-footer__preview openPreview">
 								<span class="mobile-footer__title">Категории</span>
 							</div>
-									<div class="mobile-footer__inner">
-										<a class="mobile-footer__link" href="">Северное сияние</a>
-										<a class="mobile-footer__link" href="">Снегоходы</a>
-										<a class="mobile-footer__link" href="">Квадроциклы</a>
-										<a class="mobile-footer__link" href="">Саамы и олени</a>
-										<a class="mobile-footer__link" href="">Хаски</a>
-										<a class="mobile-footer__link" href="">Обзорные экскурсии</a>
-										<a class="mobile-footer__link" href="">Дайвинг</a>
-										<a class="mobile-footer__link" href="">Рыбалка</a>
-										<a class="mobile-footer__link" href="">На катере</a>
-										<a class="mobile-footer__link" href="">Джип-туры</a>
-										<a class="mobile-footer__link" href="">Фото-туры</a>
-										<a class="mobile-footer__link" href="">Гастро-туры</a>
-									</div>
+							<div class="mobile-footer__inner">
+								<a class="mobile-footer__link" href="">Северное сияние</a>
+								<a class="mobile-footer__link" href="">Снегоходы</a>
+								<a class="mobile-footer__link" href="">Квадроциклы</a>
+								<a class="mobile-footer__link" href="">Саамы и олени</a>
+								<a class="mobile-footer__link" href="">Хаски</a>
+								<a class="mobile-footer__link" href="">Обзорные экскурсии</a>
+								<a class="mobile-footer__link" href="">Дайвинг</a>
+								<a class="mobile-footer__link" href="">Рыбалка</a>
+								<a class="mobile-footer__link" href="">На катере</a>
+								<a class="mobile-footer__link" href="">Джип-туры</a>
+								<a class="mobile-footer__link" href="">Фото-туры</a>
+								<a class="mobile-footer__link" href="">Гастро-туры</a>
+							</div>
 						</div>
 						<div class="mobile-footer__item">
 							<div class="mobile-footer__preview openPreview">
 								<span class="mobile-footer__title">Сезоны</span>
 							</div>
-									<div class="mobile-footer__inner">
-										<a class="mobile-footer__link" href="">Зима</a>
-										<a class="mobile-footer__link" href="">Весна</a>
-										<a class="mobile-footer__link" href="">Лето</a>
-										<a class="mobile-footer__link" href="">Осень</a>
-										<a class="mobile-footer__link" href="">Новый год</a>
-										<a class="mobile-footer__link" href="">23 февраля</a>
-										<a class="mobile-footer__link" href="">8 марта</a>
-										<a class="mobile-footer__link" href="">Майские праздники</a>
-										<a class="mobile-footer__link" href="">Июньские праздники</a>
-										<a class="mobile-footer__link" href="">Осенние каникулы</a>
-										<a class="mobile-footer__link" href="">Ноябрьские праздники</a>
-									</div>
+							<div class="mobile-footer__inner">
+								<a class="mobile-footer__link" href="">Зима</a>
+								<a class="mobile-footer__link" href="">Весна</a>
+								<a class="mobile-footer__link" href="">Лето</a>
+								<a class="mobile-footer__link" href="">Осень</a>
+								<a class="mobile-footer__link" href="">Новый год</a>
+								<a class="mobile-footer__link" href="">23 февраля</a>
+								<a class="mobile-footer__link" href="">8 марта</a>
+								<a class="mobile-footer__link" href="">Майские праздники</a>
+								<a class="mobile-footer__link" href="">Июньские праздники</a>
+								<a class="mobile-footer__link" href="">Осенние каникулы</a>
+								<a class="mobile-footer__link" href="">Ноябрьские праздники</a>
+							</div>
 						</div>
 						<div class="mobile-footer__item">
 							<div class="mobile-footer__preview openPreview">
 								<span class="mobile-footer__title">Месяц</span>
 							</div>
-									<div class="mobile-footer__inner">
-										<a class="mobile-footer__link" href="">Январь</a>
-										<a class="mobile-footer__link" href="">Февраль</a>
-										<a class="mobile-footer__link" href="">Март</a>
-										<a class="mobile-footer__link" href="">Апрель</a>
-										<a class="mobile-footer__link" href="">Май</a>
-										<a class="mobile-footer__link" href="">Июнь</a>
-										<a class="mobile-footer__link" href="">Июль</a>
-										<a class="mobile-footer__link" href="">Август</a>
-										<a class="mobile-footer__link" href="">Сентябрь</a>
-										<a class="mobile-footer__link" href="">Октябрь</a>
-										<a class="mobile-footer__link" href="">Ноябрь</a>
-										<a class="mobile-footer__link" href="">Декабрь</a>
-									</div>
+							<div class="mobile-footer__inner">
+								<a class="mobile-footer__link" href="">Январь</a>
+								<a class="mobile-footer__link" href="">Февраль</a>
+								<a class="mobile-footer__link" href="">Март</a>
+								<a class="mobile-footer__link" href="">Апрель</a>
+								<a class="mobile-footer__link" href="">Май</a>
+								<a class="mobile-footer__link" href="">Июнь</a>
+								<a class="mobile-footer__link" href="">Июль</a>
+								<a class="mobile-footer__link" href="">Август</a>
+								<a class="mobile-footer__link" href="">Сентябрь</a>
+								<a class="mobile-footer__link" href="">Октябрь</a>
+								<a class="mobile-footer__link" href="">Ноябрь</a>
+								<a class="mobile-footer__link" href="">Декабрь</a>
+							</div>
 						</div>
 						<div class="mobile-footer__item">
 							<div class="mobile-footer__preview openPreview">
 								<span class="mobile-footer__title">Услуги</span>
 							</div>
-									<div class="mobile-footer__inner">
-										<a class="mobile-footer__link" href="#">Зимние туры в Мурманске 2020</a>
-										<a class="mobile-footer__link" href="#">Программа на 8 марта 2020</a>
-										<a class="mobile-footer__link" href="#">Пакетные многодневные туры</a>
-										<a class="mobile-footer__link" href="#">Туры на северное сияние</a>
-										<a class="mobile-footer__link" href="#">Туры в Териберку к океану</a>
-										<a class="mobile-footer__link" href="#">Туры с катанием на хаски</a>
-										<a class="mobile-footer__link" href="#">Туры в саамскую деревню</a>
-										<a class="mobile-footer__link" href="#">Туры в Хибинские горы, Кировск</a>
-										<a class="mobile-footer__link" href="#">Обзорные/исторические экскурсии</a>
-									</div>
+							<div class="mobile-footer__inner">
+								<a class="mobile-footer__link" href="#">Зимние туры в Мурманске 2020</a>
+								<a class="mobile-footer__link" href="#">Программа на 8 марта 2020</a>
+								<a class="mobile-footer__link" href="#">Пакетные многодневные туры</a>
+								<a class="mobile-footer__link" href="#">Туры на северное сияние</a>
+								<a class="mobile-footer__link" href="#">Туры в Териберку к океану</a>
+								<a class="mobile-footer__link" href="#">Туры с катанием на хаски</a>
+								<a class="mobile-footer__link" href="#">Туры в саамскую деревню</a>
+								<a class="mobile-footer__link" href="#">Туры в Хибинские горы, Кировск</a>
+								<a class="mobile-footer__link" href="#">Обзорные/исторические экскурсии</a>
+							</div>
 						</div>
 						<div class="mobile-footer__item">
 							<div class="mobile-footer__preview openPreview">
 								<span class="mobile-footer__title">Туристам</span>
 							</div>
-									<div class="mobile-footer__inner">
-										<a class="mobile-footer__link" href="#">Как добраться до Мурманска</a>
-										<a class="mobile-footer__link" href="#">Териберка</a>
-										<a class="mobile-footer__link" href="#">Ответы на частые вопросы</a>
-										<a class="mobile-footer__link" href="#">Лучшие рестораны Мурманска</a>
-										<a class="mobile-footer__link" href="#">Лучшие гостиницы Мурманска</a>
-										<a class="mobile-footer__link" href="#">Горнолыжные комплексы</a>
-										<a class="mobile-footer__link" href="#">Куда сходить в Мурманске</a>
-										<a class="mobile-footer__link" href="#">Блог</a>
-									</div>
+							<div class="mobile-footer__inner">
+								<a class="mobile-footer__link" href="#">Как добраться до Мурманска</a>
+								<a class="mobile-footer__link" href="#">Териберка</a>
+								<a class="mobile-footer__link" href="#">Ответы на частые вопросы</a>
+								<a class="mobile-footer__link" href="#">Лучшие рестораны Мурманска</a>
+								<a class="mobile-footer__link" href="#">Лучшие гостиницы Мурманска</a>
+								<a class="mobile-footer__link" href="#">Горнолыжные комплексы</a>
+								<a class="mobile-footer__link" href="#">Куда сходить в Мурманске</a>
+								<a class="mobile-footer__link" href="#">Блог</a>
+							</div>
 						</div>
 						<div class="mobile-footer__item">
 							<div class="mobile-footer__preview openPreview">
 								<span class="mobile-footer__title">Кто мы</span>
 							</div>
-									<div class="mobile-footer__inner">
-										<a class="mobile-footer__link" href="#">Мурманск</a>
-										<a class="mobile-footer__link" href="#">Териберка</a>
-										<a class="mobile-footer__link" href="#">Хабины</a>
-										<a class="mobile-footer__link" href="#">Ловозеро</a>
-										<a class="mobile-footer__link" href="#">Средний рыбачий</a>
-										<a class="mobile-footer__link" href="#">Норвегия</a>
-									</div>
+							<div class="mobile-footer__inner">
+								<a class="mobile-footer__link" href="#">Мурманск</a>
+								<a class="mobile-footer__link" href="#">Териберка</a>
+								<a class="mobile-footer__link" href="#">Хабины</a>
+								<a class="mobile-footer__link" href="#">Ловозеро</a>
+								<a class="mobile-footer__link" href="#">Средний рыбачий</a>
+								<a class="mobile-footer__link" href="#">Норвегия</a>
+							</div>
 						</div>
 					</div>
 
@@ -2451,30 +2452,45 @@
 							<a class="info__link" href="#">Политика конфиденциальности</a>
 							<a class="info__link" href="#">Договор-оферта</a>
 						</div>
-						
+
 					</div>
 
 
 					<div class="socials">
 						<a class="socials__link" href="#">
-							<svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path class="footer-mobile__social footer-mobile__social--vk" fill-rule="evenodd" clip-rule="evenodd" d="M15.68 0C22.4 0 24 1.53333 24 7.97333V15.0267C24 21.4667 22.4 23 15.68 23H8.32C1.6 23 0 21.4667 0 15.0267V7.97333C0 1.53333 1.6 0 8.32 0H15.68ZM6.5 7.1875H4.75C4.25 7.1875 4.15 7.4175 4.15 7.65708C4.15 8.1075 4.74 10.3117 6.91 13.225C7.48407 14.104 8.26729 14.8402 9.19548 15.3733C10.1237 15.9063 11.1704 16.221 12.25 16.2917C13.36 16.2917 13.5 16.0521 13.5 15.64V14.1354C13.5 13.6562 13.61 13.5604 13.96 13.5604C14.31 13.5604 14.66 13.685 15.7 14.6433C16.89 15.7837 17.08 16.2917 17.75 16.2917H19.5C20 16.2917 20.25 16.0521 20.11 15.5825C19.7374 14.8514 19.2368 14.1869 18.63 13.6179C18.22 13.1483 17.63 12.6596 17.42 12.4104C17.21 12.1612 17.24 11.9408 17.42 11.6629C18.3467 10.4692 19.1378 9.18415 19.78 7.82958C19.89 7.475 19.78 7.21625 19.25 7.21625H17.5C17.3378 7.20771 17.177 7.24852 17.0405 7.33287C16.904 7.41721 16.7988 7.54075 16.74 7.68583C16.1977 8.92185 15.4737 10.0772 14.59 11.1167C14.18 11.5096 13.99 11.6342 13.77 11.6342C13.55 11.6342 13.5 11.5096 13.5 11.155V7.80083C13.5 7.37917 13.37 7.1875 13 7.1875H10.25C10.1376 7.18223 10.0274 7.21942 9.94331 7.2911C9.85917 7.36277 9.80772 7.4632 9.8 7.57083C9.8 7.97333 10.44 8.06917 10.5 9.20958V11.6725C10.5 12.2187 10.4 12.3146 10.18 12.3146C9.58 12.3146 8.18 10.2254 7.28 7.83917C7.12 7.37917 7 7.1875 6.5 7.1875Z" fill="white"/>
-								</svg>
+							<svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="mobile-footer__social mobile-footer__social--vk" fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M15.68 0C22.4 0 24 1.53333 24 7.97333V15.0267C24 21.4667 22.4 23 15.68 23H8.32C1.6 23 0 21.4667 0 15.0267V7.97333C0 1.53333 1.6 0 8.32 0H15.68ZM6.5 7.1875H4.75C4.25 7.1875 4.15 7.4175 4.15 7.65708C4.15 8.1075 4.74 10.3117 6.91 13.225C7.48407 14.104 8.26729 14.8402 9.19548 15.3733C10.1237 15.9063 11.1704 16.221 12.25 16.2917C13.36 16.2917 13.5 16.0521 13.5 15.64V14.1354C13.5 13.6562 13.61 13.5604 13.96 13.5604C14.31 13.5604 14.66 13.685 15.7 14.6433C16.89 15.7837 17.08 16.2917 17.75 16.2917H19.5C20 16.2917 20.25 16.0521 20.11 15.5825C19.7374 14.8514 19.2368 14.1869 18.63 13.6179C18.22 13.1483 17.63 12.6596 17.42 12.4104C17.21 12.1612 17.24 11.9408 17.42 11.6629C18.3467 10.4692 19.1378 9.18415 19.78 7.82958C19.89 7.475 19.78 7.21625 19.25 7.21625H17.5C17.3378 7.20771 17.177 7.24852 17.0405 7.33287C16.904 7.41721 16.7988 7.54075 16.74 7.68583C16.1977 8.92185 15.4737 10.0772 14.59 11.1167C14.18 11.5096 13.99 11.6342 13.77 11.6342C13.55 11.6342 13.5 11.5096 13.5 11.155V7.80083C13.5 7.37917 13.37 7.1875 13 7.1875H10.25C10.1376 7.18223 10.0274 7.21942 9.94331 7.2911C9.85917 7.36277 9.80772 7.4632 9.8 7.57083C9.8 7.97333 10.44 8.06917 10.5 9.20958V11.6725C10.5 12.2187 10.4 12.3146 10.18 12.3146C9.58 12.3146 8.18 10.2254 7.28 7.83917C7.12 7.37917 7 7.1875 6.5 7.1875Z"
+									fill="white"></path>
+							</svg>
 						</a>
 						<a class="socials__link" href="#">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path class="footer-mobile__social footer-mobile__social--face" fill-rule="evenodd" clip-rule="evenodd" d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07812V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z" fill="white"/>
-								</svg>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="mobile-footer__social mobile-footer__social--face" fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07812V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z"
+									fill="white"></path>
+							</svg>
 						</a>
 						<a class="socials__link" href="#">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path class="footer-mobile__social footer-mobile__social--insta" d="M14.3854 0C17.7286 0 18.9409 0.348096 20.1632 1.00175C21.3854 1.6554 22.3446 2.61461 22.9983 3.83683C23.6519 5.05905 24 6.27137 24 9.61457V14.3854C24 17.7286 23.6519 18.9409 22.9983 20.1632C22.3446 21.3854 21.3854 22.3446 20.1632 22.9983C18.9409 23.6519 17.7286 24 14.3854 24H9.61457C6.27137 24 5.05905 23.6519 3.83683 22.9983C2.61461 22.3446 1.6554 21.3854 1.00175 20.1632C0.348096 18.9409 0 17.7286 0 14.3854L0 9.61457C0 6.27137 0.348096 5.05905 1.00175 3.83683C1.6554 2.61461 2.61461 1.6554 3.83683 1.00175C5.05905 0.348096 6.27137 0 9.61457 0L14.3854 0ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5ZM18 4.5C17.1716 4.5 16.5 5.17157 16.5 6C16.5 6.82843 17.1716 7.5 18 7.5C18.8284 7.5 19.5 6.82843 19.5 6C19.5 5.17157 18.8284 4.5 18 4.5Z" fill="white"/>
-								</svg>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="mobile-footer__social mobile-footer__social--insta"
+									d="M14.3854 0C17.7286 0 18.9409 0.348096 20.1632 1.00175C21.3854 1.6554 22.3446 2.61461 22.9983 3.83683C23.6519 5.05905 24 6.27137 24 9.61457V14.3854C24 17.7286 23.6519 18.9409 22.9983 20.1632C22.3446 21.3854 21.3854 22.3446 20.1632 22.9983C18.9409 23.6519 17.7286 24 14.3854 24H9.61457C6.27137 24 5.05905 23.6519 3.83683 22.9983C2.61461 22.3446 1.6554 21.3854 1.00175 20.1632C0.348096 18.9409 0 17.7286 0 14.3854L0 9.61457C0 6.27137 0.348096 5.05905 1.00175 3.83683C1.6554 2.61461 2.61461 1.6554 3.83683 1.00175C5.05905 0.348096 6.27137 0 9.61457 0L14.3854 0ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5ZM18 4.5C17.1716 4.5 16.5 5.17157 16.5 6C16.5 6.82843 17.1716 7.5 18 7.5C18.8284 7.5 19.5 6.82843 19.5 6C19.5 5.17157 18.8284 4.5 18 4.5Z"
+									fill="white"></path>
+							</svg>
 						</a>
 						<a class="socials__link" href="#">
-							<svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path class="footer-mobile__social footer-mobile__social--youtube" fill-rule="evenodd" clip-rule="evenodd" d="M21.377 0.506137C22.4117 0.788182 23.2249 1.61114 23.4998 2.65432C24 4.5475 24 8.5 24 8.5C24 8.5 24 12.4525 23.4998 14.3457C23.2211 15.3927 22.4079 16.2157 21.377 16.4939C19.5062 17 12 17 12 17C12 17 4.49761 17 2.62297 16.4939C1.58829 16.2118 0.775056 15.3889 0.500159 14.3457C0 12.4525 0 8.5 0 8.5C0 8.5 0 4.5475 0.500159 2.65432C0.778874 1.60727 1.59211 0.784318 2.62297 0.506137C4.49761 0 12 0 12 0C12 0 19.5062 0 21.377 0.506137ZM15.6025 8.49959L9.60254 12.143V4.85618L15.6025 8.49959Z" fill="white"/>
-								</svg>						
+							<svg width="24" height="17" viewBox="0 0 24 17" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="mobile-footer__social mobile-footer__social--youtube" fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M21.377 0.506137C22.4117 0.788182 23.2249 1.61114 23.4998 2.65432C24 4.5475 24 8.5 24 8.5C24 8.5 24 12.4525 23.4998 14.3457C23.2211 15.3927 22.4079 16.2157 21.377 16.4939C19.5062 17 12 17 12 17C12 17 4.49761 17 2.62297 16.4939C1.58829 16.2118 0.775056 15.3889 0.500159 14.3457C0 12.4525 0 8.5 0 8.5C0 8.5 0 4.5475 0.500159 2.65432C0.778874 1.60727 1.59211 0.784318 2.62297 0.506137C4.49761 0 12 0 12 0C12 0 19.5062 0 21.377 0.506137ZM15.6025 8.49959L9.60254 12.143V4.85618L15.6025 8.49959Z"
+									fill="white"></path>
+							</svg>
 						</a>
 					</div>
 				</div>
@@ -2616,10 +2632,12 @@
 						</div>
 						<a class="contacts__phone contacts__phone--mobile" href="tel:+79995215100">+7 (999)
 							521-51-00</a>
-						<button class="callback__call callback__call--mobile"><span class="mobile-footer-text">Заказать звонок</span></button>
+						<button class="callback__call callback__call--mobile"><span class="mobile-footer-text">Заказать
+								звонок</span></button>
 					</div>
 					<div class="contacts-back contacts-back--mobile">
-						<p class="contacts-back__request-text contacts-back__request-text--mobile">E-mail для заявок и вопросов
+						<p class="contacts-back__request-text contacts-back__request-text--mobile">E-mail для заявок и
+							вопросов
 						</p>
 						<a class="contacts-back__request-mail contacts-back__request-mail--mobile"
 							href="mailto:info@north4you.com">info@north4you.com</a>
@@ -2630,135 +2648,150 @@
 						<div class="mobile-footer__preview openPreview">
 							<span class="mobile-footer__title">Направления</span>
 						</div>
-								<div class="mobile-footer__inner">
-									<a class="mobile-footer__link" href="">Мурманск</a>
-									<a class="mobile-footer__link" href="">Териберка</a>
-									<a class="mobile-footer__link" href="">Хабины</a>
-									<a class="mobile-footer__link" href="">Ловозеро</a>
-									<a class="mobile-footer__link" href="">Средний рыбачий</a>
-									<a class="mobile-footer__link" href="">Норвегия</a>
-								</div>
+						<div class="mobile-footer__inner">
+							<a class="mobile-footer__link" href="">Мурманск</a>
+							<a class="mobile-footer__link" href="">Териберка</a>
+							<a class="mobile-footer__link" href="">Хабины</a>
+							<a class="mobile-footer__link" href="">Ловозеро</a>
+							<a class="mobile-footer__link" href="">Средний рыбачий</a>
+							<a class="mobile-footer__link" href="">Норвегия</a>
+						</div>
 					</div>
 					<div class="mobile-footer__item">
 						<div class="mobile-footer__preview openPreview">
 							<span class="mobile-footer__title">Категории</span>
 						</div>
-								<div class="mobile-footer__inner">
-									<a class="mobile-footer__link" href="">Северное сияние</a>
-									<a class="mobile-footer__link" href="">Снегоходы</a>
-									<a class="mobile-footer__link" href="">Квадроциклы</a>
-									<a class="mobile-footer__link" href="">Саамы и олени</a>
-									<a class="mobile-footer__link" href="">Хаски</a>
-									<a class="mobile-footer__link" href="">Обзорные экскурсии</a>
-									<a class="mobile-footer__link" href="">Дайвинг</a>
-									<a class="mobile-footer__link" href="">Рыбалка</a>
-									<a class="mobile-footer__link" href="">На катере</a>
-									<a class="mobile-footer__link" href="">Джип-туры</a>
-									<a class="mobile-footer__link" href="">Фото-туры</a>
-									<a class="mobile-footer__link" href="">Гастро-туры</a>
-								</div>
+						<div class="mobile-footer__inner">
+							<a class="mobile-footer__link" href="">Северное сияние</a>
+							<a class="mobile-footer__link" href="">Снегоходы</a>
+							<a class="mobile-footer__link" href="">Квадроциклы</a>
+							<a class="mobile-footer__link" href="">Саамы и олени</a>
+							<a class="mobile-footer__link" href="">Хаски</a>
+							<a class="mobile-footer__link" href="">Обзорные экскурсии</a>
+							<a class="mobile-footer__link" href="">Дайвинг</a>
+							<a class="mobile-footer__link" href="">Рыбалка</a>
+							<a class="mobile-footer__link" href="">На катере</a>
+							<a class="mobile-footer__link" href="">Джип-туры</a>
+							<a class="mobile-footer__link" href="">Фото-туры</a>
+							<a class="mobile-footer__link" href="">Гастро-туры</a>
+						</div>
 					</div>
 					<div class="mobile-footer__item">
 						<div class="mobile-footer__preview openPreview">
 							<span class="mobile-footer__title">Сезоны</span>
 						</div>
-								<div class="mobile-footer__inner">
-									<a class="mobile-footer__link" href="">Зима</a>
-									<a class="mobile-footer__link" href="">Весна</a>
-									<a class="mobile-footer__link" href="">Лето</a>
-									<a class="mobile-footer__link" href="">Осень</a>
-									<a class="mobile-footer__link" href="">Новый год</a>
-									<a class="mobile-footer__link" href="">23 февраля</a>
-									<a class="mobile-footer__link" href="">8 марта</a>
-									<a class="mobile-footer__link" href="">Майские праздники</a>
-									<a class="mobile-footer__link" href="">Июньские праздники</a>
-									<a class="mobile-footer__link" href="">Осенние каникулы</a>
-									<a class="mobile-footer__link" href="">Ноябрьские праздники</a>
-								</div>
+						<div class="mobile-footer__inner">
+							<a class="mobile-footer__link" href="">Зима</a>
+							<a class="mobile-footer__link" href="">Весна</a>
+							<a class="mobile-footer__link" href="">Лето</a>
+							<a class="mobile-footer__link" href="">Осень</a>
+							<a class="mobile-footer__link" href="">Новый год</a>
+							<a class="mobile-footer__link" href="">23 февраля</a>
+							<a class="mobile-footer__link" href="">8 марта</a>
+							<a class="mobile-footer__link" href="">Майские праздники</a>
+							<a class="mobile-footer__link" href="">Июньские праздники</a>
+							<a class="mobile-footer__link" href="">Осенние каникулы</a>
+							<a class="mobile-footer__link" href="">Ноябрьские праздники</a>
+						</div>
 					</div>
 					<div class="mobile-footer__item">
 						<div class="mobile-footer__preview openPreview">
 							<span class="mobile-footer__title">Месяц</span>
 						</div>
-								<div class="mobile-footer__inner">
-									<a class="mobile-footer__link" href="">Январь</a>
-									<a class="mobile-footer__link" href="">Февраль</a>
-									<a class="mobile-footer__link" href="">Март</a>
-									<a class="mobile-footer__link" href="">Апрель</a>
-									<a class="mobile-footer__link" href="">Май</a>
-									<a class="mobile-footer__link" href="">Июнь</a>
-									<a class="mobile-footer__link" href="">Июль</a>
-									<a class="mobile-footer__link" href="">Август</a>
-									<a class="mobile-footer__link" href="">Сентябрь</a>
-									<a class="mobile-footer__link" href="">Октябрь</a>
-									<a class="mobile-footer__link" href="">Ноябрь</a>
-									<a class="mobile-footer__link" href="">Декабрь</a>
-								</div>
+						<div class="mobile-footer__inner">
+							<a class="mobile-footer__link" href="">Январь</a>
+							<a class="mobile-footer__link" href="">Февраль</a>
+							<a class="mobile-footer__link" href="">Март</a>
+							<a class="mobile-footer__link" href="">Апрель</a>
+							<a class="mobile-footer__link" href="">Май</a>
+							<a class="mobile-footer__link" href="">Июнь</a>
+							<a class="mobile-footer__link" href="">Июль</a>
+							<a class="mobile-footer__link" href="">Август</a>
+							<a class="mobile-footer__link" href="">Сентябрь</a>
+							<a class="mobile-footer__link" href="">Октябрь</a>
+							<a class="mobile-footer__link" href="">Ноябрь</a>
+							<a class="mobile-footer__link" href="">Декабрь</a>
+						</div>
 					</div>
 					<div class="mobile-footer__item">
 						<div class="mobile-footer__preview openPreview">
 							<span class="mobile-footer__title">Услуги</span>
 						</div>
-								<div class="mobile-footer__inner">
-									<a class="mobile-footer__link" href="#">Зимние туры в Мурманске 2020</a>
-									<a class="mobile-footer__link" href="#">Программа на 8 марта 2020</a>
-									<a class="mobile-footer__link" href="#">Пакетные многодневные туры</a>
-									<a class="mobile-footer__link" href="#">Туры на северное сияние</a>
-									<a class="mobile-footer__link" href="#">Туры в Териберку к океану</a>
-									<a class="mobile-footer__link" href="#">Туры с катанием на хаски</a>
-									<a class="mobile-footer__link" href="#">Туры в саамскую деревню</a>
-									<a class="mobile-footer__link" href="#">Туры в Хибинские горы, Кировск</a>
-									<a class="mobile-footer__link" href="#">Обзорные/исторические экскурсии</a>
-								</div>
+						<div class="mobile-footer__inner">
+							<a class="mobile-footer__link" href="#">Зимние туры в Мурманске 2020</a>
+							<a class="mobile-footer__link" href="#">Программа на 8 марта 2020</a>
+							<a class="mobile-footer__link" href="#">Пакетные многодневные туры</a>
+							<a class="mobile-footer__link" href="#">Туры на северное сияние</a>
+							<a class="mobile-footer__link" href="#">Туры в Териберку к океану</a>
+							<a class="mobile-footer__link" href="#">Туры с катанием на хаски</a>
+							<a class="mobile-footer__link" href="#">Туры в саамскую деревню</a>
+							<a class="mobile-footer__link" href="#">Туры в Хибинские горы, Кировск</a>
+							<a class="mobile-footer__link" href="#">Обзорные/исторические экскурсии</a>
+						</div>
 					</div>
 					<div class="mobile-footer__item">
 						<div class="mobile-footer__preview openPreview">
 							<span class="mobile-footer__title">Туристам</span>
 						</div>
-								<div class="mobile-footer__inner">
-									<a class="mobile-footer__link" href="#">Как добраться до Мурманска</a>
-									<a class="mobile-footer__link" href="#">Териберка</a>
-									<a class="mobile-footer__link" href="#">Ответы на частые вопросы</a>
-									<a class="mobile-footer__link" href="#">Лучшие рестораны Мурманска</a>
-									<a class="mobile-footer__link" href="#">Лучшие гостиницы Мурманска</a>
-									<a class="mobile-footer__link" href="#">Горнолыжные комплексы</a>
-									<a class="mobile-footer__link" href="#">Куда сходить в Мурманске</a>
-									<a class="mobile-footer__link" href="#">Блог</a>
-								</div>
+						<div class="mobile-footer__inner">
+							<a class="mobile-footer__link" href="#">Как добраться до Мурманска</a>
+							<a class="mobile-footer__link" href="#">Териберка</a>
+							<a class="mobile-footer__link" href="#">Ответы на частые вопросы</a>
+							<a class="mobile-footer__link" href="#">Лучшие рестораны Мурманска</a>
+							<a class="mobile-footer__link" href="#">Лучшие гостиницы Мурманска</a>
+							<a class="mobile-footer__link" href="#">Горнолыжные комплексы</a>
+							<a class="mobile-footer__link" href="#">Куда сходить в Мурманске</a>
+							<a class="mobile-footer__link" href="#">Блог</a>
+						</div>
 					</div>
 					<div class="mobile-footer__item">
 						<div class="mobile-footer__preview openPreview">
 							<span class="mobile-footer__title">Кто мы</span>
 						</div>
-								<div class="mobile-footer__inner">
-									<a class="mobile-footer__link" href="#">Мурманск</a>
-									<a class="mobile-footer__link" href="#">Териберка</a>
-									<a class="mobile-footer__link" href="#">Хабины</a>
-									<a class="mobile-footer__link" href="#">Ловозеро</a>
-									<a class="mobile-footer__link" href="#">Средний рыбачий</a>
-									<a class="mobile-footer__link" href="#">Норвегия</a>
-								</div>
+						<div class="mobile-footer__inner">
+							<a class="mobile-footer__link" href="#">Мурманск</a>
+							<a class="mobile-footer__link" href="#">Териберка</a>
+							<a class="mobile-footer__link" href="#">Хабины</a>
+							<a class="mobile-footer__link" href="#">Ловозеро</a>
+							<a class="mobile-footer__link" href="#">Средний рыбачий</a>
+							<a class="mobile-footer__link" href="#">Норвегия</a>
+						</div>
 					</div>
 				</div>
 
 
 				<div class="socials">
-					<a class="socials__link" href="#"><svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path class="mobile-footer__social mobile-footer__social--vk" fill-rule="evenodd" clip-rule="evenodd" d="M15.68 0C22.4 0 24 1.53333 24 7.97333V15.0267C24 21.4667 22.4 23 15.68 23H8.32C1.6 23 0 21.4667 0 15.0267V7.97333C0 1.53333 1.6 0 8.32 0H15.68ZM6.5 7.1875H4.75C4.25 7.1875 4.15 7.4175 4.15 7.65708C4.15 8.1075 4.74 10.3117 6.91 13.225C7.48407 14.104 8.26729 14.8402 9.19548 15.3733C10.1237 15.9063 11.1704 16.221 12.25 16.2917C13.36 16.2917 13.5 16.0521 13.5 15.64V14.1354C13.5 13.6562 13.61 13.5604 13.96 13.5604C14.31 13.5604 14.66 13.685 15.7 14.6433C16.89 15.7837 17.08 16.2917 17.75 16.2917H19.5C20 16.2917 20.25 16.0521 20.11 15.5825C19.7374 14.8514 19.2368 14.1869 18.63 13.6179C18.22 13.1483 17.63 12.6596 17.42 12.4104C17.21 12.1612 17.24 11.9408 17.42 11.6629C18.3467 10.4692 19.1378 9.18415 19.78 7.82958C19.89 7.475 19.78 7.21625 19.25 7.21625H17.5C17.3378 7.20771 17.177 7.24852 17.0405 7.33287C16.904 7.41721 16.7988 7.54075 16.74 7.68583C16.1977 8.92185 15.4737 10.0772 14.59 11.1167C14.18 11.5096 13.99 11.6342 13.77 11.6342C13.55 11.6342 13.5 11.5096 13.5 11.155V7.80083C13.5 7.37917 13.37 7.1875 13 7.1875H10.25C10.1376 7.18223 10.0274 7.21942 9.94331 7.2911C9.85917 7.36277 9.80772 7.4632 9.8 7.57083C9.8 7.97333 10.44 8.06917 10.5 9.20958V11.6725C10.5 12.2187 10.4 12.3146 10.18 12.3146C9.58 12.3146 8.18 10.2254 7.28 7.83917C7.12 7.37917 7 7.1875 6.5 7.1875Z" fill="white"/>
+					<a class="socials__link" href="#"><svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path class="mobile-footer__social mobile-footer__social--vk" fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M15.68 0C22.4 0 24 1.53333 24 7.97333V15.0267C24 21.4667 22.4 23 15.68 23H8.32C1.6 23 0 21.4667 0 15.0267V7.97333C0 1.53333 1.6 0 8.32 0H15.68ZM6.5 7.1875H4.75C4.25 7.1875 4.15 7.4175 4.15 7.65708C4.15 8.1075 4.74 10.3117 6.91 13.225C7.48407 14.104 8.26729 14.8402 9.19548 15.3733C10.1237 15.9063 11.1704 16.221 12.25 16.2917C13.36 16.2917 13.5 16.0521 13.5 15.64V14.1354C13.5 13.6562 13.61 13.5604 13.96 13.5604C14.31 13.5604 14.66 13.685 15.7 14.6433C16.89 15.7837 17.08 16.2917 17.75 16.2917H19.5C20 16.2917 20.25 16.0521 20.11 15.5825C19.7374 14.8514 19.2368 14.1869 18.63 13.6179C18.22 13.1483 17.63 12.6596 17.42 12.4104C17.21 12.1612 17.24 11.9408 17.42 11.6629C18.3467 10.4692 19.1378 9.18415 19.78 7.82958C19.89 7.475 19.78 7.21625 19.25 7.21625H17.5C17.3378 7.20771 17.177 7.24852 17.0405 7.33287C16.904 7.41721 16.7988 7.54075 16.74 7.68583C16.1977 8.92185 15.4737 10.0772 14.59 11.1167C14.18 11.5096 13.99 11.6342 13.77 11.6342C13.55 11.6342 13.5 11.5096 13.5 11.155V7.80083C13.5 7.37917 13.37 7.1875 13 7.1875H10.25C10.1376 7.18223 10.0274 7.21942 9.94331 7.2911C9.85917 7.36277 9.80772 7.4632 9.8 7.57083C9.8 7.97333 10.44 8.06917 10.5 9.20958V11.6725C10.5 12.2187 10.4 12.3146 10.18 12.3146C9.58 12.3146 8.18 10.2254 7.28 7.83917C7.12 7.37917 7 7.1875 6.5 7.1875Z"
+								fill="white" />
 						</svg>
-						</a>
-					<a class="socials__link" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path class="mobile-footer__social mobile-footer__social--face" fill-rule="evenodd" clip-rule="evenodd" d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07812V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z" fill="white"/>
+					</a>
+					<a class="socials__link" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path class="mobile-footer__social mobile-footer__social--face" fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07812V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z"
+								fill="white" />
 						</svg>
-						</a>
-					<a class="socials__link" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path class="mobile-footer__social mobile-footer__social--insta" d="M14.3854 0C17.7286 0 18.9409 0.348096 20.1632 1.00175C21.3854 1.6554 22.3446 2.61461 22.9983 3.83683C23.6519 5.05905 24 6.27137 24 9.61457V14.3854C24 17.7286 23.6519 18.9409 22.9983 20.1632C22.3446 21.3854 21.3854 22.3446 20.1632 22.9983C18.9409 23.6519 17.7286 24 14.3854 24H9.61457C6.27137 24 5.05905 23.6519 3.83683 22.9983C2.61461 22.3446 1.6554 21.3854 1.00175 20.1632C0.348096 18.9409 0 17.7286 0 14.3854L0 9.61457C0 6.27137 0.348096 5.05905 1.00175 3.83683C1.6554 2.61461 2.61461 1.6554 3.83683 1.00175C5.05905 0.348096 6.27137 0 9.61457 0L14.3854 0ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5ZM18 4.5C17.1716 4.5 16.5 5.17157 16.5 6C16.5 6.82843 17.1716 7.5 18 7.5C18.8284 7.5 19.5 6.82843 19.5 6C19.5 5.17157 18.8284 4.5 18 4.5Z" fill="white"/>
+					</a>
+					<a class="socials__link" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path class="mobile-footer__social mobile-footer__social--insta"
+								d="M14.3854 0C17.7286 0 18.9409 0.348096 20.1632 1.00175C21.3854 1.6554 22.3446 2.61461 22.9983 3.83683C23.6519 5.05905 24 6.27137 24 9.61457V14.3854C24 17.7286 23.6519 18.9409 22.9983 20.1632C22.3446 21.3854 21.3854 22.3446 20.1632 22.9983C18.9409 23.6519 17.7286 24 14.3854 24H9.61457C6.27137 24 5.05905 23.6519 3.83683 22.9983C2.61461 22.3446 1.6554 21.3854 1.00175 20.1632C0.348096 18.9409 0 17.7286 0 14.3854L0 9.61457C0 6.27137 0.348096 5.05905 1.00175 3.83683C1.6554 2.61461 2.61461 1.6554 3.83683 1.00175C5.05905 0.348096 6.27137 0 9.61457 0L14.3854 0ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5ZM18 4.5C17.1716 4.5 16.5 5.17157 16.5 6C16.5 6.82843 17.1716 7.5 18 7.5C18.8284 7.5 19.5 6.82843 19.5 6C19.5 5.17157 18.8284 4.5 18 4.5Z"
+								fill="white" />
 						</svg>
-						</a>
-					<a class="socials__link" href="#"><svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path class="mobile-footer__social mobile-footer__social--youtube" fill-rule="evenodd" clip-rule="evenodd" d="M21.377 0.506137C22.4117 0.788182 23.2249 1.61114 23.4998 2.65432C24 4.5475 24 8.5 24 8.5C24 8.5 24 12.4525 23.4998 14.3457C23.2211 15.3927 22.4079 16.2157 21.377 16.4939C19.5062 17 12 17 12 17C12 17 4.49761 17 2.62297 16.4939C1.58829 16.2118 0.775056 15.3889 0.500159 14.3457C0 12.4525 0 8.5 0 8.5C0 8.5 0 4.5475 0.500159 2.65432C0.778874 1.60727 1.59211 0.784318 2.62297 0.506137C4.49761 0 12 0 12 0C12 0 19.5062 0 21.377 0.506137ZM15.6025 8.49959L9.60254 12.143V4.85618L15.6025 8.49959Z" fill="white"/>
-						</svg>						
-						</a>
+					</a>
+					<a class="socials__link" href="#"><svg width="24" height="17" viewBox="0 0 24 17" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path class="mobile-footer__social mobile-footer__social--youtube" fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M21.377 0.506137C22.4117 0.788182 23.2249 1.61114 23.4998 2.65432C24 4.5475 24 8.5 24 8.5C24 8.5 24 12.4525 23.4998 14.3457C23.2211 15.3927 22.4079 16.2157 21.377 16.4939C19.5062 17 12 17 12 17C12 17 4.49761 17 2.62297 16.4939C1.58829 16.2118 0.775056 15.3889 0.500159 14.3457C0 12.4525 0 8.5 0 8.5C0 8.5 0 4.5475 0.500159 2.65432C0.778874 1.60727 1.59211 0.784318 2.62297 0.506137C4.49761 0 12 0 12 0C12 0 19.5062 0 21.377 0.506137ZM15.6025 8.49959L9.60254 12.143V4.85618L15.6025 8.49959Z"
+								fill="white" />
+						</svg>
+					</a>
 				</div>
 
 
@@ -2846,7 +2879,8 @@
 					<div class="desktop-header__tours--modal">
 						<a class="desktop-header__tour--modal" href="#">Северное сияние</a>
 						<a class="desktop-header__tour--modal" href="#">Териберка</a>
-						<a class="desktop-header__tour--modal desktop-header__tour--modal__list" href="#">Топ-10 однодневних туров</a>
+						<a class="desktop-header__tour--modal desktop-header__tour--modal__list" href="#">Топ-10
+							однодневних туров</a>
 						<div class="desktop-header__tour--modal__hidden">
 							<a class="desktop-header__tour--modal__link" href="#">Тур 1</a>
 							<a class="desktop-header__tour--modal__link" href="#">Тур 2</a>
@@ -2859,7 +2893,8 @@
 							<a class="desktop-header__tour--modal__link" href="#">Тур 9</a>
 							<a class="desktop-header__tour--modal__link" href="#">Тур 10</a>
 						</div>
-						<a class="desktop-header__tour--modal desktop-header__tour--modal__list" href="#">Готовые пакетные туры</a>
+						<a class="desktop-header__tour--modal desktop-header__tour--modal__list" href="#">Готовые
+							пакетные туры</a>
 						<div class="desktop-header__tour--modal__hidden">
 							<a class="desktop-header__tour--modal__link" href="#">Тур 1</a>
 							<a class="desktop-header__tour--modal__link" href="#">Тур 2</a>
@@ -2942,14 +2977,22 @@
 						<a href="#" class="desktop-header__top-item desktop-header__top-item--modal">Оплата и
 							бронирование</a>
 						<a href="#" class="desktop-header__top-item desktop-header__top-item--modal">Турагенствам</a>
-						<a href="#" class="desktop-header__top-item desktop-header__top-item--modal">Еще
-							<svg width="12" height="6" viewBox="0 0 12 6" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
-									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
-									fill="white" />
-							</svg>
+						<a href="#"
+							class="desktop-header__top-item desktop-header__top-item--modal desktop-header__top-item--modal__list">
+							Еще
 						</a>
+						<div class="desktop-header__tour--modal__hidden">
+							<a class="desktop-header__tour--modal__link" href="#">Еще 1</a>
+							<a class="desktop-header__tour--modal__link" href="#">Еще 2</a>
+							<a class="desktop-header__tour--modal__link" href="#">Еще 3</a>
+							<a class="desktop-header__tour--modal__link" href="#">Еще 4</a>
+							<a class="desktop-header__tour--modal__link" href="#">Еще 5</a>
+							<a class="desktop-header__tour--modal__link" href="#">Еще 6</a>
+							<a class="desktop-header__tour--modal__link" href="#">Еще 7</a>
+							<a class="desktop-header__tour--modal__link" href="#">Еще 8</a>
+							<a class="desktop-header__tour--modal__link" href="#">Еще 9</a>
+							<a class="desktop-header__tour--modal__link" href="#">Еще 10</a>
+						</div>
 					</nav>
 				</div>
 				<div class="modal-wrapper__left-content__item modal-wrapper__left-content__item--flex">
