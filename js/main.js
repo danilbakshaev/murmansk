@@ -9,7 +9,7 @@ $(function() {
     nextArrow: '<button type="button" class="slider-next slider__slider-next">Next</button>',
     responsive: [
       {
-      breakpoint: 840,
+      breakpoint: 1080,
       settings: {
       slidesToShow: 2,
       slidesToScroll: 1,
@@ -28,18 +28,37 @@ $(function() {
     ] 
   });
 
-  // $('.tours__items').slick({
-  //   arrows: false,
-  // dots: true,
-  // infinite: true,
-  // slidesToScroll: 1,
-  // variableWidth: true,
-  // mobileFirst: true,
-  // responsive: [{
-  //   breakpoint: 840,
-  //   settings: 'unslick'
-  // }]
-  // });
+
+  $('.tours__items-mob').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: false,
+    prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
+    responsive: [
+      {
+        breakpoint: 840,
+        settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+        centerMode: false,
+          }
+        },
+
+      {
+        breakpoint: 740,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: false,
+          }
+        },
+    ] 
+  });
+
+ 
 
   $('.reviews__inner').slick({
     slidesToShow: 4,
@@ -80,7 +99,7 @@ $(function() {
     nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
     responsive: [
       {
-        breakpoint: 1080,
+        breakpoint: 1240,
         settings: {
         slidesToShow: 3,
         slidesToScroll: 1,

@@ -1060,11 +1060,25 @@ img {
   margin-right: -19px;
   margin-bottom: -32px;
 }
+.tours__items-mob {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -19px;
+  margin-bottom: -32px;
+}
+.tours-mob {
+ display: none;
+}
+.tours__inner-btn{
+  display: flex;
+  justify-content: center;
+}
 
 .tours__item {
-  width: 350px;
+  width: 403px;
   min-height: 420px;
-  display: flex;
+  display: flex!important;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
@@ -1075,10 +1089,10 @@ img {
   margin-bottom: 30px;
   border-radius: 12px;
 }
-.tours__item:hover {
-  width: calc(350px + 60px);
+/* .tours__item:hover {
+  width: calc(403px + 60px);
   height: calc(420px + 60px);
-}
+} */
 
 .tours__item-img {
   width: 14px;
@@ -1165,6 +1179,38 @@ img {
 .tours__item-title {
   display: flex;
   margin-bottom: 7px;
+}
+
+@media screen and (max-width: 1440px) {
+  .tours__item {
+    width: 333px;
+  }
+  .tours__img-bg{
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .tours__item {
+    width: 283px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .tours {
+   display: none;
+  }
+  .tours-mob {
+    display: block;
+  }
+  .btn-link {
+    width: auto!important;
+  }
+  .tours__img-bg{
+    height: 100%;
+  }
+  .tours__item:hover {
+    width: auto;
+    height: auto;
+  }
 }
 
 /* /Блок "Топ туров" */
@@ -1631,12 +1677,33 @@ img {
 
 /* popular-destinations */
 
+.popular-destinations {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
 .popular-destinations__img {
   position: absolute;
   top: 0;
   right: 0px;
   z-index: -1;
 }
+
+.scroll-link__tag{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 168%;
+  color: #A5A5B1;
+  margin-right: 15px;
+}
+.scroll-link__inner{
+ width: 2760px;
+ overflow: scroll;
+}
+.scroll-link{
+  overflow: auto;
+  margin-bottom: 40px;
+  margin-left: 20px;
+ }
 
 .popular-destinations__item {
   position: relative;
@@ -1673,7 +1740,9 @@ img {
 .simple-link__img {
   width: auto;
 }
-
+.simple-link--popular{
+  margin-left: 20px;
+}
 .slider__slider-prev {
   top: 284px;
   left: 0px;
@@ -1737,45 +1806,25 @@ img {
 
 @media screen and (max-width: 1440px) {
   .popular-destinations__item {
-    width: 300px !important;
+    width: 279px !important;
   }
-
   .popular-destinations__item:hover {
-    width: calc(300px + 30px) !important;
+    width: auto;
+    height: auto;
+  }
+  .popular-destinations__img {
+    height: 100%;
   }
 }
 
 @media screen and (max-width: 1240px) {
   .popular-destinations__item {
-    width: 250px !important;
-  }
-
-  .popular-destinations__item:hover {
-    width: calc(250px + 30px) !important;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .popular-destinations__item {
-    width: 220px !important;
-  }
-
-  .popular-destinations__item:hover {
-    width: calc(220px + 30px) !important;
+    width: auto!important;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .popular-destinations__item {
-    width: 185px !important;
-  }
-
-  .popular-destinations__item:hover {
-    width: calc(185px + 30px) !important;
-  }
-
   .popular-destinations__img {
-    width: auto;
     height: 100%;
   }
 }
@@ -1784,28 +1833,17 @@ img {
   .slick-center {
     padding: 0px;
   }
-
   .popular-destinations__items .slick-list .slick-track {
     display: flex;
     align-items: baseline;
   }
-
-  .popular-destinations__item {
-    width: 205px !important;
-    height: 350px;
-  }
-
-  .popular-destinations__item:hover {
-    width: calc(260px + 30px) !important;
-  }
 }
 @media screen and (max-width: 740px) {
-  .slick-slide{
-    display: flex!important;
-    flex-direction: column;
-    align-items: center;
+  .popular-destinations__item{
+    width: auto!important;
   }
 }
+
 
 /* Блок "Ответы на часто задаваемые вопросы" */
 
