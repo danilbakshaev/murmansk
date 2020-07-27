@@ -163,13 +163,18 @@ $(function() {
     $(this).toggleClass("closeModalText");
     $(this).next().slideToggle("slow");
   });
-  
+
+  $(".desktop-header__tour--modal__hidden").hide()
+  $(".desktop-header__top-item--modal__list").click(function () {
+    $(this).toggleClass("closeModalText");
+    $(this).next().slideToggle("slow");
+  });
+    
   $(".faq__cut").hide()
   $(".faq__spoiler").click(function () {
     $(this).toggleClass("closeText");
     $(this).next().slideToggle("slow");
   });
-
 
   $(".mobile-footer__inner").hide()
   $(".mobile-footer__preview").click(function () {
