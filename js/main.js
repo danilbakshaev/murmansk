@@ -95,6 +95,7 @@ $(function() {
   $('.stocks__items').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
+    infinite: false,
     prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
     responsive: [

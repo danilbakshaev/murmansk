@@ -1733,6 +1733,7 @@ header::before {
 }
 
 /* popular-destinations */
+
 .popular-destinations {
   padding: 96px 0;
   background-color: #F8F8F6;
@@ -1860,9 +1861,8 @@ header::before {
   transition: all 0.2s linear;
   cursor: pointer;
 }
-
-.slick-list {
-  overflow: inherit;
+.popular-destinations__items .slick-list {
+  overflow: inherit!important;
 }
 
 @media screen and (max-width: 1440px) {
@@ -1882,6 +1882,9 @@ header::before {
 @media screen and (max-width: 1240px) {
   .popular-destinations__item {
     width: auto !important;
+  }
+  .popular-destinations__img {
+    object-fit: cover;
   }
 }
 
@@ -1918,6 +1921,9 @@ header::before {
 
   .popular-destinations__item {
     width: auto !important;
+  }
+  .popular-destinations__item:active {
+    border: 1px solid #000;
   }
 }
 
@@ -2016,7 +2022,6 @@ header::before {
   line-height: 150%;
   color: #737385;
 }
-
 .simple-link {
   display: flex;
   align-items: center;
@@ -2024,8 +2029,12 @@ header::before {
   font-size: 14px;
   line-height: 17px;
   color: #FB5352;
+  transition: all .2s linear;
 }
 
+.simple-link:hover {
+  color: #e74747;
+}
 .simple-link__img {
   width: 26px;
   height: 27px;
@@ -2260,6 +2269,9 @@ header::before {
   align-items: flex-end;
 }
 
+/* .stocks__items .slick-slider{
+  overflow: inherit!important;
+} */
 
 .stocks__link {
   font-family: Roboto Slab;
