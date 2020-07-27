@@ -129,6 +129,12 @@ $(function() {
     }, ]
   });
 
+  $(".desktop-header__tour--modal__hidden").hide()
+  $(".desktop-header__tour--modal").click(function () {
+    $(this).toggleClass("closeModalText");
+    $(this).next().slideToggle("slow");
+  });
+  
   $(".faq__cut").hide()
   $(".faq__spoiler").click(function () {
     $(this).toggleClass("closeText");
