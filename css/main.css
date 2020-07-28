@@ -1111,11 +1111,11 @@ header::before {
 }
 
 .tours__item {
-  width: 403px;
+  width: 370px!important;
   min-height: 420px;
   display: flex !important;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   position: relative;
   text-decoration: none;
   padding: 20px;
@@ -1123,6 +1123,29 @@ header::before {
   margin-right: 30px;
   margin-bottom: 30px;
   border-radius: 12px;
+  transition: all 0.2s linear;
+}
+.tours__item:hover {
+  margin: 15px;
+  width: calc(370px + 30px);
+  height: calc(420px + 30px);
+}
+.tours__item-span-text{
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 6px 11px 6px 24px;
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #FFFFFF;
+}
+.tours__item-span-text::before{
+  content: url(/img/fire.svg);
+  position: absolute;
+  top: 4px;
+  left: 4px;
 }
 
 .tours__item-img {
@@ -2248,12 +2271,31 @@ header::before {
   overflow: hidden;
   padding: 30px;
   margin: 30px;
+  width: 230px!important;
   height: 433px;
   border-radius: 25px;
   display: flex !important;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
   transition: all 0.2s linear;
   background: linear-gradient(133.21deg, rgba(0, 0, 0, 0) 46.92%, rgba(3, 3, 3, 0.054) 56.84%, rgba(14, 14, 14, 0.6) 100%), rgba(0, 0, 0, 0.3);
+}
+.stocks__item:hover {
+  margin: 15px;
+  width: calc(230px + 30px) !important;
+  height: calc(433px + 30px);
+}
+.stocks__item-text{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px 9px;
+  border-radius: 5px;
 }
 
 .stocks__bg {
