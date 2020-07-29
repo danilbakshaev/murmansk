@@ -373,9 +373,18 @@ $(function() {
   };
 
   openVideo = document.querySelector('.openVideo');
+  openVideoMobile = document.querySelector('.openVideoMobile');
   videoModal = document.querySelector('.modal-wrapper__video');
 
   openVideo.addEventListener('click', function () {
+    openBaseModal();
+    videoModal.classList.remove('hidden');
+    setTimeout(function () {
+      videoModal.classList.remove('animation');
+    }, 20);
+  })
+
+  openVideoMobile.addEventListener('click', function () {
     openBaseModal();
     videoModal.classList.remove('hidden');
     setTimeout(function () {
