@@ -1288,22 +1288,29 @@ header::before {
   display: flex;
   margin-bottom: 7px;
 }
+@media screen and (min-width: 840px) {
+  .tours__item:hover {
+    width: calc(33.33% - 40px);
+    margin: 0;
+  }
+}
+
 
 @media screen and (max-width: 1440px) {
-  .tours__item {
+  /* .tours__item {
     width: 333px;
-  }
+  } */
 
   .tours__img-bg {
     height: 100%;
   }
 }
 
-@media screen and (max-width: 1240px) {
+/* @media screen and (max-width: 1240px) {
   .tours__item {
     width: 283px;
   }
-}
+} */
 
 @media screen and (max-width: 840px) {
   .tours {
@@ -1327,10 +1334,10 @@ header::before {
     height: 100%;
   }
 
-  .tours__item:hover {
+  /* .tours__item:hover {
     width: auto;
     height: auto;
-  }
+  } */
 }
 
 @media screen and (max-width: 740px) {
@@ -1878,7 +1885,7 @@ header::before {
 .popular-destinations__item {
   position: relative;
   overflow: hidden;
-  width: 352px !important;
+  width: 60.3% !important;
   margin: 30px;
   border-radius: 8px;
   padding: 30px;
@@ -1887,12 +1894,6 @@ header::before {
   transition: all 0.2s linear;
   display: flex !important;
   align-items: flex-end;
-}
-
-.popular-destinations__item:hover {
-  margin: 15px;
-  width: calc(352px + 30px) !important;
-  height: calc(500px + 30px);
 }
 
 .popular-destinations__items {
@@ -2022,14 +2023,29 @@ header::before {
   overflow: inherit !important;
 }
 
-@media screen and (max-width: 1440px) {
-  .popular-destinations__item {
-    width: 279px !important;
-  }
-
+@media screen and (min-width: 1080px) {
   .popular-destinations__item:hover {
-    width: auto !important;
+    margin: 15px;
+    width: calc(60.3% + 30px) !important;
+    height: calc(500px + 30px);
   }
+}
+@media screen and (min-width: 1440px) {
+  .popular-destinations__item{
+    height: 300px;
+  }
+  .popular-destinations__item:hover {
+    margin: 15px;
+    width: calc(auto + 30px) !important;
+    height: calc(300px + 30px);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+
+  /* .popular-destinations__item:hover {
+    width: auto !important;
+  } */
 
   .popular-destinations__img {
     height: 100%;
@@ -2037,9 +2053,9 @@ header::before {
 }
 
 @media screen and (max-width: 1240px) {
-  .popular-destinations__item {
+  /* .popular-destinations__item {
     width: auto !important;
-  }
+  } */
 
   .popular-destinations__img {
     object-fit: cover;
@@ -2049,6 +2065,12 @@ header::before {
 @media screen and (max-width: 992px) {
   .popular-destinations__img {
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .popular-destinations__item {
+    width: 273px!important;
   }
 }
 
@@ -2070,24 +2092,15 @@ header::before {
     display: flex;
     align-items: baseline;
   }
-
-  .popular-destinations__item {
-    width: 205px !important;
-    height: 350px;
-  }
 }
 
 @media screen and (max-width: 740px) {
   .popular-destinations {
     padding: 48px 0;
   }
-
-  .popular-destinations__item {
-    width: auto !important;
-  }
-
-  .popular-destinations__item:active {
-    border: 1px solid #000;
+  .slick-slide {
+    display: flex!important;
+    justify-content: center;
   }
 }
 
@@ -2442,6 +2455,7 @@ header::before {
 
 
 /* stocks */
+
 .stocks {
   padding: 96px 0;
   background-color: #F8F8F6;
@@ -2456,7 +2470,7 @@ header::before {
   overflow: hidden;
   padding: 30px;
   margin: 30px;
-  width: 230px !important;
+  /* width: 230px !important; */
   height: 433px;
   border-radius: 25px;
   display: flex !important;
@@ -2464,12 +2478,6 @@ header::before {
   justify-content: space-between;
   transition: all 0.2s linear;
   background: linear-gradient(133.21deg, rgba(0, 0, 0, 0) 46.92%, rgba(3, 3, 3, 0.054) 56.84%, rgba(14, 14, 14, 0.6) 100%), rgba(0, 0, 0, 0.3);
-}
-
-.stocks__item:hover {
-  margin: 15px;
-  width: calc(230px + 30px) !important;
-  height: calc(433px + 30px);
 }
 
 .stocks__item-text {
@@ -2544,6 +2552,14 @@ header::before {
   color: rgba(255, 255, 255, 0.7);
 }
 
+@media screen and (min-width: 1080px) {
+  .stocks__item:hover {
+    margin: 15px;
+    width: calc(230px + 30px) !important;
+    height: calc(433px + 30px);
+  }
+}
+
 @media screen and (max-width: 840px) {
   .stocks {
     padding: 72px 0;
@@ -2554,15 +2570,9 @@ header::before {
   .stocks {
     padding: 48px 0;
   }
-
-  .stocks__item {
-    height: 350px;
-  }
-
   .stocks__link {
     font-size: 14px;
   }
-
   .stocks__h2 {
     font-size: 20px;
   }
