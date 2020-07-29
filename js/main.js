@@ -63,6 +63,7 @@ $(function() {
   $('.reviews__inner').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
+    infinite: false,
     prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
     responsive: [
@@ -124,6 +125,28 @@ $(function() {
     ] 
   });
 
+  $(".video-tours--mobile__items").slick({
+    prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
+    infinite: false,
+    responsive: [{
+      breakpoint: 740,
+      settings: {
+        arrows: false,
+      }
+    }, ]
+  });
+  
+  // $(".video-tours--mobile__items").slick({
+  //   prevArrow: '<button type="button" class="video-prev video__slider-prev">Previous</button>',
+  //   nextArrow: '<button type="button" class="video-next video__slider-next">Next</button>',
+  //   responsive: [{
+  //     breakpoint: 740,
+  //     settings: {
+  //       arrows: false,
+  //     }
+  //   }, ]
+  // });
 	//Валидатор форм и маска для форм
 	const offerFormModal = $('.offer-form-modal')
 	offerFormModal.submit(function(e) {
@@ -159,24 +182,58 @@ $(function() {
 					});
 					return false;
 			}
-	});
+  });
+  
+  const callbackForm = $('.callback-form')
+  callbackForm.submit(function(e) {
+      e.preventDefault()
+  })
+
+  callbackForm.validate({
+    errorElement: "span",
+    errorPlacement: (error, element) =>
+      error.appendTo(element.parent().parent()),
+    rules: {
+      tel: {
+        maskRu: true
+      }
+    },
+    messages: {
+      tel: "",
+    },
+    submitHandler: function (form) {
+
+    }
+  });
+
+  const callbackFormTravel = $('.callback-form--travel')
+  callbackFormTravel.submit(function(e) {
+      e.preventDefault()
+  })
+
+  callbackFormTravel.validate({
+    errorElement: "span",
+    errorPlacement: (error, element) =>
+      error.appendTo(element.parent().parent()),
+    rules: {
+      tel: {
+        maskRu: true
+      }
+    },
+    messages: {
+      tel: "",
+    },
+    submitHandler: function (form) {
+
+    }
+  });
+
 	jQuery.validator.addMethod('maskRu', function(value, element) {
 			console.log(/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value));
 			return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
-	});
-	$('[name="tel"]').mask("+7(999)999-9999",{autoclear: false});
-
-
-  $(".video-tours--mobile__items").slick({
-    prevArrow: '<button type="button" class="video-prev video__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="video-next video__slider-next">Next</button>',
-    responsive: [{
-      breakpoint: 740,
-      settings: {
-        arrows: false,
-      }
-    }, ]
   });
+  
+	$('[name="tel"]').mask("+7(999)999-9999",{autoclear: false});
 
   $(".desktop-header__tour--modal__hidden").hide()
   $(".desktop-header__tour--modal").click(function () {
@@ -242,9 +299,22 @@ $(function() {
     console.log(/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value));
     return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
   });
+
   $('[name="tel"]').mask("+7(999)999-9999", {
     autoclear: false
   });
+
+  $(document).on('click', '#close_vid', function () {
+		jQuery("iframe").each(function () {
+			jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+		});
+	});
+	$(document).on('click', '#close_vid-bg', function () {
+		jQuery("iframe").each(function () {
+			jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+		});
+  });
+  
 });
 
 //Модальные окна на Pure Js
@@ -302,9 +372,35 @@ $(function() {
 
   };
 
+  openVideo = document.querySelector('.openVideo');
+  videoModal = document.querySelector('.modal-wrapper__video');
+
+  openVideo.addEventListener('click', function () {
+    openBaseModal();
+    videoModal.classList.remove('hidden');
+    setTimeout(function () {
+      videoModal.classList.remove('animation');
+    }, 20);
+  })
+
+  function closeVideoModal() {
+    if (!videoModal.classList.contains('hidden')) {
+      videoModal.classList.add('animation');    
+      videoModal.addEventListener('transitionend', function(e) {
+        videoModal.classList.add('hidden');
+      }, {
+        capture: false,
+        once: true,
+        passive: false
+      });
+    }
+
+  };
+
   function closeAllModal() {
     // closecallbackPopup();
     closeleftMenuModal();
+    closeVideoModal();
     closeBaseModal();
   };
 
