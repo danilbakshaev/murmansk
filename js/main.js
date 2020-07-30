@@ -110,14 +110,15 @@ $(function() {
       {
       breakpoint: 840,
       settings: {
-      slidesToShow: 2.1,
+      slidesToShow: 2.5,
       slidesToScroll: 1,
         }
       },
       {
         breakpoint: 740,
         settings: {
-        slidesToShow: 1,
+        slidesToShow: 1.1,
+        centerMode: true,
         slidesToScroll: 1,
         arrows: false,
           }
@@ -130,7 +131,7 @@ $(function() {
     nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
     infinite: false,
     responsive: [{
-      breakpoint: 740,
+      breakpoint: 800,
       settings: {
         arrows: false,
       }
