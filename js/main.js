@@ -236,16 +236,16 @@ $(function() {
 	$('[name="tel"]').mask("+7(999)999-9999",{autoclear: false});
 
   $(".desktop-header__tour--modal__hidden").hide()
-  $(".desktop-header__tour--modal").click(function () {
+  $(".desktop-header__tour--modal__list").click(function () {
     $(this).toggleClass("closeModalText");
     $(this).next().slideToggle("slow");
   });
 
-  $(".desktop-header__tour--modal__hidden").hide()
-  $(".desktop-header__top-item--modal__list").click(function () {
-    $(this).toggleClass("closeModalText");
-    $(this).next().slideToggle("slow");
-  });
+  // $(".desktop-header__tour--modal__hidden").hide()
+  // $(".desktop-header__top-item--modal__list").click(function () {
+  //   $(this).toggleClass("closeModalText");
+  //   $(this).next().slideToggle("slow");
+  // });
     
   $(".faq__cut").hide()
   $(".faq__spoiler").click(function () {
