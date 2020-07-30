@@ -11,7 +11,7 @@ $(function() {
       {
       breakpoint: 1080,
       settings: {
-      slidesToShow: 2,
+      slidesToShow: 2.2,
       slidesToScroll: 1,
       centerMode: false,
         }
@@ -19,7 +19,7 @@ $(function() {
       {
         breakpoint: 740,
         settings: {
-        slidesToShow: 1,
+        slidesToShow: 1.2,
         slidesToScroll: 1,
         arrows: false,
         centerMode: false,
@@ -39,7 +39,7 @@ $(function() {
       {
         breakpoint: 840,
         settings: {
-        slidesToShow: 2,
+        slidesToShow: 2.2,
         slidesToScroll: 1,
         arrows: true,
         centerMode: false,
@@ -49,7 +49,7 @@ $(function() {
       {
         breakpoint: 740,
         settings: {
-        slidesToShow: 1,
+        slidesToShow: 1.2,
         slidesToScroll: 1,
         arrows: false,
         centerMode: false,
