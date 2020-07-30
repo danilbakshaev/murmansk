@@ -2097,9 +2097,9 @@ header::before {
   transform: rotate(0);
 }
 
-.popular-destinations__items .slick-list {
+/* .popular-destinations__items .slick-list {
   overflow: inherit !important;
-}
+} */
 
 @media screen and (min-width: 1080px) {
   .popular-destinations__item:hover {
@@ -2149,9 +2149,9 @@ header::before {
 }
 
 @media screen and (max-width: 860px) {
-  .popular-destinations__item {
+  /* .popular-destinations__item {
     width: 273px !important;
-  }
+  } */
 }
 
 @media screen and (max-width: 840px) {
