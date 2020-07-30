@@ -1291,8 +1291,12 @@ header::before {
 }
 
 @media screen and (min-width: 840px) {
+
   /* .tours__item:hover {
     width: calc(33.33% - 40px);
+}
+  .tours__item:hover {
+    width: calc(33.33% - 40px)!important;
     margin: 0;
   } */
 }
@@ -1959,7 +1963,7 @@ header::before {
 .popular-destinations__item {
   position: relative;
   overflow: hidden;
-  width: 60.3% !important;
+  width: 77.3% !important;
   margin: 30px;
   border-radius: 8px;
   padding: 30px;
@@ -1991,12 +1995,12 @@ header::before {
 }
 
 .slider__slider-prev {
-  top: 284px;
+  top: 250px;
   left: 0px;
 }
 
 .slider__slider-next {
-  top: 284px;
+  top: 250px;
   right: 0px;
 }
 
@@ -2100,20 +2104,20 @@ header::before {
 @media screen and (min-width: 1080px) {
   .popular-destinations__item:hover {
     margin: 15px;
-    width: calc(60.3% + 30px) !important;
+    width: calc(77.3% + 30px) !important;
     height: calc(500px + 30px);
   }
 }
 
 @media screen and (min-width: 1440px) {
   .popular-destinations__item {
-    height: 300px;
+    height: 408px;
   }
 
   .popular-destinations__item:hover {
     margin: 15px;
     width: calc(auto + 30px) !important;
-    height: calc(300px + 30px);
+    height: calc(408px + 30px);
   }
 }
 
@@ -2654,6 +2658,9 @@ header::before {
 
   .stocks__h2 {
     font-size: 20px;
+  }
+  .stocks__bg{
+    object-fit: cover;
   }
 }
 
