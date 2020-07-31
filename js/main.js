@@ -137,6 +137,15 @@ $(function() {
       }
     }, ]
   });
+
+  $('.catalog__inner').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: true,
+    prevArrow: '<button type="button" class="slider-prev slider__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next slider__slider-next">Next</button>',
+  });
   
   // $(".video-tours--mobile__items").slick({
   //   prevArrow: '<button type="button" class="video-prev video__slider-prev">Previous</button>',
