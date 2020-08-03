@@ -602,6 +602,55 @@ header::before {
   font-size: 11px;
   color: rgba(255, 255, 255, 0.7);
 }
+.header__text-wrap-top{
+  display: flex;
+}
+.header__text-wrap-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 16px;
+}
+.header__text-wrap-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.header__text-wrap-right-text{
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+.header__text-wrap-left-span-small{
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.header__text-wrap-left-span{
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  text-decoration: line-through;
+}
+.header__text-wrap-right-text{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.header-red{
+  color: #FB5352;
+}
+.callback-form__submit--head{
+  width: 367px!important;
+  margin-left: 0!important;
+}
 
 .logo-company {
   margin-right: 22px;
@@ -4190,9 +4239,8 @@ footer::after {
 .catalog__item-left{
   padding: 50px;
   width: 70%;
-}
-.catalog__item-right{
-  padding: 50px;
+  background: linear-gradient(165.67deg, rgba(0, 0, 0, 0) 46.92%, rgba(3, 3, 3, 0.054) 56.84%, rgba(14, 14, 14, 0.6) 100%), rgba(0, 0, 0, 0.3);
+  border-radius: 12px 0px 0px 12px;
 }
 .catalog__item-left-text-top{
   font-style: normal;
@@ -4245,6 +4293,10 @@ footer::after {
   border-radius: 4px;
   text-decoration: none;
   padding: 4px 10px;
+  transition: all 0.2s linear;
+}
+.catalog__item-link:hover{
+  background: rgba(255, 255, 255, 0.52);
 }
 .catalog__item-links{
   margin-bottom: 4px;
@@ -4287,9 +4339,10 @@ footer::after {
   margin-left: 24px;
 }
 .catalog__item-right{
-  background: linear-gradient(141.6deg, rgba(0, 0, 0, 0) 46.92%, rgba(3, 3, 3, 0.054) 56.84%, rgba(14, 14, 14, 0.6) 100%), rgba(0, 0, 0, 0.3);
+  background: linear-gradient(141.6deg, rgba(0, 0, 0, 0) -19.08%, rgba(3, 3, 3, 0.054) -37.16%, rgba(14, 14, 14, 0.6) 30%), rgba(0, 0, 0, 0.3);
   border-radius: 0px 12px 12px 0px;
   width: 30%;
+  padding: 50px;
 }
 .catalog__item-right-titleup{
   font-weight: normal;
@@ -4496,6 +4549,15 @@ footer::after {
 .catalog__preview-direction{
   display: flex;
   flex-direction: column;
+} 
+.catalog__item-one{
+  background-image:url(/img/top.png);
+}
+.catalog__item-two{
+  background-image:url(/img/center.png);
+}
+.catalog__item-three{
+  background-image:url(/img/bottom.png);
 }
 
 
