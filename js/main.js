@@ -137,6 +137,22 @@ $(function() {
       }
     }, ]
   });
+
+  $('.catalog__inner').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: true,
+    arrows: false,
+    prevArrow: '<button type="button" class="catalog-prev slider__catalog-prev">Previous</button>',
+    nextArrow: '<button type="button" class="catalog-next slider__catalog-next">Next</button>',
+    responsive: [
+      {
+      breakpoint: 860,
+      settings: "unslick"
+      }
+      ]
+  });
   
   // $(".video-tours--mobile__items").slick({
   //   prevArrow: '<button type="button" class="video-prev video__slider-prev">Previous</button>',
@@ -256,6 +272,12 @@ $(function() {
 
   $(".mobile-footer__inner").hide()
   $(".mobile-footer__preview").click(function () {
+    $(this).toggleClass("closePreview");
+    $(this).next().slideToggle("slow");
+  });
+
+  $(".catalog__preview-direction").hide()
+  $(".catalog__preview-inner").click(function () {
     $(this).toggleClass("closePreview");
     $(this).next().slideToggle("slow");
   });
