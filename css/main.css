@@ -650,6 +650,7 @@ header::before {
 .callback-form__submit--head{
   width: 367px!important;
   margin-left: 0!important;
+  margin-bottom: 30px;
 }
 
 .logo-company {
@@ -938,6 +939,21 @@ header::before {
   text-decoration-color: #FB5352;
   color: #FB5352;
 }
+.header-text__title-bottom{
+  display: none;
+  font-family: Roboto Slab;
+  font-weight: 600;
+  font-size: 42px;
+  color: #FFFFFF;
+  line-height: 130%;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 22px;
+  margin-left: 0px;
+}
+.header__text-wrap-top{
+  margin-bottom: 36px;
+}
 
 @media screen and (max-width: 1240px) {
   .header-text__wrap {
@@ -1061,7 +1077,7 @@ header::before {
   }
 
   .callback-form__submit {
-    width: 100%;
+    width: 100%!important;
     margin-top: 12px;
     margin-left: 0;
   }
@@ -1072,6 +1088,18 @@ header::before {
 
   .text-center {
     text-align: center;
+  }
+  .header__text-wrap-top{
+    flex-direction: column;
+  }
+  .header-text__wrap--catalog{
+    text-align: center;
+  }
+  .header-text__title-bottom{
+    display: block;
+  }
+  .header-text__title{
+    display: none;
   }
 }
 
@@ -2232,9 +2260,12 @@ header::before {
     padding: 48px 0;
   }
 
-  .slick-slide {
+  .popular-destinations .slick-slide {
     display: flex !important;
     justify-content: center;
+  }
+  .title-sections__title-catalog{
+    font-size: 26px!important;
   }
 }
 
@@ -2751,6 +2782,13 @@ header::before {
   background-repeat: no-repeat;
   padding: 118px 0;
 }
+.travel-price--catalog {
+  background-image: url('/img/travel-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+}
 
 .container--travel {
   display: flex;
@@ -2769,6 +2807,10 @@ header::before {
   line-height: 120%;
   color: #FFFFFF;
   margin: 0;
+}
+
+.travel-price__inner{
+  background: linear-gradient(167.26deg, rgba(0, 0, 0, 0) 18.47%, #0E0E0E 71.62%), rgba(0, 0, 0, 0.1);
 }
 
 .callback-form__input--travel {
@@ -2816,6 +2858,30 @@ header::before {
   opacity: 1;
 } */
 
+.travel-price__text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+.travel-price__subtext{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+.travel-price__title--catalog {
+  margin-top: 118px;
+}
+.travel-price__subtext--catalog{
+  margin-bottom: 118px;
+}
+
 @media screen and (max-width: 840px) {
   .container--travel {
     width: auto;
@@ -2845,6 +2911,9 @@ header::before {
 
   .travel-price__title {
     font-size: 20px;
+  }
+  .travel-price__title--catalog {
+    font-size: 26px;
   }
 
   .callback-form__privacy--travel {
@@ -4236,6 +4305,16 @@ footer::after {
   border-radius: 12px;
   margin-bottom: 20px;
 }
+.title-sections__title-catalog{
+  font-family: Roboto Slab;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  color: #242440;
+  margin: 0;
+  width: 100%;
+  margin-right: 100px;
+}
 .catalog__item-left{
   padding: 50px;
   width: 70%;
@@ -4430,10 +4509,15 @@ footer::after {
 .slick-dots{
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 .slick-dots li{
   margin-right: 15px;
   overflow: hidden;
+  width: 15px;
+  height: 15px;
+  border-radius: 40px;
+  background: gray;
 }
 .slick-dots li:last-child{
   margin-right: 0px;
@@ -4442,14 +4526,14 @@ footer::after {
   background: inherit;
   border: none;
   padding: 10px 16px;
+  font-size: 0;
 }
 .slick-dots .slick-active{
   background: linear-gradient(90deg, #FF4241 -67.5%, #FF6363 148.33%);
-  border-radius: 8px;
+  border-radius: 40px;
   color: #fff;
-}
-.slick-dots .slick-active button{
-  color: #fff;
+  width: 15px;
+  height: 15px;
 }
 .catalog-prev{
   background-color: inherit;
@@ -4605,6 +4689,7 @@ footer::after {
   .catalog__item-left {
     padding: 30px 17px 10px;
     width: auto;
+    background: none;
   }
   .catalog__item-right {
     padding: 0px 17px 32px 17px;
@@ -4635,6 +4720,9 @@ footer::after {
   .catalog__center-text{
     font-size: 10px;
   }
+  .title-sections__catalog{
+    font-size: 26px;
+  }
 }
 
 
@@ -4663,6 +4751,7 @@ footer::after {
   display: flex;
   align-items: center;
   color: #242440;
+  width: 60%;
 }
 .island__link{
   font-style: normal;
@@ -4675,4 +4764,84 @@ footer::after {
 }
 .island__link:hover{
   color: #242440;
+}
+@media screen and (max-width: 740px) {
+  .island__block {
+    flex-direction: column;
+  }
+  .island__title{
+    font-size: 26px;
+  }
+  .Island{
+    padding-bottom: 0;
+  }
+  .island__text{
+    font-size: 14px;
+  }
+}
+
+
+/* advantages */
+
+.advantages{
+  margin-bottom: 90px;
+}
+
+.advantages__image{
+  width: auto;
+  margin-right: 20px;
+}
+.advantages__item{
+  width: 33.33%;
+  display: flex;
+}
+.advantages__items{
+  display: flex;
+}
+.advantages__text{
+  margin-bottom: 10px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #242440;
+}
+.advantages__subtext{
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #737385;
+}
+.advantages__title{
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+  color: #242440;
+}
+@media screen and (max-width: 740px) {
+  .advantages__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .advantages__items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .advantages__image{
+    margin: 0;
+  }
+  .advantages__title{
+    font-size: 26px;
+    text-align: center;
+  }
+  .advantages{
+    margin-top: 50px;
+  }
 }
