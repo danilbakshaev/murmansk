@@ -2888,7 +2888,7 @@ header::before {
   }
 
   .travel-price {
-    padding: 72px 0;
+    padding: 0;
   }
 
   .travel-price__title {
@@ -2905,9 +2905,9 @@ header::before {
 }
 
 @media screen and (max-width: 740px) {
-  .travel-price {
-    padding: 42px 0;
-  }
+  /* .travel-price {
+    padding: 0;
+  } */
 
   .travel-price__title {
     font-size: 20px;
@@ -4789,7 +4789,30 @@ position: relative;
 .catalog__item-btn--mob:hover{
   color: #fff;
 }
-
+.catalog__mobile-input{
+  margin-right: 12px;
+  position: relative;
+  border: 2px solid #DBDBE0;
+  border-radius: 2px;
+  transition: all 0.2s linear;
+}
+.catalog__label{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+}
+.catalog__mobile-input:checked::before{
+  content: url(/img/check.svg);
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background: #FB5352;
+  height: 13px;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  border: none;
+}
 
 @media screen and (max-width: 860px) {
   .catalog__items{
