@@ -138,21 +138,6 @@ $(function() {
     }, ]
   });
 
-  $('.catalog__inner').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: false,
-    dots: true,
-    arrows: false,
-    prevArrow: '<button type="button" class="catalog-prev slider__catalog-prev">Previous</button>',
-    nextArrow: '<button type="button" class="catalog-next slider__catalog-next">Next</button>',
-    responsive: [
-      {
-      breakpoint: 860,
-      settings: "unslick"
-      }
-      ]
-  });
   $('.header__text-items').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
