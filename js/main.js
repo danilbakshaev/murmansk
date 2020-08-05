@@ -138,20 +138,14 @@ $(function() {
     }, ]
   });
 
-  $('.catalog__inner').slick({
+  $('.header__text-items').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: false,
+    infinite: true,
     dots: true,
     arrows: false,
-    prevArrow: '<button type="button" class="catalog-prev slider__catalog-prev">Previous</button>',
-    nextArrow: '<button type="button" class="catalog-next slider__catalog-next">Next</button>',
-    responsive: [
-      {
-      breakpoint: 860,
-      settings: "unslick"
-      }
-      ]
+    autoplay: true,
+    autoplaySpeed: 2000,
   });
   
   // $(".video-tours--mobile__items").slick({
