@@ -4794,7 +4794,7 @@ position: relative;
   position: relative;
   border: 2px solid #DBDBE0;
   border-radius: 2px;
-  transition: all 0.2s linear;
+  transition: all 0.2s linear; 
 }
 .catalog__label{
   margin-bottom: 10px;
