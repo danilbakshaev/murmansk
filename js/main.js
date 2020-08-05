@@ -260,6 +260,7 @@ $(function() {
     
   $(".faq__cut").hide()
   $(".faq__spoiler").click(function () {
+    $(this).children().toggleClass("faq__title--active");
     $(this).toggleClass("closeText");
     $(this).next().slideToggle("slow");
   });
