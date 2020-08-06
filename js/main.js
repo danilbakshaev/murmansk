@@ -1,5 +1,4 @@
-
-$(function() {
+$(function () {
 
   $('.popular-destinations__items').slick({
     slidesToShow: 3,
@@ -7,25 +6,24 @@ $(function() {
     infinite: false,
     prevArrow: '<button type="button" class="slider-prev slider__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next slider__slider-next">Next</button>',
-    responsive: [
-      {
-      breakpoint: 1080,
-      settings: {
-      slidesToShow: 2.2,
-      slidesToScroll: 1,
-      centerMode: false,
+    responsive: [{
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 2.2,
+          slidesToScroll: 1,
+          centerMode: false,
         }
       },
       {
         breakpoint: 740,
         settings: {
-        slidesToShow: 1.2,
-        slidesToScroll: 1,
-        arrows: false,
-        centerMode: false,
-          }
-        },
-    ] 
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: false,
+        }
+      },
+    ]
   });
 
 
@@ -35,30 +33,29 @@ $(function() {
     infinite: false,
     prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 840,
         settings: {
-        slidesToShow: 2.2,
-        slidesToScroll: 1,
-        arrows: true,
-        centerMode: false,
-          }
-        },
+          slidesToShow: 2.2,
+          slidesToScroll: 1,
+          arrows: true,
+          centerMode: false,
+        }
+      },
 
       {
         breakpoint: 740,
         settings: {
-        slidesToShow: 1.2,
-        slidesToScroll: 1,
-        arrows: false,
-        centerMode: false,
-          }
-        },
-    ] 
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: false,
+        }
+      },
+    ]
   });
 
- 
+
 
   $('.reviews__inner').slick({
     slidesToShow: 4,
@@ -66,32 +63,31 @@ $(function() {
     infinite: false,
     prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1240,
         settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        centerMode: false,
-          }
-        },
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: false,
+        }
+      },
       {
-      breakpoint: 840,
-      settings: {
-      slidesToShow: 2.2,
-      slidesToScroll: 1,
-      centerMode: false,
+        breakpoint: 840,
+        settings: {
+          slidesToShow: 2.2,
+          slidesToScroll: 1,
+          centerMode: false,
         }
       },
       {
         breakpoint: 740,
         settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-          }
-        },
-    ] 
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      },
+    ]
   });
   $('.stocks__items').slick({
     slidesToShow: 4,
@@ -99,31 +95,30 @@ $(function() {
     infinite: false,
     prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1240,
         settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-          }
-        },
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
       {
-      breakpoint: 840,
-      settings: {
-      slidesToShow: 2.5,
-      slidesToScroll: 1,
+        breakpoint: 840,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
         }
       },
       {
         breakpoint: 740,
         settings: {
-        slidesToShow: 1.1,
-        centerMode: true,
-        slidesToScroll: 1,
-        arrows: false,
-          }
-        },
-    ] 
+          slidesToShow: 1.1,
+          centerMode: true,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      },
+    ]
   });
 
   $(".video-tours--mobile__items").slick({
@@ -147,7 +142,36 @@ $(function() {
     autoplay: true,
     autoplaySpeed: 2000,
   });
-  
+
+  $('.tour-transport__inner-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: false,
+    arrows: false
+  });
+
+  $('.gallery-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: '.gallery-nav',
+    nextArrow: '<button type="button" class="slider-prev--gallery gallery-slider__slider-prev">Previous</button>',
+    prevArrow: '<button type="button" class="slider-next--gallery gallery-slider__slider-next">Next</button>',
+    infinite: false
+  });
+  $('.gallery-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.gallery-for',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    infinite: false,
+    arrows: false
+  });
+
   // $(".video-tours--mobile__items").slick({
   //   prevArrow: '<button type="button" class="video-prev video__slider-prev">Previous</button>',
   //   nextArrow: '<button type="button" class="video-next video__slider-next">Next</button>',
@@ -158,46 +182,46 @@ $(function() {
   //     }
   //   }, ]
   // });
-	//Валидатор форм и маска для форм
-	const offerFormModal = $('.offer-form-modal')
-	offerFormModal.submit(function(e) {
-			e.preventDefault()
-	})
+  //Валидатор форм и маска для форм
+  const offerFormModal = $('.offer-form-modal')
+  offerFormModal.submit(function (e) {
+    e.preventDefault()
+  })
 
-	offerFormModal.validate({
-			errorElement: "",
-			errorPlacement: (error, element) =>
-					error.appendTo(element.parent().parent()),
-			rules: {
-					tel: {
-							maskRu: true
-					}
-			},
-			messages: {
-					name: "",
-					tel: ""
-			},
-			submitHandler: function (form) {
-					const formInstance = $(form)
+  offerFormModal.validate({
+    errorElement: "",
+    errorPlacement: (error, element) =>
+      error.appendTo(element.parent().parent()),
+    rules: {
+      tel: {
+        maskRu: true
+      }
+    },
+    messages: {
+      name: "",
+      tel: ""
+    },
+    submitHandler: function (form) {
+      const formInstance = $(form)
 
-					console.log('submit')
-					$.ajax({
-							type: "POST",
-							url: "mail.php",
-							data: formInstance.serialize()
-					}).done(function() {
-							console.log('DONE')
-							formInput.val("");
-							formInput.siblings().removeClass('active')
-							$('.modal-wrapper-offer .success-message').addClass('show')
-					});
-					return false;
-			}
+      console.log('submit')
+      $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: formInstance.serialize()
+      }).done(function () {
+        console.log('DONE')
+        formInput.val("");
+        formInput.siblings().removeClass('active')
+        $('.modal-wrapper-offer .success-message').addClass('show')
+      });
+      return false;
+    }
   });
-  
+
   const callbackForm = $('.callback-form')
-  callbackForm.submit(function(e) {
-      e.preventDefault()
+  callbackForm.submit(function (e) {
+    e.preventDefault()
   })
 
   callbackForm.validate({
@@ -218,8 +242,8 @@ $(function() {
   });
 
   const callbackFormTravel = $('.callback-form--travel')
-  callbackFormTravel.submit(function(e) {
-      e.preventDefault()
+  callbackFormTravel.submit(function (e) {
+    e.preventDefault()
   })
 
   callbackFormTravel.validate({
@@ -239,12 +263,14 @@ $(function() {
     }
   });
 
-	jQuery.validator.addMethod('maskRu', function(value, element) {
-			console.log(/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value));
-			return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
+  jQuery.validator.addMethod('maskRu', function (value, element) {
+    console.log(/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value));
+    return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
   });
-  
-	$('[name="tel"]').mask("+7(999)999-9999",{autoclear: false});
+
+  $('[name="tel"]').mask("+7(999)999-9999", {
+    autoclear: false
+  });
 
   $(".desktop-header__tour--modal__hidden").hide()
   $(".desktop-header__tour--modal__list").click(function () {
@@ -257,7 +283,7 @@ $(function() {
   //   $(this).toggleClass("closeModalText");
   //   $(this).next().slideToggle("slow");
   // });
-    
+
   $(".faq__cut").hide()
   $(".faq__spoiler").click(function () {
     $(this).children().toggleClass("faq__title--active");
@@ -323,48 +349,48 @@ $(function() {
   });
 
   $(document).on('click', '#close_vid', function () {
-		jQuery("iframe").each(function () {
-			jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
-		});
-	});
-	$(document).on('click', '#close_vid-bg', function () {
-		jQuery("iframe").each(function () {
-			jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
-		});
+    jQuery("iframe").each(function () {
+      jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+    });
   });
-  
+  $(document).on('click', '#close_vid-bg', function () {
+    jQuery("iframe").each(function () {
+      jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+    });
+  });
+
 });
 
 //Модальные окна на Pure Js
 
-(function() {
-  
-//   //Вызов окна колбека
-//   openCallback = document.querySelector('.openCallback');
-//   callbackModal = document.querySelector('.modal-wrapper__callback');
+(function () {
 
-//   openCallback.addEventListener('click', function () {
-//     openBaseModal();
-//     callbackModal.classList.remove('hidden');
-//     setTimeout(function () {
-//       callbackModal.classList.remove('animation');
-//     }, 20);
-//   })
+  //   //Вызов окна колбека
+  //   openCallback = document.querySelector('.openCallback');
+  //   callbackModal = document.querySelector('.modal-wrapper__callback');
 
-//   function closecallbackPopup() {
-//     if (!callbackModal.classList.contains('hidden')) {
-//       callbackModal.classList.add('animation');    
-//       callbackModal.addEventListener('transitionend', function(e) {
-//         callbackModal.classList.add('hidden');
-//       }, {
-//         capture: false,
-//         once: true,
-//         passive: false
-//       });
-//     }
-//   };
+  //   openCallback.addEventListener('click', function () {
+  //     openBaseModal();
+  //     callbackModal.classList.remove('hidden');
+  //     setTimeout(function () {
+  //       callbackModal.classList.remove('animation');
+  //     }, 20);
+  //   })
 
-//   //Вызов окна колбека
+  //   function closecallbackPopup() {
+  //     if (!callbackModal.classList.contains('hidden')) {
+  //       callbackModal.classList.add('animation');    
+  //       callbackModal.addEventListener('transitionend', function(e) {
+  //         callbackModal.classList.add('hidden');
+  //       }, {
+  //         capture: false,
+  //         once: true,
+  //         passive: false
+  //       });
+  //     }
+  //   };
+
+  //   //Вызов окна колбека
   openLeftMenu = document.querySelector('.openMenu');
   leftMenuModal = document.querySelector('.modal-wrapper__left-menu');
 
@@ -378,8 +404,8 @@ $(function() {
 
   function closeleftMenuModal() {
     if (!leftMenuModal.classList.contains('hidden')) {
-      leftMenuModal.classList.add('animation');    
-      leftMenuModal.addEventListener('transitionend', function(e) {
+      leftMenuModal.classList.add('animation');
+      leftMenuModal.addEventListener('transitionend', function (e) {
         leftMenuModal.classList.add('hidden');
       }, {
         capture: false,
@@ -391,7 +417,6 @@ $(function() {
   };
 
   openVideo = document.querySelector('.openVideo');
-  openVideoMobile = document.querySelector('.openVideoMobile');
   videoModal = document.querySelector('.modal-wrapper__video');
 
   openVideo.addEventListener('click', function () {
@@ -402,19 +427,49 @@ $(function() {
     }, 20);
   })
 
-  openVideoMobile.addEventListener('click', function () {
-    openBaseModal();
-    videoModal.classList.remove('hidden');
-    setTimeout(function () {
-      videoModal.classList.remove('animation');
-    }, 20);
-  })
+  if (document.querySelector('.openVideoMobile')) {
+    openVideoMobile = document.querySelector('.openVideoMobile');
+
+    openVideoMobile.addEventListener('click', function () {
+      openBaseModal();
+      videoModal.classList.remove('hidden');
+      setTimeout(function () {
+        videoModal.classList.remove('animation');
+      }, 20);
+    })
+  }
+
 
   function closeVideoModal() {
     if (!videoModal.classList.contains('hidden')) {
-      videoModal.classList.add('animation');    
-      videoModal.addEventListener('transitionend', function(e) {
+      videoModal.classList.add('animation');
+      videoModal.addEventListener('transitionend', function (e) {
         videoModal.classList.add('hidden');
+      }, {
+        capture: false,
+        once: true,
+        passive: false
+      });
+    }
+
+  };
+
+  openGallery = document.querySelector('.openGallery');
+  galleryModal = document.querySelector('.modal-wrapper__gallery');
+
+  openGallery.addEventListener('click', function () {
+    openBaseModal();
+    galleryModal.classList.remove('hidden');
+    setTimeout(function () {
+      galleryModal.classList.remove('animation');
+    }, 20);
+  })
+
+  function closeGalleryModal() {
+    if (!galleryModal.classList.contains('hidden')) {
+      galleryModal.classList.add('animation');
+      galleryModal.addEventListener('transitionend', function (e) {
+        galleryModal.classList.add('hidden');
       }, {
         capture: false,
         once: true,
@@ -428,6 +483,7 @@ $(function() {
     // closecallbackPopup();
     closeleftMenuModal();
     closeVideoModal();
+    closeGalleryModal();
     closeBaseModal();
   };
 
@@ -447,8 +503,8 @@ $(function() {
 
   function closeBaseModal() {
     body.classList.remove('noflow');
-    modalWrapper.classList.add('animation');    
-    modalWrapper.addEventListener('transitionend', function(e) {
+    modalWrapper.classList.add('animation');
+    modalWrapper.addEventListener('transitionend', function (e) {
       modalWrapper.classList.add('hidden');
     }, {
       capture: false,
@@ -457,7 +513,7 @@ $(function() {
     });
   };
 
-  for(let i = 0; i<modalWrapperClose.length; i++){
+  for (let i = 0; i < modalWrapperClose.length; i++) {
     modalWrapperClose[i].addEventListener('click', () => {
       closeAllModal();
     });
@@ -467,11 +523,13 @@ $(function() {
     closeAllModal();
   })
 
-  document.onkeydown = function(e) {
+  document.onkeydown = function (e) {
     e = e || window.event;
-    if (e.key=='Escape'||e.key=='Esc'||e.keyCode==27) {
+    if (e.key == 'Escape' || e.key == 'Esc' || e.keyCode == 27) {
       closeAllModal();
     }
   };
+
+
 
 })();
