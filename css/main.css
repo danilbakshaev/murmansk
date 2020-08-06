@@ -6194,12 +6194,13 @@ position: relative;
   margin-bottom: 8px;
 }
 .radiance__right--trip{
-  padding: 7px 0px;
+  padding: 14px 0px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 12px;
+  text-align: inherit;
 }
 .video-tours__play--trip{
   padding: 10px 36px;
@@ -6221,4 +6222,41 @@ position: relative;
 }
 .trip__white{
   color: #fff;
+}
+.radiance__right--onetrip{
+  background-image: url(/img/trip-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.radiance__right--twotrip{
+  background-image: url(/img/trip-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.radiance__right--threetrip{
+  background-image: url(/img/trip-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.radiance__right--fourtrip{
+  background-image: url(/img/trip-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.radiance__right--fivetrip{
+  background-image: url(/img/trip-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.radiance__item--trip{
+  margin-bottom: 42px;
+}
+.radiance__item--trip:last-child{
+  margin-bottom: 0px;
+}
+.radiance-svg--trip{
+  margin-bottom: 0;
+}
+.radiance__item-subtext--trip{
+  margin-top: 8px;
 }
