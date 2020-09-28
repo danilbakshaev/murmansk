@@ -171,7 +171,15 @@ $(function () {
     infinite: false,
     arrows: false
   });
-
+  $('.team-inner').slick({
+    prevArrow: '<button type="button" class="slider-prev team-slider__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next team-slider__slider-next">Next</button>',
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: false,
+    arrows: true
+  });
   // $(".video-tours--mobile__items").slick({
   //   prevArrow: '<button type="button" class="video-prev video__slider-prev">Previous</button>',
   //   nextArrow: '<button type="button" class="video-next video__slider-next">Next</button>',
