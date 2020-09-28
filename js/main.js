@@ -1,13 +1,14 @@
 $(function () {
 
+if ($('.popular-destinations__items')) {
   $('.popular-destinations__items').slick({
-    slidesToShow: 3,
+    slidesToShow: 3.4,
     slidesToScroll: 1,
     infinite: false,
-    prevArrow: '<button type="button" class="slider-prev slider__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next slider__slider-next">Next</button>',
+    prevArrow: '.prev-js-popular-destinations',
+    nextArrow: '.next-js-popular-destinations',
     responsive: [{
-        breakpoint: 1080,
+        breakpoint: 1240,
         settings: {
           slidesToShow: 2.2,
           slidesToScroll: 1,
@@ -25,16 +26,17 @@ $(function () {
       },
     ]
   });
+}
 
-
+if ($('.tours__items-mob')) {
   $('.tours__items-mob').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: false,
-    prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
+    prevArrow: '.prev-js',
+    nextArrow: '.next-js',
     responsive: [{
-        breakpoint: 840,
+        breakpoint: 1240,
         settings: {
           slidesToShow: 2.2,
           slidesToScroll: 1,
@@ -54,27 +56,20 @@ $(function () {
       },
     ]
   });
+}
 
 
-
+if ($('.reviews__inner')) {
   $('.reviews__inner').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     infinite: false,
-    prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
+    prevArrow: '.prev-js-reviews',
+    nextArrow: '.next-js-reviews',
     responsive: [{
         breakpoint: 1240,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          centerMode: false,
-        }
-      },
-      {
-        breakpoint: 840,
-        settings: {
-          slidesToShow: 2.2,
+          slidesToShow: 2.7,
           slidesToScroll: 1,
           centerMode: false,
         }
@@ -82,28 +77,24 @@ $(function () {
       {
         breakpoint: 740,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.4,
           slidesToScroll: 1,
           arrows: false,
         }
       },
     ]
   });
+}
+
+if ($('.stocks__items')) {
   $('.stocks__items').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     infinite: false,
-    prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
+    prevArrow: '.prev-js-stocks',
+    nextArrow: '.next-js-stocks',
     responsive: [{
         breakpoint: 1240,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 840,
         settings: {
           slidesToShow: 2.5,
           slidesToScroll: 1,
@@ -120,7 +111,9 @@ $(function () {
       },
     ]
   });
+}
 
+if ($('.video-tours--mobile__items')) {
   $(".video-tours--mobile__items").slick({
     prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
@@ -132,7 +125,9 @@ $(function () {
       }
     }, ]
   });
+}
 
+if ($('.header__text-items')) {
   $('.header__text-items').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -142,7 +137,9 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 2000,
   });
+}
 
+if ($('.tour-transport__inner-slider')) {
   $('.tour-transport__inner-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -150,7 +147,9 @@ $(function () {
     dots: false,
     arrows: false
   });
+}
 
+if ($('.gallery-for')) {
   $('.gallery-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -161,6 +160,9 @@ $(function () {
     prevArrow: '<button type="button" class="slider-next--gallery gallery-slider__slider-next">Next</button>',
     infinite: false
   });
+}
+
+if ($('.gallery-nav')) {
   $('.gallery-nav').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -171,6 +173,7 @@ $(function () {
     infinite: false,
     arrows: false
   });
+}
 
   // $(".video-tours--mobile__items").slick({
   //   prevArrow: '<button type="button" class="video-prev video__slider-prev">Previous</button>',
