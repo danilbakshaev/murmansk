@@ -174,7 +174,6 @@ if ($('.gallery-nav')) {
     arrows: false
   });
 }
-
   // $(".video-tours--mobile__items").slick({
   //   prevArrow: '<button type="button" class="video-prev video__slider-prev">Previous</button>',
   //   nextArrow: '<button type="button" class="video-next video__slider-next">Next</button>',
@@ -304,6 +303,22 @@ if ($('.gallery-nav')) {
   $(".catalog__preview-inner").click(function () {
     $(this).toggleClass("closePreview");
     $(this).next().slideToggle("slow");
+  });
+
+  $(".popular-destinations__items--destinations").hide()
+  $(".desktop-header__tour--destinations").click(function () {
+    $(".popular-destinations__items--readytours").hide();
+    $(".desktop-header__wrapper").toggleClass("backgroundActive");
+    $(".header-text").toggleClass("header-text--none");
+    $(".popular-destinations__items--destinations").slideToggle();
+  });
+
+  $(".popular-destinations__items--readytours").hide()
+  $(".desktop-header__tour--readytours").click(function () {
+    $(".popular-destinations__items--destinations").hide();
+    $(".desktop-header__wrapper").toggleClass("backgroundActive");
+    $(".header-text").toggleClass("header-text--none");
+    $(".popular-destinations__items--readytours").slideToggle();
   });
 
   //Валидатор форм и маска для форм
@@ -457,16 +472,18 @@ if ($('.gallery-nav')) {
 
   };
 
-  openGallery = document.querySelector('.openGallery');
-  galleryModal = document.querySelector('.modal-wrapper__gallery');
+  if (document.querySelector('.openGallery')) {
+    openGallery = document.querySelector('.openGallery');
+    galleryModal = document.querySelector('.modal-wrapper__gallery');
 
-  openGallery.addEventListener('click', function () {
-    openBaseModal();
-    galleryModal.classList.remove('hidden');
-    setTimeout(function () {
-      galleryModal.classList.remove('animation');
-    }, 20);
-  })
+    openGallery.addEventListener('click', function () {
+      openBaseModal();
+      galleryModal.classList.remove('hidden');
+      setTimeout(function () {
+        galleryModal.classList.remove('animation');
+      }, 20);
+    })
+  }
 
   function closeGalleryModal() {
     if (!galleryModal.classList.contains('hidden')) {
@@ -486,7 +503,9 @@ if ($('.gallery-nav')) {
     // closecallbackPopup();
     closeleftMenuModal();
     closeVideoModal();
-    closeGalleryModal();
+    if (document.querySelector('.openGallery')) {
+      closeGalleryModal();
+    }
     closeBaseModal();
   };
 
