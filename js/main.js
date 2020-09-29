@@ -1,179 +1,235 @@
 $(function () {
 
-if ($('.popular-destinations__items')) {
-  $('.popular-destinations__items').slick({
-    slidesToShow: 3.4,
-    slidesToScroll: 1,
-    infinite: false,
-    prevArrow: '.prev-js-popular-destinations',
-    nextArrow: '.next-js-popular-destinations',
-    responsive: [{
-        breakpoint: 1240,
+  if ($('.popular-destinations__items')) {
+    $('.popular-destinations__items').slick({
+      slidesToShow: 3.4,
+      slidesToScroll: 1,
+      infinite: false,
+      prevArrow: '.prev-js-popular-destinations',
+      nextArrow: '.next-js-popular-destinations',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 2.2,
+            slidesToScroll: 1,
+            centerMode: false,
+          }
+        },
+        {
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1.2,
+            slidesToScroll: 1,
+            arrows: false,
+            centerMode: false,
+          }
+        },
+      ]
+    });
+  }
+
+  if ($('.popular-destinations__items--destinations-slider')) {
+    $('.popular-destinations__items--destinations-slider').slick({
+      slidesToShow: 3.4,
+      slidesToScroll: 1,
+      infinite: false,
+      prevArrow: '.prev-js-popular-destinations-header',
+      nextArrow: '.next-js-popular-destinations-header',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 2.2,
+            slidesToScroll: 1,
+            centerMode: false,
+          }
+        },
+        {
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1.2,
+            slidesToScroll: 1,
+            arrows: false,
+            centerMode: false,
+          }
+        },
+      ]
+    });
+  }
+
+  if ($('.popular-destinations__items--readytours-slider')) {
+    $('.popular-destinations__items--readytours-slider').slick({
+      slidesToShow: 3.4,
+      slidesToScroll: 1,
+      infinite: false,
+      prevArrow: '.prev-js-popular-readytours-header',
+      nextArrow: '.next-js-popular-readytours-header',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 2.2,
+            slidesToScroll: 1,
+            centerMode: false,
+          }
+        },
+        {
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1.2,
+            slidesToScroll: 1,
+            arrows: false,
+            centerMode: false,
+          }
+        },
+      ]
+    });
+  }
+
+  if ($('.tours__items-mob')) {
+    $('.tours__items-mob').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: false,
+      prevArrow: '.prev-js',
+      nextArrow: '.next-js',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 2.2,
+            slidesToScroll: 1,
+            arrows: true,
+            centerMode: false,
+          }
+        },
+
+        {
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1.2,
+            slidesToScroll: 1,
+            arrows: false,
+            centerMode: false,
+          }
+        },
+      ]
+    });
+  }
+
+
+  if ($('.reviews__inner')) {
+    $('.reviews__inner').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: false,
+      prevArrow: '.prev-js-reviews',
+      nextArrow: '.next-js-reviews',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 2.7,
+            slidesToScroll: 1,
+            centerMode: false,
+          }
+        },
+        {
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1.4,
+            slidesToScroll: 1,
+            arrows: false,
+          }
+        },
+      ]
+    });
+  }
+
+  if ($('.stocks__items')) {
+    $('.stocks__items').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: false,
+      prevArrow: '.prev-js-stocks',
+      nextArrow: '.next-js-stocks',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1.1,
+            centerMode: true,
+            slidesToScroll: 1,
+            arrows: false,
+          }
+        },
+      ]
+    });
+  }
+
+  if ($('.video-tours--mobile__items')) {
+    $(".video-tours--mobile__items").slick({
+      prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
+      nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
+      infinite: false,
+      responsive: [{
+        breakpoint: 800,
         settings: {
-          slidesToShow: 2.2,
-          slidesToScroll: 1,
-          centerMode: false,
-        }
-      },
-      {
-        breakpoint: 740,
-        settings: {
-          slidesToShow: 1.2,
-          slidesToScroll: 1,
           arrows: false,
-          centerMode: false,
         }
-      },
-    ]
-  });
-}
+      }, ]
+    });
+  }
 
-if ($('.tours__items-mob')) {
-  $('.tours__items-mob').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: false,
-    prevArrow: '.prev-js',
-    nextArrow: '.next-js',
-    responsive: [{
-        breakpoint: 1240,
-        settings: {
-          slidesToShow: 2.2,
-          slidesToScroll: 1,
-          arrows: true,
-          centerMode: false,
-        }
-      },
+  if ($('.header__text-items')) {
+    $('.header__text-items').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  }
 
-      {
-        breakpoint: 740,
-        settings: {
-          slidesToShow: 1.2,
-          slidesToScroll: 1,
-          arrows: false,
-          centerMode: false,
-        }
-      },
-    ]
-  });
-}
+  if ($('.tour-transport__inner-slider')) {
+    $('.tour-transport__inner-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: false,
+      arrows: false
+    });
+  }
 
+  if ($('.gallery-for')) {
+    $('.gallery-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      asNavFor: '.gallery-nav',
+      nextArrow: '<button type="button" class="slider-prev--gallery gallery-slider__slider-prev">Previous</button>',
+      prevArrow: '<button type="button" class="slider-next--gallery gallery-slider__slider-next">Next</button>',
+      infinite: false
+    });
+  }
 
-if ($('.reviews__inner')) {
-  $('.reviews__inner').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    infinite: false,
-    prevArrow: '.prev-js-reviews',
-    nextArrow: '.next-js-reviews',
-    responsive: [{
-        breakpoint: 1240,
-        settings: {
-          slidesToShow: 2.7,
-          slidesToScroll: 1,
-          centerMode: false,
-        }
-      },
-      {
-        breakpoint: 740,
-        settings: {
-          slidesToShow: 1.4,
-          slidesToScroll: 1,
-          arrows: false,
-        }
-      },
-    ]
-  });
-}
-
-if ($('.stocks__items')) {
-  $('.stocks__items').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    infinite: false,
-    prevArrow: '.prev-js-stocks',
-    nextArrow: '.next-js-stocks',
-    responsive: [{
-        breakpoint: 1240,
-        settings: {
-          slidesToShow: 2.5,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 740,
-        settings: {
-          slidesToShow: 1.1,
-          centerMode: true,
-          slidesToScroll: 1,
-          arrows: false,
-        }
-      },
-    ]
-  });
-}
-
-if ($('.video-tours--mobile__items')) {
-  $(".video-tours--mobile__items").slick({
-    prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
-    infinite: false,
-    responsive: [{
-      breakpoint: 800,
-      settings: {
-        arrows: false,
-      }
-    }, ]
-  });
-}
-
-if ($('.header__text-items')) {
-  $('.header__text-items').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
-    dots: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
-}
-
-if ($('.tour-transport__inner-slider')) {
-  $('.tour-transport__inner-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: false,
-    dots: false,
-    arrows: false
-  });
-}
-
-if ($('.gallery-for')) {
-  $('.gallery-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,
-    asNavFor: '.gallery-nav',
-    nextArrow: '<button type="button" class="slider-prev--gallery gallery-slider__slider-prev">Previous</button>',
-    prevArrow: '<button type="button" class="slider-next--gallery gallery-slider__slider-next">Next</button>',
-    infinite: false
-  });
-}
-
-if ($('.gallery-nav')) {
-  $('.gallery-nav').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    asNavFor: '.gallery-for',
-    dots: false,
-    centerMode: false,
-    focusOnSelect: true,
-    infinite: false,
-    arrows: false
-  });
-}
+  if ($('.gallery-nav')) {
+    $('.gallery-nav').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.gallery-for',
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true,
+      infinite: false,
+      arrows: false
+    });
+  }
   // $(".video-tours--mobile__items").slick({
   //   prevArrow: '<button type="button" class="video-prev video__slider-prev">Previous</button>',
   //   nextArrow: '<button type="button" class="video-next video__slider-next">Next</button>',
@@ -305,20 +361,34 @@ if ($('.gallery-nav')) {
     $(this).next().slideToggle("slow");
   });
 
-  $(".popular-destinations__items--destinations").hide()
   $(".desktop-header__tour--destinations").click(function () {
-    $(".popular-destinations__items--readytours").hide();
-    $(".desktop-header__wrapper").toggleClass("backgroundActive");
-    $(".header-text").toggleClass("header-text--none");
-    $(".popular-destinations__items--destinations").slideToggle();
+    if ($(".header-text").hasClass("active")) {
+      $(".header-text").removeClass("active");
+      $(".desktop-header__wrapper").addClass("backgroundActive");
+      $(".popular-destinations__items--destinations").addClass("active");
+    } else if ($(".popular-destinations__items--readytours").hasClass("active")) {
+      $(".popular-destinations__items--readytours").removeClass("active");
+      $(".popular-destinations__items--destinations").addClass("active");
+    } else {
+      $(".popular-destinations__items--destinations").removeClass("active");
+      $(".header-text").addClass("active");
+      $(".desktop-header__wrapper").removeClass("backgroundActive");
+    }
   });
 
-  $(".popular-destinations__items--readytours").hide()
   $(".desktop-header__tour--readytours").click(function () {
-    $(".popular-destinations__items--destinations").hide();
-    $(".desktop-header__wrapper").toggleClass("backgroundActive");
-    $(".header-text").toggleClass("header-text--none");
-    $(".popular-destinations__items--readytours").slideToggle();
+    if ($(".header-text").hasClass("active")) {
+      $(".header-text").removeClass("active");
+      $(".desktop-header__wrapper").addClass("backgroundActive");
+      $(".popular-destinations__items--readytours").addClass("active");
+    } else if ($(".popular-destinations__items--destinations").hasClass("active")) {
+      $(".popular-destinations__items--destinations").removeClass("active");
+      $(".popular-destinations__items--readytours").addClass("active");
+    } else {
+      $(".popular-destinations__items--readytours").removeClass("active");
+      $(".header-text").addClass("active");
+      $(".desktop-header__wrapper").removeClass("backgroundActive");
+    }
   });
 
   //Валидатор форм и маска для форм
