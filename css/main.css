@@ -3006,6 +3006,99 @@ header::before {
   }
 }
 
+/* Наши преимущества страница "каталог" */
+
+.advantages__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 55px;
+  margin-bottom: 150px;
+  margin-right: -32px;
+}
+
+.advantages__item {
+  display: flex;
+  margin-right: 32px;
+  width: calc(33% - 32px);
+  max-width: 352px;
+}
+
+.advantages__title {
+  font-family: Roboto Slab;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #242440;
+  margin: 0;
+}
+
+.advantages__image {
+  width: 50px;
+  height: 50px;
+}
+
+.advantages__item-inner {
+  margin-left: 16px;
+}
+
+.advantages__text {
+  font-family: Roboto Slab;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #242440;
+  margin: 0;
+}
+
+.advantages__subtext {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7B8997;
+  margin: 0;
+  margin-top: 10px;
+  max-width: 352px;
+}
+
+@media screen and (max-width: 1240px) {
+  .advantages__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .advantages__image {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantages__items {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-top: 24px;
+    margin-bottom: 90px;
+  }
+  .advantages__item {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
+  .advantages__subtext {
+    max-width: 100%;
+  }
+  .advantages__item-inner {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .advantages__title {
+    font-size: 25px;
+  }
+}
+
+
 /* Карта туров по Мурманской области */
 
 .tours-map {
