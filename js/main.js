@@ -26,6 +26,58 @@ $(function () {
     ]
   });
 
+  $('.popular-destinations__items--destinations').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: false,
+    prevArrow: '<button type="button" class="slider-prev slider__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next slider__slider-next">Next</button>',
+    responsive: [{
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 2.2,
+          slidesToScroll: 1,
+          centerMode: false,
+        }
+      },
+      {
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: false,
+        }
+      },
+    ]
+  });
+
+  $('.popular-destinations__items--readytours').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: false,
+    prevArrow: '<button type="button" class="slider-prev slider__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next slider__slider-next">Next</button>',
+    responsive: [{
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 2.2,
+          slidesToScroll: 1,
+          centerMode: false,
+        }
+      },
+      {
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: false,
+        }
+      },
+    ]
+  });
+
 
   $('.tours__items-mob').slick({
     slidesToShow: 3,
@@ -311,6 +363,22 @@ $(function () {
     $(this).next().slideToggle("slow");
   });
 
+  $(".popular-destinations__items--destinations").hide()
+  $(".desktop-header__tour--destinations").click(function () {
+    $(".popular-destinations__items--readytours").hide();
+    $(".desktop-header__wrapper").toggleClass("backgroundActive");
+    $(".header-text").toggleClass("header-text--none");
+    $(".popular-destinations__items--destinations").slideToggle();
+  });
+
+  $(".popular-destinations__items--readytours").hide()
+  $(".desktop-header__tour--readytours").click(function () {
+    $(".popular-destinations__items--destinations").hide();
+    $(".desktop-header__wrapper").toggleClass("backgroundActive");
+    $(".header-text").toggleClass("header-text--none");
+    $(".popular-destinations__items--readytours").slideToggle();
+  });
+
   //Валидатор форм и маска для форм
   // const offerFormModal = $('.offer-form-modal')
   // offerFormModal.submit(function (e) {
@@ -462,16 +530,18 @@ $(function () {
 
   };
 
-  openGallery = document.querySelector('.openGallery');
-  galleryModal = document.querySelector('.modal-wrapper__gallery');
+  if (document.querySelector('.openGallery')) {
+    openGallery = document.querySelector('.openGallery');
+    galleryModal = document.querySelector('.modal-wrapper__gallery');
 
-  openGallery.addEventListener('click', function () {
-    openBaseModal();
-    galleryModal.classList.remove('hidden');
-    setTimeout(function () {
-      galleryModal.classList.remove('animation');
-    }, 20);
-  })
+    openGallery.addEventListener('click', function () {
+      openBaseModal();
+      galleryModal.classList.remove('hidden');
+      setTimeout(function () {
+        galleryModal.classList.remove('animation');
+      }, 20);
+    })
+  }
 
   function closeGalleryModal() {
     if (!galleryModal.classList.contains('hidden')) {
@@ -491,7 +561,9 @@ $(function () {
     // closecallbackPopup();
     closeleftMenuModal();
     closeVideoModal();
-    closeGalleryModal();
+    if (document.querySelector('.openGallery')) {
+      closeGalleryModal();
+    }
     closeBaseModal();
   };
 

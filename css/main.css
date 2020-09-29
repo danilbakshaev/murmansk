@@ -462,10 +462,10 @@ header::before {
   background-position: bottom;
 }
 
+
 .mobile-header {
   display: none;
 }
-
 
 .background-image {
   background-repeat: no-repeat;
@@ -547,6 +547,10 @@ header::before {
   height: 4px;
 }
 
+.desktop-header__wrapper.backgroundActive {
+  background-color: rgba(14, 32, 24, 0.97);
+}
+
 .desktop-header__top-item {
   margin-right: 25px;
   font-weight: 500;
@@ -564,7 +568,7 @@ header::before {
 }
 
 .desktop-header__top-item:hover {
-  color: #FB5352;
+  color: #0FC4AC;
 }
 
 .desktop-header__arrow {
@@ -583,16 +587,14 @@ header::before {
 
 .desktop-header__logo-wrapper {
   display: flex;
-  flex-grow: 1;
   align-items: center;
 }
 
 .desktop-header__info {
-  border-left: 1px solid rgb(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 .desktop-header__info-text {
@@ -662,8 +664,9 @@ header::before {
 }
 
 .logo-company {
-  margin-right: 22px;
+  padding-right: 16px;
   transition: 0.5s;
+  border-right: 1px solid rgb(255, 255, 255, 0.1);
 }
 
 .logo-company:hover {
@@ -716,7 +719,7 @@ header::before {
 
 .contacts__socials-text {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.7);
   margin: 0;
@@ -726,11 +729,11 @@ header::before {
 .contacts__callback {
   cursor: pointer;
   background-color: transparent;
-  color: #FB5352;
+  color: #0FC4AC;
   border: none;
   width: max-content;
   padding: 0;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -743,7 +746,7 @@ header::before {
   width: 100%;
   position: absolute;
   content: "";
-  border-bottom: 1px solid #FB5352;
+  border-bottom: 1px solid#0FC4AC;
   top: 14px;
   transition: 0.5s;
 
@@ -774,7 +777,7 @@ header::before {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #FB5352;
+  color: #0FC4AC;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -802,6 +805,7 @@ header::before {
   display: flex;
   align-items: center;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .desktop-header__tour:last-child {
@@ -823,8 +827,12 @@ header::before {
   padding-top: 85px;
 }
 
+.header-text--none {
+  display: none;
+}
+
 .header-text__wrap {
-  width: 53%;
+  max-width: 737px;
 }
 
 .header-text__title {
@@ -858,7 +866,7 @@ header::before {
 }
 
 .callback-form--wrap {
-  width: 73%;
+  max-width: 450px;
 }
 
 .callback-form__input {
@@ -870,6 +878,7 @@ header::before {
   font-size: 14px;
   color: #A5A5B1;
   padding: 0 16px;
+  max-width: calc(280px - 36px);
 }
 
 .valid {
@@ -898,9 +907,9 @@ header::before {
   cursor: pointer;
   height: 48px;
   width: 160px;
-  background: linear-gradient(90deg, #FF4241 -67.5%, #FF6363 148.33%);
+  background: linear-gradient(135deg, #FF9458 0%, #FFBE5C 100%);
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
   border: none;
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.47), inset 0px -1px 0px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   font-weight: 600;
   font-size: 14px;
@@ -918,7 +927,7 @@ header::before {
 
 .callback-form__privacy {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 0;
@@ -971,6 +980,10 @@ header::before {
   .contacts__wrap-links {
     display: block;
   }
+
+  .logo-company {
+    border-right: none;
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -1012,22 +1025,19 @@ header::before {
 
   .header-text {
     padding-top: 55px;
-    padding-bottom: 120px;
+    padding-bottom: 180px;
   }
 
   .header-text__title {
     font-size: 38px;
-  }
-
-  .header-text__subtitle {
-    font-size: 14px;
+    margin-bottom: 16px;
   }
 }
 
 @media screen and (max-width: 740px) {
 
   .header-text__title {
-    font-size: 22px;
+    font-size: 28px;
     margin-bottom: 14px;
   }
 
@@ -1041,12 +1051,14 @@ header::before {
   }
 
   .header-text__presentation {
-    font-size: 12px;
+    font-size: 14px;
+    margin-top: 12px;
+    display: block;
   }
 
   .header-text {
     padding-top: 33px;
-    padding-bottom: 60px;
+    padding-bottom: 160px;
   }
 
   .callback-form--wrap {
@@ -1054,6 +1066,8 @@ header::before {
     position: relative;
     z-index: 1;
     margin-bottom: 0;
+    margin-top: 12px;
+    max-width: unset;
   }
 
   .text-center {
@@ -1067,7 +1081,8 @@ header::before {
   }
 
   .callback-form__input {
-    width: calc(100% - 32px);
+    width: calc(100% - 36px);
+    max-width: unset;
   }
 
   .callback-form__submit {
@@ -1082,6 +1097,15 @@ header::before {
 
   .text-center {
     text-align: center;
+  }
+
+  .mobile-header__burger-img {
+    width: 16px;
+    height: 14px;
+  }
+
+  .callback-form__privacy {
+    font-size: 10px;
   }
 }
 
@@ -2048,6 +2072,16 @@ header::before {
 
 .popular-destinations__items {
   position: relative;
+}
+
+.popular-destinations__items--destinations .popular-destinations__items--readytours {
+  position: relative;
+}
+
+.popular-destinations__items--destinations,
+.popular-destinations__items--readytours {
+  padding-top: 26px;
+  padding-bottom: 195px;
 }
 
 .popular-destinations__title {
@@ -3256,11 +3290,6 @@ footer::after {
   margin-top: 0;
 }
 
-.contacts {
-  width: 25%;
-  margin-right: 32px;
-}
-
 .contacts__wrap-links--flex {
   display: flex;
   flex-direction: column;
@@ -3324,7 +3353,7 @@ footer::after {
 }
 
 .callback__call {
-  color: #FB5352;
+  color: #0FC4AC;
   border: none;
   background: none;
   cursor: pointer;
@@ -3333,7 +3362,7 @@ footer::after {
 }
 
 .callback__call span {
-  border-bottom: 1px solid #FB5352;
+  border-bottom: 1px solid #0FC4AC;
   transition: all .2s linear;
 }
 
@@ -3902,6 +3931,11 @@ footer::after {
 
   .callback--modal-tablet {
     display: none;
+  }
+
+  .modal-wrapper__close svg {
+    width: 19px;
+    height: 14px;
   }
 }
 
@@ -6612,10 +6646,6 @@ footer::after {
   .video-tours__bg--rad {
     border-radius: 0;
     position: relative;
-  }
-
-  header::before {
-    display: none;
   }
 
   .video-tours__play--rad {
