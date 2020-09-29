@@ -605,6 +605,11 @@ header::before {
 
 .header__text-wrap-top {
   display: flex;
+  margin-bottom: 25px;
+}
+
+.header-text__title-bottom {
+  display: none;
 }
 
 .header__text-wrap-left {
@@ -653,7 +658,8 @@ header::before {
 }
 
 .header-red {
-  color: #FB5352;
+  color: #0FC4AC;
+
 }
 
 .callback-form__submit--head {
@@ -833,7 +839,7 @@ header::before {
   font-size: 42px;
   color: #FFFFFF;
   line-height: 130%;
-  margin-top: 0px;
+  margin-top: 22px;
   margin-right: 0px;
   margin-bottom: 22px;
   margin-left: 0px;
@@ -1245,25 +1251,33 @@ header::before {
 
 .tours__item-span {
   flex-grow: 1;
+  margin-top: 3px;
 }
 
 .tours__item-span-text {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
-  padding: 6px 11px 6px 24px;
+  padding: 9px 15px 9px 37px;
   position: relative;
-  font-style: normal;
   font-weight: 500;
   font-size: 11px;
   line-height: 13px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .tours__item-span-text::before {
   content: url(/img/fire.svg);
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 7px;
+  left: 11px;
+}
+
+.tours__item-span-text--blue::before {
+  content: url(/img/blue.svg);
+  position: absolute;
+  top: 7px;
+  left: 11px;
 }
 
 .tours__item-img {
@@ -2013,8 +2027,13 @@ header::before {
   z-index: -1;
 }
 
+.title-sections__title-catalog {
+  width: inherit;
+  margin-right: 0;
+}
+
 .scroll-link__tag {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 168%;
   color: #A5A5B1;
@@ -4263,6 +4282,7 @@ footer::after {
 
 .catalog {
   margin-bottom: 90px;
+  padding-top: 90px;
 }
 
 .title-sections__catalog {
@@ -4294,10 +4314,11 @@ footer::after {
 }
 
 .catalog__item-left {
-  padding: 50px;
-  width: 70%;
+  /* padding: 50px;
+  width: 70%; */
   background: linear-gradient(165.67deg, rgba(0, 0, 0, 0) 46.92%, rgba(3, 3, 3, 0.054) 56.84%, rgba(14, 14, 14, 0.6) 100%), rgba(0, 0, 0, 0.3);
   border-radius: 12px 0px 0px 12px;
+  position: relative;
 }
 
 .catalog__item-left-text-top {
@@ -4489,6 +4510,81 @@ footer::after {
   align-items: center;
 }
 
+.title-sections--catalog {
+  margin-bottom: 0;
+}
+
+.catalog__destination-item {
+  font-size: 0;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.catalog__btn-destination {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #E9ECEF;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.catalog__btn-destination--left {
+  width: 400px;
+  height: 64px;
+}
+
+.catalog__btn-destination--right {
+  width: 436px;
+  height: 64px;
+  border-radius: 0;
+}
+
+.catalog__btn-destination--small {
+  width: 286px;
+  height: 64px;
+  border-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.catalog__btn-destination::before {
+  position: absolute;
+  content: url(/img/arrow-catalog.svg);
+  width: 12px;
+  height: 6px;
+  top: 50%;
+  right: 12px;
+}
+
+.catalog__btn-text {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.04em;
+  color: #93A0AD;
+  opacity: 0.7;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+.catalog__btn-subtext {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+  text-align: left;
+}
+
 .catalog__item-text-left {
   display: flex;
   flex-direction: column;
@@ -4503,6 +4599,101 @@ footer::after {
   display: flex;
   align-items: baseline;
   margin-top: 16px;
+}
+
+.catalog__found {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 37px;
+}
+
+.catalog__found-left {
+  display: flex;
+  align-items: center;
+}
+
+.catalog__found-right {
+  display: flex;
+  align-items: center;
+}
+
+.catalog__description {
+  font-family: Roboto Slab;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #242440;
+  margin: 0;
+}
+
+.catalog__btn-clear {
+  font-weight: 500;
+  font-size: 12px;
+  color: #0FC4AC;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.catalog__btn-rating {
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  font-size: 13px;
+  color: #242440;
+  height: 28px;
+}
+
+.tours__item-span-text--catalog {
+  position: absolute;
+  bottom: 22px;
+  left: 24px;
+}
+
+.catalog__btn-wrap {
+  margin-left: 34px;
+}
+
+.catalog__btn-rating--active {
+  background: #CAECE4;
+  border-radius: 16px;
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 13px;
+  padding-left: 30px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.catalog__btn-rating--active::before {
+  position: absolute;
+  content: url(/img/blue.svg);
+  background: #CAECE4;
+  border-radius: 16px;
+  left: 10px;
+}
+
+.catalog__btn-sorting {
+  border: none;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+}
+
+.catalog__btn-sorting--active {
+  background-color: #0FC4AC;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+.catalog__sorting-img {
+  width: 16px;
+  height: 16px;
 }
 
 .catalog__svg {
@@ -4607,7 +4798,7 @@ footer::after {
 }
 
 .catalog__center-text {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 150%;
   text-align: center;
@@ -4645,9 +4836,9 @@ footer::after {
   transition: all 0.2s linear;
 }
 
-.catalog button:hover {
+/* .catalog button:hover {
   background: #ff8181;
-}
+} */
 
 .catalog__preview {
   display: flex;
@@ -4788,15 +4979,18 @@ footer::after {
   font-size: 40px;
   line-height: 120%;
   color: #242440;
+  max-width: 437px;
 }
 
 .island__text {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   display: flex;
   align-items: center;
   color: #242440;
+  max-width: 544px;
+  margin-left: 73px;
 }
 
 .island__link {
@@ -4811,6 +5005,37 @@ footer::after {
 
 .island__link:hover {
   color: #242440;
+}
+
+@media screen and (max-width: 860px) {
+  .island__block {
+    flex-direction: column;
+  }
+  .island__text {
+    margin-left: 0;
+    max-width: max-content;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .island__title {
+    max-width: max-content;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  .Island {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 446px) {
+  .island__title {
+    font-size: 26px;
+  }
+  .island__text {
+    font-size: 14px;
+  }
 }
 
 /* Tour */
