@@ -551,6 +551,8 @@ header::before {
 
 .desktop-header__wrapper.backgroundActive {
   background-color: rgba(14, 32, 24, 0.97);
+  position: relative;
+  z-index: 1;
 }
 
 .desktop-header__top-item {
@@ -815,7 +817,7 @@ header::before {
 }
 
 .desktop-header__tour:hover {
-  color: #FB5352;
+  color: #0FC4AC;
 }
 
 .desktop-header__tours-img {
@@ -827,6 +829,11 @@ header::before {
 .header-text {
   padding-bottom: 205px;
   padding-top: 85px;
+  display: none;
+}
+
+.header-text.active {
+  display: block;
 }
 
 .header-text--none {
@@ -942,7 +949,7 @@ header::before {
 }
 
 .callback-form__privacy-link:hover {
-  color: #FB5352;
+  color: #0FC4AC;
   text-decoration: underline;
 }
 
@@ -956,8 +963,8 @@ header::before {
 }
 
 .header-text__presentation:hover {
-  text-decoration-color: #FB5352;
-  color: #FB5352;
+  text-decoration-color: #0FC4AC;
+  color: #0FC4AC;
 }
 
 @media screen and (max-width: 1240px) {
@@ -1242,7 +1249,7 @@ header::before {
   display: none;
 }
 
-.bottom-innerwrp{
+.bottom-innerwrp {
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
@@ -1616,7 +1623,7 @@ header::before {
   display: none;
 }
 
-.recreation__item-photo{
+.recreation__item-photo {
   border-radius: 12px;
   overflow: hidden;
   height: 452px;
@@ -2087,8 +2094,8 @@ header::before {
 }
 
 .popular-destinations__item:hover {
-    transform: scale(1.05);
-  }
+  transform: scale(1.05);
+}
 
 .popular-destinations__items {
   position: relative;
@@ -2100,8 +2107,31 @@ header::before {
 
 .popular-destinations__items--destinations,
 .popular-destinations__items--readytours {
+  visibility: hidden;
+  height: 0px;
+  position: relative;
+  z-index: -1;
+}
+
+.popular-destinations__items--destinations.active,
+.popular-destinations__items--readytours.active {
+  visibility: visible;
   padding-top: 26px;
   padding-bottom: 195px;
+  height: auto;
+  z-index: 3;
+}
+
+.popular-destinations__items--destinations.active .slick-list {
+  overflow: unset !important;
+}
+
+.popular-destinations__items--readytours.active .slick-list {
+  overflow: unset !important;
+}
+
+.hide {
+  display: none;
 }
 
 .popular-destinations__title {
@@ -2414,7 +2444,7 @@ header::before {
 }
 
 .simple-link:hover svg {
-  fill:#FB5352;
+  fill: #FB5352;
 }
 
 .simple-link:hover {
@@ -2762,7 +2792,7 @@ header::before {
 @media screen and (max-width: 1240px) {
   .stocks__item:hover {
     transform: initial;
-  } 
+  }
 }
 
 @media screen and (min-width: 1080px) {
@@ -2826,7 +2856,7 @@ header::before {
   margin-bottom: 152px;
 }
 
-.grad-travel{
+.grad-travel {
   background: linear-gradient(145.73deg, rgba(0, 0, 0, 0) 46.92%, rgba(3, 3, 3, 0.09) 56.84%, #0E0E0E 100%), rgba(0, 0, 0, 0.3);
 }
 
@@ -3152,7 +3182,7 @@ header::before {
 }
 
 .subscribe-instagram__url:hover {
-  text-decoration-color:  #FFBE5C;
+  text-decoration-color: #FFBE5C;
 }
 
 .subscribe-instagram__items {
@@ -6921,7 +6951,7 @@ footer::after {
 
 /* кнопки */
 
-.prev-arrow{
+.prev-arrow {
   width: 48px;
   height: 48px;
   border-radius: 30px;
@@ -6934,7 +6964,7 @@ footer::after {
   outline: none;
 }
 
-.next-arrow{
+.next-arrow {
   width: 48px;
   height: 48px;
   border-radius: 30px;
@@ -6946,7 +6976,7 @@ footer::after {
   outline: none;
 }
 
-.btn-ice{
+.btn-ice {
   border: 1px solid #0FC4AC;
   box-sizing: border-box;
   border-radius: 48px;
@@ -6959,9 +6989,10 @@ footer::after {
   color: #0FC4AC;
   padding: 15px 56px 15px 20px;
   position: relative;
+  cursor: pointer;
 }
 
-.btn-ice::after{
+.btn-ice::after {
   content: '';
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 6L1 6M19 6L14 11M19 6L14 1' stroke='%230FC4AC' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   position: absolute;
@@ -6972,6 +7003,30 @@ footer::after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.next-js-popular-destinations-header .arrow-hover path,
+.prev-js-popular-destinations-header .arrow-hover path {
+  transition: all .2s linear;
+}
+
+.next-js-popular-destinations-header:hover .arrow-hover path,
+.prev-js-popular-destinations-header:hover .arrow-hover path {
+  stroke: #0FC4AC;
+}
+
+.next-js-popular-destinations-header,
+.prev-js-popular-destinations-header,
+.btn-ice--header {
+  transition: all .2s linear;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+}
+
+.next-js-popular-destinations-header:hover,
+.prev-js-popular-destinations-header:hover,
+.btn-ice--header:hover {
+  background: rgba(255, 255, 255, 0.3) !important;
 }
 
 /* About */
