@@ -1567,6 +1567,10 @@ header::before {
   .title-sections__title {
     font-size: 26px;
   }
+
+  .tours-scaleControl{
+    padding: 16px;
+  }
 }
 
 /* /Блок "Топ туров" */
@@ -2096,6 +2100,8 @@ header::before {
 
 .popular-destinations {
   margin-top: 96px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: #F8F8F6;
 }
 
@@ -2303,32 +2309,28 @@ header::before {
   overflow: inherit !important;
 } */
 
-@media screen and (min-width: 1080px) {
-  /* .popular-destinations__item:hover {
+/* @media screen and (min-width: 1080px) {
+  .popular-destinations__item:hover {
     margin: 15px;
     width: calc(77.3% + 30px) !important;
     height: calc(500px + 30px);
-  } */
-}
+  }
+} */
 
-@media screen and (min-width: 1440px) {
-  /* .popular-destinations__item {
+/* @media screen and (min-width: 1440px) {
+  .popular-destinations__item {
     height: 408px;
-  } */
+  }
 
-  /* .popular-destinations__item:hover {
+  .popular-destinations__item:hover {
     margin: 15px;
     width: calc(auto + 30px) !important;
     height: calc(408px + 30px);
     transform: scale(1.05);
-  } */
-}
+  }
+} */
 
 @media screen and (max-width: 1440px) {
-
-  /* .popular-destinations__item:hover {
-    width: auto !important;
-  } */
 
   .popular-destinations__img {
     height: 100%;
@@ -2336,9 +2338,6 @@ header::before {
 }
 
 @media screen and (max-width: 1240px) {
-  /* .popular-destinations__item {
-    width: auto !important;
-  } */
 
   .popular-destinations__item:hover {
     transform: initial;
@@ -2349,20 +2348,21 @@ header::before {
   }
 
   .popular-destinations {
-    margin-top: 40px;
+    margin-top: 72px;
+    padding-top: 72px;
+  padding-bottom: 72px;
+  }
+
+  .popular-destinations__title {
+    font-size: 24px;
   }
 }
 
 @media screen and (max-width: 992px) {
+
   .popular-destinations__img {
     height: 100%;
   }
-}
-
-@media screen and (max-width: 860px) {
-  /* .popular-destinations__item {
-    width: 273px !important;
-  } */
 }
 
 @media screen and (max-width: 840px) {
@@ -2374,19 +2374,24 @@ header::before {
   .slick-center {
     padding: 0px;
   }
-
-  /* .popular-destinations__items .slick-list .slick-track {
-    display: flex;
-    align-items: baseline;
-  } */
 }
 
 @media screen and (max-width: 740px) {
 
-  /* .slick-slide {
-    display: flex !important;
-    justify-content: center;
-  } */
+  .popular-destinations {
+    margin-top: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .popular-destinations__title {
+    font-size: 22px;
+  }
+
+  .popular-destinations-scaleControl{
+    height: 330px;
+    padding: 16px;
+  }
 }
 
 
