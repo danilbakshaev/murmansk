@@ -84,35 +84,38 @@ $(function () {
     });
   }
 
-  if ($('.tours__items-mob')) {
-    $('.tours__items-mob').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      infinite: false,
-      prevArrow: '.prev-js',
-      nextArrow: '.next-js',
-      responsive: [{
-          breakpoint: 1240,
-          settings: {
-            slidesToShow: 2.2,
-            slidesToScroll: 1,
-            arrows: true,
-            centerMode: false,
-          }
-        },
 
-        {
-          breakpoint: 740,
-          settings: {
-            slidesToShow: 1.1,
-            slidesToScroll: 1,
-            arrows: false,
-            centerMode: false,
-          }
-        },
-      ]
-    });
-  }
+  $(window).on('resize', function (e) {
+    if (window.innerWidth < 1240) {
+      if ($('.tours__items')) {
+        $('.tours__items').slick({
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          draggable: false,
+          infinite: false,
+          prevArrow: '.prev-js',
+          nextArrow: '.next-js',
+          responsive: [{
+              breakpoint: 1240,
+              settings: {
+                slidesToShow: 2.2,
+                slidesToScroll: 2.2,
+              }
+            },
+    
+            {
+              breakpoint: 740,
+              settings: {
+                slidesToShow: 1.1,
+                slidesToScroll: 1.1,
+              }
+            },
+          ]
+        });
+      }
+    };
+  }).trigger('resize');
+  
 
 
   if ($('.reviews__inner')) {
