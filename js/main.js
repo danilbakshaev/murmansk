@@ -3,25 +3,23 @@ $(function () {
   if ($('.popular-destinations__items')) {
     $('.popular-destinations__items').slick({
       slidesToShow: 3.4,
-      slidesToScroll: 1,
+      slidesToScroll: 3.4,
       infinite: false,
+      draggable: false,
       prevArrow: '.prev-js-popular-destinations',
       nextArrow: '.next-js-popular-destinations',
       responsive: [{
           breakpoint: 1240,
           settings: {
-            slidesToShow: 2.2,
-            slidesToScroll: 1,
-            centerMode: false,
+            slidesToShow: 2.1,
+            slidesToScroll: 2.1,
           }
         },
         {
           breakpoint: 740,
           settings: {
-            slidesToShow: 1.2,
-            slidesToScroll: 1,
-            arrows: false,
-            centerMode: false,
+            slidesToShow: 1.1,
+            slidesToScroll: 1.1,
           }
         },
       ]
@@ -59,25 +57,23 @@ $(function () {
   if ($('.popular-destinations__items--readytours-slider')) {
     $('.popular-destinations__items--readytours-slider').slick({
       slidesToShow: 3.4,
-      slidesToScroll: 1,
+      slidesToScroll: 3.4,
       infinite: false,
+      draggable: false,
       prevArrow: '.prev-js-popular-readytours-header',
       nextArrow: '.next-js-popular-readytours-header',
       responsive: [{
           breakpoint: 1240,
           settings: {
-            slidesToShow: 2.2,
-            slidesToScroll: 1,
-            centerMode: false,
+            slidesToShow: 2.1,
+            slidesToScroll: 2.1,
           }
         },
         {
           breakpoint: 740,
           settings: {
-            slidesToShow: 1.2,
-            slidesToScroll: 1,
-            arrows: false,
-            centerMode: false,
+            slidesToShow: 1.1,
+            slidesToScroll: 1.1,
           }
         },
       ]
