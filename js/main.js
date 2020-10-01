@@ -346,6 +346,7 @@ $(function () {
     $(this).children().toggleClass("faq__title--active");
     $(this).toggleClass("closeText");
     $(this).next().slideToggle("slow");
+    $(this).parent().toggleClass("faq__item--active");
   });
 
   $(".mobile-footer__inner").hide()
@@ -565,7 +566,32 @@ $(function () {
         passive: false
       });
     }
+  };
+  
+  if (document.querySelector('.openFullText')) {
+    openFullText = document.querySelector('.openFullText');
+    fullTextModal = document.querySelector('.modal-wrapper__fulltext');
 
+    openFullText.addEventListener('click', function () {
+      openBaseModal();
+      fullTextModal.classList.remove('hidden');
+      setTimeout(function () {
+        fullTextModal.classList.remove('animation');
+      }, 20);
+    })
+  }
+
+  function closeFullTextModal() {
+    if (!fullTextModal.classList.contains('hidden')) {
+      fullTextModal.classList.add('animation');
+      fullTextModal.addEventListener('transitionend', function (e) {
+        fullTextModal.classList.add('hidden');
+      }, {
+        capture: false,
+        once: true,
+        passive: false
+      });
+    }
   };
 
   function closeAllModal() {
@@ -574,7 +600,10 @@ $(function () {
     closeVideoModal();
     if (document.querySelector('.openGallery')) {
       closeGalleryModal();
-    }
+    };
+    if (document.querySelector('.openFullText')) {
+      closeFullTextModal();
+    };
     closeBaseModal();
   };
 
