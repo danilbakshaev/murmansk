@@ -286,6 +286,19 @@
 						</div>
 					</div>
 				</div>
+				<div class="bottom-innerwrp">
+					<div class="btn-js">
+						<button type="button" class="prev-arrow prev-js-popular-destinations slick-arrow slick-disabled" aria-disabled="true" style=""><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 6H19M1 6L6 1M1 6L6 11" stroke="#0FC4AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</button>
+						<button type="button" class="next-arrow next-js-popular-destinations slick-arrow" aria-disabled="false" style=""><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6L1 6M19 6L14 11M19 6L14 1" stroke="#0FC4AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</button>
+					</div>
+					<button class="btn-ice">Смотреть все</button>
+				</div>
 				<div class="scroll-link">
 					<div class="scroll-link__inner">
 						<a class="scroll-link__tag" href="">#насеверноесияние</a>
@@ -312,40 +325,7 @@
 						<a class="scroll-link__tag" href="">#сияние</a>
 					</div>
 				</div>
-				<a class="simple-link simple-link--popular" href="#">
-					Все туры по Кольскому полуострову
-					<svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<g filter="url(#filter0_ii)">
-							<ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="url(#paint0_linear)" />
-						</g>
-						<path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white" stroke-linecap="round"
-							stroke-linejoin="round" />
-						<defs>
-							<filter id="filter0_ii" x="0" y="0" width="26" height="27" filterUnits="userSpaceOnUse"
-								color-interpolation-filters="sRGB">
-								<feFlood flood-opacity="0" result="BackgroundImageFix" />
-								<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-									result="hardAlpha" />
-								<feOffset dy="1" />
-								<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-								<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.47 0" />
-								<feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
-								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-									result="hardAlpha" />
-								<feOffset dy="-1" />
-								<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-								<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-								<feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow" />
-							</filter>
-							<linearGradient id="paint0_linear" x1="-17.55" y1="13.5" x2="38.5667" y2="13.5"
-								gradientUnits="userSpaceOnUse">
-								<stop stop-color="#FA3B3A" />
-								<stop offset="1" stop-color="#FD7A7A" />
-							</linearGradient>
-						</defs>
-					</svg>
-				</a>
+				
 			</div>
 		</section>
 		<!-- /Блок "Популярные направления" -->
@@ -412,7 +392,7 @@
 			</div>
 		</div> -->
 				<div class="catalog__destination-item">
-					<button class="catalog__btn-destination catalog__btn-destination--left">
+					<button class="catalog__btn-destination catalog__btn-destination--left catalog__btn-destination--active">
 						<span class="catalog__btn-text">Направление</span>
 						<span class="catalog__btn-subtext">Тереберка</span>
 					</button>
@@ -425,6 +405,48 @@
 						<span class="catalog__btn-subtext">Весна, Осень</span>
 					</button>
 				</div>
+
+				<div class="catalog__destination-item--mobile">
+
+						<div class="catalog__mobile-spoiler">
+							<span class="catalog__mobile-title">Направление</span>
+							<div class="catalog__mobile-cut catalog__mobile-cut--active">
+								<label class="catalog__text" for="geo"><input class="catalog__inp" type="checkbox" id="geo">Мурманск</label>
+								<label class="catalog__text" for="geo2"><input class="catalog__inp" type="checkbox" id="geo2">Териберка</label>
+								<label class="catalog__text" for="geo3"><input class="catalog__inp" type="checkbox" id="geo3">Хабины</label>
+								<label class="catalog__text" for="geo4"><input class="catalog__inp" type="checkbox" id="geo4">Ловозеро</label>
+								<label class="catalog__text" for="geo5"><input class="catalog__inp" type="checkbox" id="geo5">Средний рыбачий</label>
+								<label class="catalog__text" for="geo6"><input class="catalog__inp" type="checkbox" id="geo6">Норвегия</label>
+							</div>
+						</div>
+
+						<div class="catalog__mobile-spoiler">
+							<span class="catalog__mobile-title">Категории</span>
+							<div class="catalog__mobile-cut">
+								<label class="catalog__text" for="geo"><input class="catalog__inp" type="checkbox" id="geo">Мурманск</label>
+								<label class="catalog__text" for="geo2"><input class="catalog__inp" type="checkbox" id="geo2">Териберка</label>
+								<label class="catalog__text" for="geo3"><input class="catalog__inp" type="checkbox" id="geo3">Хабины</label>
+								<label class="catalog__text" for="geo4"><input class="catalog__inp" type="checkbox" id="geo4">Ловозеро</label>
+								<label class="catalog__text" for="geo5"><input class="catalog__inp" type="checkbox" id="geo5">Средний рыбачий</label>
+								<label class="catalog__text" for="geo6"><input class="catalog__inp" type="checkbox" id="geo6">Норвегия</label>
+							</div>
+						</div>
+
+						<div class="catalog__mobile-spoiler">
+							<span class="catalog__mobile-title">Сезонность</span>
+							<div class="catalog__mobile-cut">
+								<label class="catalog__text" for="geo"><input class="catalog__inp" type="checkbox" id="geo">Мурманск</label>
+								<label class="catalog__text" for="geo2"><input class="catalog__inp" type="checkbox" id="geo2">Териберка</label>
+								<label class="catalog__text" for="geo3"><input class="catalog__inp" type="checkbox" id="geo3">Хабины</label>
+								<label class="catalog__text" for="geo4"><input class="catalog__inp" type="checkbox" id="geo4">Ловозеро</label>
+								<label class="catalog__text" for="geo5"><input class="catalog__inp" type="checkbox" id="geo5">Средний рыбачий</label>
+								<label class="catalog__text" for="geo6"><input class="catalog__inp" type="checkbox" id="geo6">Норвегия</label>
+							</div>
+						</div>
+						<button class="catalog__item-btn catalog__item-btn--details catalog__item-btn--mobile">Найти</button>
+				</div>
+
+
 				<div class="catalog__found">
 					<div class="catalog__found-left">
 						<p class="catalog__description">Найдено 20 туров</p>

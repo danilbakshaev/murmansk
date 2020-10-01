@@ -4828,6 +4828,7 @@ footer::after {
   font-size: 0;
   margin-top: 32px;
   margin-bottom: 32px;
+  display: flex;
 }
 
 .catalog__btn-destination {
@@ -4845,20 +4846,24 @@ footer::after {
   cursor: pointer;
 }
 
+.catalog__btn-destination--active {
+  border: 1px solid #0FC4AC;
+}
+
 .catalog__btn-destination--left {
-  width: 400px;
-  height: 64px;
+  width: 195px;
+  min-height: 64px;
 }
 
 .catalog__btn-destination--right {
-  width: 436px;
-  height: 64px;
+  flex-grow: 1;
+  min-height: 64px;
   border-radius: 0;
 }
 
 .catalog__btn-destination--small {
-  width: 286px;
-  height: 64px;
+  width: 230px;
+  min-height: 64px;
   border-radius: 0px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -4872,6 +4877,12 @@ footer::after {
   top: 50%;
   right: 12px;
 }
+
+/* тестовый селектор */
+.catalog__btn-destination--active-before::before {
+  content: url(/img/arrow-catalog-active.svg);
+}
+/* тестовый селектор */
 
 .catalog__btn-text {
   font-family: Inter;
@@ -4909,6 +4920,59 @@ footer::after {
   display: flex;
   align-items: baseline;
   margin-top: 16px;
+}
+
+.catalog__mobile-spoiler {
+  display: block;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.catalog__inp {
+  margin-right: 10px;
+}
+
+.catalog__mobile-spoiler::before {
+  position: absolute;
+  content: url(/img/arrow-catalog.svg);
+  width: 12px;
+  height: 6px;
+  top: -4px;
+  right: 12px;
+}
+
+.catalog__mobile-cut {
+  flex-direction: column;
+  user-select: none;
+  margin-top: 17px;
+  display: none;
+}
+
+.catalog__mobile-cut--active {
+  display: flex;
+}
+
+.catalog__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #242440;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.catalog__mobile-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #242440;
+}
+
+.catalog__item-btn--mobile {
+  max-width: 292px;
 }
 
 .catalog__found {
@@ -5173,6 +5237,10 @@ footer::after {
   background-image: url(/img/bottom.png);
 }
 
+.catalog__destination-item--mobile {
+  display: none;
+}
+
 
 @media screen and (max-width: 860px) {
   .catalog__items {
@@ -5267,6 +5335,18 @@ footer::after {
 
   .catalog__center-text {
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .catalog__destination-item--mobile {
+    display: block;
+  }
+  .catalog__destination-item{
+    display: none;
+  }
+  .title-sections__catalog {
+    font-size: 26px;
   }
 }
 
