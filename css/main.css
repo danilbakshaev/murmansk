@@ -4851,7 +4851,7 @@ footer::after {
 }
 
 .catalog__btn-destination--left {
-  width: 195px;
+  width: 400px;
   min-height: 64px;
 }
 
@@ -4862,27 +4862,39 @@ footer::after {
 }
 
 .catalog__btn-destination--small {
-  width: 230px;
+  width: 286px;
   min-height: 64px;
   border-radius: 0px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-.catalog__btn-destination::before {
+.catalog__arrow {
+  position: absolute;
+  top: calc(50% - 3px);
+  right: 14px;
+}
+
+.catalog__arrow--active {
+  transform: rotate(-180deg);
+}
+
+.catalog__arrow--active-blue {
+  fill: rgba(15, 196, 172, 1);
+}
+
+/* .catalog__arrow-blue {
+  fill: rgba(15, 196, 172, 1);
+} */
+
+/* .catalog__btn-destination::before {
   position: absolute;
   content: url(/img/arrow-catalog.svg);
   width: 12px;
   height: 6px;
   top: 50%;
   right: 12px;
-}
-
-/* тестовый селектор */
-.catalog__btn-destination--active-before::before {
-  content: url(/img/arrow-catalog-active.svg);
-}
-/* тестовый селектор */
+} */
 
 .catalog__btn-text {
   font-family: Inter;
@@ -4895,6 +4907,10 @@ footer::after {
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 4px;
+}
+
+.catalog__btn-text--active {
+  color: rgba(15, 196, 172, 1);
 }
 
 .catalog__btn-subtext {
@@ -4928,17 +4944,54 @@ footer::after {
   position: relative;
 }
 
+/* делаем свой чекбокс */
 .catalog__inp {
-  margin-right: 10px;
+  position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
 }
 
-.catalog__mobile-spoiler::before {
+.catalog__inp + label {
+  position: relative;
+	padding: 0 0 0 37px;
+	cursor: pointer;
+}
+
+.catalog__inp + label::before {
+  content: '';
+	position: absolute;
+	left: 0;
+	width: 20px;
+	height: 20px;
+  border: 3px solid #E9ECEF;
+  border-radius: 4px;
+}
+
+.catalog__inp:checked + label:before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 196, 172, 1);
+  content: url(../img/check-sprite.svg);
+  border: none;
+  min-width: 26px;
+  min-height: 26px;
+}
+/* делаем свой чекбокс */
+
+.catalog__mobile-arrow {
   position: absolute;
-  content: url(/img/arrow-catalog.svg);
-  width: 12px;
-  height: 6px;
-  top: -4px;
-  right: 12px;
+  top: 10px;
+  right: 0;
+}
+
+.catalog__mobile-arrow--blue {
+  fill: #0FC4AC;
+}
+
+.catalog__mobile-arrow--active {
+  transform: rotate(-180deg);
 }
 
 .catalog__mobile-cut {
@@ -4973,6 +5026,12 @@ footer::after {
 
 .catalog__item-btn--mobile {
   max-width: 292px;
+}
+
+.catalog__row {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
 }
 
 .catalog__found {
@@ -5337,6 +5396,15 @@ footer::after {
     font-size: 10px;
   }
 }
+
+/* @media screen and (max-width: 768px) {
+  .catalog__btn-destination--left {
+    width: 187px;
+  }
+  .catalog__btn-destination--small {
+    width: ;
+  }
+} */
 
 @media screen and (max-width: 640px) {
   .catalog__destination-item--mobile {
