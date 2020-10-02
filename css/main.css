@@ -5300,8 +5300,45 @@ footer::after {
   display: none;
 }
 
+@media screen and (max-width: 1240px) {
+  .catalog__btn-destination--left {
+    width: 315px;
+  }
+  .catalog__btn-destination--small {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .catalog__btn-destination--left {
+    width: 260px;
+  }
+  .catalog__btn-destination--small {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .catalog__btn-destination--left {
+    width: 220px;
+  }
+  .catalog__btn-destination--small {
+    width: 180px;
+  }
+}
 
 @media screen and (max-width: 860px) {
+  .catalog__btn-destination--left {
+    width: 180px;
+  }
+  .catalog__btn-destination--small {
+    width: 160px;
+  }
+
+  .title-sections--catalog {
+    margin-bottom: 30px !important;
+  }
+
   .catalog__items {
     display: none;
   }
