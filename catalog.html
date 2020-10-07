@@ -346,38 +346,38 @@
 					<h2 class="title-sections__title">Каталог туров</h2>
 				</div>
 
-				<div class="catalog__wrap">
+				<div class="filter">
 
-					<div class="catalog__destination-item catalog__destination-item--desktop">
+					<div class="filter__destination-item filter__destination-item--desktop">
 
-						<button class="catalog__btn-destination catalog__btn-destination--direction catalog__open--active">
+						<button class="filter__btn-destination filter__btn-destination--direction catalog__open--active">
 							<span class="catalog__btn-text">Направление</span>
 							<span class="catalog__btn-subtext">Тереберка</span>
 							<svg class="catalog__arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
-								<path class="catalog__arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
 									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
 									fill="#7B8997" />
 							</svg>
 						</button>
 	
-						<button class="catalog__btn-destination catalog__btn-destination--categories">
+						<button class="filter__btn-destination filter__btn-destination--categories">
 							<span class="catalog__btn-text">Категории</span>
 							<span class="catalog__btn-subtext">Однодневные туры, Корпоративные туры</span>
 							<svg class="catalog__arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
-								<path class="catalog__arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
 									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
 									fill="#7B8997" />
 							</svg>
 						</button>
 	
-						<button class="catalog__btn-destination catalog__btn-destination--seasonality">
+						<button class="filter__btn-destination filter__btn-destination--seasonality">
 							<span class="catalog__btn-text">Сезонность</span>
 							<span class="catalog__btn-subtext">Весна, Осень</span>
 							<svg class="catalog__arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
-								<path class="catalog__arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
 									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
 									fill="#7B8997" />
 							</svg>
@@ -385,176 +385,179 @@
 	
 					</div>
 	
-					<div class="catalog__destination-item catalog__destination-item--mobile">
+					<div class="filter__destination-item filter__destination-item--mobile">
 	
-						<div class="catalog__mobile-spoiler catalog__open--active">
-							<svg class="catalog__mobile-arrow" width="12" height="6" viewBox="0 0 12 6"
+						<div class="filter__mobile-spoiler catalog__open--active">
+							<svg class="filter__mobile-arrow" width="12" height="6" viewBox="0 0 12 6"
 								fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path class="catalog__arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
 									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
 									fill="#7B8997" />
 							</svg>
-							<span class="catalog__mobile-title">Направление</span>
-							<div class="catalog__mobile-cut">
+							<span class="filter__mobile-title">Направление</span>
+							<div class="filter__mobile-cut">
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo">
-									<label class="catalog__text" for="geo">Мурманск</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo">
+									<label class="filter__text" for="geo">Мурманск</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo2">
-									<label class="catalog__text" for="geo2">Териберка</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo2">
+									<label class="filter__text" for="geo2">Териберка</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo3">
-									<label class="catalog__text" for="geo3">Хабины</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo3">
+									<label class="filter__text" for="geo3">Хабины</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo4">
-									<label class="catalog__text" for="geo4">Ловозеро</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo4">
+									<label class="filter__text" for="geo4">Ловозеро</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo5">
-									<label class="catalog__text" for="geo5">Средний рыбачий</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo5">
+									<label class="filter__text" for="geo5">Средний рыбачий</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo6">
-									<label class="catalog__text" for="geo6">Норвегия</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo6">
+									<label class="filter__text" for="geo6">Норвегия</label>
 								</div>
 	
 							</div>
 						</div>
 	
-						<div class="catalog__mobile-spoiler">
-							<svg class="catalog__mobile-arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
+						<div class="filter__mobile-spoiler">
+							<svg class="filter__mobile-arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
-								<path class="catalog__arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
 									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
 									fill="#7B8997" />
 							</svg>
-							<span class="catalog__mobile-title">Категории</span>
-							<div class="catalog__mobile-cut">
+							<span class="filter__mobile-title">Категории</span>
+							<div class="filter__mobile-cut">
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo7">
-									<label class="catalog__text" for="geo7">Мурманск</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo7">
+									<label class="filter__text" for="geo7">Мурманск</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo8">
-									<label class="catalog__text" for="geo8">Териберка</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo8">
+									<label class="filter__text" for="geo8">Териберка</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo9">
-									<label class="catalog__text" for="geo9">Хабины</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo9">
+									<label class="filter__text" for="geo9">Хабины</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo10">
-									<label class="catalog__text" for="geo10">Ловозеро</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo10">
+									<label class="filter__text" for="geo10">Ловозеро</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo11">
-									<label class="catalog__text" for="geo11">Средний рыбачий</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo11">
+									<label class="filter__text" for="geo11">Средний рыбачий</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo12">
-									<label class="catalog__text" for="geo12">Норвегия</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo12">
+									<label class="filter__text" for="geo12">Норвегия</label>
 								</div>
 	
 							</div>
 						</div>
 	
-						<div class="catalog__mobile-spoiler">
-							<svg class="catalog__mobile-arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
+						<div class="filter__mobile-spoiler">
+							<svg class="filter__mobile-arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
-								<path class="catalog__arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
 									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
 									fill="#7B8997" />
 							</svg>
-							<span class="catalog__mobile-title">Сезонность</span>
-							<div class="catalog__mobile-cut">
+							<span class="filter__mobile-title">Сезонность</span>
+							<div class="filter__mobile-cut">
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo13">
-									<label class="catalog__text" for="geo13">Мурманск</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo13">
+									<label class="filter__text" for="geo13">Мурманск</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo14">
-									<label class="catalog__text" for="geo14">Териберка</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo14">
+									<label class="filter__text" for="geo14">Териберка</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo15">
-									<label class="catalog__text" for="geo15">Хабины</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo15">
+									<label class="filter__text" for="geo15">Хабины</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo16">
-									<label class="catalog__text" for="geo16">Ловозеро</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo16">
+									<label class="filter__text" for="geo16">Ловозеро</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo17">
-									<label class="catalog__text" for="geo17">Средний рыбачий</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo17">
+									<label class="filter__text" for="geo17">Средний рыбачий</label>
 								</div>
 	
-								<div class="catalog__row">
-									<input class="catalog__inp" type="checkbox" id="geo18">
-									<label class="catalog__text" for="geo18">Норвегия</label>
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo18">
+									<label class="filter__text" for="geo18">Норвегия</label>
 								</div>
 	
 							</div>
 						</div>
-							<button class="catalog__item-btn catalog__item-btn--details catalog__item-btn--mobile">Найти</button>
+							<button class="filter-btn">
+								<span class="filter-btn__text">Найти</span>
+							</button>
 					</div>
 				</div>
 
 
-				<div class="catalog__found">
-					<div class="catalog__found-left">
-						<p class="catalog__description">Найдено 20 туров</p>
-						<button class="catalog__btn-clear">Очистить поиск</button>
+				<div class="search-tours">
+					<div class="search-tours__left">
+						<p class="search-tours__description">Найдено 20 туров</p>
+						<button class="search-tours__btn-clear">Очистить поиск</button>
 					</div>
-					<div class="catalog__found-right">
-						<button class="catalog__btn-rating catalog__btn-rating--active">
-							<svg class="catalog__img-popular" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path class="catalog__arrow-colouring" fill-rule="evenodd" clip-rule="evenodd" d="M4.5 5.02199C5.91302 4.17803 6.92847 2.75708 7.21672 1.09204C7.26524 0.811729 7.56733 0.638468 7.81128 0.784801C9.81432 1.98631 11.15 4.14413 11.15 6.6063C11.15 7.11845 11.0922 7.61743 10.9826 8.09737C10.9099 8.41612 11.2004 8.70693 11.4859 8.54756C12.1117 8.19815 12.6164 7.66561 12.9231 7.02481C13.0572 6.7446 13.4377 6.64082 13.634 6.88163C14.4891 7.93085 15 9.25906 15 10.7037C15 13.2604 13.3997 15.4526 11.1229 16.3788C10.9159 16.4629 10.6841 16.4629 10.4771 16.3788C8.20033 15.4526 6.6 13.2604 6.6 10.7037C6.6 10.6344 6.5145 10.6006 6.46987 10.6536C5.67633 11.5964 5.2 12.803 5.2 14.1181C5.2 14.5181 5.24407 14.9081 5.32772 15.2837C5.39737 15.5964 5.12361 15.8972 4.8235 15.7851C2.58763 14.9502 1 12.8371 1 10.3622C1 8.18524 2.22845 6.28817 4.04597 5.29475L4.5 5.02199Z" fill="#0FC4AC"/>
+					<div class="search-tours__right">
+						<button class="search-tours__btn-rating search-tours__btn-rating--active">
+							<svg class="search-tours__img-popular" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd" d="M4.5 5.02199C5.91302 4.17803 6.92847 2.75708 7.21672 1.09204C7.26524 0.811729 7.56733 0.638468 7.81128 0.784801C9.81432 1.98631 11.15 4.14413 11.15 6.6063C11.15 7.11845 11.0922 7.61743 10.9826 8.09737C10.9099 8.41612 11.2004 8.70693 11.4859 8.54756C12.1117 8.19815 12.6164 7.66561 12.9231 7.02481C13.0572 6.7446 13.4377 6.64082 13.634 6.88163C14.4891 7.93085 15 9.25906 15 10.7037C15 13.2604 13.3997 15.4526 11.1229 16.3788C10.9159 16.4629 10.6841 16.4629 10.4771 16.3788C8.20033 15.4526 6.6 13.2604 6.6 10.7037C6.6 10.6344 6.5145 10.6006 6.46987 10.6536C5.67633 11.5964 5.2 12.803 5.2 14.1181C5.2 14.5181 5.24407 14.9081 5.32772 15.2837C5.39737 15.5964 5.12361 15.8972 4.8235 15.7851C2.58763 14.9502 1 12.8371 1 10.3622C1 8.18524 2.22845 6.28817 4.04597 5.29475L4.5 5.02199Z" fill="#0FC4AC"/>
 								</svg>
 								
 							Популярные
 						</button>
-						<button class="catalog__btn-rating">По рейтингу</button>
-						<button class="catalog__btn-rating">Дороже</button>
-						<button class="catalog__btn-rating">Дешевле</button>
-						<div class="catalog__btn-wrap">
-							<button class="catalog__btn-sorting">
+						<button class="search-tours__btn-rating">По рейтингу</button>
+						<button class="search-tours__btn-rating">Дороже</button>
+						<button class="search-tours__btn-rating">Дешевле</button>
+						<div class="search-tours__btn-wrap">
+							<button class="search-tours__btn-sorting">
 								
 									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path class="catalog__arrow-colouring" fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H3C3.55228 0 4 0.447715 4 1V3C4 3.55228 3.55228 4 3 4H1C0.447715 4 0 3.55228 0 3V1ZM5 1C5 0.447715 5.44772 0 6 0H8C8.55229 0 9 0.447715 9 1V3C9 3.55228 8.55229 4 8 4H6C5.44772 4 5 3.55228 5 3V1ZM11 0C10.4477 0 10 0.447715 10 1V3C10 3.55228 10.4477 4 11 4H13C13.5523 4 14 3.55228 14 3V1C14 0.447715 13.5523 0 13 0H11ZM0 6C0 5.44772 0.447715 5 1 5H3C3.55228 5 4 5.44772 4 6V8C4 8.55229 3.55228 9 3 9H1C0.447715 9 0 8.55229 0 8V6ZM6 5C5.44772 5 5 5.44772 5 6V8C5 8.55229 5.44772 9 6 9H8C8.55229 9 9 8.55229 9 8V6C9 5.44772 8.55229 5 8 5H6ZM10 6C10 5.44772 10.4477 5 11 5H13C13.5523 5 14 5.44772 14 6V8C14 8.55229 13.5523 9 13 9H11C10.4477 9 10 8.55229 10 8V6ZM1 10C0.447715 10 0 10.4477 0 11V13C0 13.5523 0.447715 14 1 14H3C3.55228 14 4 13.5523 4 13V11C4 10.4477 3.55228 10 3 10H1ZM5 11C5 10.4477 5.44772 10 6 10H8C8.55229 10 9 10.4477 9 11V13C9 13.5523 8.55229 14 8 14H6C5.44772 14 5 13.5523 5 13V11ZM11 10C10.4477 10 10 10.4477 10 11V13C10 13.5523 10.4477 14 11 14H13C13.5523 14 14 13.5523 14 13V11C14 10.4477 13.5523 10 13 10H11Z" fill="#93A0AD"/>
+										<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H3C3.55228 0 4 0.447715 4 1V3C4 3.55228 3.55228 4 3 4H1C0.447715 4 0 3.55228 0 3V1ZM5 1C5 0.447715 5.44772 0 6 0H8C8.55229 0 9 0.447715 9 1V3C9 3.55228 8.55229 4 8 4H6C5.44772 4 5 3.55228 5 3V1ZM11 0C10.4477 0 10 0.447715 10 1V3C10 3.55228 10.4477 4 11 4H13C13.5523 4 14 3.55228 14 3V1C14 0.447715 13.5523 0 13 0H11ZM0 6C0 5.44772 0.447715 5 1 5H3C3.55228 5 4 5.44772 4 6V8C4 8.55229 3.55228 9 3 9H1C0.447715 9 0 8.55229 0 8V6ZM6 5C5.44772 5 5 5.44772 5 6V8C5 8.55229 5.44772 9 6 9H8C8.55229 9 9 8.55229 9 8V6C9 5.44772 8.55229 5 8 5H6ZM10 6C10 5.44772 10.4477 5 11 5H13C13.5523 5 14 5.44772 14 6V8C14 8.55229 13.5523 9 13 9H11C10.4477 9 10 8.55229 10 8V6ZM1 10C0.447715 10 0 10.4477 0 11V13C0 13.5523 0.447715 14 1 14H3C3.55228 14 4 13.5523 4 13V11C4 10.4477 3.55228 10 3 10H1ZM5 11C5 10.4477 5.44772 10 6 10H8C8.55229 10 9 10.4477 9 11V13C9 13.5523 8.55229 14 8 14H6C5.44772 14 5 13.5523 5 13V11ZM11 10C10.4477 10 10 10.4477 10 11V13C10 13.5523 10.4477 14 11 14H13C13.5523 14 14 13.5523 14 13V11C14 10.4477 13.5523 10 13 10H11Z" fill="#93A0AD"/>
 										</svg>
 										
 								</button>
-							<button class="catalog__btn-sorting catalog__btn-sorting--active">
+							<button class="search-tours__btn-sorting search-tours__btn-sorting--active">
 							
 									<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path class="catalog__arrow-colouring" fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2C1.55228 2 2 1.55228 2 1C2 0.447715 1.55228 0 1 0ZM4 0C3.44772 0 3 0.447715 3 1C3 1.55228 3.44772 2 4 2H13C13.5523 2 14 1.55228 14 1C14 0.447715 13.5523 0 13 0H4ZM4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H13C13.5523 7 14 6.55228 14 6C14 5.44772 13.5523 5 13 5H4ZM3 11C3 10.4477 3.44772 10 4 10H13C13.5523 10 14 10.4477 14 11C14 11.5523 13.5523 12 13 12H4C3.44772 12 3 11.5523 3 11ZM0 6C0 5.44772 0.447715 5 1 5C1.55228 5 2 5.44772 2 6C2 6.55228 1.55228 7 1 7C0.447715 7 0 6.55228 0 6ZM1 10C0.447715 10 0 10.4477 0 11C0 11.5523 0.447715 12 1 12C1.55228 12 2 11.5523 2 11C2 10.4477 1.55228 10 1 10Z" fill="white"/>
+										<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2C1.55228 2 2 1.55228 2 1C2 0.447715 1.55228 0 1 0ZM4 0C3.44772 0 3 0.447715 3 1C3 1.55228 3.44772 2 4 2H13C13.5523 2 14 1.55228 14 1C14 0.447715 13.5523 0 13 0H4ZM4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H13C13.5523 7 14 6.55228 14 6C14 5.44772 13.5523 5 13 5H4ZM3 11C3 10.4477 3.44772 10 4 10H13C13.5523 10 14 10.4477 14 11C14 11.5523 13.5523 12 13 12H4C3.44772 12 3 11.5523 3 11ZM0 6C0 5.44772 0.447715 5 1 5C1.55228 5 2 5.44772 2 6C2 6.55228 1.55228 7 1 7C0.447715 7 0 6.55228 0 6ZM1 10C0.447715 10 0 10.4477 0 11C0 11.5523 0.447715 12 1 12C1.55228 12 2 11.5523 2 11C2 10.4477 1.55228 10 1 10Z" fill="white"/>
 										</svg>
 										
 								</button>
 						</div>
 					</div>
 				</div>
-				<div class="catalog__inner">
+
+				
 					<div class="catalog__items">
 
 						<div class="catalog__item">
@@ -1000,7 +1003,7 @@
 							</button>
 						</div>
 					</div>
-				</div>
+				
 		</section>
 		<!-- catalog -->
 
