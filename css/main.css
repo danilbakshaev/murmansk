@@ -4772,7 +4772,7 @@ footer::after {
   align-items: center;
 }
 
-.filter__destination-item {
+.filter__destination--desktop {
   display: flex;
 }
 
@@ -4813,38 +4813,38 @@ footer::after {
   fill: rgba(123, 137, 151, 1);
 }
 
-.filter__btn-destination--direction:hover .catalog__arrow .arrow-colouring,
-.filter__btn-destination--categories:hover .catalog__arrow .arrow-colouring,
-.filter__btn-destination--seasonality:hover .catalog__arrow .arrow-colouring {
+.filter__btn-destination--direction:hover .filter__arrow .arrow-colouring,
+.filter__btn-destination--categories:hover .filter__arrow .arrow-colouring,
+.filter__btn-destination--seasonality:hover .filter__arrow .arrow-colouring {
   fill:#0FC4AC;
 }
 
-.catalog__open--active {
+.filter__open--active {
   border: 1px solid #0FC4AC;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.catalog__open--active > .catalog__btn-text {
+.filter__open--active > .filter__btn-text {
   color: rgba(15, 196, 172, 1);
 }
 
-.catalog__open--active > .catalog__arrow {
+.filter__open--active > .filter__arrow {
   transform: rotate(-180deg);
 }
 
-.catalog__open--active > .catalog__arrow > .arrow-colouring {
+.filter__open--active > .filter__arrow > .arrow-colouring {
   fill: #0FC4AC;
 }
 
-.catalog__arrow {
+.filter__arrow {
   position: absolute;
   top: calc(50% - 3px);
   right: 14px;
   transition: 0.5s;
 }
 
-.catalog__btn-text {
+.filter__btn-text {
   font-family: Inter;
   font-weight: 500;
   font-size: 11px;
@@ -4857,7 +4857,7 @@ footer::after {
   margin-bottom: 4px;
 }
 
-.catalog__btn-subtext {
+.filter__btn-subtext {
   font-family: Inter;
   font-weight: 400;
   font-size: 16px;
@@ -4889,15 +4889,15 @@ footer::after {
   position: relative;
 }
 
-.catalog__open--active > .filter__mobile-cut {
+.filter__open--active > .filter__mobile-cut {
   display: flex;
 }
 
-.catalog__open--active > .filter__mobile-arrow {
+.filter__open--active > .filter__mobile-arrow {
   transform: rotate(-180deg);
 }
 
-.catalog__open--active > .filter__mobile-arrow > .arrow-colouring {
+.filter__open--active > .filter__mobile-arrow > .arrow-colouring {
   fill: #0FC4AC;
 }
 
@@ -5298,7 +5298,7 @@ footer::after {
   background-image: url(/img/bottom.png);
 }
 
-.filter__destination-item--mobile {
+.filter__destination--mobile {
   display: none;
 }
 
@@ -5499,10 +5499,10 @@ footer::after {
   .filter {
     margin-top: 25px;
   }
-  .filter__destination-item--mobile {
+  .filter__destination--mobile {
     display: block;
   }
-  .filter__destination-item--desktop {
+  .filter__destination--desktop {
     display: none;
   }
   .title-sections__catalog {
