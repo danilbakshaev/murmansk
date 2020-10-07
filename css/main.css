@@ -4985,14 +4985,26 @@ footer::after {
   background: linear-gradient(144.66deg, #00D8F5 0%, #00D689 100%);
   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
   border: none;
-}
-
-.filter-btn__text {
   color: #FFFFFF;
   font-family: Inter;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.filter-btn__shadow {
+  position: absolute;
+  top: 35px;
+  background: linear-gradient(144.66deg, #00D8F5 0%, #00D689 100%);
+  opacity: 0.7;
+  filter: blur(16px);
+  border-radius: 8px;
+  width: 292px;
+  min-height: 8px;
+  z-index: -1;
 }
 
 .filter__row {
@@ -5035,10 +5047,23 @@ footer::after {
   border: none;
   cursor: pointer;
   margin-left: 5px;
+  transition: 0.5s;
+  position: relative;
+  text-decoration: none;
 }
 
-.search-tours__btn-clear:hover {
-  opacity: 0.8;
+.search-tours__btn-clear::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #0FC4AC;
+  transition: 0.3s;
+}
+
+.search-tours__btn-clear:hover::after {
+  width: calc(100% - 10px);
 }
 
 .search-tours__btn-rating {
@@ -5052,6 +5077,7 @@ footer::after {
   display: flex;
   align-items: center;
   min-width: max-content;
+  transition: 0.3s;
 }
 
 .search-tours__btn-rating:hover {
@@ -5097,6 +5123,7 @@ footer::after {
   display: inline-flex;
   cursor: pointer;
   margin-right: 5px;
+  transition: 0.3s;
 }
 
 .search-tours__btn-sorting:last-child {
