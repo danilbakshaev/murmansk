@@ -4490,7 +4490,8 @@ footer::after {
 
 .catalog__item-left {
   position: relative;
-  min-width: 352px;
+  width: 352px;
+  min-height: 368px;
   overflow: hidden;
 }
 
@@ -4505,10 +4506,12 @@ footer::after {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 344px;
+  flex-grow: 1;
 }
 
 .catalog__item-right {
-  min-width: 289px;
+  width: 289px;
   padding-top: 18px;
   padding-right: 24px;
   padding-left: 24px;
@@ -4518,7 +4521,7 @@ footer::after {
 }
 
 .catalog__item-img {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
