@@ -4772,11 +4772,11 @@ footer::after {
   align-items: center;
 }
 
-.filter__destination--desktop {
+.filter__desktop {
   display: flex;
 }
 
-.filter__btn-destination {
+.filter__item {
   display: inline-flex;
   flex-direction: column;
   background-color: #fff;
@@ -4790,18 +4790,18 @@ footer::after {
   min-height: 64px;
 }
 
-.filter__btn-destination--direction {
+.filter__item--direction {
   width: 400px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-.filter__btn-destination--categories {
+.filter__item--categories {
   flex-grow: 1;
   border-radius: 0;
 }
 
-.filter__btn-destination--seasonality {
+.filter__item--seasonality {
   width: 286px;
   border-radius: 0px;
   border-top-right-radius: 5px;
@@ -4813,27 +4813,27 @@ footer::after {
   fill: rgba(123, 137, 151, 1);
 }
 
-.filter__btn-destination--direction:hover .filter__arrow .arrow-colouring,
-.filter__btn-destination--categories:hover .filter__arrow .arrow-colouring,
-.filter__btn-destination--seasonality:hover .filter__arrow .arrow-colouring {
+.filter__item--direction:hover .filter__arrow .arrow-colouring,
+.filter__item--categories:hover .filter__arrow .arrow-colouring,
+.filter__item--seasonality:hover .filter__arrow .arrow-colouring {
   fill:#0FC4AC;
 }
 
-.filter__open--active {
+.filter__item--active {
   border: 1px solid #0FC4AC;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.filter__open--active > .filter__btn-text {
+.filter__item--active > .filter__btn-text {
   color: rgba(15, 196, 172, 1);
 }
 
-.filter__open--active > .filter__arrow {
+.filter__item--active > .filter__arrow {
   transform: rotate(-180deg);
 }
 
-.filter__open--active > .filter__arrow > .arrow-colouring {
+.filter__item--active > .filter__arrow > .arrow-colouring {
   fill: #0FC4AC;
 }
 
@@ -4889,15 +4889,15 @@ footer::after {
   position: relative;
 }
 
-.filter__open--active > .filter__mobile-cut {
+.filter__item--active > .filter__mobile-cut {
   display: flex;
 }
 
-.filter__open--active > .filter__mobile-arrow {
+.filter__item--active > .filter__mobile-arrow {
   transform: rotate(-180deg);
 }
 
-.filter__open--active > .filter__mobile-arrow > .arrow-colouring {
+.filter__item--active > .filter__mobile-arrow > .arrow-colouring {
   fill: #0FC4AC;
 }
 
@@ -5047,23 +5047,32 @@ footer::after {
   border: none;
   cursor: pointer;
   margin-left: 5px;
-  transition: 0.5s;
   position: relative;
   text-decoration: none;
+  padding: 0;
+  transition: opacity 0.3s;
 }
 
 .search-tours__btn-clear::after {
   display: block;
   position: absolute;
   content: "";
-  width: 0;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
   height: 1px;
   background-color: #0FC4AC;
-  transition: 0.3s;
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
 .search-tours__btn-clear:hover::after {
-  width: calc(100% - 10px);
+  width: 100%;
+  opacity: 0.8;
+}
+
+.search-tours__btn-clear:hover {
+  opacity: 0.8;
 }
 
 .search-tours__btn-rating {
@@ -5298,7 +5307,7 @@ footer::after {
   background-image: url(/img/bottom.png);
 }
 
-.filter__destination--mobile {
+.filter__mobile {
   display: none;
 }
 
@@ -5388,28 +5397,28 @@ footer::after {
   .catalog__item-left {
     display: none;
   }
-  .filter__btn-destination--direction {
+  .filter__item--direction {
     width: 315px;
   }
-  .filter__btn-destination--seasonality {
+  .filter__item--seasonality {
     width: 260px;
   }
 }
 
 @media screen and (max-width: 1080px) {
-  .filter__btn-destination--direction {
+  .filter__item--direction {
     width: 260px;
   }
-  .filter__btn-destination--seasonality {
+  .filter__item--seasonality {
     width: 220px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .filter__btn-destination--direction {
+  .filter__item--direction {
     width: 220px;
   }
-  .filter__btn-destination--seasonality {
+  .filter__item--seasonality {
     width: 180px;
   }
 }
@@ -5422,10 +5431,10 @@ footer::after {
   .search-tours__left {
     margin-bottom: 24px;
   }
-  .filter__btn-destination--direction {
+  .filter__item--direction {
     width: 180px;
   }
-  .filter__btn-destination--seasonality {
+  .filter__item--seasonality {
     width: 160px;
   }
 
@@ -5499,10 +5508,10 @@ footer::after {
   .filter {
     margin-top: 25px;
   }
-  .filter__destination--mobile {
+  .filter__mobile {
     display: block;
   }
-  .filter__destination--desktop {
+  .filter__desktop {
     display: none;
   }
   .title-sections__catalog {
@@ -5513,6 +5522,12 @@ footer::after {
 @media screen and (max-width: 480px) {
   .search-tours__right {
     overflow-x: scroll;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .filter-btn {
     width: 100%;
   }
 }
