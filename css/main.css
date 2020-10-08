@@ -5050,7 +5050,7 @@ footer::after {
   position: relative;
   text-decoration: none;
   padding: 0;
-  transition: opacity 0.3s;
+  transition: all linear 0.3s;
 }
 
 .search-tours__btn-clear::after {
@@ -5068,10 +5068,6 @@ footer::after {
 
 .search-tours__btn-clear:hover::after {
   width: 100%;
-  opacity: 0.8;
-}
-
-.search-tours__btn-clear:hover {
   opacity: 0.8;
 }
 
