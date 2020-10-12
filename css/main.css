@@ -1170,10 +1170,15 @@ header::before {
   .achievements__item {
     text-align: center;
     flex-direction: column;
+    align-items: center;
   }
 
   .title-sections__description {
     margin: 16px 0 0 0;
+  }
+
+  .achievements__img {
+    margin-right: 0;
   }
 }
 
@@ -2876,7 +2881,6 @@ header::before {
   background-position: center;
   background-repeat: no-repeat;
   padding: 118px 0;
-  margin-bottom: 152px;
 }
 
 .grad-travel {
@@ -3011,12 +3015,14 @@ header::before {
 }
 
 /* Наши преимущества страница "каталог" */
+.advantages {
+  padding-top: 96px;
+  padding-bottom: 152px;
+}
 
 .advantages__items {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 55px;
-  margin-bottom: 150px;
   margin-right: -32px;
 }
 
@@ -3024,7 +3030,6 @@ header::before {
   display: flex;
   margin-right: 32px;
   width: calc(33% - 32px);
-  max-width: 352px;
 }
 
 .advantages__title {
@@ -3075,13 +3080,25 @@ header::before {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .advantages {
+    padding-top: 56px;
+    padding-bottom: 48px;
+  }
+  .advantages__items {
+    justify-content: center;
+  }
+  .advantages__item {
+    width: calc(50% - 32px);
+    margin-bottom: 32px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .advantages__items {
     flex-direction: column;
     align-items: center;
     margin-right: 0;
-    margin-top: 24px;
-    margin-bottom: 90px;
   }
   .advantages__item {
     width: 100%;
@@ -4460,6 +4477,14 @@ footer::after {
 }
 
 /* catalog */
+.title-sections--catalog {
+  margin-bottom: 0;
+}
+
+.title-sections__title--catalog {
+  width: 100%;
+  margin-top: 0;
+}
 
 .catalog {
   margin-bottom: 72px;
@@ -4565,7 +4590,6 @@ footer::after {
   font-family: Roboto Slab;
   font-weight: 700;
   font-size: 28px;
-  /* line-height: 120%; */
   color: #242440;
   text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
   margin: 0;
@@ -5710,14 +5734,6 @@ footer::after {
   padding-bottom: 95px;
 }
 
-.title-sections--island {
-  margin-bottom: 0;
-}
-
-.title-sections__title--island {
-  width: auto;
-}
-
 .island__text {
   margin: 0;
   font-weight: 400;
@@ -5759,7 +5775,7 @@ footer::after {
     margin-top: 24px;
     padding-bottom: 0;
   }
-  .title-sections--island {
+  .title-sections--catalog {
     margin-bottom: 40px;
   }
   .island__text {
