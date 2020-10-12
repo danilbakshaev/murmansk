@@ -2112,6 +2112,10 @@ header::before {
   height: 100%;
 }
 
+.container--popular-destinations{
+  overflow: hidden;
+}
+
 .title-sections__title-catalog {
   width: inherit;
   margin-right: 0;
