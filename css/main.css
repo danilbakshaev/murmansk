@@ -2612,6 +2612,7 @@ header::before {
   .faq__content-left {
     width: 100%;
     align-items: center;
+    margin-right: 0;
   }
 
   .faq__title {
@@ -2670,6 +2671,14 @@ header::before {
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
+}
+
+.reviews__otzyv{
+  position: absolute;
+  z-index: -1;
+  height: 614px;
+  top: 32px;
 }
 
 /* .reviews__img {
@@ -2734,11 +2743,47 @@ header::before {
   margin-top: 30px;
 }
 
+/* @media screen and (max-width: 1440px) {
+  .reviews__otzyv {
+    height: 522px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .reviews__otzyv {
+    height: 674px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .reviews__otzyv {
+    height: 622px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .reviews__otzyv {
+    height: 542px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .reviews__otzyv {
+    height: 474px;
+  }
+} */
+
 @media screen and (max-width: 840px) {
   .reviews {
     padding: 72px 0;
   }
 }
+
+/* @media screen and (max-width: 768px) {
+  .reviews__otzyv {
+    height: 454px;
+  }
+} */
 
 @media screen and (max-width: 740px) {
   .reviews {
@@ -7717,6 +7762,7 @@ footer::after {
   cursor: pointer;
   margin-right: 8px;
   outline: none;
+  transition: all 0.2s linear;
 }
 
 .next-arrow {
@@ -7729,7 +7775,28 @@ footer::after {
   border: 1px solid #0FC4AC;
   cursor: pointer;
   outline: none;
+  transition: all 0.2s linear;
 }
+
+.next-arrow:hover {
+  opacity: 0.5;
+}
+
+.prev-arrow:hover {
+  opacity: 0.5;
+}
+
+/* .bottom-innerwrp .next-arrow:hover{
+background:  #0FC4AC;
+}
+
+.bottom-innerwrp .prev-arrow:hover{
+  background:  #0FC4AC;
+}
+
+.bottom-innerwrp path:hover{
+  fill:  #fff;
+} */
 
 .btn-ice {
   border: 1px solid #0FC4AC;
@@ -7745,7 +7812,25 @@ footer::after {
   padding: 15px 56px 15px 20px;
   position: relative;
   cursor: pointer;
+  transition: all 0.2s linear;
 }
+
+.btn-ice:hover{
+  opacity: 0.5;
+}
+
+/* .img-inner-phone{
+  position: relative;
+} */
+
+/* .btn-ice:hover {
+  background: #0FC4AC;
+  color: #fff;
+}
+
+.btn-ice:hover::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.18182 1L13 4.5M13 4.5L9.18182 8M13 4.5H1' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+} */
 
 .btn-ice::after {
   content: '';

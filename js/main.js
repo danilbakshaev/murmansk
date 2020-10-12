@@ -176,7 +176,8 @@ $(function () {
       responsive: [{
         breakpoint: 800,
         settings: {
-          arrows: false,
+          slidesToShow: 1.1,
+            slidesToScroll: 1.1,
         }
       }, ]
     });
