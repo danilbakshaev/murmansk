@@ -444,6 +444,10 @@ img {
   }
 }
 
+.slick-slide {
+  outline: none !important;
+}
+
 
 /* desktop-header */
 
@@ -1214,6 +1218,7 @@ header::before {
   display: flex;
   align-items: center;
   margin-bottom: 49px;
+  justify-content: space-between;
 }
 
 .title-sections__title {
@@ -1223,12 +1228,11 @@ header::before {
   line-height: 48px;
   color: #242440;
   margin: 0;
-  /* width: 515px; */
-  margin-right: 200px;
+  width: 36%;
 }
 
 .title-sections__description {
-  width: 735px;
+  width: 39%;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1274,6 +1278,7 @@ header::before {
   border-radius: 5px;
   padding: 10px 0;
   display: none;
+  border: none;
 }
 
 
@@ -1306,7 +1311,7 @@ header::before {
   background: linear-gradient(219.88deg, rgba(0, 0, 0, 0) 67.92%, rgba(3, 3, 3, 0.054) 70.84%, rgba(14, 14, 14, 0.6) 85%), rgba(0, 0, 0, 0.3);
   padding: 20px;
   min-height: 420px;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -1456,6 +1461,7 @@ header::before {
   }
   .title-sections__title{
     font-size: 36px;
+    width: initial;
   }
   .title-sections{
     display: block;
@@ -1476,6 +1482,14 @@ header::before {
 
   .tours{
     margin-top: 70px;
+  }
+
+  .tours__item-parameter {
+    margin-bottom: 17px;
+  }
+
+  .tours__item:not(.slick-active){
+    opacity: 0.5;
   }
 }
 
@@ -1613,8 +1627,8 @@ header::before {
 .recreation__item {
   margin-bottom: 96px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  /* align-items: center; */
 }
 
 .recreation__item:last-child {
@@ -1622,12 +1636,16 @@ header::before {
 }
 
 .recreation__item-text {
-  width: 32%;
+  width: 42%;
+  /* flex-grow: 1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.recreation__item--left {
+/* .recreation__item--left {
   margin-right: 128px;
-}
+} */
 
 .recreation__item--right {
   margin-left: 128px;
@@ -1650,8 +1668,7 @@ header::before {
   bottom: -30px;
   left: 0;
   position: absolute;
-  background-image: url("data:image/svg+xml,%3Csvg width='92' height='8' viewBox='0 0 92 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.9' fill-rule='evenodd' clip-rule='evenodd' d='M10.5012 6.22196L16.7157 -0.000244141L18.4913 1.77753L12.2768 7.99973L10.5012 6.22196ZM21.0025 6.22196L27.2171 -0.000244141L28.9927 1.77753L22.7781 7.99973L21.0025 6.22196ZM37.7182 -0.000244141L31.5036 6.22196L33.2792 7.99973L39.4937 1.77753L37.7182 -0.000244141ZM42.0051 6.22196L48.2196 -0.000244141L49.9952 1.77753L43.7806 7.99973L42.0051 6.22196ZM58.7206 -0.000244141L52.506 6.22196L54.2816 7.99973L60.4961 1.77753L58.7206 -0.000244141ZM63.0075 6.22196L69.222 -0.000244141L70.9976 1.77753L64.7831 7.99973L63.0075 6.22196ZM79.723 -0.000244141L73.5084 6.22196L75.284 7.99973L81.4986 1.77753L79.723 -0.000244141ZM84.01 6.22196L90.2245 -0.000244141L92.0001 1.77753L85.7856 7.99973L84.01 6.22196ZM6.21837 0.00364242L0 6.22201L1.77668 7.99869L7.99505 1.78032L6.21837 0.00364242Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='-62.1001' y1='3.99975' x2='136.467' y2='3.99975' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FA3B3A'/%3E%3Cstop offset='1' stop-color='%23FD7A7A'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
-  background-size: cover;
+  background-image: url("data:image/svg+xml,%3Csvg width='93' height='8' viewBox='0 0 93 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.9' fill-rule='evenodd' clip-rule='evenodd' d='M10.5 6.22217L16.7145 -3.44334e-05L18.4901 1.77774L12.2756 7.99994L10.5 6.22217ZM21.0039 6.22217L27.2184 -3.44334e-05L28.994 1.77774L22.7795 7.99994L21.0039 6.22217ZM37.7182 -3.44334e-05L31.5036 6.22217L33.2792 7.99994L39.4937 1.77774L37.7182 -3.44334e-05ZM42.0039 6.22217L48.2184 -3.44334e-05L49.994 1.77774L43.7795 7.99994L42.0039 6.22217ZM58.7223 -3.44334e-05L52.5078 6.22217L54.2834 7.99994L60.4979 1.77774L58.7223 -3.44334e-05ZM63.0075 6.22217L69.222 -3.44334e-05L70.9976 1.77774L64.7831 7.99994L63.0075 6.22217ZM79.723 -3.44334e-05L73.5084 6.22217L75.284 7.99994L81.4986 1.77774L79.723 -3.44334e-05ZM84.0117 6.22217L90.2263 -3.44334e-05L92.0018 1.77774L85.7873 7.99994L84.0117 6.22217ZM6.21837 0.00385213L0 6.22222L1.77668 7.9989L7.99505 1.78053L6.21837 0.00385213Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='0' y1='0' x2='1.38083' y2='15.8799' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF9458'/%3E%3Cstop offset='1' stop-color='%23FFBE5C'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1670,16 +1687,21 @@ header::before {
   display: none;
 }
 
+/* .recreation__img{
+  height: min-content;
+} */
+
 .recreation__item-photo {
   border-radius: 12px;
   overflow: hidden;
   height: 452px;
+  width: 48%;
 }
 
 @media screen and (max-width: 1000px) {
-  .recreation__item--left {
+  /* .recreation__item--left {
     margin-right: 100px;
-  }
+  } */
 
   .recreation__item--right {
     margin-left: 100px;
@@ -2112,10 +2134,6 @@ header::before {
   height: 100%;
 }
 
-.container--popular-destinations{
-  overflow: hidden;
-}
-
 .title-sections__title-catalog {
   width: inherit;
   margin-right: 0;
@@ -2135,6 +2153,10 @@ header::before {
   padding-bottom: 10px;
 }
 
+.scroll-link::-webkit-scrollbar {
+  width:0px;
+}
+
 .scroll-link {
   overflow: auto;
   margin-bottom: 40px;
@@ -2148,6 +2170,10 @@ header::before {
   border-radius: 12px;
   transition: all 0.2s linear;
 }
+
+/* .popular-destinations__item:not(.slick-active){
+  opacity: 0.5;
+} */
 
 .popular-destinations-scaleControl{
   background: linear-gradient(136.98deg, rgba(0, 0, 0, 0) 46.92%, rgba(3, 3, 3, 0.054) 56.84%, rgba(14, 14, 14, 0.6) 100%), rgba(0, 0, 0, 0.3);
@@ -2166,10 +2192,10 @@ header::before {
   transform: scale(1.05);
 }
 
-.popular-destinations__items {
+/* .popular-destinations__items {
   position: relative;
   margin-left: -15px;
-}
+} */
 
 .popular-destinations__items .slick-list {
   padding: 18px 0;
