@@ -4484,6 +4484,7 @@ footer::after {
 .title-sections__title--catalog {
   width: 100%;
   margin-top: 0;
+  margin-bottom: 13px;
 }
 
 .catalog {
