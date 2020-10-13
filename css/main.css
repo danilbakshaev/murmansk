@@ -4944,6 +4944,7 @@ footer::after {
   position: relative;
   cursor: pointer;
   min-height: 64px;
+  z-index: 1;
 }
 
 .filter__item--direction {
@@ -4967,12 +4968,19 @@ footer::after {
 /* меню кнопок при клике */
 .filter__btn-wrap {
   position: relative;
+  z-index: 1;
+}
+
+.filter__btn-wrap--mid {
+  display: flex;
+  flex-grow: 1;
 }
 
 .filter__menu {
   position: absolute;
-  top: 67px;
-  width: 400px;
+  top: 100%;
+  left: 0;
+  width: 100%;
   box-sizing: border-box;
   background: #FFFFFF;
   border: 1px solid rgba(36, 36, 64, 0.02);
@@ -4980,7 +4988,7 @@ footer::after {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   padding: 16px;
-  z-index: 1;
+  z-index: -1;
   display: none;
 }
 
@@ -5626,6 +5634,25 @@ footer::after {
   .filter__item--seasonality {
     width: 260px;
   }
+
+  .title-sections--mobile {
+    margin-bottom: 0;
+  }
+  .catalog {
+    padding-top: 48px;
+  }
+  .filter {
+    margin-top: 25px;
+  }
+  .filter__mobile {
+    display: block;
+  }
+  .filter__desktop {
+    display: none;
+  }
+  .title-sections__catalog {
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -5733,30 +5760,15 @@ footer::after {
   }
 }
 
-@media screen and (max-width: 640px) {
-  .title-sections--mobile {
-    margin-bottom: 0;
-  }
-  .catalog {
-    padding-top: 48px;
-  }
-  .filter {
-    margin-top: 25px;
-  }
-  .filter__mobile {
-    display: block;
-  }
-  .filter__desktop {
-    display: none;
-  }
-  .title-sections__catalog {
-    font-size: 26px;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .search-tours__right {
     overflow-x: scroll;
+    width: 100%;
+  }
+  .catalog__item-btn--fast-booking {
+    width: 100%;
+  }
+  .btn-base--mobile {
     width: 100%;
   }
 }
