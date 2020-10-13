@@ -349,16 +349,58 @@
 				<div class="filter">
 					<div class="filter__desktop">
 
-						<button class="filter__item filter__item--direction filter__item--active">
-							<span class="filter__btn-text">Направление</span>
-							<span class="filter__btn-subtext">Тереберка</span>
-							<svg class="filter__arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
-									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
-									fill="#7B8997" />
-							</svg>
-						</button>
+						<div class="filter__btn-wrap">
+
+							<button class="filter__item filter__item--direction filter__item--active">
+								<span class="filter__btn-text">Направление</span>
+								<span class="filter__btn-subtext">Тереберка</span>
+								<svg class="filter__arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+										d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
+										fill="#7B8997" />
+								</svg>
+							</button>
+							<div class="filter__menu filter__menu--active">
+								<div class="filter__menu-top">
+									<span class="filter__menu-title">Направление</span>
+									<button class="filter__menu-reset">Сбросить</button>
+								</div>
+								<div class="filter__menu-list">
+
+									<div class="filter__row">
+										<input class="filter__inp" type="checkbox" id="geo">
+										<label class="filter__text" for="geo">Мурманск</label>
+									</div>
+	
+									<div class="filter__row">
+										<input class="filter__inp" type="checkbox" id="geo2">
+										<label class="filter__text" for="geo2">Териберка</label>
+									</div>
+	
+									<div class="filter__row">
+										<input class="filter__inp" type="checkbox" id="geo3">
+										<label class="filter__text" for="geo3">Хабины</label>
+									</div>
+	
+									<div class="filter__row">
+										<input class="filter__inp" type="checkbox" id="geo4">
+										<label class="filter__text" for="geo4">Ловозеро</label>
+									</div>
+	
+									<div class="filter__row">
+										<input class="filter__inp" type="checkbox" id="geo5">
+										<label class="filter__text" for="geo5">Средний рыбачий</label>
+									</div>
+	
+									<div class="filter__row">
+										<input class="filter__inp" type="checkbox" id="geo6">
+										<label class="filter__text" for="geo6">Норвегия</label>
+									</div>
+	
+								</div>
+							</div>
+						</div>
 
 						<button class="filter__item filter__item--categories">
 							<span class="filter__btn-text">Категории</span>

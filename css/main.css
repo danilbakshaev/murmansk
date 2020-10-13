@@ -4611,11 +4611,11 @@ footer::after {
   background: transparent;
   border: none;
   cursor: pointer;
-  transition: stroke 0.3s;
 }
 
 .catalog__bottom-btn:hover > svg > path {
-  stroke: #E9ECEF;
+  transition: all linear 0.3s;
+  opacity: 0.5;
 }
 
 .catalog__bottom-center-btn {
@@ -4964,6 +4964,58 @@ footer::after {
   border-bottom-right-radius: 5px;
 }
 
+/* меню кнопок при клике */
+.filter__btn-wrap {
+  position: relative;
+}
+
+.filter__menu {
+  position: absolute;
+  top: 67px;
+  width: 400px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid rgba(36, 36, 64, 0.02);
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 16px;
+  z-index: 1;
+  display: none;
+}
+
+.filter__menu-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__menu-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #242440;
+}
+
+.filter__menu-reset {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #0FC4AC;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.filter__menu-list {
+  margin-top: 16px;
+}
+
+.filter__menu--active {
+  display: block;
+}
+/* /меню кнопок при клике */
+
 .arrow-colouring {
   transition: all 0.2s linear;
   fill: rgba(123, 137, 151, 1);
@@ -5169,6 +5221,10 @@ footer::after {
   display: flex;
   align-items: baseline;
   margin-bottom: 10px;
+}
+
+.filter__row:last-child {
+  margin-bottom: 0;
 }
 
 .search-tours {
