@@ -2,8 +2,8 @@ $(function () {
 
   if ($('.popular-destinations__items')) {
     $('.popular-destinations__items').slick({
-      slidesToShow: 3.4,
-      slidesToScroll: 1,
+      slidesToShow: 3,
+      slidesToScroll: 3,
       infinite: false,
       draggable: false,
       prevArrow: '.prev-js-popular-destinations',
@@ -11,14 +11,14 @@ $(function () {
       responsive: [{
           breakpoint: 1240,
           settings: {
-            slidesToShow: 2.1,
-            slidesToScroll: 1,
+            slidesToShow: 2,
+            slidesToScroll: 2,
           }
         },
         {
           breakpoint: 740,
           settings: {
-            slidesToShow: 1.1,
+            slidesToShow: 1,
             slidesToScroll: 1,
           }
         },
@@ -94,15 +94,15 @@ $(function () {
           responsive: [{
               breakpoint: 1240,
               settings: {
-                slidesToShow: 2.1,
-                slidesToScroll: 1,
+                slidesToShow: 2,
+                slidesToScroll: 2,
               }
             },
     
             {
               breakpoint: 740,
               settings: {
-                slidesToShow: 1.1,
+                slidesToShow: 1,
                 slidesToScroll: 1,
               }
             },
