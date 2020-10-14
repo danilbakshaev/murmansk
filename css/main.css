@@ -8759,6 +8759,10 @@ background:  #0FC4AC;
 }
 
 /* страница "faq" */
+.breadcrumbs--faq {
+  padding: 0;
+}
+
 .answers {
   margin-top: 40px;
   margin-bottom: 72px;
@@ -8800,12 +8804,20 @@ background:  #0FC4AC;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  padding-right: 30px;
 }
 
 .answers__spoiler-wrap {
   display: flex;
   align-items: center;
   margin-right: 18px;
+}
+
+.answers__arrow {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 12px);
 }
 
 .answers__question {
@@ -8827,7 +8839,6 @@ background:  #0FC4AC;
 }
 
 .answers__cut {
-  /* display: flex; */
   display: none;
   margin-top: 23px;
   margin-right: 54px;
@@ -8853,7 +8864,6 @@ background:  #0FC4AC;
 
 .answers__bottom {
   display: none;
-  /* display: flex; */
   align-items: center;
   border-top: 1px solid #E9ECEF;
   padding-top: 15px;
@@ -8909,32 +8919,32 @@ background:  #0FC4AC;
 }
 
 .answers__btn--two {
-  border: 1px solid rgba(36, 36, 64, 0.02);
+  border: 1px solid #E9ECEF;
   color: #242440;
 }
 
-.answers__item--active > .answers__top > .answers__spoiler > .answers__spoiler-wrap > .answers__title {
+.answers__item--active .answers__title {
   color: #0FC4AC;
 }
 
-.answers__item--active > .answers__top > .answers__spoiler > svg > g > circle {
+.answers__item--active circle {
   fill: #0FC4AC;
 }
 
-.answers__item--active > .answers__top > .answers__spoiler > svg > path {
+.answers__item--active path {
   stroke: #fff;
 }
 
-.answers__item--active > .answers__top > .answers__spoiler > svg {
+.answers__item--active svg {
   transform: rotate(-180deg);
   transition: all linear 0.3s;
 }
 
-.answers__item--active > .answers__top > .answers__cut {
+.answers__item--active .answers__cut {
   display: flex;
 }
 
-.answers__item--active > .answers__bottom {
+.answers__item--active .answers__bottom {
   display: flex;
 }
 
