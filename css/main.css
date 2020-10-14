@@ -1125,10 +1125,6 @@ header::before {
     font-size: 10px;
   }
 }
-
-
-
-
 /* /desktop-header */
 
 
@@ -1139,6 +1135,7 @@ header::before {
 
 .achievements__items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-right: -32px;
   margin-bottom: -32px;
@@ -1149,12 +1146,22 @@ header::before {
   align-items: center;
   margin-right: 32px;
   margin-bottom: 32px;
+  width: calc(33% - 32px);
 }
 
-.achievements__img {
-  width: 50px;
-  height: 50px;
-  margin-right: 16px;
+.achievements__icon--one {
+  min-width: 57px;
+  min-height: 57px;
+}
+
+.achievements__icon--two {
+  min-width: 53px;
+  min-height: 56px;
+}
+
+.achievements__icon--three {
+  min-width: 50px;
+  min-height: 60px;
 }
 
 .achievements__description {
@@ -1163,6 +1170,7 @@ header::before {
   line-height: 24px;
   color: #242440;
   margin: 0;
+  margin-left: 16px;
 }
 
 @media screen and (max-width: 1240px) {
@@ -1173,9 +1181,9 @@ header::before {
     align-items: center;
   }
 
-  .achievements__img {
-    margin-right: 0px;
-    margin-bottom: 10px;
+  .achievements__description {
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
 
@@ -1195,23 +1203,32 @@ header::before {
 
 @media screen and (max-width: 740px) {
   .achievements {
-    padding: 48px 0;
-  }
-
-  .achievements__items {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-
-  .achievements__item {
-    margin-right: 0;
-    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .achievements__description {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .achievements__items {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .achievements__item {
+    width: calc(50% - 32px);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .achievements__item {
+    width: 100%;
+    margin-bottom: 14px;
   }
 }
 
@@ -2164,6 +2181,10 @@ header::before {
 .title-sections__title--catalog {
   width: auto;
   margin-right: 0;
+}
+
+.title-sections__title--catalog-popular {
+  width: 100%;
 }
 
 .scroll-link__tag {
@@ -5963,7 +5984,6 @@ footer::after {
 
 .island {
   margin-top: 40px;
-  padding-bottom: 95px;
 }
 
 .island__text {
@@ -5993,12 +6013,6 @@ footer::after {
 @media screen and (max-width: 1240px) {
   .title-sections__title--island {
     margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .island__text {
-    margin-left: 73px;
   }
 }
 
