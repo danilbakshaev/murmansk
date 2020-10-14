@@ -2,26 +2,24 @@ $(function () {
 
   if ($('.popular-destinations__items')) {
     $('.popular-destinations__items').slick({
-      slidesToShow: 3.4,
-      slidesToScroll: 1,
+      slidesToShow: 3,
+      slidesToScroll: 3,
       infinite: false,
+      draggable: false,
       prevArrow: '.prev-js-popular-destinations',
       nextArrow: '.next-js-popular-destinations',
       responsive: [{
           breakpoint: 1240,
           settings: {
-            slidesToShow: 2.2,
-            slidesToScroll: 1,
-            centerMode: false,
+            slidesToShow: 2,
+            slidesToScroll: 2,
           }
         },
         {
           breakpoint: 740,
           settings: {
-            slidesToShow: 1.2,
+            slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
-            centerMode: false,
           }
         },
       ]
@@ -59,60 +57,61 @@ $(function () {
   if ($('.popular-destinations__items--readytours-slider')) {
     $('.popular-destinations__items--readytours-slider').slick({
       slidesToShow: 3.4,
-      slidesToScroll: 1,
+      slidesToScroll: 3.4,
       infinite: false,
+      draggable: false,
       prevArrow: '.prev-js-popular-readytours-header',
       nextArrow: '.next-js-popular-readytours-header',
       responsive: [{
           breakpoint: 1240,
           settings: {
-            slidesToShow: 2.2,
-            slidesToScroll: 1,
-            centerMode: false,
+            slidesToShow: 2.1,
+            slidesToScroll: 2.1,
           }
         },
         {
           breakpoint: 740,
           settings: {
-            slidesToShow: 1.2,
-            slidesToScroll: 1,
-            arrows: false,
-            centerMode: false,
+            slidesToShow: 1.1,
+            slidesToScroll: 1.1,
           }
         },
       ]
     });
   }
 
-  if ($('.tours__items-mob')) {
-    $('.tours__items-mob').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      infinite: false,
-      prevArrow: '.prev-js',
-      nextArrow: '.next-js',
-      responsive: [{
-          breakpoint: 1240,
-          settings: {
-            slidesToShow: 2.2,
-            slidesToScroll: 1,
-            arrows: true,
-            centerMode: false,
-          }
-        },
 
-        {
-          breakpoint: 740,
-          settings: {
-            slidesToShow: 1.2,
-            slidesToScroll: 1,
-            arrows: false,
-            centerMode: false,
-          }
-        },
-      ]
-    });
-  }
+  $(window).on('resize', function (e) {
+    if (window.innerWidth < 1240) {
+      if ($('.tours__items')) {
+        $('.tours__items').slick({
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          draggable: false,
+          infinite: false,
+          prevArrow: '.prev-js',
+          nextArrow: '.next-js',
+          responsive: [{
+              breakpoint: 1240,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              }
+            },
+    
+            {
+              breakpoint: 740,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },
+          ]
+        });
+      }
+    };
+  }).trigger('resize');
+  
 
 
   if ($('.reviews__inner')) {
@@ -177,7 +176,8 @@ $(function () {
       responsive: [{
         breakpoint: 800,
         settings: {
-          arrows: false,
+          slidesToShow: 1.1,
+            slidesToScroll: 1.1,
         }
       }, ]
     });
@@ -347,6 +347,7 @@ $(function () {
     $(this).children().toggleClass("faq__title--active");
     $(this).toggleClass("closeText");
     $(this).next().slideToggle("slow");
+    $(this).parent().toggleClass("faq__item--active");
   });
 
   $(".mobile-footer__inner").hide()
@@ -566,7 +567,32 @@ $(function () {
         passive: false
       });
     }
+  };
+  
+  if (document.querySelector('.openFullText')) {
+    openFullText = document.querySelector('.openFullText');
+    fullTextModal = document.querySelector('.modal-wrapper__fulltext');
 
+    openFullText.addEventListener('click', function () {
+      openBaseModal();
+      fullTextModal.classList.remove('hidden');
+      setTimeout(function () {
+        fullTextModal.classList.remove('animation');
+      }, 20);
+    })
+  }
+
+  function closeFullTextModal() {
+    if (!fullTextModal.classList.contains('hidden')) {
+      fullTextModal.classList.add('animation');
+      fullTextModal.addEventListener('transitionend', function (e) {
+        fullTextModal.classList.add('hidden');
+      }, {
+        capture: false,
+        once: true,
+        passive: false
+      });
+    }
   };
 
   function closeAllModal() {
@@ -575,7 +601,10 @@ $(function () {
     closeVideoModal();
     if (document.querySelector('.openGallery')) {
       closeGalleryModal();
-    }
+    };
+    if (document.querySelector('.openFullText')) {
+      closeFullTextModal();
+    };
     closeBaseModal();
   };
 
