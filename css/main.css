@@ -1298,6 +1298,10 @@ header::before {
 }
 
 .tours__item {
+  
+}
+
+.tours-wr{
   width: calc(33.33% - 30px);
   position: relative;
   text-decoration: none;
@@ -1316,7 +1320,7 @@ header::before {
   justify-content: flex-end;
 }
 
-.tours__item:hover {
+.tours-wr:hover {
   transform: scale(1.05);
 }
 
@@ -1450,7 +1454,7 @@ header::before {
 }
 
 @media screen and (max-width: 1240px) {
-  .tours__item {
+  .tours-wr {
     width: calc(50% - 70px);
   }
   .bottom-innerwrp--deskNone{
@@ -1469,14 +1473,14 @@ header::before {
   .tours__item-button__text {
     display: block;
   }
-  .tours__item:hover {
+  .tours-wr:hover {
     transform: initial;
   }
-  .tours__item:not(:first-child) {
+  .tours-wr:not(:first-child) {
     display: none;
   }
 
-  .tours__items.slick-initialized .tours__item:not(:first-child) {
+  .tours__items.slick-initialized .tours-wr:not(:first-child) {
     display: block;
   }
 
@@ -1488,14 +1492,18 @@ header::before {
     margin-bottom: 17px;
   }
 
-  .tours__item:not(.slick-active){
+  .tours-wr:not(.slick-active){
     opacity: 0.5;
   }
 
-  /* .tours__items .slick-list {
+  .tours__items{
+    display: block;
+  }
+
+  .tours__items .slick-list {
     padding: 18px 0;
-    overflow: unset !important;
-} */
+    overflow: inherit !important;
+}
 
   /* .tours__item .slick-active{
     width: 390px!important;
