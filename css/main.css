@@ -1195,10 +1195,6 @@ header::before {
   .title-sections__description {
     margin: 16px 0 0 0;
   }
-
-  .achievements__img {
-    margin-right: 0;
-  }
 }
 
 @media screen and (max-width: 740px) {
@@ -9007,14 +9003,144 @@ background:  #0FC4AC;
   }
 }
 
-/* @media screen and (max-width: 320px) {
-  .answers__spoiler-wrap {
-    display: flex;
+/* Страница "контакты" */
+.title-sections--contacts {
+  margin-bottom: 0;
+}
+
+.title-sections__title--contacts {
+  font-size: 42px;
+  line-height: 130%;
+  width: 100%;
+}
+
+.contacts-feedback__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-right: -32px;
+}
+
+.contacts-feedback__item {
+  background: #fff;
+  border: 1px solid #F8F8F6;
+  border-radius: 12px;
+  padding: 24px;
+  margin-right: 32px;
+  width: calc(20% - 32px);
+  position: relative;
+}
+
+.contacts-feedback__title {
+  font-family: Roboto Slab, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #242440;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.contacts-feedback__wrap {
+  margin-bottom: 85px;
+}
+
+.contacts--feedback {
+  margin-right: 0;
+}
+
+.contacts__wrap-links--feedback {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacts__phone--feedback {
+  color: #0FC4AC;
+  font-family: Roboto Slab, sans-serif;
+  font-weight: 700;
+  line-height: 120%;
+  margin-right: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.contacts__socials-text--feedback {
+  color: #7B8997;
+  margin: 0;
+}
+
+.btn-feedback {
+  position: absolute;
+  bottom: 24px;
+  left: calc(50% - 104px);
+  width: 208px;
+  height: 48px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #E9ECEF;
+  border-radius: 6px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #242440;
+  transition: all linear 0.3s;
+}
+
+.btn-feedback:hover {
+  color: #fff;
+  background: linear-gradient(135deg, #FF9458 0%, #FFBE5C 100%);
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
+}
+
+.contacts-feedback__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+  margin-bottom: 16px;
+}
+
+.contacts-feedback__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #F8F8F6;
+  opacity: 0.7;
+  padding: 16px 24px;
+  box-sizing: border-box;
+}
+
+.contacts-feedback__attention {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #FBB500;
+  margin-bottom: 4px;
+}
+
+.contacts-feedback__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #242440;
+}
+
+@media screen and (max-width: 1240px) {
+  .contacts-feedback__inner {
+    justify-content: space-around;
+  }
+
+  .contacts-feedback__item {
+    width: calc(30% - 32px);
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .contacts--feedback {
     flex-direction: column;
-    align-items: flex-start;
   }
-  .answers__question {
-    margin-bottom: 8px;
-  }
-} */
-/* /страница "faq" */
+}
+/* /Страница "контакты" */
