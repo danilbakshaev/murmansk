@@ -8794,8 +8794,7 @@ background:  #0FC4AC;
 
 .answers__item {
   background: #FFFFFF;
-  border: 1px solid rgba(36, 36, 64, 0.02);
-  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15);
+  border: 1px solid #E9ECEF;
   border-radius: 8px;
   max-width: 750px;
   margin-bottom: 12px;
@@ -8937,6 +8936,10 @@ background:  #0FC4AC;
   color: #242440;
 }
 
+.answers__item--active {
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15);
+}
+
 .answers__item--active .answers__title {
   color: #0FC4AC;
 }
@@ -9068,12 +9071,14 @@ background:  #0FC4AC;
 }
 
 .contacts-feedback__item {
+  box-sizing: border-box;
   background: #fff;
   border: 1px solid #F8F8F6;
   border-radius: 12px;
   padding: 24px;
   margin-right: 32px;
-  width: calc(20% - 32px);
+  width: calc(25% - 32px);
+  max-width: 256px;
   position: relative;
 }
 
@@ -9085,6 +9090,10 @@ background:  #0FC4AC;
   color: #242440;
   margin: 0;
   margin-bottom: 24px;
+}
+
+.contacts-feedback__title--last {
+  margin-bottom: 16px;
 }
 
 .contacts-feedback__wrap {
@@ -9115,7 +9124,8 @@ background:  #0FC4AC;
   margin: 0;
 }
 
-.btn-feedback {
+/* хак для кнопки */
+.btn-orange {
   position: absolute;
   bottom: 24px;
   left: calc(50% - 104px);
@@ -9125,25 +9135,57 @@ background:  #0FC4AC;
   cursor: pointer;
   border: 1px solid #E9ECEF;
   border-radius: 6px;
+  z-index: 1;
+  transition: all linear 0.5s;
+}
+
+.btn-orange::after {
+  z-index: 2;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.7s;
+  opacity: 0;
+  background: linear-gradient(135deg, #FF9458 0%, #FFBE5C 100%);
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+}
+
+.btn-orange:hover {
+  border: 1px solid #fff;
+}
+
+.btn-orange:hover::after {
+  opacity: 1;
+}
+
+.btn-orange:hover .btn-orange__text {
+  color: #fff;
+  transition: all linear 0.4s;
+}
+
+.btn-orange__text {
+  color: #242440;
   font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: #242440;
+  z-index: 5;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 37px);
   transition: all linear 0.3s;
 }
-
-.btn-feedback:hover {
-  color: #fff;
-  background: linear-gradient(135deg, #FF9458 0%, #FFBE5C 100%);
-  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
-}
+/* /хак для кнопки */
 
 .contacts-feedback__description {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #242440;
-  margin-bottom: 16px;
+  margin: 0;
 }
 
 .contacts-feedback__bottom {
@@ -9151,8 +9193,8 @@ background:  #0FC4AC;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #F8F8F6;
-  opacity: 0.7;
+  /* background: #F8F8F6; */
+  background: rgba(248, 248, 246, 0.3);
   padding: 16px 24px;
   box-sizing: border-box;
 }
@@ -9162,7 +9204,6 @@ background:  #0FC4AC;
   font-size: 12px;
   line-height: 150%;
   color: #FBB500;
-  margin-bottom: 4px;
 }
 
 .contacts-feedback__text {
@@ -9171,22 +9212,71 @@ background:  #0FC4AC;
   font-size: 12px;
   line-height: 150%;
   color: #242440;
+  margin-top: 4px;
+}
+
+.contacts__social-inner--feedback {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 1240px) {
-  .contacts-feedback__inner {
-    justify-content: space-around;
-  }
-
   .contacts-feedback__item {
-    width: calc(30% - 32px);
+    width: calc(33.33% - 32px);
+    max-width: 100%;
+    min-height: 256px;
     margin-bottom: 32px;
   }
 }
 
-@media screen and (max-width: 860px) {
-  .contacts--feedback {
-    flex-direction: column;
+@media screen and (max-width: 1080px) {
+  .contacts__socials-text--feedback {
+    margin-bottom: 8px;
+  }
+  .contacts__social-inner--feedback {
+    margin-top: 8px;
+    margin-bottom: 0;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .contacts__phone--feedback {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .contacts-feedback__item {
+    width: calc(50% - 32px);
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .contacts--feedback {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .contacts-feedback__inner {
+    justify-content: center;
+  }
+  .contacts-feedback__item {
+    width: 100%;
+  }
+  .contacts-feedback__bottom {
+    padding: 40px 24px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .btn-orange {
+    width: calc(100% - 48px);
+    left: calc(0% + 24px);
+  }
+  .contacts-feedback__bottom {
+    padding: 16px 24px;
+  }
+}
+
 /* /Страница "контакты" */
