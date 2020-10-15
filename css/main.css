@@ -8821,7 +8821,6 @@ background:  #0FC4AC;
 .answers__spoiler-wrap {
   display: flex;
   align-items: center;
-  margin-right: 18px;
 }
 
 .answers__arrow {
@@ -8851,7 +8850,6 @@ background:  #0FC4AC;
 .answers__cut {
   display: none;
   margin-top: 23px;
-  margin-right: 54px;
 }
 
 .answers__reply {
