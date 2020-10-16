@@ -9053,6 +9053,8 @@ background:  #0FC4AC;
 }
 
 /* Страница "контакты" */
+
+/* Блок "контакты" */
 .title-sections--contacts {
   margin-bottom: 0;
 }
@@ -9061,6 +9063,11 @@ background:  #0FC4AC;
   font-size: 42px;
   line-height: 130%;
   width: 100%;
+}
+
+.contacts-feedback {
+  margin-top: 40px;
+  margin-bottom: 64px;
 }
 
 .contacts-feedback__inner {
@@ -9245,6 +9252,10 @@ background:  #0FC4AC;
 }
 
 @media screen and (max-width: 860px) {
+  .contacts-feedback {
+    margin-top: 16px;
+    margin-bottom: 48px;
+  }
   .contacts-feedback__item {
     width: calc(50% - 32px);
   }
@@ -9263,9 +9274,13 @@ background:  #0FC4AC;
   }
   .contacts-feedback__item {
     width: 100%;
+    margin-bottom: 8px;
   }
   .contacts-feedback__bottom {
     padding: 40px 24px;
+  }
+  .contacts-feedback__item:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -9277,6 +9292,138 @@ background:  #0FC4AC;
   .contacts-feedback__bottom {
     padding: 16px 24px;
   }
+}
+
+/* блок "Мы в соцсетях" */
+.title-sections__title--socials {
+  font-size: 28px;
+}
+
+.social-networks {
+  margin-bottom: 96px;
+}
+
+.social-networks__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  margin-right: -32px;
+}
+
+.social-networks__item {
+  border: 1px solid #E9ECEF;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: calc(25% - 32px);
+  transition: all linear 0.3s;
+}
+
+.social-networks__item:hover {
+  transform: scale(1.02);
+  background-color: #f9f9f9;
+}
+
+.social-networks__item:hover .social-networks__url {
+  text-decoration: underline;
+}
+
+.social-networks__wrap {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-networks__title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #242440;
+}
+
+.social-networks__url {
+  font-weight: 400;
+  font-size: 12px;
+  color: #93A0AD;
+}
+
+@media screen and (max-width: 1080px) {
+  .social-networks__inner {
+    margin-top: 26px;
+  }
+  .social-networks__item {
+    width: calc(33% - 32px);
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .social-networks {
+    margin-bottom: 48px;
+  }
+  .social-networks__item {
+    width: calc(50% - 32px);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .social-networks__item {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .social-networks__item {
+    width: 100%;
+  }
+}
+
+/* Блок "услуги и адреса" */
+.connection {
+  background: #F8F8F6;
+  padding: 80px 160px;
+}
+
+.connection__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -32px;
+  margin-bottom: -48px;
+}
+
+.connection__item {
+  width: calc(50% - 32px);
+  margin-right: 32px;
+  margin-bottom: 48px;
+}
+
+.connection__title {
+  margin: 0;
+  font-family: Roboto Slab, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 24px;
+}
+
+.connection__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+  margin-bottom: 8px;
+}
+
+.connection__text:last-child {
+  margin-bottom: 0;
 }
 
 /* /Страница "контакты" */
