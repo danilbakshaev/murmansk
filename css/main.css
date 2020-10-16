@@ -9086,6 +9086,7 @@ background:  #0FC4AC;
   border-radius: 12px;
   margin-right: 32px;
   width: calc(25% - 32px);
+  overflow: hidden;
 }
 
 .contacts-feedback__title {
@@ -9181,7 +9182,6 @@ background:  #0FC4AC;
 
 .btn-orange:hover .btn-orange__text {
   color: #fff;
-  transition: all linear 0.3s;
 }
 
 .btn-orange__text {
@@ -9190,6 +9190,7 @@ background:  #0FC4AC;
   font-weight: 600;
   font-size: 14px;
   z-index: 5;
+  transition: all linear 0.2s;
 }
 
 .btn-orange:hover .btn-orange__shadow {
@@ -9199,7 +9200,6 @@ background:  #0FC4AC;
   z-index: -1;
   width: 100%;
   background: linear-gradient(135deg, #FF9458 0%, #FFBE5C 100%);
-  opacity: 0.4;
   filter: blur(16px);
   border-radius: 8px;
 }
@@ -9214,7 +9214,7 @@ background:  #0FC4AC;
 }
 
 .contacts-feedback__bottom {
-  background: rgba(248, 248, 246, 0.3);
+  background-color: #F8F8F6;
   padding: 16px 24px;
 }
 
@@ -9242,7 +9242,6 @@ background:  #0FC4AC;
   .contacts-feedback__item {
     width: calc(33.33% - 32px);
     max-width: 100%;
-    min-height: 256px;
     margin-bottom: 32px;
   }
 }
@@ -9396,13 +9395,16 @@ background:  #0FC4AC;
   display: flex;
   flex-wrap: wrap;
   margin-right: -32px;
-  margin-bottom: -48px;
 }
 
 .connection__item {
   width: calc(50% - 32px);
   margin-right: 32px;
   margin-bottom: 48px;
+}
+
+.connection__item:last-child {
+  margin-bottom: 0;
 }
 
 .connection__title {
