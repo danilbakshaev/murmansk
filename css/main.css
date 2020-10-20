@@ -399,12 +399,52 @@ img {
   height: auto;
 }
 
+/* Убираем outline со всего проекта */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* Убираем outline (так нельзя, но как иначе, макета нет) */
+a,
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus,
+input {
+    outline: 0 !important;
+    outline-color: transparent !important;
+    outline-width: 0 !important;
+    outline-style: none !important;
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+}
+
 /* Контейнер */
 .container {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  position: relative;
+  /* position: relative; */
 }
 
 @media screen and (max-width: 1440px) {
@@ -3600,7 +3640,7 @@ footer::after {
   width: 100%;
   height: 156px;
   position: absolute;
-  background-image: url('/img/Brush.png');
+  background-image: url('/img/brush.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -9146,8 +9186,6 @@ background:  #0FC4AC;
   align-items: center;
   justify-content: center;
   position: relative;
-  /* bottom: 24px; */
-  /* width: 208px; */
   width: 100%;
   height: 48px;
   background-color: transparent;
@@ -9388,7 +9426,7 @@ background:  #0FC4AC;
 /* Блок "услуги и адреса" */
 .connection {
   background: #F8F8F6;
-  padding: 80px 160px;
+  padding: 80px 0;
 }
 
 .connection__items {
@@ -9463,22 +9501,299 @@ background:  #0FC4AC;
 
 /* карта */
 .map {
-  height: 721px;
-  padding-bottom: 500px;
-  display: flex;
   position: relative;
 }
 
-.map__img {
-  
+.container-map__top {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 80px;
 }
 
-.map__items {
-  z-index: 10;
+.container-map__bottom {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 80px;
+}
+
+.map__map {
   position: absolute;
   top: 0;
-  right: 0;
-  background-color: rgb(126, 114, 114);
+  left: 0;
+  z-index: -1;
+  height: 100%;
 }
+
+.container--map {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .map__items {
+  box-sizing: border-box;
+  background-color:#fff;
+  border: 1px solid rgba(36, 36, 64, 0.02);
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15);
+  border-radius: 12px;
+  max-width: 384px;
+} */
+
+.map__wrap {
+  overflow: hidden;
+}
+
+.map__top {
+  padding-top: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #fff;
+  max-width: 384px;
+  width: 100%;
+  border: 1px solid rgba(36, 36, 64, 0.02);
+  border-bottom: none;
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.map__bottom {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 48px;
+  background-color: #fff;
+  max-width: 384px;
+  width: 100%;
+  box-shadow-top: 0;
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.map__title {
+  margin: 0;
+  font-family: Roboto Slab;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  color: #242440;
+  margin-bottom: 16px;
+}
+
+.map__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 150%;
+  color: #242440;
+  margin-bottom: 24px;
+}
+
+.map__socials {
+
+}
+
+.map__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #7B8997;
+  margin-bottom: 3px;
+}
+
+.map__links {
+  display: flex;
+  margin-top: 3px;
+  margin-bottom: 13px;
+}
+
+.map__link:not(:last-child) {
+  margin-right: 8px;
+}
+
+.map__link {
+  transition: all linear 0.3s;
+}
+
+.map__link:hover {
+  opacity: 0.6;
+}
+
+.map__phone {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #242440;
+  text-decoration: none;
+  margin-right: 8px;
+  transition: all linear 0.3s;
+}
+
+.map__phone:hover {
+  color: #0FC4AC;
+}
+
+.map__phone--two {
+  color: #0FC4AC;
+}
+
+.map__phone--two:hover {
+  color: #242440;
+}
+
+.map__mail {
+  color: #0FC4AC;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  transition: all linear 0.3s;
+}
+
+.map__mail:hover {
+  color: #242440;
+}
+
+.map__item {
+  margin-bottom: 16px;
+}
+
+.map__item-socials {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.map__item-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #E9ECEF;
+  border-radius: 50%;
+  transition: all linear 0.3s;
+}
+
+.map__item-wrap:hover {
+  background-color: #e6e6e6;
+}
+
+.map__item-wrap:last-child {
+  margin-right: 0;
+}
+
+.btn-orange-shadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.btn-orange-shadow::after {
+  z-index: 2;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s;
+  background: linear-gradient(135deg, #FF9458 0%, #FFBE5C 100%);
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+}
+
+.btn-orange-shadow:hover {
+  border: 1px solid #E9ECEF;
+}
+
+.btn-orange-shadow:hover::after {
+  opacity: 0;
+}
+
+.btn-orange-shadow:hover .btn-orange-shadow__text {
+  color: #242440;
+}
+
+.btn-orange-shadow__text {
+  color: #fff;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 5;
+  transition: all linear 0.2s;
+}
+
+.btn-orange-shadow .btn-orange-shadow__shadow {
+  position: absolute;
+  top: 35px;
+  min-height: 8px;
+  z-index: -1;
+  width: 100%;
+  background: linear-gradient(135deg, #FF9458 0%, #FFBE5C 100%);
+  filter: blur(16px);
+  border-radius: 8px;
+  transition: all linear 0.3s;
+}
+
+.btn-orange-shadow:hover .btn-orange-shadow__shadow {
+  opacity: 0;
+}
+
+@media screen and (max-width: 860px) {
+  .map {
+    display: block;
+  }
+  .map__map {
+    position: inherit;
+    margin: 16px 0;
+  }
+  .map__top {
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  .map__bottom {
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  .map__items {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    max-width: 100%;
+  }
+  .map__item:last-child {
+    margin-bottom: 24px;
+  }
+  .map__item-socials {
+    margin-bottom: 32px;
+  }
+  .map__text {
+    margin-bottom: 8px;
+  }
+  .map__btn-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-orange-shadow {
+    width: 292px;
+  }
+}
+
+
+
+
 
 /* /Страница "контакты" */
