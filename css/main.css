@@ -682,18 +682,16 @@ header::before {
 }
 
 .header__text-wrap-left-span-small {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 36px;
   line-height: 120%;
   color: #FFFFFF;
 }
 
 .header__text-wrap-left-span {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 120%;
   color: rgba(255, 255, 255, 0.7);
@@ -808,7 +806,6 @@ header::before {
   border-bottom: 1px solid#0FC4AC;
   top: 14px;
   transition: 0.5s;
-
 }
 
 .contacts__callback:hover {
@@ -900,7 +897,7 @@ header::before {
 }
 
 .header-text__title {
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 600;
   font-size: 42px;
   color: #FFFFFF;
@@ -1280,7 +1277,7 @@ header::before {
 }
 
 .title-sections__title {
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 600;
   font-size: 40px;
   line-height: 48px;
@@ -1447,7 +1444,7 @@ header::before {
 }
 
 .tours__item-h3 {
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 26px;
@@ -1723,8 +1720,8 @@ header::before {
 }
 
 .recreation__item-title {
-  font-family: Roboto Slab;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 40px;
   line-height: 120%;
   color: #242440;
@@ -1843,9 +1840,8 @@ header::before {
   }
 
   .recreation__item--mobile-title {
-    font-family: Roboto Slab;
-    font-style: normal;
-    font-weight: bold;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 700;
     font-size: 36px;
     line-height: 120%;
     color: #FFFFFF;
@@ -1960,9 +1956,8 @@ header::before {
   z-index: 1;
   bottom: 16px;
   left: 16px;
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 14px;
   line-height: 120%;
   color: #FFFFFF;
@@ -2312,8 +2307,8 @@ header::before {
 }
 
 .popular-destinations__title {
-  font-family: Roboto Slab;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 28px;
   line-height: 120%;
   color: #FFFFFF;
@@ -2981,9 +2976,8 @@ header::before {
 } */
 
 .stocks__link {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 22px;
   line-height: 120%;
   color: #242440;
@@ -2994,9 +2988,8 @@ header::before {
 
 .stocks__h2 {
   margin: 0 24px 0 0;
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 40px;
   line-height: 100%;
   color: #0FC4AC;
@@ -3102,9 +3095,8 @@ header::before {
 }
 
 .travel-price__title {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 40px;
   line-height: 120%;
   color: #FFFFFF;
@@ -3255,7 +3247,7 @@ header::before {
 }
 
 .advantages__title {
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
@@ -3273,7 +3265,7 @@ header::before {
 }
 
 .advantages__text {
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 120%;
@@ -3368,9 +3360,8 @@ header::before {
 
 .tours-map__title {
   margin: 32px 0 8px;
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 32px;
   line-height: 110%;
   color: #242440;
@@ -3521,9 +3512,8 @@ header::before {
 
 .subscribe-instagram__title {
   margin: 0;
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 40px;
   line-height: 120%;
   color: #242440;
@@ -4771,7 +4761,7 @@ footer {
 }
 
 .title-sections__catalog {
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
@@ -4861,7 +4851,7 @@ footer {
 }
 
 .catalog__item-left-title {
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 28px;
   color: #242440;
@@ -5334,7 +5324,7 @@ footer {
 }
 
 .filter__btn-text {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 11px;
   line-height: 13px;
@@ -5347,7 +5337,7 @@ footer {
 }
 
 .filter__btn-subtext {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -5529,7 +5519,7 @@ footer {
 }
 
 .search-tours__description {
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 120%;
@@ -6192,8 +6182,7 @@ footer {
 }
 
 .video-tours__p--tour {
-  font-family: Roboto Slab;
-  font-style: normal;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 120%;
@@ -6203,8 +6192,7 @@ footer {
 }
 
 .video-tours__span--tour {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.7);
@@ -6403,8 +6391,7 @@ footer {
 }
 
 .tour-quality__title {
-  font-family: Roboto Slab;
-  font-style: normal;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -6517,9 +6504,8 @@ footer {
 }
 
 .tour-map__title {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 120%;
   color: #FFFFFF;
@@ -6559,9 +6545,8 @@ footer {
 }
 
 .tour-program__time {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 22px;
   line-height: 120%;
   color: #242440;
@@ -6569,8 +6554,7 @@ footer {
 }
 
 .tour-program__text {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #242440;
@@ -6747,9 +6731,8 @@ footer {
 }
 
 .tour-reviews__name {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 120%;
   color: #242440;
@@ -6757,7 +6740,6 @@ footer {
 }
 
 .tour-reviews__date {
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 140%;
@@ -6771,8 +6753,7 @@ footer {
 
 .tour-reviews__rating-number {
   margin-right: 9px;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 140%;
   color: #FFFFFF;
@@ -6845,9 +6826,8 @@ footer {
 }
 
 .tour-video__title {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 22px;
   line-height: 120%;
   color: #FFFFFF;
@@ -6856,8 +6836,7 @@ footer {
 }
 
 .tour-video__duration {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.7);
@@ -6888,9 +6867,8 @@ footer {
 }
 
 .tour-guides__name {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 22px;
   line-height: 120%;
   color: #242440;
@@ -6898,8 +6876,7 @@ footer {
 }
 
 .tour-guides__text {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #242440;
@@ -6942,9 +6919,8 @@ footer {
 }
 
 .tour-transport__name {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 120%;
   color: #242440;
@@ -6952,7 +6928,6 @@ footer {
 }
 
 .tour-transport__text {
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 140%;
@@ -8080,9 +8055,8 @@ footer {
 }
 
 .radiance__item-text {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 120%;
   color: #242440;
@@ -8137,16 +8111,15 @@ footer {
 }
 
 .radiance__left-bottom-text {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 120%;
   color: #242440;
 }
 
 .radiance__left-bottom-subtext {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: #242440;
@@ -8190,9 +8163,8 @@ footer {
 }
 
 .radiance__title {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 40px;
   line-height: 120%;
   color: #242440;
@@ -8203,9 +8175,8 @@ footer {
 }
 
 .radiance__right-title {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 32px;
   line-height: 110%;
   color: #FFFFFF;
@@ -8410,16 +8381,15 @@ footer {
 }
 
 .photo-gallery__title {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 40px;
   line-height: 120%;
   color: #242440;
 }
 
 .photo-gallery__subtitle {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #242440;
@@ -8694,9 +8664,8 @@ background:  #0FC4AC;
 }
 
 .header-text__list-numb {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 42px;
   line-height: 130%;
   color: #FFFFFF;
@@ -8704,8 +8673,7 @@ background:  #0FC4AC;
 }
 
 .header-text__list-text {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #FFFFFF;
@@ -8764,9 +8732,8 @@ background:  #0FC4AC;
 }
 
 .about-us__title {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 120%;
   color: #242440;
@@ -8775,8 +8742,7 @@ background:  #0FC4AC;
 
 .about-us__subtitle {
   margin: 0;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: #7B8997;
@@ -8804,9 +8770,8 @@ background:  #0FC4AC;
 }
 
 .team-text__name {
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
   font-size: 32px;
   line-height: 110%;
   color: #242440;
@@ -8814,8 +8779,7 @@ background:  #0FC4AC;
 }
 
 .team-text__post {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #7B8997;
@@ -8931,7 +8895,7 @@ background:  #0FC4AC;
 
 .answers__title {
   margin: 0;
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 120%;
@@ -8983,7 +8947,7 @@ background:  #0FC4AC;
 
 .answers__description-top {
   margin: 0;
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 120%;
@@ -9183,7 +9147,7 @@ background:  #0FC4AC;
 }
 
 .contacts-feedback__title {
-  font-family: Roboto Slab, sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -9212,7 +9176,7 @@ background:  #0FC4AC;
 
 .contacts__phone--feedback {
   color: #0FC4AC;
-  font-family: Roboto Slab, sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   line-height: 120%;
   margin-right: 0;
@@ -9277,7 +9241,7 @@ background:  #0FC4AC;
 
 .btn-orange__text {
   color: #242440;
-  font-family: Inter, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 14px;
   z-index: 5;
@@ -9500,7 +9464,7 @@ background:  #0FC4AC;
 
 .connection__title {
   margin: 0;
-  font-family: Roboto Slab, sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -9522,7 +9486,7 @@ background:  #0FC4AC;
 }
 
 .connection__phone {
-  font-family: Inter, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 120%;
@@ -9623,7 +9587,7 @@ background:  #0FC4AC;
 
 .map__title {
   margin: 0;
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 110%;
@@ -9773,7 +9737,7 @@ background:  #0FC4AC;
 
 .btn-orange-shadow__text {
   color: #fff;
-  font-family: Inter, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 14px;
   z-index: 5;
@@ -9856,7 +9820,7 @@ background:  #0FC4AC;
 }
 
 .title-sections__title--reset {
-  width: 70%;
+  width: 61%;
 }
 
 .btn-orange-shadow--reviews {
@@ -9869,18 +9833,20 @@ background:  #0FC4AC;
 .btn-orange-shadow__text--reviews {
   display: flex;
   align-items: center;
+  transition: all linear 0.3s;
 }
 
 .btn-orange-shadow__icon {
   margin-right: 8px;
+  transition: all linear 0.2s;
 }
 
 .btn-orange-shadow--reviews:hover .btn-orange-shadow__icon path {
-  fill: #FF9458;
+  stroke: #010A03;
 }
 
-.btn-orange-shadow--reviews:hover .btn-orange-shadow__icon path {
-  stroke:#ffd876;
+.btn-orange-shadow__icon path {
+  transition: all linear 0.3s;
 }
 
 .reviews-tourist {
@@ -9890,7 +9856,7 @@ background:  #0FC4AC;
 
 .reviews-tourist__items {
   margin-top: 48px;
-  max-width: 736px;
+  max-width: 63%;
 }
 
 .reviews-tourist__item {
@@ -9912,7 +9878,7 @@ background:  #0FC4AC;
 }
 
 .reviews-tourist__name {
-  font-family: Roboto Slab, sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: #242440;
@@ -9959,7 +9925,7 @@ background:  #0FC4AC;
   border: none;
   background: rgba(36, 36, 64, 0.6);
   backdrop-filter: blur(64px);
-  font-family: Inter, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
@@ -9967,6 +9933,11 @@ background:  #0FC4AC;
   cursor: pointer;
   padding: 0;
   transition: all linear 0.3s;
+}
+
+.reviews-tourist__card-btn:hover {
+  color: black;
+  background-color: #fff;
 }
 
 .reviews-tourist__bottom {
@@ -9978,13 +9949,13 @@ background:  #0FC4AC;
 
 .reviews-tourist__btn-submit {
   color: #0FC4AC;
-  font-family: Inter, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  transition: all linear 0.3s;
+  transition: all linear 0.2s;
   padding: 0;
 }
 
@@ -10023,204 +9994,83 @@ background:  #0FC4AC;
   transition: all linear 0.3s;
 }
 
-.reviews-tourist__icon--like:hover path {
-  fill: #00D689;
+.reviews-tourist__like-btn:hover path {
+  fill: #414141;
 }
 
-.reviews-tourist__icon--dislike:hover path {
-  fill: #830318;
+/* active class для лайков/дизлайков */
+.reviews-tourist__like-btn--like-active path {
+  fill: #1fe07f;
 }
 
-.reviews-tourist__like-btn .reviews-tourist__icon--active path{
-  fill: #737385;
+.reviews-tourist__like-btn--dislike-active path {
+  fill: #cc0b2b;
+}
+/* /active class для лайков/дизлайков */
+
+.reviews-tourist__like-btn--like-active:hover path {
+  fill: #1fe07f;
 }
 
-.sending-form {
-  text-align: center;
-  position: relative;
+.reviews-tourist__like-btn--dislike-active:hover path {
+  fill: #cc0b2b;
 }
 
-.sending-form::after {
-  position: absolute;
-  content: '';
-  background-image: url(../img/brush-top.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 100%;
-  height: 156px;
-  top: 0;
-  left: 0;
-}
-
-.sending-form::before {
-  position: absolute;
-  content: '';
-  background-image: url(../img/brush-bottom.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 100%;
-  height: 156px;
-  bottom: 0;
-  left: 0;
-}
-
-.sending-form--reviews {
-  background-image: url(../img/travel-bg-reviews.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-} 
-
-.sending-form__wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 190px 0;
-}
-
-.sending-form__title {
-  margin: 0;
-  font-family: Roboto Slab, sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 120%;
-  color: #FFF;
-  margin-bottom: 24px;
-  max-width: 765px;
-}
-
-.sending-form__title--forecast {
-  color: #242440;
-}
-
-.sending-form__form {
-  box-sizing: border-box;
-}
-
-.sending-form__wrapper {
-  display: flex;
-}
-
-.sending-form__text {
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 32px;
-}
-
-.sending-form__text--forecast {
-  color: #7B8997;
-}
-
-.sending-form__input {
-  width: 280px;
-  height: 48px;
-  border-radius: 8px;
-  border: none;
-  padding: 14px 16px;
-  margin-right: 8px;
-}
-
-.sending-form__input::placeholder {
-  font-family: Inter, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: #93A0AD;
-}
-
-.sending-form__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  width: 160px;
-  height: 48px;
-  border-radius: 8px;
-  border: none;
-  font-family: Inter, sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #FFFFFF;
-  cursor: pointer;
-  background: linear-gradient(135deg, #FF9458 0%, #FFBE5C 100%);
-  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15), inset 0px 1px 0px rgba(255, 255, 255, 0.4);
-  transition: all linear 0.3s;
-}
-
-.sending-form__btn:hover {
-  background: #0FC4AC;
-}
-
-.sending-form__desc {
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 130%;
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 12px;
-  max-width: 440px;
-}
-
-.sending-form__desc--forecast {
-  color: #7B8997;
-}
-
-.privacy-link {
-  cursor: pointer;
-  color: #fff;
-  text-decoration: none;
-  transition: all linear 0.3s;
-}
-
-.privacy-link:hover {
-  color: #0FC4AC;
-  text-decoration: underline;
-}
-
-.privacy-link--forecast {
-  color: #0FC4AC;
-}
-
-@media screen and (max-width: 640px) {
-  .sending-form__wrapper {
-    flex-direction: column;
+@media screen and (max-width: 1920px) {
+  .reviews-tourist__items {
+    max-width: 53%;
   }
-  .sending-form__input {
-    width: 100%;
-    margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1920px) {
+  .reviews-tourist__items {
+    max-width: 53%;
   }
-  .sending-form__btn {
-    width: 100%;
+  .title-sections__title--reset {
+    max-width: 60%;
   }
-  .sending-form__title {
-    font-size: 26px;
-    max-width: 100%;
+}
+
+@media screen and (max-width: 1240px) {
+  .reviews-tourist__items {
+    max-width: 55%;
+  }
+  .reviews-tourist__photo {
+    flex-wrap: wrap;
+    justify-content: unset;
+  }
+  .reviews-tourist__card {
+    width: calc (33.33% - 16px);
     margin-bottom: 16px;
   }
-  .sending-form__text {
-    font-size: 14px;
-    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1080px) {
+  .title-sections__title--reset {
+    width: 77%;
   }
-  .sending-form__desc {
-    font-size: 10px;
-    margin-top: 8px;
-  }
-  .sending-form__wrap {
-    padding: 85px 0;
-  }
-  .sending-form::before {
-    background-image: none;
-  }
-  .sending-form::after {
-    background-image: none;
+  .reviews-tourist__items {
+    max-width: 68%;
   }
 }
 
+@media screen and (max-width: 860px) {
+  .reviews-tourist__items {
+    max-width: 77%;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .reviews-tourist__items {
+    max-width: 100%;
+  }
+  .title-sections__title--reset {
+    max-width: 100%;
+  }
+  .reviews-tourist__photo {
+    flex-wrap: nowrap;
+  }
+}
 
 @media screen and (max-width: 640px) {
   .btn-orange-shadow--reviews {
@@ -10228,10 +10078,9 @@ background:  #0FC4AC;
   }
   .reviews-tourist__photo {
     flex-wrap: wrap;
-    width: auto;
   }
   .reviews-tourist__card {
-    width: calc(50% - 16px);
+    width: calc(33% - 16px);
     margin-bottom: 16px;
   }
   .reviews-tourist {
@@ -10280,6 +10129,12 @@ background:  #0FC4AC;
   }
 }
 
+@media screen and (max-width: 420px) {
+  .reviews-tourist__card {
+    width: calc(50% - 16px);
+  }
+}
+
 @media screen and (max-width: 320px) {
   .reviews-tourist__card {
     min-width: 124px;
@@ -10291,6 +10146,426 @@ background:  #0FC4AC;
     margin-right: 12px;
   }
 }
-
-
 /* /Страница reviews */
+
+
+
+
+
+
+
+/*----------стили для блоков в гайдлайн--------------*/
+.request__wrap-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding: 190px 0; */
+}
+
+.request {
+  text-align: center;
+  position: relative;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/travel-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 122px 256px;
+  background-position: center center;
+}
+
+.sprite-white::after {
+  position: absolute;
+  content: '';
+  background-image: url(../img/brush-top.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 156px;
+  top: -99px;
+  left: 0;
+}
+
+.sprite-white::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/brush-bottom.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 156px;
+  bottom: -57px;
+  left: 0;
+}
+
+ .request-download {
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  margin-top: 32px;
+  text-decoration: underline;
+  transition: all linear 0.3s;
+}
+
+.request-download:hover {
+  color: #0FC4AC;
+}
+
+.request--reviews {
+  background-image: url(../img/about-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+} 
+
+.request--northern {
+  background-image: url(../img/northern-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.request__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 928px;
+  margin: 0 auto;
+}
+
+.request__wrap--main {
+  padding: 122px 0;
+}
+
+.request__wrap--northern {
+  padding: 95px 0;
+}
+
+.request--coming-dates {
+  background-image: url(../img/coming-dates-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.request--individual-calculation {
+  background-image: url(../img/individual-calculation-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.request--individual-calculation::after {
+  z-index: -1;
+  background-image: none;
+}
+
+.request--individual-calculation::before {
+  z-index: -1;
+  background-image: none;
+}
+
+.request--best-photos {
+  background-image: url(../img/best-photos-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.request--best-photos::after {
+  z-index: -1;
+  background-image: none;
+}
+
+.sending-form--best-photos::before {
+  z-index: -1;
+  background-image: none;
+}
+
+.request--teriberka {
+  background-image: url(../img/teriberka-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.request--order {
+  background-image: url(../img/order-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.request--сertified-operator {
+  background-image: url(../img/best-photos-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.request--about {
+  background-image: url(../img/about-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.request__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #FFF;
+  margin-bottom: 32px;
+}
+
+.request__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+  opacity: 0.8;
+  margin-bottom: 32px;
+  max-width: 500px;
+}
+
+.request__description--reset {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+.request-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 232px;
+  height: 48px;
+  text-decoration: none;
+  background: linear-gradient(144.66deg, #00D8F5 0%, #00D689 100%);
+  border-radius: 8px;
+  position: relative;
+  transition: all linear 0.3s;
+}
+
+.request-link:hover {
+  background: #FF9458;
+}
+
+.request-link--size {
+  width: 256px;
+}
+
+.request-span {
+  font-family: 'Inter', sans-serif;
+  font-style: 400;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.request-shadow::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 232px;
+  min-height: 8px;
+  background: linear-gradient(144.66deg, #00D8F5 0%, #00D689 100%);
+  filter: blur(16px);
+  border-radius: 8px;
+}
+
+.request__wrap--northern-lights {
+  padding: 102px 0;
+}
+
+.request__wrap-cont {
+  max-width: 313px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 37px;
+}
+
+.request__icon {
+  margin-right: 12px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.nothing {
+  height: 100px;
+  width: 100%;
+  background-color: gray;
+}
+
+.test {
+  background-color: pink;
+}
+
+.request__title--forecast {
+  color: #242440;
+}
+
+.request__form {
+  box-sizing: border-box;
+}
+
+.request__wrapper {
+  display: flex;
+}
+
+.request__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 32px;
+}
+
+.request__text--forecast {
+  color: #7B8997;
+}
+
+.request__text--catalog {
+  max-width: 563px;
+}
+
+.request__input {
+  width: 280px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  padding: 14px 16px;
+  margin-right: 8px;
+}
+
+.request__input::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #93A0AD;
+}
+
+.btn-orange-shadow--request {
+  width: 160px;
+  height: 48px;
+  border: none;
+}
+
+.btn-orange-shadow--request:hover .btn-orange-shadow__text--request {
+  color: #fff;
+}
+
+.request__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 12px;
+  max-width: 440px;
+}
+
+.request__desc--forecast {
+  color: #7B8997;
+}
+
+.privacy-link {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  transition: all linear 0.3s;
+}
+
+.privacy-link:hover {
+  color: #0FC4AC;
+  text-decoration: underline;
+}
+
+.privacy-link--forecast {
+  color: #0FC4AC;
+}
+
+@media screen and (max-width: 1440px) {
+  .request {
+    padding: 122px 180px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .request {
+    padding: 122px 100px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .request {
+    padding: 72px 44px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .request__title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  .request__desc {
+    line-height: 150%;
+  }
+  .request__download {
+    font-size: 14px;
+    margin-top: 24px;
+  }
+  .request-download {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .request {
+    padding: 42px 14px;
+  }
+  .request__wrap-cont {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .request__icon {
+    min-width: 50px;
+    min-height: 50px;
+    margin-bottom: 8px;
+  }
+  .request-link {
+    width: 100%;
+  }
+  .request__wrapper {
+    flex-direction: column;
+  }
+  .request__input {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .btn-orange-shadow--request {
+    width: 100%;
+  }
+  .request__title {
+    font-size: 26px;
+    max-width: 100%;
+  }
+  .request__text {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .request__desc {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .request__wrap--main {
+    padding: 42px 0;
+  }
+}
+/*----------/стили для блоков в гайдлайн--------------*/
