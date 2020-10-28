@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Блог</title>
+	<title>Radiance</title>
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-	<header class="background-image" style="background-image: url(/img/catalog-back.png)">
+	<header class="background-image background-image--rad" style="background-image: url(/img/radiance-back.png)">
 		<div class="desktop-header">
 			<div class="desktop-header__top">
 				<div class="container desktop-header__line">
@@ -46,8 +46,8 @@
 					<div class="desktop-header__line-top">
 						<div class="desktop-header__logo-wrapper">
 							<div class="logo-company">
-								<a class="logo-company__link" href="#"><img class="logo-company__logo" src="/img/logo.svg"
-										alt="Логотип компании NORTH FOR YOU"></a>
+								<a class="logo-company__link" href="#"><img class="logo-company__logo"
+										src="/img/logo.svg" alt="Логотип компании NORTH FOR YOU"></a>
 							</div>
 							<div class="desktop-header__info">
 								<p class="desktop-header__info-text">Туроператор в Мурманске "Север для вас"</p>
@@ -60,7 +60,8 @@
 								<a class="contacts__phone" href="tel:+79995215100">+7 (999) 521-51-00</a>
 								<div class="contacts__social-inner">
 									<a class="contacts__social" href="#">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C6.92157 16 5.87184 15.7861 4.89823 15.3763C4.5144 15.2147 3.19942 15.3157 1.13242 15.7346L0.0637203 15.9512L0.358085 14.9013C0.869803 13.0761 1.01649 11.9168 0.879628 11.6503C0.304334 10.5302 0 9.28624 0 8C0 3.58172 3.58172 0 8 0Z"
 												fill="#24D46F" />
@@ -70,15 +71,18 @@
 										</svg>
 									</a>
 									<a class="contacts__social" href="#">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M8.5 0C4.35526 0 1 3.24 1 7.2C1 9.28 1.90789 11.12 3.36842 12.44V16L6.44737 14.12C7.07895 14.28 7.78947 14.4 8.5 14.4C12.6447 14.4 16 11.16 16 7.2C16 3.24 12.6447 0 8.5 0Z"
 												fill="#448AFF" />
-											<path d="M4 10L7.75 5L9.625 7.27273L13 5L9.25 10L7.375 7.72727L4 10Z" fill="white" />
+											<path d="M4 10L7.75 5L9.625 7.27273L13 5L9.25 10L7.375 7.72727L4 10Z"
+												fill="white" />
 										</svg>
 									</a>
 									<a class="contacts__social" href="#">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
 												fill="#0088CC" />
@@ -100,12 +104,19 @@
 						<div class="desktop-header__tours">
 							<a class="desktop-header__tour" href="#">Северное сияние</a>
 							<a class="desktop-header__tour" href="#">Териберка</a>
-							<a class="desktop-header__tour" href="#">Топ-10 однодневних туров <img class="desktop-header__tours-img"
-									src="/img/arrow.svg" alt="Стрелка вниз"> </a>
-							<a class="desktop-header__tour" href="#">Готовые пакетные туры <img class="desktop-header__tours-img"
-									src="/img/arrow.svg" alt="Стрелка вниз"> </a>
+							<a class="desktop-header__tour" href="#">Топ-10 однодневних туров <img
+									class="desktop-header__tours-img" src="/img/arrow.svg" alt="Стрелка вниз"> </a>
+							<a class="desktop-header__tour" href="#">Готовые пакетные туры <img
+                                    class="desktop-header__tours-img" src="/img/arrow.svg" alt="Стрелка вниз"> </a>  
 						</div>
-					</div>
+                    </div>
+                    <section class="breadcrumbs">
+                        <div class="container">
+                            <a class="breadcrumbs__link" href="/">Главная</a>
+                            <a class="breadcrumbs__link" href="#">Каталог туров</a>
+                            <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Обзорная экскурсия в Хибинские горы</a>
+                        </div>
+                    </section>
 				</div>
 			</div>
 		</div>
@@ -128,108 +139,38 @@
 
 
 
-		<div class="header-text">
-			<div class="container">
-				<div class="header__text-items">
-					<div class="header-text__wrap header-text__wrap--catalog">
-						<div class="tours__item-span">
-							<span class="tours__item-span-text tours__item-span-text--blue">Популярное</span>
-						</div>
-						<h1 class="header-text__title">Охота на северное сияние</h1>
-						<div class="header__text-wrap-top">
-							<div class="header__text-wrap-left">
-								<span class="header__text-wrap-left-span">15 000 руб.</span>
-								<span class="header__text-wrap-left-span-small">12 000 руб.</span>
-							</div>
-							<div class="header__text-wrap-right">
-								<p class="header__text-wrap-right-text">При бронировании до 31</p>
-								<p class="header__text-wrap-right-text">августа 2020 <span class="header-red">скидка 20%</span></p>
-							</div>
-							<h1 class="header-text__title-bottom">Охота на северное сияние</h1>
-						</div>
-						<div class="callback-form__wrap">
-							<button class="callback-form__submit callback-form__submit--head" type="submit">Подробнее о туре</button>
+		<div class="header-text header-text--rad">
+			<div class="container header-text--tour header-text--tour--rad">
+				<div class="header-text__wrap header-text__wrap--tour header-text__wrap--rad">
+					<h1 class="header-text__title header-text__title--rad">Осуществите мечту и получите красивые фотографии на фоне </h1>
+					<p class="header-text__subtitle">Оставьте заявку сейчас и узнайте, как получить  скидку до 20%  на тур
+					<div class="header__text-wrap-top">
+						<div class="header__text-wrap-right">
+							<p class="header__text-wrap-right-text">При бронировании до 31</p>
+							<p class="header__text-wrap-right-text">августа 2020 <span class="header-red">скидка
+									20%</span></p>
 						</div>
 					</div>
-					<div class="header-text__wrap header-text__wrap--catalog">
-						<div class="tours__item-span">
-							<span class="tours__item-span-text tours__item-span-text--blue">Популярное</span>
-						</div>
-						<h1 class="header-text__title">Охота на северное сияние</h1>
-						<div class="header__text-wrap-top">
-							<div class="header__text-wrap-left">
-								<span class="header__text-wrap-left-span">15 000 руб.</span>
-								<span class="header__text-wrap-left-span-small">12 000 руб.</span>
-							</div>
-							<div class="header__text-wrap-right">
-								<p class="header__text-wrap-right-text">При бронировании до 31</p>
-								<p class="header__text-wrap-right-text">августа 2020 <span class="header-red">скидка 20%</span></p>
-							</div>
-							<h1 class="header-text__title-bottom">Охота на северное сияние</h1>
-						</div>
+					<form class="callback-form callback-form--wrap" action="">
 						<div class="callback-form__wrap">
-							<button class="callback-form__submit callback-form__submit--head" type="submit">Подробнее о туре</button>
+							<input class="callback-form__input" type="tel" name="tel" placeholder="Введите ваш номер">
+							<button class="callback-form__submit" type="submit">Отправить</button>
 						</div>
-					</div>
-					<div class="header-text__wrap header-text__wrap--catalog">
-						<div class="tours__item-span">
-							<span class="tours__item-span-text tours__item-span-text--blue">Популярное</span>
-						</div>
-						<h1 class="header-text__title">Охота на северное сияние</h1>
-						<div class="header__text-wrap-top">
-							<div class="header__text-wrap-left">
-								<span class="header__text-wrap-left-span">15 000 руб.</span>
-								<span class="header__text-wrap-left-span-small">12 000 руб.</span>
-							</div>
-							<div class="header__text-wrap-right">
-								<p class="header__text-wrap-right-text">При бронировании до 31</p>
-								<p class="header__text-wrap-right-text">августа 2020 <span class="header-red">скидка 20%</span></p>
-							</div>
-							<h1 class="header-text__title-bottom">Охота на северное сияние</h1>
-						</div>
-						<div class="callback-form__wrap">
-							<button class="callback-form__submit callback-form__submit--head" type="submit">Подробнее о туре</button>
-						</div>
-					</div>
-					<div class="header-text__wrap header-text__wrap--catalog">
-						<div class="tours__item-span">
-							<span class="tours__item-span-text tours__item-span-text--blue">Популярное</span>
-						</div>
-						<h1 class="header-text__title">Охота на северное сияние</h1>
-						<div class="header__text-wrap-top">
-							<div class="header__text-wrap-left">
-								<span class="header__text-wrap-left-span">15 000 руб.</span>
-								<span class="header__text-wrap-left-span-small">12 000 руб.</span>
-							</div>
-							<div class="header__text-wrap-right">
-								<p class="header__text-wrap-right-text">При бронировании до 31</p>
-								<p class="header__text-wrap-right-text">августа 2020 <span class="header-red">скидка 20%</span></p>
-							</div>
-							<h1 class="header-text__title-bottom">Охота на северное сияние</h1>
-						</div>
-						<div class="callback-form__wrap">
-							<button class="callback-form__submit callback-form__submit--head" type="submit">Подробнее о туре</button>
-						</div>
-					</div>
-					<div class="header-text__wrap header-text__wrap--catalog">
-						<div class="tours__item-span">
-							<span class="tours__item-span-text tours__item-span-text--blue">Популярное</span>
-						</div>
-						<h1 class="header-text__title">Охота на северное сияние</h1>
-						<div class="header__text-wrap-top">
-							<div class="header__text-wrap-left">
-								<span class="header__text-wrap-left-span">15 000 руб.</span>
-								<span class="header__text-wrap-left-span-small">12 000 руб.</span>
-							</div>
-							<div class="header__text-wrap-right">
-								<p class="header__text-wrap-right-text">При бронировании до 31</p>
-								<p class="header__text-wrap-right-text">августа 2020 <span class="header-red">скидка 20%</span></p>
-							</div>
-							<h1 class="header-text__title-bottom">Охота на северное сияние</h1>
-						</div>
-						<div class="callback-form__wrap">
-							<button class="callback-form__submit callback-form__submit--head" type="submit">Подробнее о туре</button>
-						</div>
+						<p class="callback-form__privacy callback-form__privacy--rad">Нажав на кнопку «Отправить», вы даете согласие на
+							обработку <a class="callback-form__privacy-link" href="#">персональных данных</a> и
+							согласен с <a class="callback-form__privacy-link" href="#">политикой
+								конфиденциальности.</a></p>
+					</form>
+				</div>
+				<div class="header-text-video header-text-video--rad">
+					<div class="video-tours__item video-tours__item--small video-tours__item--tour openVideo">
+						<img class="video-tours__bg video-tours__bg--tour" src="/img/back-min-mob.png"
+							alt="Северное сияние">
+						<button class="video-tours__play video-tours__play--small video-tours__play--tour">
+							<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+						</button>
+						<p class="video-tours__p--tour">Посмотритe видео о туре<br> Охота на северное сияние</p>
+						<span class="video-tours__span--tour">01:30</span>
 					</div>
 				</div>
 			</div>
@@ -238,325 +179,369 @@
 
 
 	<main>
+        <div class="header-text-video-rad-mob">
+            <div class="video-tours__item video-tours__item--small video-tours__item--tour video-tours__item--rad openVideo">
+                <img class="video-tours__bg video-tours__bg--tour video-tours__bg--rad" src="/img/back-min-mob.png"
+                    alt="Саамская деревня">
+                <button class="video-tours__play video-tours__play--small video-tours__play--tour video-tours__play--rad">
+                    <img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+                </button>
+                <div class="inner-text-mob">
+                    <p class="video-tours__p--tour video-tours__p--rad">Посмотритe видео о туре<br> Охота на северное сияние</p>
+                </div>
+                <span class="video-tours__span--tour video-tours__span--rad">01:30</span>
+            </div>
+        </div>
 
-		<section class="breadcrumbs">
-			<div class="container">
-				<a class="breadcrumbs__link" href="/">Главная</a>
-				<a class="breadcrumbs__link breadcrumbs__link--active" href="#">Блог</a>
+<section class="radiance">
+	<div class="container">
+		<h2 class="radiance__title">О туре на северное сияние</h2>
+		<svg class="radiance-svg" width="93" height="8" viewBox="0 0 93 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M10.5 6.2222L16.7145 0L18.4901 1.77777L12.2756 7.99997L10.5 6.2222ZM21.0039 6.2222L27.2184 0L28.994 1.77777L22.7795 7.99997L21.0039 6.2222ZM37.7182 0L31.5036 6.2222L33.2792 7.99997L39.4937 1.77777L37.7182 0ZM42.0039 6.2222L48.2184 0L49.994 1.77777L43.7795 7.99997L42.0039 6.2222ZM58.7223 0L52.5078 6.2222L54.2834 7.99997L60.4979 1.77777L58.7223 0ZM63.0075 6.2222L69.222 0L70.9976 1.77777L64.7831 7.99997L63.0075 6.2222ZM79.723 0L73.5084 6.2222L75.284 7.99997L81.4986 1.77777L79.723 0ZM84.0117 6.2222L90.2263 0L92.0018 1.77777L85.7873 7.99997L84.0117 6.2222ZM6.21837 0.00388656L0 6.22226L1.77668 7.99893L7.99505 1.78056L6.21837 0.00388656Z" fill="url(#paint0_linear)"/>
+			<defs>
+			<linearGradient id="paint0_linear" x1="-62.1012" y1="3.99999" x2="136.469" y2="4" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FA3B3A"/>
+			<stop offset="1" stop-color="#FD7A7A"/>
+			</linearGradient>
+			</defs>
+			</svg>
+			
+		<div class="radiance__inner">
+			<div class="radiance__left">
+				<div class="radiance__left-top">
+				<div class="radiance__left-top-left">
+					<div class="radiance__item radiance__item--one">
+						<span class="radiance__item-text">Стоимость</span>
+						<p class="radiance__item-subtext">От <span class="radiance__red">4 990</span> руб/чел.</p>
+					</div>
+					<div class="radiance__item radiance__item--two">
+						<span class="radiance__item-text">Продолжительность</span>
+						<p class="radiance__item-subtext">3-6 часов</p>
+					</div>
+					<div class="radiance__item radiance__item--three">
+						<span class="radiance__item-text">Размер группы</span>
+						<p class="radiance__item-subtext">От 2 до 18 человек</p>
+					</div>
+				</div>	
+				<div class="radiance__left-top-right">
+					<div class="radiance__item radiance__item--four">
+						<span class="radiance__item-text">Сезонность</span>
+						<p class="radiance__item-subtext">С 1 сентября по 15 апреля</p>
+					</div>
+					<div class="radiance__item radiance__item--five">
+						<span class="radiance__item-text">Фотографии</span>
+						<p class="radiance__item-subtext">Пришлем в течении 24 часов</p>
+					</div>
+					<div class="radiance__item radiance__item--six">
+						<span class="radiance__item-text">Видео</span>
+						<p class="radiance__item-subtext">При высокой солнечной 
+							активности</p>
+					</div>
+				</div>	
+				</div>
+				<div class="radiance__left-bottom">
+					<div class="radiance__left-bottom-item radiance__left-bottom-item--one">
+						<span class="radiance__left-bottom-text">Гарантии</span>
+						<p class="radiance__left-bottom-subtext">Северное сияние — это природное явление, которое не всегда появляется в соответствии с прогнозами. Никакая компания, ученый или гид не может предоставить 100% гарантию,что вы увидите северное сияние в определенный вечер.</p>
+					</div>
+					<div class="radiance__left-bottom-item radiance__left-bottom-item--two">
+						<span class="radiance__left-bottom-text">Рекомендации</span>
+						<p class="radiance__left-bottom-subtext">Желательно планировать поездку в Мурманск минимум на 3 ночи. Необходимо дождаться ясной погоды в одной из частей Мурманской области.</p>
+					</div>
+				</div>
 			</div>
-		</section>
-
-		<div class="container">
-			<div class="title-sections title-sections--blog">
-				<h1 class="title-sections__title title-sections__title--reset">Блог о путешествиях
-				</h1>
+			<div class="radiance__right">
+				<h3 class="radiance__right-title">Оставьте заявку, чтобы узнать, как получить <span class="radiance__red">скидку до 20%</span> на этот тур! </h3>
+				<div class="image-inner">
+					<img class="radiance__right-image" src="/img/check-green.svg" alt="">
+				</div>
+				<p class="radiance__right-text">Предоплата за тур составляет всего 1000 
+					рублей с человека</p>
+					<div class="image-inner">
+						<img class="radiance__right-image" src="/img/check-green.svg" alt="">
+					</div>
+				<p class="radiance__right-text">Остальная оплата идёт после 
+					проведения тура</p>
+					<div class="image-inner">
+						<img class="radiance__right-image" src="/img/check-green.svg" alt="">
+					</div>
+				<p class="radiance__right-text">Оплатить можно наличными или по терминалу
+					вашей картой</p>
+				<form class="callback-form callback-form--wrap callback-form--rad" action="">
+					<div class="callback-form__wrap">
+						<input class="callback-form__input" type="tel" name="tel" placeholder="Введите ваш номер">
+						<button class="callback-form__submit" type="submit">Отправить</button>
+					</div>
+					<p class="callback-form__privacy callback-form__privacy--rad">Нажав на кнопку «Отправить», вы даете согласие на
+						обработку <a class="callback-form__privacy-link" href="#">персональных данных</a> и
+						согласен с <a class="callback-form__privacy-link" href="#">политикой
+							конфиденциальности.</a></p>
+				</form>
 			</div>
 		</div>
+		
+		
+	</div>
+</section>
 
-		<div class="blog">
-			<div class="container">
-				<div class="blog__wrap">
-          <button class="blog__cat-btn">Категории</button>
-					<div class="blog__left">
-						<div class="blog__sort">
-							<button class="blog__sort-button blog__sort-button--active">
-								<svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path class="blog__fire" fill-rule="evenodd" clip-rule="evenodd" d="M3.5 5.02199C4.91302 4.17803 5.92847 2.75708 6.21672 1.09204C6.26524 0.811729 6.56733 0.638468 6.81128 0.784801C8.81432 1.98631 10.15 4.14413 10.15 6.6063C10.15 7.11845 10.0922 7.61743 9.98264 8.09737C9.90988 8.41612 10.2004 8.70693 10.4859 8.54756C11.1117 8.19815 11.6164 7.66561 11.9231 7.02481C12.0572 6.7446 12.4377 6.64082 12.634 6.88163C13.4891 7.93085 14 9.25906 14 10.7037C14 13.2604 12.3997 15.4526 10.1229 16.3788C9.91594 16.4629 9.68406 16.4629 9.4771 16.3788C7.20033 15.4526 5.6 13.2604 5.6 10.7037C5.6 10.6344 5.5145 10.6006 5.46987 10.6536C4.67633 11.5964 4.2 12.803 4.2 14.1181C4.2 14.5181 4.24407 14.9081 4.32772 15.2837C4.39737 15.5964 4.12361 15.8972 3.8235 15.7851C1.58763 14.9502 0 12.8371 0 10.3622C0 8.18524 1.22845 6.28817 3.04597 5.29475L3.5 5.02199Z" fill="#c3c3c3"/>
-								</svg>
-								Популярные</button>
-							<button class="blog__sort-button">Старые</button>
-							<button class="blog__sort-button">Новые</button>
-						</div>
-						<div class="blog__list">
-							<a href="#" class="blog__item">
-								<div class="blog__img">
-									<img src="/img/blog/img.jpg" alt="">
-								</div>
-								<div class="blog__text">
-									<h2 class="blog__title">Отдых в Мурманске: Что посмотреть на Кольском полуострове?</h2>
-									<p class="blog__desc">ТОП-10 лучших мест для туризма в Мурманске и на Кольском полуострове. Отдых в Мурманской области, природные и рукотворные достопримечательности, горнолыжные курорты, туры к саамам</p>
-									<span class="blog__date">16 июля, 2020</span>
-								</div>
-              </a>
-              <a href="#" class="blog__item">
-								<div class="blog__img">
-									<img src="/img/blog/img.jpg" alt="">
-								</div>
-								<div class="blog__text">
-									<h2 class="blog__title">Отдых в Мурманске: Что посмотреть на Кольском полуострове?</h2>
-									<p class="blog__desc">ТОП-10 лучших мест для туризма в Мурманске и на Кольском полуострове. Отдых в Мурманской области, природные и рукотворные достопримечательности, горнолыжные курорты, туры к саамам</p>
-									<span class="blog__date">16 июля, 2020</span>
-								</div>
-              </a>
-              <a href="#" class="blog__item">
-								<div class="blog__img">
-									<img src="/img/blog/img.jpg" alt="">
-								</div>
-								<div class="blog__text">
-									<h2 class="blog__title">Отдых в Мурманске: Что посмотреть на Кольском полуострове?</h2>
-									<p class="blog__desc">ТОП-10 лучших мест для туризма в Мурманске и на Кольском полуострове. Отдых в Мурманской области, природные и рукотворные достопримечательности, горнолыжные курорты, туры к саамам</p>
-									<span class="blog__date">16 июля, 2020</span>
-								</div>
-              </a>
-              <a href="#" class="blog__item">
-								<div class="blog__img">
-									<img src="/img/blog/img.jpg" alt="">
-								</div>
-								<div class="blog__text">
-									<h2 class="blog__title">Отдых в Мурманске: Что посмотреть на Кольском полуострове?</h2>
-									<p class="blog__desc">ТОП-10 лучших мест для туризма в Мурманске и на Кольском полуострове. Отдых в Мурманской области, природные и рукотворные достопримечательности, горнолыжные курорты, туры к саамам</p>
-									<span class="blog__date">16 июля, 2020</span>
-								</div>
-              </a>
-              <a href="#" class="blog__item">
-								<div class="blog__img">
-									<img src="/img/blog/img.jpg" alt="">
-								</div>
-								<div class="blog__text">
-									<h2 class="blog__title">Отдых в Мурманске: Что посмотреть на Кольском полуострове?</h2>
-									<p class="blog__desc">ТОП-10 лучших мест для туризма в Мурманске и на Кольском полуострове. Отдых в Мурманской области, природные и рукотворные достопримечательности, горнолыжные курорты, туры к саамам</p>
-									<span class="blog__date">16 июля, 2020</span>
-								</div>
-              </a>
-              <a href="#" class="blog__item">
-								<div class="blog__img">
-									<img src="/img/blog/img.jpg" alt="">
-								</div>
-								<div class="blog__text">
-									<h2 class="blog__title">Отдых в Мурманске: Что посмотреть на Кольском полуострове?</h2>
-									<p class="blog__desc">ТОП-10 лучших мест для туризма в Мурманске и на Кольском полуострове. Отдых в Мурманской области, природные и рукотворные достопримечательности, горнолыжные курорты, туры к саамам</p>
-									<span class="blog__date">16 июля, 2020</span>
-								</div>
-              </a>
-              <a href="#" class="blog__item">
-								<div class="blog__img">
-									<img src="/img/blog/img.jpg" alt="">
-								</div>
-								<div class="blog__text">
-									<h2 class="blog__title">Отдых в Мурманске: Что посмотреть на Кольском полуострове?</h2>
-									<p class="blog__desc">ТОП-10 лучших мест для туризма в Мурманске и на Кольском полуострове. Отдых в Мурманской области, природные и рукотворные достопримечательности, горнолыжные курорты, туры к саамам</p>
-									<span class="blog__date">16 июля, 2020</span>
-								</div>
-              </a>
-              <a href="#" class="blog__item">
-								<div class="blog__img">
-									<img src="/img/blog/img.jpg" alt="">
-								</div>
-								<div class="blog__text">
-									<h2 class="blog__title">Отдых в Мурманске: Что посмотреть на Кольском полуострове?</h2>
-									<p class="blog__desc">ТОП-10 лучших мест для туризма в Мурманске и на Кольском полуострове. Отдых в Мурманской области, природные и рукотворные достопримечательности, горнолыжные курорты, туры к саамам</p>
-									<span class="blog__date">16 июля, 2020</span>
-								</div>
-              </a>
-              <a href="#" class="blog__item">
-								<div class="blog__img">
-									<img src="/img/blog/img.jpg" alt="">
-								</div>
-								<div class="blog__text">
-									<h2 class="blog__title">Отдых в Мурманске: Что посмотреть на Кольском полуострове?</h2>
-									<p class="blog__desc">ТОП-10 лучших мест для туризма в Мурманске и на Кольском полуострове. Отдых в Мурманской области, природные и рукотворные достопримечательности, горнолыжные курорты, туры к саамам</p>
-									<span class="blog__date">16 июля, 2020</span>
-								</div>
-              </a>
-              <a href="#" class="blog__item">
-								<div class="blog__img">
-									<img src="/img/blog/img.jpg" alt="">
-								</div>
-								<div class="blog__text">
-									<h2 class="blog__title">Отдых в Мурманске: Что посмотреть на Кольском полуострове?</h2>
-									<p class="blog__desc">ТОП-10 лучших мест для туризма в Мурманске и на Кольском полуострове. Отдых в Мурманской области, природные и рукотворные достопримечательности, горнолыжные курорты, туры к саамам</p>
-									<span class="blog__date">16 июля, 2020</span>
-								</div>
-              </a>
-              <a href="#" class="blog__item">
-								<div class="blog__img">
-									<img src="/img/blog/img.jpg" alt="">
-								</div>
-								<div class="blog__text">
-									<h2 class="blog__title">Отдых в Мурманске: Что посмотреть на Кольском полуострове?</h2>
-									<p class="blog__desc">ТОП-10 лучших мест для туризма в Мурманске и на Кольском полуострове. Отдых в Мурманской области, природные и рукотворные достопримечательности, горнолыжные курорты, туры к саамам</p>
-									<span class="blog__date">16 июля, 2020</span>
-								</div>
-              </a>
-              <div class="btn-pagination">
-                <button class="btn-pagination__arrow">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 15L4 8L10 1" stroke="#7B8997" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </button>
-                <button class="btn-pagination__center btn-pagination__center--active">1</button>
-                <button class="btn-pagination__center">2</button>
-                <button class="btn-pagination__center">3</button>
-                <button class="btn-pagination__center">4</button>
-                <button class="btn-pagination__arrow">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 1L12 8L6 15" stroke="#7B8997" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </button>
-              </div>
-						</div>
-					</div>
-					<div class="blog__right">
-						<div class="blog__cat">
-							<a class="blog__cat-item" href="#"> Главное в блоге<span class="blog_num">32</span></a>
-							<a class="blog__cat-item" href="#">Идеи путешествий<span class="blog_num">61</span></a>
-							<a class="blog__cat-item" href="#">Корпоративы<span class="blog_num">2</span></a>
-							<a class="blog__cat-item" href="#">Лекции о путешествиях<span class="blog_num">23</span></a>
-							<a class="blog__cat-item" href="#">Проверено на себе<span class="blog_num">25</span></a>
-							<a class="blog__cat-item" href="#">Развитие территорий<span class="blog_num">8</span></a>
-							<a class="blog__cat-item" href="#">Отзывы наших туристов<span class="blog_num">30</span></a>
-						</div>
-						<a href="#" class="article article--blog">
-							<h2 class="article__title">
-								Что такое северное сияние и как оно появляется
-							</h2>
-							<p class="article__text">
-								Consequat ad ullamco magna velit aliqua commodo amet aute commodo cupidatat non sunt.
-							</p>
-							<span class="article__link">Читать статью
-                <svg class="article__link__icon" width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g filter="url(#filter0_ii)">
-                  <ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="#0FC4AC"/>
-                  </g>
-                  <path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                  <defs>
-                  <filter id="filter0_ii" x="0" y="0" width="26" height="27" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dy="1"/>
-                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
-                  <feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dy="-1"/>
-                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
-                  <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow"/>
-                  </filter>
-                  </defs>
-                </svg> 
-              </span>
-						</a>
-						<div class="tags tags--blog">
-							<h2 class="tags__title"> 
-								Все теги:
-							</h2>
-							<div class="tags__wrap">
-								<a href="#" class="tags__item">#северноесияние</a>
-								<a href="#" class="tags__item">#мурманск</a>
-								<a href="#" class="tags__item">#КольскийПолуостров</a>
-								<a href="#" class="tags__item">#природа</a>
-								<a href="#" class="tags__item">#Териберка</a>
-							</div>
-						</div>
-					</div>
+<section class="photo-gallery">
+	<div class="container">
+		<div class="photo-gallery__text">
+			<h2 class="photo-gallery__title">Фотогалерея</h2>
+			<p class="photo-gallery__subtitle">Фотосессия на фоне северного сияния является обязательной частью нашего тура. Вы можете взять свою фотокамеру, 
+				гид поможет настроить её для съемки сияния. 
+				Также не забудьте штатив, т.к. все фотографии сияния делаются 
+				с выдержкой от 3-х секунд.</p>
+		</div>
+		<div class="photo-gallery__inner">
+			<div class="photo-gallery__left"></div>
+			<div class="photo-gallery__right">
+				<div class="photo-gallery__right-item photo-gallery__right-item--one"></div>
+				<div class="photo-gallery__right-item photo-gallery__right-item--two">
+					<button class="video-tours__play video-tours__play--small video-tours__play--tour video-tours__play--gallery">
+						<img class="video-tours__img video-tours__img--gallery" src="/img/play.svg" alt="Кнопка play">
+					</button>
+				</div>
+				<div class="photo-gallery__right-item photo-gallery__right-item--three"></div>
+				<div class="photo-gallery__right-item photo-gallery__right-item--four">
+					<button class="video-tours__play video-tours__play--small video-tours__play--tour video-tours__play--four">
+						Показать все фото
+					</button>
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
 
-    </div>
-    
-    <!-- <section class="request request--reviews request--blog">
-			<div class="container">
-				<div class="request__wrap">
-					<h3 class="request__title">Получите презентацию о том,
-						куда сходить в Мурманске</h3>
-				<p class="request__text">Топ-10 достопримечательностей</p>
-				<form class="request__form">
-					<div class="request__wrapper">
-						<input class="request__input" type="text" placeholder="Введите ваш Email">
-						<button class="request-btn">Отправить
-							<div class="request-btn-shadow"></div>
+
+<section class="radiance">
+	<div class="container">
+		<h2 class="radiance__title">Забронируйте поездку 
+			к северному сиянию</h2>
+		<svg class="radiance-svg radiance-svg--trip" width="93" height="8" viewBox="0 0 93 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M10.5 6.2222L16.7145 0L18.4901 1.77777L12.2756 7.99997L10.5 6.2222ZM21.0039 6.2222L27.2184 0L28.994 1.77777L22.7795 7.99997L21.0039 6.2222ZM37.7182 0L31.5036 6.2222L33.2792 7.99997L39.4937 1.77777L37.7182 0ZM42.0039 6.2222L48.2184 0L49.994 1.77777L43.7795 7.99997L42.0039 6.2222ZM58.7223 0L52.5078 6.2222L54.2834 7.99997L60.4979 1.77777L58.7223 0ZM63.0075 6.2222L69.222 0L70.9976 1.77777L64.7831 7.99997L63.0075 6.2222ZM79.723 0L73.5084 6.2222L75.284 7.99997L81.4986 1.77777L79.723 0ZM84.0117 6.2222L90.2263 0L92.0018 1.77777L85.7873 7.99997L84.0117 6.2222ZM6.21837 0.00388656L0 6.22226L1.77668 7.99893L7.99505 1.78056L6.21837 0.00388656Z" fill="url(#paint0_linear)"/>
+			<defs>
+			<linearGradient id="paint0_linear" x1="-62.1012" y1="3.99999" x2="136.469" y2="4" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FA3B3A"/>
+			<stop offset="1" stop-color="#FD7A7A"/>
+			</linearGradient>
+			</defs>
+			</svg>
+			
+		<div class="radiance__inner">
+			<div class="radiance__left radiance__left--trip">
+				<div class="radiance__left-bottom radiance__left-bottom--trip">
+					<div class="trip__top-text">
+						<h3 class="radiance__left-bottom-text radiance__left-bottom-text--trip">1 вечерний выезд:</h3>
+						<p class="radiance__left-bottom-subtext">Имеется спорная точка зрения, гласящая примерно<br> 
+							следующее: ключевые особенности структуры проекта,<br> 
+							которые представляют собой яркий пример</p>
+					</div>
+				</div>
+				<div class="radiance__left-top radiance__left-top--trip">
+				<div class="radiance__left-top-left">
+					<div class="radiance__item radiance__item--one radiance__item--trip">
+						<span class="radiance__item-text radiance__item-text--trip">Стоимость</span>
+						<p class="radiance__item-subtext radiance__item-subtext--trip">От <span class="radiance__red">4 990</span> руб/чел.</p>
+					</div>
+					<div class="radiance__item radiance__item--two radiance__item--trip">
+						<span class="radiance__item-text radiance__item-text--trip">Продолжительность</span>
+						<p class="radiance__item-subtext radiance__item-subtext--trip">3-6 часов</p>
+					</div>
+					<div class="radiance__item radiance__item--three radiance__item--trip">
+						<span class="radiance__item-text radiance__item-text--trip">Размер группы</span>
+						<p class="radiance__item-subtext radiance__item-subtext--trip">От 2 до 18 человек</p>
+					</div>
+				</div>	
+				<div class="radiance__left-top-right">
+					<div class="radiance__item radiance__item--four radiance__item--trip">
+						<span class="radiance__item-text radiance__item-text--trip">Сезонность</span>
+						<p class="radiance__item-subtex radiance__item-subtext--trip">С 1 сентября по 15 апреля</p>
+					</div>
+					<div class="radiance__item radiance__item--five radiance__item--trip">
+						<span class="radiance__item-text radiance__item-text--trip">Фото/Видео-съемка</span>
+						<p class="radiance__item-subtext radiance__item-subtext--trip">Включена в стоимость</p>
+					</div>
+				</div>	
+				</div>
+			</div>
+			<div class="trip__right-inner">
+				<h3 class="radiance__left-bottom-text radiance__left-bottom-text--trip">Пакетные туры с северным сиянием</h3>
+				<div class="radiance__right radiance__right--trip radiance__right--onetrip">
+					<div class="trip__inner-text-item">
+						<h4 class="radiance__right-title radiance__right-title--trip">Териберка - Северное сияние<br> - Саамская деревня</h4>
+						<p class="trip__text-item">от <span class="trip__white">10 000 руб</span>· 4 дня</p>
+					</div>
+					<div class="trip__inner-btn">
+						<button class="video-tours__play video-tours__play--small video-tours__play--tour video-tours__play--four video-tours__play--trip">
+							Подробнее
 						</button>
 					</div>
-					<p class="request__desc">
-						Нажав на кнопку «Отправить», вы даете согласие на обработку <a class="privacy-link" href="#">персональных данных</a> и <a class="privacy-link	href="#">согласен с политикой конфиденциальности.</a>
-					</p>
-				</form>
+				</div>
+				<div class="radiance__right radiance__right--trip radiance__right--twotrip">
+					<div class="trip__inner-text-item">
+						<h4 class="radiance__right-title radiance__right-title--trip">Териберка - Северное сияние<br> - Саамская деревня</h4>
+						<p class="trip__text-item">от <span class="trip__white">10 000 руб</span>· 4 дня</p>
+					</div>
+					<div class="trip__inner-btn">
+						<button class="video-tours__play video-tours__play--small video-tours__play--tour video-tours__play--four video-tours__play--trip">
+							Подробнее
+						</button>
+					</div>
+				</div>
+				<div class="radiance__right radiance__right--trip radiance__right--threetrip">
+					<div class="trip__inner-text-item">
+						<h4 class="radiance__right-title radiance__right-title--trip">Териберка - Северное сияние<br> - Саамская деревня</h4>
+						<p class="trip__text-item">от <span class="trip__white">10 000 руб</span>· 4 дня</p>
+					</div>
+					<div class="trip__inner-btn">
+						<button class="video-tours__play video-tours__play--small video-tours__play--tour video-tours__play--four video-tours__play--trip">
+							Подробнее
+						</button>
+					</div>
+				</div>
+				<div class="radiance__right radiance__right--trip radiance__right--fourtrip">
+					<div class="trip__inner-text-item">
+						<h4 class="radiance__right-title radiance__right-title--trip">Териберка - Северное сияние<br> - Саамская деревня</h4>
+						<p class="trip__text-item">от <span class="trip__white">10 000 руб</span>· 4 дня</p>
+					</div>
+					<div class="trip__inner-btn">
+						<button class="video-tours__play video-tours__play--small video-tours__play--tour video-tours__play--four video-tours__play--trip">
+							Подробнее
+						</button>
+					</div>
+				</div>
+				<div class="radiance__right radiance__right--trip radiance__right--fivetrip">
+					<div class="trip__inner-text-item">
+						<h4 class="radiance__right-title radiance__right-title--trip">Териберка - Северное сияние<br> - Саамская деревня</h4>
+						<p class="trip__text-item">от <span class="trip__white">10 000 руб</span>· 4 дня</p>
+					</div>
+					<div class="trip__inner-btn">
+						<button class="video-tours__play video-tours__play--small video-tours__play--tour video-tours__play--four video-tours__play--trip">
+							Подробнее
+						</button>
+					</div>
 				</div>
 			</div>
-    </section> -->
-    
-    <section class="request request--reviews request--blog">
-			<div class="container">
-				<div class="request__wrap">
-					<h3 class="request__title request__title--max">Получите презентацию о том,
-						куда сходить в Мурманске</h3>
-					<p class="request__text">Топ-10 достопримечательностей</p>
-					<form class="request__form">
-						<div class="request__wrapper">
-							<input class="request__input" type="text" placeholder="Введите ваш Email">
-							<button class="btn-orange-shadow btn-orange-shadow--reviews btn-orange-shadow--request" type="submit">
-								<span class="btn-orange-shadow__text btn-orange-shadow__text--reviews btn-orange-shadow__text--request">
-									Отправить
-								</span>
-								<div class="btn-orange-shadow__shadow btn-orange-shadow__shadow--request"></div>
-							</button>
-						</div>
-						<p class="request__desc">
-							Нажав на кнопку «Отправить», вы даете согласие на обработку <a class="privacy-link" href="#">персональных
-								данных</a> и <a class="privacy-link	href=" #">согласен с политикой конфиденциальности.</a>
-						</p>
+		</div>
+	</div>
+</section>
+
+		<!-- Рассчитать стоимость поездки -->
+		<section class="travel-price travel-price--catalog">
+			<div class="travel-price__inner">
+				<div class="container container--travel">
+					<h2 class="travel-price__title travel-price__title--catalog">Давайте мы поможем с выбором?</h2>
+					<p class="travel-price__text">Не следует, однако, забывать, что граница обучения кадров обеспечивает актуальность анализа существующих</p>
+					<form class="callback-form--travel" action="">
+						<input class="callback-form__input callback-form__input--travel" type="tel" name="tel"
+							placeholder="Введите ваш номер">
+						<button class="callback-form__submit callback-form__submit--travel" type="submit">Отправить</button>
 					</form>
+					<p class="travel-price__subtext travel-price__subtext--catalog">Нажав на кнопку «Отправить», вы даете согласие на обработку персональных данных и согласен с политикой конфиденциальности.</p>
 				</div>
 			</div>
 		</section>
+		<!-- Рассчитать стоимость поездки -->
 
-    <section class="subscribe-instagram">
+<section class="advantages">
+	<div class="container">
+		<h2 class="advantages__title">Наши преимущества</h2>
+		<div class="advantages__items">
+			<div class="advantages__item">
+				<img class="advantages__image" src="/img/rus.svg" alt="">
+				<div class="advantages__item-inner">
+					<p class="advantages__text">Не являемся посредником</p>
+					<p class="advantages__subtext">Мы являемся организаторами, поэтому никаких наценок и переплат</p>
+				</div>
+			</div>
+			<div class="advantages__item">
+				<img class="advantages__image" src="/img/centerr.svg" alt="">
+				<div class="advantages__item-inner">
+					<p class="advantages__text">Разнообразие туров</p>
+					<p class="advantages__subtext">Которые организовываем сами. На сайте 
+						более 100 туров</p>
+				</div>
+			</div>
+			<div class="advantages__item">
+				<img class="advantages__image" src="/img/jeep.svg" alt="">
+				<div class="advantages__item-inner">
+					<p class="advantages__text">Профессиональные гиды</p>
+					<p class="advantages__subtext">Опытные и профессиональные гиды 
+						с хорошей репутацией</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+		<!-- Мы в instagram -->
+		<section class="subscribe-instagram">
 			<div class="container">
 				<div class="subscribe-instagram__communication">
-					<h2 class="subscribe-instagram__title">Мы в instagram<a class="subscribe-instagram__url" href="#">@northernlightstour</a></h2>
+					<h2 class="subscribe-instagram__title">Мы в instagram<a class="subscribe-instagram__url"
+							href="#">@northernlightstour</a></h2>
 				</div>
 			</div>
 			<div class="container--inst">
 				<div class="subscribe-instagram__items">
 					<div class="subscribe-instagram__item">
 						<div class="subscribe-instagram__left">
-							<img class="subscribe-instagram__left-img" src="/img/people_on_aurora_borealis_background.jpg" alt="Люди и северное сияние">
+							<img class="subscribe-instagram__left-img"
+								src="/img/people_on_aurora_borealis_background.jpg" alt="Люди и северное сияние">
 						</div>
 						<div class="subscribe-instagram__right">
-							<img class="subscribe-instagram__right-img subscribe-instagram__right-img--small" src="/img/lachuga.jpg" alt="Дом и северное сияние">
-							<img class="subscribe-instagram__right-img subscribe-instagram__right-img--small" src="/img/northern_sky.jpg" alt="Северное сияние">
+							<img class="subscribe-instagram__right-img subscribe-instagram__right-img--small"
+								src="/img/lachuga.jpg" alt="Дом и северное сияние">
+							<img class="subscribe-instagram__right-img subscribe-instagram__right-img--small"
+								src="/img/northern_sky.jpg" alt="Северное сияние">
 						</div>
 					</div>
 					<div class="subscribe-instagram__item">
 						<div class="subscribe-instagram__left subscribe-instagram__left--tablet">
-							<img class="subscribe-instagram__left-img" src="/img/inst4.jpg" alt="Люди и северное сияние">
+							<img class="subscribe-instagram__left-img" src="/img/inst4.jpg"
+								alt="Люди и северное сияние">
 						</div>
 					</div>
 					<div class="subscribe-instagram__item">
 						<div class="subscribe-instagram__right">
-							<img class="subscribe-instagram__right-img subscribe-instagram__right-img--small" src="/img/inst5.jpg" alt="Дом и северное сияние">
-							<img class="subscribe-instagram__right-img subscribe-instagram__right-img--small" src="/img/inst6.jpg" alt="Северное сияние">
+							<img class="subscribe-instagram__right-img subscribe-instagram__right-img--small"
+								src="/img/inst5.jpg" alt="Дом и северное сияние">
+							<img class="subscribe-instagram__right-img subscribe-instagram__right-img--small"
+								src="/img/inst6.jpg" alt="Северное сияние">
 						</div>
 					</div>
 					<div class="subscribe-instagram__item">
 						<div class="subscribe-instagram__left subscribe-instagram__left--tablet">
-							<img class="subscribe-instagram__left-img" src="/img/inst7.jpg" alt="Люди и северное сияние">
+							<img class="subscribe-instagram__left-img" src="/img/inst7.jpg"
+								alt="Люди и северное сияние">
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="container subscribe-instagram__subtitle">
 				<p class="subscribe-instagram__description">Сотни фотографий северного сияния и Кольского полуострова
-					собраны <br> в нашем Instagram</p>
+					собраны </br> в нашем Instagram</p>
 				<a class="btn-link subscribe-instagram__link" href="#">
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M5.45122 3.0245C4.79268 3.28065 4.23577 3.62218 3.67886 4.1792C3.12195 4.73216 2.78049 5.29325 2.52439 5.94785C2.27642 6.58213 2.10976 7.30992 2.06098 8.37518C2.0122 9.44043 2 9.78197 2 12.498C2 15.214 2.0122 15.5555 2.06098 16.6208C2.10976 17.686 2.28049 18.4138 2.52439 19.0481C2.78049 19.7067 3.12195 20.2638 3.67886 20.8208C4.23577 21.3778 4.79268 21.7194 5.45122 21.9755C6.08537 22.2235 6.81301 22.3902 7.87805 22.439C8.94309 22.4878 9.28455 22.5 12 22.5C14.7154 22.5 15.0569 22.4878 16.122 22.439C17.187 22.3902 17.9146 22.2195 18.5488 21.9755C19.2073 21.7194 19.7642 21.3778 20.3211 20.8208C20.878 20.2638 21.2195 19.7067 21.4756 19.0481C21.7236 18.4138 21.8902 17.686 21.939 16.6208C21.9878 15.5555 22 15.214 22 12.498C22 9.78197 21.9878 9.44043 21.939 8.37518C21.8902 7.30992 21.7195 6.58213 21.4756 5.94785C21.2195 5.29325 20.878 4.73216 20.3252 4.1792C19.7683 3.62218 19.2114 3.28065 18.5528 3.0245C17.9187 2.77648 17.1911 2.60978 16.126 2.56099C15.061 2.5122 14.7195 2.5 12.0041 2.5C9.28862 2.5 8.94715 2.5122 7.88211 2.56099C6.81301 2.60571 6.08537 2.77648 5.45122 3.0245ZM16.0406 4.3581C17.0163 4.40283 17.5447 4.56546 17.8984 4.7037C18.3659 4.88666 18.6992 5.10215 19.0488 5.45182C19.3984 5.80148 19.6138 6.13488 19.7967 6.60246C19.935 6.95619 20.0976 7.48475 20.1423 8.46056C20.1911 9.51362 20.1992 9.83076 20.1992 12.502C20.1992 15.1733 20.187 15.4904 20.1423 16.5435C20.0976 17.5193 19.935 18.0479 19.7967 18.4016C19.6138 18.8692 19.3984 19.2026 19.0488 19.5522C18.6992 19.9019 18.3659 20.1174 17.8984 20.3004C17.5447 20.4386 17.0163 20.6012 16.0406 20.646C14.9878 20.6948 14.6707 20.7029 12 20.7029C9.32927 20.7029 9.0122 20.6907 7.95935 20.646C6.98374 20.6012 6.45528 20.4386 6.10163 20.3004C5.63415 20.1174 5.30081 19.9019 4.95122 19.5522C4.60163 19.2026 4.38618 18.8692 4.20325 18.4016C4.06504 18.0479 3.90244 17.5193 3.85772 16.5435C3.80894 15.4904 3.80081 15.1733 3.80081 12.502C3.80081 9.83076 3.81301 9.51362 3.85772 8.46056C3.90244 7.48475 4.06504 6.95619 4.20325 6.60246C4.38618 6.13488 4.60163 5.80148 4.95122 5.45182C5.30081 5.10215 5.63415 4.88666 6.10163 4.7037C6.45528 4.56546 6.98374 4.40283 7.95935 4.3581C9.0122 4.30931 9.32927 4.30118 12 4.30118C14.6707 4.30118 14.9878 4.30931 16.0406 4.3581Z" fill="white"></path>
-						<path d="M7 12.5C7 15.2633 9.2407 17.5 12 17.5C14.7593 17.5 17 15.2593 17 12.5C17 9.7407 14.7633 7.5 12 7.5C9.23674 7.5 7 9.73674 7 12.5ZM15.2462 12.5C15.2462 14.2933 13.7933 15.7462 12 15.7462C10.2067 15.7462 8.75376 14.2933 8.75376 12.5C8.75376 10.7067 10.2067 9.25376 12 9.25376C13.7933 9.25376 15.2462 10.7067 15.2462 12.5Z" fill="white"></path>
-						<path d="M17 8.5C17.5523 8.5 18 8.05228 18 7.5C18 6.94772 17.5523 6.5 17 6.5C16.4477 6.5 16 6.94772 16 7.5C16 8.05228 16.4477 8.5 17 8.5Z" fill="white"></path>
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M16 0C7.16347 0 0 7.16347 0 16C0 24.8365 7.16347 32 16 32C24.8365 32 32 24.8365 32 16C32 7.16347 24.8365 0 16 0ZM12.4822 7.5182C13.3924 7.4768 13.6833 7.46667 16.0008 7.46667H15.9981C18.3164 7.46667 18.6061 7.4768 19.5164 7.5182C20.4249 7.5598 21.0453 7.70367 21.5893 7.91467C22.1511 8.13247 22.6257 8.424 23.1004 8.89867C23.5751 9.373 23.8667 9.84907 24.0853 10.4103C24.2951 10.9529 24.4391 11.573 24.4818 12.4815C24.5227 13.3917 24.5333 13.6825 24.5333 16.0001C24.5333 18.3176 24.5227 18.6077 24.4818 19.518C24.4391 20.4261 24.2951 21.0463 24.0853 21.5891C23.8667 22.1502 23.5751 22.6263 23.1004 23.1006C22.6263 23.5753 22.1509 23.8675 21.5899 24.0855C21.0469 24.2965 20.4261 24.4403 19.5177 24.4819C18.6074 24.5234 18.3175 24.5335 15.9997 24.5335C13.6824 24.5335 13.3917 24.5234 12.4815 24.4819C11.5732 24.4403 10.9529 24.2965 10.41 24.0855C9.84907 23.8675 9.373 23.5753 8.89887 23.1006C8.42433 22.6263 8.1328 22.1502 7.91467 21.5889C7.7038 21.0463 7.56 20.4263 7.5182 19.5178C7.477 18.6076 7.46667 18.3176 7.46667 16.0001C7.46667 13.6825 7.47733 13.3915 7.51807 12.4813C7.55893 11.5732 7.70293 10.9529 7.91447 10.4101C8.13313 9.84907 8.42473 9.373 8.8994 8.89867C9.37373 8.4242 9.8498 8.1326 10.4111 7.91467C10.9537 7.70367 11.5737 7.5598 12.4822 7.5182Z"
+							fill="white" />
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M15.2341 9.00409C15.3828 9.00389 15.5428 9.00395 15.7155 9.00402L16.0001 9.00409C18.28 9.00409 18.5502 9.01229 19.4505 9.05319C20.2831 9.09129 20.7349 9.23039 21.0359 9.34728C21.4344 9.50207 21.7184 9.68714 22.0172 9.98604C22.316 10.2849 22.501 10.5696 22.6562 10.9681C22.7731 11.2688 22.9123 11.7207 22.9502 12.5533C22.9911 13.4536 23 13.724 23 16.0031C23 18.2822 22.9911 18.5526 22.9502 19.4529C22.9121 20.2855 22.7731 20.7374 22.6562 21.0381C22.5014 21.4366 22.316 21.7204 22.0172 22.0191C21.7183 22.318 21.4345 22.5031 21.0359 22.6579C20.7353 22.7753 20.2831 22.9141 19.4505 22.9521C18.5504 22.9931 18.28 23.002 16.0001 23.002C13.7201 23.002 13.4498 22.9931 12.5497 22.9521C11.7171 22.9137 11.2653 22.7746 10.9641 22.6577C10.5657 22.5029 10.281 22.3178 9.98216 22.0189C9.6833 21.72 9.49832 21.4361 9.34315 21.0374C9.22628 20.7368 9.08699 20.2848 9.0491 19.4522C9.00821 18.552 9 18.2815 9 16.001C9 13.7205 9.00821 13.4515 9.0491 12.5512C9.08719 11.7186 9.22628 11.2667 9.34315 10.9656C9.49792 10.5671 9.6833 10.2825 9.98216 9.98357C10.281 9.68467 10.5657 9.4996 10.9641 9.34448C11.2651 9.22706 11.7171 9.08829 12.5497 9.04999C13.3374 9.01443 13.6427 9.00375 15.2341 9.00195V9.00409ZM20.5581 10.4221C19.9924 10.4221 19.5334 10.8806 19.5334 11.4465C19.5334 12.0123 19.9924 12.4713 20.5581 12.4713C21.1238 12.4713 21.5828 12.0123 21.5828 11.4465C21.5828 10.8808 21.1238 10.4221 20.5581 10.4221ZM11.6151 16.0051C11.6151 13.5832 13.5783 11.6195 15.9999 11.6195C18.4216 11.6195 20.3845 13.5831 20.3845 16.0051C20.3845 18.4271 18.4217 20.3898 16.0001 20.3898C13.5785 20.3898 11.6151 18.4271 11.6151 16.0051Z"
+							fill="white" />
+						<circle cx="15.9219" cy="15.9209" r="3" fill="white" />
 					</svg>
 					Подписаться
 				</a>
 			</div>
 		</section>
-		
-
+		<!-- /Мы в instagram -->
 	</main>
 
 
 
-	<footer class="footer-images">
+	<footer>
 		<div class="desktop-footer">
 			<div class="container">
 				<div class="desktop-footer__top">
@@ -568,28 +553,34 @@
 					</div>
 					<div class="socials--tablet">
 						<a class="socials__link" href="#">
-							<svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path class="mobile-footer__social mobile-footer__social--vk" fill-rule="evenodd" clip-rule="evenodd"
+							<svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="mobile-footer__social mobile-footer__social--vk" fill-rule="evenodd"
+									clip-rule="evenodd"
 									d="M15.68 0C22.4 0 24 1.53333 24 7.97333V15.0267C24 21.4667 22.4 23 15.68 23H8.32C1.6 23 0 21.4667 0 15.0267V7.97333C0 1.53333 1.6 0 8.32 0H15.68ZM6.5 7.1875H4.75C4.25 7.1875 4.15 7.4175 4.15 7.65708C4.15 8.1075 4.74 10.3117 6.91 13.225C7.48407 14.104 8.26729 14.8402 9.19548 15.3733C10.1237 15.9063 11.1704 16.221 12.25 16.2917C13.36 16.2917 13.5 16.0521 13.5 15.64V14.1354C13.5 13.6562 13.61 13.5604 13.96 13.5604C14.31 13.5604 14.66 13.685 15.7 14.6433C16.89 15.7837 17.08 16.2917 17.75 16.2917H19.5C20 16.2917 20.25 16.0521 20.11 15.5825C19.7374 14.8514 19.2368 14.1869 18.63 13.6179C18.22 13.1483 17.63 12.6596 17.42 12.4104C17.21 12.1612 17.24 11.9408 17.42 11.6629C18.3467 10.4692 19.1378 9.18415 19.78 7.82958C19.89 7.475 19.78 7.21625 19.25 7.21625H17.5C17.3378 7.20771 17.177 7.24852 17.0405 7.33287C16.904 7.41721 16.7988 7.54075 16.74 7.68583C16.1977 8.92185 15.4737 10.0772 14.59 11.1167C14.18 11.5096 13.99 11.6342 13.77 11.6342C13.55 11.6342 13.5 11.5096 13.5 11.155V7.80083C13.5 7.37917 13.37 7.1875 13 7.1875H10.25C10.1376 7.18223 10.0274 7.21942 9.94331 7.2911C9.85917 7.36277 9.80772 7.4632 9.8 7.57083C9.8 7.97333 10.44 8.06917 10.5 9.20958V11.6725C10.5 12.2187 10.4 12.3146 10.18 12.3146C9.58 12.3146 8.18 10.2254 7.28 7.83917C7.12 7.37917 7 7.1875 6.5 7.1875Z"
 									fill="white"></path>
 							</svg>
 						</a>
 						<a class="socials__link" href="#">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path class="mobile-footer__social mobile-footer__social--face" fill-rule="evenodd" clip-rule="evenodd"
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="mobile-footer__social mobile-footer__social--face" fill-rule="evenodd"
+									clip-rule="evenodd"
 									d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07812V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z"
 									fill="white"></path>
 							</svg>
 						</a>
 						<a class="socials__link" href="#">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
 								<path class="mobile-footer__social mobile-footer__social--insta"
 									d="M14.3854 0C17.7286 0 18.9409 0.348096 20.1632 1.00175C21.3854 1.6554 22.3446 2.61461 22.9983 3.83683C23.6519 5.05905 24 6.27137 24 9.61457V14.3854C24 17.7286 23.6519 18.9409 22.9983 20.1632C22.3446 21.3854 21.3854 22.3446 20.1632 22.9983C18.9409 23.6519 17.7286 24 14.3854 24H9.61457C6.27137 24 5.05905 23.6519 3.83683 22.9983C2.61461 22.3446 1.6554 21.3854 1.00175 20.1632C0.348096 18.9409 0 17.7286 0 14.3854L0 9.61457C0 6.27137 0.348096 5.05905 1.00175 3.83683C1.6554 2.61461 2.61461 1.6554 3.83683 1.00175C5.05905 0.348096 6.27137 0 9.61457 0L14.3854 0ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5ZM18 4.5C17.1716 4.5 16.5 5.17157 16.5 6C16.5 6.82843 17.1716 7.5 18 7.5C18.8284 7.5 19.5 6.82843 19.5 6C19.5 5.17157 18.8284 4.5 18 4.5Z"
 									fill="white"></path>
 							</svg>
 						</a>
 						<a class="socials__link" href="#">
-							<svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg width="24" height="17" viewBox="0 0 24 17" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
 								<path class="mobile-footer__social mobile-footer__social--youtube" fill-rule="evenodd"
 									clip-rule="evenodd"
 									d="M21.377 0.506137C22.4117 0.788182 23.2249 1.61114 23.4998 2.65432C24 4.5475 24 8.5 24 8.5C24 8.5 24 12.4525 23.4998 14.3457C23.2211 15.3927 22.4079 16.2157 21.377 16.4939C19.5062 17 12 17 12 17C12 17 4.49761 17 2.62297 16.4939C1.58829 16.2118 0.775056 15.3889 0.500159 14.3457C0 12.4525 0 8.5 0 8.5C0 8.5 0 4.5475 0.500159 2.65432C0.778874 1.60727 1.59211 0.784318 2.62297 0.506137C4.49761 0 12 0 12 0C12 0 19.5062 0 21.377 0.506137ZM15.6025 8.49959L9.60254 12.143V4.85618L15.6025 8.49959Z"
@@ -605,7 +596,8 @@
 								<a class="contacts__phone" href="tel:+79995215100">+7 (999) 521-51-00</a>
 								<div class="contacts__social-inner">
 									<a class="contacts__social contacts__social--footer" href="#">
-										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C8.65196 20 7.3398 19.7327 6.12278 19.2203C5.643 19.0184 3.99927 19.1447 1.41552 19.6683L0.0796503 19.939L0.447606 18.6266C1.08725 16.3451 1.27061 14.896 1.09953 14.5629C0.380417 13.1628 0 11.6078 0 10C0 4.47715 4.47715 0 10 0Z"
 												fill="#24D46F" />
@@ -615,16 +607,19 @@
 										</svg>
 									</a>
 									<a class="contacts__social contacts__social--footer" href="#">
-										<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9.625 0C4.44408 0 0.25 4.05 0.25 9C0.25 11.6 1.38487 13.9 3.21053 15.55V20L7.05921 17.65C7.84868 17.85 8.73684 18 9.625 18C14.8059 18 19 13.95 19 9C19 4.05 14.8059 0 9.625 0Z"
 												fill="#448AFF" />
-											<path d="M4 12.5L8.6875 6.25L11.0312 9.09091L15.25 6.25L10.5625 12.5L8.21875 9.65909L4 12.5Z"
+											<path
+												d="M4 12.5L8.6875 6.25L11.0312 9.09091L15.25 6.25L10.5625 12.5L8.21875 9.65909L4 12.5Z"
 												fill="white" />
 										</svg>
 									</a>
 									<a class="contacts__social contacts__social--footer" href="#">
-										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10Z"
 												fill="#0088CC" />
@@ -780,28 +775,34 @@
 
 					<div class="socials">
 						<a class="socials__link" href="#">
-							<svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path class="mobile-footer__social mobile-footer__social--vk" fill-rule="evenodd" clip-rule="evenodd"
+							<svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="mobile-footer__social mobile-footer__social--vk" fill-rule="evenodd"
+									clip-rule="evenodd"
 									d="M15.68 0C22.4 0 24 1.53333 24 7.97333V15.0267C24 21.4667 22.4 23 15.68 23H8.32C1.6 23 0 21.4667 0 15.0267V7.97333C0 1.53333 1.6 0 8.32 0H15.68ZM6.5 7.1875H4.75C4.25 7.1875 4.15 7.4175 4.15 7.65708C4.15 8.1075 4.74 10.3117 6.91 13.225C7.48407 14.104 8.26729 14.8402 9.19548 15.3733C10.1237 15.9063 11.1704 16.221 12.25 16.2917C13.36 16.2917 13.5 16.0521 13.5 15.64V14.1354C13.5 13.6562 13.61 13.5604 13.96 13.5604C14.31 13.5604 14.66 13.685 15.7 14.6433C16.89 15.7837 17.08 16.2917 17.75 16.2917H19.5C20 16.2917 20.25 16.0521 20.11 15.5825C19.7374 14.8514 19.2368 14.1869 18.63 13.6179C18.22 13.1483 17.63 12.6596 17.42 12.4104C17.21 12.1612 17.24 11.9408 17.42 11.6629C18.3467 10.4692 19.1378 9.18415 19.78 7.82958C19.89 7.475 19.78 7.21625 19.25 7.21625H17.5C17.3378 7.20771 17.177 7.24852 17.0405 7.33287C16.904 7.41721 16.7988 7.54075 16.74 7.68583C16.1977 8.92185 15.4737 10.0772 14.59 11.1167C14.18 11.5096 13.99 11.6342 13.77 11.6342C13.55 11.6342 13.5 11.5096 13.5 11.155V7.80083C13.5 7.37917 13.37 7.1875 13 7.1875H10.25C10.1376 7.18223 10.0274 7.21942 9.94331 7.2911C9.85917 7.36277 9.80772 7.4632 9.8 7.57083C9.8 7.97333 10.44 8.06917 10.5 9.20958V11.6725C10.5 12.2187 10.4 12.3146 10.18 12.3146C9.58 12.3146 8.18 10.2254 7.28 7.83917C7.12 7.37917 7 7.1875 6.5 7.1875Z"
 									fill="white"></path>
 							</svg>
 						</a>
 						<a class="socials__link" href="#">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path class="mobile-footer__social mobile-footer__social--face" fill-rule="evenodd" clip-rule="evenodd"
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="mobile-footer__social mobile-footer__social--face" fill-rule="evenodd"
+									clip-rule="evenodd"
 									d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07812V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z"
 									fill="white"></path>
 							</svg>
 						</a>
 						<a class="socials__link" href="#">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
 								<path class="mobile-footer__social mobile-footer__social--insta"
 									d="M14.3854 0C17.7286 0 18.9409 0.348096 20.1632 1.00175C21.3854 1.6554 22.3446 2.61461 22.9983 3.83683C23.6519 5.05905 24 6.27137 24 9.61457V14.3854C24 17.7286 23.6519 18.9409 22.9983 20.1632C22.3446 21.3854 21.3854 22.3446 20.1632 22.9983C18.9409 23.6519 17.7286 24 14.3854 24H9.61457C6.27137 24 5.05905 23.6519 3.83683 22.9983C2.61461 22.3446 1.6554 21.3854 1.00175 20.1632C0.348096 18.9409 0 17.7286 0 14.3854L0 9.61457C0 6.27137 0.348096 5.05905 1.00175 3.83683C1.6554 2.61461 2.61461 1.6554 3.83683 1.00175C5.05905 0.348096 6.27137 0 9.61457 0L14.3854 0ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5ZM18 4.5C17.1716 4.5 16.5 5.17157 16.5 6C16.5 6.82843 17.1716 7.5 18 7.5C18.8284 7.5 19.5 6.82843 19.5 6C19.5 5.17157 18.8284 4.5 18 4.5Z"
 									fill="white"></path>
 							</svg>
 						</a>
 						<a class="socials__link" href="#">
-							<svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg width="24" height="17" viewBox="0 0 24 17" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
 								<path class="mobile-footer__social mobile-footer__social--youtube" fill-rule="evenodd"
 									clip-rule="evenodd"
 									d="M21.377 0.506137C22.4117 0.788182 23.2249 1.61114 23.4998 2.65432C24 4.5475 24 8.5 24 8.5C24 8.5 24 12.4525 23.4998 14.3457C23.2211 15.3927 22.4079 16.2157 21.377 16.4939C19.5062 17 12 17 12 17C12 17 4.49761 17 2.62297 16.4939C1.58829 16.2118 0.775056 15.3889 0.500159 14.3457C0 12.4525 0 8.5 0 8.5C0 8.5 0 4.5475 0.500159 2.65432C0.778874 1.60727 1.59211 0.784318 2.62297 0.506137C4.49761 0 12 0 12 0C12 0 19.5062 0 21.377 0.506137ZM15.6025 8.49959L9.60254 12.143V4.85618L15.6025 8.49959Z"
@@ -919,7 +920,8 @@
 							<a class="contacts__phone contacts__phone--mobile" href="tel:+79995215100">+7 (999)
 								521-51-00</a>
 							<a class="contacts__social contacts__social--mobile" href="#">
-								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C6.92157 16 5.87184 15.7861 4.89823 15.3763C4.5144 15.2147 3.19942 15.3157 1.13242 15.7346L0.0637203 15.9512L0.358085 14.9013C0.869803 13.0761 1.01649 11.9168 0.879628 11.6503C0.304334 10.5302 0 9.28624 0 8C0 3.58172 3.58172 0 8 0Z"
 										fill="#24D46F" />
@@ -929,15 +931,18 @@
 								</svg>
 							</a>
 							<a class="contacts__social contacts__social--mobile" href="#">
-								<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M7.5 0C3.35526 0 0 3.24 0 7.2C0 9.28 0.907895 11.12 2.36842 12.44V16L5.44737 14.12C6.07895 14.28 6.78947 14.4 7.5 14.4C11.6447 14.4 15 11.16 15 7.2C15 3.24 11.6447 0 7.5 0Z"
 										fill="#448AFF" />
-									<path d="M3 10L6.75 5L8.625 7.27273L12 5L8.25 10L6.375 7.72727L3 10Z" fill="white" />
+									<path d="M3 10L6.75 5L8.625 7.27273L12 5L8.25 10L6.375 7.72727L3 10Z"
+										fill="white" />
 								</svg>
 							</a>
 							<a class="contacts__social contacts__social--mobile" href="#">
-								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
 										fill="#0088CC" />
@@ -1078,14 +1083,16 @@
 				<div class="socials">
 					<a class="socials__link" href="#"><svg width="24" height="23" viewBox="0 0 24 23" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
-							<path class="mobile-footer__social mobile-footer__social--vk" fill-rule="evenodd" clip-rule="evenodd"
+							<path class="mobile-footer__social mobile-footer__social--vk" fill-rule="evenodd"
+								clip-rule="evenodd"
 								d="M15.68 0C22.4 0 24 1.53333 24 7.97333V15.0267C24 21.4667 22.4 23 15.68 23H8.32C1.6 23 0 21.4667 0 15.0267V7.97333C0 1.53333 1.6 0 8.32 0H15.68ZM6.5 7.1875H4.75C4.25 7.1875 4.15 7.4175 4.15 7.65708C4.15 8.1075 4.74 10.3117 6.91 13.225C7.48407 14.104 8.26729 14.8402 9.19548 15.3733C10.1237 15.9063 11.1704 16.221 12.25 16.2917C13.36 16.2917 13.5 16.0521 13.5 15.64V14.1354C13.5 13.6562 13.61 13.5604 13.96 13.5604C14.31 13.5604 14.66 13.685 15.7 14.6433C16.89 15.7837 17.08 16.2917 17.75 16.2917H19.5C20 16.2917 20.25 16.0521 20.11 15.5825C19.7374 14.8514 19.2368 14.1869 18.63 13.6179C18.22 13.1483 17.63 12.6596 17.42 12.4104C17.21 12.1612 17.24 11.9408 17.42 11.6629C18.3467 10.4692 19.1378 9.18415 19.78 7.82958C19.89 7.475 19.78 7.21625 19.25 7.21625H17.5C17.3378 7.20771 17.177 7.24852 17.0405 7.33287C16.904 7.41721 16.7988 7.54075 16.74 7.68583C16.1977 8.92185 15.4737 10.0772 14.59 11.1167C14.18 11.5096 13.99 11.6342 13.77 11.6342C13.55 11.6342 13.5 11.5096 13.5 11.155V7.80083C13.5 7.37917 13.37 7.1875 13 7.1875H10.25C10.1376 7.18223 10.0274 7.21942 9.94331 7.2911C9.85917 7.36277 9.80772 7.4632 9.8 7.57083C9.8 7.97333 10.44 8.06917 10.5 9.20958V11.6725C10.5 12.2187 10.4 12.3146 10.18 12.3146C9.58 12.3146 8.18 10.2254 7.28 7.83917C7.12 7.37917 7 7.1875 6.5 7.1875Z"
 								fill="white" />
 						</svg>
 					</a>
 					<a class="socials__link" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
-							<path class="mobile-footer__social mobile-footer__social--face" fill-rule="evenodd" clip-rule="evenodd"
+							<path class="mobile-footer__social mobile-footer__social--face" fill-rule="evenodd"
+								clip-rule="evenodd"
 								d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07812V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z"
 								fill="white" />
 						</svg>
@@ -1099,7 +1106,8 @@
 					</a>
 					<a class="socials__link" href="#"><svg width="24" height="17" viewBox="0 0 24 17" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
-							<path class="mobile-footer__social mobile-footer__social--youtube" fill-rule="evenodd" clip-rule="evenodd"
+							<path class="mobile-footer__social mobile-footer__social--youtube" fill-rule="evenodd"
+								clip-rule="evenodd"
 								d="M21.377 0.506137C22.4117 0.788182 23.2249 1.61114 23.4998 2.65432C24 4.5475 24 8.5 24 8.5C24 8.5 24 12.4525 23.4998 14.3457C23.2211 15.3927 22.4079 16.2157 21.377 16.4939C19.5062 17 12 17 12 17C12 17 4.49761 17 2.62297 16.4939C1.58829 16.2118 0.775056 15.3889 0.500159 14.3457C0 12.4525 0 8.5 0 8.5C0 8.5 0 4.5475 0.500159 2.65432C0.778874 1.60727 1.59211 0.784318 2.62297 0.506137C4.49761 0 12 0 12 0C12 0 19.5062 0 21.377 0.506137ZM15.6025 8.49959L9.60254 12.143V4.85618L15.6025 8.49959Z"
 								fill="white" />
 						</svg>
@@ -1146,8 +1154,8 @@
 				<svg width="25" height="25" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<line x1="26.713" y1="9.83421" x2="10.803" y2="25.7441" stroke="#C4C4C4" stroke-width="3"
 						stroke-linecap="round" stroke-linejoin="round"></line>
-					<line x1="26.5918" y1="25.7129" x2="11" y2="10.1212" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round"
-						stroke-linejoin="round"></line>
+					<line x1="26.5918" y1="25.7129" x2="11" y2="10.1212" stroke="#C4C4C4" stroke-width="3"
+						stroke-linecap="round" stroke-linejoin="round"></line>
 				</svg>
 			</button>
 			<div class="modal-wrapper__callback-body">
@@ -1231,7 +1239,8 @@
 								<a class="contacts__phone" href="tel:+79995215100">+7 (999) 521-51-00</a>
 								<div class="contacts__social-inner">
 									<a class="contacts__social contacts__social--footer" href="#">
-										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C8.65196 20 7.3398 19.7327 6.12278 19.2203C5.643 19.0184 3.99927 19.1447 1.41552 19.6683L0.0796503 19.939L0.447606 18.6266C1.08725 16.3451 1.27061 14.896 1.09953 14.5629C0.380417 13.1628 0 11.6078 0 10C0 4.47715 4.47715 0 10 0Z"
 												fill="#24D46F"></path>
@@ -1241,16 +1250,19 @@
 										</svg>
 									</a>
 									<a class="contacts__social contacts__social--footer" href="#">
-										<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9.625 0C4.44408 0 0.25 4.05 0.25 9C0.25 11.6 1.38487 13.9 3.21053 15.55V20L7.05921 17.65C7.84868 17.85 8.73684 18 9.625 18C14.8059 18 19 13.95 19 9C19 4.05 14.8059 0 9.625 0Z"
 												fill="#448AFF"></path>
-											<path d="M4 12.5L8.6875 6.25L11.0312 9.09091L15.25 6.25L10.5625 12.5L8.21875 9.65909L4 12.5Z"
+											<path
+												d="M4 12.5L8.6875 6.25L11.0312 9.09091L15.25 6.25L10.5625 12.5L8.21875 9.65909L4 12.5Z"
 												fill="white"></path>
 										</svg>
 									</a>
 									<a class="contacts__social contacts__social--footer" href="#">
-										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10Z"
 												fill="#0088CC"></path>
@@ -1320,14 +1332,15 @@
 				<svg width="25" height="25" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<line x1="26.713" y1="9.83421" x2="10.803" y2="25.7441" stroke="#C4C4C4" stroke-width="3"
 						stroke-linecap="round" stroke-linejoin="round"></line>
-					<line x1="26.5918" y1="25.7129" x2="11" y2="10.1212" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round"
-						stroke-linejoin="round"></line>
+					<line x1="26.5918" y1="25.7129" x2="11" y2="10.1212" stroke="#C4C4C4" stroke-width="3"
+						stroke-linecap="round" stroke-linejoin="round"></line>
 				</svg>
 			</button>
 			<div class="modal-wrapper__video-body">
 				<div class="modal__video-body">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/WHLlllgIVV0" frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
