@@ -1,0 +1,27 @@
+@@include('./include/head.html')
+<main>
+  <section class="request request--forecast">
+    <div class="container">
+      <div class="request__wrap">
+        <h3 class="request__title request__title--forecast">Давайте вместе спланируем Вашу поездку в Мурманск!</h3>
+        <p class="request__text request__text--forecast">Просто напишите нам через форму ниже!</p>
+        <form class="request__form">
+          <div class="request__wrapper">
+            <input class="request__input" type="text" placeholder="Введите ваш номер">
+            <button class="btn-orange-shadow btn-orange-shadow--reviews btn-orange-shadow--request btn-orange-shadow--forecast" type="submit">
+              <span class="btn-orange-shadow__text btn-orange-shadow__text--reviews btn-orange-shadow__text--request btn-orange-shadow__text--forecast">
+                Отправить
+              </span>
+              <div class="btn-orange-shadow__shadow btn-orange-shadow__shadow--request"></div>
+            </button>
+          </div>
+          <p class="request__desc request__desc--forecast">
+            Нажав на кнопку «Отправить», вы даете согласие на обработку <a class="privacy-link privacy-link--forecast" href="#">персональных данных</a> и <a class="privacy-link privacy-link--forecast" href="#">согласен с
+              политикой конфиденциальности.</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+@@include('./include/footer.html')
