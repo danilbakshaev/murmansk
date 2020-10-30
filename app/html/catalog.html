@@ -1,121 +1,7 @@
-
-
-	@@include('./include/head.html')
-
-
-	<header class="background-image" style="background-image: url(/img/catalog-back.png)">
-		<div class="desktop-header">
-			<div class="desktop-header__top">
-				<div class="container desktop-header__line">
-					<button class="select-location">
-						<img class="select-location__geo" src="/img/location.svg" alt="Знак геолокации">
-						<span class="select-location__text">Москва</span>
-						<img class="select-location__arrow" src="/img/arrow.svg" alt="Стрелка вниз">
-					</button>
-					<nav class="desktop-header__top-items">
-						<a href="#" class="desktop-header__top-item">Отзывы</a>
-						<a href="#" class="desktop-header__top-item">О компании</a>
-						<a href="#" class="desktop-header__top-item">Контакты</a>
-						<a href="#" class="desktop-header__top-item">Оплата и бронирование</a>
-						<a href="#" class="desktop-header__top-item">Турагенствам</a>
-						<a href="#" class="desktop-header__top-item">Еще
-							<img class="desktop-header__arrow" src="/img/arrow.svg" alt="Кнопка выбора города">
-						</a>
-					</nav>
-					<button class="select-lang">
-						<img class="select-lang__flag" src="/img/language.svg" alt="Флаг">
-						<span class="select-lang__text">Русский</span>
-						<img class="select-lang__arrows" src="/img/arrow.svg" alt="Стрелка вниз">
-					</button>
-				</div>
-			</div>
-			<div class="desktop-header__bottom">
-				<div class="container">
-					<div class="desktop-header__line-top">
-						<div class="desktop-header__logo-wrapper">
-							<div class="logo-company">
-								<a class="logo-company__link" href="#"><img class="logo-company__logo" src="/img/logo.svg"
-										alt="Логотип компании NORTH FOR YOU"></a>
-							</div>
-							<div class="desktop-header__info">
-								<p class="desktop-header__info-text">Туроператор в Мурманске "Север для вас"</p>
-								<p class="desktop-header__info-text">Номер в реестре Ростуризма РТО 021550</p>
-							</div>
-						</div>
-						<div class="contacts">
-							<p class="contacts__socials-text">WhatsApp, Facebook, Telegram</p>
-							<div class="contacts__wrap-links">
-								<a class="contacts__phone" href="tel:+79995215100">+7 (999) 521-51-00</a>
-								<div class="contacts__social-inner">
-									<a class="contacts__social" href="#">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C6.92157 16 5.87184 15.7861 4.89823 15.3763C4.5144 15.2147 3.19942 15.3157 1.13242 15.7346L0.0637203 15.9512L0.358085 14.9013C0.869803 13.0761 1.01649 11.9168 0.879628 11.6503C0.304334 10.5302 0 9.28624 0 8C0 3.58172 3.58172 0 8 0Z"
-												fill="#24D46F" />
-											<path
-												d="M5.72043 4C5.84946 4.04651 5.93548 4.09302 6.02151 4.23256C6.15054 4.51163 6.66667 5.76744 6.70968 6C6.75269 6.13953 6.70968 6.32558 6.62366 6.46512C6.53763 6.55814 6.49462 6.69767 6.4086 6.7907C6.27957 6.93023 6.10753 7.16279 6.10753 7.16279C6.06452 7.2093 6.06452 7.30233 6.06452 7.39535C6.10753 7.48837 6.10753 7.53488 6.15054 7.5814L6.19355 7.67442C6.4086 8.09302 6.70968 8.46512 7.01075 8.7907C7.09677 8.88372 7.22581 8.97674 7.31183 9.06977C7.65591 9.44186 8.08602 9.72093 8.55914 9.95349L8.77419 10.0465C8.8172 10.093 8.90323 10.1395 8.94624 10.1395H8.98925C9.07527 10.1395 9.16129 10.093 9.2043 10C9.80645 9.25581 9.84946 9.2093 9.84946 9.2093L9.90142 9.18177C9.97161 9.14605 10.0473 9.11628 10.1505 9.11628C10.1935 9.11628 10.2366 9.16279 10.2796 9.16279C10.7097 9.39535 11.3979 9.72093 11.3979 9.72093L11.871 9.95349C11.957 10 12 10.0465 12 10.0465V10.3721C11.957 10.6047 11.914 10.8372 11.828 11.0233C11.7849 11.1163 11.6989 11.2093 11.6129 11.3023C11.5269 11.3953 11.4409 11.4419 11.3548 11.5349L11.2688 11.6279C11.1828 11.7209 11.0968 11.7209 10.9677 11.814C10.7957 11.907 10.5376 12 10.3226 12H9.89247L9.78898 11.9724C9.68011 11.9506 9.55914 11.9419 9.46237 11.907C8.30108 11.5814 7.26882 10.9767 6.36559 10.1395C6.27957 10 6.15054 9.90698 6.02151 9.76744L5.84946 9.5814C5.16129 8.88372 4.64516 8.09302 4.25806 7.2093L4.21505 7.06977C4.08602 6.74419 4 6.37209 4 6L4.00512 5.8466C4.0357 5.38698 4.20215 4.93488 4.47312 4.55814C4.55914 4.46512 4.60215 4.37209 4.68817 4.27907C4.77419 4.23256 4.86022 4.13953 4.94624 4.09302L4.98925 4.04651C5.07527 4.04651 5.16129 4 5.24731 4H5.72043Z"
-												fill="white" />
-										</svg>
-									</a>
-									<a class="contacts__social" href="#">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M8.5 0C4.35526 0 1 3.24 1 7.2C1 9.28 1.90789 11.12 3.36842 12.44V16L6.44737 14.12C7.07895 14.28 7.78947 14.4 8.5 14.4C12.6447 14.4 16 11.16 16 7.2C16 3.24 12.6447 0 8.5 0Z"
-												fill="#448AFF" />
-											<path d="M4 10L7.75 5L9.625 7.27273L13 5L9.25 10L7.375 7.72727L4 10Z" fill="white" />
-										</svg>
-									</a>
-									<a class="contacts__social" href="#">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
-												fill="#0088CC" />
-											<path fill-rule="evenodd" clip-rule="evenodd"
-												d="M4.38837 6.60411C4.50745 6.55933 9.73297 4.73001 10.0482 4.62363C10.3634 4.51726 11.253 4.20024 10.9308 5.31855C10.6086 6.43686 9.37573 10.0605 9.13056 10.6372C8.8854 11.2138 8.52115 11.9892 7.92575 11.0885C7.33035 10.1879 7.09219 9.04927 6.79799 8.69936C6.50379 8.34946 4.7316 7.85958 4.53547 7.75111C4.33934 7.64264 3.52679 7.05969 4.38837 6.60411Z"
-												fill="white" />
-										</svg>
-									</a>
-								</div>
-							</div>
-							<button class="contacts__callback">Заказать звонок</button>
-						</div>
-						<div class="contacts__request">
-							<p class="contacts__request-text">Для заявок и вопросов</p>
-							<a class="contacts__request-mail" href="mailto:info@north4you.com">info@north4you.com</a>
-						</div>
-					</div>
-					<div class="desktop-header__line-bottom">
-						<div class="desktop-header__tours">
-							<a class="desktop-header__tour" href="#">Северное сияние</a>
-							<a class="desktop-header__tour" href="#">Териберка</a>
-							<a class="desktop-header__tour" href="#">Топ-10 однодневних туров <img class="desktop-header__tours-img"
-									src="/img/arrow.svg" alt="Стрелка вниз"> </a>
-							<a class="desktop-header__tour" href="#">Готовые пакетные туры <img class="desktop-header__tours-img"
-									src="/img/arrow.svg" alt="Стрелка вниз"> </a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- mobile-header -->
-		<div class="mobile-header">
-			<div class="container">
-				<div class="mobile-header__top">
-					<div class="logo-company">
-						<a class="logo-company__link" href="#"><img class="logo-company__logo" src="/img/logo.svg"
-								alt="Логотип компании NORTH FOR YOU"></a>
-					</div>
-					<button class="mobile-header__button">
-						<img class="mobile-header__burger-img openMenu" src="/img/button_burger.svg" alt="Кнопка меню">
-					</button>
-				</div>
-			</div>
-		</div>
-		<!-- /mobile-header -->
-
-
-
+@@include('./include/head.html')
+<header class="background-image" style="background-image: url(/img/catalog-back.png)">
+	<div class="desktop-header__wrapper">
+		@@include('./include/header_mob-desk.html')
 		<div class="header-text">
 			<div class="container">
 				<div class="header__text-items">
@@ -131,1297 +17,1268 @@
 							</div>
 							<div class="header__text-wrap-right">
 								<p class="header__text-wrap-right-text">При бронировании до 31</p>
-								<p class="header__text-wrap-right-text">августа 2020 <span class="header-red">скидка 20%</span></p>
+								<p class="header__text-wrap-right-text">августа 2020 <span class="header-red">скидка
+										20%</span></p>
 							</div>
 							<h1 class="header-text__title-bottom">Охота на северное сияние</h1>
 						</div>
 						<div class="callback-form__wrap">
-							<button class="callback-form__submit callback-form__submit--head" type="submit">Подробнее о туре</button>
+							<button class="callback-form__submit callback-form__submit--head" type="submit">Подробнее о
+								туре</button>
 						</div>
 					</div>
-					<div class="header-text__wrap header-text__wrap--catalog">
-						<div class="tours__item-span">
-							<span class="tours__item-span-text tours__item-span-text--blue">Популярное</span>
-						</div>
-						<h1 class="header-text__title">Охота на северное сияние</h1>
-						<div class="header__text-wrap-top">
-							<div class="header__text-wrap-left">
-								<span class="header__text-wrap-left-span">15 000 руб.</span>
-								<span class="header__text-wrap-left-span-small">12 000 руб.</span>
+				</div>
+			</div>
+			@@include('./include/header_tours.html')
+		</div>
+	</div>
+</header>
+
+
+<main>
+
+	<section class="breadcrumbs">
+		<div class="container">
+			<a class="breadcrumbs__link" href="/">Главная</a>
+			<a class="breadcrumbs__link breadcrumbs__link--active" href="#">Туры по Кольскому полуострову</a>
+		</div>
+	</section>
+
+	<section class="island">
+		<div class="container">
+			<div class="title-sections title-sections--catalog">
+				<h2 class="title-sections__title title-sections__title--catalog">Туры по Кольскому
+					полуострову</h2>
+				<p class="island__text">Мы предлагаем огромное разнообразие туров, каждый найдет для себя, что он хочет.
+					Мы
+					обеспечим отдых в неповторимой красоте мурманской природы. Возможности бесконечны, и воспоминания
+					будут на
+					всю жизнь.</p>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Блок "Популярные направления" -->
+	<section class="popular-destinations">
+		<div class="container">
+			<div class="title-sections title-sections--mb">
+				<h2 class="title-sections__title title-sections__title--catalog-popular">Самые популярные направления
+				</h2>
+			</div>
+			<div class="popular-destinations__items slick-initialized slick-slider">
+				<div class="slick-list">
+					<div class="slick-track" style="opacity: 1; width: 3200px; transform: translate3d(0px, 0px, 0px);">
+						<div id="opacity-item" class="slick-slide slick-current slick-active" data-slick-index="0"
+							aria-hidden="false" style="width: 400px;" tabindex="0">
+							<div class="popular-destinations__item">
+								<div class="popular-destinations-scaleControl">
+									<h3 class="popular-destinations__title">Туры на северное сияние</h3>
+								</div>
+								<img class="popular-destinations__img " src="/img/tours_to_the_northern_lights.jpg"
+									alt="Северное сияние">
 							</div>
-							<div class="header__text-wrap-right">
-								<p class="header__text-wrap-right-text">При бронировании до 31</p>
-								<p class="header__text-wrap-right-text">августа 2020 <span class="header-red">скидка 20%</span></p>
-							</div>
-							<h1 class="header-text__title-bottom">Охота на северное сияние</h1>
 						</div>
-						<div class="callback-form__wrap">
-							<button class="callback-form__submit callback-form__submit--head" type="submit">Подробнее о туре</button>
+						<div class="noContent slick-slide slick-active" id="opacity-item" data-slick-index="1"
+							aria-hidden="false" style="width: 400px;" tabindex="0">
+							<div class="popular-destinations__item">
+								<div class="popular-destinations-scaleControl">
+									<h3 class="popular-destinations__title">Туры на собачьих упряжках</h3>
+								</div>
+								<img class="popular-destinations__img " src="/img/dogs.png" alt="Северное сияние">
+							</div>
+						</div>
+						<div class="noContent slick-slide slick-active" id="opacity-item" data-slick-index="2"
+							aria-hidden="false" style="width: 400px;" tabindex="0">
+							<div class="popular-destinations__item">
+								<div class="popular-destinations-scaleControl">
+									<h3 class="popular-destinations__title">Этнические туры
+										к Саамам</h3>
+								</div>
+								<img class="popular-destinations__img " src="/img/saamam.png" alt="Северное сияние">
+							</div>
+						</div>
+						<div class="noContent slick-slide" id="opacity-item" data-slick-index="3" aria-hidden="true"
+							style="width: 400px;" tabindex="-1">
+							<div class="popular-destinations__item">
+								<div class="popular-destinations-scaleControl">
+									<h3 class="popular-destinations__title">Туры на
+										снегоходах</h3>
+								</div>
+								<img class="popular-destinations__img " src="/img/snow.png" alt="Северное сияние">
+							</div>
+						</div>
+						<div class="noContent slick-slide" id="opacity-item" data-slick-index="4" aria-hidden="true"
+							style="width: 400px;" tabindex="-1">
+							<div class="popular-destinations__item">
+								<div class="popular-destinations-scaleControl">
+									<h3 class="popular-destinations__title">Туры на северное сияние</h3>
+								</div>
+								<img class="popular-destinations__img " src="/img/tours_to_the_northern_lights.jpg"
+									alt="Северное сияние">
+							</div>
+						</div>
+						<div class="noContent slick-slide" id="opacity-item" data-slick-index="5" aria-hidden="true"
+							style="width: 400px;" tabindex="-1">
+							<div class="popular-destinations__item">
+								<div class="popular-destinations-scaleControl">
+									<h3 class="popular-destinations__title">Туры на собачьих упряжках</h3>
+								</div>
+								<img class="popular-destinations__img " src="/img/dogs.png" alt="Северное сияние">
+							</div>
+						</div>
+						<div class="noContent slick-slide" id="opacity-item" data-slick-index="6" aria-hidden="true"
+							style="width: 400px;" tabindex="-1">
+							<div class="popular-destinations__item">
+								<div class="popular-destinations-scaleControl">
+									<h3 class="popular-destinations__title">Этнические туры
+										к Саамам</h3>
+								</div>
+								<img class="popular-destinations__img " src="/img/saamam.png" alt="Северное сияние">
+							</div>
+						</div>
+						<div class="noContent slick-slide" id="opacity-item" data-slick-index="7" aria-hidden="true"
+							style="width: 400px;" tabindex="-1">
+							<div class="popular-destinations__item">
+								<div class="popular-destinations-scaleControl">
+									<h3 class="popular-destinations__title">Туры на
+										снегоходах</h3>
+								</div>
+								<img class="popular-destinations__img " src="/img/snow.png" alt="Северное сияние">
+							</div>
 						</div>
 					</div>
-					<div class="header-text__wrap header-text__wrap--catalog">
-						<div class="tours__item-span">
-							<span class="tours__item-span-text tours__item-span-text--blue">Популярное</span>
-						</div>
-						<h1 class="header-text__title">Охота на северное сияние</h1>
-						<div class="header__text-wrap-top">
-							<div class="header__text-wrap-left">
-								<span class="header__text-wrap-left-span">15 000 руб.</span>
-								<span class="header__text-wrap-left-span-small">12 000 руб.</span>
+				</div>
+
+
+
+
+
+
+
+			</div>
+			<div class="bottom-innerwrp">
+				<div class="btn-js">
+					<button type="button" class="prev-arrow prev-js-popular-destinations slick-arrow slick-disabled"
+						aria-disabled="true" style=""><svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 6H19M1 6L6 1M1 6L6 11" stroke="#0FC4AC" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<button type="button" class="next-arrow next-js-popular-destinations slick-arrow"
+						aria-disabled="false" style=""><svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M19 6L1 6M19 6L14 11M19 6L14 1" stroke="#0FC4AC" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+				</div>
+				<button class="btn-ice">Смотреть все</button>
+			</div>
+			<div class="scroll-link">
+				<div class="scroll-link__inner">
+					<a class="scroll-link__tag" href="">#насеверноесияние</a>
+					<a class="scroll-link__tag" href="">#охотазасевернымсиянием</a>
+					<a class="scroll-link__tag" href="">#териберка</a>
+					<a class="scroll-link__tag" href="">#саамы</a>
+					<a class="scroll-link__tag" href="">#собачьиупряжки</a>
+					<a class="scroll-link__tag" href="">#отдыхвмурманске</a>
+					<a class="scroll-link__tag" href="">#этническиетуры</a>
+					<a class="scroll-link__tag" href="">#тур</a>
+					<a class="scroll-link__tag" href="">#мурманск</a>
+					<a class="scroll-link__tag" href="">#хочуотдыхать</a>
+					<a class="scroll-link__tag" href="">#сияние</a>
+					<a class="scroll-link__tag" href="">#насеверноесияние</a>
+					<a class="scroll-link__tag" href="">#охотазасевернымсиянием</a>
+					<a class="scroll-link__tag" href="">#териберка</a>
+					<a class="scroll-link__tag" href="">#саамы</a>
+					<a class="scroll-link__tag" href="">#собачьиупряжки</a>
+					<a class="scroll-link__tag" href="">#отдыхвмурманске</a>
+					<a class="scroll-link__tag" href="">#этническиетуры</a>
+					<a class="scroll-link__tag" href="">#тур</a>
+					<a class="scroll-link__tag" href="">#мурманск</a>
+					<a class="scroll-link__tag" href="">#хочуотдыхать</a>
+					<a class="scroll-link__tag" href="">#сияние</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Блок "Популярные направления" -->
+
+	<!-- catalog -->
+	<section class="catalog">
+		<div class="container">
+			<div class="title-sections title-sections--mobile">
+				<h2 class="title-sections__title">Каталог туров</h2>
+			</div>
+
+			<div class="filter">
+				<div class="filter__desktop">
+
+					<div class="filter__btn-wrap">
+
+						<button class="filter__item filter__item--direction filter__item--active">
+							<span class="filter__btn-text">Направление</span>
+							<span class="filter__btn-subtext">Тереберка</span>
+							<svg class="filter__arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
+									fill="#7B8997" />
+							</svg>
+						</button>
+						<div class="filter__menu filter__menu--active">
+							<div class="filter__menu-top">
+								<span class="filter__menu-title">Направление</span>
+								<button class="filter__menu-reset">Сбросить</button>
 							</div>
-							<div class="header__text-wrap-right">
-								<p class="header__text-wrap-right-text">При бронировании до 31</p>
-								<p class="header__text-wrap-right-text">августа 2020 <span class="header-red">скидка 20%</span></p>
+							<div class="filter__menu-list">
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo19">
+									<label class="filter__text" for="geo19">Мурманск</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo20">
+									<label class="filter__text" for="geo20">Териберка</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo21">
+									<label class="filter__text" for="geo21">Хабины</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo22">
+									<label class="filter__text" for="geo22">Ловозеро</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo23">
+									<label class="filter__text" for="geo23">Средний рыбачий</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo24">
+									<label class="filter__text" for="geo24">Норвегия</label>
+								</div>
+
 							</div>
-							<h1 class="header-text__title-bottom">Охота на северное сияние</h1>
-						</div>
-						<div class="callback-form__wrap">
-							<button class="callback-form__submit callback-form__submit--head" type="submit">Подробнее о туре</button>
 						</div>
 					</div>
-					<div class="header-text__wrap header-text__wrap--catalog">
-						<div class="tours__item-span">
-							<span class="tours__item-span-text tours__item-span-text--blue">Популярное</span>
-						</div>
-						<h1 class="header-text__title">Охота на северное сияние</h1>
-						<div class="header__text-wrap-top">
-							<div class="header__text-wrap-left">
-								<span class="header__text-wrap-left-span">15 000 руб.</span>
-								<span class="header__text-wrap-left-span-small">12 000 руб.</span>
+
+					<div class="filter__btn-wrap filter__btn-wrap--mid">
+
+						<button class="filter__item filter__item--categories">
+							<span class="filter__btn-text">Категории</span>
+							<span class="filter__btn-subtext">Однодневные туры, Корпоративные туры</span>
+							<svg class="filter__arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
+									fill="#7B8997" />
+							</svg>
+						</button>
+
+						<div class="filter__menu">
+							<div class="filter__menu-top">
+								<span class="filter__menu-title">Категории</span>
+								<button class="filter__menu-reset">Сбросить</button>
 							</div>
-							<div class="header__text-wrap-right">
-								<p class="header__text-wrap-right-text">При бронировании до 31</p>
-								<p class="header__text-wrap-right-text">августа 2020 <span class="header-red">скидка 20%</span></p>
+							<div class="filter__menu-list">
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo25">
+									<label class="filter__text" for="geo25">Мурманск</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo26">
+									<label class="filter__text" for="geo26">Териберка</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo27">
+									<label class="filter__text" for="geo27">Хабины</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo28">
+									<label class="filter__text" for="geo28">Ловозеро</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo29">
+									<label class="filter__text" for="geo29">Средний рыбачий</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo30">
+									<label class="filter__text" for="geo30">Норвегия</label>
+								</div>
+
 							</div>
-							<h1 class="header-text__title-bottom">Охота на северное сияние</h1>
-						</div>
-						<div class="callback-form__wrap">
-							<button class="callback-form__submit callback-form__submit--head" type="submit">Подробнее о туре</button>
 						</div>
 					</div>
-					<div class="header-text__wrap header-text__wrap--catalog">
-						<div class="tours__item-span">
-							<span class="tours__item-span-text tours__item-span-text--blue">Популярное</span>
-						</div>
-						<h1 class="header-text__title">Охота на северное сияние</h1>
-						<div class="header__text-wrap-top">
-							<div class="header__text-wrap-left">
-								<span class="header__text-wrap-left-span">15 000 руб.</span>
-								<span class="header__text-wrap-left-span-small">12 000 руб.</span>
+
+					<div class="filter__btn-wrap">
+
+						<button class="filter__item filter__item--seasonality">
+							<span class="filter__btn-text">Сезонность</span>
+							<span class="filter__btn-subtext">Весна, Осень</span>
+							<svg class="filter__arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
+									fill="#7B8997" />
+							</svg>
+						</button>
+						<div class="filter__menu">
+							<div class="filter__menu-top">
+								<span class="filter__menu-title">Сезонность</span>
+								<button class="filter__menu-reset">Сбросить</button>
 							</div>
-							<div class="header__text-wrap-right">
-								<p class="header__text-wrap-right-text">При бронировании до 31</p>
-								<p class="header__text-wrap-right-text">августа 2020 <span class="header-red">скидка 20%</span></p>
+							<div class="filter__menu-list">
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo31">
+									<label class="filter__text" for="geo31">Мурманск</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo32">
+									<label class="filter__text" for="geo32">Териберка</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo33">
+									<label class="filter__text" for="geo33">Хабины</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo34">
+									<label class="filter__text" for="geo34">Ловозеро</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo35">
+									<label class="filter__text" for="geo35">Средний рыбачий</label>
+								</div>
+
+								<div class="filter__row">
+									<input class="filter__inp" type="checkbox" id="geo36">
+									<label class="filter__text" for="geo36">Норвегия</label>
+								</div>
+
 							</div>
-							<h1 class="header-text__title-bottom">Охота на северное сияние</h1>
 						</div>
-						<div class="callback-form__wrap">
-							<button class="callback-form__submit callback-form__submit--head" type="submit">Подробнее о туре</button>
+					</div>
+
+				</div>
+
+				<div class="filter__mobile">
+
+					<div class="filter__mobile-spoiler filter__item--active">
+						<svg class="filter__mobile-arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+								d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
+								fill="#7B8997" />
+						</svg>
+						<span class="filter__mobile-title">Направление</span>
+						<div class="filter__mobile-cut">
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo">
+								<label class="filter__text" for="geo">Мурманск</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo2">
+								<label class="filter__text" for="geo2">Териберка</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo3">
+								<label class="filter__text" for="geo3">Хабины</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo4">
+								<label class="filter__text" for="geo4">Ловозеро</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo5">
+								<label class="filter__text" for="geo5">Средний рыбачий</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo6">
+								<label class="filter__text" for="geo6">Норвегия</label>
+							</div>
+
 						</div>
+					</div>
+
+					<div class="filter__mobile-spoiler">
+						<svg class="filter__mobile-arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+								d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
+								fill="#7B8997" />
+						</svg>
+						<span class="filter__mobile-title">Категории</span>
+						<div class="filter__mobile-cut">
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo7">
+								<label class="filter__text" for="geo7">Мурманск</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo8">
+								<label class="filter__text" for="geo8">Териберка</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo9">
+								<label class="filter__text" for="geo9">Хабины</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo10">
+								<label class="filter__text" for="geo10">Ловозеро</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo11">
+								<label class="filter__text" for="geo11">Средний рыбачий</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo12">
+								<label class="filter__text" for="geo12">Норвегия</label>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="filter__mobile-spoiler">
+						<svg class="filter__mobile-arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+								d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
+								fill="#7B8997" />
+						</svg>
+						<span class="filter__mobile-title">Сезонность</span>
+						<div class="filter__mobile-cut">
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo13">
+								<label class="filter__text" for="geo13">Мурманск</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo14">
+								<label class="filter__text" for="geo14">Териберка</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo15">
+								<label class="filter__text" for="geo15">Хабины</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo16">
+								<label class="filter__text" for="geo16">Ловозеро</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo17">
+								<label class="filter__text" for="geo17">Средний рыбачий</label>
+							</div>
+
+							<div class="filter__row">
+								<input class="filter__inp" type="checkbox" id="geo18">
+								<label class="filter__text" for="geo18">Норвегия</label>
+							</div>
+
+						</div>
+					</div>
+					<button class="btn-base btn-base--mb">Найти
+						<div class="btn-base__shadow"></div>
+					</button>
+				</div>
+			</div>
+
+
+			<div class="search-tours">
+
+				<div class="search-tours__left">
+					<p class="search-tours__description">Найдено 20 туров</p>
+					<button class="search-tours__btn-clear">Очистить поиск</button>
+				</div>
+				<div class="search-tours__right">
+					<button class="search-tours__btn-rating search-tours__btn-rating--active">
+						<svg class="search-tours__img-popular" width="16" height="17" viewBox="0 0 16 17" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+								d="M4.5 5.02199C5.91302 4.17803 6.92847 2.75708 7.21672 1.09204C7.26524 0.811729 7.56733 0.638468 7.81128 0.784801C9.81432 1.98631 11.15 4.14413 11.15 6.6063C11.15 7.11845 11.0922 7.61743 10.9826 8.09737C10.9099 8.41612 11.2004 8.70693 11.4859 8.54756C12.1117 8.19815 12.6164 7.66561 12.9231 7.02481C13.0572 6.7446 13.4377 6.64082 13.634 6.88163C14.4891 7.93085 15 9.25906 15 10.7037C15 13.2604 13.3997 15.4526 11.1229 16.3788C10.9159 16.4629 10.6841 16.4629 10.4771 16.3788C8.20033 15.4526 6.6 13.2604 6.6 10.7037C6.6 10.6344 6.5145 10.6006 6.46987 10.6536C5.67633 11.5964 5.2 12.803 5.2 14.1181C5.2 14.5181 5.24407 14.9081 5.32772 15.2837C5.39737 15.5964 5.12361 15.8972 4.8235 15.7851C2.58763 14.9502 1 12.8371 1 10.3622C1 8.18524 2.22845 6.28817 4.04597 5.29475L4.5 5.02199Z"
+								fill="#0FC4AC" />
+						</svg>
+
+						Популярные
+					</button>
+					<button class="search-tours__btn-rating">По рейтингу</button>
+					<button class="search-tours__btn-rating">Дороже</button>
+					<button class="search-tours__btn-rating">Дешевле</button>
+					<div class="search-tours__btn-wrap">
+						<button class="search-tours__btn-sorting">
+
+							<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+									d="M0 1C0 0.447715 0.447715 0 1 0H3C3.55228 0 4 0.447715 4 1V3C4 3.55228 3.55228 4 3 4H1C0.447715 4 0 3.55228 0 3V1ZM5 1C5 0.447715 5.44772 0 6 0H8C8.55229 0 9 0.447715 9 1V3C9 3.55228 8.55229 4 8 4H6C5.44772 4 5 3.55228 5 3V1ZM11 0C10.4477 0 10 0.447715 10 1V3C10 3.55228 10.4477 4 11 4H13C13.5523 4 14 3.55228 14 3V1C14 0.447715 13.5523 0 13 0H11ZM0 6C0 5.44772 0.447715 5 1 5H3C3.55228 5 4 5.44772 4 6V8C4 8.55229 3.55228 9 3 9H1C0.447715 9 0 8.55229 0 8V6ZM6 5C5.44772 5 5 5.44772 5 6V8C5 8.55229 5.44772 9 6 9H8C8.55229 9 9 8.55229 9 8V6C9 5.44772 8.55229 5 8 5H6ZM10 6C10 5.44772 10.4477 5 11 5H13C13.5523 5 14 5.44772 14 6V8C14 8.55229 13.5523 9 13 9H11C10.4477 9 10 8.55229 10 8V6ZM1 10C0.447715 10 0 10.4477 0 11V13C0 13.5523 0.447715 14 1 14H3C3.55228 14 4 13.5523 4 13V11C4 10.4477 3.55228 10 3 10H1ZM5 11C5 10.4477 5.44772 10 6 10H8C8.55229 10 9 10.4477 9 11V13C9 13.5523 8.55229 14 8 14H6C5.44772 14 5 13.5523 5 13V11ZM11 10C10.4477 10 10 10.4477 10 11V13C10 13.5523 10.4477 14 11 14H13C13.5523 14 14 13.5523 14 13V11C14 10.4477 13.5523 10 13 10H11Z"
+									fill="#93A0AD" />
+							</svg>
+
+						</button>
+						<button class="search-tours__btn-sorting search-tours__btn-sorting--active">
+
+							<svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
+									d="M1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2C1.55228 2 2 1.55228 2 1C2 0.447715 1.55228 0 1 0ZM4 0C3.44772 0 3 0.447715 3 1C3 1.55228 3.44772 2 4 2H13C13.5523 2 14 1.55228 14 1C14 0.447715 13.5523 0 13 0H4ZM4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H13C13.5523 7 14 6.55228 14 6C14 5.44772 13.5523 5 13 5H4ZM3 11C3 10.4477 3.44772 10 4 10H13C13.5523 10 14 10.4477 14 11C14 11.5523 13.5523 12 13 12H4C3.44772 12 3 11.5523 3 11ZM0 6C0 5.44772 0.447715 5 1 5C1.55228 5 2 5.44772 2 6C2 6.55228 1.55228 7 1 7C0.447715 7 0 6.55228 0 6ZM1 10C0.447715 10 0 10.4477 0 11C0 11.5523 0.447715 12 1 12C1.55228 12 2 11.5523 2 11C2 10.4477 1.55228 10 1 10Z"
+									fill="white" />
+							</svg>
+
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>
 
 
-	<main>
+		<div class="catalog__items container catalog__items--container">
 
-		<section class="breadcrumbs">
-			<div class="container">
-				<a class="breadcrumbs__link" href="/">Главная</a>
-				<a class="breadcrumbs__link breadcrumbs__link--active" href="#">Туры по Кольскому полуострову</a>
-			</div>
-		</section>
-
-		<section class="island">
-			<div class="container">
-				<div class="title-sections title-sections--catalog">
-					<h2 class="title-sections__title title-sections__title--catalog">Туры по Кольскому
-						полуострову</h2>
-					<p class="island__text">Мы предлагаем огромное разнообразие туров, каждый найдет для себя, что он хочет. Мы
-						обеспечим отдых в неповторимой красоте мурманской природы. Возможности бесконечны, и воспоминания будут на
-						всю жизнь.</p>
+			<div class="catalog__item" style="background-image: url(../img/back-mob.jpg);">
+				<div class="catalog__item-left">
+					<img class="catalog__item-img" src="/img/catalog-bg.jpg" alt="">
+					<span
+						class="tours__item-span-text tours__item-span-text--blue tours__item-span-text--catalog">Популярное</span>
 				</div>
 
-			</div>
-		</section>
-
-		<!-- Блок "Популярные направления" -->
-		<section class="popular-destinations">
-			<div class="container">
-				<div class="title-sections title-sections--mb">
-					<h2 class="title-sections__title title-sections__title--catalog-popular">Самые популярные направления</h2>
-				</div>
-				<div class="popular-destinations__items slick-initialized slick-slider">
-					<div class="slick-list"><div class="slick-track" style="opacity: 1; width: 3200px; transform: translate3d(0px, 0px, 0px);"><div id="opacity-item" class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 400px;" tabindex="0">
-						<div class="popular-destinations__item">
-							<div class="popular-destinations-scaleControl">
-								<h3 class="popular-destinations__title">Туры на северное сияние</h3>
-							</div>
-							<img class="popular-destinations__img " src="/img/tours_to_the_northern_lights.jpg" alt="Северное сияние">
-						</div>
-					</div><div class="noContent slick-slide slick-active" id="opacity-item" data-slick-index="1" aria-hidden="false" style="width: 400px;" tabindex="0">
-						<div class="popular-destinations__item">
-							<div class="popular-destinations-scaleControl">
-								<h3 class="popular-destinations__title">Туры на собачьих упряжках</h3>
-							</div>
-							<img class="popular-destinations__img " src="/img/dogs.png" alt="Северное сияние">
-						</div>
-					</div><div class="noContent slick-slide slick-active" id="opacity-item" data-slick-index="2" aria-hidden="false" style="width: 400px;" tabindex="0">
-						<div class="popular-destinations__item">
-							<div class="popular-destinations-scaleControl">
-								<h3 class="popular-destinations__title">Этнические туры 
-									к Саамам</h3>
-							</div>
-							<img class="popular-destinations__img " src="/img/saamam.png" alt="Северное сияние">
-						</div>
-					</div><div class="noContent slick-slide" id="opacity-item" data-slick-index="3" aria-hidden="true" style="width: 400px;" tabindex="-1">
-						<div class="popular-destinations__item">
-							<div class="popular-destinations-scaleControl">
-								<h3 class="popular-destinations__title">Туры на
-									снегоходах</h3>
-							</div>
-							<img class="popular-destinations__img " src="/img/snow.png" alt="Северное сияние">
-						</div>
-					</div><div class="noContent slick-slide" id="opacity-item" data-slick-index="4" aria-hidden="true" style="width: 400px;" tabindex="-1">
-						<div class="popular-destinations__item">
-							<div class="popular-destinations-scaleControl">
-								<h3 class="popular-destinations__title">Туры на северное сияние</h3>
-							</div>
-							<img class="popular-destinations__img " src="/img/tours_to_the_northern_lights.jpg" alt="Северное сияние">
-						</div>
-					</div><div class="noContent slick-slide" id="opacity-item" data-slick-index="5" aria-hidden="true" style="width: 400px;" tabindex="-1">
-						<div class="popular-destinations__item">
-							<div class="popular-destinations-scaleControl">
-								<h3 class="popular-destinations__title">Туры на собачьих упряжках</h3>
-							</div>
-							<img class="popular-destinations__img " src="/img/dogs.png" alt="Северное сияние">
-						</div>
-					</div><div class="noContent slick-slide" id="opacity-item" data-slick-index="6" aria-hidden="true" style="width: 400px;" tabindex="-1">
-						<div class="popular-destinations__item">
-							<div class="popular-destinations-scaleControl">
-								<h3 class="popular-destinations__title">Этнические туры 
-									к Саамам</h3>
-							</div>
-							<img class="popular-destinations__img " src="/img/saamam.png" alt="Северное сияние">
-						</div>
-					</div><div class="noContent slick-slide" id="opacity-item" data-slick-index="7" aria-hidden="true" style="width: 400px;" tabindex="-1">
-						<div class="popular-destinations__item">
-							<div class="popular-destinations-scaleControl">
-								<h3 class="popular-destinations__title">Туры на
-									снегоходах</h3>
-							</div>
-							<img class="popular-destinations__img " src="/img/snow.png" alt="Северное сияние">
-						</div>
-					</div></div></div>
-					
-					
-					
-					
-					
-					
-					
-				</div>
-				<div class="bottom-innerwrp">
-					<div class="btn-js">
-						<button type="button" class="prev-arrow prev-js-popular-destinations slick-arrow slick-disabled" aria-disabled="true" style=""><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M1 6H19M1 6L6 1M1 6L6 11" stroke="#0FC4AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				<div class="catalog__item-mid">
+					<div class="catalog__item-top">
+						<span class="catalog__item-left-text-top">териберка</span>
+						<h3 class="catalog__item-left-title catalog__item-left-title--mobile">Рыбалка в Териберке</h3>
+						<div class="catalog__item-rating">
+							<span class="catalog__item-yellow">4.3</span>
+							<svg class="catalog__svg-stars" width="86" height="13" viewBox="0 0 86 13" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M6.55377 0.882786C6.73873 0.516867 7.26127 0.516868 7.44623 0.882787L9.16312 4.27934L12.9773 4.82046C13.3911 4.87917 13.5545 5.38955 13.2517 5.67769L10.5 8.29656L11.1522 12.0094C11.2237 12.4162 10.7989 12.7293 10.4314 12.5407L7 10.7793L3.56857 12.5407C3.20107 12.7293 2.77631 12.4162 2.84778 12.0094L3.5 8.29656L0.748265 5.67769C0.445499 5.38955 0.608911 4.87917 1.02273 4.82046L4.83688 4.27934L6.55377 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M24.5538 0.882786C24.7387 0.516867 25.2613 0.516868 25.4462 0.882787L27.1631 4.27934L30.9773 4.82046C31.3911 4.87917 31.5545 5.38955 31.2517 5.67769L28.5 8.29656L29.1522 12.0094C29.2237 12.4162 28.7989 12.7293 28.4314 12.5407L25 10.7793L21.5686 12.5407C21.2011 12.7293 20.7763 12.4162 20.8478 12.0094L21.5 8.29656L18.7483 5.67769C18.4455 5.38955 18.6089 4.87917 19.0227 4.82046L22.8369 4.27934L24.5538 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M42.5538 0.882786C42.7387 0.516867 43.2613 0.516868 43.4462 0.882787L45.1631 4.27934L48.9773 4.82046C49.3911 4.87917 49.5545 5.38955 49.2517 5.67769L46.5 8.29656L47.1522 12.0094C47.2237 12.4162 46.7989 12.7293 46.4314 12.5407L43 10.7793L39.5686 12.5407C39.2011 12.7293 38.7763 12.4162 38.8478 12.0094L39.5 8.29656L36.7483 5.67769C36.4455 5.38955 36.6089 4.87917 37.0227 4.82046L40.8369 4.27934L42.5538 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M60.5538 0.882786C60.7387 0.516867 61.2613 0.516868 61.4462 0.882787L63.1631 4.27934L66.9773 4.82046C67.3911 4.87917 67.5545 5.38955 67.2517 5.67769L64.5 8.29656L65.1522 12.0094C65.2237 12.4162 64.7989 12.7293 64.4314 12.5407L61 10.7793L57.5686 12.5407C57.2011 12.7293 56.7763 12.4162 56.8478 12.0094L57.5 8.29656L54.7483 5.67769C54.4455 5.38955 54.6089 4.87917 55.0227 4.82046L58.8369 4.27934L60.5538 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M78.5538 0.882786C78.7387 0.516867 79.2613 0.516868 79.4462 0.882787L81.1631 4.27934L84.9773 4.82046C85.3911 4.87917 85.5545 5.38955 85.2517 5.67769L82.5 8.29656L83.1522 12.0094C83.2237 12.4162 82.7989 12.7293 82.4314 12.5407L79 10.7793L75.5686 12.5407C75.2011 12.7293 74.7763 12.4162 74.8478 12.0094L75.5 8.29656L72.7483 5.67769C72.4455 5.38955 72.6089 4.87917 73.0227 4.82046L76.8369 4.27934L78.5538 0.882786Z"
+									fill="white" fill-opacity="0.5"></path>
 							</svg>
-						</button>
-						<button type="button" class="next-arrow next-js-popular-destinations slick-arrow" aria-disabled="false" style=""><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M19 6L1 6M19 6L14 11M19 6L14 1" stroke="#0FC4AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-							</svg>
-						</button>
-					</div>
-					<button class="btn-ice">Смотреть все</button>
-				</div>
-				<div class="scroll-link">
-					<div class="scroll-link__inner">
-						<a class="scroll-link__tag" href="">#насеверноесияние</a>
-						<a class="scroll-link__tag" href="">#охотазасевернымсиянием</a>
-						<a class="scroll-link__tag" href="">#териберка</a>
-						<a class="scroll-link__tag" href="">#саамы</a>
-						<a class="scroll-link__tag" href="">#собачьиупряжки</a>
-						<a class="scroll-link__tag" href="">#отдыхвмурманске</a>
-						<a class="scroll-link__tag" href="">#этническиетуры</a>
-						<a class="scroll-link__tag" href="">#тур</a>
-						<a class="scroll-link__tag" href="">#мурманск</a>
-						<a class="scroll-link__tag" href="">#хочуотдыхать</a>
-						<a class="scroll-link__tag" href="">#сияние</a>
-						<a class="scroll-link__tag" href="">#насеверноесияние</a>
-						<a class="scroll-link__tag" href="">#охотазасевернымсиянием</a>
-						<a class="scroll-link__tag" href="">#териберка</a>
-						<a class="scroll-link__tag" href="">#саамы</a>
-						<a class="scroll-link__tag" href="">#собачьиупряжки</a>
-						<a class="scroll-link__tag" href="">#отдыхвмурманске</a>
-						<a class="scroll-link__tag" href="">#этническиетуры</a>
-						<a class="scroll-link__tag" href="">#тур</a>
-						<a class="scroll-link__tag" href="">#мурманск</a>
-						<a class="scroll-link__tag" href="">#хочуотдыхать</a>
-						<a class="scroll-link__tag" href="">#сияние</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- /Блок "Популярные направления" -->
-
-		<!-- catalog -->
-		<section class="catalog">
-			<div class="container">
-				<div class="title-sections title-sections--mobile">
-					<h2 class="title-sections__title">Каталог туров</h2>
-				</div>
-
-				<div class="filter">
-					<div class="filter__desktop">
-
-						<div class="filter__btn-wrap">
-
-							<button class="filter__item filter__item--direction filter__item--active">
-								<span class="filter__btn-text">Направление</span>
-								<span class="filter__btn-subtext">Тереберка</span>
-								<svg class="filter__arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
-										d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
-										fill="#7B8997" />
-								</svg>
-							</button>
-							<div class="filter__menu filter__menu--active">
-								<div class="filter__menu-top">
-									<span class="filter__menu-title">Направление</span>
-									<button class="filter__menu-reset">Сбросить</button>
-								</div>
-								<div class="filter__menu-list">
-
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo19">
-										<label class="filter__text" for="geo19">Мурманск</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo20">
-										<label class="filter__text" for="geo20">Териберка</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo21">
-										<label class="filter__text" for="geo21">Хабины</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo22">
-										<label class="filter__text" for="geo22">Ловозеро</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo23">
-										<label class="filter__text" for="geo23">Средний рыбачий</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo24">
-										<label class="filter__text" for="geo24">Норвегия</label>
-									</div>
-	
-								</div>
-							</div>
-						</div>
-
-						<div class="filter__btn-wrap filter__btn-wrap--mid">
-
-							<button class="filter__item filter__item--categories">
-								<span class="filter__btn-text">Категории</span>
-								<span class="filter__btn-subtext">Однодневные туры, Корпоративные туры</span>
-								<svg class="filter__arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
-										d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
-										fill="#7B8997" />
-								</svg>
-							</button>
-
-							<div class="filter__menu">
-								<div class="filter__menu-top">
-									<span class="filter__menu-title">Категории</span>
-									<button class="filter__menu-reset">Сбросить</button>
-								</div>
-								<div class="filter__menu-list">
-
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo25">
-										<label class="filter__text" for="geo25">Мурманск</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo26">
-										<label class="filter__text" for="geo26">Териберка</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo27">
-										<label class="filter__text" for="geo27">Хабины</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo28">
-										<label class="filter__text" for="geo28">Ловозеро</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo29">
-										<label class="filter__text" for="geo29">Средний рыбачий</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo30">
-										<label class="filter__text" for="geo30">Норвегия</label>
-									</div>
-	
-								</div>
-							</div>
-						</div>
-
-						<div class="filter__btn-wrap">
-
-							<button class="filter__item filter__item--seasonality">
-								<span class="filter__btn-text">Сезонность</span>
-								<span class="filter__btn-subtext">Весна, Осень</span>
-								<svg class="filter__arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
-										d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
-										fill="#7B8997" />
-								</svg>
-							</button>
-							<div class="filter__menu">
-								<div class="filter__menu-top">
-									<span class="filter__menu-title">Сезонность</span>
-									<button class="filter__menu-reset">Сбросить</button>
-								</div>
-								<div class="filter__menu-list">
-
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo31">
-										<label class="filter__text" for="geo31">Мурманск</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo32">
-										<label class="filter__text" for="geo32">Териберка</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo33">
-										<label class="filter__text" for="geo33">Хабины</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo34">
-										<label class="filter__text" for="geo34">Ловозеро</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo35">
-										<label class="filter__text" for="geo35">Средний рыбачий</label>
-									</div>
-	
-									<div class="filter__row">
-										<input class="filter__inp" type="checkbox" id="geo36">
-										<label class="filter__text" for="geo36">Норвегия</label>
-									</div>
-	
-								</div>
-							</div>
 						</div>
 
 					</div>
-
-					<div class="filter__mobile">
-
-						<div class="filter__mobile-spoiler filter__item--active">
-							<svg class="filter__mobile-arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
+					<h3 class="catalog__item-left-title catalog__item-left-title--desktop">Рыбалка в Териберке</h3>
+					<p class="catalog__item-left-text">С учётом сложившейся международной обстановки, выбранный нами
+						инновационный путь однозначно фиксирует необходимость существующих финансовых и административных
+						условий.</p>
+					<div class="catalog__item-links">
+						<a class="catalog__item-link" href="">Однодневные туры</a>
+						<a class="catalog__item-link" href="">Корпоративные туры</a>
+						<a class="catalog__item-link" href="">Категория один</a>
+						<a class="catalog__item-link" href="">Категория два</a>
+					</div>
+					<div class="catalog__item-text-bottom">
+						<div class="catalog__item-text-left">
+							<span class="catalog__item-text-span-white">Сложность</span>
+							<svg class="catalog__item-svg" width="109" height="5" viewBox="0 0 109 5" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
-								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
-									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
-									fill="#7B8997" />
+								<path
+									d="M1.67542 3.2984L4.33547 0.596792C4.71139 0.214993 5.22479 0 5.7606 0H25.612C26.4992 0 26.947 1.06943 26.3246 1.7016L23.6645 4.40321C23.2886 4.78501 22.7752 5 22.2394 5H2.38799C1.50082 5 1.05298 3.93057 1.67542 3.2984Z"
+									fill="#0FC4AC" />
+								<path
+									d="M28.6754 3.2984L31.3355 0.596792C31.7114 0.214993 32.2248 0 32.7606 0H52.612C53.4992 0 53.947 1.06943 53.3246 1.7016L50.6645 4.40321C50.2886 4.78501 49.7752 5 49.2394 5H29.388C28.5008 5 28.053 3.93057 28.6754 3.2984Z"
+									fill="#0FC4AC" />
+								<path
+									d="M55.6754 3.2984L58.3355 0.596792C58.7114 0.214993 59.2248 0 59.7606 0H79.612C80.4992 0 80.947 1.06943 80.3246 1.7016L77.6645 4.40321C77.2886 4.78501 76.7752 5 76.2394 5H56.388C55.5008 5 55.053 3.93057 55.6754 3.2984Z"
+									fill="#0FC4AC" />
+								<path
+									d="M82.6754 3.2984L85.3355 0.596792C85.7114 0.214993 86.2248 0 86.7606 0H106.612C107.499 0 107.947 1.06943 107.325 1.7016L104.665 4.40321C104.289 4.78501 103.775 5 103.239 5H83.388C82.5008 5 82.053 3.93057 82.6754 3.2984Z"
+									fill="#BEC6CE" />
 							</svg>
-							<span class="filter__mobile-title">Направление</span>
-							<div class="filter__mobile-cut">
 
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo">
-									<label class="filter__text" for="geo">Мурманск</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo2">
-									<label class="filter__text" for="geo2">Териберка</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo3">
-									<label class="filter__text" for="geo3">Хабины</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo4">
-									<label class="filter__text" for="geo4">Ловозеро</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo5">
-									<label class="filter__text" for="geo5">Средний рыбачий</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo6">
-									<label class="filter__text" for="geo6">Норвегия</label>
-								</div>
-
+							<span class="catalog__item-text-span-dark">Продвинутый</span>
+						</div>
+						<div class="catalog__item-text-right">
+							<span class="catalog__item-text-span-white">Сезон</span>
+							<div class="catalog__item-text-inner">
+								<span class="catalog__item-text-span">Весна</span>
+								<span class="catalog__item-text-span">Осень</span>
 							</div>
 						</div>
+					</div>
+				</div>
 
-						<div class="filter__mobile-spoiler">
-							<svg class="filter__mobile-arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
-									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
-									fill="#7B8997" />
-							</svg>
-							<span class="filter__mobile-title">Категории</span>
-							<div class="filter__mobile-cut">
+				<div class="catalog__item-right">
 
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo7">
-									<label class="filter__text" for="geo7">Мурманск</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo8">
-									<label class="filter__text" for="geo8">Териберка</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo9">
-									<label class="filter__text" for="geo9">Хабины</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo10">
-									<label class="filter__text" for="geo10">Ловозеро</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo11">
-									<label class="filter__text" for="geo11">Средний рыбачий</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo12">
-									<label class="filter__text" for="geo12">Норвегия</label>
-								</div>
-
-							</div>
+					<div class="catalog__item-price">
+						<div class="catalog__item-price-top">
+							<p class="catalog__item-right-titleup">Цена за человека</p>
+							<span class="catalog__item-right-title">6000 ₽</span>
 						</div>
 
-						<div class="filter__mobile-spoiler">
-							<svg class="filter__mobile-arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
-									d="M0.252077 0.668091C0.711594 -0.0211834 1.64287 -0.207439 2.33215 0.252077L6 2.69731L9.66785 0.252077C10.3571 -0.207439 11.2884 -0.0211834 11.7479 0.668091C12.2074 1.35737 12.0212 2.28865 11.3319 2.74816L6.83203 5.74808C6.32819 6.08397 5.67181 6.08397 5.16797 5.74808L0.668091 2.74816C-0.0211834 2.28865 -0.207439 1.35737 0.252077 0.668091Z"
-									fill="#7B8997" />
-							</svg>
-							<span class="filter__mobile-title">Сезонность</span>
-							<div class="filter__mobile-cut">
+						<div class="catalog__item-wrapper-date">
+							<div class="catalog__item-images">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0)">
+										<circle cx="12" cy="11.9998" r="11" stroke="#93A0AD" stroke-width="2" />
+										<path d="M12 6.99976V11.9998L15 15.9998" stroke="#93A0AD" stroke-width="2"
+											stroke-linecap="round" />
+									</g>
+									<defs>
+										<clipPath id="clip0">
+											<rect width="24" height="24" fill="white"
+												transform="translate(0 -0.000244141)" />
+										</clipPath>
+									</defs>
+								</svg>
+								<p class="catalog__item-right-text">5 дней</p>
+							</div>
 
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo13">
-									<label class="filter__text" for="geo13">Мурманск</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo14">
-									<label class="filter__text" for="geo14">Териберка</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo15">
-									<label class="filter__text" for="geo15">Хабины</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo16">
-									<label class="filter__text" for="geo16">Ловозеро</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo17">
-									<label class="filter__text" for="geo17">Средний рыбачий</label>
-								</div>
-
-								<div class="filter__row">
-									<input class="filter__inp" type="checkbox" id="geo18">
-									<label class="filter__text" for="geo18">Норвегия</label>
-								</div>
-
+							<div class="catalog__item-images">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M19.6923 3.99976H4.30769C3.03319 3.99976 2 5.00712 2 6.24976V19.7498C2 20.9924 3.03319 21.9998 4.30769 21.9998H19.6923C20.9668 21.9998 22 20.9924 22 19.7498V6.24976C22 5.00712 20.9668 3.99976 19.6923 3.99976Z"
+										stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
+									<path
+										d="M14 10.9998C14.5523 10.9998 15 10.552 15 9.99976C15 9.44747 14.5523 8.99976 14 8.99976C13.4477 8.99976 13 9.44747 13 9.99976C13 10.552 13.4477 10.9998 14 10.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M18 10.9998C18.5523 10.9998 19 10.552 19 9.99976C19 9.44747 18.5523 8.99976 18 8.99976C17.4477 8.99976 17 9.44747 17 9.99976C17 10.552 17.4477 10.9998 18 10.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M14 14.9998C14.5523 14.9998 15 14.552 15 13.9998C15 13.4475 14.5523 12.9998 14 12.9998C13.4477 12.9998 13 13.4475 13 13.9998C13 14.552 13.4477 14.9998 14 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M18 14.9998C18.5523 14.9998 19 14.552 19 13.9998C19 13.4475 18.5523 12.9998 18 12.9998C17.4477 12.9998 17 13.4475 17 13.9998C17 14.552 17.4477 14.9998 18 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M6 14.9998C6.55228 14.9998 7 14.552 7 13.9998C7 13.4475 6.55228 12.9998 6 12.9998C5.44772 12.9998 5 13.4475 5 13.9998C5 14.552 5.44772 14.9998 6 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M10 14.9998C10.5523 14.9998 11 14.552 11 13.9998C11 13.4475 10.5523 12.9998 10 12.9998C9.44772 12.9998 9 13.4475 9 13.9998C9 14.552 9.44772 14.9998 10 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M6 18.9998C6.55228 18.9998 7 18.552 7 17.9998C7 17.4475 6.55228 16.9998 6 16.9998C5.44772 16.9998 5 17.4475 5 17.9998C5 18.552 5.44772 18.9998 6 18.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M10 18.9998C10.5523 18.9998 11 18.552 11 17.9998C11 17.4475 10.5523 16.9998 10 16.9998C9.44772 16.9998 9 17.4475 9 17.9998C9 18.552 9.44772 18.9998 10 18.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M14 18.9998C14.5523 18.9998 15 18.552 15 17.9998C15 17.4475 14.5523 16.9998 14 16.9998C13.4477 16.9998 13 17.4475 13 17.9998C13 18.552 13.4477 18.9998 14 18.9998Z"
+										fill="#93A0AD" />
+									<path d="M6 0.999756V5.99976" stroke="#93A0AD" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M18 0.999756V5.99976" stroke="#93A0AD" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								<p
+									class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--desktop">
+									Сентябрь — Апрель</p>
+								<p
+									class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--mobile">
+									Сен. — Апр.</p>
 							</div>
 						</div>
-						<button class="btn-base btn-base--mb">Найти
+					</div>
+
+					<div class="catalog__btn-inner">
+						<button class="catalog__item-btn catalog__item-btn--fast-booking">Быстрое бронирование</button>
+						<button class="catalog__item-btn catalog__item-btn--details">Подробнее</button>
+						<button class="btn-base btn-base--mobile">Подробнее о туре
 							<div class="btn-base__shadow"></div>
 						</button>
 					</div>
+
+				</div>
+			</div>
+
+			<div class="catalog__item" style="background-image: url(../img/back-mob2.jpg);">
+				<div class="catalog__item-left">
+					<img class="catalog__item-img" src="/img/catalog-bg1.jpg" alt="">
+					<span
+						class="tours__item-span-text tours__item-span-text--blue tours__item-span-text--catalog">Популярное</span>
 				</div>
 
-
-				<div class="search-tours">
-
-					<div class="search-tours__left">
-						<p class="search-tours__description">Найдено 20 туров</p>
-						<button class="search-tours__btn-clear">Очистить поиск</button>
-					</div>
-					<div class="search-tours__right">
-						<button class="search-tours__btn-rating search-tours__btn-rating--active">
-							<svg class="search-tours__img-popular" width="16" height="17" viewBox="0 0 16 17" fill="none"
+				<div class="catalog__item-mid">
+					<div class="catalog__item-top">
+						<span class="catalog__item-left-text-top">териберка</span>
+						<h3 class="catalog__item-left-title catalog__item-left-title--mobile">Рыбалка в Териберке</h3>
+						<div class="catalog__item-rating">
+							<span class="catalog__item-yellow">4.3</span>
+							<svg class="catalog__svg-stars" width="86" height="13" viewBox="0 0 86 13" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
-								<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
-									d="M4.5 5.02199C5.91302 4.17803 6.92847 2.75708 7.21672 1.09204C7.26524 0.811729 7.56733 0.638468 7.81128 0.784801C9.81432 1.98631 11.15 4.14413 11.15 6.6063C11.15 7.11845 11.0922 7.61743 10.9826 8.09737C10.9099 8.41612 11.2004 8.70693 11.4859 8.54756C12.1117 8.19815 12.6164 7.66561 12.9231 7.02481C13.0572 6.7446 13.4377 6.64082 13.634 6.88163C14.4891 7.93085 15 9.25906 15 10.7037C15 13.2604 13.3997 15.4526 11.1229 16.3788C10.9159 16.4629 10.6841 16.4629 10.4771 16.3788C8.20033 15.4526 6.6 13.2604 6.6 10.7037C6.6 10.6344 6.5145 10.6006 6.46987 10.6536C5.67633 11.5964 5.2 12.803 5.2 14.1181C5.2 14.5181 5.24407 14.9081 5.32772 15.2837C5.39737 15.5964 5.12361 15.8972 4.8235 15.7851C2.58763 14.9502 1 12.8371 1 10.3622C1 8.18524 2.22845 6.28817 4.04597 5.29475L4.5 5.02199Z"
+								<path
+									d="M6.55377 0.882786C6.73873 0.516867 7.26127 0.516868 7.44623 0.882787L9.16312 4.27934L12.9773 4.82046C13.3911 4.87917 13.5545 5.38955 13.2517 5.67769L10.5 8.29656L11.1522 12.0094C11.2237 12.4162 10.7989 12.7293 10.4314 12.5407L7 10.7793L3.56857 12.5407C3.20107 12.7293 2.77631 12.4162 2.84778 12.0094L3.5 8.29656L0.748265 5.67769C0.445499 5.38955 0.608911 4.87917 1.02273 4.82046L4.83688 4.27934L6.55377 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M24.5538 0.882786C24.7387 0.516867 25.2613 0.516868 25.4462 0.882787L27.1631 4.27934L30.9773 4.82046C31.3911 4.87917 31.5545 5.38955 31.2517 5.67769L28.5 8.29656L29.1522 12.0094C29.2237 12.4162 28.7989 12.7293 28.4314 12.5407L25 10.7793L21.5686 12.5407C21.2011 12.7293 20.7763 12.4162 20.8478 12.0094L21.5 8.29656L18.7483 5.67769C18.4455 5.38955 18.6089 4.87917 19.0227 4.82046L22.8369 4.27934L24.5538 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M42.5538 0.882786C42.7387 0.516867 43.2613 0.516868 43.4462 0.882787L45.1631 4.27934L48.9773 4.82046C49.3911 4.87917 49.5545 5.38955 49.2517 5.67769L46.5 8.29656L47.1522 12.0094C47.2237 12.4162 46.7989 12.7293 46.4314 12.5407L43 10.7793L39.5686 12.5407C39.2011 12.7293 38.7763 12.4162 38.8478 12.0094L39.5 8.29656L36.7483 5.67769C36.4455 5.38955 36.6089 4.87917 37.0227 4.82046L40.8369 4.27934L42.5538 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M60.5538 0.882786C60.7387 0.516867 61.2613 0.516868 61.4462 0.882787L63.1631 4.27934L66.9773 4.82046C67.3911 4.87917 67.5545 5.38955 67.2517 5.67769L64.5 8.29656L65.1522 12.0094C65.2237 12.4162 64.7989 12.7293 64.4314 12.5407L61 10.7793L57.5686 12.5407C57.2011 12.7293 56.7763 12.4162 56.8478 12.0094L57.5 8.29656L54.7483 5.67769C54.4455 5.38955 54.6089 4.87917 55.0227 4.82046L58.8369 4.27934L60.5538 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M78.5538 0.882786C78.7387 0.516867 79.2613 0.516868 79.4462 0.882787L81.1631 4.27934L84.9773 4.82046C85.3911 4.87917 85.5545 5.38955 85.2517 5.67769L82.5 8.29656L83.1522 12.0094C83.2237 12.4162 82.7989 12.7293 82.4314 12.5407L79 10.7793L75.5686 12.5407C75.2011 12.7293 74.7763 12.4162 74.8478 12.0094L75.5 8.29656L72.7483 5.67769C72.4455 5.38955 72.6089 4.87917 73.0227 4.82046L76.8369 4.27934L78.5538 0.882786Z"
+									fill="white" fill-opacity="0.5"></path>
+							</svg>
+						</div>
+
+					</div>
+					<h3 class="catalog__item-left-title catalog__item-left-title--desktop">Рыбалка в Териберке</h3>
+					<p class="catalog__item-left-text">С учётом сложившейся международной обстановки, выбранный нами
+						инновационный путь однозначно фиксирует необходимость существующих финансовых и административных
+						условий.</p>
+					<div class="catalog__item-links">
+						<a class="catalog__item-link" href="">Однодневные туры</a>
+						<a class="catalog__item-link" href="">Корпоративные туры</a>
+						<a class="catalog__item-link" href="">Категория один</a>
+						<a class="catalog__item-link" href="">Категория два</a>
+					</div>
+					<div class="catalog__item-text-bottom">
+						<div class="catalog__item-text-left">
+							<span class="catalog__item-text-span-white">Сложность</span>
+							<svg class="catalog__item-svg" width="109" height="5" viewBox="0 0 109 5" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M1.67542 3.2984L4.33547 0.596792C4.71139 0.214993 5.22479 0 5.7606 0H25.612C26.4992 0 26.947 1.06943 26.3246 1.7016L23.6645 4.40321C23.2886 4.78501 22.7752 5 22.2394 5H2.38799C1.50082 5 1.05298 3.93057 1.67542 3.2984Z"
 									fill="#0FC4AC" />
+								<path
+									d="M28.6754 3.2984L31.3355 0.596792C31.7114 0.214993 32.2248 0 32.7606 0H52.612C53.4992 0 53.947 1.06943 53.3246 1.7016L50.6645 4.40321C50.2886 4.78501 49.7752 5 49.2394 5H29.388C28.5008 5 28.053 3.93057 28.6754 3.2984Z"
+									fill="#0FC4AC" />
+								<path
+									d="M55.6754 3.2984L58.3355 0.596792C58.7114 0.214993 59.2248 0 59.7606 0H79.612C80.4992 0 80.947 1.06943 80.3246 1.7016L77.6645 4.40321C77.2886 4.78501 76.7752 5 76.2394 5H56.388C55.5008 5 55.053 3.93057 55.6754 3.2984Z"
+									fill="#0FC4AC" />
+								<path
+									d="M82.6754 3.2984L85.3355 0.596792C85.7114 0.214993 86.2248 0 86.7606 0H106.612C107.499 0 107.947 1.06943 107.325 1.7016L104.665 4.40321C104.289 4.78501 103.775 5 103.239 5H83.388C82.5008 5 82.053 3.93057 82.6754 3.2984Z"
+									fill="#BEC6CE" />
 							</svg>
 
-							Популярные
-						</button>
-						<button class="search-tours__btn-rating">По рейтингу</button>
-						<button class="search-tours__btn-rating">Дороже</button>
-						<button class="search-tours__btn-rating">Дешевле</button>
-						<div class="search-tours__btn-wrap">
-							<button class="search-tours__btn-sorting">
+							<span class="catalog__item-text-span-dark">Продвинутый</span>
+						</div>
+						<div class="catalog__item-text-right">
+							<span class="catalog__item-text-span-white">Сезон</span>
+							<div class="catalog__item-text-inner">
+								<span class="catalog__item-text-span">Весна</span>
+								<span class="catalog__item-text-span">Осень</span>
+							</div>
+						</div>
+					</div>
+				</div>
 
-								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
-										d="M0 1C0 0.447715 0.447715 0 1 0H3C3.55228 0 4 0.447715 4 1V3C4 3.55228 3.55228 4 3 4H1C0.447715 4 0 3.55228 0 3V1ZM5 1C5 0.447715 5.44772 0 6 0H8C8.55229 0 9 0.447715 9 1V3C9 3.55228 8.55229 4 8 4H6C5.44772 4 5 3.55228 5 3V1ZM11 0C10.4477 0 10 0.447715 10 1V3C10 3.55228 10.4477 4 11 4H13C13.5523 4 14 3.55228 14 3V1C14 0.447715 13.5523 0 13 0H11ZM0 6C0 5.44772 0.447715 5 1 5H3C3.55228 5 4 5.44772 4 6V8C4 8.55229 3.55228 9 3 9H1C0.447715 9 0 8.55229 0 8V6ZM6 5C5.44772 5 5 5.44772 5 6V8C5 8.55229 5.44772 9 6 9H8C8.55229 9 9 8.55229 9 8V6C9 5.44772 8.55229 5 8 5H6ZM10 6C10 5.44772 10.4477 5 11 5H13C13.5523 5 14 5.44772 14 6V8C14 8.55229 13.5523 9 13 9H11C10.4477 9 10 8.55229 10 8V6ZM1 10C0.447715 10 0 10.4477 0 11V13C0 13.5523 0.447715 14 1 14H3C3.55228 14 4 13.5523 4 13V11C4 10.4477 3.55228 10 3 10H1ZM5 11C5 10.4477 5.44772 10 6 10H8C8.55229 10 9 10.4477 9 11V13C9 13.5523 8.55229 14 8 14H6C5.44772 14 5 13.5523 5 13V11ZM11 10C10.4477 10 10 10.4477 10 11V13C10 13.5523 10.4477 14 11 14H13C13.5523 14 14 13.5523 14 13V11C14 10.4477 13.5523 10 13 10H11Z"
+				<div class="catalog__item-right">
+
+					<div class="catalog__item-price">
+						<div class="catalog__item-price-top">
+							<p class="catalog__item-right-titleup">Цена за человека</p>
+							<span class="catalog__item-right-title">6000 ₽</span>
+						</div>
+
+						<div class="catalog__item-wrapper-date">
+							<div class="catalog__item-images">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0)">
+										<circle cx="12" cy="11.9998" r="11" stroke="#93A0AD" stroke-width="2" />
+										<path d="M12 6.99976V11.9998L15 15.9998" stroke="#93A0AD" stroke-width="2"
+											stroke-linecap="round" />
+									</g>
+									<defs>
+										<clipPath id="clip0">
+											<rect width="24" height="24" fill="white"
+												transform="translate(0 -0.000244141)" />
+										</clipPath>
+									</defs>
+								</svg>
+								<p class="catalog__item-right-text">5 дней</p>
+							</div>
+
+							<div class="catalog__item-images">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M19.6923 3.99976H4.30769C3.03319 3.99976 2 5.00712 2 6.24976V19.7498C2 20.9924 3.03319 21.9998 4.30769 21.9998H19.6923C20.9668 21.9998 22 20.9924 22 19.7498V6.24976C22 5.00712 20.9668 3.99976 19.6923 3.99976Z"
+										stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
+									<path
+										d="M14 10.9998C14.5523 10.9998 15 10.552 15 9.99976C15 9.44747 14.5523 8.99976 14 8.99976C13.4477 8.99976 13 9.44747 13 9.99976C13 10.552 13.4477 10.9998 14 10.9998Z"
 										fill="#93A0AD" />
+									<path
+										d="M18 10.9998C18.5523 10.9998 19 10.552 19 9.99976C19 9.44747 18.5523 8.99976 18 8.99976C17.4477 8.99976 17 9.44747 17 9.99976C17 10.552 17.4477 10.9998 18 10.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M14 14.9998C14.5523 14.9998 15 14.552 15 13.9998C15 13.4475 14.5523 12.9998 14 12.9998C13.4477 12.9998 13 13.4475 13 13.9998C13 14.552 13.4477 14.9998 14 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M18 14.9998C18.5523 14.9998 19 14.552 19 13.9998C19 13.4475 18.5523 12.9998 18 12.9998C17.4477 12.9998 17 13.4475 17 13.9998C17 14.552 17.4477 14.9998 18 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M6 14.9998C6.55228 14.9998 7 14.552 7 13.9998C7 13.4475 6.55228 12.9998 6 12.9998C5.44772 12.9998 5 13.4475 5 13.9998C5 14.552 5.44772 14.9998 6 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M10 14.9998C10.5523 14.9998 11 14.552 11 13.9998C11 13.4475 10.5523 12.9998 10 12.9998C9.44772 12.9998 9 13.4475 9 13.9998C9 14.552 9.44772 14.9998 10 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M6 18.9998C6.55228 18.9998 7 18.552 7 17.9998C7 17.4475 6.55228 16.9998 6 16.9998C5.44772 16.9998 5 17.4475 5 17.9998C5 18.552 5.44772 18.9998 6 18.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M10 18.9998C10.5523 18.9998 11 18.552 11 17.9998C11 17.4475 10.5523 16.9998 10 16.9998C9.44772 16.9998 9 17.4475 9 17.9998C9 18.552 9.44772 18.9998 10 18.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M14 18.9998C14.5523 18.9998 15 18.552 15 17.9998C15 17.4475 14.5523 16.9998 14 16.9998C13.4477 16.9998 13 17.4475 13 17.9998C13 18.552 13.4477 18.9998 14 18.9998Z"
+										fill="#93A0AD" />
+									<path d="M6 0.999756V5.99976" stroke="#93A0AD" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M18 0.999756V5.99976" stroke="#93A0AD" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
 								</svg>
-
-							</button>
-							<button class="search-tours__btn-sorting search-tours__btn-sorting--active">
-
-								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path class="arrow-colouring" fill-rule="evenodd" clip-rule="evenodd"
-										d="M1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2C1.55228 2 2 1.55228 2 1C2 0.447715 1.55228 0 1 0ZM4 0C3.44772 0 3 0.447715 3 1C3 1.55228 3.44772 2 4 2H13C13.5523 2 14 1.55228 14 1C14 0.447715 13.5523 0 13 0H4ZM4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H13C13.5523 7 14 6.55228 14 6C14 5.44772 13.5523 5 13 5H4ZM3 11C3 10.4477 3.44772 10 4 10H13C13.5523 10 14 10.4477 14 11C14 11.5523 13.5523 12 13 12H4C3.44772 12 3 11.5523 3 11ZM0 6C0 5.44772 0.447715 5 1 5C1.55228 5 2 5.44772 2 6C2 6.55228 1.55228 7 1 7C0.447715 7 0 6.55228 0 6ZM1 10C0.447715 10 0 10.4477 0 11C0 11.5523 0.447715 12 1 12C1.55228 12 2 11.5523 2 11C2 10.4477 1.55228 10 1 10Z"
-										fill="white" />
-								</svg>
-
-							</button>
+								<p
+									class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--desktop">
+									Сентябрь — Апрель</p>
+								<p
+									class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--mobile">
+									Сен. — Апр.</p>
+							</div>
 						</div>
 					</div>
+
+					<div class="catalog__btn-inner">
+						<button class="catalog__item-btn catalog__item-btn--fast-booking">Быстрое бронирование</button>
+						<button class="catalog__item-btn catalog__item-btn--details">Подробнее</button>
+						<button class="btn-base btn-base--mobile">Подробнее о туре
+							<div class="btn-base__shadow"></div>
+						</button>
+					</div>
+
 				</div>
 			</div>
 
-
-			<div class="catalog__items container catalog__items--container">
-
-				<div class="catalog__item" style="background-image: url(../img/back-mob.jpg);">
-					<div class="catalog__item-left">
-						<img class="catalog__item-img" src="/img/catalog-bg.jpg" alt="">
-						<span
-							class="tours__item-span-text tours__item-span-text--blue tours__item-span-text--catalog">Популярное</span>
-					</div>
-
-					<div class="catalog__item-mid">
-						<div class="catalog__item-top">
-							<span class="catalog__item-left-text-top">териберка</span>
-							<h3 class="catalog__item-left-title catalog__item-left-title--mobile">Рыбалка в Териберке</h3>
-							<div class="catalog__item-rating">
-								<span class="catalog__item-yellow">4.3</span>
-								<svg class="catalog__svg-stars" width="86" height="13" viewBox="0 0 86 13" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M6.55377 0.882786C6.73873 0.516867 7.26127 0.516868 7.44623 0.882787L9.16312 4.27934L12.9773 4.82046C13.3911 4.87917 13.5545 5.38955 13.2517 5.67769L10.5 8.29656L11.1522 12.0094C11.2237 12.4162 10.7989 12.7293 10.4314 12.5407L7 10.7793L3.56857 12.5407C3.20107 12.7293 2.77631 12.4162 2.84778 12.0094L3.5 8.29656L0.748265 5.67769C0.445499 5.38955 0.608911 4.87917 1.02273 4.82046L4.83688 4.27934L6.55377 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M24.5538 0.882786C24.7387 0.516867 25.2613 0.516868 25.4462 0.882787L27.1631 4.27934L30.9773 4.82046C31.3911 4.87917 31.5545 5.38955 31.2517 5.67769L28.5 8.29656L29.1522 12.0094C29.2237 12.4162 28.7989 12.7293 28.4314 12.5407L25 10.7793L21.5686 12.5407C21.2011 12.7293 20.7763 12.4162 20.8478 12.0094L21.5 8.29656L18.7483 5.67769C18.4455 5.38955 18.6089 4.87917 19.0227 4.82046L22.8369 4.27934L24.5538 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M42.5538 0.882786C42.7387 0.516867 43.2613 0.516868 43.4462 0.882787L45.1631 4.27934L48.9773 4.82046C49.3911 4.87917 49.5545 5.38955 49.2517 5.67769L46.5 8.29656L47.1522 12.0094C47.2237 12.4162 46.7989 12.7293 46.4314 12.5407L43 10.7793L39.5686 12.5407C39.2011 12.7293 38.7763 12.4162 38.8478 12.0094L39.5 8.29656L36.7483 5.67769C36.4455 5.38955 36.6089 4.87917 37.0227 4.82046L40.8369 4.27934L42.5538 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M60.5538 0.882786C60.7387 0.516867 61.2613 0.516868 61.4462 0.882787L63.1631 4.27934L66.9773 4.82046C67.3911 4.87917 67.5545 5.38955 67.2517 5.67769L64.5 8.29656L65.1522 12.0094C65.2237 12.4162 64.7989 12.7293 64.4314 12.5407L61 10.7793L57.5686 12.5407C57.2011 12.7293 56.7763 12.4162 56.8478 12.0094L57.5 8.29656L54.7483 5.67769C54.4455 5.38955 54.6089 4.87917 55.0227 4.82046L58.8369 4.27934L60.5538 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M78.5538 0.882786C78.7387 0.516867 79.2613 0.516868 79.4462 0.882787L81.1631 4.27934L84.9773 4.82046C85.3911 4.87917 85.5545 5.38955 85.2517 5.67769L82.5 8.29656L83.1522 12.0094C83.2237 12.4162 82.7989 12.7293 82.4314 12.5407L79 10.7793L75.5686 12.5407C75.2011 12.7293 74.7763 12.4162 74.8478 12.0094L75.5 8.29656L72.7483 5.67769C72.4455 5.38955 72.6089 4.87917 73.0227 4.82046L76.8369 4.27934L78.5538 0.882786Z"
-										fill="white" fill-opacity="0.5"></path>
-								</svg>
-							</div>
-
-						</div>
-						<h3 class="catalog__item-left-title catalog__item-left-title--desktop">Рыбалка в Териберке</h3>
-						<p class="catalog__item-left-text">С учётом сложившейся международной обстановки, выбранный нами
-							инновационный путь однозначно фиксирует необходимость существующих финансовых и административных
-							условий.</p>
-						<div class="catalog__item-links">
-							<a class="catalog__item-link" href="">Однодневные туры</a>
-							<a class="catalog__item-link" href="">Корпоративные туры</a>
-							<a class="catalog__item-link" href="">Категория один</a>
-							<a class="catalog__item-link" href="">Категория два</a>
-						</div>
-						<div class="catalog__item-text-bottom">
-							<div class="catalog__item-text-left">
-								<span class="catalog__item-text-span-white">Сложность</span>
-								<svg class="catalog__item-svg" width="109" height="5" viewBox="0 0 109 5" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M1.67542 3.2984L4.33547 0.596792C4.71139 0.214993 5.22479 0 5.7606 0H25.612C26.4992 0 26.947 1.06943 26.3246 1.7016L23.6645 4.40321C23.2886 4.78501 22.7752 5 22.2394 5H2.38799C1.50082 5 1.05298 3.93057 1.67542 3.2984Z"
-										fill="#0FC4AC" />
-									<path
-										d="M28.6754 3.2984L31.3355 0.596792C31.7114 0.214993 32.2248 0 32.7606 0H52.612C53.4992 0 53.947 1.06943 53.3246 1.7016L50.6645 4.40321C50.2886 4.78501 49.7752 5 49.2394 5H29.388C28.5008 5 28.053 3.93057 28.6754 3.2984Z"
-										fill="#0FC4AC" />
-									<path
-										d="M55.6754 3.2984L58.3355 0.596792C58.7114 0.214993 59.2248 0 59.7606 0H79.612C80.4992 0 80.947 1.06943 80.3246 1.7016L77.6645 4.40321C77.2886 4.78501 76.7752 5 76.2394 5H56.388C55.5008 5 55.053 3.93057 55.6754 3.2984Z"
-										fill="#0FC4AC" />
-									<path
-										d="M82.6754 3.2984L85.3355 0.596792C85.7114 0.214993 86.2248 0 86.7606 0H106.612C107.499 0 107.947 1.06943 107.325 1.7016L104.665 4.40321C104.289 4.78501 103.775 5 103.239 5H83.388C82.5008 5 82.053 3.93057 82.6754 3.2984Z"
-										fill="#BEC6CE" />
-								</svg>
-
-								<span class="catalog__item-text-span-dark">Продвинутый</span>
-							</div>
-							<div class="catalog__item-text-right">
-								<span class="catalog__item-text-span-white">Сезон</span>
-								<div class="catalog__item-text-inner">
-									<span class="catalog__item-text-span">Весна</span>
-									<span class="catalog__item-text-span">Осень</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="catalog__item-right">
-
-						<div class="catalog__item-price">
-							<div class="catalog__item-price-top">
-								<p class="catalog__item-right-titleup">Цена за человека</p>
-								<span class="catalog__item-right-title">6000 ₽</span>
-							</div>
-
-							<div class="catalog__item-wrapper-date">
-								<div class="catalog__item-images">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#clip0)">
-											<circle cx="12" cy="11.9998" r="11" stroke="#93A0AD" stroke-width="2" />
-											<path d="M12 6.99976V11.9998L15 15.9998" stroke="#93A0AD" stroke-width="2"
-												stroke-linecap="round" />
-										</g>
-										<defs>
-											<clipPath id="clip0">
-												<rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)" />
-											</clipPath>
-										</defs>
-									</svg>
-									<p class="catalog__item-right-text">5 дней</p>
-								</div>
-
-								<div class="catalog__item-images">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M19.6923 3.99976H4.30769C3.03319 3.99976 2 5.00712 2 6.24976V19.7498C2 20.9924 3.03319 21.9998 4.30769 21.9998H19.6923C20.9668 21.9998 22 20.9924 22 19.7498V6.24976C22 5.00712 20.9668 3.99976 19.6923 3.99976Z"
-											stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
-										<path
-											d="M14 10.9998C14.5523 10.9998 15 10.552 15 9.99976C15 9.44747 14.5523 8.99976 14 8.99976C13.4477 8.99976 13 9.44747 13 9.99976C13 10.552 13.4477 10.9998 14 10.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M18 10.9998C18.5523 10.9998 19 10.552 19 9.99976C19 9.44747 18.5523 8.99976 18 8.99976C17.4477 8.99976 17 9.44747 17 9.99976C17 10.552 17.4477 10.9998 18 10.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M14 14.9998C14.5523 14.9998 15 14.552 15 13.9998C15 13.4475 14.5523 12.9998 14 12.9998C13.4477 12.9998 13 13.4475 13 13.9998C13 14.552 13.4477 14.9998 14 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M18 14.9998C18.5523 14.9998 19 14.552 19 13.9998C19 13.4475 18.5523 12.9998 18 12.9998C17.4477 12.9998 17 13.4475 17 13.9998C17 14.552 17.4477 14.9998 18 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M6 14.9998C6.55228 14.9998 7 14.552 7 13.9998C7 13.4475 6.55228 12.9998 6 12.9998C5.44772 12.9998 5 13.4475 5 13.9998C5 14.552 5.44772 14.9998 6 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M10 14.9998C10.5523 14.9998 11 14.552 11 13.9998C11 13.4475 10.5523 12.9998 10 12.9998C9.44772 12.9998 9 13.4475 9 13.9998C9 14.552 9.44772 14.9998 10 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M6 18.9998C6.55228 18.9998 7 18.552 7 17.9998C7 17.4475 6.55228 16.9998 6 16.9998C5.44772 16.9998 5 17.4475 5 17.9998C5 18.552 5.44772 18.9998 6 18.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M10 18.9998C10.5523 18.9998 11 18.552 11 17.9998C11 17.4475 10.5523 16.9998 10 16.9998C9.44772 16.9998 9 17.4475 9 17.9998C9 18.552 9.44772 18.9998 10 18.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M14 18.9998C14.5523 18.9998 15 18.552 15 17.9998C15 17.4475 14.5523 16.9998 14 16.9998C13.4477 16.9998 13 17.4475 13 17.9998C13 18.552 13.4477 18.9998 14 18.9998Z"
-											fill="#93A0AD" />
-										<path d="M6 0.999756V5.99976" stroke="#93A0AD" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" />
-										<path d="M18 0.999756V5.99976" stroke="#93A0AD" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" />
-									</svg>
-									<p
-										class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--desktop">
-										Сентябрь — Апрель</p>
-									<p
-										class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--mobile">
-										Сен. — Апр.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="catalog__btn-inner">
-							<button class="catalog__item-btn catalog__item-btn--fast-booking">Быстрое бронирование</button>
-							<button class="catalog__item-btn catalog__item-btn--details">Подробнее</button>
-							<button class="btn-base btn-base--mobile">Подробнее о туре
-								<div class="btn-base__shadow"></div>
-							</button>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="catalog__item" style="background-image: url(../img/back-mob2.jpg);">
-					<div class="catalog__item-left">
-						<img class="catalog__item-img" src="/img/catalog-bg1.jpg" alt="">
-						<span
-							class="tours__item-span-text tours__item-span-text--blue tours__item-span-text--catalog">Популярное</span>
-					</div>
-
-					<div class="catalog__item-mid">
-						<div class="catalog__item-top">
-							<span class="catalog__item-left-text-top">териберка</span>
-							<h3 class="catalog__item-left-title catalog__item-left-title--mobile">Рыбалка в Териберке</h3>
-							<div class="catalog__item-rating">
-								<span class="catalog__item-yellow">4.3</span>
-								<svg class="catalog__svg-stars" width="86" height="13" viewBox="0 0 86 13" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M6.55377 0.882786C6.73873 0.516867 7.26127 0.516868 7.44623 0.882787L9.16312 4.27934L12.9773 4.82046C13.3911 4.87917 13.5545 5.38955 13.2517 5.67769L10.5 8.29656L11.1522 12.0094C11.2237 12.4162 10.7989 12.7293 10.4314 12.5407L7 10.7793L3.56857 12.5407C3.20107 12.7293 2.77631 12.4162 2.84778 12.0094L3.5 8.29656L0.748265 5.67769C0.445499 5.38955 0.608911 4.87917 1.02273 4.82046L4.83688 4.27934L6.55377 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M24.5538 0.882786C24.7387 0.516867 25.2613 0.516868 25.4462 0.882787L27.1631 4.27934L30.9773 4.82046C31.3911 4.87917 31.5545 5.38955 31.2517 5.67769L28.5 8.29656L29.1522 12.0094C29.2237 12.4162 28.7989 12.7293 28.4314 12.5407L25 10.7793L21.5686 12.5407C21.2011 12.7293 20.7763 12.4162 20.8478 12.0094L21.5 8.29656L18.7483 5.67769C18.4455 5.38955 18.6089 4.87917 19.0227 4.82046L22.8369 4.27934L24.5538 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M42.5538 0.882786C42.7387 0.516867 43.2613 0.516868 43.4462 0.882787L45.1631 4.27934L48.9773 4.82046C49.3911 4.87917 49.5545 5.38955 49.2517 5.67769L46.5 8.29656L47.1522 12.0094C47.2237 12.4162 46.7989 12.7293 46.4314 12.5407L43 10.7793L39.5686 12.5407C39.2011 12.7293 38.7763 12.4162 38.8478 12.0094L39.5 8.29656L36.7483 5.67769C36.4455 5.38955 36.6089 4.87917 37.0227 4.82046L40.8369 4.27934L42.5538 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M60.5538 0.882786C60.7387 0.516867 61.2613 0.516868 61.4462 0.882787L63.1631 4.27934L66.9773 4.82046C67.3911 4.87917 67.5545 5.38955 67.2517 5.67769L64.5 8.29656L65.1522 12.0094C65.2237 12.4162 64.7989 12.7293 64.4314 12.5407L61 10.7793L57.5686 12.5407C57.2011 12.7293 56.7763 12.4162 56.8478 12.0094L57.5 8.29656L54.7483 5.67769C54.4455 5.38955 54.6089 4.87917 55.0227 4.82046L58.8369 4.27934L60.5538 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M78.5538 0.882786C78.7387 0.516867 79.2613 0.516868 79.4462 0.882787L81.1631 4.27934L84.9773 4.82046C85.3911 4.87917 85.5545 5.38955 85.2517 5.67769L82.5 8.29656L83.1522 12.0094C83.2237 12.4162 82.7989 12.7293 82.4314 12.5407L79 10.7793L75.5686 12.5407C75.2011 12.7293 74.7763 12.4162 74.8478 12.0094L75.5 8.29656L72.7483 5.67769C72.4455 5.38955 72.6089 4.87917 73.0227 4.82046L76.8369 4.27934L78.5538 0.882786Z"
-										fill="white" fill-opacity="0.5"></path>
-								</svg>
-							</div>
-
-						</div>
-						<h3 class="catalog__item-left-title catalog__item-left-title--desktop">Рыбалка в Териберке</h3>
-						<p class="catalog__item-left-text">С учётом сложившейся международной обстановки, выбранный нами
-							инновационный путь однозначно фиксирует необходимость существующих финансовых и административных
-							условий.</p>
-						<div class="catalog__item-links">
-							<a class="catalog__item-link" href="">Однодневные туры</a>
-							<a class="catalog__item-link" href="">Корпоративные туры</a>
-							<a class="catalog__item-link" href="">Категория один</a>
-							<a class="catalog__item-link" href="">Категория два</a>
-						</div>
-						<div class="catalog__item-text-bottom">
-							<div class="catalog__item-text-left">
-								<span class="catalog__item-text-span-white">Сложность</span>
-								<svg class="catalog__item-svg" width="109" height="5" viewBox="0 0 109 5" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M1.67542 3.2984L4.33547 0.596792C4.71139 0.214993 5.22479 0 5.7606 0H25.612C26.4992 0 26.947 1.06943 26.3246 1.7016L23.6645 4.40321C23.2886 4.78501 22.7752 5 22.2394 5H2.38799C1.50082 5 1.05298 3.93057 1.67542 3.2984Z"
-										fill="#0FC4AC" />
-									<path
-										d="M28.6754 3.2984L31.3355 0.596792C31.7114 0.214993 32.2248 0 32.7606 0H52.612C53.4992 0 53.947 1.06943 53.3246 1.7016L50.6645 4.40321C50.2886 4.78501 49.7752 5 49.2394 5H29.388C28.5008 5 28.053 3.93057 28.6754 3.2984Z"
-										fill="#0FC4AC" />
-									<path
-										d="M55.6754 3.2984L58.3355 0.596792C58.7114 0.214993 59.2248 0 59.7606 0H79.612C80.4992 0 80.947 1.06943 80.3246 1.7016L77.6645 4.40321C77.2886 4.78501 76.7752 5 76.2394 5H56.388C55.5008 5 55.053 3.93057 55.6754 3.2984Z"
-										fill="#0FC4AC" />
-									<path
-										d="M82.6754 3.2984L85.3355 0.596792C85.7114 0.214993 86.2248 0 86.7606 0H106.612C107.499 0 107.947 1.06943 107.325 1.7016L104.665 4.40321C104.289 4.78501 103.775 5 103.239 5H83.388C82.5008 5 82.053 3.93057 82.6754 3.2984Z"
-										fill="#BEC6CE" />
-								</svg>
-
-								<span class="catalog__item-text-span-dark">Продвинутый</span>
-							</div>
-							<div class="catalog__item-text-right">
-								<span class="catalog__item-text-span-white">Сезон</span>
-								<div class="catalog__item-text-inner">
-									<span class="catalog__item-text-span">Весна</span>
-									<span class="catalog__item-text-span">Осень</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="catalog__item-right">
-
-						<div class="catalog__item-price">
-							<div class="catalog__item-price-top">
-								<p class="catalog__item-right-titleup">Цена за человека</p>
-								<span class="catalog__item-right-title">6000 ₽</span>
-							</div>
-
-							<div class="catalog__item-wrapper-date">
-								<div class="catalog__item-images">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#clip0)">
-											<circle cx="12" cy="11.9998" r="11" stroke="#93A0AD" stroke-width="2" />
-											<path d="M12 6.99976V11.9998L15 15.9998" stroke="#93A0AD" stroke-width="2"
-												stroke-linecap="round" />
-										</g>
-										<defs>
-											<clipPath id="clip0">
-												<rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)" />
-											</clipPath>
-										</defs>
-									</svg>
-									<p class="catalog__item-right-text">5 дней</p>
-								</div>
-
-								<div class="catalog__item-images">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M19.6923 3.99976H4.30769C3.03319 3.99976 2 5.00712 2 6.24976V19.7498C2 20.9924 3.03319 21.9998 4.30769 21.9998H19.6923C20.9668 21.9998 22 20.9924 22 19.7498V6.24976C22 5.00712 20.9668 3.99976 19.6923 3.99976Z"
-											stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
-										<path
-											d="M14 10.9998C14.5523 10.9998 15 10.552 15 9.99976C15 9.44747 14.5523 8.99976 14 8.99976C13.4477 8.99976 13 9.44747 13 9.99976C13 10.552 13.4477 10.9998 14 10.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M18 10.9998C18.5523 10.9998 19 10.552 19 9.99976C19 9.44747 18.5523 8.99976 18 8.99976C17.4477 8.99976 17 9.44747 17 9.99976C17 10.552 17.4477 10.9998 18 10.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M14 14.9998C14.5523 14.9998 15 14.552 15 13.9998C15 13.4475 14.5523 12.9998 14 12.9998C13.4477 12.9998 13 13.4475 13 13.9998C13 14.552 13.4477 14.9998 14 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M18 14.9998C18.5523 14.9998 19 14.552 19 13.9998C19 13.4475 18.5523 12.9998 18 12.9998C17.4477 12.9998 17 13.4475 17 13.9998C17 14.552 17.4477 14.9998 18 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M6 14.9998C6.55228 14.9998 7 14.552 7 13.9998C7 13.4475 6.55228 12.9998 6 12.9998C5.44772 12.9998 5 13.4475 5 13.9998C5 14.552 5.44772 14.9998 6 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M10 14.9998C10.5523 14.9998 11 14.552 11 13.9998C11 13.4475 10.5523 12.9998 10 12.9998C9.44772 12.9998 9 13.4475 9 13.9998C9 14.552 9.44772 14.9998 10 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M6 18.9998C6.55228 18.9998 7 18.552 7 17.9998C7 17.4475 6.55228 16.9998 6 16.9998C5.44772 16.9998 5 17.4475 5 17.9998C5 18.552 5.44772 18.9998 6 18.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M10 18.9998C10.5523 18.9998 11 18.552 11 17.9998C11 17.4475 10.5523 16.9998 10 16.9998C9.44772 16.9998 9 17.4475 9 17.9998C9 18.552 9.44772 18.9998 10 18.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M14 18.9998C14.5523 18.9998 15 18.552 15 17.9998C15 17.4475 14.5523 16.9998 14 16.9998C13.4477 16.9998 13 17.4475 13 17.9998C13 18.552 13.4477 18.9998 14 18.9998Z"
-											fill="#93A0AD" />
-										<path d="M6 0.999756V5.99976" stroke="#93A0AD" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" />
-										<path d="M18 0.999756V5.99976" stroke="#93A0AD" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" />
-									</svg>
-									<p
-										class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--desktop">
-										Сентябрь — Апрель</p>
-									<p
-										class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--mobile">
-										Сен. — Апр.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="catalog__btn-inner">
-							<button class="catalog__item-btn catalog__item-btn--fast-booking">Быстрое бронирование</button>
-							<button class="catalog__item-btn catalog__item-btn--details">Подробнее</button>
-							<button class="btn-base btn-base--mobile">Подробнее о туре
-								<div class="btn-base__shadow"></div>
-							</button>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="feedback">
-					<h2 class="title-sections__title title-sections__title--feedback">Давайте мы поможем
-						с выбором?</h2>
-					<form class="feedback__form" action="">
-						<input class="feedback__inp" type="text" placeholder="Введите ваш номер">
-						<button class="feedback__btn">Отправить</button>
-					</form>
-					<p class="feedback__description">Нажав на кнопку «Связаться с нами», вы даете согласие на обработку <a
-							class="callback-form__privacy-link" href="#">персональных
-							данных</a> и согласен с <a class="callback-form__privacy-link" href="#">политикой
-							конфиденциальности</a>.
-					</p>
-				</div>
-
-				<div class="catalog__item" style="background-image: url(../img/back-mob.jpg);">
-					<div class="catalog__item-left">
-						<img class="catalog__item-img" src="/img/catalog-bg.jpg" alt="">
-						<span
-							class="tours__item-span-text tours__item-span-text--blue tours__item-span-text--catalog">Популярное</span>
-					</div>
-
-					<div class="catalog__item-mid">
-						<div class="catalog__item-top">
-							<span class="catalog__item-left-text-top">териберка</span>
-							<h3 class="catalog__item-left-title catalog__item-left-title--mobile">Рыбалка в Териберке</h3>
-							<div class="catalog__item-rating">
-								<span class="catalog__item-yellow">4.3</span>
-								<svg class="catalog__svg-stars" width="86" height="13" viewBox="0 0 86 13" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M6.55377 0.882786C6.73873 0.516867 7.26127 0.516868 7.44623 0.882787L9.16312 4.27934L12.9773 4.82046C13.3911 4.87917 13.5545 5.38955 13.2517 5.67769L10.5 8.29656L11.1522 12.0094C11.2237 12.4162 10.7989 12.7293 10.4314 12.5407L7 10.7793L3.56857 12.5407C3.20107 12.7293 2.77631 12.4162 2.84778 12.0094L3.5 8.29656L0.748265 5.67769C0.445499 5.38955 0.608911 4.87917 1.02273 4.82046L4.83688 4.27934L6.55377 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M24.5538 0.882786C24.7387 0.516867 25.2613 0.516868 25.4462 0.882787L27.1631 4.27934L30.9773 4.82046C31.3911 4.87917 31.5545 5.38955 31.2517 5.67769L28.5 8.29656L29.1522 12.0094C29.2237 12.4162 28.7989 12.7293 28.4314 12.5407L25 10.7793L21.5686 12.5407C21.2011 12.7293 20.7763 12.4162 20.8478 12.0094L21.5 8.29656L18.7483 5.67769C18.4455 5.38955 18.6089 4.87917 19.0227 4.82046L22.8369 4.27934L24.5538 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M42.5538 0.882786C42.7387 0.516867 43.2613 0.516868 43.4462 0.882787L45.1631 4.27934L48.9773 4.82046C49.3911 4.87917 49.5545 5.38955 49.2517 5.67769L46.5 8.29656L47.1522 12.0094C47.2237 12.4162 46.7989 12.7293 46.4314 12.5407L43 10.7793L39.5686 12.5407C39.2011 12.7293 38.7763 12.4162 38.8478 12.0094L39.5 8.29656L36.7483 5.67769C36.4455 5.38955 36.6089 4.87917 37.0227 4.82046L40.8369 4.27934L42.5538 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M60.5538 0.882786C60.7387 0.516867 61.2613 0.516868 61.4462 0.882787L63.1631 4.27934L66.9773 4.82046C67.3911 4.87917 67.5545 5.38955 67.2517 5.67769L64.5 8.29656L65.1522 12.0094C65.2237 12.4162 64.7989 12.7293 64.4314 12.5407L61 10.7793L57.5686 12.5407C57.2011 12.7293 56.7763 12.4162 56.8478 12.0094L57.5 8.29656L54.7483 5.67769C54.4455 5.38955 54.6089 4.87917 55.0227 4.82046L58.8369 4.27934L60.5538 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M78.5538 0.882786C78.7387 0.516867 79.2613 0.516868 79.4462 0.882787L81.1631 4.27934L84.9773 4.82046C85.3911 4.87917 85.5545 5.38955 85.2517 5.67769L82.5 8.29656L83.1522 12.0094C83.2237 12.4162 82.7989 12.7293 82.4314 12.5407L79 10.7793L75.5686 12.5407C75.2011 12.7293 74.7763 12.4162 74.8478 12.0094L75.5 8.29656L72.7483 5.67769C72.4455 5.38955 72.6089 4.87917 73.0227 4.82046L76.8369 4.27934L78.5538 0.882786Z"
-										fill="white" fill-opacity="0.5"></path>
-								</svg>
-							</div>
-
-						</div>
-						<h3 class="catalog__item-left-title catalog__item-left-title--desktop">Рыбалка в Териберке</h3>
-						<p class="catalog__item-left-text">С учётом сложившейся международной обстановки, выбранный нами
-							инновационный путь однозначно фиксирует необходимость существующих финансовых и административных
-							условий.</p>
-						<div class="catalog__item-links">
-							<a class="catalog__item-link" href="">Однодневные туры</a>
-							<a class="catalog__item-link" href="">Корпоративные туры</a>
-							<a class="catalog__item-link" href="">Категория один</a>
-							<a class="catalog__item-link" href="">Категория два</a>
-						</div>
-						<div class="catalog__item-text-bottom">
-							<div class="catalog__item-text-left">
-								<span class="catalog__item-text-span-white">Сложность</span>
-								<svg class="catalog__item-svg" width="109" height="5" viewBox="0 0 109 5" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M1.67542 3.2984L4.33547 0.596792C4.71139 0.214993 5.22479 0 5.7606 0H25.612C26.4992 0 26.947 1.06943 26.3246 1.7016L23.6645 4.40321C23.2886 4.78501 22.7752 5 22.2394 5H2.38799C1.50082 5 1.05298 3.93057 1.67542 3.2984Z"
-										fill="#0FC4AC" />
-									<path
-										d="M28.6754 3.2984L31.3355 0.596792C31.7114 0.214993 32.2248 0 32.7606 0H52.612C53.4992 0 53.947 1.06943 53.3246 1.7016L50.6645 4.40321C50.2886 4.78501 49.7752 5 49.2394 5H29.388C28.5008 5 28.053 3.93057 28.6754 3.2984Z"
-										fill="#0FC4AC" />
-									<path
-										d="M55.6754 3.2984L58.3355 0.596792C58.7114 0.214993 59.2248 0 59.7606 0H79.612C80.4992 0 80.947 1.06943 80.3246 1.7016L77.6645 4.40321C77.2886 4.78501 76.7752 5 76.2394 5H56.388C55.5008 5 55.053 3.93057 55.6754 3.2984Z"
-										fill="#0FC4AC" />
-									<path
-										d="M82.6754 3.2984L85.3355 0.596792C85.7114 0.214993 86.2248 0 86.7606 0H106.612C107.499 0 107.947 1.06943 107.325 1.7016L104.665 4.40321C104.289 4.78501 103.775 5 103.239 5H83.388C82.5008 5 82.053 3.93057 82.6754 3.2984Z"
-										fill="#BEC6CE" />
-								</svg>
-
-								<span class="catalog__item-text-span-dark">Продвинутый</span>
-							</div>
-							<div class="catalog__item-text-right">
-								<span class="catalog__item-text-span-white">Сезон</span>
-								<div class="catalog__item-text-inner">
-									<span class="catalog__item-text-span">Весна</span>
-									<span class="catalog__item-text-span">Осень</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="catalog__item-right">
-
-						<div class="catalog__item-price">
-							<div class="catalog__item-price-top">
-								<p class="catalog__item-right-titleup">Цена за человека</p>
-								<span class="catalog__item-right-title">6000 ₽</span>
-							</div>
-
-							<div class="catalog__item-wrapper-date">
-								<div class="catalog__item-images">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#clip0)">
-											<circle cx="12" cy="11.9998" r="11" stroke="#93A0AD" stroke-width="2" />
-											<path d="M12 6.99976V11.9998L15 15.9998" stroke="#93A0AD" stroke-width="2"
-												stroke-linecap="round" />
-										</g>
-										<defs>
-											<clipPath id="clip0">
-												<rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)" />
-											</clipPath>
-										</defs>
-									</svg>
-									<p class="catalog__item-right-text">5 дней</p>
-								</div>
-
-								<div class="catalog__item-images">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M19.6923 3.99976H4.30769C3.03319 3.99976 2 5.00712 2 6.24976V19.7498C2 20.9924 3.03319 21.9998 4.30769 21.9998H19.6923C20.9668 21.9998 22 20.9924 22 19.7498V6.24976C22 5.00712 20.9668 3.99976 19.6923 3.99976Z"
-											stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
-										<path
-											d="M14 10.9998C14.5523 10.9998 15 10.552 15 9.99976C15 9.44747 14.5523 8.99976 14 8.99976C13.4477 8.99976 13 9.44747 13 9.99976C13 10.552 13.4477 10.9998 14 10.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M18 10.9998C18.5523 10.9998 19 10.552 19 9.99976C19 9.44747 18.5523 8.99976 18 8.99976C17.4477 8.99976 17 9.44747 17 9.99976C17 10.552 17.4477 10.9998 18 10.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M14 14.9998C14.5523 14.9998 15 14.552 15 13.9998C15 13.4475 14.5523 12.9998 14 12.9998C13.4477 12.9998 13 13.4475 13 13.9998C13 14.552 13.4477 14.9998 14 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M18 14.9998C18.5523 14.9998 19 14.552 19 13.9998C19 13.4475 18.5523 12.9998 18 12.9998C17.4477 12.9998 17 13.4475 17 13.9998C17 14.552 17.4477 14.9998 18 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M6 14.9998C6.55228 14.9998 7 14.552 7 13.9998C7 13.4475 6.55228 12.9998 6 12.9998C5.44772 12.9998 5 13.4475 5 13.9998C5 14.552 5.44772 14.9998 6 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M10 14.9998C10.5523 14.9998 11 14.552 11 13.9998C11 13.4475 10.5523 12.9998 10 12.9998C9.44772 12.9998 9 13.4475 9 13.9998C9 14.552 9.44772 14.9998 10 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M6 18.9998C6.55228 18.9998 7 18.552 7 17.9998C7 17.4475 6.55228 16.9998 6 16.9998C5.44772 16.9998 5 17.4475 5 17.9998C5 18.552 5.44772 18.9998 6 18.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M10 18.9998C10.5523 18.9998 11 18.552 11 17.9998C11 17.4475 10.5523 16.9998 10 16.9998C9.44772 16.9998 9 17.4475 9 17.9998C9 18.552 9.44772 18.9998 10 18.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M14 18.9998C14.5523 18.9998 15 18.552 15 17.9998C15 17.4475 14.5523 16.9998 14 16.9998C13.4477 16.9998 13 17.4475 13 17.9998C13 18.552 13.4477 18.9998 14 18.9998Z"
-											fill="#93A0AD" />
-										<path d="M6 0.999756V5.99976" stroke="#93A0AD" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" />
-										<path d="M18 0.999756V5.99976" stroke="#93A0AD" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" />
-									</svg>
-									<p
-										class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--desktop">
-										Сентябрь — Апрель</p>
-									<p
-										class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--mobile">
-										Сен. — Апр.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="catalog__btn-inner">
-							<button class="catalog__item-btn catalog__item-btn--fast-booking">Быстрое бронирование</button>
-							<button class="catalog__item-btn catalog__item-btn--details">Подробнее</button>
-							<button class="btn-base btn-base--mobile">Подробнее о туре
-								<div class="btn-base__shadow"></div>
-							</button>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="catalog__item" style="background-image: url(../img/back-mob.jpg);">
-					<div class="catalog__item-left">
-						<img class="catalog__item-img" src="/img/catalog-bg.jpg" alt="">
-						<span
-							class="tours__item-span-text tours__item-span-text--blue tours__item-span-text--catalog">Популярное</span>
-					</div>
-
-					<div class="catalog__item-mid">
-						<div class="catalog__item-top">
-							<span class="catalog__item-left-text-top">териберка</span>
-							<h3 class="catalog__item-left-title catalog__item-left-title--mobile">Рыбалка в Териберке</h3>
-							<div class="catalog__item-rating">
-								<span class="catalog__item-yellow">4.3</span>
-								<svg class="catalog__svg-stars" width="86" height="13" viewBox="0 0 86 13" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M6.55377 0.882786C6.73873 0.516867 7.26127 0.516868 7.44623 0.882787L9.16312 4.27934L12.9773 4.82046C13.3911 4.87917 13.5545 5.38955 13.2517 5.67769L10.5 8.29656L11.1522 12.0094C11.2237 12.4162 10.7989 12.7293 10.4314 12.5407L7 10.7793L3.56857 12.5407C3.20107 12.7293 2.77631 12.4162 2.84778 12.0094L3.5 8.29656L0.748265 5.67769C0.445499 5.38955 0.608911 4.87917 1.02273 4.82046L4.83688 4.27934L6.55377 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M24.5538 0.882786C24.7387 0.516867 25.2613 0.516868 25.4462 0.882787L27.1631 4.27934L30.9773 4.82046C31.3911 4.87917 31.5545 5.38955 31.2517 5.67769L28.5 8.29656L29.1522 12.0094C29.2237 12.4162 28.7989 12.7293 28.4314 12.5407L25 10.7793L21.5686 12.5407C21.2011 12.7293 20.7763 12.4162 20.8478 12.0094L21.5 8.29656L18.7483 5.67769C18.4455 5.38955 18.6089 4.87917 19.0227 4.82046L22.8369 4.27934L24.5538 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M42.5538 0.882786C42.7387 0.516867 43.2613 0.516868 43.4462 0.882787L45.1631 4.27934L48.9773 4.82046C49.3911 4.87917 49.5545 5.38955 49.2517 5.67769L46.5 8.29656L47.1522 12.0094C47.2237 12.4162 46.7989 12.7293 46.4314 12.5407L43 10.7793L39.5686 12.5407C39.2011 12.7293 38.7763 12.4162 38.8478 12.0094L39.5 8.29656L36.7483 5.67769C36.4455 5.38955 36.6089 4.87917 37.0227 4.82046L40.8369 4.27934L42.5538 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M60.5538 0.882786C60.7387 0.516867 61.2613 0.516868 61.4462 0.882787L63.1631 4.27934L66.9773 4.82046C67.3911 4.87917 67.5545 5.38955 67.2517 5.67769L64.5 8.29656L65.1522 12.0094C65.2237 12.4162 64.7989 12.7293 64.4314 12.5407L61 10.7793L57.5686 12.5407C57.2011 12.7293 56.7763 12.4162 56.8478 12.0094L57.5 8.29656L54.7483 5.67769C54.4455 5.38955 54.6089 4.87917 55.0227 4.82046L58.8369 4.27934L60.5538 0.882786Z"
-										fill="#FFCA43"></path>
-									<path
-										d="M78.5538 0.882786C78.7387 0.516867 79.2613 0.516868 79.4462 0.882787L81.1631 4.27934L84.9773 4.82046C85.3911 4.87917 85.5545 5.38955 85.2517 5.67769L82.5 8.29656L83.1522 12.0094C83.2237 12.4162 82.7989 12.7293 82.4314 12.5407L79 10.7793L75.5686 12.5407C75.2011 12.7293 74.7763 12.4162 74.8478 12.0094L75.5 8.29656L72.7483 5.67769C72.4455 5.38955 72.6089 4.87917 73.0227 4.82046L76.8369 4.27934L78.5538 0.882786Z"
-										fill="white" fill-opacity="0.5"></path>
-								</svg>
-							</div>
-
-						</div>
-						<h3 class="catalog__item-left-title catalog__item-left-title--desktop">Рыбалка в Териберке</h3>
-						<p class="catalog__item-left-text">С учётом сложившейся международной обстановки, выбранный нами
-							инновационный путь однозначно фиксирует необходимость существующих финансовых и административных
-							условий.</p>
-						<div class="catalog__item-links">
-							<a class="catalog__item-link" href="">Однодневные туры</a>
-							<a class="catalog__item-link" href="">Корпоративные туры</a>
-							<a class="catalog__item-link" href="">Категория один</a>
-							<a class="catalog__item-link" href="">Категория два</a>
-						</div>
-						<div class="catalog__item-text-bottom">
-							<div class="catalog__item-text-left">
-								<span class="catalog__item-text-span-white">Сложность</span>
-								<svg class="catalog__item-svg" width="109" height="5" viewBox="0 0 109 5" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M1.67542 3.2984L4.33547 0.596792C4.71139 0.214993 5.22479 0 5.7606 0H25.612C26.4992 0 26.947 1.06943 26.3246 1.7016L23.6645 4.40321C23.2886 4.78501 22.7752 5 22.2394 5H2.38799C1.50082 5 1.05298 3.93057 1.67542 3.2984Z"
-										fill="#0FC4AC" />
-									<path
-										d="M28.6754 3.2984L31.3355 0.596792C31.7114 0.214993 32.2248 0 32.7606 0H52.612C53.4992 0 53.947 1.06943 53.3246 1.7016L50.6645 4.40321C50.2886 4.78501 49.7752 5 49.2394 5H29.388C28.5008 5 28.053 3.93057 28.6754 3.2984Z"
-										fill="#0FC4AC" />
-									<path
-										d="M55.6754 3.2984L58.3355 0.596792C58.7114 0.214993 59.2248 0 59.7606 0H79.612C80.4992 0 80.947 1.06943 80.3246 1.7016L77.6645 4.40321C77.2886 4.78501 76.7752 5 76.2394 5H56.388C55.5008 5 55.053 3.93057 55.6754 3.2984Z"
-										fill="#0FC4AC" />
-									<path
-										d="M82.6754 3.2984L85.3355 0.596792C85.7114 0.214993 86.2248 0 86.7606 0H106.612C107.499 0 107.947 1.06943 107.325 1.7016L104.665 4.40321C104.289 4.78501 103.775 5 103.239 5H83.388C82.5008 5 82.053 3.93057 82.6754 3.2984Z"
-										fill="#BEC6CE" />
-								</svg>
-
-								<span class="catalog__item-text-span-dark">Продвинутый</span>
-							</div>
-							<div class="catalog__item-text-right">
-								<span class="catalog__item-text-span-white">Сезон</span>
-								<div class="catalog__item-text-inner">
-									<span class="catalog__item-text-span">Весна</span>
-									<span class="catalog__item-text-span">Осень</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="catalog__item-right">
-
-						<div class="catalog__item-price">
-							<div class="catalog__item-price-top">
-								<p class="catalog__item-right-titleup">Цена за человека</p>
-								<span class="catalog__item-right-title">6000 ₽</span>
-							</div>
-
-							<div class="catalog__item-wrapper-date">
-								<div class="catalog__item-images">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#clip0)">
-											<circle cx="12" cy="11.9998" r="11" stroke="#93A0AD" stroke-width="2" />
-											<path d="M12 6.99976V11.9998L15 15.9998" stroke="#93A0AD" stroke-width="2"
-												stroke-linecap="round" />
-										</g>
-										<defs>
-											<clipPath id="clip0">
-												<rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)" />
-											</clipPath>
-										</defs>
-									</svg>
-									<p class="catalog__item-right-text">5 дней</p>
-								</div>
-
-								<div class="catalog__item-images">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M19.6923 3.99976H4.30769C3.03319 3.99976 2 5.00712 2 6.24976V19.7498C2 20.9924 3.03319 21.9998 4.30769 21.9998H19.6923C20.9668 21.9998 22 20.9924 22 19.7498V6.24976C22 5.00712 20.9668 3.99976 19.6923 3.99976Z"
-											stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
-										<path
-											d="M14 10.9998C14.5523 10.9998 15 10.552 15 9.99976C15 9.44747 14.5523 8.99976 14 8.99976C13.4477 8.99976 13 9.44747 13 9.99976C13 10.552 13.4477 10.9998 14 10.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M18 10.9998C18.5523 10.9998 19 10.552 19 9.99976C19 9.44747 18.5523 8.99976 18 8.99976C17.4477 8.99976 17 9.44747 17 9.99976C17 10.552 17.4477 10.9998 18 10.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M14 14.9998C14.5523 14.9998 15 14.552 15 13.9998C15 13.4475 14.5523 12.9998 14 12.9998C13.4477 12.9998 13 13.4475 13 13.9998C13 14.552 13.4477 14.9998 14 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M18 14.9998C18.5523 14.9998 19 14.552 19 13.9998C19 13.4475 18.5523 12.9998 18 12.9998C17.4477 12.9998 17 13.4475 17 13.9998C17 14.552 17.4477 14.9998 18 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M6 14.9998C6.55228 14.9998 7 14.552 7 13.9998C7 13.4475 6.55228 12.9998 6 12.9998C5.44772 12.9998 5 13.4475 5 13.9998C5 14.552 5.44772 14.9998 6 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M10 14.9998C10.5523 14.9998 11 14.552 11 13.9998C11 13.4475 10.5523 12.9998 10 12.9998C9.44772 12.9998 9 13.4475 9 13.9998C9 14.552 9.44772 14.9998 10 14.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M6 18.9998C6.55228 18.9998 7 18.552 7 17.9998C7 17.4475 6.55228 16.9998 6 16.9998C5.44772 16.9998 5 17.4475 5 17.9998C5 18.552 5.44772 18.9998 6 18.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M10 18.9998C10.5523 18.9998 11 18.552 11 17.9998C11 17.4475 10.5523 16.9998 10 16.9998C9.44772 16.9998 9 17.4475 9 17.9998C9 18.552 9.44772 18.9998 10 18.9998Z"
-											fill="#93A0AD" />
-										<path
-											d="M14 18.9998C14.5523 18.9998 15 18.552 15 17.9998C15 17.4475 14.5523 16.9998 14 16.9998C13.4477 16.9998 13 17.4475 13 17.9998C13 18.552 13.4477 18.9998 14 18.9998Z"
-											fill="#93A0AD" />
-										<path d="M6 0.999756V5.99976" stroke="#93A0AD" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" />
-										<path d="M18 0.999756V5.99976" stroke="#93A0AD" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" />
-									</svg>
-									<p
-										class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--desktop">
-										Сентябрь — Апрель</p>
-									<p
-										class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--mobile">
-										Сен. — Апр.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="catalog__btn-inner">
-							<button class="catalog__item-btn catalog__item-btn--fast-booking">Быстрое бронирование</button>
-							<button class="catalog__item-btn catalog__item-btn--details">Подробнее</button>
-							<button class="btn-base btn-base--mobile">Подробнее о туре
-								<div class="btn-base__shadow"></div>
-							</button>
-						</div>
-
-					</div>
-				</div>
-
+			<div class="feedback">
+				<h2 class="title-sections__title title-sections__title--feedback">Давайте мы поможем
+					с выбором?</h2>
+				<form class="feedback__form" action="">
+					<input class="feedback__inp" type="text" placeholder="Введите ваш номер">
+					<button class="feedback__btn">Отправить</button>
+				</form>
+				<p class="feedback__description">Нажав на кнопку «Связаться с нами», вы даете согласие на обработку <a
+						class="callback-form__privacy-link" href="#">персональных
+						данных</a> и согласен с <a class="callback-form__privacy-link" href="#">политикой
+						конфиденциальности</a>.
+				</p>
 			</div>
-			<div class="btn-pagination">
-				<button class="btn-pagination__arrow">
-					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M10 15L4 8L10 1" stroke="#7B8997" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-					</svg>
-				</button>
-				<button class="btn-pagination__center btn-pagination__center--active">1</button>
-				<button class="btn-pagination__center">2</button>
-				<button class="btn-pagination__center">3</button>
-				<button class="btn-pagination__center">4</button>
-				<button class="btn-pagination__arrow">
-					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M6 1L12 8L6 15" stroke="#7B8997" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-					</svg>
-				</button>
-			</div>
-		</section>
-		<!-- catalog -->
 
-		<section class="advantages">
-			<div class="container">
-				<div class="title-sections">
-					<h2 class="title-sections__title title-sections__title--catalog">Наши преимущества</h2>
+			<div class="catalog__item" style="background-image: url(../img/back-mob.jpg);">
+				<div class="catalog__item-left">
+					<img class="catalog__item-img" src="/img/catalog-bg.jpg" alt="">
+					<span
+						class="tours__item-span-text tours__item-span-text--blue tours__item-span-text--catalog">Популярное</span>
 				</div>
-				<div class="advantages__items">
-					<div class="advantages__item">
-						<img class="advantages__image" src="/img/rus.svg" alt="">
-						<div class="advantages__item-inner">
-							<p class="advantages__text">Не являемся посредником</p>
-							<p class="advantages__subtext">Мы являемся организаторами, поэтому никаких наценок и переплат</p>
+
+				<div class="catalog__item-mid">
+					<div class="catalog__item-top">
+						<span class="catalog__item-left-text-top">териберка</span>
+						<h3 class="catalog__item-left-title catalog__item-left-title--mobile">Рыбалка в Териберке</h3>
+						<div class="catalog__item-rating">
+							<span class="catalog__item-yellow">4.3</span>
+							<svg class="catalog__svg-stars" width="86" height="13" viewBox="0 0 86 13" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M6.55377 0.882786C6.73873 0.516867 7.26127 0.516868 7.44623 0.882787L9.16312 4.27934L12.9773 4.82046C13.3911 4.87917 13.5545 5.38955 13.2517 5.67769L10.5 8.29656L11.1522 12.0094C11.2237 12.4162 10.7989 12.7293 10.4314 12.5407L7 10.7793L3.56857 12.5407C3.20107 12.7293 2.77631 12.4162 2.84778 12.0094L3.5 8.29656L0.748265 5.67769C0.445499 5.38955 0.608911 4.87917 1.02273 4.82046L4.83688 4.27934L6.55377 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M24.5538 0.882786C24.7387 0.516867 25.2613 0.516868 25.4462 0.882787L27.1631 4.27934L30.9773 4.82046C31.3911 4.87917 31.5545 5.38955 31.2517 5.67769L28.5 8.29656L29.1522 12.0094C29.2237 12.4162 28.7989 12.7293 28.4314 12.5407L25 10.7793L21.5686 12.5407C21.2011 12.7293 20.7763 12.4162 20.8478 12.0094L21.5 8.29656L18.7483 5.67769C18.4455 5.38955 18.6089 4.87917 19.0227 4.82046L22.8369 4.27934L24.5538 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M42.5538 0.882786C42.7387 0.516867 43.2613 0.516868 43.4462 0.882787L45.1631 4.27934L48.9773 4.82046C49.3911 4.87917 49.5545 5.38955 49.2517 5.67769L46.5 8.29656L47.1522 12.0094C47.2237 12.4162 46.7989 12.7293 46.4314 12.5407L43 10.7793L39.5686 12.5407C39.2011 12.7293 38.7763 12.4162 38.8478 12.0094L39.5 8.29656L36.7483 5.67769C36.4455 5.38955 36.6089 4.87917 37.0227 4.82046L40.8369 4.27934L42.5538 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M60.5538 0.882786C60.7387 0.516867 61.2613 0.516868 61.4462 0.882787L63.1631 4.27934L66.9773 4.82046C67.3911 4.87917 67.5545 5.38955 67.2517 5.67769L64.5 8.29656L65.1522 12.0094C65.2237 12.4162 64.7989 12.7293 64.4314 12.5407L61 10.7793L57.5686 12.5407C57.2011 12.7293 56.7763 12.4162 56.8478 12.0094L57.5 8.29656L54.7483 5.67769C54.4455 5.38955 54.6089 4.87917 55.0227 4.82046L58.8369 4.27934L60.5538 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M78.5538 0.882786C78.7387 0.516867 79.2613 0.516868 79.4462 0.882787L81.1631 4.27934L84.9773 4.82046C85.3911 4.87917 85.5545 5.38955 85.2517 5.67769L82.5 8.29656L83.1522 12.0094C83.2237 12.4162 82.7989 12.7293 82.4314 12.5407L79 10.7793L75.5686 12.5407C75.2011 12.7293 74.7763 12.4162 74.8478 12.0094L75.5 8.29656L72.7483 5.67769C72.4455 5.38955 72.6089 4.87917 73.0227 4.82046L76.8369 4.27934L78.5538 0.882786Z"
+									fill="white" fill-opacity="0.5"></path>
+							</svg>
+						</div>
+
+					</div>
+					<h3 class="catalog__item-left-title catalog__item-left-title--desktop">Рыбалка в Териберке</h3>
+					<p class="catalog__item-left-text">С учётом сложившейся международной обстановки, выбранный нами
+						инновационный путь однозначно фиксирует необходимость существующих финансовых и административных
+						условий.</p>
+					<div class="catalog__item-links">
+						<a class="catalog__item-link" href="">Однодневные туры</a>
+						<a class="catalog__item-link" href="">Корпоративные туры</a>
+						<a class="catalog__item-link" href="">Категория один</a>
+						<a class="catalog__item-link" href="">Категория два</a>
+					</div>
+					<div class="catalog__item-text-bottom">
+						<div class="catalog__item-text-left">
+							<span class="catalog__item-text-span-white">Сложность</span>
+							<svg class="catalog__item-svg" width="109" height="5" viewBox="0 0 109 5" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M1.67542 3.2984L4.33547 0.596792C4.71139 0.214993 5.22479 0 5.7606 0H25.612C26.4992 0 26.947 1.06943 26.3246 1.7016L23.6645 4.40321C23.2886 4.78501 22.7752 5 22.2394 5H2.38799C1.50082 5 1.05298 3.93057 1.67542 3.2984Z"
+									fill="#0FC4AC" />
+								<path
+									d="M28.6754 3.2984L31.3355 0.596792C31.7114 0.214993 32.2248 0 32.7606 0H52.612C53.4992 0 53.947 1.06943 53.3246 1.7016L50.6645 4.40321C50.2886 4.78501 49.7752 5 49.2394 5H29.388C28.5008 5 28.053 3.93057 28.6754 3.2984Z"
+									fill="#0FC4AC" />
+								<path
+									d="M55.6754 3.2984L58.3355 0.596792C58.7114 0.214993 59.2248 0 59.7606 0H79.612C80.4992 0 80.947 1.06943 80.3246 1.7016L77.6645 4.40321C77.2886 4.78501 76.7752 5 76.2394 5H56.388C55.5008 5 55.053 3.93057 55.6754 3.2984Z"
+									fill="#0FC4AC" />
+								<path
+									d="M82.6754 3.2984L85.3355 0.596792C85.7114 0.214993 86.2248 0 86.7606 0H106.612C107.499 0 107.947 1.06943 107.325 1.7016L104.665 4.40321C104.289 4.78501 103.775 5 103.239 5H83.388C82.5008 5 82.053 3.93057 82.6754 3.2984Z"
+									fill="#BEC6CE" />
+							</svg>
+
+							<span class="catalog__item-text-span-dark">Продвинутый</span>
+						</div>
+						<div class="catalog__item-text-right">
+							<span class="catalog__item-text-span-white">Сезон</span>
+							<div class="catalog__item-text-inner">
+								<span class="catalog__item-text-span">Весна</span>
+								<span class="catalog__item-text-span">Осень</span>
+							</div>
 						</div>
 					</div>
-					<div class="advantages__item">
-						<img class="advantages__image" src="/img/center.svg" alt="">
-						<div class="advantages__item-inner">
-							<p class="advantages__text">Разнообразие туров</p>
-							<p class="advantages__subtext">Которые организовываем сами. На сайте
-								более 100 туров</p>
+				</div>
+
+				<div class="catalog__item-right">
+
+					<div class="catalog__item-price">
+						<div class="catalog__item-price-top">
+							<p class="catalog__item-right-titleup">Цена за человека</p>
+							<span class="catalog__item-right-title">6000 ₽</span>
+						</div>
+
+						<div class="catalog__item-wrapper-date">
+							<div class="catalog__item-images">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0)">
+										<circle cx="12" cy="11.9998" r="11" stroke="#93A0AD" stroke-width="2" />
+										<path d="M12 6.99976V11.9998L15 15.9998" stroke="#93A0AD" stroke-width="2"
+											stroke-linecap="round" />
+									</g>
+									<defs>
+										<clipPath id="clip0">
+											<rect width="24" height="24" fill="white"
+												transform="translate(0 -0.000244141)" />
+										</clipPath>
+									</defs>
+								</svg>
+								<p class="catalog__item-right-text">5 дней</p>
+							</div>
+
+							<div class="catalog__item-images">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M19.6923 3.99976H4.30769C3.03319 3.99976 2 5.00712 2 6.24976V19.7498C2 20.9924 3.03319 21.9998 4.30769 21.9998H19.6923C20.9668 21.9998 22 20.9924 22 19.7498V6.24976C22 5.00712 20.9668 3.99976 19.6923 3.99976Z"
+										stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
+									<path
+										d="M14 10.9998C14.5523 10.9998 15 10.552 15 9.99976C15 9.44747 14.5523 8.99976 14 8.99976C13.4477 8.99976 13 9.44747 13 9.99976C13 10.552 13.4477 10.9998 14 10.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M18 10.9998C18.5523 10.9998 19 10.552 19 9.99976C19 9.44747 18.5523 8.99976 18 8.99976C17.4477 8.99976 17 9.44747 17 9.99976C17 10.552 17.4477 10.9998 18 10.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M14 14.9998C14.5523 14.9998 15 14.552 15 13.9998C15 13.4475 14.5523 12.9998 14 12.9998C13.4477 12.9998 13 13.4475 13 13.9998C13 14.552 13.4477 14.9998 14 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M18 14.9998C18.5523 14.9998 19 14.552 19 13.9998C19 13.4475 18.5523 12.9998 18 12.9998C17.4477 12.9998 17 13.4475 17 13.9998C17 14.552 17.4477 14.9998 18 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M6 14.9998C6.55228 14.9998 7 14.552 7 13.9998C7 13.4475 6.55228 12.9998 6 12.9998C5.44772 12.9998 5 13.4475 5 13.9998C5 14.552 5.44772 14.9998 6 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M10 14.9998C10.5523 14.9998 11 14.552 11 13.9998C11 13.4475 10.5523 12.9998 10 12.9998C9.44772 12.9998 9 13.4475 9 13.9998C9 14.552 9.44772 14.9998 10 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M6 18.9998C6.55228 18.9998 7 18.552 7 17.9998C7 17.4475 6.55228 16.9998 6 16.9998C5.44772 16.9998 5 17.4475 5 17.9998C5 18.552 5.44772 18.9998 6 18.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M10 18.9998C10.5523 18.9998 11 18.552 11 17.9998C11 17.4475 10.5523 16.9998 10 16.9998C9.44772 16.9998 9 17.4475 9 17.9998C9 18.552 9.44772 18.9998 10 18.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M14 18.9998C14.5523 18.9998 15 18.552 15 17.9998C15 17.4475 14.5523 16.9998 14 16.9998C13.4477 16.9998 13 17.4475 13 17.9998C13 18.552 13.4477 18.9998 14 18.9998Z"
+										fill="#93A0AD" />
+									<path d="M6 0.999756V5.99976" stroke="#93A0AD" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M18 0.999756V5.99976" stroke="#93A0AD" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								<p
+									class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--desktop">
+									Сентябрь — Апрель</p>
+								<p
+									class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--mobile">
+									Сен. — Апр.</p>
+							</div>
 						</div>
 					</div>
-					<div class="advantages__item">
-						<img class="advantages__image" src="/img/jeep.svg" alt="">
-						<div class="advantages__item-inner">
-							<p class="advantages__text">Профессиональные гиды</p>
-							<p class="advantages__subtext">Опытные и профессиональные гиды
-								с хорошей репутацией</p>
+
+					<div class="catalog__btn-inner">
+						<button class="catalog__item-btn catalog__item-btn--fast-booking">Быстрое бронирование</button>
+						<button class="catalog__item-btn catalog__item-btn--details">Подробнее</button>
+						<button class="btn-base btn-base--mobile">Подробнее о туре
+							<div class="btn-base__shadow"></div>
+						</button>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="catalog__item" style="background-image: url(../img/back-mob.jpg);">
+				<div class="catalog__item-left">
+					<img class="catalog__item-img" src="/img/catalog-bg.jpg" alt="">
+					<span
+						class="tours__item-span-text tours__item-span-text--blue tours__item-span-text--catalog">Популярное</span>
+				</div>
+
+				<div class="catalog__item-mid">
+					<div class="catalog__item-top">
+						<span class="catalog__item-left-text-top">териберка</span>
+						<h3 class="catalog__item-left-title catalog__item-left-title--mobile">Рыбалка в Териберке</h3>
+						<div class="catalog__item-rating">
+							<span class="catalog__item-yellow">4.3</span>
+							<svg class="catalog__svg-stars" width="86" height="13" viewBox="0 0 86 13" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M6.55377 0.882786C6.73873 0.516867 7.26127 0.516868 7.44623 0.882787L9.16312 4.27934L12.9773 4.82046C13.3911 4.87917 13.5545 5.38955 13.2517 5.67769L10.5 8.29656L11.1522 12.0094C11.2237 12.4162 10.7989 12.7293 10.4314 12.5407L7 10.7793L3.56857 12.5407C3.20107 12.7293 2.77631 12.4162 2.84778 12.0094L3.5 8.29656L0.748265 5.67769C0.445499 5.38955 0.608911 4.87917 1.02273 4.82046L4.83688 4.27934L6.55377 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M24.5538 0.882786C24.7387 0.516867 25.2613 0.516868 25.4462 0.882787L27.1631 4.27934L30.9773 4.82046C31.3911 4.87917 31.5545 5.38955 31.2517 5.67769L28.5 8.29656L29.1522 12.0094C29.2237 12.4162 28.7989 12.7293 28.4314 12.5407L25 10.7793L21.5686 12.5407C21.2011 12.7293 20.7763 12.4162 20.8478 12.0094L21.5 8.29656L18.7483 5.67769C18.4455 5.38955 18.6089 4.87917 19.0227 4.82046L22.8369 4.27934L24.5538 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M42.5538 0.882786C42.7387 0.516867 43.2613 0.516868 43.4462 0.882787L45.1631 4.27934L48.9773 4.82046C49.3911 4.87917 49.5545 5.38955 49.2517 5.67769L46.5 8.29656L47.1522 12.0094C47.2237 12.4162 46.7989 12.7293 46.4314 12.5407L43 10.7793L39.5686 12.5407C39.2011 12.7293 38.7763 12.4162 38.8478 12.0094L39.5 8.29656L36.7483 5.67769C36.4455 5.38955 36.6089 4.87917 37.0227 4.82046L40.8369 4.27934L42.5538 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M60.5538 0.882786C60.7387 0.516867 61.2613 0.516868 61.4462 0.882787L63.1631 4.27934L66.9773 4.82046C67.3911 4.87917 67.5545 5.38955 67.2517 5.67769L64.5 8.29656L65.1522 12.0094C65.2237 12.4162 64.7989 12.7293 64.4314 12.5407L61 10.7793L57.5686 12.5407C57.2011 12.7293 56.7763 12.4162 56.8478 12.0094L57.5 8.29656L54.7483 5.67769C54.4455 5.38955 54.6089 4.87917 55.0227 4.82046L58.8369 4.27934L60.5538 0.882786Z"
+									fill="#FFCA43"></path>
+								<path
+									d="M78.5538 0.882786C78.7387 0.516867 79.2613 0.516868 79.4462 0.882787L81.1631 4.27934L84.9773 4.82046C85.3911 4.87917 85.5545 5.38955 85.2517 5.67769L82.5 8.29656L83.1522 12.0094C83.2237 12.4162 82.7989 12.7293 82.4314 12.5407L79 10.7793L75.5686 12.5407C75.2011 12.7293 74.7763 12.4162 74.8478 12.0094L75.5 8.29656L72.7483 5.67769C72.4455 5.38955 72.6089 4.87917 73.0227 4.82046L76.8369 4.27934L78.5538 0.882786Z"
+									fill="white" fill-opacity="0.5"></path>
+							</svg>
 						</div>
+
+					</div>
+					<h3 class="catalog__item-left-title catalog__item-left-title--desktop">Рыбалка в Териберке</h3>
+					<p class="catalog__item-left-text">С учётом сложившейся международной обстановки, выбранный нами
+						инновационный путь однозначно фиксирует необходимость существующих финансовых и административных
+						условий.</p>
+					<div class="catalog__item-links">
+						<a class="catalog__item-link" href="">Однодневные туры</a>
+						<a class="catalog__item-link" href="">Корпоративные туры</a>
+						<a class="catalog__item-link" href="">Категория один</a>
+						<a class="catalog__item-link" href="">Категория два</a>
+					</div>
+					<div class="catalog__item-text-bottom">
+						<div class="catalog__item-text-left">
+							<span class="catalog__item-text-span-white">Сложность</span>
+							<svg class="catalog__item-svg" width="109" height="5" viewBox="0 0 109 5" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M1.67542 3.2984L4.33547 0.596792C4.71139 0.214993 5.22479 0 5.7606 0H25.612C26.4992 0 26.947 1.06943 26.3246 1.7016L23.6645 4.40321C23.2886 4.78501 22.7752 5 22.2394 5H2.38799C1.50082 5 1.05298 3.93057 1.67542 3.2984Z"
+									fill="#0FC4AC" />
+								<path
+									d="M28.6754 3.2984L31.3355 0.596792C31.7114 0.214993 32.2248 0 32.7606 0H52.612C53.4992 0 53.947 1.06943 53.3246 1.7016L50.6645 4.40321C50.2886 4.78501 49.7752 5 49.2394 5H29.388C28.5008 5 28.053 3.93057 28.6754 3.2984Z"
+									fill="#0FC4AC" />
+								<path
+									d="M55.6754 3.2984L58.3355 0.596792C58.7114 0.214993 59.2248 0 59.7606 0H79.612C80.4992 0 80.947 1.06943 80.3246 1.7016L77.6645 4.40321C77.2886 4.78501 76.7752 5 76.2394 5H56.388C55.5008 5 55.053 3.93057 55.6754 3.2984Z"
+									fill="#0FC4AC" />
+								<path
+									d="M82.6754 3.2984L85.3355 0.596792C85.7114 0.214993 86.2248 0 86.7606 0H106.612C107.499 0 107.947 1.06943 107.325 1.7016L104.665 4.40321C104.289 4.78501 103.775 5 103.239 5H83.388C82.5008 5 82.053 3.93057 82.6754 3.2984Z"
+									fill="#BEC6CE" />
+							</svg>
+
+							<span class="catalog__item-text-span-dark">Продвинутый</span>
+						</div>
+						<div class="catalog__item-text-right">
+							<span class="catalog__item-text-span-white">Сезон</span>
+							<div class="catalog__item-text-inner">
+								<span class="catalog__item-text-span">Весна</span>
+								<span class="catalog__item-text-span">Осень</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog__item-right">
+
+					<div class="catalog__item-price">
+						<div class="catalog__item-price-top">
+							<p class="catalog__item-right-titleup">Цена за человека</p>
+							<span class="catalog__item-right-title">6000 ₽</span>
+						</div>
+
+						<div class="catalog__item-wrapper-date">
+							<div class="catalog__item-images">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0)">
+										<circle cx="12" cy="11.9998" r="11" stroke="#93A0AD" stroke-width="2" />
+										<path d="M12 6.99976V11.9998L15 15.9998" stroke="#93A0AD" stroke-width="2"
+											stroke-linecap="round" />
+									</g>
+									<defs>
+										<clipPath id="clip0">
+											<rect width="24" height="24" fill="white"
+												transform="translate(0 -0.000244141)" />
+										</clipPath>
+									</defs>
+								</svg>
+								<p class="catalog__item-right-text">5 дней</p>
+							</div>
+
+							<div class="catalog__item-images">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M19.6923 3.99976H4.30769C3.03319 3.99976 2 5.00712 2 6.24976V19.7498C2 20.9924 3.03319 21.9998 4.30769 21.9998H19.6923C20.9668 21.9998 22 20.9924 22 19.7498V6.24976C22 5.00712 20.9668 3.99976 19.6923 3.99976Z"
+										stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
+									<path
+										d="M14 10.9998C14.5523 10.9998 15 10.552 15 9.99976C15 9.44747 14.5523 8.99976 14 8.99976C13.4477 8.99976 13 9.44747 13 9.99976C13 10.552 13.4477 10.9998 14 10.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M18 10.9998C18.5523 10.9998 19 10.552 19 9.99976C19 9.44747 18.5523 8.99976 18 8.99976C17.4477 8.99976 17 9.44747 17 9.99976C17 10.552 17.4477 10.9998 18 10.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M14 14.9998C14.5523 14.9998 15 14.552 15 13.9998C15 13.4475 14.5523 12.9998 14 12.9998C13.4477 12.9998 13 13.4475 13 13.9998C13 14.552 13.4477 14.9998 14 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M18 14.9998C18.5523 14.9998 19 14.552 19 13.9998C19 13.4475 18.5523 12.9998 18 12.9998C17.4477 12.9998 17 13.4475 17 13.9998C17 14.552 17.4477 14.9998 18 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M6 14.9998C6.55228 14.9998 7 14.552 7 13.9998C7 13.4475 6.55228 12.9998 6 12.9998C5.44772 12.9998 5 13.4475 5 13.9998C5 14.552 5.44772 14.9998 6 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M10 14.9998C10.5523 14.9998 11 14.552 11 13.9998C11 13.4475 10.5523 12.9998 10 12.9998C9.44772 12.9998 9 13.4475 9 13.9998C9 14.552 9.44772 14.9998 10 14.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M6 18.9998C6.55228 18.9998 7 18.552 7 17.9998C7 17.4475 6.55228 16.9998 6 16.9998C5.44772 16.9998 5 17.4475 5 17.9998C5 18.552 5.44772 18.9998 6 18.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M10 18.9998C10.5523 18.9998 11 18.552 11 17.9998C11 17.4475 10.5523 16.9998 10 16.9998C9.44772 16.9998 9 17.4475 9 17.9998C9 18.552 9.44772 18.9998 10 18.9998Z"
+										fill="#93A0AD" />
+									<path
+										d="M14 18.9998C14.5523 18.9998 15 18.552 15 17.9998C15 17.4475 14.5523 16.9998 14 16.9998C13.4477 16.9998 13 17.4475 13 17.9998C13 18.552 13.4477 18.9998 14 18.9998Z"
+										fill="#93A0AD" />
+									<path d="M6 0.999756V5.99976" stroke="#93A0AD" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M18 0.999756V5.99976" stroke="#93A0AD" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								<p
+									class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--desktop">
+									Сентябрь — Апрель</p>
+								<p
+									class="catalog__item-right-text catalog__item-right-text--calendar catalog__item-right-text--mobile">
+									Сен. — Апр.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog__btn-inner">
+						<button class="catalog__item-btn catalog__item-btn--fast-booking">Быстрое бронирование</button>
+						<button class="catalog__item-btn catalog__item-btn--details">Подробнее</button>
+						<button class="btn-base btn-base--mobile">Подробнее о туре
+							<div class="btn-base__shadow"></div>
+						</button>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<div class="btn-pagination">
+			<button class="btn-pagination__arrow">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M10 15L4 8L10 1" stroke="#7B8997" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round"></path>
+				</svg>
+			</button>
+			<button class="btn-pagination__center btn-pagination__center--active">1</button>
+			<button class="btn-pagination__center">2</button>
+			<button class="btn-pagination__center">3</button>
+			<button class="btn-pagination__center">4</button>
+			<button class="btn-pagination__arrow">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M6 1L12 8L6 15" stroke="#7B8997" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round"></path>
+				</svg>
+			</button>
+		</div>
+	</section>
+	<!-- catalog -->
+
+	<section class="advantages">
+		<div class="container">
+			<div class="title-sections">
+				<h2 class="title-sections__title title-sections__title--catalog">Наши преимущества</h2>
+			</div>
+			<div class="advantages__items">
+				<div class="advantages__item">
+					<img class="advantages__image" src="/img/rus.svg" alt="">
+					<div class="advantages__item-inner">
+						<p class="advantages__text">Не являемся посредником</p>
+						<p class="advantages__subtext">Мы являемся организаторами, поэтому никаких наценок и переплат
+						</p>
+					</div>
+				</div>
+				<div class="advantages__item">
+					<img class="advantages__image" src="/img/center.svg" alt="">
+					<div class="advantages__item-inner">
+						<p class="advantages__text">Разнообразие туров</p>
+						<p class="advantages__subtext">Которые организовываем сами. На сайте
+							более 100 туров</p>
+					</div>
+				</div>
+				<div class="advantages__item">
+					<img class="advantages__image" src="/img/jeep.svg" alt="">
+					<div class="advantages__item-inner">
+						<p class="advantages__text">Профессиональные гиды</p>
+						<p class="advantages__subtext">Опытные и профессиональные гиды
+							с хорошей репутацией</p>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- <section class="achievements achievements--advantages">
+	<!-- <section class="achievements achievements--advantages">
 			<div class="container">
 				<h2 class="title-sections__title title-sections__title--advantages">Наши преимущества</h2>
 
@@ -1514,10 +1371,7 @@
 			</div>
 		</section> -->
 
-		@@include('./include/subscribe-instagram.html')
-	</main>
+	@@include('./include/subscribe-instagram.html')
+</main>
 
-	@@include('./include/footer.html')
-
-
-
+@@include('./include/footer.html')
