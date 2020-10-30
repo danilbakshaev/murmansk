@@ -8520,6 +8520,12 @@ background:  #0FC4AC;
 }
 
 @media screen and (max-width: 580px) {
+  .title-sections__title--about {
+    font-size: 26px;
+  }
+  .title-sections__description--about {
+    font-size: 14px;
+  }
   .about-us__item {
     flex-direction: column;
     text-align: center;
@@ -8537,6 +8543,7 @@ background:  #0FC4AC;
   .title-sections--about {
     max-width: 100%;
     margin: 0 15px;
+    padding-right: 30px;
   }
   .about-us__list {
     max-width: 100%;
