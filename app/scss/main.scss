@@ -512,6 +512,10 @@ header::before {
   padding-top: 85px;
   position: relative;
 }
+.header-text--nop {
+  padding-bottom: 85px;
+  padding-top: 20px;
+}
 .tours_day {
   position: absolute;
   width: 100%;
@@ -2303,6 +2307,7 @@ header::before {
 .faq__right-img {
   position: sticky;
   top: 50px;
+  border-radius: 12px;
 }
 
 .faq__right--mobile-bg {
@@ -8617,6 +8622,19 @@ background:  #0FC4AC;
     margin: 0;
     max-width: 100%;
   }
+}
+
+
+.our-partners {
+
+}
+
+.company-partners {
+  display: flex;
+}
+
+.company-partners__icon {
+  min-width: 256px;
 }
 /* /about-us__inner--container */
 

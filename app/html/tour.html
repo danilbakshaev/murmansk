@@ -1,294 +1,64 @@
-	@@include('./include/head.html')
-	<header class="background-image background-image--no" style="background-image: url(/img/tour-back.jpg)">
-		<div class="desktop-header">
-			<div class="desktop-header__top">
-				<div class="container desktop-header__line">
-					<button class="select-location">
-						<img class="select-location__geo" src="/img/location.svg" alt="Знак геолокации">
-						<span class="select-location__text">Москва</span>
-						<img class="select-location__arrow" src="/img/arrow.svg" alt="Стрелка вниз">
-					</button>
-					<nav class="desktop-header__top-items">
-						<a href="#" class="desktop-header__top-item">Отзывы</a>
-						<a href="#" class="desktop-header__top-item">О компании</a>
-						<a href="#" class="desktop-header__top-item">Контакты</a>
-						<a href="#" class="desktop-header__top-item">Оплата и бронирование</a>
-						<a href="#" class="desktop-header__top-item">Турагенствам</a>
-						<a href="#" class="desktop-header__top-item">Еще
-							<img class="desktop-header__arrow" src="/img/arrow.svg" alt="Кнопка выбора города">
-						</a>
-					</nav>
-					<button class="select-lang">
-						<img class="select-lang__flag" src="/img/language.svg" alt="Флаг">
-						<span class="select-lang__text">Русский</span>
-						<img class="select-lang__arrows" src="/img/arrow.svg" alt="Стрелка вниз">
-					</button>
-				</div>
-			</div>
-			<div class="desktop-header__bottom">
+@@include('./include/head.html')
+	<header class="background-image" style="background-image: url(/img/tour-back.jpg)">
+		<div class="desktop-header__wrapper">
+			@@include('./include/header_mob-desk.html')
+			<div class="header-text">
 				<div class="container">
-					<div class="desktop-header__line-top">
-						<div class="desktop-header__logo-wrapper">
-							<div class="logo-company">
-								<a class="logo-company__link" href="#"><img class="logo-company__logo"
-										src="/img/logo.svg" alt="Логотип компании NORTH FOR YOU"></a>
-							</div>
-							<div class="desktop-header__info">
-								<p class="desktop-header__info-text">Туроператор в Мурманске "Север для вас"</p>
-								<p class="desktop-header__info-text">Номер в реестре Ростуризма РТО 021550</p>
-							</div>
-						</div>
-						<div class="contacts">
-							<p class="contacts__socials-text">WhatsApp, Facebook, Telegram</p>
-							<div class="contacts__wrap-links">
-								<a class="contacts__phone" href="tel:+79995215100">+7 (999) 521-51-00</a>
-								<div class="contacts__social-inner">
-									<a class="contacts__social" href="#">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C6.92157 16 5.87184 15.7861 4.89823 15.3763C4.5144 15.2147 3.19942 15.3157 1.13242 15.7346L0.0637203 15.9512L0.358085 14.9013C0.869803 13.0761 1.01649 11.9168 0.879628 11.6503C0.304334 10.5302 0 9.28624 0 8C0 3.58172 3.58172 0 8 0Z"
-												fill="#24D46F" />
-											<path
-												d="M5.72043 4C5.84946 4.04651 5.93548 4.09302 6.02151 4.23256C6.15054 4.51163 6.66667 5.76744 6.70968 6C6.75269 6.13953 6.70968 6.32558 6.62366 6.46512C6.53763 6.55814 6.49462 6.69767 6.4086 6.7907C6.27957 6.93023 6.10753 7.16279 6.10753 7.16279C6.06452 7.2093 6.06452 7.30233 6.06452 7.39535C6.10753 7.48837 6.10753 7.53488 6.15054 7.5814L6.19355 7.67442C6.4086 8.09302 6.70968 8.46512 7.01075 8.7907C7.09677 8.88372 7.22581 8.97674 7.31183 9.06977C7.65591 9.44186 8.08602 9.72093 8.55914 9.95349L8.77419 10.0465C8.8172 10.093 8.90323 10.1395 8.94624 10.1395H8.98925C9.07527 10.1395 9.16129 10.093 9.2043 10C9.80645 9.25581 9.84946 9.2093 9.84946 9.2093L9.90142 9.18177C9.97161 9.14605 10.0473 9.11628 10.1505 9.11628C10.1935 9.11628 10.2366 9.16279 10.2796 9.16279C10.7097 9.39535 11.3979 9.72093 11.3979 9.72093L11.871 9.95349C11.957 10 12 10.0465 12 10.0465V10.3721C11.957 10.6047 11.914 10.8372 11.828 11.0233C11.7849 11.1163 11.6989 11.2093 11.6129 11.3023C11.5269 11.3953 11.4409 11.4419 11.3548 11.5349L11.2688 11.6279C11.1828 11.7209 11.0968 11.7209 10.9677 11.814C10.7957 11.907 10.5376 12 10.3226 12H9.89247L9.78898 11.9724C9.68011 11.9506 9.55914 11.9419 9.46237 11.907C8.30108 11.5814 7.26882 10.9767 6.36559 10.1395C6.27957 10 6.15054 9.90698 6.02151 9.76744L5.84946 9.5814C5.16129 8.88372 4.64516 8.09302 4.25806 7.2093L4.21505 7.06977C4.08602 6.74419 4 6.37209 4 6L4.00512 5.8466C4.0357 5.38698 4.20215 4.93488 4.47312 4.55814C4.55914 4.46512 4.60215 4.37209 4.68817 4.27907C4.77419 4.23256 4.86022 4.13953 4.94624 4.09302L4.98925 4.04651C5.07527 4.04651 5.16129 4 5.24731 4H5.72043Z"
-												fill="white" />
-										</svg>
-									</a>
-									<a class="contacts__social" href="#">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M8.5 0C4.35526 0 1 3.24 1 7.2C1 9.28 1.90789 11.12 3.36842 12.44V16L6.44737 14.12C7.07895 14.28 7.78947 14.4 8.5 14.4C12.6447 14.4 16 11.16 16 7.2C16 3.24 12.6447 0 8.5 0Z"
-												fill="#448AFF" />
-											<path d="M4 10L7.75 5L9.625 7.27273L13 5L9.25 10L7.375 7.72727L4 10Z"
-												fill="white" />
-										</svg>
-									</a>
-									<a class="contacts__social" href="#">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
-												fill="#0088CC" />
-											<path fill-rule="evenodd" clip-rule="evenodd"
-												d="M4.38837 6.60411C4.50745 6.55933 9.73297 4.73001 10.0482 4.62363C10.3634 4.51726 11.253 4.20024 10.9308 5.31855C10.6086 6.43686 9.37573 10.0605 9.13056 10.6372C8.8854 11.2138 8.52115 11.9892 7.92575 11.0885C7.33035 10.1879 7.09219 9.04927 6.79799 8.69936C6.50379 8.34946 4.7316 7.85958 4.53547 7.75111C4.33934 7.64264 3.52679 7.05969 4.38837 6.60411Z"
-												fill="white" />
-										</svg>
-									</a>
+					<div class="header-text header-text--nop active ">
+						<div class="container header-text--tour">
+							<div class="header-text__wrap header-text__wrap--tour">
+								<div class="tours__item-geo tours__item-geo--tour tours__item-geo--header">
+									<img class="tours__item-geo-img" src="/img/geo.svg" alt="Геолокация">
+									<span class="tours__item-geo-span tours__item-geo-span--tour">Кировск</span>
 								</div>
-							</div>
-							<button class="contacts__callback">Заказать звонок</button>
-						</div>
-						<div class="contacts__request">
-							<p class="contacts__request-text">Для заявок и вопросов</p>
-							<a class="contacts__request-mail" href="mailto:info@north4you.com">info@north4you.com</a>
-						</div>
-					</div>
-					<div class="desktop-header__line-bottom">
-						<div class="desktop-header__tours">
-							<a class="desktop-header__tour" href="#">Северное сияние</a>
-							<a class="desktop-header__tour" href="#">Териберка</a>
-							<div class="desktop-header__tour desktop-header__tour--destinations">Топ-10 однодневних
-								туров
-								<img class="desktop-header__tours-img" src="/img/arrow.svg" alt="Стрелка вниз">
-							</div>
-							<div class="desktop-header__tour desktop-header__tour--readytours">Готовые пакетные туры
-								<img class="desktop-header__tours-img" src="/img/arrow.svg" alt="Стрелка вниз">
-							</div>
-						</div>
-						<div class="popular-destinations__items--destinations">
-							<div class="popular-destinations__items--destinations-slider">
-								<div>
-									<div class="popular-destinations__item">
-										<h3 class="popular-destinations__title">Туры на северное сияние</h3>
-										<img class="popular-destinations__img "
-											src="/img/tours_to_the_northern_lights.jpg" alt="Северное сияние">
+								<h1 class="header-text__title header-text__title--tour">Экспресс-тур по Кольскому, лето-осень, 3 дня
+									и 2 ночи</h1>
+								<p class="header-text__subtitle header-text__subtitle--tour">Такое удивительное природное явление
+									как Северное Сияние можно
+									увидеть на Севере Кольского полуострова. Во время тура сможете насладиться нетронутой красотой
+									дикой северной природы.
+								</p>
+								<div class="header__text-wrap-top">
+									<div class="header__text-wrap-left header__text-wrap-left--tour">
+										<span class="header__text-wrap-left-span">от 25 000 ₽</span>
+										<span class="header__text-wrap-left-span-small"><span class="small-text">от</span> 21 000
+											₽</span>
+									</div>
+									<div class="header__text-wrap-right">
+										<p class="header__text-wrap-right-text">При бронировании</p>
+										<p class="header__text-wrap-right-text">до 31 августа 2020 <span class="header-red">скидка
+												20%</span></p>
 									</div>
 								</div>
-								<div>
-									<div class="popular-destinations__item">
-										<h3 class="popular-destinations__title">Туры на собачьих упряжках</h3>
-										<img class="popular-destinations__img " src="/img/dogs.png"
-											alt="Северное сияние">
+								<form class="callback-form callback-form--wrap" action="">
+									<div class="callback-form__wrap">
+										<input class="callback-form__input" type="tel" name="tel" placeholder="Введите ваш номер">
+										<button class="callback-form__submit" type="submit">Отправить</button>
 									</div>
-								</div>
-								<div>
-									<div class="popular-destinations__item">
-										<h3 class="popular-destinations__title">Этнические туры к Саамам</h3>
-										<img class="popular-destinations__img " src="/img/saamam.png"
-											alt="Северное сияние">
-									</div>
-								</div>
-								<div>
-									<div class="popular-destinations__item">
-										<h3 class="popular-destinations__title">Туры на снегоходах</h3>
-										<img class="popular-destinations__img " src="/img/snow.png"
-											alt="Северное сияние">
-									</div>
-								</div>
-								<div>
-									<div class="popular-destinations__item">
-										<h3 class="popular-destinations__title">Туры на собачьих упряжках</h3>
-										<img class="popular-destinations__img " src="/img/dogs.png"
-											alt="Северное сияние">
-									</div>
-								</div>
+									<p class="callback-form__privacy">Нажав на кнопку «Отправить», вы даете согласие на
+										обработку <a class="callback-form__privacy-link" href="#">персональных данных</a> и
+										согласен с <a class="callback-form__privacy-link" href="#">политикой
+											конфиденциальности.</a></p>
+								</form>
 							</div>
-							<div class="bottom-innerwrp">
-								<div class="btn-js">
-									<button type="button" class="prev-arrow prev-js-popular-destinations-header">
-										<svg class="arrow-hover" width="20" height="12" viewBox="0 0 20 12" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 6H19M1 6L6 1M1 6L6 11" stroke="#fff" stroke-width="2"
-												stroke-linecap="round" stroke-linejoin="round" />
-										</svg>
+							<div class="header-text-video">
+								<div class="video-tours__item video-tours__item--small video-tours__item--tour openVideo">
+									<img class="video-tours__bg video-tours__bg--tour" src="/img/bg_item_right_2.jpg"
+										alt="Саамская деревня">
+									<button class="video-tours__play video-tours__play--small video-tours__play--tour">
+										<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
 									</button>
-									<button type="button" class="next-arrow next-js-popular-destinations-header">
-										<svg class="arrow-hover" width="20" height="12" viewBox="0 0 20 12" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path d="M19 6L1 6M19 6L14 11M19 6L14 1" stroke="#fff" stroke-width="2"
-												stroke-linecap="round" stroke-linejoin="round" />
-										</svg>
-									</button>
+									<p class="video-tours__p--tour">Посмотритe видео о туре в Хибинские горы</p>
+									<span class="video-tours__span--tour">01:30</span>
 								</div>
-								<button class="btn-ice btn-ice--header"
-									style="background: rgba(255, 255, 255, 0.15); border: none;">Смотреть все</button>
-							</div>
-						</div>
-						<div class="popular-destinations__items--readytours">
-							<div class="popular-destinations__items--readytours-slider">
-								<div>
-									<div class="popular-destinations__item">
-										<h3 class="popular-destinations__title">Туры на северное сияние1</h3>
-										<img class="popular-destinations__img "
-											src="/img/tours_to_the_northern_lights.jpg" alt="Северное сияние">
-									</div>
-								</div>
-								<div>
-									<div class="popular-destinations__item">
-										<h3 class="popular-destinations__title">Туры на собачьих упряжках1</h3>
-										<img class="popular-destinations__img " src="/img/dogs.png"
-											alt="Северное сияние">
-									</div>
-								</div>
-								<div>
-									<div class="popular-destinations__item">
-										<h3 class="popular-destinations__title">Этнические туры к Саамам1</h3>
-										<img class="popular-destinations__img " src="/img/saamam.png"
-											alt="Северное сияние">
-									</div>
-								</div>
-								<div>
-									<div class="popular-destinations__item">
-										<h3 class="popular-destinations__title">Туры на снегоходах1</h3>
-										<img class="popular-destinations__img " src="/img/snow.png"
-											alt="Северное сияние">
-									</div>
-								</div>
-								<div>
-									<div class="popular-destinations__item">
-										<h3 class="popular-destinations__title">Туры на собачьих упряжках</h3>
-										<img class="popular-destinations__img " src="/img/dogs.png"
-											alt="Северное сияние">
-									</div>
-								</div>
-							</div>
-							<div class="bottom-innerwrp">
-								<div class="btn-js">
-									<button type="button" class="prev-arrow prev-js-popular-readytours-header">
-										<svg class="arrow-hover" width="20" height="12" viewBox="0 0 20 12" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 6H19M1 6L6 1M1 6L6 11" stroke="#fff" stroke-width="2"
-												stroke-linecap="round" stroke-linejoin="round" />
-										</svg>
-									</button>
-									<button type="button" class="next-arrow next-js-popular-readytours-header">
-										<svg class="arrow-hover" width="20" height="12" viewBox="0 0 20 12" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path d="M19 6L1 6M19 6L14 11M19 6L14 1" stroke="#fff" stroke-width="2"
-												stroke-linecap="round" stroke-linejoin="round" />
-										</svg>
-									</button>
-								</div>
-								<button class="btn-ice btn-ice--header"
-									style="background: rgba(255, 255, 255, 0.15); border: none;">Смотреть все</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-
-		<!-- mobile-header -->
-		<div class="mobile-header">
-			<div class="container">
-				<div class="mobile-header__top">
-					<div class="logo-company">
-						<a class="logo-company__link" href="#"><img class="logo-company__logo" src="/img/logo.svg"
-								alt="Логотип компании NORTH FOR YOU"></a>
-					</div>
-					<button class="mobile-header__button">
-						<img class="mobile-header__burger-img openMenu" src="/img/button_burger.svg" alt="Кнопка меню">
-					</button>
-				</div>
-			</div>
-		</div>
-		<!-- /mobile-header -->
-
-
-
-		<div class="header-text header-text--nop active ">
-			<div class="container header-text--tour">
-				<div class="header-text__wrap header-text__wrap--tour">
-					<div class="tours__item-geo tours__item-geo--tour tours__item-geo--header">
-						<img class="tours__item-geo-img" src="/img/geo.svg" alt="Геолокация">
-						<span class="tours__item-geo-span tours__item-geo-span--tour">Кировск</span>
-					</div>
-					<h1 class="header-text__title header-text__title--tour">Экспресс-тур по Кольскому, лето-осень, 3 дня
-						и 2 ночи</h1>
-					<p class="header-text__subtitle header-text__subtitle--tour">Такое удивительное природное явление
-						как Северное Сияние можно
-						увидеть на Севере Кольского полуострова. Во время тура сможете насладиться нетронутой красотой
-						дикой северной природы.
-					</p>
-					<div class="header__text-wrap-top">
-						<div class="header__text-wrap-left header__text-wrap-left--tour">
-							<span class="header__text-wrap-left-span">от 25 000 ₽</span>
-							<span class="header__text-wrap-left-span-small"><span class="small-text">от</span> 21 000
-								₽</span>
-						</div>
-						<div class="header__text-wrap-right">
-							<p class="header__text-wrap-right-text">При бронировании</p>
-							<p class="header__text-wrap-right-text">до 31 августа 2020 <span class="header-red">скидка
-									20%</span></p>
-						</div>
-					</div>
-					<form class="callback-form callback-form--wrap" action="">
-						<div class="callback-form__wrap">
-							<input class="callback-form__input" type="tel" name="tel" placeholder="Введите ваш номер">
-							<button class="callback-form__submit" type="submit">Отправить</button>
-						</div>
-						<p class="callback-form__privacy">Нажав на кнопку «Отправить», вы даете согласие на
-							обработку <a class="callback-form__privacy-link" href="#">персональных данных</a> и
-							согласен с <a class="callback-form__privacy-link" href="#">политикой
-								конфиденциальности.</a></p>
-					</form>
-				</div>
-				<div class="header-text-video">
-					<div class="video-tours__item video-tours__item--small video-tours__item--tour openVideo">
-						<img class="video-tours__bg video-tours__bg--tour" src="/img/bg_item_right_2.jpg"
-							alt="Саамская деревня">
-						<button class="video-tours__play video-tours__play--small video-tours__play--tour">
-							<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
-						</button>
-						<p class="video-tours__p--tour">Посмотритe видео о туре в Хибинские горы</p>
-						<span class="video-tours__span--tour">01:30</span>
-					</div>
-				</div>
+				@@include('./include/header_tours.html')
 			</div>
 		</div>
 	</header>
-
 
 	<main>
 
