@@ -3323,8 +3323,296 @@ header::before {
 
 // О туре в Териберку
 .about-teriberka {
-  
+  margin-bottom: 500px;
 }
+
+.about-teriberka__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;  
+  margin-bottom: 16px;
+}
+
+.about-teriberka__text:last-child {
+  margin-bottom: 32px;
+}
+
+.about-teriberka__inner {
+  display: flex;
+}
+
+.about-teriberka__item {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.about-teriberka__item--one {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -16px;
+}
+
+.about-teriberka__item--two {
+  flex-direction: column;
+  background-color: #F8F8F6;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 40px;
+}
+
+.about-teriberka__item--recommendation {
+  flex-direction: column;
+  background: rgba(255, 226, 150, 0.16);
+  border: 1px solid rgba(184, 184, 178, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.about-teriberka__parametrs-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-teriberka__parametrs {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 65px);
+  margin-right: 65px;
+  margin-bottom: 33px;
+}
+
+.about-teriberka__parametrs svg {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.about-teriberka__wrap {
+  margin-left: 10px;
+}
+
+.about-teriberka__h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 5px;
+}
+
+.about-teriberka__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #242440;
+}
+
+.about-teriberka__left {
+  background-color: #F8F8F6;
+  border-radius: 12px;
+  margin-right: 16px;
+  padding: 24px;
+  width: calc(50% - 16px);
+}
+
+.about-teriberka__right {
+  background-color: #F8F8F6;
+  border-radius: 12px;
+  padding: 24px;
+  width: calc(50% - 16px);
+}
+
+.about-teriberka__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #242440;
+  display: flex;
+  align-items: center;
+}
+
+.about-teriberka__icon {
+  margin-right: 12px;
+}
+
+.about-teriberka__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7B8997;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+.about-teriberka__desc--reset {
+  margin-bottom: 0;
+  color: #242440;
+}
+
+.about-teriberka__desc--mb0 {
+  margin-bottom: 0;
+}
+
+.about-teriberka__price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #0FC4AC;
+}
+
+.about-teriberka__left-block {
+  width: 200px;
+  flex-grow: 1;
+}
+
+.about-teriberka__right-block {
+  display: flex;
+  width: 352px;
+  margin-left: 128px;
+  max-height: 547px;
+  border-radius: 12px;
+  background: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%),url(/img/teriberka-card-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 32px;
+}
+
+.about-teriberka__card-title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #FFF;
+  margin-bottom: 16px;
+}
+
+.about-teriberka__card-discount {
+  color: #0FC4AC;
+}
+
+.about-teriberka__card-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-left: 6px;
+}
+
+.about-teriberka__desc-wrap {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.about-teriberka__desc-wrap svg {
+  min-width: 12px;
+}
+
+.about-teriberka__feedback {
+  box-sizing: border-box;
+}
+
+.about-teriberka__name {
+  width: 100%;
+  height: 48px;
+  border: none;
+  background-color: #FFFFFF;
+  border: 1px solid #E9ECEF;
+  border-radius: 8px;
+  padding: 13px 16px;
+  margin-bottom: 8px;
+}
+
+.about-teriberka__name::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #93A0AD;
+}
+
+.about-teriberka__phone {
+  width: 100%;
+  height: 48px;
+  border: none;
+  background-color: #FFFFFF;
+  border: 1px solid #E9ECEF;
+  border-radius: 8px;
+  padding: 13px 16px;
+}
+
+.about-teriberka__phone::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #93A0AD;
+}
+
+.callback-form__privacy--teriberka {
+  text-align: center;
+}
+
+@media screen and (max-width: 1080px) {
+  .about-teriberka__inner {
+    flex-direction: column;
+  }
+  .about-teriberka__left-block {
+    width: 100%;
+  }
+  .about-teriberka__right-block {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-teriberka__item--one {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .about-teriberka__left {
+    width: 100%;
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+  .about-teriberka__right {
+    width: 100%;
+  }
+  .about-teriberka__text {
+    font-size: 14px;
+  }
+  .about-teriberka__desc--reset {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .about-teriberka__parametrs-wrapper {
+    justify-content: space-between;
+  }
+  .about-teriberka__parametrs {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .about-teriberka__parametrs {
+    width: 100%;
+  }
+} 
+
+@media screen and (max-width: 380px) {
+  .about-teriberka__right-block {
+      width: 100%;
+  }
+}
+
+
+
 // /О туре в Териберку
 
 // /Страница teriberka
@@ -10496,6 +10784,12 @@ background:  #0FC4AC;
   width: 160px;
   height: 48px;
   border: none;
+}
+
+.btn-orange-shadow--teriberka {
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 
 .btn-orange-shadow--request:hover .btn-orange-shadow__text--request {
