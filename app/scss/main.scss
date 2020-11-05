@@ -3613,6 +3613,10 @@ header::before {
 // /О туре в Териберку
 
 // Что включено в стоимость
+.included-price {
+  margin-bottom: 96px;
+}
+
 .included-price__btn-wrap {
   display: flex;
   margin-bottom: 40px;
@@ -3824,8 +3828,246 @@ header::before {
     width: 100%;
   }
 }
-
 // /Что включено в стоимость
+
+
+// Фотографии из тура в Териберку
+.photos-teriberka {
+  margin-bottom: 96px;
+}
+
+.photos-inner {
+  display: flex;
+  margin-right: -12px;
+}
+
+.photos-inner__left {
+  overflow: hidden;
+  border-radius: 12px;
+  width: 50%;
+  height: 552px;
+  margin-right: 12px;
+}
+
+.photos-inner__left img {
+  display: block;
+}
+
+.photos-inner__right {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+}
+
+.photos-inner__item {
+  position: relative;
+  width: calc(50% - 12px);
+  height: 270px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.photos-inner__btn-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all linear 0.3s;
+
+  &:hover svg path {
+    fill:#242440;
+  }
+}
+
+.photos-inner__btn {
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 53px);
+  width: 106px;
+  height: 28px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  border: none;
+  background-color: #242440;
+  cursor: pointer;
+  background: rgba(36, 36, 64, 0.6);
+  backdrop-filter: blur(64px);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all linear 0.3s;
+  &:hover {
+    color: #242440;
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .photos-inner {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .photos-inner__left {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .photos-inner__right {
+    width: 100%;
+  }
+}
+// /Фотографии из тура в Териберку
+
+// Карта маршрута
+.route-map {
+  position: relative;
+  margin-bottom: 96px;
+}
+
+.route-map__block {
+  position: absolute;
+  top: 204px;
+  left: 160px;
+  padding: 40px 32px;
+  background: #FFFFFF;
+  border: 1px solid rgba(36, 36, 64, 0.02);
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15);
+  border-radius: 12px;
+  width: 384px;
+  height: 244px;
+}
+
+.route-map__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  color: #242440;
+  margin-bottom: 24px;
+}
+
+.route-map__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #242440;
+}
+// /Карта маршрута
+
+//  Программа тура
+.program-tour {
+  margin-bottom: 96px;
+}
+
+.program-tour__img-wrap {
+  display: flex;
+  margin-right: -16px;
+}
+
+.program-tour__wrapper {
+  display: flex;
+  margin-right: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.program-tour__inner {
+  display: flex;
+  margin-top: 50px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 5px;
+    width: 1px;
+    height: 100%;
+    background-color: #CAECE4;
+  }
+}
+
+.program-tour__inner-left {
+  flex-grow: 1;
+  margin-left: 25px;
+}
+
+.program-tour__wrapper--btn {
+  position: relative;
+}
+
+.program-tour__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 16px;
+}
+
+.program-tour__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+  margin-bottom: 16px;
+}
+
+.about-teriberka__right-block--pd {
+  margin-left: 32px;
+}
+
+.program-tour__item {
+  position: relative;
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.program-tour__icon {
+  position: absolute;
+  top: 5px;
+  left: -25px;
+}
+
+@media screen and (max-width: 1080px) {
+  .program-tour__inner {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .program-tour__img-wrap {
+    flex-wrap: wrap;
+  }
+  .program-tour__wrapper {
+    margin-bottom: 16px;
+  }
+  .about-teriberka__right-block--pd {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .program-tour__wrapper {
+    width: 100%;
+  }
+}
+// /Программа тура
 
 // /Страница teriberka
 
