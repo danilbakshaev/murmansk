@@ -488,6 +488,150 @@ $(function () {
     });
   });
 
+  if ($('.desktop-header__top-item--select')) {
+    $('.desktop-header__top-item--select').each(function () {
+      const _this = $(this),
+        selectOption = _this.find('option'),
+        selectOptionLength = selectOption.length,
+        // selectedOption = selectOption.filter(':selected'),
+        duration = 0; // длительность анимации 
+
+      _this.hide();
+      _this.wrap('<div class="select desktop-header__top-item"></div>');
+      $('<div>', {
+        class: 'new-select',
+        text: _this.children('option:disabled').text()
+      }).insertAfter(_this);
+
+      const selectHead = _this.next('.new-select');
+      $('<div>', {
+        class: 'new-select__list'
+      }).insertAfter(selectHead);
+
+      const selectList = selectHead.next('.new-select__list');
+      for (let i = 1; i < selectOptionLength; i++) {
+        $('<div>', {
+            class: 'new-select__item',
+            html: $('<span>', {
+              text: selectOption.eq(i).text()
+            })
+          })
+          .attr('data-value', selectOption.eq(i).val())
+          .appendTo(selectList);
+      }
+
+      const selectItem = selectList.find('.new-select__item');
+      selectList.slideUp(0);
+      selectHead.on('click', function () {
+        if (!$(this).hasClass('on')) {
+          $(this).addClass('on');
+          selectList.slideDown(duration);
+
+          selectItem.on('click', function () {
+            let chooseItem = $(this).data('value');
+
+            $('select').val(chooseItem).attr('selected', 'selected');
+            selectHead.text($(this).find('span').text());
+
+            selectList.slideUp(duration);
+            selectHead.removeClass('on');
+          });
+
+        } else {
+          $(this).removeClass('on');
+          selectList.slideUp(duration);
+        }
+      });
+    });
+  }
+
+  if ($('.select-lang__text')) {
+    $('.select-lang__text').each(function () {
+      const _this = $(this),
+        selectOption = _this.find('option'),
+        selectOptionLength = selectOption.length,
+        // selectedOption = selectOption.filter(':selected'),
+        duration = 0; // длительность анимации 
+
+      _this.hide();
+      _this.wrap('<div class="select desktop-header__top-item"></div>');
+      $('<div>', {
+        class: 'new-select',
+        text: _this.children('option:disabled').text()
+      }).insertAfter(_this);
+
+      const selectHead = _this.next('.new-select');
+      $('<div>', {
+        class: 'new-select__list new-select__list--lang'
+      }).insertAfter(selectHead);
+
+      const selectList = selectHead.next('.new-select__list');
+      for (let i = 1; i < selectOptionLength; i++) {
+        $('<div>', {
+            class: 'new-select__item new-select__item--lang',
+            html: $('<span>', {
+              text: selectOption.eq(i).text()
+            })
+          })
+          .attr('data-value', selectOption.eq(i).val())
+          .appendTo(selectList);
+      }
+
+      const selectItem = selectList.find('.new-select__item');
+      selectList.slideUp(0);
+      selectHead.on('click', function () {
+        if (!$(this).hasClass('on')) {
+          $(this).addClass('on');
+          selectList.slideDown(duration);
+
+          selectItem.on('click', function () {
+            let chooseItem = $(this).data('value');
+
+            $('select').val(chooseItem).attr('selected', 'selected');
+            selectItem.removeClass('selected');
+            $(this).addClass('selected');
+            selectHead.text($(this).find('span').text());
+
+            selectList.slideUp(duration);
+            selectHead.removeClass('on');
+          });
+
+        } else {
+          $(this).removeClass('on');
+          selectList.slideUp(duration);
+        }
+      });
+    });
+  }
+
+  if ($(".new-select:contains('Русский')")) {
+    $(".new-select:contains('Русский')" ).addClass('new-select__img--rus');
+  } else {
+    $(".new-select:contains('Русский')" ).removeClass('new-select__img--rus');
+  }
+
+  if ($(".new-select:contains('English')")) {
+    $(".new-select:contains('English')").addClass('new-select__img--eng');
+  } else {
+    $(".new-select:contains('English')").removeClass('new-select__img--eng');
+  }
+
+  if ($(".new-select:contains('ภาษาไทย')")) {
+    $(".new-select:contains('ภาษาไทย')").addClass('new-select__img--unk');
+  } else {
+    $(".new-select:contains('ภาษาไทย')").removeClass('new-select__img--unk');
+  }
+
+  $(document).mouseup(function (e) {
+    var block = $(".new-select"); 
+    if (!block.is(e.target) 
+      &&
+      block.has(e.target).length === 0) {
+      block.removeClass('on');
+      $('.new-select__list').slideUp(0);
+    }
+  });
+
 });
 
 //Модальные окна на Pure Js
