@@ -4159,7 +4159,7 @@ header::before {
     display: flex;
     height: 180px;
   }
-  .photos-inner__btn {
+  .photos-inner__btn--dn {
     display: none;
   }
   .photos-inner__btn-mobile {
@@ -4167,6 +4167,135 @@ header::before {
   }
 }
 // /Программа тура
+
+// Ответы на 25 самых популярных вопросов
+.answers-questions {
+  margin-bottom: 96px;
+}
+
+.answers-questions__items {
+  // display: flex;
+  margin-right: -32px;
+}
+
+.answers-questions__item {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-width: 544px;
+  height: max-content;
+  border: 1px solid rgba(36, 36, 64, 0.02);
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 36px rgba(5, 15, 41, 0.15);
+  border-radius: 12px;
+  margin-right: 32px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-left: 72px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+}
+
+.answers-questions__circle {
+  position: absolute;
+  width: 136px;
+  height: 136px;
+  top: -68px;
+  left: -68px;
+  background-color: rgba(6%, 77%, 67%, 0.1);
+  border-radius: 50%;
+  &::after {
+    position: absolute;
+    content: "0";
+    right: 33px;
+    bottom: 22px;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #0FC4AC;
+  }
+}
+
+.answers-questions__circle--one {
+  &::after {
+    content: "1";
+  }
+}
+
+.answers-questions__circle--two {
+  &::after {
+    content: "2";
+  }
+}
+
+.answers-questions__btn {
+  padding: 0;
+  margin-top: 25px;
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7B8997;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  &:hover {
+    color:  rgba(6%, 77%, 67%, 1);
+  }
+}
+
+.answers-questions__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 16px;
+}
+
+.answers-questions__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #242440;
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .answers-questions {
+    margin-bottom: 56px;
+  }
+  .title-sections--answers-questions {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .answers-questions__item {
+    min-width: auto;
+    max-width: 100%;
+    padding-top: 16px;
+    padding-left: 40px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+  }
+  .answers-questions__circle {
+    width: 88px;
+    height: 88px;
+    left: -48px;
+    top: -48px;
+    &::after {
+      right: 20px;
+      bottom: 10px;
+      font-size: 16px;
+    }
+  }
+}
+// /Ответы на 25 самых популярных вопросов
 
 // /Страница teriberka
 
@@ -11136,6 +11265,7 @@ background:  #0FC4AC;
 
 .request--teriberka {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/teriberka-bg.jpg);
+  margin-bottom: 96px;
 }
 
 .request--order {
@@ -11207,7 +11337,6 @@ background:  #0FC4AC;
   width: 232px;
   height: 48px;
   text-decoration: none;
-  /* background: linear-gradient(144.66deg, #00D8F5 0%, #00D689 100%); */
   border-radius: 8px;
   position: relative;
   transition: all linear 0.3s;
@@ -11421,6 +11550,9 @@ background:  #0FC4AC;
   }
   .request-download {
     margin-top: 24px;
+  }
+  .request--teriberka {
+    margin-bottom: 56px;
   }
 }
 
