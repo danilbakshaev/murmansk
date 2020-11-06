@@ -12,14 +12,19 @@
                 <a href="#" class="desktop-header__top-item">Контакты</a>
                 <a href="#" class="desktop-header__top-item">Оплата и бронирование</a>
                 <a href="#" class="desktop-header__top-item">Турагенствам</a>
-                <a href="#" class="desktop-header__top-item">Еще
-                    <img class="desktop-header__arrow" src="/img/arrow.svg" alt="Кнопка выбора города">
-                </a>
+                <select class="desktop-header__top-item desktop-header__top-item--select" name="more">
+                    <option value="more" default disabled selected>Еще</option>
+                    <option value="blog">Блог</option>
+                    <option value="vac">Вакансии</option>
+                </select>
             </nav>
             <button class="select-lang">
-                <img class="select-lang__flag" src="/img/language.svg" alt="Флаг">
-                <span class="select-lang__text">Русский</span>
-                <img class="select-lang__arrows" src="/img/arrow.svg" alt="Стрелка вниз">
+                <select class="select-lang__text" name="language">
+                    <option value="russia" default disabled selected>Русский</option>
+                    <option value="russia" class="select-lang__option">Русский</option>
+                    <option value="english" class="select-lang__option">English</option>
+                    <option value="unk" class="select-lang__option">ภาษาไทย</option>
+                </select>
             </button>
         </div>
     </div>
