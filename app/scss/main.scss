@@ -4429,7 +4429,6 @@ header::before {
     }
   }
 }
-// /Ответы на 25 самых популярных вопросов
 
 // Ответы на 25 самых популярных вопросов
 .video-tour {
@@ -4551,12 +4550,218 @@ header::before {
   object-fit: cover;
 }
 
+.video-tour__wrap--mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1240px) {
+  .video-tour__wrapper {
+    height: calc(33.33% - 11px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video-tour {
+    margin-bottom: 32px;
+  }
   .video-tour__wrap {
-    flex-direction: column;
+    display: none;
+    height: auto;
+  }
+  .video-tour__wrap--mobile {
+    display: block;
+  }
+  .video-tour__btn-play {
+    left: calc(50% - 40px);
+  }
+  .video-tour__item {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .video-tour__item img {
+    height: 100%;
+    display: block;
+  }
+  .video-tour__btn-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
   }
 }
 // /Ответы на 25 самых популярных вопросов
+
+// 8 шагов к побережью океана
+.title-sections--steps-ocean {
+  margin-bottom: 80px;
+}
+
+.steps-ocean {
+  margin-bottom: 96px;
+}
+
+.steps-ocean__line {
+  position: relative;
+  width: 78%;
+  margin-bottom: 50px;
+  
+}
+
+.steps-ocean__line svg {
+  position: absolute;
+  top: -108px;
+  left: 9px;
+}
+
+.steps-ocean__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -32px;
+}
+
+.steps-ocean__item {
+  position: relative;
+  width: calc(25% - 32px);
+  margin-right: 32px;
+  margin-bottom: 147px;
+  &::after {
+    position: absolute;
+    content: "1";
+    top: -44px;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    background-color: #0FC4AC;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: -31px;
+    left: 47px;
+    width: 85%;
+    height: 2px;
+    background-color:#CAECE4;
+  }
+}
+
+.steps-ocean__item--two {
+  &::after {
+    content: "2";
+  }
+}
+
+.steps-ocean__item--three {
+  &::after {
+    content: "3";
+  }
+}
+.steps-ocean__item--four {
+  &::after {
+    content: "4";
+  }
+  &::before {
+    display: none;
+  }
+}
+.steps-ocean__item--five {
+  &::after {
+    content: "5";
+  }
+}
+.steps-ocean__item--six {
+  &::after {
+    content: "6";
+  }
+}
+.steps-ocean__item--seven {
+  &::after {
+    content: "7";
+  }
+}
+.steps-ocean__item--eight {
+  &::after {
+    content: "8";
+  }
+  &::before {
+    display: none;
+  }
+}
+
+.steps-ocean__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 8px;
+}
+
+.steps-ocean__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #242440;
+}
+
+@media screen and (max-width: 768px) {
+  .steps-ocean {
+    margin-bottom: 56px;
+  }
+  .title-sections--steps-ocean {
+    margin-bottom: 80px;
+  }
+  .steps-ocean__items {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .steps-ocean__item {
+    width: 100%;
+    margin-right: 0;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .title-sections--steps-ocean {
+    margin-bottom: 40px;
+  }
+  .steps-ocean__line {
+    display: none;
+  }
+  .steps-ocean__item {
+    padding-left: 40px;
+    margin-bottom: 24px;
+    &:after {
+      top: -4px;
+    }
+    &::before {
+      width: 1px;
+      height: 70%;
+      top: 31px;
+      left: 13px;
+      background-color: #0FC4AC;
+    }
+  }
+  .steps-ocean__item--four {
+    &::before {
+      display: block;
+    }
+  }
+}
+// /8 шагов к побережью океана
 
 // /Страница teriberka
 
@@ -11531,6 +11736,7 @@ background:  #0FC4AC;
 
 .request--order {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/order-bg.jpg);
+  margin-bottom: 96px;
 }
 
 .request--сertified-operator {
@@ -11673,10 +11879,6 @@ background:  #0FC4AC;
   background-color: gray;
 }
 
-.test {
-  background-color: pink;
-}
-
 .request__title--forecast {
   color: #242440;
 }
@@ -11813,6 +12015,9 @@ background:  #0FC4AC;
     margin-top: 24px;
   }
   .request--teriberka {
+    margin-bottom: 56px;
+  }
+  .request--order {
     margin-bottom: 56px;
   }
 }
