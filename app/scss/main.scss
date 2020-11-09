@@ -3457,7 +3457,7 @@ header::before {
 
 // О туре в Териберку
 .about-teriberka {
-  margin-bottom: 500px;
+  margin-bottom: 96px;
 }
 
 .about-teriberka__text {
@@ -3607,7 +3607,7 @@ header::before {
   display: flex;
   width: 352px;
   margin-left: 128px;
-  max-height: 547px;
+  height: max-content;
   border-radius: 12px;
   background: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%),url(/img/teriberka-card-bg.jpg);
   background-position: center center;
@@ -3641,11 +3641,16 @@ header::before {
 .about-teriberka__desc-wrap {
   display: flex;
   align-items: flex-start;
+  margin-left: 20px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .about-teriberka__desc-wrap svg {
   min-width: 12px;
+  position: absolute;
+  top: 4px;
+  left: -20px;
 }
 
 .about-teriberka__feedback {
@@ -3704,6 +3709,9 @@ header::before {
 }
 
 @media screen and (max-width: 768px) {
+  .about-teriberka {
+    margin-bottom: 56px;
+  }
   .about-teriberka__item--one {
     flex-direction: column;
     margin-right: 0;
@@ -3731,6 +3739,9 @@ header::before {
   .about-teriberka__parametrs {
     margin-right: 0;
   }
+  .about-teriberka__right-block {
+    padding: 24px 14px;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -3743,11 +3754,809 @@ header::before {
   .about-teriberka__right-block {
       width: 100%;
   }
+  .about-teriberka__right-block {
+    border-radius: 0;
+  }
+}
+// /О туре в Териберку
+
+// Что включено в стоимость
+.included-price {
+  margin-bottom: 96px;
 }
 
+.included-price__btn-wrap {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.included-price__btn {
+  position: relative;
+  padding: 0;
+  padding: 14px 0px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #E9ECEF;
+  border-radius: 12px;
+  height: 72px;
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.included-price__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 5px;
+}
+
+.included-price__quantity {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7B8997;
+}
+
+.included-price__btn--left {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.included-price__btn--mid {
+  border-left: none;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.included-price__btn--right {
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.included-price__btn-line-left {
+  position: absolute;
+  width: 1px;
+  height: 48px;
+  top: calc(50% - 24px);
+  left: 15px;
+  background-color: #F8F8F6;
+}
+
+.included-price__btn-line-right {
+  position: absolute;
+  width: 1px;
+  height: 48px;
+  top: calc(50% - 24px);
+  right: 15px;
+  background-color: #F8F8F6;
+}
+
+.included-price__btn--active {
+  border: 1px solid rgba(36, 36, 64, 0.02);
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15);
+  border-radius: 12px;
+}
+
+.included-price__btn--active .included-price__title {
+  color: #0FC4AC;
+}
+
+.included-price__inner {
+  display: flex;
+}
+
+.included-price__left {
+  margin-right: 32px;
+}
+
+.included-price__right {
+
+}
+
+.included-price__inner-title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 32px;
+}
+
+.included-price__item {
+  display: flex;
+  align-items: flex-start;
+  max-width: 400px;
+  margin-bottom: 16px;
+}
+
+.included-price__item:last-child {
+  margin-bottom: 0;
+}
+
+.included-price__item svg {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.included-price__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+  margin-left: 12px;
+}
+
+.included-price__right-wrap {
+  margin-left: 12px;
+}
+
+.included-price__right-wrap .included-price__desc {
+  margin-left: 0;
+}
+
+.included-price__sum {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7B8997;
+}
+
+@media screen and (max-width: 1080px) {
+  .title-sections--price {
+    margin-bottom: 24px;
+  }
+  .included-price__btn-wrap {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-right: -8px;
+  }
+  .included-price__btn {
+    padding: 14px 20px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    width: calc(50% - 8px);
+    height: min-content;
+  }
+  .included-price__btn--left {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+  }
+  .included-price__btn--mid {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+  }
+  .included-price__btn--right {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+  }
+  .included-price__btn-line-left {
+    display: none;
+  }
+  .included-price__btn-line-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .included-price__inner {
+    flex-direction: column;
+  }
+  .included-price__left {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .included-price__inner-title {
+    font-size: 20px;
+  }
+  .included-price__desc {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .included-price {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .included-price__btn-wrap {
+    margin-right: 0;
+  }
+  .included-price__btn {
+    margin-right: 0;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+}
+// /Что включено в стоимость
 
 
-// /О туре в Териберку
+// Фотографии из тура в Териберку
+.photos-teriberka {
+  margin-bottom: 96px;
+}
+
+.photos-inner {
+  display: flex;
+  margin-right: -12px;
+}
+
+.photos-inner__left {
+  display: flex;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 50%;
+  height: auto;
+  margin-right: 12px;
+}
+
+.photos-inner__left img {
+  display: block;
+}
+
+.photos-inner__right {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+}
+
+.photos-inner__item {
+  display: flex;
+  position: relative;
+  width: calc(50% - 12px);
+  height: auto;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.photos-inner__btn-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all linear 0.3s;
+
+  &:hover svg path {
+    fill:#242440;
+  }
+}
+
+.photos-inner__btn {
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 53px);
+  width: 106px;
+  height: 28px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  border: none;
+  background-color: #242440;
+  cursor: pointer;
+  background: rgba(36, 36, 64, 0.6);
+  backdrop-filter: blur(64px);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all linear 0.3s;
+  &:hover {
+    color: #242440;
+    background-color: #fff;
+  }
+}
+
+.photos-inner__btn-mobile {
+  background-color: #fff;
+  border: 1px solid #E9ECEF;
+  border-radius: 6px;
+  width: 100%;
+  height: 48px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #242440;
+  transition: all linear 0.3s;
+  &:hover {
+    background-color:#e6e6e6;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .photos-inner {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .photos-inner__left {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .photos-inner__right {
+    width: calc(100% + 12px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .photos-teriberka {
+    margin-bottom: 56px;
+  }
+}
+
+// /Фотографии из тура в Териберку
+
+// Карта маршрута
+.route-map {
+  position: relative;
+  margin-bottom: 96px;
+  display: flex;
+  max-height: 651px;
+}
+
+.route-map img {
+  object-fit: cover;
+}
+
+.route-map__block {
+  position: absolute;
+  top: calc(50% - 122px);
+  left: 160px;
+  padding: 40px 32px;
+  background: #FFFFFF;
+  border: 1px solid rgba(36, 36, 64, 0.02);
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15);
+  border-radius: 12px;
+  width: 384px;
+  height: 244px;
+}
+
+.route-map__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  color: #242440;
+  margin-bottom: 24px;
+}
+
+.route-map__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #242440;
+}
+
+@media screen and (max-width: 1240px) {
+  .route-map {
+    height: 540px;
+  }
+  .route-map__block {
+    left: 83px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .route-map {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .route-map__block {
+    top: 14px;
+    left: 0;
+    right: 14px;
+    margin: 0 14px;
+    width: 100%;
+    height: auto;
+  }
+}
+// /Карта маршрута
+
+//  Программа тура
+.program-tour {
+  margin-bottom: 96px;
+}
+
+.program-tour__img-wrap {
+  display: flex;
+  margin-right: -16px;
+}
+
+.program-tour__wrapper {
+  display: flex;
+  margin-right: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.program-tour__wrapper img {
+  object-fit: cover;
+}
+
+.program-tour__inner {
+  display: flex;
+  margin-top: 50px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 5px;
+    width: 1px;
+    height: 100%;
+    background-color: #CAECE4;
+  }
+}
+
+.program-tour__inner-left {
+  flex-grow: 1;
+  margin-left: 25px;
+}
+
+.program-tour__wrapper--btn {
+  position: relative;
+}
+
+.program-tour__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 16px;
+}
+
+.program-tour__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+  margin-bottom: 16px;
+}
+
+.about-teriberka__right-block--pd {
+  margin-left: 32px;
+}
+
+.program-tour__item {
+  position: relative;
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.program-tour__icon {
+  position: absolute;
+  top: 5px;
+  left: -25px;
+}
+
+.photos-inner__btn-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .program-tour__inner {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .program-tour {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .program-tour__img-wrap {
+    flex-wrap: wrap;
+  }
+  .program-tour__wrapper {
+    margin-bottom: 16px;
+  }
+  .about-teriberka__right-block--pd {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .program-tour__wrapper {
+    width: 100%;
+    display: flex;
+    height: 180px;
+  }
+  .photos-inner__btn--dn {
+    display: none;
+  }
+  .photos-inner__btn-mobile {
+    display: block;
+  }
+}
+// /Программа тура
+
+// Ответы на 25 самых популярных вопросов
+.answers-questions {
+  margin-bottom: 96px;
+}
+
+.answers-questions__items {
+  // display: flex;
+  margin-right: -32px;
+}
+
+.answers-questions__item {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-width: 544px;
+  height: max-content;
+  border: 1px solid rgba(36, 36, 64, 0.02);
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 36px rgba(5, 15, 41, 0.15);
+  border-radius: 12px;
+  margin-right: 32px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-left: 72px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+}
+
+.answers-questions__circle {
+  position: absolute;
+  width: 136px;
+  height: 136px;
+  top: -68px;
+  left: -68px;
+  background-color: rgba(6%, 77%, 67%, 0.1);
+  border-radius: 50%;
+  &::after {
+    position: absolute;
+    content: "0";
+    right: 33px;
+    bottom: 22px;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #0FC4AC;
+  }
+}
+
+.answers-questions__circle--one {
+  &::after {
+    content: "1";
+  }
+}
+
+.answers-questions__circle--two {
+  &::after {
+    content: "2";
+  }
+}
+
+.answers-questions__btn {
+  padding: 0;
+  margin-top: 25px;
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7B8997;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  &:hover {
+    color:  rgba(6%, 77%, 67%, 1);
+  }
+}
+
+.answers-questions__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 16px;
+}
+
+.answers-questions__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #242440;
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .answers-questions {
+    margin-bottom: 56px;
+  }
+  .title-sections--answers-questions {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .answers-questions__item {
+    min-width: auto;
+    max-width: 100%;
+    padding-top: 16px;
+    padding-left: 40px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+  }
+  .answers-questions__circle {
+    width: 88px;
+    height: 88px;
+    left: -48px;
+    top: -48px;
+    &::after {
+      right: 20px;
+      bottom: 10px;
+      font-size: 16px;
+    }
+  }
+}
+// /Ответы на 25 самых популярных вопросов
+
+// Ответы на 25 самых популярных вопросов
+.video-tour {
+  margin-bottom: 201px;
+}
+
+.video-tour__wrap {
+  position: relative;
+  display: flex;
+  height: 475px;
+}
+
+.video-tour__left {
+  display: flex;
+  flex-grow: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-tour__btn-play {
+  position: absolute;
+  padding: 0;
+  border-radius: 50%;
+  top: calc(50% - 40px);
+  left: calc(50% - 145px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  transition: all linear 0.3s;
+  &:hover svg path {
+    fill:#242440;
+  }
+  svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.video-tour__block-wrap {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -130px;
+  left: -16px;
+}
+
+.video-tour__block {
+  box-shadow: 0px 2px 72px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 368px;
+  min-height: 293px;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 75px;
+}
+
+.video-tour__icon-wrap {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.video-tour__block-title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 16px;
+}
+
+.video-tour__block-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #242440;
+}
+
+.video-tour__left img {
+  display: block;
+  object-fit: cover;
+}
+
+.video-tour__right {
+  margin-left: 16px;
+}
+
+.video-tour__wrapper {
+  position: relative;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 17px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.video-tour__btn-play--right {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+}
+
+.video-tour__wrapper img {
+  display: block;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1240px) {
+  .video-tour__wrap {
+    flex-direction: column;
+  }
+}
+// /Ответы на 25 самых популярных вопросов
 
 // /Страница teriberka
 
@@ -10717,6 +11526,7 @@ background:  #0FC4AC;
 
 .request--teriberka {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/teriberka-bg.jpg);
+  margin-bottom: 96px;
 }
 
 .request--order {
@@ -10788,7 +11598,6 @@ background:  #0FC4AC;
   width: 232px;
   height: 48px;
   text-decoration: none;
-  /* background: linear-gradient(144.66deg, #00D8F5 0%, #00D689 100%); */
   border-radius: 8px;
   position: relative;
   transition: all linear 0.3s;
@@ -11002,6 +11811,9 @@ background:  #0FC4AC;
   }
   .request-download {
     margin-top: 24px;
+  }
+  .request--teriberka {
+    margin-bottom: 56px;
   }
 }
 
