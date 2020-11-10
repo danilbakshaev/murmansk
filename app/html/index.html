@@ -16,12 +16,16 @@
 					<form class="callback-form callback-form--wrap" action="">
 						<div class="callback-form__wrap">
 							<input class="callback-form__input" type="tel" name="tel" placeholder="Введите ваш номер">
-							<button class="callback-form__submit" type="submit">Отправить</button>
+							<button class="callback-form__submit callback-form__submit--mt"
+								type="submit">Отправить</button>
 						</div>
-						<p class="callback-form__privacy">Нажав на кнопку «Отправить», вы даете согласие на обработку <a class="callback-form__privacy-link" href="#">персональных данных</a> и согласен с <a class="callback-form__privacy-link" href="#">политикой конфиденциальности.</a></p>
+						<p class="callback-form__privacy">Нажав на кнопку «Отправить», вы даете согласие на обработку <a
+								class="callback-form__privacy-link" href="#">персональных данных</a> и согласен с <a
+								class="callback-form__privacy-link" href="#">политикой конфиденциальности.</a></p>
 					</form>
 					<div class="text-center">
-						<a class="header-text__presentation" href="#">Скачать презентацию — «Куда сходить в Мурманске туристу» (PDF, 3 Мб)</a>
+						<a class="header-text__presentation" href="#">Скачать презентацию — «Куда сходить в Мурманске
+							туристу» (PDF, 3 Мб)</a>
 					</div>
 				</div>
 			</div>
@@ -943,74 +947,74 @@
 			</div>
 			<div class="popular-destinations__items">
 				<div id="opacity-item">
-					<div class="popular-destinations__item">
+					<a href="#" class="popular-destinations__item">
 						<div class="popular-destinations-scaleControl">
 							<h3 class="popular-destinations__title">Туры на северное сияние</h3>
 						</div>
 						<img class="popular-destinations__img " src="/img/tours_to_the_northern_lights.jpg"
 							alt="Северное сияние">
-					</div>
+					</a>
 				</div>
 				<div class="noContent" id="opacity-item">
-					<div class="popular-destinations__item">
+					<a href="#" class="popular-destinations__item">
 						<div class="popular-destinations-scaleControl">
 							<h3 class="popular-destinations__title">Туры на собачьих упряжках</h3>
 						</div>
 						<img class="popular-destinations__img " src="/img/dogs.png" alt="Северное сияние">
-					</div>
+					</a>
 				</div>
 				<div class="noContent" id="opacity-item">
-					<div class="popular-destinations__item">
+					<a href="#" class="popular-destinations__item">
 						<div class="popular-destinations-scaleControl">
 							<h3 class="popular-destinations__title">Этнические туры
 								к Саамам</h3>
 						</div>
 						<img class="popular-destinations__img " src="/img/saamam.png" alt="Северное сияние">
-					</div>
+					</a>
 				</div>
 				<div class="noContent" id="opacity-item">
-					<div class="popular-destinations__item">
+					<a href="#" class="popular-destinations__item">
 						<div class="popular-destinations-scaleControl">
 							<h3 class="popular-destinations__title">Туры на
 								снегоходах</h3>
 						</div>
 						<img class="popular-destinations__img " src="/img/snow.png" alt="Северное сияние">
-					</div>
+					</a>
 				</div>
 				<div class="noContent" id="opacity-item">
-					<div class="popular-destinations__item">
+					<a href="#" class="popular-destinations__item">
 						<div class="popular-destinations-scaleControl">
 							<h3 class="popular-destinations__title">Туры на северное сияние</h3>
 						</div>
 						<img class="popular-destinations__img " src="/img/tours_to_the_northern_lights.jpg"
 							alt="Северное сияние">
-					</div>
+					</a>
 				</div>
 				<div class="noContent" id="opacity-item">
-					<div class="popular-destinations__item">
+					<a href="#" class="popular-destinations__item">
 						<div class="popular-destinations-scaleControl">
 							<h3 class="popular-destinations__title">Туры на собачьих упряжках</h3>
 						</div>
 						<img class="popular-destinations__img " src="/img/dogs.png" alt="Северное сияние">
-					</div>
+					</a>
 				</div>
 				<div class="noContent" id="opacity-item">
-					<div class="popular-destinations__item">
+					<a href="#" class="popular-destinations__item">
 						<div class="popular-destinations-scaleControl">
 							<h3 class="popular-destinations__title">Этнические туры
 								к Саамам</h3>
 						</div>
 						<img class="popular-destinations__img " src="/img/saamam.png" alt="Северное сияние">
-					</div>
+					</a>
 				</div>
 				<div class="noContent" id="opacity-item">
-					<div class="popular-destinations__item">
+					<a href="#" class="popular-destinations__item">
 						<div class="popular-destinations-scaleControl">
 							<h3 class="popular-destinations__title">Туры на
 								снегоходах</h3>
 						</div>
 						<img class="popular-destinations__img " src="/img/snow.png" alt="Северное сияние">
-					</div>
+					</a>
 				</div>
 			</div>
 			<div class="bottom-innerwrp">
@@ -1216,7 +1220,9 @@
 	</section>
 	<!-- /Гостиницы и отели Мурманска -->
 
-	@@include('./include/reviews.html')
+	<section class="reviews--index">
+		@@include('./include/reviews.html')
+	</section>
 
 	<!-- Видео из некоторых туров «Север для Вас» -->
 	<section class="video-tours">
@@ -1277,43 +1283,49 @@
 				</p>
 			</div>
 			<div class="video-tours--mobile__items">
-				<div class="video-tours--mobile__items">
-					<div class="video-tours--mobile__item openVideoMobile">
-						<img class="video-tours__bg" src="/img/tour_shine_bg.jpg" alt="Северное сияние">
-						<button class="video-tours__play">
-							<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
-						</button>
-						<h3 class="video-tours__title video-tours__title--mobile">Тур на северное сияние</h3>
-					</div>
+				<div class="video-tours--mobile__item openVideoMobile">
+					<img class="video-tours__bg" src="/img/tour_shine_bg.jpg" alt="Северное сияние">
+					<button class="video-tours__play">
+						<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+					</button>
+					<h3 class="video-tours__title video-tours__title--mobile">Тур на северное сияние</h3>
 				</div>
-				<div class="video-tours--mobile__items">
-					<div class="video-tours--mobile__item">
-						<img class="video-tours__bg" src="/img/bg_item_right_1.jpg" alt="Побережье океана">
-						<button class="video-tours__play">
-							<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
-						</button>
-						<h3 class="video-tours__title video-tours__title--mobile">Тур в Териберку, на побережье
-							океана</h3>
-					</div>
+				<div class="video-tours--mobile__item">
+					<img class="video-tours__bg" src="/img/bg_item_right_1.jpg" alt="Побережье океана">
+					<button class="video-tours__play">
+						<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+					</button>
+					<h3 class="video-tours__title video-tours__title--mobile">Тур в Териберку, на побережье
+						океана</h3>
 				</div>
-				<div class="video-tours--mobile__items">
-					<div class="video-tours--mobile__item">
-						<img class="video-tours__bg" src="/img/bg_item_right_2.jpg" alt="Саамская деревня">
-						<button class="video-tours__play">
-							<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
-						</button>
-						<h3 class="video-tours__title video-tours__title--mobile">Тур в саамскую деревню</h3>
-					</div>
+				<div class="video-tours--mobile__item">
+					<img class="video-tours__bg" src="/img/bg_item_right_2.jpg" alt="Саамская деревня">
+					<button class="video-tours__play">
+						<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+					</button>
+					<h3 class="video-tours__title video-tours__title--mobile">Тур в саамскую деревню</h3>
 				</div>
-				<div class="video-tours--mobile__items">
-					<div class="video-tours--mobile__item">
-						<img class="video-tours__bg" src="/img/bg_item_right_3.jpg" alt="Хаски ферма">
-						<button class="video-tours__play">
-							<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
-						</button>
-						<h3 class="video-tours__title video-tours__title--mobile">Тур на хаски ферму</h3>
-					</div>
+				<div class="video-tours--mobile__item">
+					<img class="video-tours__bg" src="/img/bg_item_right_3.jpg" alt="Хаски ферма">
+					<button class="video-tours__play">
+						<img class="video-tours__img" src="/img/play.svg" alt="Кнопка play">
+					</button>
+					<h3 class="video-tours__title video-tours__title--mobile">Тур на хаски ферму</h3>
 				</div>
+			</div>
+			<div class="video-btn">
+				<button type="button" class="prev-arrow prev-js-video">
+					<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 6H19M1 6L6 1M1 6L6 11" stroke="#0FC4AC" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round"></path>
+					</svg>
+				</button>
+				<button type="button" class="next-arrow next-js-video"><svg width="20" height="12" viewBox="0 0 20 12"
+						fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M19 6L1 6M19 6L14 11M19 6L14 1" stroke="#0FC4AC" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</button>
 			</div>
 		</div>
 	</section>
