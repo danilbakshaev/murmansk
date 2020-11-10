@@ -1,30 +1,82 @@
 $(function () {
 
-  // if ($('.popular-destinations__items')) {
-  //   $('.popular-destinations__items').slick({
-  //     slidesToShow: 3,
-  //     slidesToScroll: 3,
-  //     infinite: false,
-  //     draggable: false,
-  //     prevArrow: '.prev-js-popular-destinations',
-  //     nextArrow: '.next-js-popular-destinations',
-  //     responsive: [{
-  //         breakpoint: 1240,
-  //         settings: {
-  //           slidesToShow: 2,
-  //           slidesToScroll: 2,
-  //         }
-  //       },
-  //       {
-  //         breakpoint: 740,
-  //         settings: {
-  //           slidesToShow: 1,
-  //           slidesToScroll: 1,
-  //         }
-  //       },
-  //     ]
-  //   });
-  // }
+  if ($('.popular-destinations__items')) {
+    $('.popular-destinations__items').slick({
+      slidesToShow: 3.2,
+      slidesToScroll: 3,
+      infinite: false,
+      draggable: false,
+      prevArrow: '.prev-js-popular-destinations',
+      nextArrow: '.next-js-popular-destinations',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+    });
+  }
+
+  if ($('.popular-destinations__items--header')) {
+    $('.popular-destinations__items--header').slick({
+      slidesToShow: 3.3,
+      slidesToScroll: 2,
+      infinite: true,
+      draggable: false,
+      prevArrow: '.prev-js-popular-destinations--head-head',
+      nextArrow: '.next-js-popular-destinations--head-head',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+    });
+  }
+
+  if ($('.popular-destinations__items--package')) {
+    $('.popular-destinations__items--package').slick({
+      slidesToShow: 3.3,
+      slidesToScroll: 2,
+      infinite: true,
+      draggable: false,
+      prevArrow: '.prev-js-popular-destinations--package',
+      nextArrow: '.next-js-popular-destinations--package',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+    });
+  }
 
   if ($('.popular-destinations__items--destinations-slider')) {
     $('.popular-destinations__items--destinations-slider').slick({
@@ -98,7 +150,7 @@ $(function () {
                 slidesToScroll: 2,
               }
             },
-    
+
             {
               breakpoint: 740,
               settings: {
@@ -111,7 +163,7 @@ $(function () {
       }
     };
   }).trigger('resize');
-  
+
 
 
   if ($('.reviews__inner')) {
@@ -170,14 +222,14 @@ $(function () {
 
   if ($('.video-tours--mobile__items')) {
     $(".video-tours--mobile__items").slick({
-      prevArrow: '<button type="button" class="slider-prev reviews-slider__slider-prev">Previous</button>',
-      nextArrow: '<button type="button" class="slider-next reviews-slider__slider-next">Next</button>',
+      prevArrow: '.prev-js-video',
+      nextArrow: '.next-js-video',
       infinite: false,
       responsive: [{
         breakpoint: 800,
         settings: {
-          slidesToShow: 1.1,
-            slidesToScroll: 1.1,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
       }, ]
     });
@@ -362,6 +414,12 @@ $(function () {
     $(this).next().slideToggle("slow");
   });
 
+  $(".filter__mobile-cut").hide()
+  $(".filter__mobile-spoiler").click(function () {
+    $(this).toggleClass("filter__item--active");
+    $(this).children(".filter__mobile-cut").slideToggle("slow");
+  });
+
   // Шапка 
 
   if ($(".desktop-header__tour--tours_day") && $(".desktop-header__tour--tours_package")) {
@@ -374,22 +432,22 @@ $(function () {
         $(".tours_day").addClass("active")
         toursPackage.removeClass("active")
         toursDay.addClass("active")
-      } else  if (!$(".tours_day").hasClass("active")) {
+      } else if (!$(".tours_day").hasClass("active")) {
         $(".desktop-header__wrapper").addClass("backgroundActive")
         $(".tours_day").addClass("active")
-        toursDay.addClass("active") 
-      }  else {
+        toursDay.addClass("active")
+      } else {
         $(".desktop-header__wrapper").removeClass("backgroundActive")
         $(".tours_day").removeClass("active")
-        toursDay.removeClass("active") 
+        toursDay.removeClass("active")
       }
- 
+
     })
     toursPackage.click(function () {
       if ($(".tours_day").hasClass("active")) {
         $(".tours_day").removeClass("active")
         $(".tours_package").addClass("active")
-        toursDay.removeClass("active") 
+        toursDay.removeClass("active")
         toursPackage.addClass("active")
       } else if (!$(".tours_package").hasClass("active")) {
         $(".desktop-header__wrapper").addClass("backgroundActive")
@@ -604,10 +662,187 @@ $(function () {
     });
   }
 
+  if ($('.select-direction')) {
+    $('.select-direction').each(function () {
+      const _this = $(this),
+        selectOption = _this.find('option'),
+        selectOptionLength = selectOption.length,
+        // selectedOption = selectOption.filter(':selected'),
+        duration = 0; // длительность анимации 
+
+      _this.hide();
+      _this.wrap('<div class="select"></div>');
+      $('<div>', {
+        class: 'new-select filter__item filter__item--direction',
+        text:  _this.children('option:disabled').text()
+      }).insertAfter(_this);
+
+      const selectHead = _this.next('.new-select');
+      $('<div>', {
+        class: 'new-select__list new-select__list--direction'
+      }).insertAfter(selectHead);
+
+      const selectList = selectHead.next('.new-select__list');
+      for (let i = 1; i < selectOptionLength; i++) {
+        $('<div>', {
+            class: 'new-select__item new-select__item--direction',
+            html: $( '<span>', {
+              text: selectOption.eq(i).text(),
+            })
+          })
+          .attr('data-value', selectOption.eq(i).val())
+          .appendTo(selectList);
+      }
+
+      const selectItem = selectList.find('.new-select__item');
+      selectList.slideUp(0);
+      selectHead.on('click', function () {
+        if (!$(this).hasClass('on')) {
+          $(this).addClass('on');
+          selectList.slideDown(duration);
+
+          selectItem.on('click', function () {
+            let chooseItem = $(this).data('value');
+
+            $('select').val(chooseItem).attr('selected', 'selected');
+            selectItem.removeClass('selected');
+            $(this).addClass('selected');
+            selectHead.text($(this).find('span').text());
+
+            selectList.slideUp(duration);
+            selectHead.removeClass('on');
+          });
+
+        } else {
+          $(this).removeClass('on');
+          selectList.slideUp(duration);
+        }
+      });
+    });
+  }
+
+  if ($('.select-category')) {
+    $('.select-category').each(function () {
+      const _this = $(this),
+        selectOption = _this.find('option'),
+        selectOptionLength = selectOption.length,
+        // selectedOption = selectOption.filter(':selected'),
+        duration = 0; // длительность анимации 
+
+      _this.hide();
+      _this.wrap('<div class="select"></div>');
+      $('<div>', {
+        class: 'new-select filter__item filter__item--category',
+        text:  _this.children('option:disabled').text()
+      }).insertAfter(_this);
+
+      const selectHead = _this.next('.new-select');
+      $('<div>', {
+        class: 'new-select__list new-select__list--category'
+      }).insertAfter(selectHead);
+
+      const selectList = selectHead.next('.new-select__list');
+      for (let i = 1; i < selectOptionLength; i++) {
+        $('<div>', {
+            class: 'new-select__item new-select__item--direction',
+            html: $( '<span>', {
+              text: selectOption.eq(i).text(),
+            })
+          })
+          .attr('data-value', selectOption.eq(i).val())
+          .appendTo(selectList);
+      }
+
+      const selectItem = selectList.find('.new-select__item');
+      selectList.slideUp(0);
+      selectHead.on('click', function () {
+        if (!$(this).hasClass('on')) {
+          $(this).addClass('on');
+          selectList.slideDown(duration);
+
+          selectItem.on('click', function () {
+            let chooseItem = $(this).data('value');
+
+            $('select').val(chooseItem).attr('selected', 'selected');
+            selectItem.removeClass('selected');
+            $(this).addClass('selected');
+            selectHead.text($(this).find('span').text());
+
+            selectList.slideUp(duration);
+            selectHead.removeClass('on');
+          });
+
+        } else {
+          $(this).removeClass('on');
+          selectList.slideUp(duration);
+        }
+      });
+    });
+  }
+
+  if ($('.select-season')) {
+    $('.select-season').each(function () {
+      const _this = $(this),
+        selectOption = _this.find('option'),
+        selectOptionLength = selectOption.length,
+        // selectedOption = selectOption.filter(':selected'),
+        duration = 0; // длительность анимации 
+
+      _this.hide();
+      _this.wrap('<div class="select"></div>');
+      $('<div>', {
+        class: 'new-select filter__item filter__item--season',
+        text:  _this.children('option:disabled').text()
+      }).insertAfter(_this);
+
+      const selectHead = _this.next('.new-select');
+      $('<div>', {
+        class: 'new-select__list new-select__list--season'
+      }).insertAfter(selectHead);
+
+      const selectList = selectHead.next('.new-select__list');
+      for (let i = 1; i < selectOptionLength; i++) {
+        $('<div>', {
+            class: 'new-select__item new-select__item--season',
+            html: $( '<span>', {
+              text: selectOption.eq(i).text(),
+            })
+          })
+          .attr('data-value', selectOption.eq(i).val())
+          .appendTo(selectList);
+      }
+
+      const selectItem = selectList.find('.new-select__item');
+      selectList.slideUp(0);
+      selectHead.on('click', function () {
+        if (!$(this).hasClass('on')) {
+          $(this).addClass('on');
+          selectList.slideDown(duration);
+
+          selectItem.on('click', function () {
+            let chooseItem = $(this).data('value');
+
+            $('select').val(chooseItem).attr('selected', 'selected');
+            selectItem.removeClass('selected');
+            $(this).addClass('selected');
+            selectHead.text($(this).find('span').text());
+
+            selectList.slideUp(duration);
+            selectHead.removeClass('on');
+          });
+
+        } else {
+          $(this).removeClass('on');
+          selectList.slideUp(duration);
+        }
+      });
+    });
+  }
+  
   if ($(".new-select:contains('Русский')")) {
-    $(".new-select:contains('Русский')" ).addClass('new-select__img--rus');
+    $(".new-select:contains('Русский')").addClass('new-select__img--rus');
   } else {
-    $(".new-select:contains('Русский')" ).removeClass('new-select__img--rus');
+    $(".new-select:contains('Русский')").removeClass('new-select__img--rus');
   }
 
   if ($(".new-select:contains('English')")) {
@@ -623,9 +858,8 @@ $(function () {
   }
 
   $(document).mouseup(function (e) {
-    var block = $(".new-select"); 
-    if (!block.is(e.target) 
-      &&
+    var block = $(".new-select");
+    if (!block.is(e.target) &&
       block.has(e.target).length === 0) {
       block.removeClass('on');
       $('.new-select__list').slideUp(0);
@@ -692,13 +926,16 @@ $(function () {
   openVideo = document.querySelector('.openVideo');
   videoModal = document.querySelector('.modal-wrapper__video');
 
-  openVideo.addEventListener('click', function () {
-    openBaseModal();
-    videoModal.classList.remove('hidden');
-    setTimeout(function () {
-      videoModal.classList.remove('animation');
-    }, 20);
-  })
+  if (document.querySelector('.openVideo')) {
+    openVideo.addEventListener('click', function () {
+      openBaseModal();
+      videoModal.classList.remove('hidden');
+      setTimeout(function () {
+        videoModal.classList.remove('animation');
+      }, 20);
+    })
+  }
+
 
   if (document.querySelector('.openVideoMobile')) {
     openVideoMobile = document.querySelector('.openVideoMobile');
@@ -752,7 +989,7 @@ $(function () {
       });
     }
   };
-  
+
   if (document.querySelector('.openFullText')) {
     openFullText = document.querySelector('.openFullText');
     fullTextModal = document.querySelector('.modal-wrapper__fulltext');
