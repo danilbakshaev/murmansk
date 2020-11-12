@@ -5895,6 +5895,39 @@ header::before {
 }
 // /Преимущества работы с нами
 
+// блок "Фотографии"
+.photos {
+  margin-bottom: 96px;
+}
+
+.photos__items {
+  display: flex;
+  margin-right: -32px;
+}
+
+.photos__item {
+  display: flex;
+  margin-right: 32px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all linear 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.photos__item img {
+  display: block;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .photos {
+    margin-bottom: 48px;
+  }
+}
+// /блок "Фотографии"
+
 // /Страница Турагентствам
 
 /* Footer */
@@ -13043,6 +13076,7 @@ background:  #0FC4AC;
 
 .request--сertified-operator {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/best-photos-bg.jpg);
+  margin-bottom: 96px;
 }
 
 .request--about {
@@ -13333,6 +13367,9 @@ background:  #0FC4AC;
   }
   .request--best-photos {
     margin-bottom: 56px;
+  }
+  .request--сertified-operator {
+    margin-bottom: 48px;
   }
 }
 
