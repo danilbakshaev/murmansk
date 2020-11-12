@@ -4457,10 +4457,6 @@ header::before {
   margin-right: 32px;
 }
 
-.included-price__right {
-
-}
-
 .included-price__inner-title {
   margin: 0;
   font-family: 'Roboto Slab', sans-serif;
@@ -5495,10 +5491,6 @@ header::before {
   margin-bottom: 96px;
 }
 
-.our-transport__items {
-  // display: flex;
-}
-
 .our-transport__item {
   display: flex;
   text-align: center;
@@ -5749,6 +5741,73 @@ header::before {
 
 
 // /Страница teriberka
+
+// Страница Турагентствам
+
+// блок "Большой выбор пакетных туров"
+.choice-tours {
+  margin-bottom: 96px;
+}
+
+.choice-tours__items {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: -32px;
+}
+
+.choice-tours__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-right: 32px;
+  transition: all linear 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.choice-tours__item img {
+  display: block;
+  object-fit: cover;
+}
+
+.choice-tours__wrap {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  right: 20px;
+}
+
+.choice-tours__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+}
+
+.choice-tours__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.choice-tours__count {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+// /блок "Большой выбор пакетных туров"
+
+// /Страница Турагентствам
 
 /* Footer */
 footer {
