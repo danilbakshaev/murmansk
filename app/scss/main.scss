@@ -586,6 +586,7 @@ header .desktop-header__line-bottom--tour {
 
 .header-text__wrap {
   max-width: 737px;
+  padding: 71px 0 155px;
 }
 
 .header-text__title {
@@ -3557,7 +3558,7 @@ header .desktop-header__line-bottom--tour {
 
 .northern-tour__inner {
   display: flex;
-  position: relative;
+  // position: relative;
 }
 
 .northern-tour__left {
@@ -3565,9 +3566,9 @@ header .desktop-header__line-bottom--tour {
 }
 
 .northern-tour__right {
-  position: absolute;
-  top: -117px;
-  right: 0;
+  // position: absolute;
+  // top: -117px;
+  // right: 0;
 }
 
 .northern-tour__items {
@@ -3819,7 +3820,7 @@ header .desktop-header__line-bottom--tour {
 
 // Онлайн-прогноз северного сияния
 .prognosis {
-  margin-bottom: 96px;
+  margin-bottom: 120px;
 }
 
 .prognosis__inner {
@@ -3829,7 +3830,10 @@ header .desktop-header__line-bottom--tour {
 .prognosis__left {
   width: 55%;
 }
-
+.prognosis__left .title-sections__title--reset {
+  max-width: 377px;
+  width: auto;
+}
 .prognosis__text {
   margin: 0;
   font-weight: 400;
@@ -3855,6 +3859,22 @@ header .desktop-header__line-bottom--tour {
   display: block;
   object-fit: cover;
   height: 100%;
+}
+
+.prognosis__image {
+  margin-top: 48px;
+}
+.prognosis__image-text {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #7B8997;
+  max-width: 814px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -3885,6 +3905,7 @@ header .desktop-header__line-bottom--tour {
 .header-text__teriberka-inner {
   display: flex;
   justify-content: space-between;
+  padding: 96px 0 155px;
 }
 
 .header-text__teriberka-left {
@@ -3939,7 +3960,7 @@ header .desktop-header__line-bottom--tour {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #93A0AD;
+  color: #000;
   width: 280px;
   height: 48px;
 }
@@ -3991,12 +4012,13 @@ header .desktop-header__line-bottom--tour {
 
 .header-text__teriberka-wrapper {
   position: relative;
+  cursor: pointer;
 }
 
 .header-text__teriberka-img {
   display: block;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 9px;
   margin-bottom: 16px;
 }
 
@@ -4022,6 +4044,10 @@ header .desktop-header__line-bottom--tour {
   display: none;
 }
 
+.header-text__teriberka-left--north {
+  max-width: 736px;
+  width: 736px;
+}
 @media screen and (max-width: 768px) {
   .header-teriberka {
     &::before {
@@ -4030,6 +4056,18 @@ header .desktop-header__line-bottom--tour {
   }
   .header-text--teriberka {
     padding-bottom: 0;
+  }
+  .header-text__teriberka-inner {
+    flex-direction: column;
+    padding: 0;
+  }
+  .header-text__teriberka-title {
+    font-size: 26px;
+  line-height: 120%;
+  }
+  .header-text__teriberka-desc {
+    font-size: 14px;
+    line-height: 150%;
   }
   .header-text__teriberka-title-h2-mobile {
     display: block;
@@ -4047,9 +4085,6 @@ header .desktop-header__line-bottom--tour {
     position: absolute;
     bottom: 22px;
     width: 100%;
-  }
-  .header-text__teriberka-inner {
-    flex-direction: column;
   }
   .header-text__teriberka-left {
     width: 100%;
@@ -4074,6 +4109,11 @@ header .desktop-header__line-bottom--tour {
   .header-text__teriberka-btn {
     top: calc(35% - 25px);
   }
+  
+.header-text__teriberka-left--north {
+  max-width: 100%;
+  width: 100%;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -4091,6 +4131,7 @@ header .desktop-header__line-bottom--tour {
     text-align: center;
   }
 }
+
 // /шапка
 
 // О туре в Териберку
@@ -4423,6 +4464,7 @@ header .desktop-header__line-bottom--tour {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 1;
 }
 
 .included-price__title {
@@ -4460,6 +4502,7 @@ header .desktop-header__line-bottom--tour {
   border-left: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  margin-left: -6px;
 }
 
 .included-price__btn-line-left {
@@ -4482,8 +4525,10 @@ header .desktop-header__line-bottom--tour {
 
 .included-price__btn--active {
   border: 1px solid rgba(36, 36, 64, 0.02);
-  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15);
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15) !important;
+  -webkit-box-shadow: 0 0 2px rgba(5,15,41,.03),0 4px 20px rgba(5,15,41,.15) !important;
   border-radius: 12px;
+  z-index: 2;
 }
 
 .included-price__btn--active .included-price__title {
@@ -4818,7 +4863,9 @@ header .desktop-header__line-bottom--tour {
 .program-tour {
   margin-bottom: 96px;
 }
-
+.program-tour .title-sections__title--reset {
+  max-width: 432px;
+}
 .program-tour__img-wrap {
   display: flex;
   margin-right: -16px;
@@ -4838,22 +4885,22 @@ header .desktop-header__line-bottom--tour {
 .program-tour__inner {
   display: flex;
   margin-top: 50px;
-  position: relative;
 
-  &::before {
-    position: absolute;
-    content: '';
-    top: 5px;
-    left: 5px;
-    width: 1px;
-    height: 100%;
-    background-color: #CAECE4;
-  }
 }
 
 .program-tour__inner-left {
   flex-grow: 1;
   margin-left: 25px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: -19px;
+    width: 1px;
+    height: 100%;
+    background-color: #CAECE4;
+  }
 }
 
 .program-tour__wrapper--btn {
@@ -4877,6 +4924,7 @@ header .desktop-header__line-bottom--tour {
   line-height: 150%;
   color: #242440;
   margin-bottom: 16px;
+  max-width: 596px;
 }
 
 .about-teriberka__right-block--pd {
@@ -4901,6 +4949,36 @@ header .desktop-header__line-bottom--tour {
   display: none;
 }
 
+.header-text__teriberka-right--program {
+  width: 352px;
+  margin-left: 32px;
+  position: relative;
+}
+
+.header-text__teriberka-right--program .header-text__teriberka-title-h2 {
+  position: absolute;
+  bottom: 46px;
+  left: 69px;
+}
+.header-text__teriberka-right--program .header-text__teriberka-img {
+  margin-bottom: 24px;
+}
+
+.title-sections--answers-questions {
+  margin-bottom: 0;
+}
+.title-sections--answers-questions .title-sections__title {
+  max-width: 544px;
+  width: auto;
+}
+.title-sections--answers-questions .title-sections__description {
+  max-width: 544px;
+  width: auto;
+}
+.answers-questions__items .slick-list {
+  padding: 56px 0 32px;
+  overflow: visible;
+}
 @media screen and (max-width: 1080px) {
   .program-tour__inner {
     flex-direction: column;
@@ -5085,7 +5163,9 @@ header .desktop-header__line-bottom--tour {
   border-radius: 12px;
   overflow: hidden;
 }
-
+.video-tour__left img {
+  cursor: pointer;
+}
 .video-tour__btn-play {
   position: absolute;
   padding: 0;
@@ -5170,6 +5250,7 @@ header .desktop-header__line-bottom--tour {
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 17px;
+  cursor: pointer;
   &:last-child {
     margin-bottom: 0;
   }
@@ -5191,7 +5272,10 @@ header .desktop-header__line-bottom--tour {
 .video-tour__wrap--mobile {
   display: none;
 }
-
+.video-tour .title-sections__title {
+  max-width: 544px;
+  width: auto;
+}
 @media screen and (max-width: 1240px) {
   .video-tour__wrapper {
     height: calc(33.33% - 11px);
@@ -5231,6 +5315,154 @@ header .desktop-header__line-bottom--tour {
   }
 }
 // /Ответы на 25 самых популярных вопросов
+
+.advice .title-sections__title {
+  max-width: 544px;
+  width: auto;
+}
+.advice-inner {
+  display: flex;
+  margin-right: -32px;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+.advice-inner::after {
+  content: '';
+  position: absolute;
+  background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  height: 240px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.advice-inner--active {
+  height: auto;
+}
+.advice-inner--active.advice-inner::after {
+  background: none;
+  content: none;
+}
+.advice-inner__right,
+.advice-inner__left {
+  width: 50%;
+  margin-right: 32px;
+}
+.advice-item {
+  max-width: 560px;
+  display: -webkit-inline-box;
+  margin-bottom: 16px;
+}
+.advice-item__num {
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  background: #0FC4AC;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.advice-item__text {
+  margin: 0;
+}
+
+.advice-item__btn {
+  width: 150px;
+  height: 32px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(36, 36, 64, 0.02);
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15);
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 150%;
+  color: #0FC4AC;
+  position: absolute;
+  bottom: -2px; 
+  left: calc(48% - 75px);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;margin-bottom: 25px;
+}
+
+.advice-item__btn svg {
+  margin-left: 4px;
+}
+
+.advice-inner--active .advice-item__btn svg {
+  transform: rotate(180deg);
+}
+
+.know-import {
+  padding-bottom: 96px;
+}
+.know-import-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -32px;
+}
+.know-import-item {
+  width: calc(25% - 32px);
+  margin-right: 32px;
+}
+.know-import-item__img {
+  width: 58px;
+  height: auto;
+}
+.know-import-item__title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #242440;
+  margin: 14px 0 8px;
+}
+.know-import-item__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7B8997;
+}
+
+
+@media screen and (max-width: 768px) {
+  .advice-inner {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .advice-inner__left, .advice-inner__right {
+    width: 100%;
+    margin-right: 0;
+  }
+  .advice-item {
+    max-width: 94%;
+  }
+  .know-import-item {
+    width: calc(50% - 32px);
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  .know-import-inner {
+    margin-right: 0;
+  }
+  .know-import-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
 
 // 8 шагов к побережью океана
 .title-sections--steps-ocean {
@@ -5427,6 +5659,7 @@ header .desktop-header__line-bottom--tour {
 
 // Наши гиды-фотографы
 .our-photographers {
+  margin-top: 96px;
   margin-bottom: 96px;
 }
 
@@ -5436,9 +5669,11 @@ header .desktop-header__line-bottom--tour {
 }
 
 .our-photographers__item {
-  display: flex;
+  display: flex !important;
 }
-
+.our-photographers__items .slick-track {
+  // left: 280px;
+}
 .our-photographers__left {
   display: flex;
   overflow: hidden;
@@ -5448,7 +5683,7 @@ header .desktop-header__line-bottom--tour {
 
 .our-photographers__right {
   position: relative;
-  padding-bottom: 40px;
+  max-width: 380px;
 }
 
 .our-photographers__left img {
@@ -5484,6 +5719,10 @@ header .desktop-header__line-bottom--tour {
   margin-right: 13px;
 }
 
+.our-photographers__wrap--mb {
+  margin-bottom: 40px;
+}
+
 .our-photographers__count {
   font-weight: 700;
   font-size: 16px;
@@ -5500,8 +5739,7 @@ header .desktop-header__line-bottom--tour {
 }
 
 .simple-link--photographers {
-  position: absolute;
-  bottom: 0;
+  width: 100%;
 }
 
 .simple-link--photographers-mobile {
@@ -5541,8 +5779,7 @@ header .desktop-header__line-bottom--tour {
 }
 
 .our-transport__item {
-  display: flex;
-  text-align: center;
+  display: flex !important;
 }
 
 .our-transport__left {
@@ -5551,6 +5788,7 @@ header .desktop-header__line-bottom--tour {
 
 .our-transport__right {
   margin-left: 32px;
+  max-width: 448px;
 }
 
 .our-transport__count {
@@ -5599,7 +5837,9 @@ header .desktop-header__line-bottom--tour {
     margin-bottom: 0;
   }
 }
-
+.our-transport__items .slick-track {
+  // left: -395px;
+}
 @media screen and (max-width: 768px) {
   .our-transport {
     margin-bottom: 56px;
@@ -5627,11 +5867,13 @@ header .desktop-header__line-bottom--tour {
 // Барабан «Удачи»
 .drum-good {
   background-color: #f8f8f6;
-  margin-bottom: 96px;
+  padding: 96px 0;
 }
 
 .drum-good__inner {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .drum-good__left {
@@ -5706,7 +5948,8 @@ header .desktop-header__line-bottom--tour {
 }
 
 .drum-good__right {
-  width: 50%;
+  max-width: 400px;
+  margin-left: 96px;
 }
 
 .drum-good__title {
@@ -5784,6 +6027,25 @@ header .desktop-header__line-bottom--tour {
   }
   .drum-good__right {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .drum-good__title{
+    font-size: 26px;
+  line-height: 120%;
+  text-align: start;
+  display: block;
+  }
+  .drum-good__text {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .drum-good__right {
+    margin-left: 0;
+  }
+  .drum-good__form {
+    max-width: 100%;
   }
 }
 // /Барабан «Удачи»
@@ -9804,7 +10066,9 @@ border-color: #0FC4AC;
 .desktop-hide {
   display: none;
 }
-
+.mobile-hide {
+  display: block;
+}
 @media screen and (max-width: 1440px) {
   .tour-map__left-map {
     height: 199px;
@@ -10479,7 +10743,15 @@ border-color: #0FC4AC;
   .tour-ticket__prices--active {
     width: 97%;
   }
+  
+  .mobile-hide {
+    display: none;
+  } 
+  .desktop-hideh {
+    display: block;
+  }
 }
+
 
 @media screen and (max-width: 400px)  {
   .tour-ticket__prices--active {
@@ -12785,7 +13057,7 @@ background:  #0FC4AC;
 }
 
 .title-sections__title--reset {
-  width: 61%;
+  max-width: 736px;
 }
 
 .btn-orange-shadow--reviews {
@@ -12996,6 +13268,11 @@ background:  #0FC4AC;
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .title-sections__title--reset {
+    width: 61%;
+  }
+}
 @media screen and (max-width: 1240px) {
   .reviews-tourist__items {
     max-width: 55%;
