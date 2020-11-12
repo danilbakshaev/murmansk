@@ -5780,7 +5780,6 @@ header::before {
   right: 20px;
 }
 
-
 .choice-tours__title {
   margin: 0;
   font-family: 'Roboto Slab', sans-serif;
@@ -5807,6 +5806,94 @@ header::before {
   color: #FFFFFF;
 }
 // /блок "Большой выбор пакетных туров"
+
+// Преимущества работы с нами
+.benefits-working {
+  box-sizing: border-box;
+  margin-bottom: 96px;
+  background: #F8F8F6;
+  padding-top: 90px;
+  padding-bottom: 96px;
+}
+
+.benefits-working__logo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.benefits-working__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: #242440;
+  margin-bottom: 48px;
+}
+
+.benefits-working__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -32px;
+}
+
+.benefits-working__item {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #E9ECEF;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 20px 18px;
+  margin-right: 32px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  width: calc(50% - 32px);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.benefits-working__item svg {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.benefits-working__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #242440;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-working {
+    margin-bottom: 50px;
+    padding-top: 32px;
+  }
+  .benefits-working__title {
+    text-align: left;
+  }
+  .benefits-working__items {
+    margin-right: 0;
+  }
+  .benefits-working__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+    padding: 16px 12px;
+  }
+  .benefits-working__title {
+    margin-bottom: 24px;
+    font-size: 26px;
+  }
+  .benefits-working__logo {
+    display: none;
+  }
+}
+// /Преимущества работы с нами
 
 // /Страница Турагентствам
 
