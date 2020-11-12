@@ -3507,7 +3507,550 @@ header::before {
   }
 }
 
+// Страница "северное сияние"
+
+// блок "Тур на северное сияние в Мурманске 2020"
+.northern-tour {
+  margin-bottom: 96px;
+}
+
+.northern-tour__inner {
+  display: flex;
+  position: relative;
+}
+
+.northern-tour__left {
+  width: 60%;
+}
+
+.northern-tour__right {
+  position: absolute;
+  top: -117px;
+  right: 0;
+}
+
+.northern-tour__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.northern-tour__item {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 32px;
+}
+
+.northern-tour__wrap {
+  margin-left: 10px;
+}
+
+.northern-tour__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 3px;
+}
+
+.northern-tour__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #242440;
+}
+
+.northern-tour__warranty {
+  padding: 24px;
+  border: 1px solid #F8F8F6;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.northern-tour__warranty-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.northern-tour__warranty-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #242440;
+  margin-left: 12px;
+}
+
+.northern-tour__warranty-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #242440;
+}
+
+.northern-tour__recommendation {
+  padding: 24px;
+  background: rgba(255, 226, 150, 0.16);
+  border: 1px solid rgba(184, 184, 178, 0.1);
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.northern-tour__recommendation-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.northern-tour__recommendation-title {
+  margin: 0;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #242440;
+}
+
+.northern-tour__recommendation-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #242440;
+}
+
+@media screen and (max-width: 992px) {
+  .northern-tour__inner {
+    flex-direction: column;
+  }
+  .northern-tour__right {
+    position: inherit;
+    top: 24px;
+  }
+  .northern-tour__left {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .northern-tour {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .northern-tour__item {
+    width: 100%;
+  }
+}
+// /блок "Тур на северное сияние в Мурманске 2020"
+
+// Скидки, акции и бонусы
+.discounts {
+  margin-bottom: 96px;
+}
+
+.discounts__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -32px;
+}
+
+.discounts__item {
+  display: flex;
+  position: relative;
+  width: calc(33.33% - 32px);
+  margin-right: 32px;
+  margin-bottom: 32px;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: all linear 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.discounts__img {
+  display: block;
+  object-fit: cover;
+}
+
+.discounts__title {
+  margin: 0;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  right: 24px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.discounts__text {
+  margin: 0;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.discounts__count {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1240px) {
+  .discounts__item {
+    width: calc(50% - 32px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .discounts {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .discounts__item {
+    width: 100%;
+  }
+}
+// /Скидки, акции и бонусы
+
+// Какие фото мы делаем для вас
+.photo-take {
+  margin-bottom: 96px;
+}
+
+.photo-take__point {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.photo-take__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.photo-take__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+  margin-left: 10px;
+}
+
+.photo-take__copyright {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #7B8997;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .photo-take {
+    margin-bottom: 56px;
+  }
+}
+// /Какие фото мы делаем для вас
+
+// Онлайн-прогноз северного сияния
+.prognosis {
+  margin-bottom: 96px;
+}
+
+.prognosis__inner {
+  display: flex;
+}
+
+.prognosis__left {
+  width: 55%;
+}
+
+.prognosis__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.prognosis__span {
+  color: #0FC4AC;
+}
+
+.prognosis__right {
+  display: flex;
+  margin-left: 96px;
+}
+
+.prognosis__right img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+  .prognosis__inner {
+    flex-direction: column;
+  }
+  .prognosis__left {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .prognosis__right {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768) {
+  .prognosis {
+    margin-bottom: 56px;
+  }
+}
+// /Онлайн-прогноз северного сияния
+
+// /Страница "северное сияние"
+
 // Страница teriberka
+
+// шапка
+.header-text__teriberka-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-text__teriberka-left {
+  width: 50%;
+}
+
+.header-text__teriberka-right {
+  width: 256px;
+  margin-left: 129px;
+}
+
+.header-text__teriberka-form {
+  width: 448px;
+}
+
+.header-text__teriberka-title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.header-text__teriberka-desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 24px;
+}
+
+.header-text__teriberka-discount {
+  padding: 3px 7px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.header-text__teriberka-wrap {
+  display: flex;
+}
+
+.header-text__teriberka-inp {
+  padding: 13px 16px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-right: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #93A0AD;
+  width: 280px;
+  height: 48px;
+}
+
+.header-text__teriberka-inp::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #93A0AD;
+}
+
+.header-text__teriberka-privacy {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 12px;
+}
+
+.header-text__teriberka-privacy-link {
+  color: #fff;
+  text-decoration: none;
+  transition: all linear 0.3s;
+  &:hover {
+    color: #0fc4ac;
+    text-decoration: underline;
+  }
+}
+
+.header-text__teriberka-title-h2 {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.11);
+  margin-bottom: 8px;
+}
+
+.header-text__teriberka-time {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.11);
+}
+
+.header-text__teriberka-wrapper {
+  position: relative;
+}
+
+.header-text__teriberka-img {
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.header-text__teriberka-btn {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(28px);
+  cursor: pointer;
+}
+
+.header-text__teriberka-title-h2-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header-teriberka {
+    &::before {
+      display: none;
+    }
+  }
+  .header-text--teriberka {
+    padding-bottom: 0;
+  }
+  .header-text__teriberka-title-h2-mobile {
+    display: block;
+    margin: 0;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.11);
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .header-text__teriberka-title-wrap {
+    position: absolute;
+    bottom: 22px;
+    width: 100%;
+  }
+  .header-text__teriberka-inner {
+    flex-direction: column;
+  }
+  .header-text__teriberka-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .header-text__teriberka-right {
+    width: 100%;
+    // height: 178px;
+    margin-left: 0;
+  }
+  .header-text__teriberka-img {
+    border-radius: 0;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .header-text__teriberka-title-h2 {
+    display: none;
+  }
+  .header-text__teriberka-time {
+    display: none;
+  }
+  .header-text__teriberka-btn {
+    top: calc(35% - 25px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-text__teriberka-form {
+    width: 100%;
+  }
+  .header-text__teriberka-wrap {
+    flex-direction: column;
+  }
+  .header-text__teriberka-inp {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .header-text__teriberka-privacy {
+    text-align: center;
+  }
+}
+// /шапка
 
 // О туре в Териберку
 .about-teriberka {
@@ -4073,7 +4616,7 @@ header::before {
   display: flex;
   position: relative;
   width: calc(50% - 12px);
-  height: auto;
+  height: calc(50% - 6px);
   margin-right: 12px;
   margin-bottom: 12px;
   overflow: hidden;
@@ -4848,6 +5391,7 @@ header::before {
 
 .our-photographers__items {
   // display: flex;
+  margin-bottom: 32px;
 }
 
 .our-photographers__item {
@@ -4945,6 +5489,264 @@ header::before {
   }
 }
 // /Наши гиды-фотографы
+
+// Наш транспорт
+.our-transport {
+  margin-bottom: 96px;
+}
+
+.our-transport__items {
+  // display: flex;
+}
+
+.our-transport__item {
+  display: flex;
+  text-align: center;
+}
+
+.our-transport__left {
+  min-width: 256px;
+}
+
+.our-transport__right {
+  margin-left: 32px;
+}
+
+.our-transport__count {
+  background-color: #0FC4AC;
+  border-radius: 4px;
+  padding: 7px 13px;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.our-transport__images {
+  display: block;
+  object-fit: cover;
+}
+
+.our-transport__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #7B8997;
+  margin-top: 16px;
+}
+
+.our-transport__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 16px;
+}
+
+.our-transport__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #242440;
+  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-transport {
+    margin-bottom: 56px;
+  }
+  .our-transport__item {
+    flex-direction: column;
+  }
+  .our-transport__wrap {
+    text-align: left;
+  }
+  .our-transport__right {
+    text-align: left;
+    margin-left: 0;
+  }
+  .our-transport__title {
+    font-size: 22px;
+    margin-top: 16px;
+  }
+  .our-transport__desc {
+    margin-bottom: 8px;
+  }
+}
+// /Наш транспорт
+
+// Барабан «Удачи»
+.drum-good {
+  background-color: #f8f8f6;
+  margin-bottom: 96px;
+}
+
+.drum-good__inner {
+  display: flex;
+}
+
+.drum-good__left {
+  width: 50%;
+}
+
+.drum-good__drum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 544px;
+  height: 544px;
+  background-color: cadetblue;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.drum-good__btn {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #242440;
+  &:nth-child(2n) {
+    background: linear-gradient(135deg, #FF9458 0%, #FFBE5C 100%);
+    color: #FFFFFF;
+  }
+}
+
+.drum-good__btn--top-left {
+  width: 187px;
+  height: 265px;
+}
+
+.drum-good__btn--top-right {
+  width: 187px;
+  height: 265px;
+}
+
+.drum-good__btn--top-bottom-right {
+  width: 265px;
+  height: 187px;
+}
+
+.drum-good__btn--top-botton-left {
+  width: 265px;
+  height: 187px;
+}
+
+.drum-good__btn--bottom-left {
+  width: 265px;
+  height: 187px;
+}
+
+.drum-good__btn--bottom-right {
+  width: 265px;
+  height: 187px;
+}
+
+.drum-good__btn--bottom-bottom-left {
+  width: 265px;
+  height: 187px;
+}
+
+.drum-good__btn--bottom-bottom-right {
+  width: 265px;
+  height: 187px;
+}
+
+.drum-good__right {
+  width: 50%;
+}
+
+.drum-good__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 16px;
+}
+
+.drum-good__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+  margin-bottom: 24px;
+}
+
+.drum-good__form {
+  max-width: 352px;
+}
+
+.drum-good__inp {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #93A0AD;
+  border: none;
+  background-color: #FFFFFF;
+  border: 1px solid #E9ECEF;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 13px 16px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.btn-orange-shadow--drum {
+  width: 100% !important;
+}
+
+.drum-good__privacy {
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #7B8997;
+  margin-top: 8px;
+}
+
+.drum-good__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #000;
+  transition: all linear 0.3s;
+  &:hover {
+    color: #0fc4ac;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .drum-good__inner {
+    flex-direction: column;
+  }
+  .drum-good__left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .drum-good__right {
+    width: 100%;
+  }
+}
+// /Барабан «Удачи»
+
 
 // /Страница teriberka
 
@@ -12059,22 +12861,27 @@ background:  #0FC4AC;
 
 .request--reviews {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/about-bg.jpg);
+  margin-bottom: 96px;
 } 
 
 .request--northern {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/northern-bg.jpg);
+  margin-bottom: 96px;
 }
 
 .request--coming-dates {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/coming-dates-bg.jpg);
+  margin-bottom: 96px;
 }
 
 .request--individual-calculation {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/individual-calculation-bg.jpg);
+  margin-bottom: 96px;
 }
 
 .request--best-photos {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/best-photos-bg.jpg);
+  margin-bottom: 96px;
 }
 
 .request--teriberka {
@@ -12366,6 +13173,18 @@ background:  #0FC4AC;
     margin-bottom: 56px;
   }
   .request--order {
+    margin-bottom: 56px;
+  }
+  .request--northern {
+    margin-bottom: 56px;
+  }
+  .request--coming-dates {
+    margin-bottom: 56px;
+  }
+  .request--individual-calculation {
+    margin-bottom: 56px;
+  }
+  .request--best-photos {
     margin-bottom: 56px;
   }
 }
