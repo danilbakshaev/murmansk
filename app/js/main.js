@@ -150,6 +150,60 @@ $(function () {
     });
   }
 
+  if ($('.answers-questions__items')) {
+    $('.answers-questions__items').slick({
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      infinite: true,
+      draggable: false,
+      prevArrow: '.prev-js-popular-destinations',
+      nextArrow: '.next-js-popular-destinations',
+      responsive: [{
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
+    });
+  }
+
+  if ($('.our-photographers__items')) {
+    $('.our-photographers__items').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      draggable: false,
+      prevArrow: '.prev-js-guides',
+      nextArrow: '.next-js-guides',
+      responsive: [{
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
+    });
+  }
+
+  if ($('.our-transport__items')) {
+    $('.our-transport__items').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      draggable: false,
+      prevArrow: '.prev-js-transport',
+      nextArrow: '.next-js-transport',
+      responsive: [{
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
+    });
+  }
+
   $(window).on('resize', function (e) {
     if (window.innerWidth < 1240) {
       if ($('.tours__items')) {
@@ -374,6 +428,29 @@ $(function () {
   })
 
   callbackFormTravel.validate({
+    errorElement: "span",
+    errorPlacement: (error, element) =>
+      error.appendTo(element.parent().parent()),
+    rules: {
+      tel: {
+        maskRu: true
+      }
+    },
+    messages: {
+      tel: "",
+    },
+    submitHandler: function (form) {
+
+    }
+  });
+
+
+  const requestForm = $('.request__form')
+  requestForm.submit(function (e) {
+    e.preventDefault()
+  })
+
+  callbackForm.validate({
     errorElement: "span",
     errorPlacement: (error, element) =>
       error.appendTo(element.parent().parent()),
@@ -956,6 +1033,16 @@ $(function () {
     });
   }
 
+  $(".included-price__inner").not(":first").hide();
+  $(".included-price__btn").click(function () {
+    $(".included-price__btn").removeClass("included-price__btn--active").eq($(this).index()).addClass("included-price__btn--active");
+    $(".included-price__inner").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("included-price__btn--active");
+
+  $(".advice-item__btn").click(function () {
+    $(".advice-inner").toggleClass("advice-inner--active");
+  });
+
 });
 
 //Модальные окна на Pure Js
@@ -1013,19 +1100,20 @@ $(function () {
 
   };
 
-  openVideo = document.querySelector('.openVideo');
+  openVideo = document.querySelectorAll('.openVideo');
   videoModal = document.querySelector('.modal-wrapper__video');
 
   if (document.querySelector('.openVideo')) {
-    openVideo.addEventListener('click', function () {
-      openBaseModal();
-      videoModal.classList.remove('hidden');
-      setTimeout(function () {
-        videoModal.classList.remove('animation');
-      }, 20);
-    })
+    for (let i = 0; i < openVideo.length; i++) {
+      openVideo[i].addEventListener('click', () => {
+        openBaseModal();
+        videoModal.classList.remove('hidden');
+        setTimeout(function () {
+          videoModal.classList.remove('animation');
+        }, 20);
+      });
+    }
   }
-
 
   if (document.querySelector('.openVideoMobile')) {
     openVideoMobile = document.querySelector('.openVideoMobile');
