@@ -132,6 +132,77 @@ $(function () {
     });
   }
 
+  if ($('.team-inner')) {
+    $('.team-inner').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite: true,
+      draggable: false,
+      prevArrow: '.prev-js-popular-destinations--team',
+      nextArrow: '.next-js-popular-destinations--team',
+      responsive: [{
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
+    });
+  }
+
+  if ($('.answers-questions__items')) {
+    $('.answers-questions__items').slick({
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      infinite: true,
+      draggable: false,
+      prevArrow: '.prev-js-popular-destinations',
+      nextArrow: '.next-js-popular-destinations',
+      responsive: [{
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
+    });
+  }
+
+  if ($('.our-photographers__items')) {
+    $('.our-photographers__items').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      draggable: false,
+      prevArrow: '.prev-js-guides',
+      nextArrow: '.next-js-guides',
+      responsive: [{
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
+    });
+  }
+
+  if ($('.our-transport__items')) {
+    $('.our-transport__items').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      draggable: false,
+      prevArrow: '.prev-js-transport',
+      nextArrow: '.next-js-transport',
+      responsive: [{
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
+    });
+  }
 
   $(window).on('resize', function (e) {
     if (window.innerWidth < 1240) {
@@ -373,6 +444,29 @@ $(function () {
     }
   });
 
+
+  const requestForm = $('.request__form')
+  requestForm.submit(function (e) {
+    e.preventDefault()
+  })
+
+  callbackForm.validate({
+    errorElement: "span",
+    errorPlacement: (error, element) =>
+      error.appendTo(element.parent().parent()),
+    rules: {
+      tel: {
+        maskRu: true
+      }
+    },
+    messages: {
+      tel: "",
+    },
+    submitHandler: function (form) {
+
+    }
+  });
+
   jQuery.validator.addMethod('maskRu', function (value, element) {
     console.log(/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value));
     return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
@@ -419,6 +513,65 @@ $(function () {
     $(this).toggleClass("filter__item--active");
     $(this).children(".filter__mobile-cut").slideToggle("slow");
   });
+
+  $(".tour-ticket__prices-hide").hide()
+  $(".tour-ticket__prices").click(function () {
+    $(this).toggleClass("tour-ticket__prices--active");
+    $(".tour-ticket__prices-hide").slideToggle("slow");
+  });
+
+  $(".answers__cut").hide()
+  $(".answers__spoiler").click(function () {
+    $(this).parent().toggleClass("answers__item--active");
+    $(this).next().slideToggle("slow");
+  });
+
+  if ($('#map')) {
+    ymaps.ready(function () {
+      var myMapContact = new ymaps.Map('map', {
+        center: [68.964693, 33.0755158],
+        zoom: 16,
+        // controls: []
+      });
+
+      placemark = new ymaps.Placemark([68.964858, 33.0752382], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/placemap.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
+
+      myMapContact.geoObjects
+        .add(placemark);
+
+      // myMap.behaviors.get('drag').disable();
+      myMapContact.behaviors.get('scrollZoom').disable();
+      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+      myMapContact.behaviors.get('dblClickZoom').disable();
+    });
+  }
+
+  if ($(".header-notfixed")) {
+    var headWhite = $('.header-notfixed');
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 736) {
+        headWhite.addClass("header-fixed");
+      } else {
+        headWhite.removeClass("header-fixed");
+      }
+    });
+  }
+
 
   // Шапка 
 
@@ -674,7 +827,7 @@ $(function () {
       _this.wrap('<div class="select"></div>');
       $('<div>', {
         class: 'new-select filter__item filter__item--direction',
-        text:  _this.children('option:disabled').text()
+        text: _this.children('option:disabled').text()
       }).insertAfter(_this);
 
       const selectHead = _this.next('.new-select');
@@ -686,7 +839,7 @@ $(function () {
       for (let i = 1; i < selectOptionLength; i++) {
         $('<div>', {
             class: 'new-select__item new-select__item--direction',
-            html: $( '<span>', {
+            html: $('<span>', {
               text: selectOption.eq(i).text(),
             })
           })
@@ -733,7 +886,7 @@ $(function () {
       _this.wrap('<div class="select"></div>');
       $('<div>', {
         class: 'new-select filter__item filter__item--category',
-        text:  _this.children('option:disabled').text()
+        text: _this.children('option:disabled').text()
       }).insertAfter(_this);
 
       const selectHead = _this.next('.new-select');
@@ -745,7 +898,7 @@ $(function () {
       for (let i = 1; i < selectOptionLength; i++) {
         $('<div>', {
             class: 'new-select__item new-select__item--direction',
-            html: $( '<span>', {
+            html: $('<span>', {
               text: selectOption.eq(i).text(),
             })
           })
@@ -792,7 +945,7 @@ $(function () {
       _this.wrap('<div class="select"></div>');
       $('<div>', {
         class: 'new-select filter__item filter__item--season',
-        text:  _this.children('option:disabled').text()
+        text: _this.children('option:disabled').text()
       }).insertAfter(_this);
 
       const selectHead = _this.next('.new-select');
@@ -804,7 +957,7 @@ $(function () {
       for (let i = 1; i < selectOptionLength; i++) {
         $('<div>', {
             class: 'new-select__item new-select__item--season',
-            html: $( '<span>', {
+            html: $('<span>', {
               text: selectOption.eq(i).text(),
             })
           })
@@ -838,7 +991,7 @@ $(function () {
       });
     });
   }
-  
+
   if ($(".new-select:contains('Русский')")) {
     $(".new-select:contains('Русский')").addClass('new-select__img--rus');
   } else {
@@ -864,6 +1017,30 @@ $(function () {
       block.removeClass('on');
       $('.new-select__list').slideUp(0);
     }
+  });
+
+  if ($(".desktop-header__tour--tour")) {
+    $('.desktop-header__tour--tour[href^="#"]').bind('click.smoothscroll', function (e) {
+      e.preventDefault();
+      var target = this.hash,
+        $target = $(target);
+
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top - 215
+      }, 900, 'swing', function () {
+        // window.location.hash = target;
+      });
+    });
+  }
+
+  $(".included-price__inner").not(":first").hide();
+  $(".included-price__btn").click(function () {
+    $(".included-price__btn").removeClass("included-price__btn--active").eq($(this).index()).addClass("included-price__btn--active");
+    $(".included-price__inner").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("included-price__btn--active");
+
+  $(".advice-item__btn").click(function () {
+    $(".advice-inner").toggleClass("advice-inner--active");
   });
 
 });
@@ -923,19 +1100,20 @@ $(function () {
 
   };
 
-  openVideo = document.querySelector('.openVideo');
+  openVideo = document.querySelectorAll('.openVideo');
   videoModal = document.querySelector('.modal-wrapper__video');
 
   if (document.querySelector('.openVideo')) {
-    openVideo.addEventListener('click', function () {
-      openBaseModal();
-      videoModal.classList.remove('hidden');
-      setTimeout(function () {
-        videoModal.classList.remove('animation');
-      }, 20);
-    })
+    for (let i = 0; i < openVideo.length; i++) {
+      openVideo[i].addEventListener('click', () => {
+        openBaseModal();
+        videoModal.classList.remove('hidden');
+        setTimeout(function () {
+          videoModal.classList.remove('animation');
+        }, 20);
+      });
+    }
   }
-
 
   if (document.querySelector('.openVideoMobile')) {
     openVideoMobile = document.querySelector('.openVideoMobile');
@@ -964,31 +1142,31 @@ $(function () {
 
   };
 
-  if (document.querySelector('.openGallery')) {
-    openGallery = document.querySelector('.openGallery');
-    galleryModal = document.querySelector('.modal-wrapper__gallery');
+  // if (document.querySelector('.openGallery')) {
+  //   openGallery = document.querySelector('.openGallery');
+  //   galleryModal = document.querySelector('.modal-wrapper__gallery');
 
-    openGallery.addEventListener('click', function () {
-      openBaseModal();
-      galleryModal.classList.remove('hidden');
-      setTimeout(function () {
-        galleryModal.classList.remove('animation');
-      }, 20);
-    })
-  }
+  //   openGallery.addEventListener('click', function () {
+  //     openBaseModal();
+  //     galleryModal.classList.remove('hidden');
+  //     setTimeout(function () {
+  //       galleryModal.classList.remove('animation');
+  //     }, 20);
+  //   })
+  // }
 
-  function closeGalleryModal() {
-    if (!galleryModal.classList.contains('hidden')) {
-      galleryModal.classList.add('animation');
-      galleryModal.addEventListener('transitionend', function (e) {
-        galleryModal.classList.add('hidden');
-      }, {
-        capture: false,
-        once: true,
-        passive: false
-      });
-    }
-  };
+  // function closeGalleryModal() {
+  //   if (!galleryModal.classList.contains('hidden')) {
+  //     galleryModal.classList.add('animation');
+  //     galleryModal.addEventListener('transitionend', function (e) {
+  //       galleryModal.classList.add('hidden');
+  //     }, {
+  //       capture: false,
+  //       once: true,
+  //       passive: false
+  //     });
+  //   }
+  // };
 
   if (document.querySelector('.openFullText')) {
     openFullText = document.querySelector('.openFullText');
@@ -1016,15 +1194,47 @@ $(function () {
     }
   };
 
+
+  openBooking = document.querySelectorAll('.openBooking');
+  bookingModal = document.querySelector('.modal-wrapper__booking');
+
+  if (document.querySelectorAll('.openBooking')) {
+    for (let i = 0; i < openBooking.length; i++) {
+      openBooking[i].addEventListener('click', () => {
+        openBaseModal();
+        bookingModal.classList.remove('hidden');
+        setTimeout(function () {
+          bookingModal.classList.remove('animation');
+        }, 20);
+      });
+    }
+  }
+
+  function closeBookingPopup() {
+    if (!bookingModal.classList.contains('hidden')) {
+      bookingModal.classList.add('animation');
+      bookingModal.addEventListener('transitionend', function (e) {
+        bookingModal.classList.add('hidden');
+      }, {
+        capture: false,
+        once: true,
+        passive: false
+      });
+    }
+  };
+
   function closeAllModal() {
     // closecallbackPopup();
     closeleftMenuModal();
     closeVideoModal();
-    if (document.querySelector('.openGallery')) {
-      closeGalleryModal();
-    };
+    // if (document.querySelector('.openGallery')) {
+    //   closeGalleryModal();
+    // };
     if (document.querySelector('.openFullText')) {
       closeFullTextModal();
+    };
+    if (document.querySelector('.openBooking')) {
+      closeBookingPopup();
     };
     closeBaseModal();
   };
