@@ -11,7 +11,6 @@ body {
   line-height: 150%;
   font-family: 'Inter', sans-serif;
   letter-spacing: 0.02em;
-  overflow-x: hidden;
 }
 
 html {
@@ -2728,7 +2727,6 @@ header .desktop-header__line-bottom--tour {
 .reviews__contacts {
   display: flex;
   align-items: center;
-  margin-left: 40px;
   margin-top: 10px;
 }
 
@@ -3558,6 +3556,14 @@ header .desktop-header__line-bottom--tour {
 .northern-wrap .container {
   display: flex;
 }
+.northern-wrap {
+  position: relative;
+}
+.northern-wrap .northern-wrap__right {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+}
 .northern-tour__inner {
   display: flex;
   // position: relative;
@@ -3896,7 +3902,7 @@ header .desktop-header__line-bottom--tour {
 
 .prognosis__right img {
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   height: 100%;
 }
 
@@ -3921,6 +3927,23 @@ header .desktop-header__line-bottom--tour {
   .prognosis__inner {
     // flex-direction: column;
   }
+  .prognosis__image-text {
+    margin-bottom: 24px;
+  }
+  .prognosis {
+    margin-bottom: 56px;
+  }
+  
+  .prognosis__left {
+    width: 50%;
+  }
+  .prognosis__right {
+    width: calc(50% - 96px);
+  }
+}
+
+@media screen and (max-width: 860px) {
+  
   .prognosis__left {
     width: 100%;
     margin-bottom: 24px;
@@ -3934,21 +3957,23 @@ header .desktop-header__line-bottom--tour {
   .prognosis__image {
     order: 2;
   }
-  .prognosis__image-text {
-    margin-bottom: 24px;
-  }
-  .prognosis__image picture img {
+  .prognosis__image img {
     height: 650px;
     width: auto;
   }
+  .prognosis__image-text {
+    text-align: start;
+  }
+  .prognosis__right {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
   .prognosis {
     margin-bottom: 56px;
   }
-}
-
-@media screen and (max-width: 768) {
-  .prognosis {
-    margin-bottom: 56px;
+  .prognosis__right {
+    width: 100%;
   }
 }
 // /Онлайн-прогноз северного сияния
@@ -4074,7 +4099,7 @@ header .desktop-header__line-bottom--tour {
 .header-text__teriberka-img {
   display: block;
   overflow: hidden;
-  border-radius: 9px;
+  border-radius: 13px;
   margin-bottom: 16px;
 }
 
@@ -4103,6 +4128,11 @@ header .desktop-header__line-bottom--tour {
 .header-text__teriberka-left--north {
   max-width: 736px;
   width: 736px;
+}
+@media screen and (max-width: 1240px) {
+  .header-text__teriberka-inner {
+    align-items: center;
+  }
 }
 @media screen and (max-width: 860px) {
   .header-teriberka {
@@ -4136,7 +4166,11 @@ header .desktop-header__line-bottom--tour {
     text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.11);
     margin-bottom: 8px;
     text-align: center;
+    max-width: 220px;
   }
+   .header-text__teriberka-title-wrap--head .header-text__teriberka-title-h2-mobile{
+     margin: 0;
+   } 
   .header-text__teriberka-title-wrap {
     position: absolute;
     bottom: 22px;
@@ -4196,12 +4230,41 @@ header .desktop-header__line-bottom--tour {
   .discounts__item:hover {
     transform: none;
   }
-}
-
-@media screen and (max-width: 480px) {
+  
   .header-text__teriberka-form {
     width: 100%;
   }
+  .header-text__teriberka-inp {
+    width: 100%;
+  }
+  .header-text__teriberka-wrap {
+    flex-direction: column;
+  }
+  .header-text__teriberka-wrap button {
+    margin-top: 8px;
+  }
+  
+  .header-text__teriberka-title-wrap--head {
+    bottom: 34px;
+    right: -55px;
+  }
+  .desktop-hideh .about-teriberka__right-block {
+    border-radius: 0;
+    width: 100%;
+    transform: scale(1.08);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-text__teriberka-right {
+    margin: 0;
+    width: 100%;
+  }
+  .header-text__teriberka-wrapper  {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
   .header-text__teriberka-wrap {
     flex-direction: column;
   }
@@ -4373,6 +4436,12 @@ header .desktop-header__line-bottom--tour {
   background-position: center center;
   background-size: cover;
   padding: 32px;
+}
+
+.about-teriberka__right-block--sticky,
+.program-tour__inner-right--sticky {
+  position: sticky;
+  top: 15px;
 }
 
 .about-teriberka__card-title {
@@ -4724,6 +4793,9 @@ header .desktop-header__line-bottom--tour {
   .included-price__desc {
     font-size: 14px;
   }
+  .included-price__btn--right {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -5067,9 +5139,29 @@ header .desktop-header__line-bottom--tour {
   }
   .program-tour__inner-right {
     order: 1;
+    display: flex;
+    justify-content: center;
   }
   .program-tour__inner-right .header-text__teriberka-right--program {
-    margin-left: auto;
+    margin-left: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+  .program-tour__inner-right .header-text__teriberka-wrapper  {
+    width: 100%;
+  }
+  .program-tour__inner-right .header-text__teriberka-btn {
+    left: 16px;
+    top: 127px;
+  }
+  .program-tour__inner-right .header-text__teriberka-title-h2-mobile {
+    margin: 0;
+    text-align: start;
+  }
+  .program-tour__inner-right .header-text__teriberka-title-wrap {
+    width: 50%;
+    left: 82px;
+    bottom: 48px;
   }
   .program-tour__inner-left{
     order: 2;
@@ -5398,10 +5490,15 @@ header .desktop-header__line-bottom--tour {
     overflow: hidden;
     display: flex;
     margin-bottom: 20px;
+    margin-right: 8px;
   }
   .video-tour__item img {
     height: 100%;
     display: block;
+  }
+  .video-tour__items .slick-track {
+    display: flex;
+    align-items: center;
   }
   .video-tour__btn-wrap {
     position: absolute;
@@ -5417,11 +5514,11 @@ header .desktop-header__line-bottom--tour {
 }
 .advice-inner {
   display: flex;
-  margin-right: -32px;
   position: relative;
   height: 400px;
   overflow: hidden;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+margin-right: -32px;
 }
 .advice-inner::after {
   content: '';
@@ -5440,14 +5537,17 @@ header .desktop-header__line-bottom--tour {
   background: none;
   content: none;
 }
+.advice-inner--active .advice-item__btn {
+  bottom: 20px;
+}
 .advice-inner__right,
 .advice-inner__left {
-  width: 50%;
+  width: calc(50% - 32px);
   margin-right: 32px;
 }
 .advice-item {
   max-width: 560px;
-  display: -webkit-inline-box;
+  display: flex;
   margin-bottom: 16px;
 }
 .advice-item__num {
@@ -5467,6 +5567,7 @@ header .desktop-header__line-bottom--tour {
 }
 .advice-item__text {
   margin: 0;
+  width: calc(100% - 45px);
 }
 
 .advice-item__btn {
@@ -5492,7 +5593,10 @@ header .desktop-header__line-bottom--tour {
 .advice-item__btn svg {
   margin-left: 4px;
 }
-
+.advice-item__btn:active {
+  background-color: #FFFFFF;
+    box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15);
+}
 .advice-inner--active .advice-item__btn svg {
   transform: rotate(180deg);
 }
@@ -5540,7 +5644,7 @@ header .desktop-header__line-bottom--tour {
     margin-right: 0;
   }
   .advice-item {
-    max-width: 94%;
+    max-width: 85%;
   }
   .know-import-item {
     width: calc(50% - 32px);
@@ -5773,7 +5877,6 @@ header .desktop-header__line-bottom--tour {
 .our-photographers__left {
   display: flex;
   overflow: hidden;
-  border-radius: 12px;
   margin-right: 32px;
 }
 
@@ -5784,6 +5887,7 @@ header .desktop-header__line-bottom--tour {
 
 .our-photographers__left img {
   display: block;
+  border-radius: 12px;
   object-fit: cover;
 }
 
@@ -5853,6 +5957,10 @@ header .desktop-header__line-bottom--tour {
     margin-right: 0;
     margin-bottom: 16px;
   }
+  .our-photographers__left img {
+    height: 276px;
+    width: auto;
+  }
   .simple-link--photographers {
     display: none;
   }
@@ -5861,6 +5969,20 @@ header .desktop-header__line-bottom--tour {
   }
   .our-photographers__title {
     font-size: 24px;
+  }
+  .our-transport__images {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+.our-photographers__left img {
+    height: 276px;
+    width: 276px;
+  }
+  .our-transport__images {
+    width: 256px;
+    height: 155px;
   }
 }
 // /Наши гиды-фотографы
@@ -10705,6 +10827,10 @@ border-color: #0FC4AC;
 .mobile-hide {
   display: block;
 }
+
+.desktop-hideh {
+  display: none;
+}
 @media screen and (max-width: 1440px) {
   .tour-map__left-map {
     height: 199px;
@@ -13696,12 +13822,8 @@ background:  #0FC4AC;
 }
 
 .title-sections__title--reset {
-  max-width: 736px;
+  width: 653px;
 }
-.northern-tour .title-sections__title--reset {
-  width: 100%;
-}
-
 .btn-orange-shadow--reviews {
   width: 256px;
   height: 48px;

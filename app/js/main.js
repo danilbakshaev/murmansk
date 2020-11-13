@@ -175,18 +175,24 @@ $(function () {
       slidesToScroll: 1,
       infinite: false,
       draggable: false,
-      centerMode: true,
+      // centerMode: true,
       prevArrow: '.prev-js-guides',
       nextArrow: '.next-js-guides',
       responsive: [{
-        breakpoint: 860,
-        settings: {
-          slidesToShow: 1.4,
-          centerMode: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          breakpoint: 1241,
+          settings: {
+            slidesToShow: 1.4,
+            centerMode: false,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 993,
+          settings: {
+            slidesToShow: 1.1,
+          }
         }
-      }]
+      ]
     });
   }
 
@@ -196,13 +202,13 @@ $(function () {
       slidesToScroll: 1,
       infinite: false,
       draggable: false,
-      centerMode: true,
+      // centerMode: true,
       prevArrow: '.prev-js-transport',
       nextArrow: '.next-js-transport',
       responsive: [{
         breakpoint: 860,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.1,
           centerMode: false,
           slidesToScroll: 1,
         }
@@ -243,32 +249,31 @@ $(function () {
 
   $(window).on('resize', function (e) {
     if (window.innerWidth < 860) {
-      if ($('.discounts__items')) {
-        $('.discounts__items').slick({
-          slidesToShow: 1.2,
-          slidesToScroll: 1,
-          draggable: true,
-          infinite: false,
-          arrows: false
-        });
-      }
-    };
-  }).trigger('resize');
-
-  $(window).on('resize', function (e) {
-    if (window.innerWidth < 860) {
       if ($('.video-tour__items')) {
         $('.video-tour__items').slick({
           slidesToShow: 1.2,
           slidesToScroll: 1,
           draggable: true,
           infinite: false,
-          arrows: false
+          arrows: true,
+          prevArrow: '.prev-js-videos',
+          nextArrow: '.next-js-videos',
         });
       }
     };
   }).trigger('resize');
 
+  if (window.innerWidth < 860) {
+    if ($('.discounts__items')) {
+      $('.discounts__items').slick({
+        slidesToShow: 1.2,
+        slidesToScroll: 1,
+        draggable: true,
+        infinite: false,
+        arrows: false,
+      });
+    }
+  };
 
   if ($('.reviews__inner')) {
     $('.reviews__inner').slick({
@@ -1320,42 +1325,39 @@ $(function () {
 })();
 
 // Барабан удачи
-$(function () {
-  if ($(".fortune-wrap")) {
-    document.getElementById("spin").addEventListener("click", function( event ) {
-      
-        // Generate a number between 1 and 8
-        var prize = (Math.floor(Math.random() * 8)) + 1;
-        console.log(prize)
-        // Spin to the angle of the segment based on the random number
-        var segmentAngle = ((prize - 1) * -45);
-        console.log(segmentAngle)
-        // Add on 3 full spins
-        var segmentAngle = segmentAngle + 1103;
-        console.log(segmentAngle)
-      
-        var wheel = document.getElementById("backdrop");
-      
-        // The animation class is only needed for the reset button, it makes the transition smooth instead of instant
-        $('.backdrop').addClass("animate");
-      
-        // Add a transition directly to the wheel
-        wheel.style.webkitTransform = 'rotate('+segmentAngle+'deg)'; 
-        wheel.style.mozTransform    = 'rotate('+segmentAngle+'deg)'; 
-        wheel.style.msTransform     = 'rotate('+segmentAngle+'deg)'; 
-        wheel.style.oTransform      = 'rotate('+segmentAngle+'deg)'; 
-        wheel.style.transform       = 'rotate('+segmentAngle+'deg)'; 
-      
-        // Display the result
-        console.log("Ваш приз "+prize)
+// $(function () {
+//   if ($(".fortune-wrap")) {
+//     document.getElementById("spin").addEventListener("click", function( event ) {
 
-        $('.backdrop').one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(event) {
-          alert("Ваш приз "+prize)
-        });
+//         // Generate a number between 1 and 8
+//         var prize = (Math.floor(Math.random() * 8)) + 1;
+//         console.log(prize)
+//         // Spin to the angle of the segment based on the random number
+//         var segmentAngle = ((prize - 1) * -45);
+//         console.log(segmentAngle)
+//         // Add on 3 full spins
+//         var segmentAngle = segmentAngle + 1103;
+//         console.log(segmentAngle)
 
-      }, false);
+//         var wheel = document.getElementById("backdrop");
 
-    
+//         // The animation class is only needed for the reset button, it makes the transition smooth instead of instant
+//         $('.backdrop').addClass("animate");
 
-  }
-});
+//         // Add a transition directly to the wheel
+//         wheel.style.webkitTransform = 'rotate('+segmentAngle+'deg)'; 
+//         wheel.style.mozTransform    = 'rotate('+segmentAngle+'deg)'; 
+//         wheel.style.msTransform     = 'rotate('+segmentAngle+'deg)'; 
+//         wheel.style.oTransform      = 'rotate('+segmentAngle+'deg)'; 
+//         wheel.style.transform       = 'rotate('+segmentAngle+'deg)'; 
+
+//         // Display the result
+//         console.log("Ваш приз "+prize)
+
+//         $('.backdrop').one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(event) {
+//           alert("Ваш приз "+prize)
+//         });
+
+//     }, false);
+//   }
+// });
