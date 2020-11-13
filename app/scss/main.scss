@@ -60,7 +60,7 @@ input {
     outline-color: transparent !important;
     outline-width: 0 !important;
     outline-style: none !important;
-    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
 }
 
 /* Контейнер */
@@ -4285,7 +4285,6 @@ header .desktop-header__line-bottom--tour {
 .about-teriberka__right-block {
   display: flex;
   width: 352px;
-  margin-left: 128px;
   height: max-content;
   border-radius: 12px;
   background: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%),url(/img/teriberka-card-bg.jpg);
