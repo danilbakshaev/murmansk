@@ -1320,20 +1320,33 @@ $(function () {
 })();
 
 // Барабан удачи
+// Сначала отправляем форму, если отправилась, то запускаем колесо
 $(function () {
-  if ($(".fortune-wrap")) {
-    document.getElementById("spin").addEventListener("click", function( event ) {
-      
-        // Generate a number between 1 and 8
+  if (document.querySelector(".fortune-wrap")) {
+
+    const fortuneForm =  $('.fortune__form')
+    fortuneForm.submit(function (e) {
+      e.preventDefault()
+    })
+    
+    fortuneForm.validate({
+      errorElement: "",
+      errorPlacement: (error, element) =>
+        error.appendTo(element.parent().parent()),
+      rules: {
+        tel: {
+          maskRu: true
+        }
+      },
+      messages: {
+        name: "",
+        tel: ""
+      },
+      submitHandler: function (form) {
+        console.log("good")
         var prize = (Math.floor(Math.random() * 8)) + 1;
-        console.log(prize)
-        // Spin to the angle of the segment based on the random number
         var segmentAngle = ((prize - 1) * -45);
-        console.log(segmentAngle)
-        // Add on 3 full spins
         var segmentAngle = segmentAngle + 1103;
-        console.log(segmentAngle)
-      
         var wheel = document.getElementById("backdrop");
       
         // The animation class is only needed for the reset button, it makes the transition smooth instead of instant
@@ -1350,8 +1363,12 @@ $(function () {
         console.log("Ваш приз "+prize)
 
         $('.backdrop').one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(event) {
-          alert("Ваш приз "+prize)
+          //После того как колесо прокрутится - что-то показать пользователю
         });
+      }
+    });
+    document.getElementById("spin").addEventListener("click", function( event ) {
+
 
       }, false);
 

@@ -14918,7 +14918,9 @@ background:  #0FC4AC;
 
 
 // Барабан удачи
-
+.fortune__inp.error {
+  border: 1px solid red;
+}
 .fortune__left {
   position: relative;
   height: 544px;

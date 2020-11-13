@@ -23,7 +23,6 @@
                         <div class="segment segment-8 segment--orange"></div>
                     </div>
                     <div class="arrow"></div>
-                    <button id="spin">Spin</button>
                 </div>
             </div>
             <div class="fortune__right">
@@ -33,7 +32,9 @@
                     Вращать можно только один раз
                 </p>
                 <form class="fortune__form">
-                    <input class="fortune__inp" type="text" placeholder="Введите ваше имя">
+                    <input class="fortune__inp" type="text" name="name" placeholder="Введите ваше имя" required>
+                    <input class="fortune__inp" type="text" name="tel" placeholder="Введите ваш номер" required>
+                    <input type="text" name="prize">
                     <button class="btn-orange-shadow btn-orange-shadow--reviews btn-orange-shadow--drum">
                         <span class="btn-orange-shadow__text btn-orange-shadow__text--reviews">
                             Вращать барабан
