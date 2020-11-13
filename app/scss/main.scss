@@ -3579,7 +3579,7 @@ header .desktop-header__line-bottom--tour {
   // right: 0;
 }
 .northern-wrap__right {
-  margin-left: 132px;
+  margin-left: 32px;
 }
 .northern-tour__items {
   display: flex;
@@ -3873,7 +3873,7 @@ header .desktop-header__line-bottom--tour {
 }
 
 .prognosis__left {
-  width: 55%;
+  width: 50%;
 }
 .prognosis__left .title-sections__title--reset {
   max-width: 377px;
@@ -3898,6 +3898,7 @@ header .desktop-header__line-bottom--tour {
 .prognosis__right {
   display: flex;
   margin-left: 96px;
+  width: calc(50% - 96px);
 }
 
 .prognosis__right img {
@@ -4743,6 +4744,11 @@ header .desktop-header__line-bottom--tour {
   color: #7B8997;
 }
 
+@media screen and (max-width: 1240px) {
+  .included-price__btn {
+    width: 50%;
+  }
+} 
 @media screen and (max-width: 1080px) {
   .title-sections--price {
     margin-bottom: 24px;
@@ -6173,18 +6179,17 @@ margin-right: -32px;
 
 .fortune__right {
   max-width: 400px;
-  margin-left: 96px;
+  margin-left: 136px;
 }
 
 .fortune__title {
-  margin: 0;
+  margin: 0 0 16px 0;
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
-  color: #FFFFFF;
-  margin-bottom: 24px;
-  width: 70%;
+  color: #242440;
+  width: 100%;
 }
 
 .fortune__text {
@@ -6192,15 +6197,17 @@ margin-right: -32px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: rgba(255, 255, 255, 0.8);
-  width: 70%;
+  color: #242440;
+  width: 100%;
 }
 
 .fortune__form {
   max-width: 352px;
+  margin-top: 24px;
 }
 
 .fortune__inp {
+  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -6224,14 +6231,21 @@ margin-right: -32px;
   }
 }
 
+.fortune__inp--hide {
+  display: none;
+}
+
+.fortune__form .btn-orange-shadow--reviews {
+  width: 100%;
+}
+
 .fortune__privacy {
-  margin: 0;
+  margin: 8px 0 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
   text-align: center;
   color: #93A0AD;
-  margin-top: 24px;
 }
 
 .fortune__link {
@@ -6243,19 +6257,21 @@ margin-right: -32px;
   }
 }
 
-@media screen and (max-width: 1240px) {
-  .fortune__inner {
-    flex-direction: column;
+
+@media screen and (max-width: 860px) {
+  .fortune__title.mobile-hide {
+    display: none;
   }
-  .fortune__left {
-    width: 100%;
-    margin-bottom: 30px;
+  .fortune__text.mobile-hide {
+    display: none;
   }
-  .fortune__right {
-    width: 100%;
+  .fortune__title.desktop-hideh {
+    display: block;
+  }
+  .fortune__text.desktop-hideh {
+    display: block;
   }
 }
-
 @media screen and (max-width: 768px) {
   .fortune__title{
     font-size: 26px;
@@ -15129,5 +15145,98 @@ background:  #0FC4AC;
     &.segment-8 {
       transform: rotate(360deg);
     }
+  }
+}
+
+
+@media screen and (max-width: 1240px) {
+  .fortune__left::after {
+    left: calc(54% - 32px);
+  }
+  .arrow {
+    right: -110px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .fortune__left::after {
+      left: calc(71% - 32px);
+  }
+  .arrow {
+    right: -220px;
+  }
+  .fortune__left {
+    transform: scale(0.9);
+  }
+  .fortune__right {
+    margin-left: 175px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .fortune__left::after {
+    left: calc(91% - 32px);
+  }
+  .arrow {
+    right: -305px;
+  }
+  .fortune__left {
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .fortune__inner {
+    flex-direction: column;
+  }
+  .fortune {
+    padding: 32px 0;
+  }
+  .fortune__right {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .fortune__left::after {
+    left: calc(50% - 32px);
+  }
+  .arrow {
+    right: -65px;
+  }
+  .fortune__left {
+    transform: scale(.8);
+    margin: -20px 0;
+  }
+  .fortune__form {
+    margin-top: 0;
+    max-width: 100%;
+  }
+} 
+
+
+@media screen and (max-width: 535px) {
+  .fortune__left {
+    transform: scale(.7);
+    margin: -50px 0; 
+  }
+} 
+
+@media screen and (max-width: 465px) {
+  .fortune__left {
+    transform: scale(.6);
+    margin: -80px 0; 
+  }
+} 
+
+@media screen and (max-width: 405px) {
+  .fortune__left {
+    transform: scale(.5);
+    margin: -110px 0; 
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .fortune__left {
+    transform: scale(.45);
+    margin: -140px 0; 
   }
 }
