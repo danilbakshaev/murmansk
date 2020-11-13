@@ -153,13 +153,14 @@ $(function () {
   if ($('.answers-questions__items')) {
     $('.answers-questions__items').slick({
       slidesToShow: 2,
-      slidesToScroll: 2,
-      infinite: true,
+      slidesToScroll: 1,
+      infinite: false,
       draggable: false,
+      centerMode: false,
       prevArrow: '.prev-js-popular-destinations',
       nextArrow: '.next-js-popular-destinations',
       responsive: [{
-        breakpoint: 740,
+        breakpoint: 860,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -170,15 +171,18 @@ $(function () {
 
   if ($('.our-photographers__items')) {
     $('.our-photographers__items').slick({
-      slidesToShow: 1,
+      slidesToShow: 1.8,
       slidesToScroll: 1,
-      infinite: true,
+      infinite: false,
       draggable: false,
+      centerMode: true,
       prevArrow: '.prev-js-guides',
       nextArrow: '.next-js-guides',
       responsive: [{
-        breakpoint: 740,
+        breakpoint: 860,
         settings: {
+          slidesToShow: 1.4,
+          centerMode: false,
           slidesToShow: 1,
           slidesToScroll: 1,
         }
@@ -188,16 +192,18 @@ $(function () {
 
   if ($('.our-transport__items')) {
     $('.our-transport__items').slick({
-      slidesToShow: 1,
+      slidesToShow: 1.4,
       slidesToScroll: 1,
-      infinite: true,
+      infinite: false,
       draggable: false,
+      centerMode: true,
       prevArrow: '.prev-js-transport',
       nextArrow: '.next-js-transport',
       responsive: [{
-        breakpoint: 740,
+        breakpoint: 860,
         settings: {
           slidesToShow: 1,
+          centerMode: false,
           slidesToScroll: 1,
         }
       }]
@@ -235,6 +241,33 @@ $(function () {
     };
   }).trigger('resize');
 
+  $(window).on('resize', function (e) {
+    if (window.innerWidth < 860) {
+      if ($('.discounts__items')) {
+        $('.discounts__items').slick({
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          draggable: true,
+          infinite: false,
+          arrows: false
+        });
+      }
+    };
+  }).trigger('resize');
+
+  $(window).on('resize', function (e) {
+    if (window.innerWidth < 860) {
+      if ($('.video-tour__items')) {
+        $('.video-tour__items').slick({
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          draggable: true,
+          infinite: false,
+          arrows: false
+        });
+      }
+    };
+  }).trigger('resize');
 
 
   if ($('.reviews__inner')) {
