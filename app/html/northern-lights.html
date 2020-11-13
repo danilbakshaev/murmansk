@@ -1,6 +1,6 @@
   @@include('./include/head.html')
 
-  <header class="background-image" style="background-image: url(/img/northbg.jpg)">
+  <header class="background-image no-elem" style="background-image: url(/img/northbg.jpg)">
       <div class="desktop-header__wrapper">
           @@include('./include/header_mob-desk.html')
           <div class="header-text">
@@ -77,9 +77,9 @@
 
       <!-- Тур на северное сияние в Мурманске 2020 -->
       <section class="northern-wrap">
-          <div class="northern-wrap__left">
-              <section class="northern-tour">
-                  <div class="container">
+          <div class="container">
+              <div class="northern-wrap__left">
+                  <section class="northern-tour">
                       <div class="title-sections title-sections--reset">
                           <h2 class="title-sections__title title-sections__title--reset">Тур на северное сияние в
                               Мурманске
@@ -354,7 +354,8 @@
                                       </svg>
                                       <div class="northern-tour__wrap">
                                           <h3 class="northern-tour__title">Видеосъемка</h3>
-                                          <p class="northern-tour__text">включена при высокой солнечной активности</p>
+                                          <p class="northern-tour__text">включена при высокой солнечной активности
+                                          </p>
                                       </div>
                                   </div>
                               </div>
@@ -375,7 +376,8 @@
                                       Северное сияние — это природное явление, которое не всегда проявляется в
                                       соответствии
                                       с
-                                      прогнозами и ожиданиями. 8 из 10 наших выездов успешны, и туристы наблюдают это
+                                      прогнозами и ожиданиями. 8 из 10 наших выездов успешны, и туристы наблюдают
+                                      это
                                       природное
                                       явление своими глазами.
                                   </p>
@@ -402,23 +404,98 @@
                                       <h3 class="northern-tour__recommendation-title">Главная рекомендация</h3>
                                   </div>
                                   <p class="northern-tour__recommendation-text">
-                                      Чтобы повысить шансы увидеть северное сияние, приезжайте в Мурманск желательно на
+                                      Чтобы повысить шансы увидеть северное сияние, приезжайте в Мурманск желательно
+                                      на
                                       3
                                       или
-                                      более полных ночи. Таким образом вы повышаете свои шансы дождаться ясного неба и
+                                      более полных ночи. Таким образом вы повышаете свои шансы дождаться ясного неба
+                                      и
                                       нужной
                                       солнечной активности.
                                   </p>
                               </div>
                           </div>
                       </div>
-                  </div>
-              </section>
-              <!-- /Тур на северное сияние в Мурманске 2020 -->
+                  </section>
+                  <!-- /Тур на северное сияние в Мурманске 2020 -->
 
-              <!-- Что включено и не включено в стоимость -->
-              <section class="included-price">
-                  <div class="container">
+                  <div class="northern-wrap__right desktop-hideh">
+                      <div class="about-teriberka__right-block">
+
+                          <div class="about-teriberka__card">
+                              <h3 class="about-teriberka__card-title">Оставьте заявку,
+                                  и узнайте, как получить
+                                  <span class="about-teriberka__card-discount">скидку до 20%</span>
+                                  на тур!
+                              </h3>
+
+                              <div class="about-teriberka__desc-wrap">
+                                  <svg width="13" height="9" viewBox="0 0 13 9" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                          d="M0.835227 4.42188L1.75284 3.48011L4.94034 6.61932L11.5327 0.0511357L12.4744 0.992897L4.94034 8.50284L0.835227 4.42188Z"
+                                          fill="white" fill-opacity="0.5"></path>
+                                  </svg>
+                                  <p class="about-teriberka__card-text">
+                                      Предоплата за тур составляет всего 1000 рублей с человека
+                                  </p>
+                              </div>
+
+                              <div class="about-teriberka__desc-wrap">
+                                  <svg width="13" height="9" viewBox="0 0 13 9" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                          d="M0.835227 4.42188L1.75284 3.48011L4.94034 6.61932L11.5327 0.0511357L12.4744 0.992897L4.94034 8.50284L0.835227 4.42188Z"
+                                          fill="white" fill-opacity="0.5"></path>
+                                  </svg>
+                                  <p class="about-teriberka__card-text">
+                                      Остальная оплата идёт после проведения тура
+                                  </p>
+                              </div>
+
+                              <div class="about-teriberka__desc-wrap">
+                                  <svg width="13" height="9" viewBox="0 0 13 9" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                          d="M0.835227 4.42188L1.75284 3.48011L4.94034 6.61932L11.5327 0.0511357L12.4744 0.992897L4.94034 8.50284L0.835227 4.42188Z"
+                                          fill="white" fill-opacity="0.5"></path>
+                                  </svg>
+                                  <p class="about-teriberka__card-text">
+                                      Бесплатная отмена и 100% возврат предоплаты за 24 часа до Вашего приезда
+                                  </p>
+                              </div>
+
+                              <form class="about-teriberka__feedback">
+                                  <input class="about-teriberka__name" type="text" placeholder="Как к Вам обращаться?">
+                                  <input class="about-teriberka__phone" type="tel" name="tel"
+                                      placeholder="Номер телефона">
+                                  <button
+                                      class="btn-orange-shadow btn-orange-shadow--reviews btn-orange-shadow--request btn-orange-shadow--teriberka"
+                                      type="submit">
+                                      <span
+                                          class="btn-orange-shadow__text btn-orange-shadow__text--reviews btn-orange-shadow__text--request">
+                                          Узнать про скидку!
+                                      </span>
+                                      <div class="btn-orange-shadow__shadow btn-orange-shadow__shadow--request">
+                                      </div>
+                                  </button>
+                                  <p class="callback-form__privacy callback-form__privacy--teriberka">Нажав на
+                                      кнопку
+                                      «Узнать про
+                                      скидку!», вы даете согласие на обработку<a class="callback-form__privacy-link"
+                                          href="#">
+                                          персональных
+                                          данных</a> и согласен с <a class="callback-form__privacy-link"
+                                          href="#">политикой
+                                          конфиденциальности.</a></p>
+                              </form>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <!-- Что включено и не включено в стоимость -->
+                  <section class="included-price">
                       <div class="title-sections title-sections--reset title-sections--price">
                           <h3 class="title-sections__title title-sections__title--reset">Что включено и не включено в
                               стоимость
@@ -742,11 +819,9 @@
                               </div>
                           </div>
                       </div>
-                  </div>
-              </section>
-          </div>
-          <div class="northern-wrap__right">
-              <div class="northern-tour__right">
+                  </section>
+              </div>
+              <div class="northern-wrap__right mobile-hide--our">
                   <div class="about-teriberka__right-block">
 
                       <div class="about-teriberka__card">
@@ -978,13 +1053,18 @@
                   <div class="prognosis__right">
                       <img src="/img/prognosis.jpg" alt="">
                   </div>
-              </div>
-              <div class="prognosis__image">
-                  <img src="/img/graph.jpg" alt="">
-                  <p class="prognosis__image-text">Данный график показывает активность Северного Сияния в широтах
-                      Северного полюса. <br>
-                      Активность измеряется в баллах: от 1 до 9. График отображается в онлайн режиме на основании сайта
-                      http://www.swpc.noaa.gov/ </p>
+
+                  <div class="prognosis__image">
+                    <picture>
+                        <source srcset="/img/graph-mob.png" media="(max-width: 860px)">
+                        <img srcset="/img/graph.jpg" alt="">
+                    </picture>
+                      <p class="prognosis__image-text">Данный график показывает активность Северного Сияния в широтах
+                          Северного полюса. <br>
+                          Активность измеряется в баллах: от 1 до 9. График отображается в онлайн режиме на основании
+                          сайта
+                          http://www.swpc.noaa.gov/ </p>
+                  </div>
               </div>
           </div>
       </section>
@@ -1321,6 +1401,7 @@
                   <h3 class="title-sections__title">Наши гиды-фотографы</h3>
               </div>
               <div class="our-photographers__items">
+                  
                   <div class="our-photographers__item">
                       <div class="our-photographers__left">
                           <img src="/img/photographers.jpg" alt="">
@@ -1561,6 +1642,145 @@
                           </a>
                           <a class="simple-link simple-link--photographers simple-link--photographers-mobile" href="#">
                               Смотреть его работы
+                              <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <g filter="url(#filter0_ii)">
+                                      <ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="#0FC4AC"></ellipse>
+                                  </g>
+                                  <path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white"
+                                      stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <defs>
+                                      <filter id="filter0_ii" x="0" y="0" width="26" height="27"
+                                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                              result="shape"></feBlend>
+                                          <feColorMatrix in="SourceAlpha" type="matrix"
+                                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                          </feColorMatrix>
+                                          <feOffset dy="1"></feOffset>
+                                          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                          </feComposite>
+                                          <feColorMatrix type="matrix"
+                                              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"></feColorMatrix>
+                                          <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
+                                          <feColorMatrix in="SourceAlpha" type="matrix"
+                                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                          </feColorMatrix>
+                                          <feOffset dy="-1"></feOffset>
+                                          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                          </feComposite>
+                                          <feColorMatrix type="matrix"
+                                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                                          <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow">
+                                          </feBlend>
+                                      </filter>
+                                  </defs>
+                              </svg>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="our-photographers__item">
+                      <div class="our-photographers__left">
+                          <img src="/img/photographers.jpg" alt="">
+                      </div>
+                      <div class="our-photographers__right">
+                          <h4 class="our-photographers__title">Ольга</h4>
+                          <p class="our-photographers__text">
+                              Стремящиеся вытеснить традиционное
+                              производство, нанотехнологии могут быть преданы социально-демократической анафеме
+                          </p>
+                          <div class="our-photographers__wrap">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                      d="M4.30769 6.03327C3.03319 6.03327 2 6.92684 2 8.02911V20.0042C2 21.1064 3.03319 22 4.30769 22H19.6923C20.9668 22 22 21.1064 22 20.0042V8.02911C22 6.92684 20.9668 6.03327 19.6923 6.03327L15 6L15.5 2L15.1429 6H8.84604L8.5 2L9 6L4.30769 6.03327Z"
+                                      stroke="#93A0AD" stroke-width="2" stroke-linejoin="round"></path>
+                                  <circle cx="12" cy="14" r="4" stroke="#93A0AD" stroke-width="2"></circle>
+                                  <path
+                                      d="M15.5 1.66667C15.5 2.1269 15.1269 2.5 14.6667 2.5L9.33333 2.5C8.8731 2.5 8.5 2.1269 8.5 1.66667C8.5 1.57462 8.57462 1.5 8.66667 1.5L15.3333 1.5C15.4254 1.5 15.5 1.57462 15.5 1.66667Z"
+                                      fill="#93A0AD" stroke="#93A0AD"></path>
+                              </svg>
+                              <div>
+                                  <span class="our-photographers__count">8 лет</span>
+                                  <p class="our-photographers__description">стажа в фотосъемке</p>
+                              </div>
+                          </div>
+
+                          <div class="our-photographers__wrap">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                      d="M22 8.02911C22 6.92684 20.9668 6.03327 19.6923 6.03327L16.2857 6.00001L15.1429 6H8.84018L7.71429 6.00001L4.30769 6.03327C3.03319 6.03327 2 6.92684 2 8.02911V20.0042C2 21.1064 3.03319 22 4.30769 22H19.6923C20.9668 22 22 21.1064 22 20.0042V8.02911Z"
+                                      stroke="#93A0AD" stroke-width="2" stroke-linejoin="round"></path>
+                                  <path
+                                      d="M15.4288 3.5L8.58535 3.5C8.79127 2.9174 9.34689 2.5 10 2.5L14.05 2.5C14.6937 2.5 15.2395 2.91948 15.4288 3.5Z"
+                                      stroke="#93A0AD"></path>
+                                  <rect x="18.5" y="17.5" width="7" height="1" rx="0.5"
+                                      transform="rotate(180 18.5 17.5)" stroke="#93A0AD"></rect>
+                              </svg>
+                              <div>
+                                  <span class="our-photographers__count">234 тура</span>
+                                  <p class="our-photographers__description">провела с 2016 года</p>
+                              </div>
+                          </div>
+
+                          <div class="our-photographers__wrap our-photographers__wrap--mb">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                      d="M22.0001 5.02911C22.0001 3.92684 20.9669 3.03327 19.6924 3.03327L16.2858 3.00001L15.1429 3H8.84025L7.71436 3.00001L4.30776 3.03327C3.03326 3.03327 2.00007 3.92684 2.00007 5.02911V17.0042L2.00012 22C3.50012 21 5.00012 20 7.00007 19H9.00007L19.6924 19C20.9669 19 22.0001 18.1064 22.0001 17.0042V5.02911Z"
+                                      stroke="#93A0AD" stroke-width="2" stroke-linejoin="round"></path>
+                                  <rect x="15.5" y="9.5" width="10" height="1" rx="0.5" transform="rotate(180 15.5 9.5)"
+                                      stroke="#93A0AD"></rect>
+                                  <rect x="10.5" y="13.5" width="5" height="1" rx="0.5"
+                                      transform="rotate(180 10.5 13.5)" stroke="#93A0AD"></rect>
+                              </svg>
+                              <div>
+                                  <span class="our-photographers__count">Английский</span>
+                                  <p class="our-photographers__description">владение языком</p>
+                              </div>
+                          </div>
+                          <a class="simple-link simple-link--photographers" href="#">
+                              Смотреть как фотографирует Ольга
+                              <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <g filter="url(#filter0_ii)">
+                                      <ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="#0FC4AC"></ellipse>
+                                  </g>
+                                  <path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white"
+                                      stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <defs>
+                                      <filter id="filter0_ii" x="0" y="0" width="26" height="27"
+                                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                              result="shape"></feBlend>
+                                          <feColorMatrix in="SourceAlpha" type="matrix"
+                                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                          </feColorMatrix>
+                                          <feOffset dy="1"></feOffset>
+                                          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                          </feComposite>
+                                          <feColorMatrix type="matrix"
+                                              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"></feColorMatrix>
+                                          <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
+                                          <feColorMatrix in="SourceAlpha" type="matrix"
+                                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                          </feColorMatrix>
+                                          <feOffset dy="-1"></feOffset>
+                                          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                          </feComposite>
+                                          <feColorMatrix type="matrix"
+                                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                                          <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow">
+                                          </feBlend>
+                                      </filter>
+                                  </defs>
+                              </svg>
+                          </a>
+                          <a class="simple-link simple-link--photographers simple-link--photographers-mobile" href="#">
+                              Смотреть ее работы
                               <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
                                   xmlns="http://www.w3.org/2000/svg">
                                   <g filter="url(#filter0_ii)">
@@ -2197,8 +2417,8 @@
                           <img src="img/ic_logo_56.svg" alt="">
                       </div>
                       <p class="know-import-item__title">Теплая одежда</p>
-                      <p class="know-import-item__text">Рекомендуем взять термобелье, 
-                        теплую зимнюю обувь, теплую куртку, зимние штаны, шапку, перчатки и шарф.</p>
+                      <p class="know-import-item__text">Рекомендуем взять термобелье,
+                          теплую зимнюю обувь, теплую куртку, зимние штаны, шапку, перчатки и шарф.</p>
                   </div>
                   <div class="know-import-item">
                       <div class="know-import-item__img">
@@ -2206,8 +2426,8 @@
                       </div>
                       <p class="know-import-item__title">Инструкции</p>
                       <p class="know-import-item__text">После бронирования
-                        и предоплаты 1000 рублей
-                        с человека, вы получите подробные инструкции</p>
+                          и предоплаты 1000 рублей
+                          с человека, вы получите подробные инструкции</p>
                   </div>
                   <div class="know-import-item">
                       <div class="know-import-item__img">
@@ -2221,44 +2441,45 @@
       </section>
 
       <!-- Барабан «Удачи» -->
-  <section class="drum-good">
-    <div class="container">
-        <div class="drum-good__inner--mob">
-            <h4 class="drum-good__title desktop-hideh">Барабан «Удачи»</h4>
-            <p class="drum-good__text desktop-hideh">
-              Испытайте удачи и выиграете приятную скидку
-              Вращать можно только один раз
-            </p>
-        </div>
-      <div class="drum-good__inner">
-       <div class="drum-good__left">
-            <img src="/img/drum.png" alt="">
-        </div>
-        <div class="drum-good__right">
-          <h4 class="drum-good__title mobile-hide">Барабан «Удачи»</h4>
-          <p class="drum-good__text mobile-hide">
-            Испытайте удачи и выиграете приятную скидку
-            Вращать можно только один раз
-          </p>
-          <form class="drum-good__form">
-            <input class="drum-good__inp" type="text" placeholder="Введите ваше имя">
-            <button class="btn-orange-shadow btn-orange-shadow--reviews btn-orange-shadow--drum">
-              <span class="btn-orange-shadow__text btn-orange-shadow__text--reviews">
-                Вращать барабан
-              </span>
-              <div class="btn-orange-shadow__shadow"></div>
-            </button>
-            <p class="drum-good__privacy">
-              Нажав на кнопку «Вращать барабан», вы даете согласие на обработку <a class="drum-good__link"
-                href="#">персональных данных</a> и согласен с <a class="drum-good__link" href="#">политикой
-                конфиденциальности.</a>
-            </p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Барабан «Удачи» -->
+      <section class="drum-good">
+          <div class="container">
+              <div class="drum-good__inner--mob">
+                  <h4 class="drum-good__title desktop-hideh">Барабан «Удачи»</h4>
+                  <p class="drum-good__text desktop-hideh">
+                      Испытайте удачи и выиграете приятную скидку
+                      Вращать можно только один раз
+                  </p>
+              </div>
+              <div class="drum-good__inner">
+                  <div class="drum-good__left">
+                      <img src="/img/drum.png" alt="">
+                  </div>
+                  <div class="drum-good__right">
+                      <h4 class="drum-good__title mobile-hide">Барабан «Удачи»</h4>
+                      <p class="drum-good__text mobile-hide">
+                          Испытайте удачи и выиграете приятную скидку
+                          Вращать можно только один раз
+                      </p>
+                      <form class="drum-good__form">
+                          <input class="drum-good__inp" type="text" placeholder="Введите ваше имя">
+                          <button class="btn-orange-shadow btn-orange-shadow--reviews btn-orange-shadow--drum">
+                              <span class="btn-orange-shadow__text btn-orange-shadow__text--reviews">
+                                  Вращать барабан
+                              </span>
+                              <div class="btn-orange-shadow__shadow"></div>
+                          </button>
+                          <p class="drum-good__privacy">
+                              Нажав на кнопку «Вращать барабан», вы даете согласие на обработку <a
+                                  class="drum-good__link" href="#">персональных данных</a> и согласен с <a
+                                  class="drum-good__link" href="#">политикой
+                                  конфиденциальности.</a>
+                          </p>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- /Барабан «Удачи» -->
 
   </main>
   @@include('./include/footer.html')
