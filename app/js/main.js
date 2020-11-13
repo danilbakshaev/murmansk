@@ -1318,3 +1318,44 @@ $(function () {
 
 
 })();
+
+// Барабан удачи
+$(function () {
+  if ($(".fortune-wrap")) {
+    document.getElementById("spin").addEventListener("click", function( event ) {
+      
+        // Generate a number between 1 and 8
+        var prize = (Math.floor(Math.random() * 8)) + 1;
+        console.log(prize)
+        // Spin to the angle of the segment based on the random number
+        var segmentAngle = ((prize - 1) * -45);
+        console.log(segmentAngle)
+        // Add on 3 full spins
+        var segmentAngle = segmentAngle + 1103;
+        console.log(segmentAngle)
+      
+        var wheel = document.getElementById("backdrop");
+      
+        // The animation class is only needed for the reset button, it makes the transition smooth instead of instant
+        $('.backdrop').addClass("animate");
+      
+        // Add a transition directly to the wheel
+        wheel.style.webkitTransform = 'rotate('+segmentAngle+'deg)'; 
+        wheel.style.mozTransform    = 'rotate('+segmentAngle+'deg)'; 
+        wheel.style.msTransform     = 'rotate('+segmentAngle+'deg)'; 
+        wheel.style.oTransform      = 'rotate('+segmentAngle+'deg)'; 
+        wheel.style.transform       = 'rotate('+segmentAngle+'deg)'; 
+      
+        // Display the result
+        console.log("Ваш приз "+prize)
+
+        $('.backdrop').one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(event) {
+          alert("Ваш приз "+prize)
+        });
+
+      }, false);
+
+    
+
+  }
+});

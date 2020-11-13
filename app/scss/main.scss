@@ -5963,22 +5963,22 @@ header .desktop-header__line-bottom--tour {
 // /Наш транспорт
 
 // Барабан «Удачи»
-.drum-good {
+.fortune {
   background-color: #f8f8f6;
   padding: 96px 0;
 }
 
-.drum-good__inner {
+.fortune__inner {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.drum-good__left {
+.fortune__left {
   width: 50%;
 }
 
-.drum-good__drum {
+.fortune__drum {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5990,446 +5990,7 @@ header .desktop-header__line-bottom--tour {
   overflow: hidden;
 }
 
-.drum-good__btn {
-  padding: 0;
-  cursor: pointer;
-  border: none;
-  background-color: #fff;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #242440;
-  &:nth-child(2n) {
-    background: linear-gradient(135deg, #FF9458 0%, #FFBE5C 100%);
-    color: #FFFFFF;
-  }
-}
-
-.drum-good__btn--top-left {
-  width: 187px;
-  height: 265px;
-}
-
-.drum-good__btn--top-right {
-  width: 187px;
-  height: 265px;
-}
-
-.drum-good__btn--top-bottom-right {
-  width: 265px;
-  height: 187px;
-}
-
-.drum-good__btn--top-botton-left {
-  width: 265px;
-  height: 187px;
-}
-
-.drum-good__btn--bottom-left {
-  width: 265px;
-  height: 187px;
-}
-
-.drum-good__btn--bottom-right {
-  width: 265px;
-  height: 187px;
-}
-
-.drum-good__btn--bottom-bottom-left {
-  width: 265px;
-  height: 187px;
-}
-
-.drum-good__btn--bottom-bottom-right {
-  width: 265px;
-  height: 187px;
-}
-
-.drum-good__right {
-  max-width: 400px;
-  margin-left: 96px;
-}
-
-.drum-good__title {
-  margin: 0;
-  font-family: 'Roboto Slab', sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 120%;
-  color: #242440;
-  margin-bottom: 16px;
-}
-
-.drum-good__text {
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #242440;
-  margin-bottom: 24px;
-}
-
-.drum-good__form {
-  max-width: 352px;
-}
-
-.drum-good__inp {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: #93A0AD;
-  border: none;
-  background-color: #FFFFFF;
-  border: 1px solid #E9ECEF;
-  box-sizing: border-box;
-  border-radius: 8px;
-  padding: 13px 16px;
-  margin-bottom: 12px;
-  width: 100%;
-}
-
-.btn-orange-shadow--drum {
-  width: 100% !important;
-}
-
-.drum-good__privacy {
-  margin: 0;
-  text-align: center;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  color: #7B8997;
-  margin-top: 8px;
-}
-
-.drum-good__link {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  color: #000;
-  transition: all linear 0.3s;
-  &:hover {
-    color: #0fc4ac;
-    text-decoration: underline;
-  }
-}
-
-@media screen and (max-width: 1240px) {
-  .drum-good__inner {
-    flex-direction: column;
-  }
-  .drum-good__left {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .drum-good__right {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .drum-good__title{
-    font-size: 26px;
-  line-height: 120%;
-  text-align: start;
-  display: block;
-  }
-  .drum-good__text {
-    font-size: 14px;
-    line-height: 150%;
-  }
-  .drum-good__right {
-    margin-left: 0;
-  }
-  .drum-good__form {
-    max-width: 100%;
-  }
-}
-// /Барабан «Удачи»
-
-
-// /Страница teriberka
-
-// Страница Турагентствам
-
-// блок "Большой выбор пакетных туров"
-.choice-tours {
-  margin-bottom: 96px;
-}
-
-.choice-tours__items {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-right: -32px;
-}
-
-.choice-tours__item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border-radius: 12px;
-  margin-right: 32px;
-  transition: all linear 0.3s;
-  &:hover {
-    transform: scale(1.05);
-  }
-}
-
-.choice-tours__item img {
-  display: block;
-  object-fit: cover;
-}
-
-.choice-tours__wrap {
-  position: absolute;
-  bottom: 16px;
-  left: 20px;
-  right: 20px;
-}
-
-.choice-tours__title {
-  margin: 0;
-  font-family: 'Roboto Slab', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 120%;
-  color: #FFFFFF;
-  text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
-  margin-bottom: 16px;
-}
-
-.choice-tours__text {
-  margin: 0;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 120%;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.choice-tours__count {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 120%;
-  color: #FFFFFF;
-}
-// /блок "Большой выбор пакетных туров"
-
-// Преимущества работы с нами
-.benefits-working {
-  box-sizing: border-box;
-  margin-bottom: 96px;
-  background: #F8F8F6;
-  padding-top: 90px;
-  padding-bottom: 96px;
-}
-
-.benefits-working__logo {
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.benefits-working__title {
-  margin: 0;
-  font-family: 'Roboto Slab', sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 120%;
-  text-align: center;
-  color: #242440;
-  margin-bottom: 48px;
-}
-
-.benefits-working__items {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -32px;
-}
-
-.benefits-working__item {
-  display: flex;
-  align-items: flex-start;
-  border: 1px solid #E9ECEF;
-  box-sizing: border-box;
-  border-radius: 12px;
-  padding: 20px 18px;
-  margin-right: 32px;
-  margin-bottom: 15px;
-  background-color: #fff;
-  width: calc(50% - 32px);
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.benefits-working__item svg {
-  min-width: 24px;
-  min-height: 24px;
-}
-
-.benefits-working__text {
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: #242440;
-  margin-left: 12px;
-}
-
-@media screen and (max-width: 768px) {
-  .benefits-working {
-    margin-bottom: 50px;
-    padding-top: 32px;
-  }
-  .benefits-working__title {
-    text-align: left;
-  }
-  .benefits-working__items {
-    margin-right: 0;
-  }
-  .benefits-working__item {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 8px;
-    padding: 16px 12px;
-  }
-  .benefits-working__title {
-    margin-bottom: 24px;
-    font-size: 26px;
-  }
-  .benefits-working__logo {
-    display: none;
-  }
-}
-// /Преимущества работы с нами
-
-// блок "Фотографии"
-.photos {
-  margin-bottom: 96px;
-}
-
-.photos__items {
-  display: flex;
-  margin-right: -32px;
-}
-
-.photos__item {
-  display: flex;
-  margin-right: 32px;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: all linear 0.3s;
-  &:hover {
-    transform: scale(1.05);
-  }
-}
-
-.photos__item img {
-  display: block;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 768px) {
-  .photos {
-    margin-bottom: 48px;
-  }
-}
-// /блок "Фотографии"
-
-// У нас современный автопарк
-.vehicle-fleet {
-  margin-bottom: 96px;
-  background: #F8F8F6;
-  padding: 96px 0;
-}
-
-.vehicle-fleet__inner {
-  display: flex;
-}
-
-.vehicle-fleet__left {
-  width: 50%;
-}
-
-.vehicle-fleet__right {
-  width: 50%;
-}
-
-.vehicle-fleet__title {
-  margin: 0;
-  font-family: 'Roboto Slab', sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 120%;
-  color: #242440;
-  margin-bottom: 24px;
-}
-
-.vehicle-fleet__text {
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #242440;
-  margin-bottom: 16px;
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.vehicle-fleet__right {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.vehicle-fleet__right img {
-  display: block;
-  object-fit: cover;
-}
-
-.vehicle-fleet__wrap {
-  position: absolute;
-  left: 32px;
-  right: 32px;
-  bottom: 31px;
-}
-
-.vehicle-fleet__num {
-  background: #0FC4AC;
-  border-radius: 4px;
-  padding: 7px 15px;
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.vehicle-fleet__brand {
-  margin: 0;
-  font-family: 'Roboto Slab', sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 120%;
-  color: #FFFFFF;
-  margin-top: 14px;
-  margin-bottom: 10px;
-}
-
-.vehicle-fleet__desc {
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  color: #FFFFFF;
-}
-
-.vehicle-fleet__btn {
+.fortune__btn {
   padding: 0;
   cursor: pointer;
   border: none;
@@ -6446,93 +6007,54 @@ header .desktop-header__line-bottom--tour {
   }
 }
 
-.vehicle-fleet__btn:hover path {
-  stroke: #FB5352;
+.fortune__btn--top-left {
+  width: 187px;
+  height: 265px;
 }
 
-.vehicle-fleet__btn path {
-  stroke: #93A0AD;
+.fortune__btn--top-right {
+  width: 187px;
+  height: 265px;
 }
 
-.vehicle-fleet__btn-left {
-  position: absolute;
-  top: calc(50% - 36px);
-  left: -35px;
+.fortune__btn--top-bottom-right {
+  width: 265px;
+  height: 187px;
 }
 
-.vehicle-fleet__btn-right {
-  position: absolute;
-  top: calc(50% - 36px);
-  right: -35px;
+.fortune__btn--top-botton-left {
+  width: 265px;
+  height: 187px;
 }
 
-@media screen and (max-width: 1240px) {
-  .vehicle-fleet__inner {
-    flex-direction: column;
-  }
-  .vehicle-fleet__left {
-    margin-bottom: 24px;
-    width: 100%;
-  }
+.fortune__btn--bottom-left {
+  width: 265px;
+  height: 187px;
 }
 
-@media screen and (max-width: 768px) {
-  .vehicle-fleet {
-    margin-bottom: 48px;
-  }
-  .vehicle-fleet__title {
-    font-size: 26px;
-  }
-  .vehicle-fleet__text {
-    font-size: 14px;
-  }
+.fortune__btn--bottom-right {
+  width: 265px;
+  height: 187px;
 }
 // /У нас современный автопарк
 
-// Реквизиты
-.title-sections--agencies {
-  position: relative;
-  &::before {
-    content: '';
-    width: 92px;
-    height: 8px;
-    bottom: -30px;
-    left: 0;
-    position: absolute;
-    background-image: url(../img/travel-agencies/requisites.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.fortune__btn--bottom-bottom-left {
+  width: 265px;
+  height: 187px;
 }
 
-@media screen and (max-width: 768px) {
-  .title-sections--agencies {
-    &::before {
-      bottom: -18px;
-    }
-  }
+.fortune__btn--bottom-bottom-right {
+  width: 265px;
+  height: 187px;
 }
 // /Реквизиты
 
-// Давайте сотрудничать!
-.cooperate {
-  margin-bottom: 96px;
-  background-image: url(../img/travel-agencies/cooperate-bg.jpg);
-  background-repeat: no-repeat;
-  padding-top: 56px;
-  padding-bottom: 36px;
+.fortune__right {
+  max-width: 400px;
+  margin-left: 96px;
 }
 
-.cooperate__inner {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cooperate__left {
-  max-width: 544px;
-}
-
-.cooperate__title {
+.fortune__title {
   margin: 0;
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
@@ -6543,7 +6065,7 @@ header .desktop-header__line-bottom--tour {
   width: 70%;
 }
 
-.cooperate__text {
+.fortune__text {
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -6552,38 +6074,15 @@ header .desktop-header__line-bottom--tour {
   width: 70%;
 }
 
-.cooperate__form {
-  width: 448px;
-  height: 554px;
-  display: flex;
-  flex-direction: column;
-  background: #FFFFFF;
-  border: 1px solid rgba(36, 36, 64, 0.02);
-  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 36px rgba(5, 15, 41, 0.15);
-  border-radius: 12px;
-  padding-top: 32px;
-  padding-bottom: 36px;
-  padding-left: 40px;
-  padding-right: 40px;
+.fortune__form {
+  max-width: 352px;
 }
 
-.cooperate__form .btn-orange-shadow {
-  width: 100%;
-}
-
-.cooperate__form-title {
-  margin: 0;
-  font-family: 'Roboto Slab', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 120%;
-  color: #242440;
-  margin-bottom: 24px;
-}
-
-.cooperate__name,
-.cooperate__phone,
-.cooperate__mail {
+.fortune__inp {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #93A0AD;
   border: none;
   background: #FFFFFF;
   border: 1px solid #E9ECEF;
@@ -6626,7 +6125,7 @@ header .desktop-header__line-bottom--tour {
   }
 }
 
-.cooperate__privacy {
+.fortune__privacy {
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -6636,8 +6135,7 @@ header .desktop-header__line-bottom--tour {
   margin-top: 24px;
 }
 
-.cooperate__privacy-link {
-  color: #242440;
+.fortune__link {
   text-decoration: none;
   transition: all linear 0.3s;
   &:hover {
@@ -6646,23 +6144,34 @@ header .desktop-header__line-bottom--tour {
   }
 }
 
-.cooperate__form-title--mobile {
-  display: none;
-}
-
-@media screen and (max-width: 860px) {
-  .cooperate__form-title {
-    display: none;
-  }
-  .cooperate__form-title--mobile {
-    display: block;
-    color: #fff;
-    text-align: center;
-  }
-  .cooperate__inner {
+@media screen and (max-width: 1240px) {
+  .fortune__inner {
     flex-direction: column;
   }
-  .cooperate__left {
+  .fortune__left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .fortune__right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fortune__title{
+    font-size: 26px;
+  line-height: 120%;
+  text-align: start;
+  display: block;
+  }
+  .fortune__text {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .fortune__right {
+    margin-left: 0;
+  }
+  .fortune__form {
     max-width: 100%;
     margin-bottom: 32px;
   }
@@ -14911,4 +14420,96 @@ background:  #0FC4AC;
 
 .desktop-header__wrapper--white .new-select::after {
   content: url("data:image/svg+xml,%3Csvg width='8' height='4' viewBox='0 0 8 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.168056 0.445406C0.474408 -0.0141227 1.09528 -0.138296 1.55481 0.168056L4.00011 1.79826L6.44541 0.168056C6.90493 -0.138296 7.5258 -0.0141227 7.83216 0.445406C8.13851 0.904935 8.01434 1.5258 7.55481 1.83216L4.55481 3.83216C4.21891 4.05609 3.78131 4.05609 3.44541 3.83216L0.445406 1.83216C-0.0141227 1.5258 -0.138296 0.904935 0.168056 0.445406Z' fill='%2393A0AD'/%3E%3C/svg%3E%0A");
+}
+
+
+// Барабан удачи
+
+.fortune__left {
+  position: relative;
+  height: 544px;
+  width: 544px;
+  &::after{
+    content: '';
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    left: calc(50% - 32px);
+    top: calc(50% - 32px);
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='32' cy='32' r='32' fill='url(%23paint0_linear)'/%3E%3Cpath d='M31.5452 24.4079C31.4032 24.4079 31.2329 24.3507 31.1477 24.2363L28.1665 21.2625C27.9393 21.0338 27.9393 20.662 28.1665 20.4333C28.3936 20.2045 28.7627 20.2045 28.9898 20.4333L31.5452 23.0068L34.1005 20.4333C34.3277 20.2045 34.6968 20.2045 34.9239 20.4333C35.1511 20.662 35.1511 21.0338 34.9239 21.2625L31.9427 24.2363C31.8291 24.3507 31.6871 24.4079 31.5452 24.4079Z' fill='white'/%3E%3Cpath d='M31.5452 20.4918C31.4032 20.4918 31.2329 20.4347 31.1477 20.3203L28.1665 17.3465C27.9393 17.1177 27.9393 16.746 28.1665 16.5173C28.3936 16.2885 28.7627 16.2885 28.9898 16.5173L31.5452 19.0907L34.1005 16.5173C34.3277 16.2885 34.6968 16.2885 34.9239 16.5173C35.1511 16.746 35.1511 17.1177 34.9239 17.3465L31.9427 20.3203C31.8291 20.4347 31.6871 20.4918 31.5452 20.4918Z' fill='white'/%3E%3Cpath d='M31.5444 19.5759C31.2321 19.5759 30.9766 19.3185 30.9766 19.004V14.5719C30.9766 14.2573 31.2321 14 31.5444 14C31.8567 14 32.1123 14.2573 32.1123 14.5719V18.9754C32.1123 19.3185 31.8567 19.5759 31.5444 19.5759Z' fill='white'/%3E%3Cpath d='M34.498 43.736C34.3561 43.736 34.2141 43.6788 34.1005 43.5644L31.5452 40.991L28.9898 43.5644C28.7627 43.7932 28.3936 43.7932 28.1665 43.5644C27.9393 43.3357 27.9393 42.9639 28.1665 42.7352L31.1193 39.7614C31.3464 39.5327 31.7155 39.5327 31.9427 39.7614L34.9239 42.7352C35.1511 42.9639 35.1511 43.3357 34.9239 43.5644C34.8103 43.6788 34.64 43.736 34.498 43.736Z' fill='white'/%3E%3Cpath d='M34.498 47.654C34.3561 47.654 34.2141 47.5968 34.1005 47.4824L31.5452 44.9089L28.9898 47.4824C28.7627 47.7111 28.3936 47.7111 28.1665 47.4824C27.9393 47.2536 27.9393 46.8819 28.1665 46.6532L31.1193 43.6794C31.3464 43.4506 31.7155 43.4506 31.9427 43.6794L34.8955 46.6532C35.1227 46.8819 35.1227 47.2536 34.8955 47.4824C34.8103 47.5968 34.64 47.654 34.498 47.654Z' fill='white'/%3E%3Cpath d='M31.5444 49.9984C31.2321 49.9984 30.9766 49.7411 30.9766 49.4265V45.0231C30.9766 44.7085 31.2321 44.4512 31.5444 44.4512C31.8567 44.4512 32.1123 44.7085 32.1123 45.0231V49.4265C32.1123 49.7411 31.8567 49.9984 31.5444 49.9984Z' fill='white'/%3E%3Cpath d='M26.0395 42.2507C25.7272 42.2507 25.4717 41.9933 25.4717 41.6788V38.0188H21.8374C21.5251 38.0188 21.2695 37.7614 21.2695 37.4469C21.2695 37.1323 21.5251 36.875 21.8374 36.875H26.0395C26.3518 36.875 26.6074 37.1323 26.6074 37.4469V41.6502C26.6074 41.9933 26.3518 42.2507 26.0395 42.2507Z' fill='white'/%3E%3Cpath d='M23.2856 45.0241C22.9733 45.0241 22.7177 44.7668 22.7177 44.4522V40.7922H19.0835C18.7712 40.7922 18.5156 40.5349 18.5156 40.2203C18.5156 39.9058 18.7712 39.6484 19.0835 39.6484H23.2572C23.5695 39.6484 23.8251 39.9058 23.8251 40.2203V44.4522C23.8535 44.7668 23.5979 45.0241 23.2856 45.0241Z' fill='white'/%3E%3Cpath d='M19.5366 44.5665C19.3946 44.5665 19.2527 44.5093 19.1391 44.3949C18.912 44.1661 18.912 43.7944 19.1391 43.5657L22.2339 40.4489C22.4611 40.2202 22.8302 40.2202 23.0573 40.4489C23.2844 40.6777 23.2844 41.0494 23.0573 41.2781L19.9625 44.3949C19.8489 44.5093 19.6786 44.5665 19.5366 44.5665Z' fill='white'/%3E%3Cpath d='M42.5637 35.7606C42.4217 35.7606 42.2797 35.7034 42.1662 35.589L39.2133 32.6152C38.9862 32.3865 38.9862 32.0147 39.2133 31.786L42.1662 28.8122C42.3933 28.5834 42.7624 28.5834 42.9896 28.8122C43.2167 29.0409 43.2167 29.4127 42.9896 29.6414L40.4342 32.2149L42.9896 34.7884C43.2167 35.0171 43.2167 35.3888 42.9896 35.6176C42.876 35.7034 42.7056 35.7606 42.5637 35.7606Z' fill='white'/%3E%3Cpath d='M46.4504 35.7606C46.3084 35.7606 46.1665 35.7034 46.0529 35.589L43.1 32.6152C42.8729 32.3865 42.8729 32.0147 43.1 31.786L46.0529 28.8122C46.28 28.5834 46.6491 28.5834 46.8763 28.8122C47.1034 29.0409 47.1034 29.4127 46.8763 29.6414L44.3209 32.2149L46.8763 34.7884C47.1034 35.0171 47.1034 35.3888 46.8763 35.6176C46.7627 35.7034 46.6207 35.7606 46.4504 35.7606Z' fill='white'/%3E%3Cpath d='M48.7841 32.7863H44.4116C44.0993 32.7863 43.8438 32.529 43.8438 32.2145C43.8438 31.8999 44.0993 31.6426 44.4116 31.6426H48.7841C49.0964 31.6426 49.3519 31.8999 49.3519 32.2145C49.3803 32.5004 49.1248 32.7863 48.7841 32.7863Z' fill='white'/%3E%3Cpath d='M41.5122 27.0671H37.31C36.9977 27.0671 36.7422 26.8098 36.7422 26.4952V22.2633C36.7422 21.9488 36.9977 21.6914 37.31 21.6914C37.6224 21.6914 37.8779 21.9488 37.8779 22.2633V25.8947H41.4838C41.7961 25.8947 42.0516 26.1521 42.0516 26.4666C42.08 26.8098 41.8245 27.0671 41.5122 27.0671Z' fill='white'/%3E%3Cpath d='M44.265 24.2937H40.0913C39.779 24.2937 39.5234 24.0363 39.5234 23.7218V19.4899C39.5234 19.1753 39.779 18.918 40.0913 18.918C40.4036 18.918 40.6591 19.1753 40.6591 19.4899V23.1213H44.265C44.5773 23.1213 44.8329 23.3787 44.8329 23.6932C44.8329 24.0077 44.5773 24.2937 44.265 24.2937Z' fill='white'/%3E%3Cpath d='M40.7202 23.6355C40.5782 23.6355 40.4363 23.5783 40.3227 23.464C40.0956 23.2352 40.0956 22.8635 40.3227 22.6347L43.4175 19.5466C43.6446 19.3178 44.0138 19.3178 44.2409 19.5466C44.468 19.7753 44.468 20.147 44.2409 20.3758L41.1461 23.464C41.0325 23.5783 40.8622 23.6355 40.7202 23.6355Z' fill='white'/%3E%3Cpath d='M37.7671 42.6791C37.4548 42.6791 37.1992 42.4218 37.1992 42.1072V37.9039C37.1992 37.5894 37.4548 37.332 37.7671 37.332H41.9692C42.2815 37.332 42.537 37.5894 42.537 37.9039C42.537 38.2184 42.2815 38.4758 41.9692 38.4758H38.3633V42.1072C38.3633 42.4218 38.1078 42.6791 37.7671 42.6791Z' fill='white'/%3E%3Cpath d='M40.5171 45.4526C40.2048 45.4526 39.9492 45.1952 39.9492 44.8807V40.6774C39.9492 40.3628 40.2048 40.1055 40.5171 40.1055H44.6908C45.0031 40.1055 45.2587 40.3628 45.2587 40.6774C45.2587 40.9919 45.0031 41.2492 44.6908 41.2492H41.1133V44.8807C41.1133 45.1952 40.8578 45.4526 40.5171 45.4526Z' fill='white'/%3E%3Cpath d='M44.2681 45.0235C44.1262 45.0235 43.9842 44.9663 43.8706 44.8519L40.7758 41.7352C40.5487 41.5064 40.5487 41.1347 40.7758 40.9059C41.003 40.6772 41.3721 40.6772 41.5992 40.9059L44.694 44.0227C44.9212 44.2515 44.9212 44.6232 44.694 44.8519C44.5521 44.9663 44.4101 45.0235 44.2681 45.0235Z' fill='white'/%3E%3Cpath d='M20.7866 35.7599C20.6446 35.7599 20.5027 35.7027 20.3891 35.5883C20.162 35.3595 20.162 34.9878 20.3891 34.7591L22.9445 32.1856L20.3891 29.6121C20.162 29.3834 20.162 29.0116 20.3891 28.7829C20.6162 28.5541 20.9854 28.5541 21.2125 28.7829L24.1653 31.7567C24.3925 31.9854 24.3925 32.3572 24.1653 32.5859L21.1841 35.5883C21.0705 35.7027 20.9286 35.7599 20.7866 35.7599Z' fill='white'/%3E%3Cpath d='M16.8999 35.7599C16.7579 35.7599 16.616 35.7027 16.5024 35.5883C16.2752 35.3595 16.2752 34.9878 16.5024 34.7591L19.0577 32.1856L16.5024 29.6121C16.2752 29.3834 16.2752 29.0116 16.5024 28.7829C16.7295 28.5541 17.0986 28.5541 17.3258 28.7829L20.2786 31.7567C20.5058 31.9854 20.5058 32.3572 20.2786 32.5859L17.2974 35.5883C17.1838 35.7027 17.0418 35.7599 16.8999 35.7599Z' fill='white'/%3E%3Cpath d='M18.9403 32.7863H14.5679C14.2555 32.7863 14 32.529 14 32.2145C14 31.8999 14.2555 31.6426 14.5679 31.6426H18.9403C19.2527 31.6426 19.5082 31.8999 19.5082 32.2145C19.5082 32.5004 19.2527 32.7863 18.9403 32.7863Z' fill='white'/%3E%3Cpath d='M25.9809 26.8386H21.7788C21.4665 26.8386 21.2109 26.5812 21.2109 26.2667C21.2109 25.9522 21.4665 25.6948 21.7788 25.6948H25.3847V22.0348C25.3847 21.7202 25.6402 21.4629 25.9525 21.4629C26.2648 21.4629 26.5204 21.7202 26.5204 22.0348V26.2667C26.5488 26.5812 26.2932 26.8386 25.9809 26.8386Z' fill='white'/%3E%3Cpath d='M23.1986 24.0651H19.0249C18.7126 24.0651 18.457 23.8078 18.457 23.4933C18.457 23.1787 18.7126 22.9214 19.0249 22.9214H22.6308V19.2613C22.6308 18.9468 22.8863 18.6895 23.1986 18.6895C23.5109 18.6895 23.7665 18.9468 23.7665 19.2613V23.4647C23.7949 23.8078 23.5393 24.0651 23.1986 24.0651Z' fill='white'/%3E%3Cpath d='M22.5739 23.4083C22.4319 23.4083 22.2899 23.3511 22.1764 23.2367L19.0532 20.1199C18.826 19.8912 18.826 19.5195 19.0532 19.2907C19.2803 19.062 19.6494 19.062 19.8766 19.2907L22.9714 22.4361C23.1985 22.6648 23.1985 23.0365 22.9714 23.2653C22.8578 23.3511 22.7158 23.4083 22.5739 23.4083Z' fill='white'/%3E%3Cpath d='M28.5665 40.1642C28.4813 40.1642 28.4245 40.1356 28.3393 40.107C28.1122 40.0213 27.9702 39.7925 27.9702 39.5352L28.169 35.5034L24.1656 35.7035C23.91 35.7035 23.6829 35.5606 23.5977 35.3318C23.5125 35.1031 23.5693 34.8457 23.7397 34.6742L26.7209 31.9577L23.7681 29.2985C23.5977 29.1269 23.5409 28.8696 23.6261 28.6408C23.7113 28.412 23.9384 28.2691 24.194 28.2691L28.1973 28.4692L27.9986 24.4375C27.9986 24.1801 28.1406 23.9514 28.3677 23.8656C28.5948 23.7798 28.8504 23.837 29.0207 24.0086L31.718 27.0109L34.4154 24.0086C34.5857 23.837 34.8412 23.7798 35.0684 23.8656C35.2955 23.9514 35.4375 24.1801 35.4375 24.4375L35.182 28.4978L39.1853 28.2977C39.4409 28.2691 39.6396 28.4406 39.7532 28.6694C39.8384 28.8981 39.7816 29.1555 39.6112 29.3271L36.63 32.0435L39.6112 34.7599C39.7816 34.9315 39.8384 35.1889 39.7532 35.4176C39.668 35.6464 39.4409 35.7893 39.1853 35.7893L35.182 35.532L35.3807 39.5638C35.3807 39.8211 35.2387 40.0499 35.0116 40.1356C34.7845 40.2214 34.5289 40.1642 34.3586 39.9927L31.6613 36.9903L28.964 39.9927C28.8788 40.107 28.7084 40.1642 28.5665 40.1642ZM31.6897 35.532C31.86 35.532 32.002 35.5892 32.1155 35.7321L34.1598 37.9911L33.9895 34.9315C33.9895 34.7599 34.0462 34.617 34.1598 34.5026C34.2734 34.3882 34.4437 34.331 34.5857 34.331L37.6237 34.474L35.3523 32.4438C35.2387 32.3294 35.182 32.1579 35.182 32.0149C35.182 31.8433 35.2387 31.7004 35.3807 31.586L37.6237 29.5558L34.5857 29.6988C34.4154 29.6988 34.2734 29.6416 34.1598 29.5272C34.0462 29.4128 33.9895 29.2413 33.9895 29.0983L34.1598 26.0387L32.1155 28.2977C32.002 28.412 31.86 28.4978 31.6897 28.4978C31.5193 28.4978 31.3773 28.4406 31.2638 28.2977L29.2195 26.0387L29.3614 29.0983C29.3614 29.2699 29.3047 29.4128 29.1911 29.5272C29.0775 29.6416 28.9356 29.6988 28.7652 29.6988L25.7272 29.5558L27.9702 31.586C28.0838 31.7004 28.169 31.8433 28.169 32.0149C28.169 32.1865 28.1122 32.3294 27.9702 32.4438L25.7272 34.5026L28.7652 34.3596C28.9356 34.3596 29.0775 34.4168 29.1911 34.5312C29.3047 34.6456 29.3614 34.8171 29.3614 34.9601L29.2195 37.9911L31.2354 35.7321C31.3489 35.5892 31.5193 35.532 31.6897 35.532Z' fill='white'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='0' y1='0' x2='64' y2='64' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF9458'/%3E%3Cstop offset='1' stop-color='%23FFBE5C'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  }
+}
+
+.arrow {
+  width: 123px;
+  height: 78px;
+  position: absolute;
+  bottom: 228px;
+  right: -60px;
+  background-image: url("data:image/svg+xml,%3Csvg width='123' height='78' viewBox='0 0 123 78' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_dd)'%3E%3Cpath d='M96.1384 50.0443C100.344 46.3786 103 40.9976 103 35C103 29.0024 100.344 23.6214 96.1384 19.9557C88.9117 13.6573 78.2237 16.4358 69.0628 19.2597L30.4005 31.1775C26.6383 32.3372 26.6383 37.6628 30.4005 38.8225L69.0629 50.7403C78.2237 53.5642 88.9117 56.3427 96.1384 50.0443Z' fill='%23FB5352'/%3E%3Ccircle cx='28' cy='35' r='8' fill='white'/%3E%3Ccircle cx='28' cy='35' r='5' fill='%23FB5352'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_dd' x='0' y='0.144531' width='122.999' height='77.7124' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='10'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.0196078 0 0 0 0 0.0588235 0 0 0 0 0.160784 0 0 0 0.15 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.0196078 0 0 0 0 0.0588235 0 0 0 0 0.160784 0 0 0 0.03 0'/%3E%3CfeBlend mode='normal' in2='effect1_dropShadow' result='effect2_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect2_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.backdrop {
+  position: absolute;
+  height: 544px;
+  width: 544px;
+  border-radius: 50%;
+  background-image: url('/img/fortune.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  &.animate {
+    // You can fine tune the speed of the wheel spin here
+    -webkit-transition: all 5s ease-in-out;
+    -moz-transition: all 5s ease-in-out;
+    -o-transition: all 5s ease-in-out;
+    transition: all 5s ease-in-out;
+  }
+  
+  .segment {
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    // Could change this to a for loop if using a CSS preprocessor like SASS
+    // Each segment is calculated by (360/6) - size of a segment (30)
+    &.segment-1,
+    &.segment-2,
+    &.segment-3,
+    &.segment-4,
+    &.segment-5,
+    &.segment-6,
+    &.segment-7,
+    &.segment-8 {
+      &:after {
+        display: block;
+        margin-top: 50px;
+        margin-left: 50px;
+      }
+    }
+    &.segment-1 {
+      transform: rotate(45deg);
+    }
+    &.segment-2 {
+      transform: rotate(90deg);
+    }
+    &.segment-3 {
+      transform: rotate(135deg);
+    }
+    &.segment-4 {
+      transform: rotate(180deg);
+    }
+    &.segment-5 {
+      transform: rotate(225deg);
+    }
+    &.segment-6 {
+      transform: rotate(270deg);
+    }
+    &.segment-7 {
+      transform: rotate(315deg);
+    }
+    &.segment-8 {
+      transform: rotate(360deg);
+    }
+  }
 }
