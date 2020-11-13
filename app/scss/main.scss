@@ -4543,10 +4543,6 @@ header .desktop-header__line-bottom--tour {
   margin-right: 32px;
 }
 
-.included-price__right {
-
-}
-
 .included-price__inner-title {
   margin: 0;
   font-family: 'Roboto Slab', sans-serif;
@@ -5774,10 +5770,6 @@ header .desktop-header__line-bottom--tour {
   margin-bottom: 96px;
 }
 
-.our-transport__items {
-  // display: flex;
-}
-
 .our-transport__item {
   display: flex !important;
 }
@@ -6052,6 +6044,541 @@ header .desktop-header__line-bottom--tour {
 
 
 // /Страница teriberka
+
+// Страница Турагентствам
+
+// блок "Большой выбор пакетных туров"
+.choice-tours {
+  margin-bottom: 96px;
+}
+
+.choice-tours__items {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: -32px;
+}
+
+.choice-tours__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-right: 32px;
+  transition: all linear 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.choice-tours__item img {
+  display: block;
+  object-fit: cover;
+}
+
+.choice-tours__wrap {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  right: 20px;
+}
+
+.choice-tours__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+}
+
+.choice-tours__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.choice-tours__count {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+// /блок "Большой выбор пакетных туров"
+
+// Преимущества работы с нами
+.benefits-working {
+  box-sizing: border-box;
+  margin-bottom: 96px;
+  background: #F8F8F6;
+  padding-top: 90px;
+  padding-bottom: 96px;
+}
+
+.benefits-working__logo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.benefits-working__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: #242440;
+  margin-bottom: 48px;
+}
+
+.benefits-working__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -32px;
+}
+
+.benefits-working__item {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #E9ECEF;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 20px 18px;
+  margin-right: 32px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  width: calc(50% - 32px);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.benefits-working__item svg {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.benefits-working__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #242440;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-working {
+    margin-bottom: 50px;
+    padding-top: 32px;
+  }
+  .benefits-working__title {
+    text-align: left;
+  }
+  .benefits-working__items {
+    margin-right: 0;
+  }
+  .benefits-working__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+    padding: 16px 12px;
+  }
+  .benefits-working__title {
+    margin-bottom: 24px;
+    font-size: 26px;
+  }
+  .benefits-working__logo {
+    display: none;
+  }
+}
+// /Преимущества работы с нами
+
+// блок "Фотографии"
+.photos {
+  margin-bottom: 96px;
+}
+
+.photos__items {
+  display: flex;
+  margin-right: -32px;
+}
+
+.photos__item {
+  display: flex;
+  margin-right: 32px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all linear 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.photos__item img {
+  display: block;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .photos {
+    margin-bottom: 48px;
+  }
+}
+// /блок "Фотографии"
+
+// У нас современный автопарк
+.vehicle-fleet {
+  margin-bottom: 96px;
+  background: #F8F8F6;
+  padding: 96px 0;
+}
+
+.vehicle-fleet__inner {
+  display: flex;
+}
+
+.vehicle-fleet__left {
+  width: 50%;
+}
+
+.vehicle-fleet__right {
+  width: 50%;
+}
+
+.vehicle-fleet__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 24px;
+}
+
+.vehicle-fleet__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.vehicle-fleet__right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.vehicle-fleet__right img {
+  display: block;
+  object-fit: cover;
+}
+
+.vehicle-fleet__wrap {
+  position: absolute;
+  left: 32px;
+  right: 32px;
+  bottom: 31px;
+}
+
+.vehicle-fleet__num {
+  background: #0FC4AC;
+  border-radius: 4px;
+  padding: 7px 15px;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.vehicle-fleet__brand {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+.vehicle-fleet__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.vehicle-fleet__btn {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  opacity: 0.8;
+  transition: all linear 0.3s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.vehicle-fleet__btn:hover path {
+  stroke: #FB5352;
+}
+
+.vehicle-fleet__btn path {
+  stroke: #93A0AD;
+}
+
+.vehicle-fleet__btn-left {
+  position: absolute;
+  top: calc(50% - 36px);
+  left: -35px;
+}
+
+.vehicle-fleet__btn-right {
+  position: absolute;
+  top: calc(50% - 36px);
+  right: -35px;
+}
+
+@media screen and (max-width: 1240px) {
+  .vehicle-fleet__inner {
+    flex-direction: column;
+  }
+  .vehicle-fleet__left {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vehicle-fleet {
+    margin-bottom: 48px;
+  }
+  .vehicle-fleet__title {
+    font-size: 26px;
+  }
+  .vehicle-fleet__text {
+    font-size: 14px;
+  }
+}
+// /У нас современный автопарк
+
+// Реквизиты
+.title-sections--agencies {
+  position: relative;
+  &::before {
+    content: '';
+    width: 92px;
+    height: 8px;
+    bottom: -30px;
+    left: 0;
+    position: absolute;
+    background-image: url(../img/travel-agencies/requisites.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-sections--agencies {
+    &::before {
+      bottom: -18px;
+    }
+  }
+}
+// /Реквизиты
+
+// Давайте сотрудничать!
+.cooperate {
+  margin-bottom: 96px;
+  background-image: url(../img/travel-agencies/cooperate-bg.jpg);
+  background-repeat: no-repeat;
+  padding-top: 56px;
+  padding-bottom: 36px;
+}
+
+.cooperate__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cooperate__left {
+  max-width: 544px;
+}
+
+.cooperate__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  width: 70%;
+}
+
+.cooperate__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.8);
+  width: 70%;
+}
+
+.cooperate__form {
+  width: 448px;
+  height: 554px;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid rgba(36, 36, 64, 0.02);
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 36px rgba(5, 15, 41, 0.15);
+  border-radius: 12px;
+  padding-top: 32px;
+  padding-bottom: 36px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.cooperate__form .btn-orange-shadow {
+  width: 100%;
+}
+
+.cooperate__form-title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 24px;
+}
+
+.cooperate__name,
+.cooperate__phone,
+.cooperate__mail {
+  border: none;
+  background: #FFFFFF;
+  border: 1px solid #E9ECEF;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 13px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #93A0AD;
+  margin-bottom: 12px;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #93A0AD;
+  }
+}
+
+.cooperate__message {
+  outline: none;
+  padding: 13px 16px;
+  border: none;
+  resize: none;
+  background: #FFFFFF;
+  border: 1px solid #E9ECEF;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 100px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 24px;
+  color: #93A0AD;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #93A0AD;
+  }
+}
+
+.cooperate__privacy {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #93A0AD;
+  margin-top: 24px;
+}
+
+.cooperate__privacy-link {
+  color: #242440;
+  text-decoration: none;
+  transition: all linear 0.3s;
+  &:hover {
+    color: #0fc4ac;
+    text-decoration: underline;
+  }
+}
+
+.cooperate__form-title--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 860px) {
+  .cooperate__form-title {
+    display: none;
+  }
+  .cooperate__form-title--mobile {
+    display: block;
+    color: #fff;
+    text-align: center;
+  }
+  .cooperate__inner {
+    flex-direction: column;
+  }
+  .cooperate__left {
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+  .cooperate__title {
+    margin-bottom: 16px;
+    width: 100%;
+    text-align: center;
+  }
+  .cooperate__text {
+    width: 100%;
+    text-align: center;
+  }
+  .cooperate__form {
+    width: 100%;
+    padding: 24px 14px;
+    background-color: rgb(6, 16, 20);
+    border-radius: 40px 40px 0px 0px;
+  }
+}
+// /Давайте сотрудничать!
+
+// /Страница Турагентствам
 
 /* Footer */
 footer {
@@ -13495,6 +14022,7 @@ background:  #0FC4AC;
 
 .request--сertified-operator {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/best-photos-bg.jpg);
+  margin-bottom: 96px;
 }
 
 .request--about {
@@ -13785,6 +14313,9 @@ background:  #0FC4AC;
   }
   .request--best-photos {
     margin-bottom: 56px;
+  }
+  .request--сertified-operator {
+    margin-bottom: 48px;
   }
 }
 
