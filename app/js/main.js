@@ -1113,16 +1113,20 @@ $(function () {
   //   };
 
   //   //Вызов окна колбека
-  openLeftMenu = document.querySelector('.openMenu');
+  openLeftMenu = document.querySelectorAll('.openMenu');
   leftMenuModal = document.querySelector('.modal-wrapper__left-menu');
 
-  openLeftMenu.addEventListener('click', function () {
-    openBaseModal();
-    leftMenuModal.classList.remove('hidden');
-    setTimeout(function () {
-      leftMenuModal.classList.remove('animation');
-    }, 20);
-  })
+  if (document.querySelector('.openMenu')) {
+    for (let i = 0; i < openLeftMenu.length; i++) {
+      openLeftMenu[i].addEventListener('click', () => {
+        openBaseModal();
+        leftMenuModal.classList.remove('hidden');
+        setTimeout(function () {
+          leftMenuModal.classList.remove('animation');
+        }, 20);
+      });
+    }
+  }
 
   function closeleftMenuModal() {
     if (!leftMenuModal.classList.contains('hidden')) {
@@ -1329,11 +1333,11 @@ $(function () {
 $(function () {
   if (document.querySelector(".fortune-wrap")) {
 
-    const fortuneForm =  $('.fortune__form')
+    const fortuneForm = $('.fortune__form')
     fortuneForm.submit(function (e) {
       e.preventDefault()
     })
-    
+
     fortuneForm.validate({
       errorElement: "",
       errorPlacement: (error, element) =>
@@ -1353,31 +1357,31 @@ $(function () {
         var segmentAngle = ((prize - 1) * -45);
         var segmentAngle = segmentAngle + 1103;
         var wheel = document.getElementById("backdrop");
-      
+
         // The animation class is only needed for the reset button, it makes the transition smooth instead of instant
         $('.backdrop').addClass("animate");
-      
-        // Add a transition directly to the wheel
-        wheel.style.webkitTransform = 'rotate('+segmentAngle+'deg)'; 
-        wheel.style.mozTransform    = 'rotate('+segmentAngle+'deg)'; 
-        wheel.style.msTransform     = 'rotate('+segmentAngle+'deg)'; 
-        wheel.style.oTransform      = 'rotate('+segmentAngle+'deg)'; 
-        wheel.style.transform       = 'rotate('+segmentAngle+'deg)'; 
-      
-        // Display the result
-        console.log("Ваш приз "+prize)
 
-        $('.backdrop').one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(event) {
+        // Add a transition directly to the wheel
+        wheel.style.webkitTransform = 'rotate(' + segmentAngle + 'deg)';
+        wheel.style.mozTransform = 'rotate(' + segmentAngle + 'deg)';
+        wheel.style.msTransform = 'rotate(' + segmentAngle + 'deg)';
+        wheel.style.oTransform = 'rotate(' + segmentAngle + 'deg)';
+        wheel.style.transform = 'rotate(' + segmentAngle + 'deg)';
+
+        // Display the result
+        console.log("Ваш приз " + prize)
+
+        $('.backdrop').one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function (event) {
           //После того как колесо прокрутится - что-то показать пользователю
         });
       }
     });
-    document.getElementById("spin").addEventListener("click", function( event ) {
+    document.getElementById("spin").addEventListener("click", function (event) {
 
 
-      }, false);
+    }, false);
 
-    
+
 
   }
 });
