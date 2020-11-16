@@ -623,10 +623,10 @@ $(function () {
         $(".tours_day").addClass("active")
         toursPackage.removeClass("active")
         toursDay.addClass("active")
+        header-text.addClass("hidden")
       } else if (!$(".tours_day").hasClass("active")) {
         $(".desktop-header__wrapper").addClass("backgroundActive")
         $(".tours_day").addClass("active")
-        toursDay.addClass("active")
       } else {
         $(".desktop-header__wrapper").removeClass("backgroundActive")
         $(".tours_day").removeClass("active")
