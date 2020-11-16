@@ -6496,10 +6496,6 @@ margin-right: -32px;
   width: 50%;
 }
 
-.vehicle-fleet__right {
-  width: 50%;
-}
-
 .vehicle-fleet__title {
   margin: 0;
   font-family: 'Roboto Slab', sans-serif;
@@ -6522,12 +6518,16 @@ margin-right: -32px;
   }
 }
 
-.vehicle-fleet__right {
-  position: relative;
+.vehicle-fleet__right-inner {
   display: flex;
   flex-direction: column;
   border-radius: 12px;
   overflow: hidden;
+}
+
+.vehicle-fleet__right {
+  width: 50%;
+  position: relative;
 }
 
 .vehicle-fleet__right img {
@@ -6618,6 +6618,12 @@ margin-right: -32px;
     margin-bottom: 24px;
     width: 100%;
   }
+  .vehicle-fleet__wrap-btn {
+    display: none;
+  }
+  .vehicle-fleet__right {
+    min-width: 256px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -6663,6 +6669,7 @@ margin-right: -32px;
   margin-bottom: 96px;
   background-image: url(../img/travel-agencies/cooperate-bg.jpg);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   padding-top: 56px;
   padding-bottom: 36px;
 }
@@ -6790,11 +6797,21 @@ margin-right: -32px;
   }
 }
 
+.cooperate__text--mobile {
+  display: none;
+}
+
 .cooperate__form-title--mobile {
   display: none;
 }
 
 @media screen and (max-width: 860px) {
+  .cooperate {
+    padding-bottom: 0;
+  }
+  .cooperate__text--mobile {
+    display: block;
+  }
   .cooperate__form-title {
     display: none;
   }
