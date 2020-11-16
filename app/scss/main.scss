@@ -5217,6 +5217,7 @@ header .desktop-header__line-bottom--tour {
 .answers-questions__items {
   // display: flex;
   margin-right: -32px;
+  user-select: auto !important;
 }
 .answers-questions__items .slick-track {
   display: flex;
@@ -5871,6 +5872,7 @@ margin-right: -32px;
 .our-photographers__items {
   // display: flex;
   margin-bottom: 32px;
+  user-select: auto !important;
 }
 
 .our-photographers__item {
@@ -5999,6 +6001,7 @@ margin-right: -32px;
 }
 .our-transport__items {
   // display: flex;
+  user-select: auto !important;
 }
 .our-transport__items .slick-list {
   overflow: visible;
