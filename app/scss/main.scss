@@ -11,6 +11,7 @@ body {
   line-height: 150%;
   font-family: 'Inter', sans-serif;
   letter-spacing: 0.02em;
+  overflow: hidden;
 }
 
 html {
@@ -2748,6 +2749,7 @@ header .desktop-header__line-bottom--tour {
 
 .slick-slider .slick-list {
   overflow: hidden;
+  z-index: 2;
 }
 
 .simple-link--reviews {
@@ -4042,7 +4044,7 @@ header .desktop-header__line-bottom--tour {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #000;
+  color: #93A0AD;
   width: 280px;
   height: 48px;
 }
@@ -4165,9 +4167,10 @@ header .desktop-header__line-bottom--tour {
     line-height: 120%;
     color: #FFFFFF;
     text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.11);
-    margin-bottom: 8px;
     text-align: center;
-    max-width: 220px;
+    padding: 24px;
+    position: absolute;
+    bottom: -16px;
   }
    .header-text__teriberka-title-wrap--head .header-text__teriberka-title-h2-mobile{
      margin: 0;
@@ -4191,7 +4194,7 @@ header .desktop-header__line-bottom--tour {
     margin-right: auto;
   }
   .header-text__teriberka-img {
-    border-radius: 11;
+    border-radius: 11px;
     position: relative;
     margin-bottom: 0;
   }
@@ -4225,9 +4228,9 @@ header .desktop-header__line-bottom--tour {
   .discounts__title {
     font-size: 16px;
   }
-  .discounts__item {
-    margin-bottom: 0;
-  }
+  // .discounts__item {
+  //   margin-bottom: 0;
+  // }
   .discounts__item:hover {
     transform: none;
   }
@@ -4245,14 +4248,24 @@ header .desktop-header__line-bottom--tour {
     margin-top: 8px;
   }
   
-  .header-text__teriberka-title-wrap--head {
-    bottom: 34px;
-    right: -55px;
-  }
+  // .header-text__teriberka-title-wrap--head {
+  //   bottom: 34px;
+  //   right: -55px;
+  // }
   .desktop-hideh .about-teriberka__right-block {
     border-radius: 0;
     width: 100%;
     transform: scale(1.08);
+  }
+  .header-text__teriberka-wrap .header-text__teriberka-inp {
+    margin-bottom: 8px;
+  }
+  .header-text__teriberka-wrap .btn-orange-shadow {
+    width: 100%;
+    margin-top: 0;
+  }
+  .header-text__teriberka-right .header-text__teriberka-img {
+    border-radius: 0;
   }
 }
 
@@ -4496,6 +4509,10 @@ header .desktop-header__line-bottom--tour {
   border-radius: 8px;
   padding: 13px 16px;
   margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #93A0AD;
 }
 
 .about-teriberka__name::placeholder {
@@ -4513,6 +4530,10 @@ header .desktop-header__line-bottom--tour {
   border: 1px solid #E9ECEF;
   border-radius: 8px;
   padding: 13px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #93A0AD;
 }
 
 .about-teriberka__phone::placeholder {
@@ -4949,7 +4970,7 @@ header .desktop-header__line-bottom--tour {
   position: relative;
   margin-bottom: 96px;
   display: flex;
-  max-height: 651px;
+  min-height: 660px;
 }
 
 .route-map img {
@@ -4958,7 +4979,7 @@ header .desktop-header__line-bottom--tour {
 
 .route-map__block {
   position: absolute;
-  top: calc(50% - 122px);
+  top: calc(50% - 260px);
   left: 160px;
   padding: 40px 32px;
   background: #FFFFFF;
@@ -4966,7 +4987,7 @@ header .desktop-header__line-bottom--tour {
   box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 20px rgba(5, 15, 41, 0.15);
   border-radius: 12px;
   width: 384px;
-  height: 244px;
+  height: auto;
 }
 
 .route-map__title {
@@ -4987,6 +5008,25 @@ header .desktop-header__line-bottom--tour {
   color: #242440;
 }
 
+.route-map__text--top {
+  margin-bottom: 16px;
+}
+
+.route-map__text--list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.route-map__text-wrap {
+  margin-bottom: 16px;
+}
+
 @media screen and (max-width: 1240px) {
   .route-map {
     height: 540px;
@@ -5003,6 +5043,9 @@ header .desktop-header__line-bottom--tour {
 }
 
 @media screen and (max-width: 560px) {
+  .route-map {
+    min-height: 1000px;
+  }
   .route-map__block {
     top: 14px;
     left: 0;
@@ -5134,9 +5177,29 @@ header .desktop-header__line-bottom--tour {
   padding: 56px 0 32px;
   overflow: visible;
 }
+
+.header-text__teriberka-right--mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1080px) {
+  .program-tour__inner-right {
+    margin-top: 32px;
+  }
+  .header-text__teriberka-right--program {
+    display: none;
+  }
+  .header-text__teriberka-right--mobile {
+    display: block;
+  }
   .program-tour__inner {
     flex-direction: column;
+  }
+  .header-text__teriberka-right--program {
+    margin-left: 0;
+  }
+  .about-teriberka__right-block--pd {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 860px) {
@@ -5144,9 +5207,8 @@ header .desktop-header__line-bottom--tour {
     font-size: 14px;
   }
   .program-tour__inner-right {
-    order: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .program-tour__inner-right .header-text__teriberka-right--program {
     margin-left: 0;
@@ -5169,9 +5231,9 @@ header .desktop-header__line-bottom--tour {
     left: 82px;
     bottom: 48px;
   }
-  .program-tour__inner-left{
-    order: 2;
-  }
+  // .program-tour__inner-left{
+  //   order: 2;
+  // }
   .program-tour__inner {
     margin-top: 24px;
   }
@@ -5189,9 +5251,9 @@ header .desktop-header__line-bottom--tour {
   .program-tour__wrapper {
     margin-bottom: 16px;
   }
-  .about-teriberka__right-block--pd {
-    display: none;
-  }
+  // .about-teriberka__right-block--pd {
+  //   display: none;
+  // }
 }
 
 @media screen and (max-width: 400px) {
@@ -5205,6 +5267,9 @@ header .desktop-header__line-bottom--tour {
   }
   .photos-inner__btn-mobile {
     display: block;
+  }
+  .header-text__teriberka-right--program {
+    width: auto;
   }
 }
 // /Программа тура
@@ -5227,7 +5292,8 @@ header .desktop-header__line-bottom--tour {
   box-sizing: border-box;
   overflow: hidden;
   min-width: 544px;
-  height: max-content;
+  // height: max-content;
+  min-height: 260px;
   border: 1px solid rgba(36, 36, 64, 0.02);
   box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 4px 36px rgba(5, 15, 41, 0.15);
   border-radius: 12px;
@@ -5511,6 +5577,15 @@ header .desktop-header__line-bottom--tour {
     position: absolute;
     top: 50%;
     left: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video-tour__btn-play {
+    width: 50px;
+    height: 50px;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
   }
 }
 // /Ответы на 25 самых популярных вопросов
@@ -5867,6 +5942,7 @@ margin-right: -32px;
 .our-photographers {
   margin-top: 96px;
   margin-bottom: 96px;
+  overflow: hidden;
 }
 
 .our-photographers__items {
@@ -5993,11 +6069,18 @@ margin-right: -32px;
     height: 155px;
   }
 }
+
+@media screen and (max-width: 340px) {
+  .our-photographers__left img {
+    width: 100%;
+  }
+}
 // /Наши гиды-фотографы
 
 // Наш транспорт
 .our-transport {
   margin-bottom: 96px;
+  overflow: hidden;
 }
 .our-transport__items {
   // display: flex;
