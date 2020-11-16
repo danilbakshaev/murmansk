@@ -313,7 +313,7 @@
           <h3 class="included-price__title">Сборная группа на микроавтобусе</h3>
           <span class="included-price__quantity">до 18-ти человек</span>
         </button>
-        <button class="included-price__btn included-price__btn--right included-price__btn--active">
+        <button class="included-price__btn included-price__btn--right">
           <h3 class="included-price__title">Индивидуальный джип-тур</h3>
           <span class="included-price__quantity">2-4 человека</span>
         </button>
@@ -515,9 +515,9 @@
   <!-- /Фотографии из тура в Териберку -->
 
   <!-- Карта маршрута -->
-  <section class="route-map">
+  <section class="route-map route-map--teriberka">
     <img src="/img/route-map.jpg" alt="">
-      <div class="route-map__block container">
+      <div class="route-map__block route-map__block--teriberka container">
         <h3 class="route-map__title">Карта маршрута</h3>
         <p class="route-map__text">
           По дороге в Териберку (130 километров)
@@ -671,7 +671,7 @@
           </div>
         </div>
         <div class="program-tour__inner-right">
-          <div class="about-teriberka__right-block about-teriberka__right-block--pd">
+          <div class="about-teriberka__right-block about-teriberka__right-block--pd about-teriberka__right-block--mobile">
 
             <div class="about-teriberka__card">
               <h3 class="about-teriberka__card-title">Оставьте заявку,
@@ -1224,262 +1224,444 @@
   <!-- Наши гиды-фотографы -->
   <section class="our-photographers">
     <div class="container">
-      <div class="title-sections">
-        <h3 class="title-sections__title">Наши гиды-фотографы</h3>
-      </div>
-      <div class="our-photographers__items">
-        <div class="our-photographers__item">
-          <div class="our-photographers__left">
-            <img src="/img/photographers.jpg" alt="">
-          </div>
-          <div class="our-photographers__right">
-            <h4 class="our-photographers__title">Ольга</h4>
-            <p class="our-photographers__text">
-              Стремящиеся вытеснить традиционное
-              производство, нанотехнологии могут быть преданы социально-демократической анафеме
-            </p>
-            <div class="our-photographers__wrap">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M4.30769 6.03327C3.03319 6.03327 2 6.92684 2 8.02911V20.0042C2 21.1064 3.03319 22 4.30769 22H19.6923C20.9668 22 22 21.1064 22 20.0042V8.02911C22 6.92684 20.9668 6.03327 19.6923 6.03327L15 6L15.5 2L15.1429 6H8.84604L8.5 2L9 6L4.30769 6.03327Z"
-                  stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
-                <circle cx="12" cy="14" r="4" stroke="#93A0AD" stroke-width="2" />
-                <path
-                  d="M15.5 1.66667C15.5 2.1269 15.1269 2.5 14.6667 2.5L9.33333 2.5C8.8731 2.5 8.5 2.1269 8.5 1.66667C8.5 1.57462 8.57462 1.5 8.66667 1.5L15.3333 1.5C15.4254 1.5 15.5 1.57462 15.5 1.66667Z"
-                  fill="#93A0AD" stroke="#93A0AD" />
-              </svg>
-              <div>
-                <span class="our-photographers__count">8 лет</span>
-                <p class="our-photographers__description">стажа в фотосъемке</p>
-              </div>
-            </div>
-
-            <div class="our-photographers__wrap">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M22 8.02911C22 6.92684 20.9668 6.03327 19.6923 6.03327L16.2857 6.00001L15.1429 6H8.84018L7.71429 6.00001L4.30769 6.03327C3.03319 6.03327 2 6.92684 2 8.02911V20.0042C2 21.1064 3.03319 22 4.30769 22H19.6923C20.9668 22 22 21.1064 22 20.0042V8.02911Z"
-                  stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
-                <path
-                  d="M15.4288 3.5L8.58535 3.5C8.79127 2.9174 9.34689 2.5 10 2.5L14.05 2.5C14.6937 2.5 15.2395 2.91948 15.4288 3.5Z"
-                  stroke="#93A0AD" />
-                <rect x="18.5" y="17.5" width="7" height="1" rx="0.5" transform="rotate(180 18.5 17.5)"
-                  stroke="#93A0AD" />
-              </svg>
-              <div>
-                <span class="our-photographers__count">234 тура</span>
-                <p class="our-photographers__description">провела с 2016 года</p>
-              </div>
-            </div>
-
-            <div class="our-photographers__wrap">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M22.0001 5.02911C22.0001 3.92684 20.9669 3.03327 19.6924 3.03327L16.2858 3.00001L15.1429 3H8.84025L7.71436 3.00001L4.30776 3.03327C3.03326 3.03327 2.00007 3.92684 2.00007 5.02911V17.0042L2.00012 22C3.50012 21 5.00012 20 7.00007 19H9.00007L19.6924 19C20.9669 19 22.0001 18.1064 22.0001 17.0042V5.02911Z"
-                  stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
-                <rect x="15.5" y="9.5" width="10" height="1" rx="0.5" transform="rotate(180 15.5 9.5)"
-                  stroke="#93A0AD" />
-                <rect x="10.5" y="13.5" width="5" height="1" rx="0.5" transform="rotate(180 10.5 13.5)"
-                  stroke="#93A0AD" />
-              </svg>
-              <div>
-                <span class="our-photographers__count">Английский</span>
-                <p class="our-photographers__description">владение языком</p>
-              </div>
-            </div>
-            <a class="simple-link simple-link--photographers" href="#">
-              Смотреть как фотографирует Ольга
-              <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_ii)">
-                  <ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="#0FC4AC"></ellipse>
-                </g>
-                <path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white" stroke-linecap="round"
-                  stroke-linejoin="round"></path>
-                <defs>
-                  <filter id="filter0_ii" x="0" y="0" width="26" height="27" filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha"></feColorMatrix>
-                    <feOffset dy="1"></feOffset>
-                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
-                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"></feColorMatrix>
-                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha"></feColorMatrix>
-                    <feOffset dy="-1"></feOffset>
-                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
-                    <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow"></feBlend>
-                  </filter>
-                </defs>
-              </svg>
-            </a>
-            <a class="simple-link simple-link--photographers simple-link--photographers-mobile" href="#">
-              Смотреть ее работы
-              <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_ii)">
-                  <ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="#0FC4AC"></ellipse>
-                </g>
-                <path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white" stroke-linecap="round"
-                  stroke-linejoin="round"></path>
-                <defs>
-                  <filter id="filter0_ii" x="0" y="0" width="26" height="27" filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha"></feColorMatrix>
-                    <feOffset dy="1"></feOffset>
-                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
-                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"></feColorMatrix>
-                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha"></feColorMatrix>
-                    <feOffset dy="-1"></feOffset>
-                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
-                    <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow"></feBlend>
-                  </filter>
-                </defs>
-              </svg>
-            </a>
-          </div>
+        <div class="title-sections">
+            <h3 class="title-sections__title title-sections__title--reset">Наши гиды-фотографы</h3>
         </div>
-        <div class="our-photographers__item">
-          <div class="our-photographers__left">
-            <img src="/img/photographers2.jpg" alt="">
-          </div>
-          <div class="our-photographers__right">
-            <h4 class="our-photographers__title">Дмитрий</h4>
-            <p class="our-photographers__text">
-              Стремящиеся вытеснить традиционное
-              производство, нанотехнологии могут быть преданы социально-демократической анафеме
-            </p>
-            <div class="our-photographers__wrap">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M4.30769 6.03327C3.03319 6.03327 2 6.92684 2 8.02911V20.0042C2 21.1064 3.03319 22 4.30769 22H19.6923C20.9668 22 22 21.1064 22 20.0042V8.02911C22 6.92684 20.9668 6.03327 19.6923 6.03327L15 6L15.5 2L15.1429 6H8.84604L8.5 2L9 6L4.30769 6.03327Z"
-                  stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
-                <circle cx="12" cy="14" r="4" stroke="#93A0AD" stroke-width="2" />
-                <path
-                  d="M15.5 1.66667C15.5 2.1269 15.1269 2.5 14.6667 2.5L9.33333 2.5C8.8731 2.5 8.5 2.1269 8.5 1.66667C8.5 1.57462 8.57462 1.5 8.66667 1.5L15.3333 1.5C15.4254 1.5 15.5 1.57462 15.5 1.66667Z"
-                  fill="#93A0AD" stroke="#93A0AD" />
-              </svg>
-              <div>
-                <span class="our-photographers__count">8 лет</span>
-                <p class="our-photographers__description">стажа в фотосъемке</p>
-              </div>
-            </div>
+        <div class="our-photographers__items">
 
-            <div class="our-photographers__wrap">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M22 8.02911C22 6.92684 20.9668 6.03327 19.6923 6.03327L16.2857 6.00001L15.1429 6H8.84018L7.71429 6.00001L4.30769 6.03327C3.03319 6.03327 2 6.92684 2 8.02911V20.0042C2 21.1064 3.03319 22 4.30769 22H19.6923C20.9668 22 22 21.1064 22 20.0042V8.02911Z"
-                  stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
-                <path
-                  d="M15.4288 3.5L8.58535 3.5C8.79127 2.9174 9.34689 2.5 10 2.5L14.05 2.5C14.6937 2.5 15.2395 2.91948 15.4288 3.5Z"
-                  stroke="#93A0AD" />
-                <rect x="18.5" y="17.5" width="7" height="1" rx="0.5" transform="rotate(180 18.5 17.5)"
-                  stroke="#93A0AD" />
-              </svg>
-              <div>
-                <span class="our-photographers__count">234 тура</span>
-                <p class="our-photographers__description">провела с 2016 года</p>
-              </div>
-            </div>
+            <div class="our-photographers__item">
+                <div class="our-photographers__left">
+                    <img src="/img/photographers.jpg" alt="">
+                </div>
+                <div class="our-photographers__right">
+                    <h4 class="our-photographers__title">Ольга</h4>
+                    <p class="our-photographers__text">
+                        Стремящиеся вытеснить традиционное
+                        производство, нанотехнологии могут быть преданы социально-демократической анафеме
+                    </p>
+                    <div class="our-photographers__wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.30769 6.03327C3.03319 6.03327 2 6.92684 2 8.02911V20.0042C2 21.1064 3.03319 22 4.30769 22H19.6923C20.9668 22 22 21.1064 22 20.0042V8.02911C22 6.92684 20.9668 6.03327 19.6923 6.03327L15 6L15.5 2L15.1429 6H8.84604L8.5 2L9 6L4.30769 6.03327Z"
+                                stroke="#93A0AD" stroke-width="2" stroke-linejoin="round"></path>
+                            <circle cx="12" cy="14" r="4" stroke="#93A0AD" stroke-width="2"></circle>
+                            <path
+                                d="M15.5 1.66667C15.5 2.1269 15.1269 2.5 14.6667 2.5L9.33333 2.5C8.8731 2.5 8.5 2.1269 8.5 1.66667C8.5 1.57462 8.57462 1.5 8.66667 1.5L15.3333 1.5C15.4254 1.5 15.5 1.57462 15.5 1.66667Z"
+                                fill="#93A0AD" stroke="#93A0AD"></path>
+                        </svg>
+                        <div>
+                            <span class="our-photographers__count">8 лет</span>
+                            <p class="our-photographers__description">стажа в фотосъемке</p>
+                        </div>
+                    </div>
 
-            <div class="our-photographers__wrap">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M22.0001 5.02911C22.0001 3.92684 20.9669 3.03327 19.6924 3.03327L16.2858 3.00001L15.1429 3H8.84025L7.71436 3.00001L4.30776 3.03327C3.03326 3.03327 2.00007 3.92684 2.00007 5.02911V17.0042L2.00012 22C3.50012 21 5.00012 20 7.00007 19H9.00007L19.6924 19C20.9669 19 22.0001 18.1064 22.0001 17.0042V5.02911Z"
-                  stroke="#93A0AD" stroke-width="2" stroke-linejoin="round" />
-                <rect x="15.5" y="9.5" width="10" height="1" rx="0.5" transform="rotate(180 15.5 9.5)"
-                  stroke="#93A0AD" />
-                <rect x="10.5" y="13.5" width="5" height="1" rx="0.5" transform="rotate(180 10.5 13.5)"
-                  stroke="#93A0AD" />
-              </svg>
-              <div>
-                <span class="our-photographers__count">Английский</span>
-                <p class="our-photographers__description">владение языком</p>
-              </div>
+                    <div class="our-photographers__wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 8.02911C22 6.92684 20.9668 6.03327 19.6923 6.03327L16.2857 6.00001L15.1429 6H8.84018L7.71429 6.00001L4.30769 6.03327C3.03319 6.03327 2 6.92684 2 8.02911V20.0042C2 21.1064 3.03319 22 4.30769 22H19.6923C20.9668 22 22 21.1064 22 20.0042V8.02911Z"
+                                stroke="#93A0AD" stroke-width="2" stroke-linejoin="round"></path>
+                            <path
+                                d="M15.4288 3.5L8.58535 3.5C8.79127 2.9174 9.34689 2.5 10 2.5L14.05 2.5C14.6937 2.5 15.2395 2.91948 15.4288 3.5Z"
+                                stroke="#93A0AD"></path>
+                            <rect x="18.5" y="17.5" width="7" height="1" rx="0.5" transform="rotate(180 18.5 17.5)"
+                                stroke="#93A0AD"></rect>
+                        </svg>
+                        <div>
+                            <span class="our-photographers__count">234 тура</span>
+                            <p class="our-photographers__description">провела с 2016 года</p>
+                        </div>
+                    </div>
+
+                    <div class="our-photographers__wrap our-photographers__wrap--mb">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.0001 5.02911C22.0001 3.92684 20.9669 3.03327 19.6924 3.03327L16.2858 3.00001L15.1429 3H8.84025L7.71436 3.00001L4.30776 3.03327C3.03326 3.03327 2.00007 3.92684 2.00007 5.02911V17.0042L2.00012 22C3.50012 21 5.00012 20 7.00007 19H9.00007L19.6924 19C20.9669 19 22.0001 18.1064 22.0001 17.0042V5.02911Z"
+                                stroke="#93A0AD" stroke-width="2" stroke-linejoin="round"></path>
+                            <rect x="15.5" y="9.5" width="10" height="1" rx="0.5" transform="rotate(180 15.5 9.5)"
+                                stroke="#93A0AD"></rect>
+                            <rect x="10.5" y="13.5" width="5" height="1" rx="0.5" transform="rotate(180 10.5 13.5)"
+                                stroke="#93A0AD"></rect>
+                        </svg>
+                        <div>
+                            <span class="our-photographers__count">Английский</span>
+                            <p class="our-photographers__description">владение языком</p>
+                        </div>
+                    </div>
+                    <a class="simple-link simple-link--photographers" href="#">
+                        Смотреть как фотографирует Ольга
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_ii)">
+                                <ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="#0FC4AC"></ellipse>
+                            </g>
+                            <path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <defs>
+                                <filter id="filter0_ii" x="0" y="0" width="26" height="27"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                        result="shape"></feBlend>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="1"></feOffset>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                    </feComposite>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0">
+                                    </feColorMatrix>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="-1"></feOffset>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                    </feComposite>
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                                    <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow">
+                                    </feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="simple-link simple-link--photographers simple-link--photographers-mobile" href="#">
+                        Смотреть ее работы
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_ii)">
+                                <ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="#0FC4AC"></ellipse>
+                            </g>
+                            <path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <defs>
+                                <filter id="filter0_ii" x="0" y="0" width="26" height="27"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                        result="shape"></feBlend>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="1"></feOffset>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                    </feComposite>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0">
+                                    </feColorMatrix>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="-1"></feOffset>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                    </feComposite>
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                                    <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow">
+                                    </feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
             </div>
-            <a class="simple-link simple-link--photographers" href="#">
-              Смотреть как фотографирует Дмитрий
-              <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_ii)">
-                  <ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="#0FC4AC"></ellipse>
-                </g>
-                <path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white" stroke-linecap="round"
-                  stroke-linejoin="round"></path>
-                <defs>
-                  <filter id="filter0_ii" x="0" y="0" width="26" height="27" filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha"></feColorMatrix>
-                    <feOffset dy="1"></feOffset>
-                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
-                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"></feColorMatrix>
-                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha"></feColorMatrix>
-                    <feOffset dy="-1"></feOffset>
-                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
-                    <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow"></feBlend>
-                  </filter>
-                </defs>
-              </svg>
-            </a>
-            <a class="simple-link simple-link--photographers simple-link--photographers-mobile" href="#">
-              Смотреть его работы
-              <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_ii)">
-                  <ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="#0FC4AC"></ellipse>
-                </g>
-                <path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white" stroke-linecap="round"
-                  stroke-linejoin="round"></path>
-                <defs>
-                  <filter id="filter0_ii" x="0" y="0" width="26" height="27" filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha"></feColorMatrix>
-                    <feOffset dy="1"></feOffset>
-                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
-                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"></feColorMatrix>
-                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha"></feColorMatrix>
-                    <feOffset dy="-1"></feOffset>
-                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
-                    <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow"></feBlend>
-                  </filter>
-                </defs>
-              </svg>
-            </a>
-          </div>
+            <div class="our-photographers__item">
+                <div class="our-photographers__left">
+                    <img src="/img/photographers2.jpg" alt="">
+                </div>
+                <div class="our-photographers__right">
+                    <h4 class="our-photographers__title">Дмитрий</h4>
+                    <p class="our-photographers__text">
+                        Стремящиеся вытеснить традиционное
+                        производство, нанотехнологии могут быть преданы социально-демократической анафеме
+                    </p>
+                    <div class="our-photographers__wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.30769 6.03327C3.03319 6.03327 2 6.92684 2 8.02911V20.0042C2 21.1064 3.03319 22 4.30769 22H19.6923C20.9668 22 22 21.1064 22 20.0042V8.02911C22 6.92684 20.9668 6.03327 19.6923 6.03327L15 6L15.5 2L15.1429 6H8.84604L8.5 2L9 6L4.30769 6.03327Z"
+                                stroke="#93A0AD" stroke-width="2" stroke-linejoin="round"></path>
+                            <circle cx="12" cy="14" r="4" stroke="#93A0AD" stroke-width="2"></circle>
+                            <path
+                                d="M15.5 1.66667C15.5 2.1269 15.1269 2.5 14.6667 2.5L9.33333 2.5C8.8731 2.5 8.5 2.1269 8.5 1.66667C8.5 1.57462 8.57462 1.5 8.66667 1.5L15.3333 1.5C15.4254 1.5 15.5 1.57462 15.5 1.66667Z"
+                                fill="#93A0AD" stroke="#93A0AD"></path>
+                        </svg>
+                        <div>
+                            <span class="our-photographers__count">8 лет</span>
+                            <p class="our-photographers__description">стажа в фотосъемке</p>
+                        </div>
+                    </div>
+
+                    <div class="our-photographers__wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 8.02911C22 6.92684 20.9668 6.03327 19.6923 6.03327L16.2857 6.00001L15.1429 6H8.84018L7.71429 6.00001L4.30769 6.03327C3.03319 6.03327 2 6.92684 2 8.02911V20.0042C2 21.1064 3.03319 22 4.30769 22H19.6923C20.9668 22 22 21.1064 22 20.0042V8.02911Z"
+                                stroke="#93A0AD" stroke-width="2" stroke-linejoin="round"></path>
+                            <path
+                                d="M15.4288 3.5L8.58535 3.5C8.79127 2.9174 9.34689 2.5 10 2.5L14.05 2.5C14.6937 2.5 15.2395 2.91948 15.4288 3.5Z"
+                                stroke="#93A0AD"></path>
+                            <rect x="18.5" y="17.5" width="7" height="1" rx="0.5" transform="rotate(180 18.5 17.5)"
+                                stroke="#93A0AD"></rect>
+                        </svg>
+                        <div>
+                            <span class="our-photographers__count">234 тура</span>
+                            <p class="our-photographers__description">провела с 2016 года</p>
+                        </div>
+                    </div>
+
+                    <div class="our-photographers__wrap our-photographers__wrap--mb">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.0001 5.02911C22.0001 3.92684 20.9669 3.03327 19.6924 3.03327L16.2858 3.00001L15.1429 3H8.84025L7.71436 3.00001L4.30776 3.03327C3.03326 3.03327 2.00007 3.92684 2.00007 5.02911V17.0042L2.00012 22C3.50012 21 5.00012 20 7.00007 19H9.00007L19.6924 19C20.9669 19 22.0001 18.1064 22.0001 17.0042V5.02911Z"
+                                stroke="#93A0AD" stroke-width="2" stroke-linejoin="round"></path>
+                            <rect x="15.5" y="9.5" width="10" height="1" rx="0.5" transform="rotate(180 15.5 9.5)"
+                                stroke="#93A0AD"></rect>
+                            <rect x="10.5" y="13.5" width="5" height="1" rx="0.5" transform="rotate(180 10.5 13.5)"
+                                stroke="#93A0AD"></rect>
+                        </svg>
+                        <div>
+                            <span class="our-photographers__count">Английский</span>
+                            <p class="our-photographers__description">владение языком</p>
+                        </div>
+                    </div>
+                    <a class="simple-link simple-link--photographers" href="#">
+                        Смотреть как фотографирует Дмитрий
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_ii)">
+                                <ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="#0FC4AC"></ellipse>
+                            </g>
+                            <path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <defs>
+                                <filter id="filter0_ii" x="0" y="0" width="26" height="27"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                        result="shape"></feBlend>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="1"></feOffset>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                    </feComposite>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0">
+                                    </feColorMatrix>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="-1"></feOffset>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                    </feComposite>
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                                    <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow">
+                                    </feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="simple-link simple-link--photographers simple-link--photographers-mobile" href="#">
+                        Смотреть его работы
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_ii)">
+                                <ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="#0FC4AC"></ellipse>
+                            </g>
+                            <path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <defs>
+                                <filter id="filter0_ii" x="0" y="0" width="26" height="27"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                        result="shape"></feBlend>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="1"></feOffset>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                    </feComposite>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0">
+                                    </feColorMatrix>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="-1"></feOffset>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                    </feComposite>
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                                    <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow">
+                                    </feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="our-photographers__item">
+                <div class="our-photographers__left">
+                    <img src="/img/photographers.jpg" alt="">
+                </div>
+                <div class="our-photographers__right">
+                    <h4 class="our-photographers__title">Ольга</h4>
+                    <p class="our-photographers__text">
+                        Стремящиеся вытеснить традиционное
+                        производство, нанотехнологии могут быть преданы социально-демократической анафеме
+                    </p>
+                    <div class="our-photographers__wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.30769 6.03327C3.03319 6.03327 2 6.92684 2 8.02911V20.0042C2 21.1064 3.03319 22 4.30769 22H19.6923C20.9668 22 22 21.1064 22 20.0042V8.02911C22 6.92684 20.9668 6.03327 19.6923 6.03327L15 6L15.5 2L15.1429 6H8.84604L8.5 2L9 6L4.30769 6.03327Z"
+                                stroke="#93A0AD" stroke-width="2" stroke-linejoin="round"></path>
+                            <circle cx="12" cy="14" r="4" stroke="#93A0AD" stroke-width="2"></circle>
+                            <path
+                                d="M15.5 1.66667C15.5 2.1269 15.1269 2.5 14.6667 2.5L9.33333 2.5C8.8731 2.5 8.5 2.1269 8.5 1.66667C8.5 1.57462 8.57462 1.5 8.66667 1.5L15.3333 1.5C15.4254 1.5 15.5 1.57462 15.5 1.66667Z"
+                                fill="#93A0AD" stroke="#93A0AD"></path>
+                        </svg>
+                        <div>
+                            <span class="our-photographers__count">8 лет</span>
+                            <p class="our-photographers__description">стажа в фотосъемке</p>
+                        </div>
+                    </div>
+
+                    <div class="our-photographers__wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 8.02911C22 6.92684 20.9668 6.03327 19.6923 6.03327L16.2857 6.00001L15.1429 6H8.84018L7.71429 6.00001L4.30769 6.03327C3.03319 6.03327 2 6.92684 2 8.02911V20.0042C2 21.1064 3.03319 22 4.30769 22H19.6923C20.9668 22 22 21.1064 22 20.0042V8.02911Z"
+                                stroke="#93A0AD" stroke-width="2" stroke-linejoin="round"></path>
+                            <path
+                                d="M15.4288 3.5L8.58535 3.5C8.79127 2.9174 9.34689 2.5 10 2.5L14.05 2.5C14.6937 2.5 15.2395 2.91948 15.4288 3.5Z"
+                                stroke="#93A0AD"></path>
+                            <rect x="18.5" y="17.5" width="7" height="1" rx="0.5" transform="rotate(180 18.5 17.5)"
+                                stroke="#93A0AD"></rect>
+                        </svg>
+                        <div>
+                            <span class="our-photographers__count">234 тура</span>
+                            <p class="our-photographers__description">провела с 2016 года</p>
+                        </div>
+                    </div>
+
+                    <div class="our-photographers__wrap our-photographers__wrap--mb">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.0001 5.02911C22.0001 3.92684 20.9669 3.03327 19.6924 3.03327L16.2858 3.00001L15.1429 3H8.84025L7.71436 3.00001L4.30776 3.03327C3.03326 3.03327 2.00007 3.92684 2.00007 5.02911V17.0042L2.00012 22C3.50012 21 5.00012 20 7.00007 19H9.00007L19.6924 19C20.9669 19 22.0001 18.1064 22.0001 17.0042V5.02911Z"
+                                stroke="#93A0AD" stroke-width="2" stroke-linejoin="round"></path>
+                            <rect x="15.5" y="9.5" width="10" height="1" rx="0.5" transform="rotate(180 15.5 9.5)"
+                                stroke="#93A0AD"></rect>
+                            <rect x="10.5" y="13.5" width="5" height="1" rx="0.5" transform="rotate(180 10.5 13.5)"
+                                stroke="#93A0AD"></rect>
+                        </svg>
+                        <div>
+                            <span class="our-photographers__count">Английский</span>
+                            <p class="our-photographers__description">владение языком</p>
+                        </div>
+                    </div>
+                    <a class="simple-link simple-link--photographers" href="#">
+                        Смотреть как фотографирует Ольга
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_ii)">
+                                <ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="#0FC4AC"></ellipse>
+                            </g>
+                            <path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <defs>
+                                <filter id="filter0_ii" x="0" y="0" width="26" height="27"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                        result="shape"></feBlend>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="1"></feOffset>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                    </feComposite>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0">
+                                    </feColorMatrix>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="-1"></feOffset>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                    </feComposite>
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                                    <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow">
+                                    </feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="simple-link simple-link--photographers simple-link--photographers-mobile" href="#">
+                        Смотреть ее работы
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_ii)">
+                                <ellipse cx="13" cy="13.5" rx="13" ry="13.5" fill="#0FC4AC"></ellipse>
+                            </g>
+                            <path d="M15.1818 10L19 13.5M19 13.5L15.1818 17M19 13.5H7" stroke="white"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <defs>
+                                <filter id="filter0_ii" x="0" y="0" width="26" height="27"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                        result="shape"></feBlend>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="1"></feOffset>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                    </feComposite>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0">
+                                    </feColorMatrix>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="-1"></feOffset>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                                    </feComposite>
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                                    <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow">
+                                    </feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="btn-js">
-        <button type="button" class="prev-arrow prev-js-popular-destinations slick-arrow slick-disabled"
-          aria-disabled="true" style=""><svg width="20" height="12" viewBox="0 0 20 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 6H19M1 6L6 1M1 6L6 11" stroke="#0FC4AC" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round"></path>
-          </svg>
-        </button>
-        <button type="button" class="next-arrow next-js-popular-destinations slick-arrow" aria-disabled="false"
-          style=""><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 6L1 6M19 6L14 11M19 6L14 1" stroke="#0FC4AC" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round"></path>
-          </svg>
-        </button>
-      </div>
+        <div class="btn-js">
+            <button type="button" class="prev-arrow prev-js-guides slick-arrow slick-disabled" aria-disabled="true"
+                style=""><svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 6H19M1 6L6 1M1 6L6 11" stroke="#0FC4AC" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            <button type="button" class="next-arrow next-js-guides slick-arrow" aria-disabled="false" style=""><svg
+                    width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6L1 6M19 6L14 11M19 6L14 1" stroke="#0FC4AC" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+        </div>
     </div>
   </section>
   <!-- /Наши гиды-фотографы -->
@@ -1487,75 +1669,80 @@
   <!-- Наш транспорт -->
   <section class="our-transport">
     <div class="container">
-      <div class="title-sections">
-        <h3 class="title-sections__title">Наш транспорт</h3>
-      </div>
-      <div class="our-transport__items">
-        <div class="our-transport__item">
-          <div class="our-transport__left">
-            <img class="our-transport__images" src="/img/our-transport.png" alt="">
-            <div class="our-transport__wrap">
-              <span class="our-transport__count">16 мест</span>
-              <p class="our-transport__text">12-метровый автобус</p>
+        <div class="title-sections">
+            <h3 class="title-sections__title">Наш транспорт</h3>
+        </div>
+        <div class="our-transport__items">
+            <div class="our-transport__item">
+                <div class="our-transport__left">
+                    <img class="our-transport__images" src="/img/our-transport.png" alt="">
+                    <div class="our-transport__wrap">
+                        <span class="our-transport__count">16 мест</span>
+                        <p class="our-transport__text">12-метровый автобус</p>
+                    </div>
+                </div>
+                <div class="our-transport__right">
+                    <h4 class="our-transport__title">Mercedes Vito</h4>
+                    <p class="our-transport__desc">
+                        Туристический 12-метровый автобусобеспечивает
+                        высокий уровень комфорта и для пассажиров, и для водителя. Наша компания осуществляет на
+                        надежных,
+                        безопасных, комфортабельных автобусах туристического класса.
+                    </p>
+                    <p class="our-transport__desc">
+                        На маршрутах длительностью более 4-х часов всегда присутствует профессиональный экипаж
+                        из 2-х водителей.
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="our-transport__right">
-            <h4 class="our-transport__title">Mercedes Vito</h4>
-            <p class="our-transport__desc">
-              Туристический 12-метровый автобусобеспечивает
-              высокий уровень комфорта и для пассажиров, и для водителя. Наша компания осуществляет на надежных,
-              безопасных, комфортабельных автобусах туристического класса.
-            </p>
-            <p class="our-transport__desc">
-              На маршрутах длительностью более 4-х часов всегда присутствует профессиональный экипаж
-              из 2-х водителей.
-            </p>
-          </div>
-        </div>
-        <div class="our-transport__item">
-          <div class="our-transport__left">
-            <img class="our-transport__images" src="/img/our-transport2.png" alt="">
-            <div class="our-transport__wrap">
-              <span class="our-transport__count">5 мест</span>
-              <p class="our-transport__text">3-метровый джип</p>
+            <div class="our-transport__item">
+                <div class="our-transport__left">
+                    <img class="our-transport__images" src="/img/our-transport2.png" alt="">
+                    <div class="our-transport__wrap">
+                        <span class="our-transport__count">5 мест</span>
+                        <p class="our-transport__text">3-метровый джип</p>
+                    </div>
+                </div>
+                <div class="our-transport__right">
+                    <h4 class="our-transport__title">VitoVolvo XC90</h4>
+                    <p class="our-transport__desc">
+                        Туристический 12-метровый автобусобеспечивает
+                        высокий уровень комфорта и для пассажиров, и для водителя. Наша компания осуществляет на
+                        надежных,
+                        безопасных, комфортабельных автобусах туристического класса.
+                    </p>
+                    <p class="our-transport__desc">
+                        На маршрутах длительностью более 4-х часов всегда присутствует профессиональный экипаж
+                        из 2-х водителей.
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="our-transport__right">
-            <h4 class="our-transport__title">VitoVolvo XC90</h4>
-            <p class="our-transport__desc">
-              Туристический 12-метровый автобусобеспечивает
-              высокий уровень комфорта и для пассажиров, и для водителя. Наша компания осуществляет на надежных,
-              безопасных, комфортабельных автобусах туристического класса.
-            </p>
-            <p class="our-transport__desc">
-              На маршрутах длительностью более 4-х часов всегда присутствует профессиональный экипаж
-              из 2-х водителей.
-            </p>
-          </div>
         </div>
-      </div>
-      <div class="bottom-innerwrp">
-        <div class="btn-js">
-          <button type="button" class="prev-arrow prev-js-popular-destinations slick-arrow slick-disabled"
-            aria-disabled="true" style=""><svg width="20" height="12" viewBox="0 0 20 12" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 6H19M1 6L6 1M1 6L6 11" stroke="#0FC4AC" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round"></path>
-            </svg>
-          </button>
-          <button type="button" class="next-arrow next-js-popular-destinations slick-arrow" aria-disabled="false"
-            style=""><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M19 6L1 6M19 6L14 11M19 6L14 1" stroke="#0FC4AC" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round"></path>
-            </svg>
-          </button>
+        <div class="bottom-innerwrp">
+            <div class="btn-js">
+                <button type="button" class="prev-arrow prev-js-transport slick-arrow slick-disabled"
+                    aria-disabled="true" style=""><svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6H19M1 6L6 1M1 6L6 11" stroke="#0FC4AC" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <button type="button" class="next-arrow next-js-transport slick-arrow" aria-disabled="false"
+                    style=""><svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 6L1 6M19 6L14 11M19 6L14 1" stroke="#0FC4AC" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
-      </div>
     </div>
   </section>
   <!-- /Наш транспорт -->
 
-  @@include('./include/reviews.html')
+  <div class="reviews--index">
+    @@include('./include/reviews.html')
+  </div>
 
   @@include('./include/fortune.html')
 

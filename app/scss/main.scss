@@ -4182,6 +4182,9 @@ header .desktop-header__line-bottom--tour {
     position: absolute;
     bottom: 22px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .header-text__teriberka-left {
     width: 100%;
@@ -4453,6 +4456,7 @@ header .desktop-header__line-bottom--tour {
   background-position: center center;
   background-size: cover;
   padding: 32px;
+  margin-left: 120px;
 }
 
 .about-teriberka__right-block--sticky,
@@ -4635,6 +4639,7 @@ header .desktop-header__line-bottom--tour {
   border-radius: 12px;
   height: 72px;
   width: 33.33%;
+  min-width: 352px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4772,6 +4777,9 @@ header .desktop-header__line-bottom--tour {
   .included-price__btn {
     width: 50%;
   }
+  .included-price {
+    width: calc(100% + 352px);
+  }
 } 
 @media screen and (max-width: 1080px) {
   .title-sections--price {
@@ -4810,6 +4818,9 @@ header .desktop-header__line-bottom--tour {
 }
 
 @media screen and (max-width: 860px) {
+  .included-price {
+    width: auto;
+  }
   .included-price__inner {
     flex-direction: column;
   }
@@ -4842,6 +4853,12 @@ header .desktop-header__line-bottom--tour {
     margin-right: 0;
     margin-bottom: 8px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .included-price__btn {
+    min-width: 100%;
   }
 }
 // /Что включено в стоимость
@@ -4993,6 +5010,10 @@ header .desktop-header__line-bottom--tour {
   height: auto;
 }
 
+.route-map__block--teriberka {
+  top: calc(50% - 132px);
+}
+
 .route-map__title {
   margin: 0;
   font-family: 'Roboto Slab', sans-serif;
@@ -5056,6 +5077,9 @@ header .desktop-header__line-bottom--tour {
     margin: 0 14px;
     width: 100%;
     height: auto;
+  }
+  .route-map--teriberka {
+    min-height: 540px;
   }
 }
 // /Карта маршрута
@@ -5345,6 +5369,9 @@ header .desktop-header__line-bottom--tour {
 }
 
 @media screen and (max-width: 1080px) {
+  .about-teriberka__right-block--mobile {
+    display: none;
+  }
   .program-tour__inner-right {
     margin-top: 32px;
   }
@@ -14782,6 +14809,12 @@ background:  #0FC4AC;
 @media screen and (max-width: 1240px) {
   .request {
     padding: 122px 100px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .request--coming-dates {
+    display: none;
   }
 }
 
