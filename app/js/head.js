@@ -7,8 +7,8 @@ let inner = document.querySelector('.header-text__teriberka-inner');
 hide.addEventListener('click', function() {
  
     console.log('клик по топ 10 туров')
-    inner.style.visibility = "hidden";
     console.dir(hide)
+    inner.classList.add('header-text__teriberka-inner--hide');
   
     // inner.style.visibility = "visible";
     // console.log('второй клик')
@@ -17,5 +17,5 @@ hide.addEventListener('click', function() {
 
 hide2.addEventListener('click', function() {
   console.log('клик по топ 10 туров')
-  inner.style.visibility = "hidden";
+  inner.classList.add('header-text__teriberka-inner--hide');
 })
