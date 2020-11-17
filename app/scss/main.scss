@@ -14740,6 +14740,11 @@ background:  #0FC4AC;
   border: none;
   padding: 14px 16px;
   margin-right: 8px;
+  color: #93A0AD;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
 }
 
 .request__input::placeholder {
@@ -14920,6 +14925,252 @@ background:  #0FC4AC;
   }
 }
 /*----------/стили для блоков в гайдлайн--------------*/
+
+
+// Прогноз сияния
+.assessment {
+  margin-bottom: 96px;
+}
+
+.title-sections__title--aurora {
+  width: 100%;
+}
+
+.assessment__wrap {
+  max-width: 736px;
+  margin-bottom: 40px;
+}
+
+.assessment__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 16px;
+}
+
+.assessment__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+}
+
+.assessment-link {
+  text-decoration-color: #fff;
+  color: #0FC4AC;
+  transition: all linear 0.2s;
+  &:hover {
+    text-decoration-color: #0FC4AC;
+  }
+}
+
+.assessment__forecast-title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 32px;
+}
+
+.assessment__forecast-day {
+  margin-bottom: 75px;
+}
+
+.assessment__forecast-month {
+  margin-bottom: 75px;
+}
+
+.assessment__forecast-wrapper {
+  display: flex;
+  margin-right: -32px;
+}
+
+.assessment__forecast-left {
+  margin-right: 32px;
+}
+
+.assessment__forecast-item {
+  width: calc(50% - 32px);
+}
+
+.activity-graph__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 16px;
+}
+
+.activity-graph__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+}
+
+.activity-graph__schedule,
+.activity-graph__text {
+  max-width: 736px;
+}
+
+.real-time {
+  
+}
+
+.real-time__title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  color: #242440;
+  margin-bottom: 24px;
+}
+
+.real-time__inner {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  padding: 40px 0;
+}
+
+.real-time__inner img {
+  display: block;
+  object-fit: cover;
+  width: 449px;
+  height: 449px;
+}
+
+.weather {
+  position: relative;
+  display: flex;
+  &::after {
+    display: none;
+  }
+}
+
+.weather img {
+  display: block;
+  object-fit: cover;
+}
+
+.weather__block {
+  position: absolute;
+  top: calc(50% - 205px);
+  left: 160px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 8px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  max-width: 360px;
+  min-height: 411px;
+}
+
+.weather__block-title {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  color: #242440;
+  margin-bottom: 12px;
+}
+
+.weather__block-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+  margin-bottom: 48px;
+}
+
+.weather__block-two-wrapper {
+  display: flex;
+  margin-right: -30px;
+  margin-bottom: 40px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.weather__block-two-left {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather__block-two-right {
+  display: flex;
+  align-items: center;
+}
+
+.weather__block-two-right-span {
+  margin-left: 14px;
+  font-weight: 400;
+  font-size: 60px;
+  color: #242440;
+}
+
+.weather__block-two-span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7B8997;
+}
+
+.weather__block-three-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7b8997;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.weather__block-three-text span {
+  color: #242440;
+}
+
+.weather__block-two-wrapper--details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.weather__block-four-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #242440;
+}
+
+.weather__block-four-link {
+  color: #FB5352;
+  text-decoration-color: #fff;
+  transition: all linear 0.2s;
+  &:hover {
+    text-decoration-color: #FB5352;
+  }
+}
+
 
 /* Блог */
 .title-sections--blog {
@@ -15656,7 +15907,7 @@ background:  #0FC4AC;
 }
 .blog-detail__banner-right {
   position: absolute;
-  top: 16px;
+  top: 3px;
   right: 14px;
   width: 265px;
   padding: 24px;
@@ -15666,7 +15917,7 @@ background:  #0FC4AC;
   border-radius: 24px;
 }
 .blog-detail__banner-right__toptext {
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
