@@ -231,6 +231,10 @@ header::before {
   opacity: 0.1;
 }
 
+.backgroundActive .header-text__teriberka-inner--hide {
+  visibility: hidden;
+}
+
 .desktop-header__top-item {
   margin-right: 25px;
   font-weight: 500;
@@ -3993,6 +3997,7 @@ header .desktop-header__line-bottom--tour {
   display: flex;
   justify-content: space-between;
   padding: 96px 0 155px;
+  transition: all .2s linear;
 }
 
 .header-text__teriberka-left {
@@ -5096,6 +5101,7 @@ header .desktop-header__line-bottom--tour {
   position: relative;
   display: flex;
   flex-grow: 1;
+  cursor: pointer;
 }
 
 .northern-videos__left img {
@@ -5127,6 +5133,7 @@ header .desktop-header__line-bottom--tour {
   position: relative;
   display: flex;
   margin-bottom: 16px;
+  cursor: pointer;
   &:last-child {
     margin-bottom: 0;
   }
@@ -5206,6 +5213,9 @@ header .desktop-header__line-bottom--tour {
 .bottom-innerwrp--mobile {
   display: none;
 }
+.northern-videos__inner--mobile {
+  display: none;
+}
 
 @media screen and (max-width: 1240px) {
   .northern-videos__block-wrap {
@@ -5213,6 +5223,9 @@ header .desktop-header__line-bottom--tour {
   }
   .bottom-innerwrp--mobile {
     display: block;
+  }
+  .northern-videos .bottom-innerwrp--mobile{
+    display: none;
   }
 }
 
@@ -5240,6 +5253,28 @@ header .desktop-header__line-bottom--tour {
   .northern-videos__btn svg {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .northern-videos .bottom-innerwrp--mobile{
+    display: block;
+  }
+  .northern-videos__right-inner {
+    flex-direction: unset;
+  }
+  .northern-videos__inner {
+    display: none;
+  }
+  .northern-videos__inner--mobile {
+    display: flex;
+    flex-direction: row;
+  }
+  .northern-videos__block-wrap {
+    display: none !important;
+  }
+  .northern-videos__right-wrap {
+    margin-right: 8px;
   }
 }
 
@@ -5725,6 +5760,11 @@ header .desktop-header__line-bottom--tour {
   }
 }
 
+@media screen and (max-width: 860px) {
+  .video-tour__wrap {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .video-tour {
     margin-bottom: 32px;
@@ -6520,6 +6560,7 @@ margin-right: -32px;
 .fortune__link {
   text-decoration: none;
   transition: all linear 0.3s;
+  color: #242440;
   &:hover {
     color: #0fc4ac;
     text-decoration: underline;
@@ -15342,7 +15383,7 @@ background:  #0FC4AC;
 .desktop-header__wrapper--white .select-location__geo--white,
 .desktop-header__wrapper--white .select-location__arrow--white,
 .desktop-header__wrapper--white .desktop-header__tours-img--white,
-.desktop-header__wrapper .mobile-header__burger-img--white {
+.desktop-header__wrapper--white .mobile-header__burger-img--white {
   display: block;
 }
 

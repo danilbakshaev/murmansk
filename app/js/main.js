@@ -249,8 +249,8 @@ $(function () {
 
   $(window).on('resize', function (e) {
     if (window.innerWidth < 860) {
-      if ($('.video-tour__items')) {
-        $('.video-tour__items').slick({
+      if ($('.northern-videos__inner--mobile')) {
+        $('.northern-videos__inner--mobile').slick({
           slidesToShow: 1.2,
           slidesToScroll: 1,
           draggable: true,
