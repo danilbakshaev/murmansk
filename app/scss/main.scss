@@ -15183,7 +15183,6 @@ background:  #0FC4AC;
   font-size: 14px;
   line-height: 150%;
   color: #7b8997;
-  margin-bottom: 10px;
   &:last-child {
     margin-bottom: 0;
   }
@@ -15222,6 +15221,12 @@ background:  #0FC4AC;
 
 @media screen and (max-width: 1080px) {
   .weather__block {
+    left: 70px;
+    max-width: 332px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .weather__block {
     display: none;
   }
   .weather__block--mobile {
@@ -15232,10 +15237,8 @@ background:  #0FC4AC;
     border-radius: 0;
     box-shadow: none;
     border: 0;
+    max-width: 100%;
   }
-}
-
-@media screen and (max-width: 992px) {
   .assessment__desktop {
     display: none;
   }
@@ -15257,11 +15260,64 @@ background:  #0FC4AC;
     margin-bottom: 16px;
   }
   .real-time__inner img {
-    width: 100%;
-    height: 100%;
+    height: 320px;
+    width: auto;
+  }
+  .assessment__forecast-wrapper img {
+    max-width: 544px;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .assessment__forecast-item img {
+    max-height: 218px;
+    width: auto;
+  }
+  .assessment__forecast-month img {
+    max-height: 620px;
+    width: auto;
+  }
+  .title-sections__title--aurora {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .assessment__title {
+    font-size: 22px;
+  }
+  .assessment__desc {
+    font-size: 14px;
+  }
+  .title-sections--aurora {
+    margin-bottom: 24px;
+  }
+  .assessment__wrap {
+    margin-bottom: 24px;
+  }
+  .assessment__forecast-month {
+    margin-bottom: 40px;
+  }
+  .activity-graph__title,
+  .real-time__title {
+    font-size: 22px;
+  }
+  .activity-graph__text {
+    font-size: 14px;
+  }
+  .assessment__forecast-day,
+  .assessment {
+    margin-bottom: 56px;
+  }
+  .weather__block--mobile {
+    padding: 56px 0 32px;
+    min-height: unset;
+  }
+  .weather__block-title {
+    font-size: 24px;
+  }
+  .weather__block-text {
+    margin-bottom: 24px;
+  }
+}
 
 /* Блог */
 .title-sections--blog {
