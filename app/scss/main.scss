@@ -15732,7 +15732,9 @@ background:  #0FC4AC;
 .desktop-header__wrapper--white .select-location__geo__logo,
 .desktop-header__wrapper--white .select-location__arrow__logo,
 .desktop-header__wrapper--white .desktop-header__tours-img,
-.desktop-header__wrapper--white .mobile-header__burger-img {
+.desktop-header__wrapper--white .mobile-header__burger-img,
+.desktop-header__wrapper--white .select-location__geo,
+.desktop-header__wrapper--white .select-location__arrow {
   display: none;
 }
 
@@ -15748,6 +15750,26 @@ background:  #0FC4AC;
   content: url("data:image/svg+xml,%3Csvg width='8' height='4' viewBox='0 0 8 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.168056 0.445406C0.474408 -0.0141227 1.09528 -0.138296 1.55481 0.168056L4.00011 1.79826L6.44541 0.168056C6.90493 -0.138296 7.5258 -0.0141227 7.83216 0.445406C8.13851 0.904935 8.01434 1.5258 7.55481 1.83216L4.55481 3.83216C4.21891 4.05609 3.78131 4.05609 3.44541 3.83216L0.445406 1.83216C-0.0141227 1.5258 -0.138296 0.904935 0.168056 0.445406Z' fill='%2393A0AD'/%3E%3C/svg%3E%0A");
 }
 
+.desktop-header__wrapper--white.backgroundActive {
+  padding-bottom: 90px;
+}
+
+.desktop-header__wrapper--white.backgroundActive .logo-company__logo {
+  display: block;
+}
+
+.desktop-header__wrapper--white.backgroundActive .logo-company__logo--white,
+.desktop-header__wrapper--white.backgroundActive .mobile-header__burger-img--white {
+  display: none;
+}
+
+.desktop-header__wrapper--white.backgroundActive .select-location__text,
+.desktop-header__wrapper--white.backgroundActive .desktop-header__top-item,
+.desktop-header__wrapper--white.backgroundActive .desktop-header__top-item,
+.desktop-header__wrapper--white.backgroundActive .contacts__phone,
+.desktop-header__wrapper--white.backgroundActive .desktop-header__tour {
+  color: #93a0ad;
+}
 
 // Барабан удачи
 .fortune__inp.error {
