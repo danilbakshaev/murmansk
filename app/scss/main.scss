@@ -15183,7 +15183,6 @@ background:  #0FC4AC;
   font-size: 14px;
   line-height: 150%;
   color: #7b8997;
-  margin-bottom: 10px;
   &:last-child {
     margin-bottom: 0;
   }
@@ -15222,6 +15221,12 @@ background:  #0FC4AC;
 
 @media screen and (max-width: 1080px) {
   .weather__block {
+    left: 70px;
+    max-width: 332px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .weather__block {
     display: none;
   }
   .weather__block--mobile {
@@ -15232,10 +15237,8 @@ background:  #0FC4AC;
     border-radius: 0;
     box-shadow: none;
     border: 0;
+    max-width: 100%;
   }
-}
-
-@media screen and (max-width: 992px) {
   .assessment__desktop {
     display: none;
   }
@@ -15257,11 +15260,64 @@ background:  #0FC4AC;
     margin-bottom: 16px;
   }
   .real-time__inner img {
-    width: 100%;
-    height: 100%;
+    height: 320px;
+    width: auto;
+  }
+  .assessment__forecast-wrapper img {
+    max-width: 544px;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .assessment__forecast-item img {
+    max-height: 218px;
+    width: auto;
+  }
+  .assessment__forecast-month img {
+    max-height: 620px;
+    width: auto;
+  }
+  .title-sections__title--aurora {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .assessment__title {
+    font-size: 22px;
+  }
+  .assessment__desc {
+    font-size: 14px;
+  }
+  .title-sections--aurora {
+    margin-bottom: 24px;
+  }
+  .assessment__wrap {
+    margin-bottom: 24px;
+  }
+  .assessment__forecast-month {
+    margin-bottom: 40px;
+  }
+  .activity-graph__title,
+  .real-time__title {
+    font-size: 22px;
+  }
+  .activity-graph__text {
+    font-size: 14px;
+  }
+  .assessment__forecast-day,
+  .assessment {
+    margin-bottom: 56px;
+  }
+  .weather__block--mobile {
+    padding: 56px 0 32px;
+    min-height: unset;
+  }
+  .weather__block-title {
+    font-size: 24px;
+  }
+  .weather__block-text {
+    margin-bottom: 24px;
+  }
+}
 
 /* Блог */
 .title-sections--blog {
@@ -16180,7 +16236,6 @@ background:  #0FC4AC;
 .estimate-item {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 .estimate-right {
   cursor: pointer;
@@ -16370,18 +16425,6 @@ background:  #0FC4AC;
     width: calc(50% - 32px);
     max-width: 292px;
   }
-  .estimate-inner {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .estimate-item {
-    margin-bottom: 40px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
   .blog-detail__share {
     display: none;
   }
@@ -16413,18 +16456,40 @@ background:  #0FC4AC;
   .blog-detail__list {
     margin-left: 10px;
   }
+  .read-also__inner {
+    justify-content: space-evenly;
+  }
 }
 
 @media screen and (max-width: 860px) {
   .blog-detail__image picture source {
     border-radius: 8px;
   }
+  
+  .estimate-inner {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .estimate-item {
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .estimate-item button {
+    padding: 0;
+  }
+  .estimate-item button:hover {
+    background: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .btn-wrap {
     margin-right: -8px;
-    justify-content: start;
+    justify-content: space-between;
   }
   .btn-wrap__btn {
     border: 1px solid #E9ECEF;
@@ -16502,11 +16567,45 @@ background:  #0FC4AC;
   .btn-wrap__btn--right svg path {
     stroke-width: 5;
   }
-}
-
-@media screen and (max-width: 660px) {
+  .read-also__inner {
+  justify-content: unset;
+  }
   .read-also__item {
-    width: 292px;
+    max-width: unset;
+  }
+  .blog-detail__banner img {
+    max-height: 434px;
+    width: auto;
+  }
+  .blog-detail__banner::after {
+    width: 100%;
+    height: 98.7%;
+  }
+  .blog-detail__banner-right {
+    top: unset;
+    left: 16px;
+    bottom: 28px;
+    width: 260px;
+    height: 230px;
+  }
+  .blog-detail__banner-right__toptext {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .blog-detail__banner-right__bottomtext {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .blog-detail__banner-right__link {
+    font-size: 14px;
+  }
+  .blog-detail__banner-text {
+    font-size: 7px;
+    line-height: 12px;
+  }
+  .blog-detail__banner-wrap {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -16515,10 +16614,14 @@ background:  #0FC4AC;
     max-width: 292px;
     max-height: 434px;
   }
-  .blog-detail__banner-right {
-    top: 146px;
+}
+
+@media screen and (max-width: 460px) {
+  .read-also__item {
+    width: 100%;
+    margin-right: 0;
   }
-  .blog-detail__banner-text {
-    font-size: 8px;
+  .read-also__inner {
+    margin-right: 0;
   }
 }
