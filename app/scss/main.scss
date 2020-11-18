@@ -14827,6 +14827,9 @@ background:  #0FC4AC;
   .request {
     padding: 72px 44px;
   }
+  .request__input {
+    border: 1px solid #E9ECEF;
+  }
 }
 
 /* @media screen and (max-width: 860px) {
@@ -15064,6 +15067,7 @@ background:  #0FC4AC;
 }
 
 .weather__block {
+  box-sizing: border-box;
   position: absolute;
   top: calc(50% - 205px);
   left: 160px;
@@ -15168,6 +15172,52 @@ background:  #0FC4AC;
   transition: all linear 0.2s;
   &:hover {
     text-decoration-color: #FB5352;
+  }
+}
+
+.weather__block--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .weather__block {
+    display: none;
+  }
+  .weather__block--mobile {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .assessment__desktop {
+    display: none;
+  }
+  .assessment__mobile {
+    display: block;
+  }
+  .assessment__forecast-wrapper {
+    flex-direction: column;
+  }
+  .assessment__forecast-left {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .assessment__forecast-right {
+    width: 100%;
+  }
+  .activity-graph__text {
+    margin-bottom: 16px;
+  }
+  .real-time__inner img {
+    width: 100%;
+    height: 100%;
   }
 }
 
