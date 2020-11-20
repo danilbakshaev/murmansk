@@ -1532,11 +1532,10 @@ header .desktop-header__line-bottom--tour {
   margin-top: 48px;
   border: none;
   border-radius: 8px;
-  transition: all linear 0.2s;
 }
 
-.btn-link:hover {
-  opacity: 0.7;
+.btn-link:hover {    
+  background: #fc6b6b;
 }
 
 .btn-link:active {
@@ -6615,6 +6614,10 @@ margin-right: -32px;
   margin-right: -32px;
 }
 
+.choice-tours__items .slick-track {
+  padding: 15px 0;
+}
+
 .choice-tours__item {
   position: relative;
   display: flex;
@@ -6626,7 +6629,18 @@ margin-right: -32px;
   &:hover {
     transform: scale(1.05);
   }
+  &::before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(145.73deg, rgba(0, 0, 0, 0) 46.92%, rgba(3, 3, 3, 0.09) 56.84%, #0E0E0E 100%), rgba(0, 0, 0, 0.3);
+  }
 }
+
+
 
 .choice-tours__item img {
   display: block;
@@ -6674,6 +6688,18 @@ margin-right: -32px;
   background: #F8F8F6;
   padding-top: 90px;
   padding-bottom: 96px;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 156px;
+    z-index: 1;
+    bottom: -65px;
+    right: 0;
+    background-image: url(/img/brush-header.png);
+    background-size: cover;
+  }
 }
 
 .benefits-working__logo {
@@ -6694,6 +6720,7 @@ margin-right: -32px;
 
 .benefits-working__items {
   display: flex;
+  align-items: stretch;
   flex-wrap: wrap;
   margin-right: -32px;
 }
@@ -6709,9 +6736,6 @@ margin-right: -32px;
   margin-bottom: 15px;
   background-color: #fff;
   width: calc(50% - 32px);
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .benefits-working__item svg {
@@ -6752,6 +6776,9 @@ margin-right: -32px;
   .benefits-working__logo {
     display: none;
   }
+  .choice-tours__item:not(.slick-active){
+    opacity: 0.5;
+  }
 }
 // /Преимущества работы с нами
 
@@ -6761,8 +6788,12 @@ margin-right: -32px;
 }
 
 .photos__items {
-  display: flex;
-  margin-right: -32px;
+}
+.photos__items .slick-list {
+  overflow: visible;
+}
+.photos__items .slick-track {
+  padding: 15px 0;
 }
 
 .photos__item {
@@ -6781,22 +6812,45 @@ margin-right: -32px;
   object-fit: cover;
 }
 
+@media screen and (max-width: 860px) {
+  .photos .title-sections {
+    margin-bottom: 9px;
+  }
+}
 @media screen and (max-width: 768px) {
   .photos {
     margin-bottom: 48px;
+  }
+  .photos__item {
+    margin-right: 16px;
+  }
+  .photos__item:not(.slick-active){
+    opacity: 0.5;
   }
 }
 // /блок "Фотографии"
 
 // У нас современный автопарк
 .vehicle-fleet {
-  margin-bottom: 96px;
   background: #F8F8F6;
   padding: 96px 0;
 }
 
 .vehicle-fleet__inner {
   display: flex;
+}
+
+.vehicle-fleet__right-item {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(145.73deg, rgba(0, 0, 0, 0) 46.92%, rgba(3, 3, 3, 0.09) 56.84%, #0E0E0E 100%), rgba(0, 0, 0, 0.3);
+  }
 }
 
 .vehicle-fleet__left {
@@ -6892,6 +6946,7 @@ margin-right: -32px;
   height: 72px;
   opacity: 0.8;
   transition: all linear 0.3s;
+  z-index: 2;
   &:hover {
     opacity: 1;
   }
@@ -6929,13 +6984,27 @@ margin-right: -32px;
     display: none;
   }
   .vehicle-fleet__right {
-    min-width: 256px;
+    width: 100%;
+  }
+  .vehicle-fleet__right-item {
+    margin-right: 16px;
+  }
+  .vehicle-fleet__right-inner {
+    border-radius: none;
+  }
+  .vehicle-fleet__right-item img,
+  .vehicle-fleet__right-item::before {
+    border-radius: 8px;
+  }
+  .vehicle-fleet__right-item:not(.slick-active){
+    opacity: 0.5;
   }
 }
 
 @media screen and (max-width: 768px) {
   .vehicle-fleet {
-    margin-bottom: 48px;
+    margin-bottom: 0;
+    padding: 32px 0;
   }
   .vehicle-fleet__title {
     font-size: 26px;
@@ -6943,12 +7012,14 @@ margin-right: -32px;
   .vehicle-fleet__text {
     font-size: 14px;
   }
+  
 }
 // /У нас современный автопарк
 
 // Реквизиты
 .title-sections--agencies {
   position: relative;
+  margin-bottom: 64px;
   &::before {
     content: '';
     width: 92px;
@@ -6979,11 +7050,23 @@ margin-right: -32px;
   background-size: 100% 100%;
   padding-top: 56px;
   padding-bottom: 36px;
+  position: relative;
+  &::before {
+    content: '';
+    background: linear-gradient(149.65deg, rgba(0, 0, 0, 0) 18.47%, #0E0E0E 71.62%), rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+  }
 }
 
 .cooperate__inner {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .cooperate__left {
@@ -7148,6 +7231,15 @@ margin-right: -32px;
     padding: 24px 14px;
     background-color: rgb(6, 16, 20);
     border-radius: 40px 40px 0px 0px;
+  }
+  .cooperate__privacy {
+    color: #fff;
+  }
+  .cooperate__privacy-link {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .cooperate__form button:hover span {
+    color: #fff !important;
   }
 }
 // /Давайте сотрудничать!
@@ -7644,6 +7736,60 @@ footer {
   transform: translateY(-100px);
 }
 
+.modal-wrapper__category {
+  max-width: 320px;
+  min-height: 100%;
+  position: relative;
+  margin-right: auto;
+  background-color: #fff;
+  transition: all 0.3s linear;
+  padding: 16px 14px;
+}
+
+.modal-wrapper__category.hidden {
+  display: none;
+}
+
+.modal-wrapper__category.animation {
+  transform: translateX(-100px);
+}
+
+.modal-wrapper__category-inner p {
+  margin: 0;
+  padding-bottom: 18px;
+  text-align: center;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #242440;
+}
+
+.modal-wrapper__category-inner span {
+  font-size: 16px;
+  line-height: 150%;
+  color: #242440;
+}
+
+.modal-wrapper__category-inner .gray {
+  color: #93A0AD;
+}
+.modal-wrapper__category-inner a {
+  padding: 16px 0;
+  border-bottom: 1px solid #F8F8F6;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.modal-wrapper__category-inner {
+  position: relative;
+}
+.modal-wrapper__category-inner .modal-wrapper__close {
+  right: unset;
+  left: 0;
+  top: 2px;
+}
 .modal-wrapper__left-menu {
   max-width: 96%;
   position: relative;
@@ -13032,7 +13178,7 @@ background:  #0FC4AC;
   font-weight: 700;
   font-size: 28px;
   color: #242440;
-  margin-bottom: 16px;
+  margin-bottom: 21px;
 }
 
 .requisites__text {
@@ -13098,6 +13244,10 @@ background:  #0FC4AC;
   }
   .requisites__wrap {
     margin-bottom: 20px;
+  }
+  .title-sections--agencies::before {
+    content: none;
+    background: none;
   }
 }
 
@@ -14534,7 +14684,7 @@ background:  #0FC4AC;
   background-size: 100% 100%;
   width: 100%;
   height: 156px;
-  top: -99px;
+  top: -65px;
   left: 0;
 }
 
@@ -14914,6 +15064,16 @@ background:  #0FC4AC;
   }
   .request--сertified-operator {
     margin-bottom: 48px;
+  }
+  .benefits-working:after {
+  bottom: -30px;
+  }
+  .sprite-white::after {
+    background-size: cover;
+    top: -80px;
+  }
+  .sprite-white::before {
+    background-size: cover;
   }
 }
 
@@ -16016,6 +16176,7 @@ background:  #0FC4AC;
 .blog-detail__list {
   padding: 0 0 0 16px;
   list-style: none;
+  margin: 0;
 }
 
 .blog-detail__li {
@@ -16076,10 +16237,10 @@ background:  #0FC4AC;
 }
 .blog-detail__banner-right {
   position: absolute;
-  top: 3px;
+  top: 11px;
   right: 14px;
   width: 265px;
-  padding: 24px;
+  padding: 16px 24px;
   z-index: 3;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(64px);
@@ -16595,6 +16756,9 @@ background:  #0FC4AC;
   .read-also__item {
     max-width: unset;
   }
+  .blog-detail__banner {
+    margin: 24px 0;
+  }
   .blog-detail__banner img {
     max-height: 434px;
     width: auto;
@@ -16645,5 +16809,11 @@ background:  #0FC4AC;
   }
   .read-also__inner {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .header-text__wrap--agency {
+    padding: 0;
   }
 }
