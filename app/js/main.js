@@ -1,5 +1,9 @@
 $(function () {
 
+  if ($('#menu')) {
+    $('#menu').slinky();
+  }
+
   if ($('.popular-destinations__items')) {
     $('.popular-destinations__items').slick({
       slidesToShow: 3.2,
@@ -213,6 +217,91 @@ $(function () {
           slidesToScroll: 1,
         }
       }]
+    });
+  }
+
+  if ($('.choice-tours__items')) {
+    $('.choice-tours__items').slick({
+      slidesToShow: 4.5,
+      slidesToScroll: 2,
+      infinite: false,
+      arrows: true,
+      prevArrow: '.prev-js-agency',
+      nextArrow: '.next-js-agency',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1.5,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+    });
+  }
+
+  if ($('.photos__items')) {
+    $('.photos__items').slick({
+      slidesToShow: 3.5,
+      slidesToScroll: 2,
+      infinite: false,
+      arrows: true,
+      prevArrow: '.prev-js-agency-photo',
+      nextArrow: '.next-js-agency-photo',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1.2,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+    });
+  }
+
+  if ($('.vehicle-fleet__right-inner')) {
+    $('.vehicle-fleet__right-inner').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      arrows: true,
+      prevArrow: '.vehicle-fleet__btn-left',
+      nextArrow: '.vehicle-fleet__btn-right',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1.2,
+            slidesToScroll: 1,
+          }
+        },
+      ]
     });
   }
 
@@ -623,7 +712,7 @@ $(function () {
         $(".tours_day").addClass("active")
         toursPackage.removeClass("active")
         toursDay.addClass("active")
-        header-text.addClass("hidden")
+        header - text.addClass("hidden")
       } else if (!$(".tours_day").hasClass("active")) {
         $(".desktop-header__wrapper").addClass("backgroundActive")
         $(".tours_day").addClass("active")
@@ -1088,29 +1177,32 @@ $(function () {
 (function () {
 
   //   //Вызов окна колбека
-  //   openCallback = document.querySelector('.openCallback');
-  //   callbackModal = document.querySelector('.modal-wrapper__callback');
+  if (document.querySelector('.openCateg')) {
+    openCateg = document.querySelector('.openCateg');
+    categModal = document.querySelector('.modal-wrapper__category');
 
-  //   openCallback.addEventListener('click', function () {
-  //     openBaseModal();
-  //     callbackModal.classList.remove('hidden');
-  //     setTimeout(function () {
-  //       callbackModal.classList.remove('animation');
-  //     }, 20);
-  //   })
+    openCateg.addEventListener('click', function () {
+      openBaseModal();
+      categModal.classList.remove('hidden');
+      setTimeout(function () {
+        categModal.classList.remove('animation');
+      }, 20);
+    })
 
-  //   function closecallbackPopup() {
-  //     if (!callbackModal.classList.contains('hidden')) {
-  //       callbackModal.classList.add('animation');    
-  //       callbackModal.addEventListener('transitionend', function(e) {
-  //         callbackModal.classList.add('hidden');
-  //       }, {
-  //         capture: false,
-  //         once: true,
-  //         passive: false
-  //       });
-  //     }
-  //   };
+    function closeCategPopup() {
+      if (!categModal.classList.contains('hidden')) {
+        categModal.classList.add('animation');    
+        categModal.addEventListener('transitionend', function(e) {
+          categModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }
+    
 
   //   //Вызов окна колбека
   openLeftMenu = document.querySelectorAll('.openMenu');
@@ -1266,7 +1358,9 @@ $(function () {
   };
 
   function closeAllModal() {
-    // closecallbackPopup();
+    if (document.querySelector('.openCateg')) {
+      closeCategPopup();
+    };
     closeleftMenuModal();
     closeVideoModal();
     // if (document.querySelector('.openGallery')) {
