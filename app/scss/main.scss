@@ -167,6 +167,9 @@ header::before {
   display: flex;
   align-items: center;
   padding: 0;
+  &:hover .select-location__text {
+    color: #0fc4ac;
+  }
 }
 
 .select-location__geo {
@@ -182,6 +185,7 @@ header::before {
   padding-left: 4px;
   padding-right: 4px;
   letter-spacing: 0.02em;
+  transition: all linear 0.3s;
 }
 
 .select-location__arrow {
@@ -232,6 +236,14 @@ header::before {
 }
 
 .backgroundActive .header-text__teriberka-inner--hide {
+  visibility: hidden;
+}
+
+.backgroundActive .header__text-items {
+  visibility: hidden;
+}
+
+.backgroundActive .header-text__wrap {
   visibility: hidden;
 }
 
@@ -2518,7 +2530,7 @@ header .desktop-header__line-bottom--tour {
   line-height: 17px;
   color: #0FC4AC;
   transition: all .2s linear;
-  width: 30%;
+  // width: 30%;
 }
 
 
