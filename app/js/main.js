@@ -54,7 +54,7 @@ $(function () {
 
   if ($('.popular-destinations__items--package')) {
     $('.popular-destinations__items--package').slick({
-      slidesToShow: 3.3,
+      slidesToShow: 8,
       slidesToScroll: 2,
       infinite: true,
       draggable: false,
@@ -168,6 +168,25 @@ $(function () {
       }]
     });
   }
+
+  // f ($('.popular-destinations__items--head')) {
+  //   $('.popular-destinations__items--head').slick({
+  //     slidesToShow: 2,
+  //     slidesToScroll: 1,
+  //     infinite: false,
+  //     draggable: false,
+  //     centerMode: false,
+  //     prevArrow: '.prev-js-popular-destinations',
+  //     nextArrow: '.next-js-popular-destinations',
+  //     responsive: [{
+  //       breakpoint: 860,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       }
+  //     }]
+  //   });
+  // }
 
   if ($('.our-photographers__items')) {
     $('.our-photographers__items').slick({
@@ -623,7 +642,7 @@ $(function () {
         $(".tours_day").addClass("active")
         toursPackage.removeClass("active")
         toursDay.addClass("active")
-        header-text.addClass("hidden")
+        // header-text.addClass("hidden")
       } else if (!$(".tours_day").hasClass("active")) {
         $(".desktop-header__wrapper").addClass("backgroundActive")
         $(".tours_day").addClass("active")
