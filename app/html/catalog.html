@@ -3,7 +3,7 @@
 <header class="background-image" style="background-image: url(/img/catalog-back.png)">
 	<div class="desktop-header__wrapper">
 		@@include('./include/header_mob-desk.html')
-		<div class="header-text">
+		<div class="header-text header-text--catalog">
 			<div class="container">
 				<div class="header__text-items">
 					<div class="header-text__wrap header-text__wrap--catalog">
@@ -887,9 +887,14 @@
 			<div class="feedback">
 				<h2 class="title-sections__title title-sections__title--feedback">Давайте мы поможем
 					с выбором?</h2>
-				<form class="feedback__form" action="">
-					<input class="feedback__inp" type="text" placeholder="Введите ваш номер">
-					<button class="feedback__btn">Отправить</button>
+				<form class="feedback__form feedback__form--catalog" action="">
+					<input class="feedback__inp" type="tel" name="tel" placeholder="Введите ваш номер">
+					<button class="btn-orange-shadow btn-orange-shadow--reviews btn-orange-shadow--request btn-orange-shadow--catalog" type="submit">
+            <span class="btn-orange-shadow__text btn-orange-shadow__text--reviews btn-orange-shadow__text--request">
+              Отправить
+            </span>
+            <div class="btn-orange-shadow__shadow btn-orange-shadow__shadow--request"></div>
+          </button>
 				</form>
 				<p class="feedback__description">Нажав на кнопку «Связаться с нами», вы даете согласие на обработку <a
 						class="callback-form__privacy-link" href="#">персональных
@@ -1241,6 +1246,34 @@
 		</div>
 	</section>
 	<!-- catalog -->
+	
+	<section class="request request--main">	
+		<div class="container">	
+			<div class="request__wrap">	
+				<h3 class="request__title">	
+					Давайте мы поможем с выбором?	
+				</h3>	
+				<p class="request__text request__text--catalog">Не следует, однако, забывать, что граница обучения кадров	
+					обеспечивает актуальность анализа существующих</p>	
+				<form class="request__form">	
+					<div class="request__wrapper">	
+						<input class="request__input" type="tel" name="tel" placeholder="Введите ваш номер">	
+						<button class="btn-orange-shadow btn-orange-shadow--reviews btn-orange-shadow--request" type="submit">	
+							<span class="btn-orange-shadow__text btn-orange-shadow__text--reviews btn-orange-shadow__text--request">	
+								Отправить	
+							</span>	
+							<div class="btn-orange-shadow__shadow btn-orange-shadow__shadow--request"></div>	
+						</button>	
+					</div>	
+					<p class="request__desc">	
+						Нажав на кнопку «Отправить», вы даете согласие на обработку <a class="privacy-link" href="#">персональных	
+							данных</a> и <a class="privacy-link	href="href="#">согласен с политикой конфиденциальности.</a>	
+					</p>	
+				</form>	
+			</div>	
+		</div>	
+	</section>	
+	
 
 	<section class="advantages">
 		<div class="container">
