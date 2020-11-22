@@ -921,6 +921,7 @@ header .desktop-header__line-bottom--tour {
 }
 
 @media screen and (max-width: 860px) {
+
   .header-text__wrap {
     padding: 0;
   }
@@ -952,6 +953,10 @@ header .desktop-header__line-bottom--tour {
 
   .mobile-header__button:hover {
     opacity: 0.5;
+  }
+
+  .logo-company {
+    border-right: none;
   }
 
   .logo-company__link {
@@ -1048,6 +1053,12 @@ header .desktop-header__line-bottom--tour {
 @media screen and (max-width: 740px)  {
   .desktop-header__wrapper {
     padding-bottom: 0;
+  }
+}
+ 
+@media screen and (max-width: 480px) {
+  .header-text {
+    padding-bottom: 67px;
   }
 }
 
@@ -1626,7 +1637,7 @@ header .desktop-header__line-bottom--tour {
   content: '';
   width: 92px;
   height: 8px;
-  bottom: -30px;
+  bottom: -45px;
   left: 0;
   position: absolute;
   background-image: url("data:image/svg+xml,%3Csvg width='93' height='8' viewBox='0 0 93 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.9' fill-rule='evenodd' clip-rule='evenodd' d='M10.5 6.22217L16.7145 -3.44334e-05L18.4901 1.77774L12.2756 7.99994L10.5 6.22217ZM21.0039 6.22217L27.2184 -3.44334e-05L28.994 1.77774L22.7795 7.99994L21.0039 6.22217ZM37.7182 -3.44334e-05L31.5036 6.22217L33.2792 7.99994L39.4937 1.77774L37.7182 -3.44334e-05ZM42.0039 6.22217L48.2184 -3.44334e-05L49.994 1.77774L43.7795 7.99994L42.0039 6.22217ZM58.7223 -3.44334e-05L52.5078 6.22217L54.2834 7.99994L60.4979 1.77774L58.7223 -3.44334e-05ZM63.0075 6.22217L69.222 -3.44334e-05L70.9976 1.77774L64.7831 7.99994L63.0075 6.22217ZM79.723 -3.44334e-05L73.5084 6.22217L75.284 7.99994L81.4986 1.77774L79.723 -3.44334e-05ZM84.0117 6.22217L90.2263 -3.44334e-05L92.0018 1.77774L85.7873 7.99994L84.0117 6.22217ZM6.21837 0.00385213L0 6.22222L1.77668 7.9989L7.99505 1.78053L6.21837 0.00385213Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='0' y1='0' x2='1.38083' y2='15.8799' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF9458'/%3E%3Cstop offset='1' stop-color='%23FFBE5C'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
@@ -7357,6 +7368,9 @@ footer {
     top: -1px;
     height: 156px;
  }
+ .contacts__socials-links {
+    display: block;
+ }
 }
 
 @media screen and (max-width: 1240px) {
@@ -12649,6 +12663,12 @@ background:  #0FC4AC;
 }
 
 @media screen and (max-width: 570px) {
+  .header-text__subtitle {
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
   .header-text__title--about {
     font-size: 28px;
   }
