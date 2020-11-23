@@ -41,7 +41,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="contacts">
+                <div class="contacts contacts--mob">
                     <div class="contacts__wrap-links contacts__wrap-links--flex">
                         <p class="contacts__socials-text contacts__socials-text--mb">WhatsApp, Facebook, Telegram
                         </p>
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="contacts__request">
+                    <div class="contacts__request contacts__request--mob">
                         <p class="contacts__request-text contacts__request-text--mb">E-mail для заявок и вопросов
                         </p>
                         <a class="contacts__request-mail" href="mailto:info@north4you.com" title="Написать">info@north4you.com</a>
@@ -797,10 +797,18 @@
                 </nav>
             </div>
             <div class="modal-wrapper__left-content__item modal-wrapper__left-content__item--flex">
-                <button class="select-lang">
+                <!-- <button class="select-lang">
                     <img class="select-lang__flag" src="/img/language.svg" alt="Флаг">
                     <span class="select-lang__text">Русский</span>
                     <img class="select-lang__arrows" src="/img/arrow.svg" alt="Стрелка вниз">
+                </button> -->
+                <button class="select-lang">
+                    <div class="select desktop-header__top-item"><select class="select-lang__text" name="language" style="display: none;">
+                        <option value="russia" default="" disabled="" selected="">Русский</option>
+                        <option value="russia" class="select-lang__option">Русский</option>
+                        <option value="english" class="select-lang__option">English</option>
+                        <option value="unk" class="select-lang__option">ภาษาไทย</option>
+                    </select><div class="new-select__list new-select__list--lang" style="display: none;"><div class="new-select__item new-select__item--lang" data-value="russia"><span>Русский</span></div><div class="new-select__item new-select__item--lang" data-value="english"><span>English</span></div><div class="new-select__item new-select__item--lang" data-value="unk"><span>ภาษาไทย</span></div></div></div>
                 </button>
                 <div class="weather--modal">
                     погода
