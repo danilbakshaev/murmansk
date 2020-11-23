@@ -235,7 +235,8 @@ header::before {
   position: relative;
   z-index: 1;
 }
-.backgroundActive .header-text__wrap{
+.backgroundActive .header-text__wrap,
+.backgroundActive .header-text-video--tour{
   opacity: 0.1;
 }
 
@@ -248,7 +249,7 @@ header::before {
 }
 
 .backgroundActive .header-text__wrap {
-  visibility: hidden;
+  // visibility: hidden;
 }
 
 .desktop-header__top-item {
@@ -542,9 +543,9 @@ header .desktop-header__line-bottom--tour {
   transition: all linear 0.3s;
 }
 
-.desktop-header__line-bottom {
-  margin-right: -24px;
-}
+// .desktop-header__line-bottom {
+//   margin-right: -24px;
+// }
 
 .desktop-header__tours {
   display: flex;
@@ -684,7 +685,7 @@ header .desktop-header__line-bottom--tour {
   font-size: 14px;
   color: #A5A5B1;
   padding: 0 16px;
-  max-width: calc(280px - 36px);
+  width: 280px;
 }
 
 .valid {
@@ -2621,7 +2622,7 @@ header .desktop-header__line-bottom--tour {
   object-fit: cover;
 }
 
-.faq__right--mobile-bg {
+.faq__right--mobile {
   display: none;
 }
 
@@ -2639,16 +2640,16 @@ header .desktop-header__line-bottom--tour {
   }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 860px) {
   .faq {
     padding: 72px 0;
     padding-bottom: 0;
   }
 
-  .faq__right--mobile-bg {
+  .faq__right--mobile {
     display: block;
-    transform: scale(1.1);
-    margin-top: 85px;
+    transform: scale(1.15);
+    margin-top: 60px;
   }
 
   .faq__content-right {
@@ -2672,7 +2673,7 @@ header .desktop-header__line-bottom--tour {
   }
 
   .faq__content {
-    margin-top: 82px;
+    margin-top: 57px;
   }
 
   .faq__items {
@@ -2735,11 +2736,11 @@ header .desktop-header__line-bottom--tour {
   .closeText::before {
     right: -4%;
   }
-  .faq__right--mobile-bg {
-    margin-top: 0;
+  .faq__right--mobile {
+    margin-top: 48px;
   }
   .faq__content {
-    margin-top: 46px;
+    margin-top: 45px;
   }
 }
 
@@ -2928,7 +2929,7 @@ header .desktop-header__line-bottom--tour {
   height: 100%;
 }
 
-.stocks-title__inner {
+.stocks-title {
   display: flex;
   align-items: flex-end;
   margin-bottom: 40px;
@@ -3357,6 +3358,49 @@ header .desktop-header__line-bottom--tour {
 .btn-link--tours__tablet {
   display: none;
 }
+
+.content-none {
+  display: none;
+}
+
+.tours-map__right-item {
+  display: none;
+}
+
+.tours-map__right-item--active {
+  display: block;
+}
+.tours-map__btn { 
+  opacity: .8;
+  cursor: pointer;
+}
+
+.tours-map__btn .tours-map__btn-shadow {
+  fill: #000;
+  opacity: .2;
+}
+
+.tours-map__btn--active {
+  opacity: 1;
+}
+
+.tours-map__btn--big {
+  position: relative;
+  visibility: hidden;
+  height: 0;
+  &::before {
+    position: absolute;
+    content: url("/img/pin.svg");
+    width: 34px;
+    height: 37px;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    visibility: visible;
+  }
+}
+
+
 
 @media screen and (max-width: 840px) {
   .tours-map {
@@ -9088,6 +9132,7 @@ footer {
 
 .filter__desktop {
   display: flex;
+  align-items: baseline;
 }
 
 .filter__item {
@@ -9098,7 +9143,7 @@ footer {
   padding-top: 29px;
   padding-bottom: 9px;
   padding-left: 16px;
-  padding-right: 37px;
+  padding-right: 16px;
   position: relative;
   cursor: pointer;
   min-height: 64px;
@@ -9112,6 +9157,7 @@ footer {
   height: 6px;
   right: 17px;
   top: 17px;
+  z-index: -1;
 }
 
 .filter__item.on {
@@ -9401,8 +9447,6 @@ border-color: #0FC4AC;
   fill: #0FC4AC;
 }
 
-
-
 /* делаем свой чекбокс */
 .filter__inp {
   position: absolute;
@@ -9441,8 +9485,6 @@ border-color: #0FC4AC;
   content: url(../img/check-sprite.svg)
 }
 /* делаем свой чекбокс */
-
-
 
 .filter__mobile-arrow {
   position: absolute;
@@ -10183,6 +10225,7 @@ border-color: #0FC4AC;
 
 .header-text__wrap--tour {
   max-width: 640px;
+  padding-bottom: 115px;
 }
 
 .video-tours__item--tour {
@@ -16159,6 +16202,10 @@ background:  #0FC4AC;
   color: #93a0ad;
 }
 
+.desktop-header__wrapper--catalog .contacts__callback {
+  text-shadow: 1px 0px 3px rgba(0, 0, 0, 1);
+}
+
 // Барабан удачи
 .fortune__inp.error {
   border: 1px solid red;
@@ -17045,3 +17092,139 @@ background:  #0FC4AC;
     padding: 0;
   }
 }
+
+.checkselect {
+	position: relative;
+	display: inline-block;
+	min-width: 200px;
+	text-align: left;
+}
+.checkselect-control {
+	position: relative;
+  padding: 0 !important;
+}		
+.checkselect-control select {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+  border: none;
+  background: transparent;
+}
+.checkselect-over {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0; 			
+	cursor: pointer;
+}
+.checkselect-popup {
+	display: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	width: 100.2%;
+	height: auto;
+	// max-height: 200px;
+	position: absolute;
+	top: 97%;
+	left: 0px; 
+	border: 1px solid #dadada;
+	border-top: none;
+	background: #fff;
+	z-index: 9999;
+	overflow: auto;
+	user-select: none;
+}	
+.checkselect label {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 4px 6px 4px 22px;
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.1;
+	cursor: pointer;
+}			
+.checkselect-popup {
+  padding: 18px 16px;
+  border: 1px solid rgba(36, 36, 64, 0.02);
+  box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03), 0px 15px 20px rgba(5, 15, 41, 0.15);
+  border-radius: 0 0 8px 8px !important;
+}
+
+.checkselect-popup input {
+	position: absolute;
+	top: 5px; 
+	left: 0;
+	margin: 0 !important;
+	padding: 0;
+}
+// .checkselect-popup label:hover {
+// 	background: #03a2ff;
+// 	color: #fff;
+// }
+.checkselect-popup fieldset {
+	display: block;
+	margin:  0;
+	padding: 0;
+	border: none;
+}
+.checkselect-popup fieldset input {
+	left: 15px;
+}		
+.checkselect-popup fieldset label {
+	padding-left: 32px;
+}		
+.checkselect-popup legend {
+	display: block;
+	margin: 0;
+	padding: 5px 8px;
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 1.1;
+}
+.form-control {
+  outline: none;
+  appearance: none;
+}
+
+/* делаем свой чекбокс */
+.checkselect input {
+  position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px !important;
+}
+
+.checkselect label {
+  position: relative;
+	padding: 4px 0 4px 32px;
+	cursor: pointer;
+}
+
+.checkselect label::before {
+  content: '';
+	position: absolute;
+	left: 0;
+	width: 20px;
+	height: 20px;
+  border: 2px solid #E9ECEF;
+  border-radius: 4px;
+}
+
+.checkselect .checked.check-label:before {
+  background: rgba(15, 196, 172, 1);
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+.checkselect .checked.check-label::after  {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  content: url(../img/check-sprite.svg)
+}
+/* делаем свой чекбокс */
