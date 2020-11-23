@@ -1952,6 +1952,12 @@ header .desktop-header__line-bottom--tour {
     display: none;
   }
 
+  .video-tours__play--mob{
+    top: 30%!important;
+    width: 70px!important;
+    height: 70px!important;
+  }
+
   .video-tours--mobile {
     display: block;
     padding: 72px 0;
@@ -3866,7 +3872,7 @@ header .desktop-header__line-bottom--tour {
 
 .photo-take__item {
   display: -webkit-inline-box;
-  align-items: center;
+  align-items: flex-start!important;
   margin-bottom: 10px;
   &:last-child {
     margin-bottom: 0;
@@ -4210,6 +4216,12 @@ header .desktop-header__line-bottom--tour {
   .header-text__teriberka-inner {
     align-items: center;
   }
+
+  .header-text__teriberka-btn--mobile{
+    top: initial!important;
+    bottom: 20px;
+    left: 20px;
+  }
 }
 @media screen and (max-width: 860px) {
   .header-teriberka {
@@ -4257,6 +4269,12 @@ header .desktop-header__line-bottom--tour {
     align-items: center;
     justify-content: center;
   }
+
+  .header-text__teriberka-title-wrap--mobile{
+    left: 60px;
+    display: block;
+    width: auto;
+  }
   .header-text__teriberka-left {
     width: 100%;
     margin-bottom: 20px;
@@ -4269,6 +4287,9 @@ header .desktop-header__line-bottom--tour {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    transform: scale(1.35);
+    padding-bottom: 37px;
+    padding-top: 55px;
   }
   .header-text__teriberka-img {
     border-radius: 11px;
@@ -4979,6 +5000,10 @@ header .desktop-header__line-bottom--tour {
   border-radius: 12px;
 }
 
+.photos-inner__item--mobile{
+  display: none;
+}
+
 .photos-inner__btn-play {
   display: flex;
   align-items: center;
@@ -5048,6 +5073,14 @@ header .desktop-header__line-bottom--tour {
   }
   .photos-inner__right {
     width: calc(100% + 12px);
+  }
+
+  .photos-inner__item--mobile{
+    display: flex;
+  }
+
+  .photos-inner__item--desk{
+    display: none;
   }
 }
 
@@ -5502,6 +5535,10 @@ header .desktop-header__line-bottom--tour {
   .answers-questions__items .slick-list {
     padding: 0;
   }
+
+  .header-text__teriberka-right--program .header-text__teriberka-title-h2 {
+    left: 80px;
+  }
 }
 @media screen and (max-width: 860px) {
   .program-tour__text {
@@ -5548,6 +5585,10 @@ header .desktop-header__line-bottom--tour {
   }
   .program-tour__wrapper {
     margin-bottom: 16px;
+  }
+
+  .program-tour__wrapper {
+    width: 100%;
   }
 }
 
@@ -11551,6 +11592,10 @@ border-color: #0FC4AC;
 @media screen and (max-width: 860px) {
   .desktop-hide {
     display: block;
+  }
+
+  .tour-video__text {
+    bottom: 0;
   }
 
   .aviasales__link {
