@@ -1,9 +1,5 @@
 $(function () {
 
-  if ($('#menu')) {
-    $('#menu').slinky();
-  }
-
   if ($('.popular-destinations__items')) {
     $('.popular-destinations__items').slick({
       slidesToShow: 3.2,
