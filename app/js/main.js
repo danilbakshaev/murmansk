@@ -54,7 +54,7 @@ $(function () {
 
   if ($('.popular-destinations__items--package')) {
     $('.popular-destinations__items--package').slick({
-      slidesToShow: 8,
+      slidesToShow: 3.3,
       slidesToScroll: 2,
       infinite: true,
       draggable: false,
@@ -320,7 +320,9 @@ $(function () {
     });
   }
 
+
   $(window).on('resize', function (e) {
+
     if (window.innerWidth < 1240) {
       if ($('.tours__items')) {
         $('.tours__items').slick({
@@ -349,9 +351,7 @@ $(function () {
         });
       }
     };
-  }).trigger('resize');
 
-  $(window).on('resize', function (e) {
     if (window.innerWidth < 860) {
       if ($('.northern-videos__inner--mobile')) {
         $('.northern-videos__inner--mobile').slick({
@@ -363,21 +363,19 @@ $(function () {
           prevArrow: '.prev-js-videos',
           nextArrow: '.next-js-videos',
         });
+      };
+
+      if ($('.discounts__items')) {
+        $('.discounts__items').slick({
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          draggable: true,
+          infinite: false,
+          arrows: false,
+        });
       }
     };
   }).trigger('resize');
-
-  if (window.innerWidth < 860) {
-    if ($('.discounts__items')) {
-      $('.discounts__items').slick({
-        slidesToShow: 1.2,
-        slidesToScroll: 1,
-        draggable: true,
-        infinite: false,
-        arrows: false,
-      });
-    }
-  };
 
   if ($('.reviews__inner')) {
     $('.reviews__inner').slick({
@@ -651,9 +649,9 @@ $(function () {
   });
 
   $(".filter__mobile-cut").hide()
-  $(".filter__mobile-spoiler").click(function () {
-    $(this).toggleClass("filter__item--active");
-    $(this).children(".filter__mobile-cut").slideToggle("slow");
+  $(".filter__mobile-spoiler-title").click(function () {
+    $(this).parent(".filter__mobile-spoiler").toggleClass("filter__item--active");
+    $(this).next(".filter__mobile-cut").slideToggle("fast");
   });
 
   $(".tour-ticket__prices-hide").hide()
@@ -957,182 +955,183 @@ $(function () {
     });
   }
 
-  if ($('.select-direction')) {
-    $('.select-direction').each(function () {
-      const _this = $(this),
-        selectOption = _this.find('option'),
-        selectOptionLength = selectOption.length,
-        // selectedOption = selectOption.filter(':selected'),
-        duration = 0; // длительность анимации 
+  // if ($('.select-direction')) {
+  //   $('.select-direction').each(function () {
+  //     const _this = $(this),
+  //       selectOption = _this.find('option'),
+  //       selectOptionLength = selectOption.length,
+  //       // selectedOption = selectOption.filter(':selected'),
+  //       duration = 0; // длительность анимации 
 
-      _this.hide();
-      _this.wrap('<div class="select"></div>');
-      $('<div>', {
-        class: 'new-select filter__item filter__item--direction',
-        text: _this.children('option:disabled').text()
-      }).insertAfter(_this);
+  //     _this.hide();
+  //     _this.wrap('<div class="select"></div>');
+  //     $('<div>', {
+  //       class: 'new-select filter__item filter__item--direction',
+  //       text: _this.children('option:disabled').text()
+  //     }).insertAfter(_this);
 
-      const selectHead = _this.next('.new-select');
-      $('<div>', {
-        class: 'new-select__list new-select__list--direction'
-      }).insertAfter(selectHead);
+  //     const selectHead = _this.next('.new-select');
+  //     $('<div>', {
+  //       class: 'new-select__list new-select__list--direction'
+  //     }).insertAfter(selectHead);
 
-      const selectList = selectHead.next('.new-select__list');
-      for (let i = 1; i < selectOptionLength; i++) {
-        $('<div>', {
-            class: 'new-select__item new-select__item--direction',
-            html: $('<span>', {
-              text: selectOption.eq(i).text(),
-            })
-          })
-          .attr('data-value', selectOption.eq(i).val())
-          .appendTo(selectList);
-      }
+  //     const selectList = selectHead.next('.new-select__list');
+  //     for (let i = 1; i < selectOptionLength; i++) {
+  //       $('<div>', {
+  //           class: 'new-select__item new-select__item--direction',
+  //           html: $('<span>', {
+  //             text: selectOption.eq(i).text(),
+  //           })
+  //         })
+  //         .attr('data-value', selectOption.eq(i).val())
+  //         .appendTo(selectList);
+  //     }
 
-      const selectItem = selectList.find('.new-select__item');
-      selectList.slideUp(0);
-      selectHead.on('click', function () {
-        if (!$(this).hasClass('on')) {
-          $(this).addClass('on');
-          selectList.slideDown(duration);
+  //     const selectItem = selectList.find('.new-select__item');
+  //     selectList.slideUp(0);
+  //     selectHead.on('click', function () {
+  //       if (!$(this).hasClass('on')) {
+  //         $(this).addClass('on');
+  //         selectList.slideDown(duration);
 
-          selectItem.on('click', function () {
-            let chooseItem = $(this).data('value');
+  //         selectItem.on('click', function () {
+  //           let chooseItem = $(this).data('value');
 
-            $('select').val(chooseItem).attr('selected', 'selected');
-            selectItem.removeClass('selected');
-            $(this).addClass('selected');
-            selectHead.text($(this).find('span').text());
+  //           $('select').val(chooseItem).attr('selected', 'selected');
+  //           selectItem.removeClass('selected');
+  //           $(this).addClass('selected');
+  //           selectHead.text($(this).find('span').text());
 
-            selectList.slideUp(duration);
-            selectHead.removeClass('on');
-          });
+  //           selectList.slideUp(duration);
+  //           selectHead.removeClass('on');
+  //         });
 
-        } else {
-          $(this).removeClass('on');
-          selectList.slideUp(duration);
-        }
-      });
-    });
-  }
+  //       } else {
+  //         $(this).removeClass('on');
+  //         selectList.slideUp(duration);
+  //       }
+  //     });
+  //   });
+  // }
 
-  if ($('.select-category')) {
-    $('.select-category').each(function () {
-      const _this = $(this),
-        selectOption = _this.find('option'),
-        selectOptionLength = selectOption.length,
-        // selectedOption = selectOption.filter(':selected'),
-        duration = 0; // длительность анимации 
 
-      _this.hide();
-      _this.wrap('<div class="select"></div>');
-      $('<div>', {
-        class: 'new-select filter__item filter__item--category',
-        text: _this.children('option:disabled').text()
-      }).insertAfter(_this);
+  // if ($('.select-category')) {
+  //   $('.select-category').each(function () {
+  //     const _this = $(this),
+  //       selectOption = _this.find('option'),
+  //       selectOptionLength = selectOption.length,
+  //       // selectedOption = selectOption.filter(':selected'),
+  //       duration = 0; // длительность анимации 
 
-      const selectHead = _this.next('.new-select');
-      $('<div>', {
-        class: 'new-select__list new-select__list--category'
-      }).insertAfter(selectHead);
+  //     _this.hide();
+  //     _this.wrap('<div class="select"></div>');
+  //     $('<div>', {
+  //       class: 'new-select filter__item filter__item--category',
+  //       text: _this.children('option:disabled').text()
+  //     }).insertAfter(_this);
 
-      const selectList = selectHead.next('.new-select__list');
-      for (let i = 1; i < selectOptionLength; i++) {
-        $('<div>', {
-            class: 'new-select__item new-select__item--direction',
-            html: $('<span>', {
-              text: selectOption.eq(i).text(),
-            })
-          })
-          .attr('data-value', selectOption.eq(i).val())
-          .appendTo(selectList);
-      }
+  //     const selectHead = _this.next('.new-select');
+  //     $('<div>', {
+  //       class: 'new-select__list new-select__list--category'
+  //     }).insertAfter(selectHead);
 
-      const selectItem = selectList.find('.new-select__item');
-      selectList.slideUp(0);
-      selectHead.on('click', function () {
-        if (!$(this).hasClass('on')) {
-          $(this).addClass('on');
-          selectList.slideDown(duration);
+  //     const selectList = selectHead.next('.new-select__list');
+  //     for (let i = 1; i < selectOptionLength; i++) {
+  //       $('<div>', {
+  //           class: 'new-select__item new-select__item--direction',
+  //           html: $('<span>', {
+  //             text: selectOption.eq(i).text(),
+  //           })
+  //         })
+  //         .attr('data-value', selectOption.eq(i).val())
+  //         .appendTo(selectList);
+  //     }
 
-          selectItem.on('click', function () {
-            let chooseItem = $(this).data('value');
+  //     const selectItem = selectList.find('.new-select__item');
+  //     selectList.slideUp(0);
+  //     selectHead.on('click', function () {
+  //       if (!$(this).hasClass('on')) {
+  //         $(this).addClass('on');
+  //         selectList.slideDown(duration);
 
-            $('select').val(chooseItem).attr('selected', 'selected');
-            selectItem.removeClass('selected');
-            $(this).addClass('selected');
-            selectHead.text($(this).find('span').text());
+  //         selectItem.on('click', function () {
+  //           let chooseItem = $(this).data('value');
 
-            selectList.slideUp(duration);
-            selectHead.removeClass('on');
-          });
+  //           $('select').val(chooseItem).attr('selected', 'selected');
+  //           selectItem.removeClass('selected');
+  //           $(this).addClass('selected');
+  //           selectHead.text($(this).find('span').text());
 
-        } else {
-          $(this).removeClass('on');
-          selectList.slideUp(duration);
-        }
-      });
-    });
-  }
+  //           selectList.slideUp(duration);
+  //           selectHead.removeClass('on');
+  //         });
 
-  if ($('.select-season')) {
-    $('.select-season').each(function () {
-      const _this = $(this),
-        selectOption = _this.find('option'),
-        selectOptionLength = selectOption.length,
-        // selectedOption = selectOption.filter(':selected'),
-        duration = 0; // длительность анимации 
+  //       } else {
+  //         $(this).removeClass('on');
+  //         selectList.slideUp(duration);
+  //       }
+  //     });
+  //   });
+  // }
 
-      _this.hide();
-      _this.wrap('<div class="select"></div>');
-      $('<div>', {
-        class: 'new-select filter__item filter__item--season',
-        text: _this.children('option:disabled').text()
-      }).insertAfter(_this);
+  // if ($('.select-season')) {
+  //   $('.select-season').each(function () {
+  //     const _this = $(this),
+  //       selectOption = _this.find('option'),
+  //       selectOptionLength = selectOption.length,
+  //       // selectedOption = selectOption.filter(':selected'),
+  //       duration = 0; // длительность анимации 
 
-      const selectHead = _this.next('.new-select');
-      $('<div>', {
-        class: 'new-select__list new-select__list--season'
-      }).insertAfter(selectHead);
+  //     _this.hide();
+  //     _this.wrap('<div class="select"></div>');
+  //     $('<div>', {
+  //       class: 'new-select filter__item filter__item--season',
+  //       text: _this.children('option:disabled').text()
+  //     }).insertAfter(_this);
 
-      const selectList = selectHead.next('.new-select__list');
-      for (let i = 1; i < selectOptionLength; i++) {
-        $('<div>', {
-            class: 'new-select__item new-select__item--season',
-            html: $('<span>', {
-              text: selectOption.eq(i).text(),
-            })
-          })
-          .attr('data-value', selectOption.eq(i).val())
-          .appendTo(selectList);
-      }
+  //     const selectHead = _this.next('.new-select');
+  //     $('<div>', {
+  //       class: 'new-select__list new-select__list--season'
+  //     }).insertAfter(selectHead);
 
-      const selectItem = selectList.find('.new-select__item');
-      selectList.slideUp(0);
-      selectHead.on('click', function () {
-        if (!$(this).hasClass('on')) {
-          $(this).addClass('on');
-          selectList.slideDown(duration);
+  //     const selectList = selectHead.next('.new-select__list');
+  //     for (let i = 1; i < selectOptionLength; i++) {
+  //       $('<div>', {
+  //           class: 'new-select__item new-select__item--season',
+  //           html: $('<span>', {
+  //             text: selectOption.eq(i).text(),
+  //           })
+  //         })
+  //         .attr('data-value', selectOption.eq(i).val())
+  //         .appendTo(selectList);
+  //     }
 
-          selectItem.on('click', function () {
-            let chooseItem = $(this).data('value');
+  //     const selectItem = selectList.find('.new-select__item');
+  //     selectList.slideUp(0);
+  //     selectHead.on('click', function () {
+  //       if (!$(this).hasClass('on')) {
+  //         $(this).addClass('on');
+  //         selectList.slideDown(duration);
 
-            $('select').val(chooseItem).attr('selected', 'selected');
-            selectItem.removeClass('selected');
-            $(this).addClass('selected');
-            selectHead.text($(this).find('span').text());
+  //         selectItem.on('click', function () {
+  //           let chooseItem = $(this).data('value');
 
-            selectList.slideUp(duration);
-            selectHead.removeClass('on');
-          });
+  //           $('select').val(chooseItem).attr('selected', 'selected');
+  //           selectItem.removeClass('selected');
+  //           $(this).addClass('selected');
+  //           selectHead.text($(this).find('span').text());
 
-        } else {
-          $(this).removeClass('on');
-          selectList.slideUp(duration);
-        }
-      });
-    });
-  }
+  //           selectList.slideUp(duration);
+  //           selectHead.removeClass('on');
+  //         });
+
+  //       } else {
+  //         $(this).removeClass('on');
+  //         selectList.slideUp(duration);
+  //       }
+  //     });
+  //   });
+  // }
 
   if ($(".new-select:contains('Русский')")) {
     $(".new-select:contains('Русский')").addClass('new-select__img--rus');
@@ -1187,11 +1186,94 @@ $(function () {
 
 });
 
+(function($) {
+	function setChecked(target) {
+		var checked = $(target).find("input[type='checkbox']:checked").length;
+		if (checked) {
+			$(target).find('select option:first').html('Выбрано: ' + checked);
+		} else {
+			$(target).find('select option:first').html('Выберите из списка');
+		}
+  }
+  var checkLabel = $(".check-label")
+ 
+	$.fn.checkselect = function() {
+		this.wrapInner('<div class="checkselect-popup"></div>');
+		this.prepend(
+			'<div class="checkselect-control">' +
+				'<select class="form-control"><option></option></select>' +
+				'<div class="checkselect-over"></div>' +
+			'</div>'
+		);	
+ 
+		this.each(function(){
+			setChecked(this);
+		});		
+		this.find('input[type="checkbox"]').click(function(){
+      setChecked($(this).parents('.checkselect'));
+      $(this).parent(checkLabel).toggleClass("checked")
+		});
+ 
+		this.parent().find('.checkselect-control').on('click', function(){
+			$popup = $(this).next();
+			$('.checkselect-popup').not($popup).css('display', 'none');
+			if ($popup.is(':hidden')) {
+				$popup.css('display', 'block');
+				$(this).find('select').focus();
+			} else {
+				$popup.css('display', 'none');
+			}
+		});
+ 
+		$('html, body').on('click', function(e){
+			if ($(e.target).closest('.checkselect').length == 0){
+				$('.checkselect-popup').css('display', 'none');
+			}
+		});
+	};
+})(jQuery);	
+ 
+$('.checkselect').checkselect();
+
 //Модальные окна на Pure Js
+
+if ($(".tours-map__btn")) {
+  $(".tours-map__btn").click(function () {
+    $(".tours-map__btn").removeClass("tours-map__btn--active");
+    $('[data-visible]').removeClass("tours-map__right-item--active");
+    $(this).addClass("tours-map__btn--active");
+    $('[data-visible="' + $(this)[0].attributes[1].value + '"]').addClass("tours-map__right-item--active");
+  });
+}
 
 (function () {
 
-  //   //Вызов окна колбека
+  if (document.querySelector('.openCallback')) {
+    openCallback = document.querySelector('.openCallback');
+    callbackModal = document.querySelector('.modal-wrapper__callback');
+
+    openCallback.addEventListener('click', function () {
+      openBaseModal();
+      callbackModal.classList.remove('hidden');
+      setTimeout(function () {
+        callbackModal.classList.remove('animation');
+      }, 20);
+    })
+
+    function closeCallbackPopup() {
+      if (!callbackModal.classList.contains('hidden')) {
+        callbackModal.classList.add('animation');
+        callbackModal.addEventListener('transitionend', function (e) {
+          callbackModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }
+
   if (document.querySelector('.openCateg')) {
     openCateg = document.querySelector('.openCateg');
     categModal = document.querySelector('.modal-wrapper__category');
@@ -1206,8 +1288,8 @@ $(function () {
 
     function closeCategPopup() {
       if (!categModal.classList.contains('hidden')) {
-        categModal.classList.add('animation');    
-        categModal.addEventListener('transitionend', function(e) {
+        categModal.classList.add('animation');
+        categModal.addEventListener('transitionend', function (e) {
           categModal.classList.add('hidden');
         }, {
           capture: false,
@@ -1217,7 +1299,7 @@ $(function () {
       }
     };
   }
-    
+
 
   //   //Вызов окна колбека
   openLeftMenu = document.querySelectorAll('.openMenu');
@@ -1373,6 +1455,9 @@ $(function () {
   };
 
   function closeAllModal() {
+    if (document.querySelector('.openCallback')) {
+      closeCallbackPopup();
+    };
     if (document.querySelector('.openCateg')) {
       closeCategPopup();
     };
