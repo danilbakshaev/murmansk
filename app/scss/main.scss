@@ -923,6 +923,10 @@ header .desktop-header__line-bottom--tour {
   display: none;
 }
 
+.header-text__wrap--pc {
+  padding-bottom: 120px;
+}
+
 @media screen and (max-width: 1440px) {
   header::before {
     bottom: -11px;
