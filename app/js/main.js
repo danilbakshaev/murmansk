@@ -448,17 +448,17 @@ $(function () {
     });
   }
 
-  // if ($('.header__text-items')) {
-  //   $('.header__text-items').slick({
-  //     slidesToShow: 1,
-  //     slidesToScroll: 1,
-  //     infinite: true,
-  //     dots: true,
-  //     arrows: false,
-  //     autoplay: true,
-  //     autoplaySpeed: 2000,
-  //   });
-  // }
+  if ($('.header__text-items')) {
+    $('.header__text-items').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true,
+      arrows: false,
+      autoplay: false,
+      autoplaySpeed: 2000,
+    });
+  }
 
   if ($('.tour-transport__inner-slider')) {
     $('.tour-transport__inner-slider').slick({
