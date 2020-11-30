@@ -205,6 +205,9 @@ header::before {
 .desktop-header__wrapper--northern .tours_day {
   margin-top: 0;
 }
+.desktop-header__wrapper--northern {
+  padding-bottom: 190px;
+}
 .desktop-header__wrapper--agency .tours_package,
 .desktop-header__wrapper--agency .tours_day {
   margin-top: 0;
@@ -4259,6 +4262,10 @@ header .desktop-header__line-bottom--tour {
   .included-price {
     margin-top: 56px;
   }
+  .northern-wrap .northern-wrap__right {
+    margin-left: -5%;
+    margin-right: -5%;
+  }
 }
 @media screen and (max-width: 768px) {
   .northern-tour {
@@ -4361,6 +4368,13 @@ header .desktop-header__line-bottom--tour {
     width: 16px;
     height: 12px;
   }
+  .discounts__item:not(.slick-active) {
+    opacity: 0.5;
+    margin-bottom: 0;
+  }
+  .discounts {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 768px) {
   .discounts {
@@ -4401,6 +4415,7 @@ header .desktop-header__line-bottom--tour {
   line-height: 150%;
   color: #242440;
   margin-left: 10px;
+  max-width: 610px;
 }
 
 .photo-take__copyright {
@@ -4510,6 +4525,7 @@ header .desktop-header__line-bottom--tour {
 
   .prognosis__image {
     order: 2;
+    margin-top: 0;
   }
   .prognosis__image img {
     height: 650px;
@@ -4526,6 +4542,8 @@ header .desktop-header__line-bottom--tour {
   .prognosis {
     margin-bottom: 56px;
   }
+}
+@media screen and (max-width: 450px) {
   .prognosis__right {
     width: 100%;
   }
@@ -4548,7 +4566,7 @@ header .desktop-header__line-bottom--tour {
 
 .header-text__teriberka-right {
   width: 256px;
-  margin-left: 129px;
+  margin-left: 29px;
 }
 
 .header-text__teriberka-form {
@@ -4667,13 +4685,18 @@ header .desktop-header__line-bottom--tour {
   border: none;
   border-radius: 50%;
   overflow: hidden;
-  width: 50px;
-  height: 50px;
+  width: 52px;
+  height: 52px;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(28px);
   cursor: pointer;
 }
-
+.video-tours__item--small:hover .header-text__teriberka-btn svg {
+  transform: scale(1.15) !important;
+}
+.program-tour__inner-right--sticky .header-text__teriberka-wrapper:hover svg {
+  transform: scale(1.15) !important;
+}
 .header-text__teriberka-title-h2-mobile {
   display: none;
 }
@@ -4691,6 +4714,12 @@ header .desktop-header__line-bottom--tour {
     top: initial !important;
     bottom: 20px;
     left: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-text__teriberka-left--north {
+    max-width: 535px;
   }
 }
 @media screen and (max-width: 860px) {
@@ -4727,6 +4756,7 @@ header .desktop-header__line-bottom--tour {
     padding: 24px;
     position: absolute;
     bottom: -16px;
+    left: 62px;
   }
   .header-text__teriberka-title-wrap--head
     .header-text__teriberka-title-h2-mobile {
@@ -4827,7 +4857,8 @@ header .desktop-header__line-bottom--tour {
   .desktop-hideh .about-teriberka__right-block {
     border-radius: 0;
     width: 100%;
-    transform: scale(1.08);
+    padding-left: 34px;
+    padding-right: 34px;
   }
   .header-text__teriberka-wrap .header-text__teriberka-inp {
     margin-bottom: 8px;
@@ -4838,6 +4869,29 @@ header .desktop-header__line-bottom--tour {
   }
   .header-text__teriberka-right .header-text__teriberka-img {
     border-radius: 0;
+  }
+  .program-tour__text {
+    max-width: 100%;
+  }
+  .program-tour__inner .program-tour__inner-right--sticky {
+    width: 100% !important;
+  }
+
+  .program-tour__inner .about-teriberka__right-block {
+    width: 100% !important;
+    padding: 24px 41px !important;
+    border-radius: 0 !important;
+  }
+  .program-tour__inner .program-tour__inner-right--sticky {
+    margin-left: 0 !important;
+  }
+  .program-tour__inner .program-tour__inner-right {
+    margin-left: -6%;
+    margin-right: -6%;
+    margin-top: 24px;
+  }
+  .program-tour {
+    margin-bottom: 56px !important;
   }
 }
 
@@ -5023,7 +5077,7 @@ header .desktop-header__line-bottom--tour {
   background-position: center center;
   background-size: cover;
   padding: 32px;
-  margin-left: 120px;
+  // margin-left: 120px;
 }
 
 .about-teriberka__right-block--sticky,
@@ -5121,6 +5175,13 @@ header .desktop-header__line-bottom--tour {
   text-align: center;
 }
 
+@media screen and (max-width: 1240px) {
+  .about-teriberka__right-block--sticky,
+  .program-tour__inner-right--sticky {
+    width: 310px;
+    padding: 20px;
+  }
+}
 @media screen and (max-width: 1080px) {
   .about-teriberka__inner {
     flex-direction: column;
@@ -5347,7 +5408,7 @@ header .desktop-header__line-bottom--tour {
     width: 50%;
   }
   .included-price--northern {
-    width: calc(100% + 352px);
+    // width: calc(100% + 352px);
   }
 }
 @media screen and (max-width: 1080px) {
@@ -5377,6 +5438,7 @@ header .desktop-header__line-bottom--tour {
   .included-price__btn--right {
     border: 1px solid #e9ecef;
     border-radius: 12px;
+    margin-left: 0;
   }
   .included-price__btn-line-left {
     display: none;
@@ -5389,13 +5451,6 @@ header .desktop-header__line-bottom--tour {
 @media screen and (max-width: 860px) {
   .included-price {
     width: auto;
-  }
-  .included-price__inner {
-    flex-direction: column;
-  }
-  .included-price__left {
-    margin-right: 0;
-    margin-bottom: 32px;
   }
   .included-price__inner-title {
     font-size: 20px;
@@ -5411,6 +5466,16 @@ header .desktop-header__line-bottom--tour {
 @media screen and (max-width: 768px) {
   .included-price {
     margin-bottom: 56px;
+  }
+  .included-price__inner {
+    flex-direction: column;
+  }
+  .included-price__left {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .included-price__btn {
+    width: 100%;
   }
 }
 
@@ -5547,14 +5612,16 @@ header .desktop-header__line-bottom--tour {
 .photos-inner__item--desk:hover svg {
   transform: scale(1.8);
 }
-@media screen and (max-width: 1240px) {
+
+@media screen and (max-width: 768px) {
+  .photos-teriberka {
+    margin-bottom: 56px;
+  }
   .photos-inner {
-    flex-direction: column;
     margin-right: 0;
   }
   .photos-inner__left {
     width: 100%;
-    margin-bottom: 8px;
   }
   .photos-inner__right {
     width: calc(100% + 12px);
@@ -5568,12 +5635,15 @@ header .desktop-header__line-bottom--tour {
     display: none;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .photos-teriberka {
-    margin-bottom: 56px;
+@media screen and (max-width: 550px) {
+  .photos-inner {
+    flex-direction: column;
   }
-}
+  .photos-inner__left {
+    margin-bottom: 8px;
+  }
+  
+} 
 
 // /Фотографии из тура в Териберку
 
@@ -5756,8 +5826,12 @@ header .desktop-header__line-bottom--tour {
 .northern-videos__btn svg {
   transition: all 0.2s linear;
 }
-.video-tours__item:hover .northern-videos__btn svg {
+.video-tours__item:hover .northern-videos__btn svg,
+.video-tours__item:hover .header-text__teriberka-btn svg {
   transform: scale(1.1);
+}
+.header-text__teriberka-btn svg {
+  transition: all .2s linear;
 }
 .northern-videos__block-wrap {
   box-sizing: border-box;
@@ -5830,21 +5904,21 @@ header .desktop-header__line-bottom--tour {
     margin-bottom: 32px;
   }
   .northern-videos__inner {
-    flex-direction: column;
+    // flex-direction: column;
   }
   .northern-videos__left {
     margin-bottom: 8px;
   }
   .northern-videos__right {
-    margin-left: 0;
+    // margin-left: 0;
   }
   .northern-videos__btn-wrap {
     top: calc(50% - 25px);
     left: calc(50% - 25px);
   }
   .northern-videos__btn {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
   }
   .northern-videos__btn svg {
     width: 20px;
@@ -5999,21 +6073,50 @@ header .desktop-header__line-bottom--tour {
   display: none;
 }
 
+@media screen and (max-width: 1240px) {
+  .program-tour__inner-right .about-teriberka__right-block {
+    width: 310px;
+    padding: 20px;
+    margin-left: 0;
+  }
+  .header-text__teriberka-right--program {
+    width: 310px;
+    margin-left: 0;
+  }
+  .program-tour__inner-right .program-tour__inner-right--sticky {
+    padding: 0;
+  }
+  .header-text__teriberka-right--program .header-text__teriberka-title-h2 {
+    width: 100%;
+    left: 0;
+    text-align: center;
+    bottom: 27px;
+  }
+}
 @media screen and (max-width: 1080px) {
   .about-teriberka__right-block--mobile {
     display: none;
   }
   .program-tour__inner-right {
-    margin-top: 32px;
+    // margin-top: 32px;
+  }
+  .program-tour__inner-right--sticky {
+    padding-top: 0;
   }
   .header-text__teriberka-right--program {
-    display: none;
+    // display: none;
   }
   .header-text__teriberka-right--mobile {
-    display: block;
+    // display: block;
   }
   .program-tour__inner {
-    flex-direction: column;
+    // flex-direction: column;
+  }
+  .program-tour__text--mod {
+    margin-right: 16px;
+  }
+  .program-tour__inner-left {
+    max-width: 63%;
   }
   .header-text__teriberka-right--program {
     margin-left: 0;
@@ -6031,7 +6134,10 @@ header .desktop-header__line-bottom--tour {
   }
 
   .header-text__teriberka-right--program .header-text__teriberka-title-h2 {
-    left: 80px;
+    // left: 80px;
+  }
+  .program-tour__inner-right .program-tour__inner-right--sticky {
+    margin-left: 32px;
   }
 }
 @media screen and (max-width: 860px) {
@@ -6065,11 +6171,70 @@ header .desktop-header__line-bottom--tour {
   }
   .program-tour__inner {
     margin-top: 24px;
+    flex-direction: column;
+  }
+  .header-text__teriberka-right--program {
+    display: none;
+  }
+  .header-text__teriberka-right--mobile {
+    display: block;
+    margin-left: 0;
+    transform: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 500px;
+    width: 100%;
+  }
+  .program-tour__inner-left {
+    max-width: 100%;
+  }
+  .header-text__teriberka-right--mob {
+    width: 115%;
+    max-width: 115%;
+    height: 300px;
+    transform: none;
+    margin-left: -6%;
+    margin-right: -6%;
+  }
+  .header-text__teriberka-right--mob .video-tours__item--small {
+    width: 100%;
+  }
+  .header-text__teriberka-right--mob .header-text__teriberka-title-h2-mobile {
+    padding: 0 34px;
+  }
+  .header-text__teriberka-right--mob .header-text__teriberka-btn {
+    top: calc(50% - 25px);
+    width: 80px;
+    height: 80px;
+  }
+  .header-text__teriberka-right--mob .header-text__teriberka-btn svg {
+    transform: scale(1.5);
+  }
+  .header-text__teriberka-right--mob .header-text__teriberka-title-wrap {
+    width: 100%;
+    left: 0;
+  }
+  .header-text__teriberka-right--mob .header-text__teriberka-title-h2-mobile {
+    left: 0;
+    width: 100%;
+  }
+  .header-text__teriberka-right--mob.video-tours__item--small:hover .header-text__teriberka-btn svg {
+    transform: unset;
   }
 }
 @media screen and (max-width: 768px) {
   .program-tour {
     margin-bottom: 56px;
+  }
+  .header-text__teriberka-right--mob .header-text__teriberka-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .header-text__teriberka-right--mob .header-text__teriberka-btn svg {
+    transform: unset;
+  }
+  .header-text__teriberka-right--mob .header-text__teriberka-title-wrap {
+    bottom: 40px;
   }
 }
 
@@ -6100,6 +6265,12 @@ header .desktop-header__line-bottom--tour {
   // }
   .header-text__teriberka-right--program {
     width: auto;
+  }
+  .header-text__teriberka-right--mob {
+    height: 257px;
+  }
+  .header-text__teriberka-right--mob .header-text__teriberka-title-wrap {
+    bottom: 25px;
   }
 }
 // /Программа тура
@@ -6550,6 +6721,7 @@ header .desktop-header__line-bottom--tour {
   display: flex;
   flex-wrap: wrap;
   margin-right: -32px;
+  margin-top: 60px;
 }
 .know-import-item {
   width: calc(25% - 32px);
@@ -6593,6 +6765,9 @@ header .desktop-header__line-bottom--tour {
     margin-bottom: 24px;
   }
 
+  .know-import-inner {
+    margin-top: 32px;
+  }
   .know-import {
     padding-bottom: 0;
   }
@@ -12786,18 +12961,18 @@ footer {
   .mobile-hide--our {
     display: none;
   }
-}
-
-@media screen and (max-width: 740px) {
-  .tour-ticket__prices--active {
-    width: 97%;
-  }
 
   .mobile-hide {
     display: none;
   }
   .desktop-hideh {
     display: block;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .tour-ticket__prices--active {
+    width: 97%;
   }
 }
 
