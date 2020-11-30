@@ -13558,6 +13558,7 @@ footer {
 
 .about-us {
   padding-bottom: 96px;
+  overflow: hidden;
 }
 
 .about-us__list {
@@ -13717,6 +13718,9 @@ footer {
   .about-us__list {
     padding-right: 100px;
   }
+  .team-text__name {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -13796,9 +13800,7 @@ footer {
     height: 142px;
     margin-bottom: 24px;
   }
-  .team-text__name {
-    font-size: 24px;
-  }
+
   .team-text__post {
     font-size: 14px;
     margin-top: 8px;
@@ -13851,56 +13853,56 @@ footer {
 }
 
 /* about-us__inner--container */
-.about-us__inner--container {
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-  /* position: relative; */
-}
+// .about-us__inner--container {
+//   max-width: 1200px;
+//   width: 100%;
+//   margin: 0 auto;
+//   /* position: relative; */
+// }
 
-@media screen and (max-width: 1440px) {
-  .about-us__inner--container {
-    max-width: 1200px;
-  }
-}
+// @media screen and (max-width: 1440px) {
+//   .about-us__inner--container {
+//     max-width: 1200px;
+//   }
+// }
 
-@media screen and (max-width: 1240px) {
-  .about-us__inner--container {
-    max-width: 1040px;
-  }
-}
+// @media screen and (max-width: 1240px) {
+//   .about-us__inner--container {
+//     max-width: 1040px;
+//   }
+// }
 
-@media screen and (max-width: 1080px) {
-  .about-us__inner--container {
-    max-width: 960px;
-  }
-}
+// @media screen and (max-width: 1080px) {
+//   .about-us__inner--container {
+//     max-width: 960px;
+//   }
+// }
 
-@media screen and (max-width: 992px) {
-  .about-us__inner--container {
-    max-width: 840px;
-  }
-}
+// @media screen and (max-width: 992px) {
+//   .about-us__inner--container {
+//     max-width: 840px;
+//   }
+// }
 
-@media screen and (max-width: 860px) {
-  .about-us__inner--container {
-    max-width: 740px;
-  }
-}
+// @media screen and (max-width: 860px) {
+//   .about-us__inner--container {
+//     max-width: 740px;
+//   }
+// }
 
-@media screen and (max-width: 768px) {
-  .about-us__inner--container {
-    max-width: calc(100% - 30px);
-    margin: 0 15px;
-  }
-}
+// @media screen and (max-width: 768px) {
+//   .about-us__inner--container {
+//     max-width: calc(100% - 30px);
+//     margin: 0 15px;
+//   }
+// }
 
-@media screen and (max-width: 580px) {
-  .about-us__inner--container {
-    margin: 0;
-    max-width: 100%;
-  }
-}
+// @media screen and (max-width: 580px) {
+//   .about-us__inner--container {
+//     margin: 0;
+//     max-width: 100%;
+//   }
+// }
 
 .our-partners {
   padding: 96px 0;
