@@ -1524,13 +1524,7 @@ header .desktop-header__line-bottom--tour {
   .tours-wr:hover {
     transform: initial;
   }
-  .tours-wr:not(:first-child) {
-    display: none;
-  }
-
-  .tours__items.slick-initialized .tours-wr:not(:first-child) {
-    display: block;
-  }
+  
 
   .tours {
     margin-top: 70px;
@@ -3012,8 +3006,13 @@ header .desktop-header__line-bottom--tour {
 }
 
 .stocks__items {
-  display: flex;
+  // display: flex;
 }
+
+.stocks__items .slick-list{
+  overflow: unset!important;
+}
+
 .stocks__items .slick-track {
   padding: 10px;
 }
@@ -3157,7 +3156,7 @@ header .desktop-header__line-bottom--tour {
   } */
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
   .stocks {
     padding: 32px 0;
   }
@@ -3197,9 +3196,22 @@ header .desktop-header__line-bottom--tour {
   .next-js-video {
     display: block !important;
   }
+
+  .stocks__item{
+    height: 390px;
+  }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 740px) {
+  .stocks__item{
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .stocks__item{
+    height: 390px;
+  }
 }
 
 /* Рассчитать стоимость поездки */
