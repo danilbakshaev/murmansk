@@ -1,10 +1,9 @@
 @@include('./include/head.html')
 <header class="background-image" style="background-image: url(/img/tour-back.jpg)">
-	<div class="desktop-header__wrapper">
+	<div class="desktop-header__wrapper desktop-header__wrapper--tour">
 		@@include('./include/header_mob-desk.html')
 		<div class="header-text">
 			<div class="container">
-				<div class="header-text active ">
 					<div class="container header-text--tour">
 						<div class="header-text__wrap header-text__wrap--tour">
 							<div class="tours__item-geo tours__item-geo--tour tours__item-geo--header">
@@ -37,7 +36,7 @@
 								<div class="callback-form__wrap">
 									<input class="callback-form__input" type="tel" name="tel"
 										placeholder="Введите ваш номер">
-									<button class="callback-form__submit callback-form__submit--mt"
+									<button class="callback-form__submit callback-form__submit--mt request-link"
 										type="submit">Отправить</button>
 								</div>
 								<p class="callback-form__privacy">Нажав на кнопку «Отправить», вы даете согласие на
@@ -58,7 +57,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
 			</div>
 			@@include('./include/header_tours.html')
 		</div>

@@ -182,7 +182,11 @@ header::before {
   z-index: 1;
 }
 .backgroundActive .header-text__wrap,
-.backgroundActive .header-text-video--tour {
+.backgroundActive .header-text-video--tour,
+.backgroundActive .header-text__teriberka-inner,
+.backgroundActive .header-text--tour,
+.backgroundActive .header-text__teriberka-inner,
+.backgroundActive .header-text__wrap--agency  {
   opacity: 0.1;
 }
 
@@ -198,19 +202,27 @@ header::before {
 .popular-destinations__items--package .slick-list {
   overflow: visible !important;
 }
-.backgroundActive .header-text__title,
-.backgroundActive .header-text__subtitle,
-.backgroundActive .callback-form__privacy,
-.backgroundActive .callback-form__privacy-link,
-.backgroundActive .header-text__presentation {
-  color: #16271f;
+.desktop-header__wrapper--northern .tours_package,
+.desktop-header__wrapper--northern .tours_day {
+  margin-top: 0;
 }
-.backgroundActive .header-text__wrap--pc {
+.desktop-header__wrapper--agency .tours_package,
+.desktop-header__wrapper--agency .tours_day {
+  margin-top: 0;
+}
+.desktop-header__wrapper--faq .tours_package,
+.desktop-header__wrapper--faq .tours_day {
+  margin-top: 0;
+}
+.desktop-header__wrapper--agency.backgroundActive {
+  padding-bottom: 335px;
 }
 .header__text-items {
   margin-top: 35px;
 }
-
+.desktop-header__wrapper--agency {
+  padding-bottom: 160px;
+}
 .header__text-items .slick-dots button {
   width: 10px;
   height: 10px;
@@ -492,7 +504,13 @@ header .desktop-header__line-bottom--tour {
 .desktop-header__wrapper--white .contacts__callback:hover:after {
   border-bottom: 1px solid #000;
 }
-
+.desktop-header__wrapper--tour .tours_package,
+.desktop-header__wrapper--tour .tours_day {
+  // margin-top: 0;
+}
+.desktop-header__wrapper--tour {
+  padding-bottom: 170px;
+}
 .contacts__request {
   height: 43px;
 }
@@ -914,6 +932,9 @@ header .desktop-header__line-bottom--tour {
   .header-text__wrap {
     width: auto;
   }
+  .desktop-header__wrapper--northern.backgroundActive {
+    padding-bottom: 240px;
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -1151,7 +1172,8 @@ header .desktop-header__line-bottom--tour {
     max-width: 200px;
     margin-bottom: 0;
   }
-  .header-text__wrap--catalog .header__text-wrap-top {
+  .header-text__wrap--catalog .header__text-wrap-top,
+  .header-text__wrap--tour .header__text-wrap-top {
     margin-bottom: 0;
   }
   .header-text__wrap--catalog .header-text__title {
@@ -2040,6 +2062,9 @@ header .desktop-header__line-bottom--tour {
   display: none;
 }
 
+.desktop-header__wrapper--tour .header-text {
+  margin-top: 64px;
+}
 @media screen and (max-width: 1440px) {
   .video-tours__item--small {
     margin-bottom: 17px;
@@ -2075,6 +2100,9 @@ header .desktop-header__line-bottom--tour {
   .video-tours__item--small {
     margin-bottom: 4px;
   }
+  .desktop-header__wrapper--tour.backgroundActive {
+    padding-bottom: 125px;
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -2087,6 +2115,10 @@ header .desktop-header__line-bottom--tour {
   }
   .header-text__wrap {
     margin-top: 0;
+  }
+  .desktop-header__wrapper--tour .header-text {
+    margin-top: 0;
+    padding-top: 32px;
   }
 }
 @media screen and (max-width: 840px) {
@@ -4339,7 +4371,9 @@ header .desktop-header__line-bottom--tour {
   padding: 96px 0 155px;
   transition: all 0.2s linear;
 }
-
+.desktop-header__wrapper--northern .header-text__teriberka-inner {
+  padding-bottom: 0 !important;
+}
 .header-text__teriberka-left {
   width: 50%;
 }
@@ -10538,7 +10572,12 @@ footer {
   max-width: 640px;
   padding-bottom: 115px;
 }
-
+.desktop-header__wrapper--tour .header-text__wrap--tour {
+  padding-bottom: 0;
+}
+.desktop-header__wrapper--tour.backgroundActive {
+  padding-bottom: 150px;
+}
 .video-tours__item--tour {
   margin-left: 128px;
   max-width: 256px;
@@ -11834,6 +11873,10 @@ footer {
 .desktop-hideh {
   display: none;
 }
+
+.header-text__wrap--tour  .callback-form__submit:hover {
+  background: transparent;
+}
 @media screen and (max-width: 1440px) {
   .tour-map__left-map {
     height: 199px;
@@ -11943,7 +11986,18 @@ footer {
     max-width: 100%;
     padding: 0px 0 30px;
   }
-
+  .header-text__wrap--tour .callback-form__wrap {
+    flex-direction: column;
+  }
+  .header-text__wrap--tour .callback-form--wrap {
+    margin-top: 0;
+  }
+  .header-text__wrap--tour .callback-form--wrap,
+  .header-text__wrap--tour .callback-form__input,
+  .header-text__wrap--tour .callback-form__submit {
+    width: 100%;
+    max-width: 100%;
+  }
   .header-text-video {
     width: 100%;
     margin-top: 40px;
