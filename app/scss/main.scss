@@ -3083,6 +3083,11 @@ header .desktop-header__line-bottom--tour {
 .reviews__vk {
   width: auto;
   margin-right: 3px;
+  transition: all 0.2s linear;
+}
+
+.reviews__vk:hover{
+  opacity: 0.7;
 }
 
 .reviews__contact {
