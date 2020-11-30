@@ -5878,6 +5878,7 @@ header .desktop-header__line-bottom--tour {
   margin-right: 16px;
   border-radius: 12px;
   overflow: hidden;
+  max-width: 164px;
 }
 
 .program-tour__wrapper img {
@@ -6239,7 +6240,7 @@ header .desktop-header__line-bottom--tour {
   display: flex;
   flex-grow: 1;
   border-radius: 12px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 .video-tour__left img {
   cursor: pointer;
@@ -7330,7 +7331,7 @@ header .desktop-header__line-bottom--tour {
     width: 100%;
     height: 156px;
     z-index: 1;
-    bottom: -65px;
+    bottom: -5px;
     right: 0;
     background-image: url(/img/brush-header.png);
     background-size: cover;
@@ -7420,6 +7421,7 @@ header .desktop-header__line-bottom--tour {
 // блок "Фотографии"
 .photos {
   margin-bottom: 96px;
+  overflow: hidden;
 }
 
 .photos__items {
@@ -7631,7 +7633,7 @@ header .desktop-header__line-bottom--tour {
     margin-right: 16px;
   }
   .vehicle-fleet__right-inner {
-    border-radius: none;
+    border-radius: 0;
   }
   .vehicle-fleet__right-item img,
   .vehicle-fleet__right-item::before {
@@ -7874,9 +7876,14 @@ header .desktop-header__line-bottom--tour {
   }
   .cooperate__form {
     width: 100%;
+    max-width: 450px;
     padding: 24px 14px;
-    background-color: rgb(6, 16, 20);
+    background-color: rgba(6, 16, 20, 0.5);
     border-radius: 40px 40px 0px 0px;
+  }
+  .cooperate__right {
+    display: flex;
+    justify-content: center;
   }
   .cooperate__privacy {
     color: #fff;
@@ -15476,8 +15483,8 @@ footer {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  height: 156px;
-  top: -65px;
+  height: 113px;
+  top: -24px;
   left: 0;
 }
 
