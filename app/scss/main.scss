@@ -2957,6 +2957,11 @@ header .desktop-header__line-bottom--tour {
 .reviews {
   padding: 96px 0;
   background-color: #f8f8f6;
+  overflow: hidden;
+}
+
+.reviews--index {
+  overflow: hidden;
 }
 
 .reviews__item {
@@ -3095,6 +3100,7 @@ header .desktop-header__line-bottom--tour {
 /* stocks */
 
 .stocks {
+  overflow: hidden;
   padding: 96px 0;
   background-color: #f8f8f6;
 }
@@ -3889,6 +3895,32 @@ header .desktop-header__line-bottom--tour {
   overflow: hidden;
 }
 
+.btn-orange-shadow--inst {
+  transition: all linear 0.3s;
+}
+
+.btn-orange-shadow--inst svg {
+  margin-right: 8px;
+  transition: all linear 0.2s;
+}
+
+.btn-orange-shadow--inst span {
+  transition: all linear 0.2s;
+}
+
+.btn-orange-shadow--inst:hover .btn-orange-shadow__icon--inst {
+  transition: all linear 0.2s;
+}
+
+.btn-orange-shadow--inst:hover svg path {
+  fill: #000;
+  transition: all linear 0.3s;
+}
+
+.btn-orange-shadow--inst path {
+  transition: all linear 0.3s;
+}
+
 @media screen and (max-width: 1051px) {
   .subscribe-instagram {
     padding-bottom: 72px;
@@ -3950,6 +3982,12 @@ header .desktop-header__line-bottom--tour {
 
   .subscribe-instagram__description {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn-orange-shadow--inst {
+    width: 100% !important;
   }
 }
 
