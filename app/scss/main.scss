@@ -358,19 +358,22 @@ header::before {
   justify-content: center;
   margin-right: 16px;
 }
-
+.header-text__wrap--catalog .header__text-wrap-right {
+  max-width: 172px;
+}
 .header__text-wrap-right {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-bottom: 11px;
+  margin-bottom: 3px;
 }
 
 .header__text-wrap-right-text {
-  margin-top: 3px;
   margin-bottom: 0;
 }
-
+.header__text-wrap-right-text br {
+  display: none;
+}
 .header__text-wrap-left-span-small {
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
@@ -658,7 +661,7 @@ header .desktop-header__line-bottom--tour {
 }
 
 .header-text--catalog {
-  margin-bottom: 150px;
+  // margin-bottom: 150px;
 }
 
 // .header-text__wrap {
@@ -1064,6 +1067,7 @@ header .desktop-header__line-bottom--tour {
   .header-text {
     padding-top: 54px;
     padding-bottom: 160px;
+    overflow: hidden;
   }
 
   .desktop-header__wrapper {
@@ -1100,16 +1104,21 @@ header .desktop-header__line-bottom--tour {
   }
 
   .header-text--catalog {
-    padding-bottom: 90px;
-    padding-top: 0;
-    margin-bottom: 20px;
+    // padding-bottom: 90px;
+    // padding-top: 0;
+    // margin-bottom: 20px;
   }
-
+  .header-text__wrap--catalog {
+    margin-top: 0;
+    margin: 0 10px;
+  }
   .header-text__wrap--catalog {
     display: flex;
     flex-direction: column-reverse;
   }
-
+  .desktop-header__wrapper--catalog {
+    padding-bottom: 0 !important;
+  }
   .header__text-wrap-top--mobile {
     margin-bottom: 0;
   }
@@ -1161,6 +1170,37 @@ header .desktop-header__line-bottom--tour {
   .header-text {
     padding-top: 16px;
     padding-bottom: 130px;
+  }
+  .header-text__wrap--catalog {
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .header-text__wrap--catalog .tours__item-span {
+    display: none;
+  }
+  .header-text__wrap--catalog .callback-form__wrap {
+    order: 2;
+  }
+  .header-text__wrap--catalog .header-text__title {
+    order: 1;
+  }
+  .header-text__wrap--catalog .header__text-wrap-left {
+    margin-right: 0;
+  }
+  .header__text-wrap-right-text br {
+    display: block;
+  }
+  .header-text__wrap--catalog .header__text-wrap-right {
+    max-width: 200px;
+    margin-bottom: 0;
+  }
+  .header-text__wrap--catalog .header__text-wrap-top {
+    margin-bottom: 0;
+  }
+  .header-text__wrap--catalog .header-text__title {
+    margin-top: 16px;
   }
 }
 
@@ -12331,9 +12371,8 @@ footer {
   }
 
   .header__text-wrap-left-span {
-    font-size: 14px;
+    font-size: 16px;
   }
-
   .header__text-wrap-right {
     margin-top: 8px;
     margin-bottom: 24px;
@@ -15409,7 +15448,9 @@ background:  #0FC4AC;
 .request-link--size {
   width: 256px;
 }
-
+.request-link--size350 {
+  width: 350px;
+}
 .request-link:hover::after {
   opacity: 0;
 }
@@ -16515,8 +16556,12 @@ background:  #0FC4AC;
   color: #93a0ad;
 }
 
+.desktop-header__wrapper--catalog  {
+  padding-bottom: 140px;
+}
+
 .desktop-header__wrapper--catalog .contacts__callback {
-  text-shadow: 1px 0px 3px rgba(0, 0, 0, 1);
+  // text-shadow: 1px 0px 3px rgba(0, 0, 0, 1);
 }
 
 // Барабан удачи
