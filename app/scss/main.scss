@@ -240,10 +240,6 @@ header::before {
   background: none;
 }
 
-.backgroundActive .header-text__wrap {
-  // visibility: hidden;
-}
-
 .desktop-header__top-item {
   margin-right: 25px;
   font-weight: 500;
@@ -504,10 +500,7 @@ header .desktop-header__line-bottom--tour {
 .desktop-header__wrapper--white .contacts__callback:hover:after {
   border-bottom: 1px solid #000;
 }
-.desktop-header__wrapper--tour .tours_package,
-.desktop-header__wrapper--tour .tours_day {
-  // margin-top: 0;
-}
+
 .desktop-header__wrapper--tour {
   padding-bottom: 170px;
 }
@@ -2498,10 +2491,6 @@ header .desktop-header__line-bottom--tour {
   margin: 0;
 }
 
-.popular-destinations__wrap {
-  // width: 352px !important;
-}
-
 .popular-destinations__items--header .popular-destinations__wrap {
   // width: 256px !important;
   margin-right: 30px;
@@ -3183,10 +3172,6 @@ header .desktop-header__line-bottom--tour {
   padding: 96px 0;
   background-color: #f8f8f6;
   overflow: hidden;
-}
-
-.stocks__items {
-  // display: flex;
 }
 
 .stocks-content:not(:first-child) {
@@ -4466,9 +4451,6 @@ header .desktop-header__line-bottom--tour {
 }
 
 @media screen and (max-width: 1080px) {
-  .prognosis__inner {
-    // flex-direction: column;
-  }
   .prognosis__image-text {
     margin-bottom: 24px;
   }
@@ -7004,9 +6986,7 @@ header .desktop-header__line-bottom--tour {
     margin-bottom: 0;
   }
 }
-.our-transport__items .slick-track {
-  // left: -395px;
-}
+
 @media screen and (max-width: 768px) {
   .our-transport {
     margin-bottom: 56px;
@@ -7424,8 +7404,6 @@ header .desktop-header__line-bottom--tour {
   overflow: hidden;
 }
 
-.photos__items {
-}
 .photos__items .slick-list {
   overflow: visible;
 }
@@ -16094,9 +16072,6 @@ footer {
   max-width: 736px;
 }
 
-.real-time {
-}
-
 .real-time__title {
   margin: 0;
   font-family: "Roboto Slab", sans-serif;
@@ -16813,10 +16788,6 @@ footer {
 
 .desktop-header__wrapper--catalog  {
   padding-bottom: 140px;
-}
-
-.desktop-header__wrapper--catalog .contacts__callback {
-  // text-shadow: 1px 0px 3px rgba(0, 0, 0, 1);
 }
 
 // Барабан удачи
