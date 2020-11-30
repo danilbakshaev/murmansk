@@ -1419,14 +1419,6 @@ header .desktop-header__line-bottom--tour {
   transition: all 0.2s linear;
 }
 
-.tours-wr:not(:first-child) {
-  display: none;
-}
-
-.tours__items.slick-initialized .tours-wr:not(:first-child) {
-  display: block;
-}
-
 .tours-scaleControl {
   background: linear-gradient(
       219.88deg,
@@ -1713,6 +1705,14 @@ header .desktop-header__line-bottom--tour {
 
   .tours__item-button:hover .tours__item-button__text {
     color: #000;
+  }
+
+  .tours-wr:not(:first-child) {
+    display: none;
+  }
+  
+  .tours__items.slick-initialized .tours-wr:not(:first-child) {
+    display: block;
   }
 }
 
