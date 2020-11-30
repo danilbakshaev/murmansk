@@ -2220,6 +2220,7 @@ header .desktop-header__line-bottom--tour {
   padding-top: 64px;
   padding-bottom: 64px;
   background-color: #f8f8f6;
+  overflow: hidden;
 }
 
 .popular-destinations__img {
@@ -3644,6 +3645,7 @@ header .desktop-header__line-bottom--tour {
 /* Мы в instagram */
 .subscribe-instagram {
   padding: 96px 0;
+  overflow: hidden;
 }
 
 .subscribe-instagram__communication {
@@ -15358,6 +15360,12 @@ background:  #0FC4AC;
   background: linear-gradient(144.66deg, #00d8f5 0%, #00d689 100%);
   filter: blur(16px);
   border-radius: 8px;
+}
+
+.request-link--main .request-span {
+  &:hover {
+    color: black;
+  }
 }
 
 .request__wrap--northern-lights {
