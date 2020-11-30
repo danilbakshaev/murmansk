@@ -3894,7 +3894,7 @@ header .desktop-header__line-bottom--tour {
   position: relative;
 }
 .northern-wrap .northern-wrap__right {
-  position: sticky;
+  position: relative;
   bottom: 0;
   right: 0;
 }
@@ -4052,6 +4052,7 @@ header .desktop-header__line-bottom--tour {
 // Скидки, акции и бонусы
 .discounts {
   margin-bottom: 96px;
+  overflow: hidden;
 }
 
 .discounts__items {
@@ -5866,6 +5867,7 @@ header .desktop-header__line-bottom--tour {
 // Ответы на 25 самых популярных вопросов
 .answers-questions {
   margin-bottom: 96px;
+  overflow: hidden;
 }
 
 .answers-questions__items {
