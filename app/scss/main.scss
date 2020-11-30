@@ -15937,6 +15937,10 @@ footer {
   transition: all linear 0.3s;
 }
 
+.callback-form__wrap:hover .request-span {
+  color: #fff;
+}
+
 .request-link--main:hover .request-shadow {
   display: none;
 }
