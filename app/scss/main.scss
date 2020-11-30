@@ -8281,13 +8281,13 @@ footer {
   top: 2px;
 }
 .modal-wrapper__left-menu {
-  max-width: 96%;
+  max-width: 100%;
   position: relative;
   margin-right: auto;
   background: #010a03;
   transition: all 0.3s linear;
   color: #fff;
-  padding: 32px 44px;
+  padding: 32px 44px 130px;
 }
 
 .modal-wrapper__left-menu.hidden {
@@ -8297,7 +8297,12 @@ footer {
 .modal-wrapper__left-menu.animation {
   transform: translateX(-100px);
 }
-
+.modal-wrapper__left-content__item--flex .new-select__list--lang {
+  right: -79px;
+}
+.modal-wrapper__left-content__item--flex .new-select__list::before {
+  right: 59px;
+}
 .modal-wrapper__left-body .modal-wrapper__close {
   right: 25px;
   top: 31px;
@@ -8576,6 +8581,7 @@ footer {
 
 .modal-wrapper__left-content__item--flex .select-lang {
   margin-right: 70px;
+  margin-left: 22px;
 }
 
 .callback__call--modal-mobile {
@@ -8590,7 +8596,7 @@ footer {
 
 @media screen and (max-width: 760px) {
   .modal-wrapper__left-menu {
-    padding: 20px 15px;
+    padding: 20px 15px 130px;
   }
 
   .select-location--modal .select-location__text {
