@@ -171,15 +171,15 @@ header::before {
 }
 .desktop-header__wrapper {
   transition: all linear 0.2s;
-  padding-bottom: 225px;
+  padding-bottom: 100px;
+  overflow: hidden;
 }
-.desktop-header__wrapper.backgroundActive {
-  padding-bottom: 300px;
-}
+// .desktop-header__wrapper.backgroundActive {
+//   padding-bottom: 300px;
+// }
 .backgroundActive {
   background-color: #0f2018;
   position: relative;
-  z-index: 1;
 }
 .backgroundActive .header-text__wrap,
 .backgroundActive .header-text-video--tour,
@@ -187,7 +187,7 @@ header::before {
 .backgroundActive .header-text--tour,
 .backgroundActive .header-text__teriberka-inner,
 .backgroundActive .header-text__wrap--agency  {
-  opacity: 0.1;
+  opacity: 0.03;
 }
 
 .backgroundActive .header-text__teriberka-inner--hide {
@@ -583,59 +583,40 @@ header .desktop-header__line-bottom--tour {
 }
 
 .header-text {
-  // padding-bottom: 205px;
-  // padding-top: 85px;
   position: relative;
-  overflow: hidden;
+  min-height: 500px;
+  display:flex;
+  align-items:center;
 }
 .header-text--nop {
   padding-bottom: 85px;
   padding-top: 20px;
 }
-.tours_day {
+
+.header-text--item {
   position: absolute;
   width: 100%;
-  top: 0;
+  top: 25px;
   left: 0;
-  // display: none;
-  margin-top: -71px;
   visibility: hidden;
+  z-index: 3;
+  opacity: 0;
+  transition: .3s;
 }
-.tours_day.active {
-  // display: block;
+
+.header-text--item.active {
   visibility: visible;
-}
-.tours_package {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  // display: none;
-  margin-top: -71px;
-  visibility: hidden;
-}
-.tours_package.active {
-  // display: block;
-  visibility: visible;
-}
-.header-text.active {
-  display: block;
+  opacity: 1;
 }
 
 .header-text--none {
   display: none;
 }
 
-.header-text--catalog {
-  // margin-bottom: 150px;
-}
 .header-text--catalog .tours_day,
 .header-text--catalog .tours_package {
   margin-top: -42px;
 }
-// .header-text__wrap {
-//   mr20
-// }
 
 .header-text__title {
   font-family: "Roboto Slab", sans-serif;
@@ -914,7 +895,7 @@ header .desktop-header__line-bottom--tour {
 .header-text__wrap--pc {
   // padding-bottom: 120px;
   max-width: 736px;
-  margin-top: 71px;
+  // margin-top: 71px;
 }
 
 .header-text__wrap--pc .header-text__title {
@@ -923,8 +904,7 @@ header .desktop-header__line-bottom--tour {
 
 @media screen and (max-width: 1440px) {
   header::before {
-    bottom: -11px;
-    height: 156px;
+    height: 100px;
   }
 }
 
@@ -4485,11 +4465,7 @@ header .desktop-header__line-bottom--tour {
 .header-text__teriberka-inner {
   display: flex;
   justify-content: space-between;
-  padding: 96px 0 155px;
   transition: all 0.2s linear;
-}
-.desktop-header__wrapper--northern .header-text__teriberka-inner {
-  padding-bottom: 0 !important;
 }
 .header-text__teriberka-left {
   width: 50%;
