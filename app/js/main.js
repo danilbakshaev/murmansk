@@ -2,21 +2,21 @@ $(function () {
 
   if ($('.popular-destinations__items')) {
     $('.popular-destinations__items').slick({
-      slidesToShow: 3.2,
+      slidesToShow: 3,
       slidesToScroll: 3,
       infinite: false,
       draggable: false,
       prevArrow: '.prev-js-popular-destinations',
       nextArrow: '.next-js-popular-destinations',
       responsive: [{
-          breakpoint: 1240,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
           }
         },
         {
-          breakpoint: 740,
+          breakpoint: 420,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
