@@ -26,6 +26,40 @@ $(function () {
     });
   }
 
+  if ($('.popular-destinations__items4')) {
+    $('.popular-destinations__items4').slick({
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      infinite: false,
+      draggable: false,
+      prevArrow: '.prev-js-popular-destinations',
+      nextArrow: '.next-js-popular-destinations',
+      responsive: [
+        {
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 420,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+    });
+  }
+
   if ($('.popular-destinations__items--header')) {
     $('.popular-destinations__items--header').slick({
       slidesToShow: 4,
