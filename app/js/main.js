@@ -326,14 +326,14 @@ $(function () {
     if (window.innerWidth < 1240) {
       if ($('.tours__items')) {
         $('.tours__items').slick({
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           draggable: false,
           infinite: false,
           prevArrow: '.prev-js',
           nextArrow: '.next-js',
           responsive: [{
-              breakpoint: 1240,
+              breakpoint: 768,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
@@ -341,7 +341,7 @@ $(function () {
             },
 
             {
-              breakpoint: 740,
+              breakpoint: 420,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -385,7 +385,7 @@ $(function () {
       prevArrow: '.prev-js-reviews',
       nextArrow: '.next-js-reviews',
       responsive: [{
-          breakpoint: 1240,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2.7,
             slidesToScroll: 1,
@@ -393,9 +393,9 @@ $(function () {
           }
         },
         {
-          breakpoint: 740,
+          breakpoint: 420,
           settings: {
-            slidesToShow: 1.4,
+            slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
           }
@@ -409,20 +409,36 @@ $(function () {
       slidesToShow: 4,
       slidesToScroll: 1,
       infinite: false,
+      draggable: false,
       prevArrow: '.prev-js-stocks',
       nextArrow: '.next-js-stocks',
-      responsive: [{
-          breakpoint: 1240,
+      responsive: [
+        {
+          breakpoint: 840,
           settings: {
-            slidesToShow: 2.5,
+            slidesToShow: 3,
             slidesToScroll: 1,
           }
         },
         {
-          breakpoint: 740,
+          breakpoint: 768,
           settings: {
-            slidesToShow: 1.1,
-            centerMode: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 420,
+          settings: {
+            slidesToShow: 1,
+            centerMode: false,
             slidesToScroll: 1,
             arrows: false,
           }
