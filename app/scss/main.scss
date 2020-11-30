@@ -586,6 +586,7 @@ header .desktop-header__line-bottom--tour {
   // padding-bottom: 205px;
   // padding-top: 85px;
   position: relative;
+  overflow: hidden;
 }
 .header-text--nop {
   padding-bottom: 85px;
@@ -1594,13 +1595,7 @@ header .desktop-header__line-bottom--tour {
   .tours-wr:hover {
     transform: initial;
   }
-  .tours-wr:not(:first-child) {
-    display: none;
-  }
-
-  .tours__items.slick-initialized .tours-wr:not(:first-child) {
-    display: block;
-  }
+  
 
   .tours {
     margin-top: 70px;
@@ -2329,8 +2324,14 @@ header .desktop-header__line-bottom--tour {
   font-size: 14px;
   line-height: 168%;
   color: #a5a5b1;
-  margin-right: 15px;
+  margin-right: 10px;
   text-decoration: none;
+  transition: all linear 0.3s;
+  border-radius: 6px;
+  padding: 3px;
+  &:hover {
+    background: rgba(191,185,185,.5);
+  }
 }
 
 .scroll-link__inner {
@@ -3092,8 +3093,13 @@ header .desktop-header__line-bottom--tour {
 }
 
 .stocks__items {
-  display: flex;
+  // display: flex;
 }
+
+.stocks__items .slick-list{
+  overflow: unset!important;
+}
+
 .stocks__items .slick-track {
   padding: 10px;
 }
@@ -3237,7 +3243,7 @@ header .desktop-header__line-bottom--tour {
   } */
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
   .stocks {
     padding: 32px 0;
   }
@@ -3277,9 +3283,22 @@ header .desktop-header__line-bottom--tour {
   .next-js-video {
     display: block !important;
   }
+
+  .stocks__item{
+    height: 390px;
+  }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 740px) {
+  .stocks__item{
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .stocks__item{
+    height: 390px;
+  }
 }
 
 /* Рассчитать стоимость поездки */
@@ -10719,7 +10738,7 @@ footer {
 .tour-media__item-link {
   position: absolute;
   z-index: 1;
-  top: 45%;
+  top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -11382,7 +11401,7 @@ footer {
 
 .tour-ticket {
   padding: 24px;
-  border: 1px solid #bec6ce;
+  border: 1px solid #e4e7ea;
   box-shadow: 0px 0px 2px rgba(5, 15, 41, 0.03),
     0px 4px 20px rgba(5, 15, 41, 0.15);
   border-radius: 12px;
@@ -11585,6 +11604,7 @@ footer {
 .tour-ticket__parameters-text--elem {
   position: relative;
   padding-left: 9px;
+  margin-bottom: 3px;
 }
 
 .tour-ticket__parameters-text--elem::before {
@@ -11625,7 +11645,7 @@ footer {
 }
 
 .tour-ticket__parametres-p--fz {
-  font-size: 13px;
+  font-size: 12px;
   color: #ff8e00;
 }
 
@@ -11685,7 +11705,7 @@ footer {
   margin: 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 120%;
   color: #ffffff;
   margin-bottom: 16px;
@@ -11699,7 +11719,7 @@ footer {
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
-  border: 1px solid #bec6ce;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 9px 48px;
   border-radius: 8px;
   transition: all 0.2s linear;
@@ -11713,8 +11733,6 @@ footer {
 .aviasales__text {
   margin-top: 16px;
   margin-bottom: 8px;
-  font-style: normal;
-  font-weight: 500;
   font-size: 10px;
   line-height: 120%;
   color: #ffffff;
@@ -12245,15 +12263,13 @@ footer {
   .tour-program__image {
     margin-bottom: 8px;
     margin-right: 0;
-    // max-width: 345px;
+    max-width: 164px;
+    border-radius: 8px;
+    overflow: hidden;
   }
 
   .tour-program__image--desktop {
     display: none;
-  }
-
-  .tour-program__image img {
-    width: 100%;
   }
 
   .tour-program__item {
@@ -13083,25 +13099,17 @@ footer {
   transition: all 0.2s linear;
 }
 
-// .next-arrow:hover {
-//   opacity: 0.5;
-// }
+.next-arrow:hover {
+   opacity: 0.5;
+ }
 
-// .prev-arrow:hover {
-//   opacity: 0.5;
-// }
-
-/* .bottom-innerwrp .next-arrow:hover{
-background:  #0FC4AC;
-}
-
-.bottom-innerwrp .prev-arrow:hover{
-  background:  #0FC4AC;
-}
+.prev-arrow:hover {
+  opacity: 0.5;
+ }
 
 .bottom-innerwrp path:hover{
-  fill:  #fff;
-} */
+  fill: #fff;
+}
 
 .btn-ice {
   border: 1px solid #0fc4ac;
@@ -13117,11 +13125,12 @@ background:  #0FC4AC;
   position: relative;
   cursor: pointer;
   transition: all 0.2s linear;
+  background-color: #FFF;
 }
 
-// .btn-ice:hover{
-//   opacity: 0.5;
-// }
+.btn-ice:hover{
+   opacity: 0.5;
+ }
 
 /* .img-inner-phone{
   position: relative;
@@ -13190,12 +13199,18 @@ background:  #0FC4AC;
 .prev-js-popular-destinations--head:hover,
 .next-js-popular-destinations--head:hover {
   background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
 }
+
 
 .prev-js-popular-destinations--head:hover svg path,
 .next-js-popular-destinations--head:hover svg path {
   stroke: rgba(15, 196, 172, 1);
 }
+
+// .prev-js-popular-destinations--head:hover .next-arrow {
+//   opacity: 1;
+// }
 
 .btn-ice--head {
   box-sizing: border-box;
@@ -13213,6 +13228,7 @@ background:  #0FC4AC;
 .btn-ice--head:hover {
   background: rgba(255, 255, 255, 0.3);
   color: rgba(15, 196, 172, 1);
+  opacity: 1;
 }
 
 /* About */
