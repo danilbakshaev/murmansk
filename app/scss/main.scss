@@ -1987,8 +1987,21 @@ header .desktop-header__line-bottom--tour {
 .video-tours__item {
   position: relative;
   cursor: pointer;
+  border-radius: 12px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    background: linear-gradient(145.73deg, rgba(0, 0, 0, 0) 46.92%, rgba(3, 3, 3, 0.09) 56.84%, #0E0E0E 100%), rgba(0, 0, 0, 0.3);
+    top: 0;
+    border-radius: 12px;
+    right: 0;
+  }
 }
-
+.video-tours__item--small.video-tours__item::before {
+  height: 96%;
+}
 .video-tours__play {
   position: absolute;
   content: "";
@@ -2001,13 +2014,17 @@ header .desktop-header__line-bottom--tour {
   border: none;
   width: 129px;
   height: 129px;
-  background: rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(28px);
 }
-
+.video-tours__item:hover .video-tours__img,
+.tour-video__inner:hover .video-tours__img {
+  transform: scale(1.1);
+}
 .video-tours__play--small {
   width: 48px;
   height: 48px;
@@ -2020,6 +2037,7 @@ header .desktop-header__line-bottom--tour {
 
 .video-tours__img {
   width: auto;
+  transition: all .2s linear;
 }
 
 .video-tours__title {
@@ -2131,16 +2149,32 @@ header .desktop-header__line-bottom--tour {
   }
 
   .video-tours__play--mob {
-    top: 30% !important;
+    top: 50% !important;
     width: 70px !important;
     height: 70px !important;
   }
-
+  .tour-video .tour-video__text {
+    bottom: 34%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+  }
+  .tour-video .tour-video__title {  
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .tour-video .tour-video__duration {
+    display: none;
+  }
   .video-tours--mobile {
     display: block;
     padding: 72px 0;
   }
-
+  .tour-video__inner::before {
+    height: 98.7%;
+  }
   .title-sections--video-tours--mobile {
     display: block;
     margin-bottom: 36px;
@@ -2254,7 +2288,6 @@ header .desktop-header__line-bottom--tour {
     transform: translate(-50%, 10%);
     text-align: center;
   }
-
   .video-tours__play {
     top: 50%;
     width: 50px;
@@ -2280,14 +2313,43 @@ header .desktop-header__line-bottom--tour {
     font-size: 14px;
     width: auto;
   }
+  .video-tours__play {
+    top: 40% !important; 
+  }
+  .tour-video .tour-video__text {
+    bottom: 32%;
+  }
+  .tour-video .tour-video__title {  
+    max-width: 200px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .video-tours__title--mobile {
     bottom: 18%;
   }
+  .tour-video__inner::before {
+    height: 97.7% !important;
+  }
+}
+@media screen and (max-width: 520px) {
+  .tour-video .tour-video__text {
+    bottom: 26%;
+  }
 }
 
+@media screen and (max-width: 425px) {
+  .tour-video .tour-video__text {
+    bottom: 20%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .tour-video .tour-video__text {
+    bottom: 15%;
+  }.tour-video__inner::before {
+    height: 96.6% !important; 
+  }
+}
 /* popular-destinations */
 
 .popular-destinations {
@@ -5323,9 +5385,9 @@ header .desktop-header__line-bottom--tour {
   cursor: pointer;
   transition: all linear 0.3s;
 
-  &:hover svg path {
-    fill: #242440;
-  }
+  // &:hover svg path {
+  //   fill: #242440;
+  // }
 }
 
 .photos-inner__btn {
@@ -5366,7 +5428,19 @@ header .desktop-header__line-bottom--tour {
     background-color: #e6e6e6;
   }
 }
-
+.photos-inner__btn-play {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(28px);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.photos-inner__item--desk svg {
+  transition: all 2s linear;
+}
+.photos-inner__item--desk:hover svg {
+  transform: scale(1.8);
+}
 @media screen and (max-width: 1240px) {
   .photos-inner {
     flex-direction: column;
@@ -5384,7 +5458,7 @@ header .desktop-header__line-bottom--tour {
     display: flex;
   }
 
-  .photos-inner__item--desk {
+  .photos-inner__btn-play {
     display: none;
   }
 }
@@ -5571,15 +5645,23 @@ header .desktop-header__line-bottom--tour {
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
   border-radius: 50%;
+  backdrop-filter: blur(28px);
 }
-
+.northern-videos__btn svg  {
+  transition: all .2s linear;
+}
+.video-tours__item:hover .northern-videos__btn svg {
+  transform: scale(1.1);
+}
 .northern-videos__block-wrap {
   box-sizing: border-box;
   position: absolute;
   bottom: -130px;
   left: -16px;
 }
-
+.video-tour--teriberka .video-tours__item::before {
+  height: 100%;
+}
 .northern-videos__block {
   box-shadow: 0 2px 72px rgba(0, 0, 0, 0.1);
   background-color: #fff;
@@ -6073,7 +6155,7 @@ header .desktop-header__line-bottom--tour {
   padding: 0;
   border-radius: 50%;
   top: calc(50% - 40px);
-  left: calc(50% - 145px);
+  left: calc(50% - 45px);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -6083,15 +6165,22 @@ header .desktop-header__line-bottom--tour {
   background-color: transparent;
   border: none;
   transition: all linear 0.3s;
-  &:hover svg path {
-    fill: #242440;
-  }
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(28px);
   svg {
     width: 80px;
     height: 80px;
+    transition: all .2s linear;
   }
 }
 
+.video-tours__item:hover .video-tour__btn-play svg {
+  transform: scale(1.1);
+}
+.video-tour__right .video-tour__btn-play {
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+}
 .video-tour__block-wrap {
   box-sizing: border-box;
   position: absolute;
@@ -6162,8 +6251,8 @@ header .desktop-header__line-bottom--tour {
   position: absolute;
   width: 50px;
   height: 50px;
-  top: calc(50% - 25px);
-  left: calc(50% - 25px);
+  top: 50%;
+  left: 50%;
 }
 
 .video-tour__wrapper img {
@@ -10588,7 +10677,9 @@ footer {
   margin-left: 128px;
   max-width: 256px;
 }
-
+.video-tours__item--tour.video-tours__item::before {
+  height: 62.5%;
+}
 .header__text-wrap-left--tour {
   margin-top: 36px;
 }
@@ -11242,12 +11333,17 @@ footer {
   position: relative;
   cursor: pointer;
   transition: all 0.2s linear;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 98.7%;
+    background: linear-gradient(145.73deg, rgba(0, 0, 0, 0) 46.92%, rgba(3, 3, 3, 0.09) 56.84%, #0E0E0E 100%), rgba(0, 0, 0, 0.3);
+    top: 0;
+    border-radius: 12px;
+    right: 0;
+  }
 }
-
-.tour-video__inner:hover {
-  opacity: 0.7;
-}
-
 .tour-video-bg {
   border-radius: 12px;
 }
