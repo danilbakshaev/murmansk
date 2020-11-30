@@ -10755,7 +10755,7 @@ footer {
   max-width: 256px;
 }
 .video-tours__item--tour.video-tours__item::before {
-  height: 62.5%;
+  height: 63.3%;
 }
 .header__text-wrap-left--tour {
   margin-top: 36px;
@@ -10839,6 +10839,10 @@ footer {
   .breadcrumbs__link {
     font-size: 12px;
     font-weight: 400;
+  }
+
+  .video-tours__item--tour.video-tours__item::before {
+    height: 100%;
   }
 }
 
@@ -12200,7 +12204,7 @@ footer {
     position: absolute;
     text-align: center;
     z-index: 1;
-    top: 55%;
+    top: 60%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
