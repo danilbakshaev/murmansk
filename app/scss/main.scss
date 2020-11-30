@@ -2298,8 +2298,14 @@ header .desktop-header__line-bottom--tour {
   font-size: 14px;
   line-height: 168%;
   color: #a5a5b1;
-  margin-right: 15px;
+  margin-right: 10px;
   text-decoration: none;
+  transition: all linear 0.3s;
+  border-radius: 6px;
+  padding: 3px;
+  &:hover {
+    background: rgba(191,185,185,.5);
+  }
 }
 
 .scroll-link__inner {
@@ -13027,25 +13033,17 @@ footer {
   transition: all 0.2s linear;
 }
 
-// .next-arrow:hover {
-//   opacity: 0.5;
-// }
+.next-arrow:hover {
+   opacity: 0.5;
+ }
 
-// .prev-arrow:hover {
-//   opacity: 0.5;
-// }
-
-/* .bottom-innerwrp .next-arrow:hover{
-background:  #0FC4AC;
-}
-
-.bottom-innerwrp .prev-arrow:hover{
-  background:  #0FC4AC;
-}
+.prev-arrow:hover {
+  opacity: 0.5;
+ }
 
 .bottom-innerwrp path:hover{
-  fill:  #fff;
-} */
+  fill: #fff;
+}
 
 .btn-ice {
   border: 1px solid #0fc4ac;
@@ -13063,9 +13061,9 @@ background:  #0FC4AC;
   transition: all 0.2s linear;
 }
 
-// .btn-ice:hover{
-//   opacity: 0.5;
-// }
+.btn-ice:hover{
+   opacity: 0.5;
+ }
 
 /* .img-inner-phone{
   position: relative;
@@ -13134,12 +13132,18 @@ background:  #0FC4AC;
 .prev-js-popular-destinations--head:hover,
 .next-js-popular-destinations--head:hover {
   background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
 }
+
 
 .prev-js-popular-destinations--head:hover svg path,
 .next-js-popular-destinations--head:hover svg path {
   stroke: rgba(15, 196, 172, 1);
 }
+
+// .prev-js-popular-destinations--head:hover .next-arrow {
+//   opacity: 1;
+// }
 
 .btn-ice--head {
   box-sizing: border-box;
@@ -13157,6 +13161,7 @@ background:  #0FC4AC;
 .btn-ice--head:hover {
   background: rgba(255, 255, 255, 0.3);
   color: rgba(15, 196, 172, 1);
+  opacity: 1;
 }
 
 /* About */
