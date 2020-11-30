@@ -2925,7 +2925,7 @@ header .desktop-header__line-bottom--tour {
 }
 
 .reviews__item {
-  display: flex;
+  display: block;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
@@ -3014,7 +3014,7 @@ header .desktop-header__line-bottom--tour {
   height: 89.5%;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
   .reviews {
     padding: 48px 0;
   }
@@ -3038,6 +3038,10 @@ header .desktop-header__line-bottom--tour {
   .reviews--index .reviews__otzyv {
     position: absolute;
     top: 25px;
+  }
+
+  .reviews__inner .slick-list{
+    overflow: unset!important;
   }
 }
 
@@ -3064,9 +3068,7 @@ header .desktop-header__line-bottom--tour {
   // display: flex;
 }
 
-.stocks__items .slick-list{
-  overflow: unset!important;
-}
+
 
 .stocks__items .slick-track {
   padding: 10px;
@@ -3209,6 +3211,10 @@ header .desktop-header__line-bottom--tour {
   /* .stocks__item {
     margin: 24px 24px 24px 0;
   } */
+
+  .stocks__items .slick-list{
+    overflow: unset!important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -3254,6 +3260,10 @@ header .desktop-header__line-bottom--tour {
 
   .stocks__item{
     height: 390px;
+  }
+
+  .stocks__items .slick-list{
+    overflow: unset!important;
   }
 }
 
