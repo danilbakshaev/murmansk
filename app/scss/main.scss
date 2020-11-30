@@ -1419,6 +1419,14 @@ header .desktop-header__line-bottom--tour {
   transition: all 0.2s linear;
 }
 
+.tours-wr:not(:first-child) {
+  display: none;
+}
+
+.tours__items.slick-initialized .tours-wr:not(:first-child) {
+  display: block;
+}
+
 .tours-scaleControl {
   background: linear-gradient(
       219.88deg,
@@ -2062,6 +2070,14 @@ header .desktop-header__line-bottom--tour {
 
 .video-tours--mobile {
   display: none;
+}
+
+.video-tours--mobile__item:not(:first-child) {
+  display: none;
+}
+
+.video-tours--mobile__items.slick-initialized .video-tours--mobile__item:not(:first-child) {
+  display: block;
 }
 
 .desktop-header__wrapper--tour .header-text {
@@ -2961,11 +2977,19 @@ header .desktop-header__line-bottom--tour {
 }
 
 .reviews__item {
-  display: block;
+  // display: block;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
+}
+
+.reviews-content:not(:first-child) {
+  display: none;
+}
+
+.reviews__inner.slick-initialized .reviews-content:not(:first-child) {
+  display: block;
 }
 
 .reviews__item-wrap {
@@ -3105,7 +3129,13 @@ header .desktop-header__line-bottom--tour {
   // display: flex;
 }
 
+.stocks-content:not(:first-child) {
+  display: none;
+}
 
+.stocks__items.slick-initialized .stocks-content:not(:first-child) {
+  display: block;
+}
 
 .stocks__items .slick-track {
   padding: 10px;
