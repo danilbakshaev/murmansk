@@ -1562,7 +1562,7 @@ $(function () {
         tel: ""
       },
       submitHandler: function (form) {
-        console.log("good")
+        let prizeToSend
         var prize = (Math.floor(Math.random() * 8)) + 1;
         var segmentAngle = ((prize - 1) * -45);
         var segmentAngle = segmentAngle + 1103;
@@ -1578,20 +1578,46 @@ $(function () {
         wheel.style.oTransform = 'rotate(' + segmentAngle + 'deg)';
         wheel.style.transform = 'rotate(' + segmentAngle + 'deg)';
 
-        // Display the result
-        console.log("Ваш приз " + prize)
+        // В зависимости от части 1 из 8, получаем текст приза
+        switch (prize) {
+          case 1:
+            prizeToSend = "Скидка 500 рублей на тур в Териберку"
+            break;
+          case 2:
+            prizeToSend = "Скидка 500 рублей на тур в саамскую деревню"
+            break;
+          case 3:
+            prizeToSend = "Бесплатный трансфер В аэропорт"
+            break;
+          case 4:
+            prizeToSend = "Бесплатный трансфер ИЗ аэропорта"
+            break;
+          case 5:
+            prizeToSend = "Купон на 500 рублей в ресторан в Мурманске"
+            break;
+          case 6:
+            prizeToSend = "Купон на 500 рублей в парк активного отдыха 'Северное сияние'"
+            break;
+          case 7:
+            prizeToSend = "Скидка 500 рублей на тур в хаски-парк"
+            break;
+          case 8:
+            prizeToSend = "Скидка 500 рублей на тур на северное сияние"
+            break;
+          default:
+            break;
+        }
+
+        // Кладем выигрыш в скрытое поле
+        $('#prize').val(prizeToSend)
 
         $('.backdrop').one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function (event) {
           //После того как колесо прокрутится - что-то показать пользователю
         });
+
+        // Отправляем форму куда нужно и чистим поля (добавить при бэкенде)
+        
       }
     });
-    document.getElementById("spin").addEventListener("click", function (event) {
-
-
-    }, false);
-
-
-
   }
 });
