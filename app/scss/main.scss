@@ -663,7 +663,10 @@ header .desktop-header__line-bottom--tour {
 .header-text--catalog {
   // margin-bottom: 150px;
 }
-
+.header-text--catalog .tours_day,
+.header-text--catalog .tours_package {
+  margin-top: -42px;
+}
 // .header-text__wrap {
 //   mr20
 // }
@@ -1155,6 +1158,10 @@ header .desktop-header__line-bottom--tour {
   .callback-form__wrap--desk {
     display: none !important;
   }
+  .header-text--catalog .tours_day,
+  .header-text--catalog .tours_package {
+    margin-top: 0px;
+  } 
 }
 
 @media screen and (max-width: 740px) {
