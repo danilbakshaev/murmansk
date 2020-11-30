@@ -2408,6 +2408,11 @@ header .desktop-header__line-bottom--tour {
   overflow: unset !important;
 }
 
+.popular-destinations__items4 .slick-list {
+  padding: 18px 0;
+  overflow: unset !important;
+}
+
 .popular-destinations__items--destinations
   .popular-destinations__items--readytours {
   position: relative;
@@ -2502,6 +2507,14 @@ header .desktop-header__line-bottom--tour {
 }
 
 .popular-destinations__items.slick-initialized .noContent:not(:first-child) {
+  display: block;
+}
+
+.noContent:not(:first-child) {
+  display: none;
+}
+
+.popular-destinations__items4.slick-initialized .noContent:not(:first-child) {
   display: block;
 }
 
