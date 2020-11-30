@@ -385,7 +385,7 @@ $(function () {
       prevArrow: '.prev-js-reviews',
       nextArrow: '.next-js-reviews',
       responsive: [{
-          breakpoint: 1240,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2.7,
             slidesToScroll: 1,
@@ -393,9 +393,9 @@ $(function () {
           }
         },
         {
-          breakpoint: 740,
+          breakpoint: 420,
           settings: {
-            slidesToShow: 1.4,
+            slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
           }
@@ -412,7 +412,15 @@ $(function () {
       draggable: false,
       prevArrow: '.prev-js-stocks',
       nextArrow: '.next-js-stocks',
-      responsive: [{
+      responsive: [
+        {
+          breakpoint: 840,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
           breakpoint: 768,
           settings: {
             slidesToShow: 2,
