@@ -1222,6 +1222,7 @@ header .desktop-header__line-bottom--tour {
 
 /* Блок "наши достижения"  */
 .achievements {
+  overflow: hidden;
   padding: 48px 0 0;
 }
 
@@ -1354,6 +1355,7 @@ header .desktop-header__line-bottom--tour {
 
 /* Блок "Топ туров" */
 .tours {
+  overflow: hidden;
   margin-top: 96px;
 }
 
@@ -2678,6 +2680,7 @@ header .desktop-header__line-bottom--tour {
 /* Блок "Ответы на часто задаваемые вопросы" */
 
 .faq {
+  overflow: hidden;
   padding: 96px 0;
 }
 
@@ -3570,7 +3573,12 @@ header .desktop-header__line-bottom--tour {
 /* Карта туров по Мурманской области */
 
 .tours-map {
+  overflow: hidden;
   padding: 96px 0;
+}
+
+.tours-map .request-link--mobile {
+  display: none;
 }
 
 .tours-map__inner {
@@ -3740,6 +3748,16 @@ header .desktop-header__line-bottom--tour {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .tours-map .request-link--desktop {
+    display: none;
+  }
+  .tours-map .request-link--mobile {
+    display: flex;
+    margin-top: 24px;
+  }
+}
+
 @media screen and (max-width: 740px) {
   .tours-map {
     padding: 48px 0;
@@ -3780,6 +3798,12 @@ header .desktop-header__line-bottom--tour {
 
   .tours-map__geo img {
     margin-right: 6px;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .tours-map__right-img {
+    border-radius: 0!important;
   }
 }
 
@@ -15503,6 +15527,9 @@ footer {
 
 .request-link--size {
   width: 256px;
+}
+.request-link--map {
+  width: 100%;
 }
 .request-link--size350 {
   width: 350px;
