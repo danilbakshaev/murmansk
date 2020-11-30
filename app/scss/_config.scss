@@ -6,7 +6,9 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
@@ -20,7 +22,7 @@ img {
 
 // Настройки body
 body {
-	min-width: 320px;
-	position: relative;
-	overflow-x: hidden;
+  min-width: 320px;
+  position: relative;
+  // overflow-x: hidden;
 }
