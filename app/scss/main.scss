@@ -10967,7 +10967,7 @@ footer {
   max-width: 256px;
 }
 .video-tours__item--tour.video-tours__item::before {
-  height: 63.3%;
+  height: 61.3%;
 }
 .header__text-wrap-left--tour {
   margin-top: 36px;
@@ -11940,18 +11940,23 @@ footer {
   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15),
     inset 0px 1px 0px rgba(255, 255, 255, 0.4);
   border-radius: 8px;
-  padding: 16px 37px;
-  border: none;
+  padding: 16px 36px;
+  border: 1px solid transparent;
   color: #fff;
   cursor: pointer;
+  transition: all .2s linear;
 }
 
 .tour-ticket__button:hover {
-  background: #fc6b6b;
+  background: transparent;
+  border-color: #ff9458;
+  color: #ff9458;
 }
 
 .tour-ticket__button:active {
-  background: #fb5352;
+  background: transparent;
+  border-color: #ff9458;
+  color: #ff9458;
 }
 
 .tour-ticket__form p {
@@ -11974,7 +11979,9 @@ footer {
   display: flex;
   align-items: center;
 }
-
+.tour-ticket__parametres svg {
+  min-height: 30px
+}
 .tour-ticket__text--blue {
   color: #0fc4ac;
   font-size: 12px;
@@ -12933,6 +12940,7 @@ footer {
 
   .popular-destinations--tour {
     padding: 32px 0;
+    margin-bottom: 0;
   }
 
   .subscribe-instagram {
